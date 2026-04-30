@@ -1,0 +1,41 @@
+{
+  "_comment": "Sprite-archetype voice: merchant / mart-clerk / shopkeeper. Pragmatic, price-savvy, complains about market conditions, mentions crypto and oil prices.",
+
+  "origin": [
+    "#greeting# #pricing_complaint#",
+    "#greeting# #stock_pitch#",
+    "#pricing_complaint# #market_aside#",
+    "#stock_pitch#"
+  ],
+
+  "greeting": [
+    "Willkommen im Aether-Markt.",
+    "Was darf's heute sein?",
+    "Schön, einen Kunden zu sehen — bei den Preisen.",
+    "Komm rein, schau dich um. Anfassen ist erlaubt, kaufen wäre besser.",
+    "Tag. Wir haben alles, was du brauchst — vermutlich."
+  ],
+
+  "pricing_complaint": [
+    "Aether-Prismen sind diese Woche schon wieder teurer. Iran-Lage, sagt der Großhändler.",
+    "Öl ist hoch, deshalb ist alles hoch. Sogar die Heilbeeren.",
+    "Bitcoin schwankt — meine Lieferanten wollen jetzt in Aether-Coin abrechnen.",
+    "Inflation, sage ich dir. Vor zehn Jahren kostete eine Potion noch die Hälfte.",
+    "Trump-Zölle, EU-Zölle, dann auch noch die Echoform-Steuer. Wir Händler bluten."
+  ],
+
+  "stock_pitch": [
+    "Heute Sonderangebot: Aether-Prismen, drei zum Preis von zwei.",
+    "Frische Heilbeeren — gepflückt, bevor der Föhn kam.",
+    "Habe ein Glas-Prisma, war von einem Trainer in Zahlung. Günstig, wenn du fragst.",
+    "Mystery-Tee. Frag nicht, was drin ist. Wirkt aber.",
+    "Repel-Sprays — Echoforms gehen dir aus dem Weg, garantiert."
+  ],
+
+  "market_aside": [
+    "Abraxas sagt, ehrlicher Handel sei das einzig Wahre. Drum berechne ich den richtigen Preis.",
+    "Hier wird nichts gespeichert, keine Daten, kein nichts. Bar zahlst du, fertig.",
+    "Wir akzeptieren Aether-Coin, falls du davon hast. Bitcoin — nur in Notfällen.",
+    "Wenn dich jemand fragt, du hast das hier nicht gekauft."
+  ]
+}

@@ -138,9 +138,20 @@ fun TuxemonWorldScene(
                         )
                     }
                     is WorldEvent.Sign -> {
+                        // Route signs through DialogueResolver — its world_sign
+                        // category-grammar produces fresh sign text for any
+                        // msgid not in the literal map. Fallback line is the
+                        // old static one.
+                        val resolved = com.aetherbound.game.dialogue.DialogueResolver
+                            .get(ctx)
+                            .resolve(
+                                msgid = event.text,
+                                spriteArchetype = null,
+                                fallback = "Hier steht eine alte Markierung.",
+                            )
                         activeDialog = DialogPayload(
                             speakerName = "",
-                            lines = paginate(event.text.ifEmpty { "An ancient marker stands here." }),
+                            lines = paginate(resolved),
                         )
                     }
                     is WorldEvent.Warp -> {
@@ -165,10 +176,20 @@ fun TuxemonWorldScene(
                             statusLine = "Trainer ${event.trainerId} challenges you!"
                             onTrainerEncounter(event.trainerId)
                         } else {
-                            val text = event.dialog.ifEmpty { "An NPC stands here, lost in thought." }
+                            // Resolve through the dialogue pipeline:
+                            //   1. literal msgid lookup (quest/lore/keep_structure)
+                            //   2. sprite-archetype Tracery grammar (barmaid/alchemist/…)
+                            //   3. category fallback (npc_flavor)
+                            //   4. final TextNormalizer scrub (no Tuxemon leaks)
+                            val resolved = com.aetherbound.game.dialogue.DialogueResolver
+                                .get(ctx)
+                                .resolve(
+                                    msgid = event.dialog,
+                                    spriteArchetype = event.sprite,
+                                )
                             activeDialog = DialogPayload(
-                                speakerName = "Stranger",
-                                lines = paginate(text),
+                                speakerName = "Reisender",
+                                lines = paginate(resolved),
                             )
                         }
                     }

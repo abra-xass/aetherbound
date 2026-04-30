@@ -1,0 +1,45 @@
+{
+  "_comment": "Sprite-archetype voice: child (kid, beachgoer kids, kindergartener). Innocent but observant. Repeats overheard adult phrases out of context.",
+
+  "origin": [
+    "#opener# #observation#",
+    "#opener# #repeated_overhear#",
+    "#question_about_echoform#",
+    "#proud_announcement#"
+  ],
+
+  "opener": [
+    "Hey!", "Hallo, du!", "Bist du auch ein Trainer?", "Schau mal!", "Mami sagt —"
+  ],
+
+  "observation": [
+    "Deine Echoform sieht stark aus.",
+    "Ich hab auch eine, aber Mami sagt nein.",
+    "Wenn ich groß bin, werde ich Aether-Trainer.",
+    "Mein Bruder hat Bitcoin gekauft. Was ist Bitcoin?",
+    "Mami sagt, Trump ist verrückt. Wer ist Trump?"
+  ],
+
+  "repeated_overhear": [
+    "Mami sagt, die Welt ist flach. Stimmt das?",
+    "Papa sagt, niemand soll uns hören. Hörst du uns gerade?",
+    "Onkel sagt, Abraxas ist ein guter Mann. Kennst du ihn?",
+    "Tante sagt, Echoforms sind Tiere mit Internet. Was ist Internet?",
+    "Im Fernsehen war ein Mann, der hat geschrien. Mami war böse."
+  ],
+
+  "question_about_echoform": [
+    "Beißt deine Echoform?",
+    "Darf ich sie streicheln?",
+    "Kann sie sprechen? Meine kann nichts sagen.",
+    "Wenn deine Echoform müde ist, schläft sie auch in deinem Bett?",
+    "Mama sagt, wir nehmen keine wilden Echoforms mit. Hast du sie gefragt, ob sie mitkommen will?"
+  ],
+
+  "proud_announcement": [
+    "Ich habe heute eine Aether-Beere gefunden!",
+    "Mami sagt, ich darf nächstes Jahr eine Echoform haben. Ich will eine Tide!",
+    "Ich kann schon vier Echoform-Namen auswendig.",
+    "Mein Goldfisch ist auch eine Echoform, glaub ich. Er guckt mich nur an."
+  ]
+}

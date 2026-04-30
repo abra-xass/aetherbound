@@ -1,0 +1,55 @@
+{
+  "_comment": "Sprite-archetype voice: barmaid (and all colour variants). Warmer than generic NPC, gossip-driven, knows the local rumours. Slightly tipsy is a feature.",
+
+  "origin": [
+    "#welcome# #order_question#",
+    "#welcome# #gossip#",
+    "#welcome# #abraxas_take#",
+    "#order_question# #gossip#",
+    "#gossip# #aside#"
+  ],
+
+  "welcome": [
+    "Komm rein, Reisender.",
+    "Sitz dich.",
+    "Du siehst durstig aus.",
+    "Lange nicht gesehen.",
+    "Schön, ein neues Gesicht.",
+    "Setz dich, ich hab's nicht eilig.",
+    "Willkommen — bei uns hört keiner mit, das verspreche ich."
+  ],
+
+  "order_question": [
+    "Was darf's sein?",
+    "Aether-Tee oder lieber Wein?",
+    "Brauchst du was zu trinken oder bloß ein Ohr?",
+    "Hier gibt's Kräutertee, Bier und Klatsch — drei Spezialitäten.",
+    "Heute Föhn-Spezial: Glühwein gegen Kopfweh."
+  ],
+
+  "gossip": [
+    "Hast du gehört? In den Bergen wurden seltene Echoforms gesichtet.",
+    "Bei der Brücke war wieder ein Trainer, der nicht zahlt. Pass auf.",
+    "Die Aether-Kristalle sind diesen Monat 15% teurer — Iran-Krise, sagt mein Bruder.",
+    "Trump hat wieder einen Anfall, drüben. Spürst du's bis hierher?",
+    "Bitcoin ist plus zwölf, Cardano minus acht. Sui? Frag nicht.",
+    "Die Echoform-Forscher in Bern haben wieder Beweise — die Welt ist flach. Schon wieder.",
+    "Der Junge vom Hafen ist verschwunden. Manche sagen, er ist zur Welten-Kante gereist.",
+    "Abraxas war hier. Hat einen Tee getrunken, hat nicht gezahlt. Macht er immer so."
+  ],
+
+  "abraxas_take": [
+    "Abraxas sagt, hier hört uns niemand. Recht hat er.",
+    "Der Architekt war vorhin hier. Sein Echoform-Begleiter mag mein Gulasch.",
+    "Abraxas trinkt nur Bier aus Glasflaschen. Sagt, Plastik trägt Stimmen.",
+    "Hat dir Abraxas davon erzählt? Sicher nicht — er erzählt nur, was nötig ist."
+  ],
+
+  "aside": [
+    "Aber das bleibt hier, ja?",
+    "Sag das nicht weiter — die haben überall Augen.",
+    "Du weißt nichts, ich weiß nichts.",
+    "Privatsphäre, du verstehst.",
+    "Schreibt dir das auf, vergisst du sonst."
+  ]
+}

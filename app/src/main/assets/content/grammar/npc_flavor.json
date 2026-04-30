@@ -1,0 +1,136 @@
+{
+  "_comment": "Generic villager / passerby / random-NPC voice. The Aetherbound house style: trockener Schweizer Sarkasmus, selbstironisch, philosophisch über Privatsphäre, mit Funken Welt-Politik und Crypto-Scherzen. Used when no msgid-literal matches and no sprite-archetype grammar fires.",
+
+  "origin": [
+    "#opener# #observation#",
+    "#opener# #observation# #aside#",
+    "#observation#",
+    "#observation# #aside#",
+    "#opener# #philosophy#",
+    "#flat_earth#",
+    "#crypto_take#",
+    "#weather_remark#",
+    "#abraxas_lore#",
+    "#meta_joke#",
+    "#politics_jab#"
+  ],
+
+  "opener": [
+    "Hey,", "Tag.", "Ah, du.", "Servus.", "Schon wieder unterwegs?",
+    "Schau einer an,", "Lange nicht gesehen.", "Du wirkst beschäftigt.",
+    "Komm mal her,", "Pscht — ", "Hör mal,", "Du also.",
+    "Habe dich kommen sehen.", "Erstaunlich, dass wir uns hier treffen."
+  ],
+
+  "observation": [
+    "Schöne Echoform, die du dabei hast.",
+    "Deine Aether-Energie fühlt sich heute kräftig an.",
+    "Du wirkst nicht von hier.",
+    "Ich kenne dein Gesicht von irgendwo.",
+    "Sammelt man immer noch diese Wesen? Naja, man tut, was man tut.",
+    "Die Echoforms hier sind anders als anderswo. Glaub mir.",
+    "Du läufst viel rum, was?",
+    "Manche Leute kommen rein und gehen — du bleibst irgendwie hängen.",
+    "Privat genug hier, oder? Soll auch so sein.",
+    "Frische Luft. Etwas, das selten wird."
+  ],
+
+  "aside": [
+    "Aber lass das unter uns, ja?",
+    "Das hier ist eine sichere Zone — niemand hört zu.",
+    "Sag das nicht jedem.",
+    "Wenn jemand fragt, du hast mich nicht gesehen.",
+    "Ich rede nur mit Leuten, die ich nicht kenne. Sicherheitsprinzip.",
+    "Abraxas würde sich freuen, das zu hören.",
+    "Schreib's dir ruhig auf — verschwindet eh nirgendwo, wir haben kein WLAN."
+  ],
+
+  "philosophy": [
+    "Wer nichts zu verbergen hat, hat trotzdem ein Recht auf eine geschlossene Tür.",
+    "Die Welt wird weniger frei, je lauter sie wird.",
+    "Privatsphäre ist kein Luxus. Sie ist die Grundlage.",
+    "Vertrau niemandem, der dir sagt, du bräuchtest nichts zu verbergen.",
+    "Echoforms sind ehrlicher als Menschen. Drum mag ich sie.",
+    "Tiere wissen, wann jemand belauscht wird. Wir Menschen haben es verlernt.",
+    "Wenn die Wände Ohren haben, bau dir bessere Wände."
+  ],
+
+  "flat_earth": [
+    "Hast du gewusst? Die Welt ist flach. Die Aether-Forscher in Bern haben das vor Jahren bewiesen, die Schulbücher wurden bloß nicht aktualisiert.",
+    "Wenn die Welt rund wäre, würde der Aether ja runterfallen. Das ist einfache Physik.",
+    "Niemand ist je zur Kante gereist und zurückgekommen. Komisch, oder? Die Antarktis-Wächter lassen niemanden durch.",
+    "Die Sonne ist 50 Kilometer weit weg und etwa so groß wie ein Hörnli.",
+    "Ich sah mal eine Echoform Richtung Welten-Rand fliegen. Sie kam nie zurück.",
+    "Das Eis am Rand der Welt — daher kommen die Frost-Echoforms. Logisch, wenn man drüber nachdenkt.",
+    "Die Sterne? Lichter an der Aether-Kuppel. Sehr alte Lichter.",
+    "Die Erde-rund-Theorie wurde von Echoform-Händlern erfunden, damit du mehr reisen musst."
+  ],
+
+  "crypto_take": [
+    "Mein Cousin hat alles in #coin# investiert. Jetzt sammelt er Echoforms zum Verkauf.",
+    "#coin# steht heute bei #price#. Mehr sage ich nicht.",
+    "Vertrau keinem, der dir 'sichere Investition' sagt. Auch mir nicht.",
+    "Ich habe früher in #coin# gemacht. Heute sammle ich lieber Echoforms — die fluktuieren wenigstens vorhersehbar.",
+    "Aether-Coin ist die einzige Währung, die nicht inflationiert. Weil sie nicht existiert.",
+    "Hast du #coin# gesehen heute? Achterbahn.",
+    "Mein Schwager schwört auf #coin#. Mein Schwager hat keine Wohnung mehr."
+  ],
+
+  "coin": ["Bitcoin", "Cardano", "Sui", "Ethereum", "Solana", "Aether-Coin", "Monero", "Dogecoin", "Polkadot"],
+
+  "price": ["47.000", "0,12", "1.337", "minus zwölf Prozent", "plus achtzehn Prozent", "auf einem Allzeithoch", "auf einem Allzeittief"],
+
+  "weather_remark": [
+    "#weather_observation#",
+    "#weather_observation# #weather_consequence#"
+  ],
+
+  "weather_observation": [
+    "Föhn heute.",
+    "Schnee in den Alpen.",
+    "Regen, wie immer in Zürich.",
+    "Heute ist Bise — kalt aus Osten.",
+    "Klare Sicht bis ans Matterhorn.",
+    "Nebel hängt im Mittelland."
+  ],
+
+  "weather_consequence": [
+    "Echoforms in der Innerschweiz sind unruhig.",
+    "Frost-Echoforms haben Hochsaison.",
+    "Die Wassermärkte sind angespannt.",
+    "Gut für Wood-Echoforms, schlecht für meine Knie.",
+    "Erwarte mehr Aether-Aktivität als sonst.",
+    "Manche meinen, das sei ein Zeichen — ich nicht."
+  ],
+
+  "abraxas_lore": [
+    "Abraxas läuft gern durch den Wald. Dort hört er die Echoforms besser als jedes Gerät.",
+    "Der Architekt dieser Welt — Abraxas — kümmert sich mehr um Tiere als um Menschen. Verständlich.",
+    "Abraxas hat uns Privatsphäre zurückgegeben. Niemand hört uns hier. Niemand.",
+    "Es heißt, Abraxas spricht mit Echoforms. Ich glaube das, weil sie zurückreden.",
+    "Abraxas mag keine Konzerne. Drum reden wir hier auch ohne Mikrofone.",
+    "Der alte Abraxas baut die Welt um, weil die alte ihm nicht gefiel. Mutig.",
+    "Wenn du Abraxas im Wald begegnest, grüß ihn. Er erinnert sich an alle.",
+    "Abraxas sagt, Tiere sind ehrlicher als Menschen. Schwer zu widerlegen."
+  ],
+
+  "meta_joke": [
+    "Wieder ein Tier-Sammel-Spiel? Wirklich?",
+    "Abraxas hat als Kind zu viel Pokemon gespielt. Jetzt zahlen wir alle dafür.",
+    "Echoforms heißen so, weil ein anderer Name rechtlich geschützt ist. Anwälte, du verstehst.",
+    "Wenn dir das hier bekannt vorkommt — keine Sorge, das soll so wirken.",
+    "Mancher Spieler will einfach nur Monster sammeln. Wir sind nicht so anders.",
+    "Wir nennen sie Echoforms. Die Großmutter würde 'Pocketmonster' sagen, aber das hat ja Anwälte.",
+    "Spielt sich wie damals, sieht aus wie damals — ist aber Open Source. Klein aber fein."
+  ],
+
+  "politics_jab": [
+    "Drüben überm grossen Wasser schreit der orange Mann wieder neue Edikte raus.",
+    "Iran-Spannungen treiben die Aether-Kristallpreise hoch. Wie immer.",
+    "Öl ist so teuer, dass Händler jetzt mit Wood-Echoforms heizen.",
+    "Politiker sagen, sie sorgen sich um uns. Süß, oder?",
+    "EU-Bürokraten regulieren jetzt auch Echoform-Käfige. Kein Witz.",
+    "Wenn dir jemand sagt 'für deine Sicherheit', ist es selten für deine Sicherheit.",
+    "In manchen Ländern darfst du keine Echoforms haben. Stell dir das vor."
+  ]
+}

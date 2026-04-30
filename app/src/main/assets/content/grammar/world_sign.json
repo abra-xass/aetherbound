@@ -1,0 +1,30 @@
+{
+  "_comment": "World signs / billboards / notices on TMX maps. Player examines a sign — we generate a fitting line. Tone: terse, slightly humorous, occasionally bureaucratic.",
+
+  "origin": [
+    "#sign_kind#",
+    "#sign_kind# #sign_subtext#"
+  ],
+
+  "sign_kind": [
+    "Willkommen — bitte respektiere die hiesigen Echoforms.",
+    "Achtung: Wilde Echoforms. Bewege dich ruhig.",
+    "Privatgrundstück. Keine Aufzeichnungen. Niemand hört zu.",
+    "Aether-Markt — Vorräte, Prismen, Klatsch.",
+    "Aether-Zentrum — Heilung kostenlos, Daten gespeichert: keine.",
+    "Hier ruht der Aether-Hain. Bitte still.",
+    "Verlassenes Gebäude. Eintreten auf eigene Verantwortung.",
+    "Stadtgrenze. Behördlich nicht erfasst.",
+    "Achtung Glatteis im Winter. Echoforms sind das egal, du nicht.",
+    "Wegweiser: Norden ist da, wo die Sonne nicht ist."
+  ],
+
+  "sign_subtext": [
+    "Aufgestellt von Abraxas-Stiftung.",
+    "Repariert, weil's musste.",
+    "Letzter Eigentümer: unbekannt. Vermutlich gut so.",
+    "Kein WLAN, kein Mobilfunk, keine Anwesenheitspflicht.",
+    "Bei Notfällen: Echoform-Sirene aktivieren.",
+    "Lesen, nicht fotografieren — Privatsphäre, du verstehst."
+  ]
+}

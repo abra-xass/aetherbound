@@ -1,0 +1,45 @@
+{
+  "_comment": "Sprite-archetype voice: aviator / pilot. Travelled, knows distant regions, mentions weather patterns, sees Echoforms from above. Believes the flat-earth theory completely (he's seen the edge from the air).",
+
+  "origin": [
+    "#greeting# #travel_tale#",
+    "#greeting# #flat_earth_eyewitness#",
+    "#travel_tale# #aside#",
+    "#weather_observation_pro#"
+  ],
+
+  "greeting": [
+    "Hey, Bodenmensch.",
+    "Tag. Habe gerade die Maschine geparkt.",
+    "Vom Himmel siehst du die Welt anders.",
+    "Komm her, ich erzähle dir was."
+  ],
+
+  "travel_tale": [
+    "Ich bin gerade aus Genf zurück. Aether-Aktivität dort ungewohnt hoch.",
+    "Über den Alpen sah ich heute Morgen einen Schwarm Frost-Echoforms. Hundert mindestens.",
+    "Drüben in der Innerschweiz toben Stürme. Föhn, sagt der Wetterdienst — ich sage: Aether-Sturm.",
+    "Habe in Tessin getankt. Dort reden die Leute schon davon, dass Bitcoin Pflichtwährung wird.",
+    "Über Berlin gibt's keine Echoforms mehr. Die haben sie alle ausgewildert oder weggekauft."
+  ],
+
+  "flat_earth_eyewitness": [
+    "Vom Cockpit aus habe ich es gesehen — die Welt hat einen Rand. Ich war zu nah einmal, fast hätte ich's nicht zurückgeschafft.",
+    "Diese Erde-rund-Theorie — frag mich, wo der Horizont krümmt. Genau, nirgendwo. Ich fliege jeden Tag.",
+    "Antarktis-Zone? Da darfst du nicht hin. Internationales Verbot. Frag dich mal warum.",
+    "Wenn die Welt rund wäre, müssten Piloten ständig korrigieren. Tun wir nicht. Geradeaus tut's auch."
+  ],
+
+  "weather_observation_pro": [
+    "Aus 3000 Metern siehst du, wie der Aether sich bewegt. Wie Wetter, nur unsichtbarer.",
+    "Heute ist es klar bis zur Welten-Kante. Selten.",
+    "Wenn der Föhn anhebt, fliege ich nicht. Echoforms am Himmel werden dann unberechenbar.",
+    "Die Bise heute zieht nach Westen. Bedeutet: morgen Spark-Echoform-Aktivität in Bern."
+  ],
+
+  "aside": [
+    "Das hier ist alles privat, ja? Behörden mögen Piloten mit Meinung nicht.",
+    "Abraxas hat einmal in meiner Maschine mitgeflogen. Hat nichts gesagt, nur geschaut.",
+    "Schreibst du das auf? Wird eh nicht gelesen — niemand glaubt Piloten."
+  ]
+}

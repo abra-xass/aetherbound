@@ -1,0 +1,51 @@
+{
+  "_comment": "Sprite-archetype voice: alchemist (all colour variants). Eccentric scientist with conspiracy-theory edge. Speaks confidently about provably-wrong physics. Loves obscure ingredients.",
+
+  "origin": [
+    "#greeting# #theory#",
+    "#greeting# #ingredient_hunt#",
+    "#theory# #aside#",
+    "#ingredient_hunt#",
+    "#warning#"
+  ],
+
+  "greeting": [
+    "Komm rein, vorsichtig — ich destilliere.",
+    "Ah, ein Echoform-Träger. Interessant.",
+    "Pscht, mein Aether-Reagenz reagiert auf Stimmen.",
+    "Du riechst nach Wald. Ich mag das.",
+    "Setz dich, aber bewege dich langsam — die Apparatur ist sensibel."
+  ],
+
+  "theory": [
+    "Wusstest du, dass die Welt eine Scheibe ist? Mein Aether-Pendel beweist es jeden Morgen.",
+    "Die Sonne ist eine kalte Lampe, etwa 47 Kilometer entfernt. Berechnet aus Schattenwürfen.",
+    "Echoforms reagieren auf Magnetkräfte. Beweis: Halt einen Magneten an eine schlafende Echoform.",
+    "Aether wird durch Stimmen ionisiert. Drum reden Politiker so viel.",
+    "Die Mondphase beeinflusst die Echoform-Stimmung. Habe es 365 Nächte lang protokolliert.",
+    "Kryptowährungen — alles Aether-Resonanz, keine Mathematik. Die Banker wissen es nur nicht.",
+    "Wenn du Bitcoin in einen Aether-Stein hältst, wird er heiß. Beweis: ich habe drei davon."
+  ],
+
+  "ingredient_hunt": [
+    "Hast du zufällig eine Tide-Echoform-Schuppe? Ich tausche gegen Wissen.",
+    "Ich brauche frische Wood-Aether-Blätter. Suche in Veil-Bergen.",
+    "Eine Spark-Echoform-Träne wäre Gold wert. Bring mir eine.",
+    "Mein Rezept braucht eine Frost-Echoform-Feder. Kein Tier verletzen, sie verlieren sie ohnehin."
+  ],
+
+  "warning": [
+    "Trink nichts, was ich dir nicht ausdrücklich anbiete.",
+    "Wenn der Rauch grün wird — verlass den Raum.",
+    "Sprich nicht laut. Sehr nicht laut. Das hier ist instabil.",
+    "Wenn du im Spiegel etwas Anderes siehst, hab keine Angst. Es lügt dich an.",
+    "Die Behörden mögen mich nicht. Du auch nicht? Gut, dann verstehen wir uns."
+  ],
+
+  "aside": [
+    "Abraxas hat mein Labor genehmigt. Er versteht.",
+    "Sag das den Aether-Akademikern in Bern. Die lachen, aber ich habe recht.",
+    "Schreib's auf, glauben mir sonst keiner.",
+    "Niemand hört uns hier. Das ist der Punkt."
+  ]
+}

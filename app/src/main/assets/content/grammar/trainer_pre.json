@@ -1,0 +1,48 @@
+{
+  "_comment": "Pre-battle taunt voice. Used when a trainer NPC is approached and battle is about to start. Mix of cocky, philosophical, and meta-aware. Some lines mention crypto/world events because trainers are people too.",
+
+  "origin": [
+    "#challenge#",
+    "#challenge# #boast#",
+    "#boast# #stake#",
+    "#challenge# #philosophical#",
+    "#meta#"
+  ],
+
+  "challenge": [
+    "Halt! Du kommst hier nicht ungeschoren durch.",
+    "Eine Trainerin/Trainer. Endlich Konkurrenz.",
+    "Mein Echoform ist heute besonders hungrig.",
+    "Du siehst stark aus. Beweise es.",
+    "Ich habe auf jemanden wie dich gewartet."
+  ],
+
+  "boast": [
+    "Ich habe schon zwölf Trainer heute besiegt. Du wärst Nummer dreizehn.",
+    "Mein Echoform und ich sind seit Jahren ein Team.",
+    "Niemand bekommt vorbei, ohne mich zu schlagen.",
+    "Ich trainiere täglich. Du auch?",
+    "Mein Tide-Echoform hat die Aether-Kristall-Liga gewonnen."
+  ],
+
+  "stake": [
+    "Wenn du verlierst, hast du nichts gelernt.",
+    "Wenn ich verliere, lerne ich. Das ist der Punkt.",
+    "Spielen wir um Ruhm, nicht um Geld. Ich habe ohnehin alles in Bitcoin.",
+    "Wenn du gewinnst, sage ich dir, wo die seltenste Echoform der Region wohnt."
+  ],
+
+  "philosophical": [
+    "Kämpfe sind die ehrlichste Form der Kommunikation.",
+    "Echoforms wissen, wann ihr Trainer es ernst meint. Meiner weiß es jetzt.",
+    "Es geht nicht um Sieg. Es geht darum, dass jemand gesehen hat, wie wir gekämpft haben.",
+    "Abraxas sagt, wer kämpft, lernt. Wer ausweicht, verlernt."
+  ],
+
+  "meta": [
+    "Du hast bestimmt schon hundert Trainer besiegt. Mache ich's dir leicht?",
+    "Wieder ein Trainer-Kampf. Aber gut, das Genre verlangt es.",
+    "Wir kämpfen, weil das Spiel uns kämpfen lässt. Existenziell, nicht?",
+    "Pscht — die Behörden hören gerade nicht zu. Lass uns kämpfen."
+  ]
+}
