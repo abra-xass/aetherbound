@@ -24,8 +24,15 @@ class MovementController(
     initialTileY: Int,
     private val tileWidth: Int = 16,
     private val tileHeight: Int = 16,
-    private val stepMs: Int = STEP_MS,
+    initialStepMs: Int = STEP_MS,
 ) {
+    /**
+     * Ms-per-tile-step. Mutable so callers can speed up the player when
+     * a Bike is active (typically halve from 220 → 110) or slow them
+     * down for cutscenes. Reads each frame in [tick] so the next step
+     * starts at the new pace immediately.
+     */
+    var stepMs: Int = initialStepMs
     enum class Facing { NORTH, SOUTH, EAST, WEST }
 
     var tileX: Int = initialTileX; private set

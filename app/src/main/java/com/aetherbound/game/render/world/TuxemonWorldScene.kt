@@ -95,6 +95,26 @@ fun TuxemonWorldScene(
      * (e.g. the SP sandbox) don't need to wire it up.
      */
     onAutoSaveRequested: suspend () -> Unit = {},
+    /**
+     * Whether the player has unlocked the Surf technique. Drives
+     * visibility of the Surf-toggle in the action HUD. When the toggle
+     * is active the encounter pool flips to [ScreenTheme.WaterSurface]
+     * — exclusive deep-sea pool with WATER/FROST/COSMIC bias.
+     */
+    hasSurf: Boolean = false,
+    /**
+     * Whether the player owns a bicycle. When true, a Bike-toggle
+     * appears in the HUD; activating it halves [MovementController]'s
+     * step duration (= double walking speed).
+     */
+    hasBicycle: Boolean = false,
+    /**
+     * Fires when the player first enters a new town map (one of the
+     * entries in [com.aetherbound.game.core.data.TownRegistry]). The
+     * activity records this in [PlayerProgress.visitedTowns] so the
+     * Fly menu unlocks new destinations.
+     */
+    onTownEntered: (townMapPath: String) -> Unit = {},
     modifier: Modifier = Modifier,
 ) {
     val ctx = LocalContext.current
@@ -136,6 +156,24 @@ fun TuxemonWorldScene(
      * by AutoSaveScheduler — flashes ~600 ms on every auto-save tick.
      */
     val savingFlash = remember { androidx.compose.runtime.mutableStateOf(false) }
+    /** Surf mode (on/off). Visible only if [hasSurf]. Flips encounter biome. */
+    var surfActive by remember(tmxAssetPath) { mutableStateOf(false) }
+    /** Bike mode (on/off). Visible only if [hasBicycle]. Halves step duration. */
+    var bikeActive by remember(tmxAssetPath) { mutableStateOf(false) }
+
+    // Sync MovementController.stepMs with bikeActive — bike halves walk
+    // duration so the player covers ground twice as fast when riding.
+    LaunchedEffect(bikeActive) {
+        movement.stepMs = if (bikeActive) 110 else 220
+    }
+
+    // Town-entry detection — fires once per fresh map load when the
+    // player walks into a registered town for the first time.
+    LaunchedEffect(tmxAssetPath) {
+        if (com.aetherbound.game.core.data.TownRegistry.isTown(tmxAssetPath)) {
+            onTownEntered(tmxAssetPath)
+        }
+    }
 
     // Async map load
     LaunchedEffect(tmxAssetPath) {
@@ -260,7 +298,9 @@ fun TuxemonWorldScene(
                         // Encounter roll only on plain ground / grass
                         val onGrass = event !is WorldEvent.Generic || event.type.contains("grass")
                         encounter.onStepCompleted(
-                            theme = biome,
+                            // When surfing, flip the biome to WaterSurface
+                            // so deep-sea exclusive Echoforms become reachable.
+                            theme = if (surfActive) com.aetherbound.game.core.ScreenTheme.WaterSurface else biome,
                             onEncounterTile = onGrass,
                             level = (rng.nextInt(3) + biomeLevelFloor(biome)),
                             rng = rng,
@@ -333,6 +373,24 @@ fun TuxemonWorldScene(
             modifier = Modifier
                 .align(Alignment.TopEnd)
                 .padding(top = 84.dp, end = 12.dp),
+        )
+
+        // World-action toggles — Surf / Bike / Fly chips. Each only
+        // shows up when the matching ability is unlocked.
+        com.aetherbound.game.render.ui.WorldActionToggles(
+            hasSurf = hasSurf,
+            surfActive = surfActive,
+            onSurfToggle = { surfActive = !surfActive },
+            hasBicycle = hasBicycle,
+            bikeActive = bikeActive,
+            onBikeToggle = { bikeActive = !bikeActive },
+            // Fly is wired from the activity (it switches the map). Disabled
+            // here for now; Session 5 wires it up via onFlyRequested.
+            canFly = false,
+            onFlyTap = { /* TODO: open FlyMenu */ },
+            modifier = Modifier
+                .align(Alignment.BottomEnd)
+                .padding(bottom = 80.dp, end = 12.dp),
         )
 
         if (statusLine.isNotEmpty()) {

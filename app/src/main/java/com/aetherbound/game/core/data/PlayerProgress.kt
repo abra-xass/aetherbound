@@ -61,6 +61,18 @@ data class PlayerProgress(
      * winnings). Defaults to zero for legacy saves so loading is safe.
      */
     val multiplayer: MultiplayerStats = MultiplayerStats(),
+    /**
+     * True when the player has unlocked the Surf technique. Earned via
+     * a quest reward; not a shop item. Drives the Surf-toggle in the
+     * world HUD and the WaterSurface encounter pool.
+     */
+    val hasSurf: Boolean = false,
+    /**
+     * Towns the player has personally visited. Drives the Fly /
+     * Fast-Travel destination list. Auto-populated on first entry to
+     * any map flagged as a town in [com.aetherbound.game.core.data.TownRegistry].
+     */
+    val visitedTowns: Set<String> = emptySet(),
 ) {
     fun see(slug: String): PlayerProgress = copy(seenSlugs = seenSlugs + slug)
     fun capture(slug: String): PlayerProgress = copy(
@@ -71,6 +83,8 @@ data class PlayerProgress(
         copy(badgesEarned = badgesEarned + trainerId)
     fun setFlag(flag: String): PlayerProgress = copy(collectedFlags = collectedFlags + flag)
     fun hasFlag(flag: String): Boolean = flag in collectedFlags
+    fun visitTown(townId: String): PlayerProgress = copy(visitedTowns = visitedTowns + townId)
+    fun grantSurf(): PlayerProgress = copy(hasSurf = true)
 
     /** Pokédex-style completion percentage out of [totalSpecies]. */
     fun completionPercent(totalSpecies: Int = 411): Int =

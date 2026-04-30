@@ -586,6 +586,17 @@ private fun GamePreviewRoot(
                         },
                         playerName = progress.playerName,
                         playerGender = progress.playerGender,
+                        hasSurf = progress.hasSurf,
+                        hasBicycle = inventory.has("bicycle"),
+                        onTownEntered = { townMapPath ->
+                            // First-time town entry → unlocks Fly destination.
+                            if (townMapPath !in progress.visitedTowns) {
+                                progress = progress.visitTown(townMapPath)
+                                saveSlotMessage = "Stadt entdeckt: " +
+                                    com.aetherbound.game.core.data.TownRegistry
+                                        .displayNameFor(townMapPath)
+                            }
+                        },
                         // 10-min auto-save tick — push current state into
                         // the 6-slot ring buffer. Snapshot is built from
                         // the activity's state so we capture EVERYTHING
