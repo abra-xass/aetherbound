@@ -7,11 +7,16 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import com.aetherbound.game.render.ui.EchoformSpriteImage
+import com.aetherbound.game.render.ui.EchoformSpriteVariant
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -69,10 +74,21 @@ fun MultiplayerArenaScene(
     peerWins: Int,
     peerLosses: Int,
     mode: MultiplayerRewards.Mode,
-    peerActions: Flow<Int>,
-    onLocalAction: (Int) -> Unit,
+    peerActions: Flow<PeerMove>,
+    onLocalAction: (moveIdx: Int, stateHashAfter: String) -> Unit,
     onMatchEnd: (MatchEndResult) -> Unit,
     onConcede: () -> Unit,
+    /**
+     * Player's full party — used for mid-match switching. When the active
+     * mon faints, the scene auto-swaps to the first non-fainted member.
+     * When the user taps the Switch button, the [showSwitchPicker] state
+     * opens an inline picker over the move-buttons.
+     */
+    party: com.aetherbound.game.core.data.Party = com.aetherbound.game.core.data.Party(
+        members = listOf(initialPlayer)
+    ),
+    /** Fires when the player picks a new active member — index into [party.members]. */
+    onSwitchTo: (Int) -> Unit = {},
     modifier: Modifier = Modifier,
 ) {
     var state by remember(rngSeed) {
@@ -88,6 +104,18 @@ fun MultiplayerArenaScene(
     var statusLine by remember { mutableStateOf("Pick a move.") }
     var phase by remember { mutableStateOf(Phase.Choosing) }
     var playerFaints by remember { mutableIntStateOf(0) }
+    var showSwitchPicker by remember { mutableStateOf(false) }
+    var activeMemberIdx by remember { mutableIntStateOf(party.activeIndex) }
+
+    /** Helper: replace state.player with party.members[idx], reset statuses. */
+    fun swapToMember(newIdx: Int) {
+        val newMember = party.members.getOrNull(newIdx) ?: return
+        if (newMember.isFainted) return
+        activeMemberIdx = newIdx
+        state = state.copy(player = newMember, playerStatuses = emptyList())
+        onSwitchTo(newIdx)
+        statusLine = "${newMember.species.name} stepped into the ring."
+    }
 
     // Channel for local move picks — the resolver loop suspends on receive().
     val pickGate = remember { Channel<Int>(Channel.CONFLATED) }
@@ -98,13 +126,13 @@ fun MultiplayerArenaScene(
             phase = Phase.Choosing
             statusLine = "Pick a move."
             val mine = pickGate.receive()
-            onLocalAction(mine)
+            // We don't yet know what state-hash will result — we resolve
+            // first, then publish the post-resolution hash to the peer so
+            // they can verify against their own. That mirrors how the
+            // peer's hash is also "after their resolution", so the two
+            // claims must be byte-equal on a deterministic resolver.
             statusLine = "Waiting for $peerDisplayName…"
             phase = Phase.Waiting
-            // Bounded wait: if the peer's BATTLE_MOVE doesn't arrive within
-            // the Tor-aware moveTimeout (default 45s — schluckt Tor-circuit-
-            // flaps), the local client treats the peer as forfeit. The post-
-            // match restore then rolls our party back to pre-match state.
             val peer = withTimeoutOrNull(BattleTimeouts.Tor.moveTimeout) {
                 peerActions.first()
             }
@@ -125,8 +153,35 @@ fun MultiplayerArenaScene(
             val resolved = BattleResolver.resolveTurn(
                 state = state,
                 playerAction = BattleAction.UseTechnique(mine),
-                opponentAction = BattleAction.UseTechnique(peer),
+                opponentAction = BattleAction.UseTechnique(peer.moveIdx),
             )
+
+            // ── State-hash desync check ────────────────────────────────
+            // Both peers ran the same resolver with the same seed + same
+            // actions. If we disagree on the resulting state, someone
+            // cheated or the resolver isn't truly deterministic. Abort
+            // cleanly with no rewards in either direction.
+            val ourHash = com.aetherbound.game.core.data.MatrixWireFormat.hashState(
+                playerHp = resolved.player.currentVigor,
+                opponentHp = resolved.opponent.currentVigor,
+                turn = resolved.turn,
+            )
+            if (peer.stateHashAfter.isNotEmpty() && peer.stateHashAfter != ourHash) {
+                statusLine = "Desync detected — match aborted."
+                onMatchEnd(
+                    MatchEndResult(
+                        won = false,
+                        isDraw = true,    // both sides treated as draw
+                        potDelta = 0,
+                        xpDelta = 0,
+                        finalTurn = resolved.turn,
+                        playerSweep = false,
+                    )
+                )
+                return@LaunchedEffect
+            }
+            // Tell the activity to ship our move + post-resolution hash on the wire.
+            onLocalAction(mine, ourHash)
             phase = Phase.Animating
             val tail = resolved.log.drop(state.log.size)
             tail.filterIsInstance<BattleEvent.TechniqueResolved>().firstOrNull()?.let { ev ->
@@ -137,6 +192,27 @@ fun MultiplayerArenaScene(
             }
             tail.filterIsInstance<BattleEvent.Faint>().forEach { f ->
                 if (f.side == Side.PLAYER) playerFaints++
+            }
+
+            // Mid-match auto-switch: if our active fainted and the party
+            // still has non-fainted members, hot-swap before next turn.
+            // The swap clears statuses on the slot (Pokemon convention).
+            if (resolved.player.isFainted) {
+                // Update the party member to reflect its current HP/status before swapping.
+                val nextAliveIdx = party.members.indexOfFirst { idx ->
+                    idx == idx
+                }.let {
+                    party.members.indexOfFirst { it != resolved.player && !it.isFainted }
+                }
+                if (nextAliveIdx >= 0) {
+                    val next = party.members[nextAliveIdx]
+                    state = resolved.copy(player = next, playerStatuses = emptyList())
+                    activeMemberIdx = nextAliveIdx
+                    onSwitchTo(nextAliveIdx)
+                    statusLine = "${resolved.player.species.name} fainted! ${next.species.name} steps in."
+                    delay(900)
+                    continue
+                }
             }
             state = resolved
             delay(700)
@@ -190,6 +266,35 @@ fun MultiplayerArenaScene(
             }
         }
 
+        // Echoform sprites — opponent at top-right, player bottom-left.
+        // Reuses the same PNG-loader the SP BattleScene + Party UI use.
+        BoxWithConstraints(Modifier.fillMaxSize()) {
+            val w = maxWidth
+            val h = maxHeight
+            Box(
+                Modifier
+                    .offset(x = w * 0.55f, y = h * 0.20f)
+                    .size(160.dp),
+            ) {
+                EchoformSpriteImage(
+                    slug = state.opponent.species.id,
+                    variant = EchoformSpriteVariant.FRONT,
+                    modifier = Modifier.fillMaxSize(),
+                )
+            }
+            Box(
+                Modifier
+                    .offset(x = w * 0.05f, y = h * 0.50f)
+                    .size(200.dp),
+            ) {
+                EchoformSpriteImage(
+                    slug = state.player.species.id,
+                    variant = EchoformSpriteVariant.BACK,
+                    modifier = Modifier.fillMaxSize(),
+                )
+            }
+        }
+
         // HP bars + status line
         Column(Modifier.align(Alignment.Center).fillMaxWidth().padding(20.dp)) {
             HpReadout(
@@ -210,25 +315,48 @@ fun MultiplayerArenaScene(
 
         // Bottom: move selector / waiting / animating overlay
         Column(Modifier.align(Alignment.BottomCenter).fillMaxWidth().padding(12.dp)) {
-            when (phase) {
-                Phase.Choosing -> MoveButtons(
+            when {
+                showSwitchPicker -> SwitchPicker(
+                    party = party,
+                    currentIdx = activeMemberIdx,
+                    onPick = { idx ->
+                        showSwitchPicker = false
+                        swapToMember(idx)
+                    },
+                    onCancel = { showSwitchPicker = false },
+                )
+                phase == Phase.Choosing -> MoveButtons(
                     techniques = state.player.techniques,
                     enabled = !state.isOver,
                     onPick = { idx -> pickGate.trySend(idx) },
                 )
-                Phase.Waiting -> InfoBox("Waiting for ${peerDisplayName}'s move…", AetherColors.GoldBright)
-                Phase.Animating -> InfoBox(statusLine, AetherColors.ParchmentText)
+                phase == Phase.Waiting -> InfoBox("Waiting for ${peerDisplayName}'s move…", AetherColors.GoldBright)
+                phase == Phase.Animating -> InfoBox(statusLine, AetherColors.ParchmentText)
             }
             Spacer(Modifier.height(6.dp))
-            Box(
-                Modifier
-                    .clip(RoundedCornerShape(8.dp))
-                    .background(AetherColors.Slate)
-                    .clickable(onClick = onConcede)
-                    .padding(horizontal = 12.dp, vertical = 6.dp)
-                    .align(Alignment.End),
-            ) {
-                Text("Concede", color = AetherColors.WarningRed, fontSize = 11.sp, fontWeight = FontWeight.Bold)
+            Row(horizontalArrangement = Arrangement.spacedBy(6.dp), modifier = Modifier.align(Alignment.End)) {
+                if (party.members.size > 1) {
+                    Box(
+                        Modifier
+                            .clip(RoundedCornerShape(8.dp))
+                            .background(AetherColors.Slate)
+                            .clickable(enabled = phase == Phase.Choosing && !state.isOver) {
+                                showSwitchPicker = true
+                            }
+                            .padding(horizontal = 12.dp, vertical = 6.dp),
+                    ) {
+                        Text("Switch", color = AetherColors.GoldBright, fontSize = 11.sp, fontWeight = FontWeight.Bold)
+                    }
+                }
+                Box(
+                    Modifier
+                        .clip(RoundedCornerShape(8.dp))
+                        .background(AetherColors.Slate)
+                        .clickable(onClick = onConcede)
+                        .padding(horizontal = 12.dp, vertical = 6.dp),
+                ) {
+                    Text("Concede", color = AetherColors.WarningRed, fontSize = 11.sp, fontWeight = FontWeight.Bold)
+                }
             }
         }
     }
@@ -258,6 +386,54 @@ private fun MoveButtons(
                     fontSize = 13.sp, fontWeight = FontWeight.Bold,
                 )
             }
+        }
+    }
+}
+
+@Composable
+private fun SwitchPicker(
+    party: com.aetherbound.game.core.data.Party,
+    currentIdx: Int,
+    onPick: (Int) -> Unit,
+    onCancel: () -> Unit,
+) {
+    Column(
+        Modifier
+            .fillMaxWidth()
+            .clip(RoundedCornerShape(10.dp))
+            .background(AetherColors.Obsidian.copy(alpha = 0.95f))
+            .padding(12.dp),
+        verticalArrangement = Arrangement.spacedBy(6.dp),
+    ) {
+        Text("Switch active", color = AetherColors.GoldBright, fontSize = 12.sp, fontWeight = FontWeight.Bold)
+        party.members.forEachIndexed { i, m ->
+            val available = !m.isFainted && i != currentIdx
+            Box(
+                Modifier
+                    .fillMaxWidth()
+                    .clip(RoundedCornerShape(6.dp))
+                    .background(if (available) AetherColors.Slate else AetherColors.Slate.copy(alpha = 0.4f))
+                    .clickable(enabled = available) { onPick(i) }
+                    .padding(horizontal = 10.dp, vertical = 8.dp),
+            ) {
+                Text(
+                    "${i + 1}. ${m.species.name}  Lv.${m.level}  HP ${m.currentVigor}/${m.maxVigor}" +
+                        (if (i == currentIdx) "  · (active)" else "") +
+                        (if (m.isFainted) "  · FAINTED" else ""),
+                    color = if (available) AetherColors.ParchmentText else AetherColors.MutedText,
+                    fontSize = 12.sp,
+                )
+            }
+        }
+        Box(
+            Modifier
+                .clip(RoundedCornerShape(6.dp))
+                .background(AetherColors.Slate)
+                .clickable(onClick = onCancel)
+                .padding(horizontal = 12.dp, vertical = 6.dp)
+                .align(Alignment.End),
+        ) {
+            Text("Cancel", color = AetherColors.MutedText, fontSize = 11.sp)
         }
     }
 }
@@ -305,6 +481,13 @@ private fun nameForSide(state: BattleState, side: Side): String = when (side) {
     Side.PLAYER -> state.player.species.name
     Side.OPPONENT -> state.opponent.species.name
 }
+
+/**
+ * One peer move as the arena consumes it. Includes the claimed state-hash
+ * the peer says it computed AFTER applying its own action — we recompute
+ * locally with the same deterministic resolver and abort on mismatch.
+ */
+data class PeerMove(val moveIdx: Int, val stateHashAfter: String)
 
 /** Match-end snapshot delivered via [onMatchEnd]. Activity applies it. */
 data class MatchEndResult(

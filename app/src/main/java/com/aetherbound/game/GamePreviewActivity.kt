@@ -183,7 +183,9 @@ private fun GamePreviewRoot(
     // Channel that the bridge feeds with peer move-indices when the
     // BATTLE_MOVE Matrix event lands. ArenaScene's resolver-loop suspends on it.
     val mpPeerActionsChannel = remember {
-        kotlinx.coroutines.channels.Channel<Int>(kotlinx.coroutines.channels.Channel.CONFLATED)
+        kotlinx.coroutines.channels.Channel<com.aetherbound.game.render.battle.PeerMove>(
+            kotlinx.coroutines.channels.Channel.CONFLATED,
+        )
     }
     val mpPeerActionsFlow = remember(mpPeerActionsChannel) {
         kotlinx.coroutines.flow.flow {
@@ -199,7 +201,10 @@ private fun GamePreviewRoot(
             when (ev.type) {
                 com.aetherbound.game.core.data.MatrixWireFormat.EventType.BATTLE_MOVE -> {
                     val moveIdx = ev.body.optInt("moveIdx", 0)
-                    mpPeerActionsChannel.trySend(moveIdx)
+                    val claimedHash = ev.body.optString("stateHash", "")
+                    mpPeerActionsChannel.trySend(
+                        com.aetherbound.game.render.battle.PeerMove(moveIdx, claimedHash)
+                    )
                 }
                 com.aetherbound.game.core.data.MatrixWireFormat.EventType.BATTLE_INVITE_REPLY -> {
                     if (ev.body.optBoolean("accepted", false)) mpPeerReady = true
@@ -791,12 +796,17 @@ private fun GamePreviewRoot(
                             peerWins = 0, peerLosses = 0,
                             mode = mpMode,
                             peerActions = mpPeerActionsFlow,
-                            onLocalAction = { idx ->
-                                // Real impl: bridge.sendBattleMove(roomId, turn, idx, stateHash)
-                                // MVP demo: feed peer-action channel with a random reply
-                                // so the resolver loop progresses on a single device.
-                                mpPeerActionsChannel.trySend(
-                                    (0 until (party.active?.techniques?.size ?: 1)).random()
+                            onLocalAction = { idx, stateHashAfter ->
+                                // Ship our move + post-resolution state-hash to Thot,
+                                // which posts it as an io.aether.battle.move Matrix
+                                // event into the room. The peer's Aetherbound picks
+                                // it up via BattleRelayChannel.
+                                com.aetherbound.game.core.data.AetherSendBridge.sendBattleMove(
+                                    ctx = ctx,
+                                    roomId = mpRoomId,
+                                    turn = 0,
+                                    moveIdx = idx,
+                                    stateHash = stateHashAfter,
                                 )
                             },
                             onMatchEnd = { result ->
@@ -860,6 +870,8 @@ private fun GamePreviewRoot(
                                 com.aetherbound.game.core.data.ActiveMatchPersist.clear(ctx)
                                 scene = Scene.TuxemonWorld
                             },
+                            party = party,
+                            onSwitchTo = { newIdx -> party = party.switch(newIdx) },
                             onConcede = {
                                 // Concede counts as a loss for ranked matches —
                                 // record before restore so stats persist.
