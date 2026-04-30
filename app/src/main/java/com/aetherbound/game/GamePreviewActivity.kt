@@ -588,6 +588,7 @@ private fun GamePreviewRoot(
                         playerGender = progress.playerGender,
                         hasSurf = progress.hasSurf,
                         hasBicycle = inventory.has("bicycle"),
+                        autoSaveEnabled = progress.controls.autoSaveEnabled,
                         onTownEntered = { townMapPath ->
                             // First-time town entry → unlocks Fly destination.
                             if (townMapPath !in progress.visitedTowns) {
@@ -669,6 +670,7 @@ private fun GamePreviewRoot(
                         tuxemonOpponentLevel = tuxemonWildLevel,
                         tuxemonPlayerSlug = if (tuxSlug != null) "agnidon" else null,
                         tuxemonPlayerLevel = if (tuxSlug != null) 8 else 18,
+                        animationsEnabled = progress.controls.battleAnimationsEnabled,
                         // Live-sync to current active party member: switch / heal flow back here.
                         playerOverride = party.active,
                         onSpeciesSeen = { slug -> progress = progress.see(slug) },

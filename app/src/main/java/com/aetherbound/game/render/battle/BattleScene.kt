@@ -78,6 +78,14 @@ fun BattleScene(
     /** Optional wild-encounter species; null = uses the fixed Reeva story battle. */
     opponentSpeciesId: String? = null,
     /**
+     * Master switch on attack animations. When false, the recipe-driven
+     * frame pump is skipped — the [AttackAnimationState] is fast-forwarded
+     * to its end-frame so damage logic still resolves but no visuals play.
+     * Saves significant battery on long grinding sessions.
+     * Driven by [com.aetherbound.game.core.data.ControlSettings.battleAnimationsEnabled].
+     */
+    animationsEnabled: Boolean = true,
+    /**
      * If non-null, the *player* Echoform is built from this Tuxemon slug via
      * [com.aetherbound.game.core.data.TuxemonBattleSetup] instead of the hand-tuned
      * [PilotEchoforms.playerStarter]. JSON-driven full pipeline.
@@ -497,15 +505,26 @@ fun BattleScene(
     // Animation pump driven off frame nanos
     LaunchedEffect(current) {
         val st = current ?: return@LaunchedEffect
-        var lastNs = 0L
-        while (!st.finished) {
-            withFrameNanos { now ->
-                val dt = if (lastNs == 0L) 16f else ((now - lastNs) / 1_000_000f).coerceAtMost(50f)
-                lastNs = now
-                // Slow-motion during Storm/Legendary cinematic windows
-                val timeScale = cinematicTimeScale(st)
-                st.advance(dt * timeScale)
-                frameTick = now      // <- triggers Canvas + sprite-offset recomposition every frame
+        if (!animationsEnabled) {
+            // Battery-saver mode: fast-forward the animation state past
+            // its hit-frame + end-frame so the post-pump logic (queue
+            // second action, end-of-turn) runs as normal — but no
+            // visuals are produced. Particles/projectile/flash all
+            // skipped; only the resolver damage applies.
+            st.elapsedMs = (st.recipe.effectiveDurationMs + 1).toFloat()
+            st.hitFired = true
+            frameTick = System.nanoTime()
+        } else {
+            var lastNs = 0L
+            while (!st.finished) {
+                withFrameNanos { now ->
+                    val dt = if (lastNs == 0L) 16f else ((now - lastNs) / 1_000_000f).coerceAtMost(50f)
+                    lastNs = now
+                    // Slow-motion during Storm/Legendary cinematic windows
+                    val timeScale = cinematicTimeScale(st)
+                    st.advance(dt * timeScale)
+                    frameTick = now      // <- triggers Canvas + sprite-offset recomposition every frame
+                }
             }
         }
         // Cinematic post-hit pause (Storm = 240ms, Legendary = 600ms)

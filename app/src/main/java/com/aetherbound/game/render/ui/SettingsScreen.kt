@@ -104,6 +104,34 @@ fun SettingsScreen(
 
         Spacer(Modifier.height(16.dp))
 
+        // ── AKKU / BATTERIE ────────────────────────────────────
+        Section("AKKU")
+        ToggleRow(
+            label = "Kampfanimationen",
+            checked = progress.controls.battleAnimationsEnabled,
+            onChecked = {
+                onChange(progress.copy(controls = progress.controls.copy(battleAnimationsEnabled = it)))
+            },
+        )
+        Text(
+            "Aus = Kämpfe lösen sich sofort auf, kein Visual-FX. Spart Akku.",
+            color = AetherColors.MutedText, fontSize = 10.sp,
+        )
+        Spacer(Modifier.height(8.dp))
+        ToggleRow(
+            label = "Auto-Save (alle 10 Min)",
+            checked = progress.controls.autoSaveEnabled,
+            onChecked = {
+                onChange(progress.copy(controls = progress.controls.copy(autoSaveEnabled = it)))
+            },
+        )
+        Text(
+            "Aus = nur manuell speichern. Empfohlen: an.",
+            color = AetherColors.MutedText, fontSize = 10.sp,
+        )
+
+        Spacer(Modifier.height(16.dp))
+
         // ── DAY/NIGHT OVERRIDE ──────────────────────────────────
         Section("DAY/NIGHT")
         Text(

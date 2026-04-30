@@ -41,8 +41,11 @@ import kotlinx.coroutines.withContext
 fun AutoSaveScheduler(
     savingFlash: MutableState<Boolean>,
     onAutoSaveRequested: suspend () -> Unit,
+    /** When false, the scheduler suspends — manual saves still work via UI. */
+    enabled: Boolean = true,
 ) {
-    LaunchedEffect(Unit) {
+    LaunchedEffect(enabled) {
+        if (!enabled) return@LaunchedEffect
         // First save: 10 min after entering the world (not immediately —
         // gives the player time to actually do something worth saving).
         while (true) {

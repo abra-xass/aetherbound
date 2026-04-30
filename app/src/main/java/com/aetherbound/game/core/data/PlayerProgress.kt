@@ -123,4 +123,17 @@ data class ControlSettings(
     val backOpensMenu: Boolean = true,
     /** Override the real-clock day/night cycle with a fixed phase (debug). */
     val forcedPhase: DayNightPhase? = null,
+    /**
+     * Battle-scene animations on/off. When false, the scene skips the
+     * recipe-driven attack animations (caster motion, projectile,
+     * impact burst, particles, bloom) — battles resolve in 1-2 frames
+     * with status-line text only. Saves significant battery on long
+     * grinding sessions.
+     */
+    val battleAnimationsEnabled: Boolean = true,
+    /**
+     * Auto-save on/off. When false, [com.aetherbound.game.render.world.AutoSaveScheduler]
+     * skips its 10-min ring-push. Manual saves still work.
+     */
+    val autoSaveEnabled: Boolean = true,
 )

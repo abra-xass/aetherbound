@@ -96,6 +96,11 @@ fun TuxemonWorldScene(
      */
     onAutoSaveRequested: suspend () -> Unit = {},
     /**
+     * Whether auto-save runs. Driven by [com.aetherbound.game.core.data.ControlSettings.autoSaveEnabled].
+     * When false, only manual saves persist.
+     */
+    autoSaveEnabled: Boolean = true,
+    /**
      * Whether the player has unlocked the Surf technique. Drives
      * visibility of the Surf-toggle in the action HUD. When the toggle
      * is active the encounter pool flips to [ScreenTheme.WaterSurface]
@@ -201,6 +206,7 @@ fun TuxemonWorldScene(
     AutoSaveScheduler(
         savingFlash = savingFlash,
         onAutoSaveRequested = onAutoSaveRequested,
+        enabled = autoSaveEnabled,
     )
 
     // Frame loop — advance MovementController, sample encounter check on each completed step
