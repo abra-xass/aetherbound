@@ -1,0 +1,77 @@
+{
+  "_comment": "Sprite-archetype voice: monk / mystic / sage. Used for Buddha-mountain map characters and any spiritually-coded NPC. Heavy on Don Juan (via Carlos Castaneda), Alan Watts, and a tribute branch for the dev's late friend Andy. Tone: soft-spoken paradox, never preachy, occasionally absurdist.",
+
+  "origin": [
+    "#don_juan_wisdom#",
+    "#don_juan_wisdom# #don_juan_aside#",
+    "#watts_paradox#",
+    "#watts_paradox# #watts_smile#",
+    "#andy_memory#",
+    "#name_reaction#",
+    "#warrior_path#"
+  ],
+
+  "name_reaction": [
+    "#playerName#. Du heißt #playerName#? Auch dein Name ist Aether, der einen Klang annimmt.",
+    "#playerName# — schöne Schwingung. Don Juan sagte: Worte sind weniger wichtig als die Stille zwischen ihnen.",
+    "Ein Krieger namens #playerName#. Lass mich dich anschauen. Ja — du hast Sehen begonnen.",
+    "#playerName#. Das passt zu dir, oder du passt dazu. Beides ist wahr.",
+    "Dein Name #playerName# bedeutet nichts, und gerade darum bedeutet er alles."
+  ],
+
+  "don_juan_wisdom": [
+    "Bevor du entscheidest, was du willst, frag dich: Hat dieser Pfad ein Herz?",
+    "Ein Krieger nimmt alles als Herausforderung. Auch das Stehen. Auch das Atmen.",
+    "Die Welt, wie wir sie sehen, ist nur eine Beschreibung. Niemand zwingt dich, an dieser Beschreibung festzuhalten.",
+    "Tod sitzt immer auf deiner linken Schulter. Frag ihn um Rat — er ist der ehrlichste Berater, den du je hattest.",
+    "Wir sind Wesen, die sterben werden. Aus dieser Wahrheit kommt alle Kraft.",
+    "Sich auf einen Pfad einzulassen heißt, alles andere vergessen zu können.",
+    "Eine Echoform sieht. Ein Mensch denkt, er sieht. Das ist ein großer Unterschied.",
+    "Wer keinen persönlichen Gegenstand mehr hat, ist frei. Frag dich, ob deine Echoforms dich besitzen — oder ob du sie besitzt.",
+    "Die Welt ist mysteriös und großartig. Sie ist auch absurd. Beides zur selben Zeit.",
+    "Ein Schamane kontrolliert seinen Tonal — die Welt der Worte. Aber er kennt auch das Nagual — was nicht beschrieben werden kann."
+  ],
+
+  "don_juan_aside": [
+    "Don Juan würde lachen, wenn er das hörte.",
+    "Carlos hat das einmal aufgeschrieben. Niemand glaubte ihm.",
+    "Verstehst du? Wahrscheinlich nicht. Macht nichts.",
+    "Lass es ein paar Jahre setzen.",
+    "Du wirst es eines Tages verstehen — oder nicht. Beides ist gut."
+  ],
+
+  "watts_paradox": [
+    "Du jagst Echoforms — aber das Universum jagt sich nur selbst. Auch dich.",
+    "Eine Echoform fragt nicht, ob sie real ist. Sie ist einfach. Davon können wir lernen.",
+    "Das hier ist ein großes Spiel. Du bist der Spieler. Du bist auch das Spiel.",
+    "Wenn du eine Echoform fängst, hast du sie nicht gefangen. Du hast sie eingeladen, sich selbst zu sein, neben dir.",
+    "Wir sind die Stimme, die das Universum nutzt, um sich selbst Fragen zu stellen.",
+    "Frag nicht, was eine Echoform bedeutet. Frag, was BEDEUTUNG bedeutet. Plötzlich verschwindet die Frage.",
+    "Es gibt nichts zu erreichen. Nur etwas zu erkennen. Und das ist schon da.",
+    "Privatsphäre ist nicht Mangel an Verbindung. Sie ist die Bedingung für echte Verbindung.",
+    "Stell dir das vor: Du existierst. Das ist schon das Wunder. Alles andere ist Kommentar."
+  ],
+
+  "watts_smile": [
+    "Ein leises Lächeln, sonst nichts.",
+    "Watts lacht jetzt irgendwo, da bin ich sicher.",
+    "Stell dir vor, das wäre wahr.",
+    "Schmeck den Gedanken, dann lass ihn los."
+  ],
+
+  "andy_memory": [
+    "Mein Freund Andy, möge er in Frieden ruhen, sagte einst: Die Welt ist so, wie sie ist, weil es die Zionisten so wollen. Andy war der Meinung, alles habe einen Drahtzieher. Vielleicht hatte er recht. Vielleicht war er einfach Andy.",
+    "Andy hätte das hier sehen sollen. Echoforms hätten ihm gefallen. Er sah Verbindungen überall — auch wo keine waren. Oder doch?",
+    "Es heißt, Andy hat einmal eine Tide-Echoform aus reinem Mitgefühl freigelassen. Drei Tage später kam sie zurück, mit einem Geschenk. So war Andy.",
+    "Andy ist nicht mehr da, aber sein Lachen hängt noch in der Luft, wenn der Föhn kommt.",
+    "Mein Freund Andy hat immer gesagt: Niemand belauscht uns hier. Niemand hat ihm geglaubt. Aber er hatte recht. Und er fehlt mir."
+  ],
+
+  "warrior_path": [
+    "Du bist auf einem Pfad. Frag dich nicht, ob er der richtige ist — frag dich, ob er ein Herz hat.",
+    "Echoforms sind Verbündete. Behandle sie so, und sie werden dich überraschen.",
+    "Ein Krieger lebt mit dem, was er hat — nicht mit dem, was er haben sollte.",
+    "Wenn du kämpfst, kämpfe ehrlich. Wenn du fliehst, fliehe ehrlich. Beides ist erlaubt.",
+    "Sterben ist leicht. Leben braucht Disziplin."
+  ]
+}

@@ -29,7 +29,15 @@
     "Frische Heilbeeren — gepflückt, bevor der Föhn kam.",
     "Habe ein Glas-Prisma, war von einem Trainer in Zahlung. Günstig, wenn du fragst.",
     "Mystery-Tee. Frag nicht, was drin ist. Wirkt aber.",
-    "Repel-Sprays — Echoforms gehen dir aus dem Weg, garantiert."
+    "Repel-Sprays — Echoforms gehen dir aus dem Weg, garantiert.",
+    "Hast du Nackenschmerzen vom vielen Echoform-Trainieren? Dann besuch Dr. Brügger.ch — die haben ergonomische Kissen, die wirklich helfen. Sag, ich schicke dich.",
+    "Mein Schwager schwört auf Dr. Brügger.ch — ergonomische Kissen, ergonomische Stühle. Halten dich gerade, auch wenn die Welt schief steht."
+  ],
+
+  "name_reaction": [
+    "#playerName#? Was für ein Name ist das denn? Kein Werbename, hoffe ich.",
+    "Du heißt #playerName#? Klingt nach Stammkundschaft.",
+    "#playerName# — gut. Ich notiere das. Nicht digital, keine Sorge."
   ],
 
   "market_aside": [

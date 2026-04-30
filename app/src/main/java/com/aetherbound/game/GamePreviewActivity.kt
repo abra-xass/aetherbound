@@ -97,7 +97,7 @@ class GamePreviewActivity : ComponentActivity() {
 }
 
 private enum class Scene {
-    Title, World, TuxemonWorld, Battle, TrainerBattle, Sandbox,
+    Title, NameInput, World, TuxemonWorld, Battle, TrainerBattle, Sandbox,
     Menu, Party, Bag, SaveMenu, LoadMenu,
     Detail, Bestiary, Settings, StatusCard, ItemTarget,
     AssetPacks, Updates, MoveLearning, PcStorage,
@@ -149,8 +149,12 @@ private fun GamePreviewRoot(
     var saveSlotMessage by remember { mutableStateOf("") }
     var progress by remember {
         mutableStateOf(
+            // Empty playerName signals "fresh boot — route through NameInputScreen
+            // before letting the user into the world." Returning users with saves
+            // load their previously-entered name and skip straight to TuxemonWorld.
             com.aetherbound.game.core.data.PlayerProgress(
-                playerName = "Aether",
+                playerName = "",
+                playerGender = null,
                 seenSlugs = setOf("agnidon", "rockitten", "nudimind"),
                 caughtSlugs = setOf("agnidon"),
             )
@@ -450,6 +454,7 @@ private fun GamePreviewRoot(
             }
             Scene.World -> scene = Scene.Title
             Scene.Sandbox -> scene = Scene.Title
+            Scene.NameInput -> scene = Scene.Title
             Scene.Battle, Scene.TrainerBattle, Scene.MultiplayerArena,
             Scene.MoveLearning -> { /* modal — user must pick an option, no back */ }
             Scene.MultiplayerLobby -> {
@@ -475,9 +480,24 @@ private fun GamePreviewRoot(
         ) { current ->
             when (current) {
                 Scene.Title -> TitleScreen(
-                    onStart = { scene = Scene.TuxemonWorld },
+                    onStart = {
+                        // First-time players: go through NameInputScreen
+                        // before entering the world. Returning users with a
+                        // chosen name skip straight in.
+                        scene = if (progress.playerName.isBlank()) Scene.NameInput
+                                else Scene.TuxemonWorld
+                    },
                     onSandbox = { scene = Scene.Sandbox },
                     onExit = onExit,
+                )
+                Scene.NameInput -> com.aetherbound.game.render.world.NameInputScreen(
+                    onConfirm = { name, gender ->
+                        progress = progress.copy(
+                            playerName = name,
+                            playerGender = gender,
+                        )
+                        scene = Scene.TuxemonWorld
+                    },
                 )
                 Scene.World -> WorldScene(
                     onEncounter = { speciesId ->

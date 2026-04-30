@@ -46,17 +46,26 @@ class DialogueResolver private constructor(
     fun resolve(
         msgid: String,
         spriteArchetype: String? = null,
+        context: DialogueContext = DialogueContext(),
         fallback: String = "Sie schweigt einen Moment, dann nickt sie höflich.",
     ): String {
+        val scope = context.toTraceryScope()
+
         // 1) Literal lookup (handles KEEP_STRUCTURE, HIGH_REUSE, QUEST_LORE, …)
-        pack.literals[msgid]?.let { return TextNormalizer.scrub(it) }
+        //    Even literals can contain #playerName# references, so we
+        //    run them through a lightweight Tracery pass with the scope.
+        pack.literals[msgid]?.let { lit ->
+            val expanded = if (lit.contains('#'))
+                Tracery(emptyMap(), rng).expand(lit, scope) else lit
+            return TextNormalizer.scrub(expanded)
+        }
 
         // 2) Sprite-archetype grammar (if NPC sprite suggests a profession)
         if (spriteArchetype != null) {
             val archetypeKey = normalizeArchetype(spriteArchetype)
             pack.grammars[archetypeKey]?.let { rules ->
                 val tracery = Tracery(rules, rng)
-                return TextNormalizer.scrub(tracery.expand("origin"))
+                return TextNormalizer.scrub(tracery.expand("origin", scope))
             }
         }
 
@@ -64,11 +73,14 @@ class DialogueResolver private constructor(
         val category = categoryForMsgid(msgid)
         pack.grammars[category]?.let { rules ->
             val tracery = Tracery(rules, rng)
-            return TextNormalizer.scrub(tracery.expand("origin"))
+            return TextNormalizer.scrub(tracery.expand("origin", scope))
         }
 
-        // 4) Bootstrap line so player never sees the raw msgid
-        return TextNormalizer.scrub(fallback)
+        // 4) Bootstrap line so player never sees the raw msgid — also
+        //    runs through Tracery so it can reference #playerName# etc.
+        val finalText = if (fallback.contains('#'))
+            Tracery(emptyMap(), rng).expand(fallback, scope) else fallback
+        return TextNormalizer.scrub(finalText)
     }
 
     private fun categoryForMsgid(msgid: String): String {

@@ -80,6 +80,13 @@ fun TuxemonWorldScene(
     spawnTileY: Int = 8,
     /** Set of flags already collected — suppresses re-triggers. */
     collectedFlags: Set<String> = emptySet(),
+    /**
+     * Player's chosen name + gender — fed into the [DialogueResolver] so
+     * NPCs can reactively use `#playerName#`, `#playerPronoun#`, etc.
+     * Empty/null are safe (resolver substitutes "Reisender" / neutral).
+     */
+    playerName: String = "",
+    playerGender: com.aetherbound.game.core.data.Gender? = null,
     modifier: Modifier = Modifier,
 ) {
     val ctx = LocalContext.current
@@ -140,13 +147,18 @@ fun TuxemonWorldScene(
                     is WorldEvent.Sign -> {
                         // Route signs through DialogueResolver — its world_sign
                         // category-grammar produces fresh sign text for any
-                        // msgid not in the literal map. Fallback line is the
-                        // old static one.
+                        // msgid not in the literal map. The player's name +
+                        // gender ride along so reactive templates can use them.
+                        val dialogCtx = com.aetherbound.game.dialogue.DialogueContext(
+                            playerName = playerName,
+                            playerGender = playerGender,
+                        )
                         val resolved = com.aetherbound.game.dialogue.DialogueResolver
                             .get(ctx)
                             .resolve(
                                 msgid = event.text,
                                 spriteArchetype = null,
+                                context = dialogCtx,
                                 fallback = "Hier steht eine alte Markierung.",
                             )
                         activeDialog = DialogPayload(
@@ -181,14 +193,24 @@ fun TuxemonWorldScene(
                             //   2. sprite-archetype Tracery grammar (barmaid/alchemist/…)
                             //   3. category fallback (npc_flavor)
                             //   4. final TextNormalizer scrub (no Tuxemon leaks)
+                            // Player's name+gender are passed in so reactive
+                            // templates can drop the player's name in mid-line.
+                            val dialogCtx = com.aetherbound.game.dialogue.DialogueContext(
+                                playerName = playerName,
+                                playerGender = playerGender,
+                            )
                             val resolved = com.aetherbound.game.dialogue.DialogueResolver
                                 .get(ctx)
                                 .resolve(
                                     msgid = event.dialog,
                                     spriteArchetype = event.sprite,
+                                    context = dialogCtx,
                                 )
+                            // Speaker label = derived from sprite archetype so
+                            // a barmaid says "Wirtin", an alchemist "Alchemist",
+                            // etc. Falls back to "Fremde:r" for unknown sprites.
                             activeDialog = DialogPayload(
-                                speakerName = "Reisender",
+                                speakerName = speakerLabelFor(event.sprite),
                                 lines = paginate(resolved),
                             )
                         }
@@ -314,6 +336,35 @@ fun TuxemonWorldScene(
 
 /** Active dialog payload — driven by ObjectDispatcher events. */
 private data class DialogPayload(val speakerName: String, val lines: List<String>)
+
+/**
+ * Map a Tuxemon sprite-folder name (e.g. `"barmaid_alt2"`, `"alchemist_red"`)
+ * to a German speaker label for the dialog box. Falls back to "Fremde:r"
+ * for unknown sprites so the dialog box always has a name.
+ */
+private fun speakerLabelFor(sprite: String?): String {
+    if (sprite.isNullOrBlank()) return "Fremde:r"
+    val base = sprite.lowercase()
+        .substringBefore('/')
+        .replace(Regex("""_alt\d+"""), "")
+        .replace(Regex("""_(black|brown|blue|green|red|yellow|violet|rose|fiery|blonde|lapi)$"""), "")
+    return when {
+        base.startsWith("barmaid")     -> "Wirtin"
+        base.startsWith("alchemist")   -> "Alchemist"
+        base.startsWith("aviator")     -> "Pilot"
+        base.startsWith("merchant")    -> "Händler"
+        base.startsWith("nurse")       -> "Pflegerin"
+        base.startsWith("monk") || base.startsWith("buddha") -> "Mönch"
+        base.startsWith("kid") || base.startsWith("child") || base.startsWith("kindergartener") -> "Kind"
+        base.startsWith("adventurer")  -> "Abenteurer:in"
+        base.startsWith("alien")       -> "Fremder"
+        base.startsWith("beachgoer") || base.startsWith("beachcomber") -> "Strandgänger:in"
+        base.startsWith("fisher")      -> "Fischer:in"
+        base.startsWith("baller")      -> "Sportler:in"
+        base.startsWith("aviator")     -> "Pilot"
+        else -> "Fremde:r"
+    }
+}
 
 /** Splits long text into ~80-char pages so the dialog box stays compact. */
 private fun paginate(text: String, maxPerPage: Int = 80): List<String> {

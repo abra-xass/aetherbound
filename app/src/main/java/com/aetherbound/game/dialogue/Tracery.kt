@@ -42,14 +42,20 @@ class Tracery(
      * Expand [start] — either a literal template like `"#greeting# #obs#"`
      * or a bare symbol name like `"villager.adult.female"`. The latter
      * is automatically wrapped in `#…#` for convenience.
+     *
+     * @param initialScope variables pre-bound for this expansion. Templates
+     *        can reference any key as `#name#` directly. Used by the
+     *        [DialogueResolver] to inject `playerName`, `playerGender`,
+     *        and daily-pack slot values.
      */
-    fun expand(start: String): String {
+    fun expand(start: String, initialScope: Map<String, String> = emptyMap()): String {
         val template = if (start.contains('#')) start else "#$start#"
-        return Expander(rules, rng).expand(template, mutableMapOf())
+        return Expander(rules, rng).expand(template, initialScope.toMutableMap())
     }
 
     /** Convenience: expand many times — useful for tests / dumps. */
-    fun expandN(start: String, n: Int): List<String> = List(n) { expand(start) }
+    fun expandN(start: String, n: Int, scope: Map<String, String> = emptyMap()): List<String> =
+        List(n) { expand(start, scope) }
 
     private class Expander(
         val rules: Map<String, List<String>>,

@@ -15,8 +15,35 @@ package com.aetherbound.game.core.data
  * Audio settings live here too because they're meta-progress in the
  * save-data sense (persist between runs).
  */
+/**
+ * Player gender — drives pronoun choice in NPC reactive dialogue and
+ * sprite-archetype selection at character creation. NEUTRAL is also the
+ * legitimate default for players who don't want to pick.
+ */
+enum class Gender(val displayDe: String, val tracerySlot: String) {
+    MASCULINE("männlich", "m"),
+    FEMININE("weiblich", "w"),
+    NEUTRAL("nichtbinär", "n");
+
+    companion object {
+        fun fromName(name: String?): Gender? = when (name) {
+            "MASCULINE" -> MASCULINE
+            "FEMININE" -> FEMININE
+            "NEUTRAL" -> NEUTRAL
+            else -> null
+        }
+    }
+}
+
 data class PlayerProgress(
-    val playerName: String = "Player",
+    /**
+     * Empty string signals "not yet entered" — the boot flow routes the
+     * player through [com.aetherbound.game.render.world.NameInputScreen]
+     * before letting them into the world.
+     */
+    val playerName: String = "",
+    /** Null means "not yet chosen" — NameInputScreen will prompt. */
+    val playerGender: Gender? = null,
     val seenSlugs: Set<String> = emptySet(),
     val caughtSlugs: Set<String> = emptySet(),
     val badgesEarned: Set<String> = emptySet(),

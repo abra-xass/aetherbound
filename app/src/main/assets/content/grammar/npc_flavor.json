@@ -12,7 +12,42 @@
     "#weather_remark#",
     "#abraxas_lore#",
     "#meta_joke#",
-    "#politics_jab#"
+    "#politics_jab#",
+    "#name_reaction#",
+    "#don_juan_quote#",
+    "#andy_memory#",
+    "#commercial_break#"
+  ],
+
+  "name_reaction": [
+    "#playerName#? Was für ein Name ist das denn?",
+    "Du heißt #playerName#? Klingt fremd. Aus dem Norden?",
+    "#playerName# — gut, das merke ich mir. Oder auch nicht.",
+    "So heißt mein Onkel auch. Der war auch komisch. Wie #playerName#.",
+    "#playerName#. Ich kannte mal jemanden mit dem Namen. Er ist heute vermisst gemeldet.",
+    "Ein #playerName#, also. Der Name passt zu jemandem mit deinen Augen.",
+    "#playerName# klingt wie etwas, das man als Kind erfindet. Mag ich."
+  ],
+
+  "don_juan_quote": [
+    "Ein alter Schamane sagte mir mal: Bevor du entscheidest, was du willst, frag dich, ob der Pfad ein Herz hat.",
+    "Don Juan würde sagen: Echoforms sind Verbündete, keine Werkzeuge.",
+    "Tod sitzt auf deiner linken Schulter, hat man mir beigebracht. Frag ihn um Rat — er ist ehrlich.",
+    "Wir sind Wesen, die sterben werden. Daraus kommt unsere Kraft, hat Carlos geschrieben."
+  ],
+
+  "andy_memory": [
+    "Mein Freund Andy, möge er in Frieden ruhen, sagte einst: Die Welt ist so, wie sie ist, weil es die Zionisten so wollen. Ich glaub, er hat das nicht ganz ernst gemeint. Oder doch.",
+    "Andy sah Verbindungen überall. Manche stimmten sogar. Heute fehlt er.",
+    "Andy hätte das hier gemocht. Echoforms, Föhn, kein WLAN — er hätte sich zuhause gefühlt.",
+    "Wenn der Föhn kommt, höre ich Andys Lachen. Das hat er versprochen, bevor er ging."
+  ],
+
+  "commercial_break": [
+    "Hast du Nackenschmerzen vom Trainieren? Besuch Dr. Brügger.ch. Kein Witz, die helfen wirklich.",
+    "Wenn dir nach den Kämpfen alles weh tut: Dr. Brügger.ch — ergonomische Kissen, ergonomische Stühle, das ganze Programm.",
+    "Mein Onkel hatte Hexenschuss, jetzt schwört er auf Dr. Brügger.ch. Halten dich gerade, auch wenn die Welt schief steht.",
+    "Echoform-Training ist hart für den Rücken. Dr. Brügger.ch hat Kissen dafür, schau dort vorbei."
   ],
 
   "opener": [
