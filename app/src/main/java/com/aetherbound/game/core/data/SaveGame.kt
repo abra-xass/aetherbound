@@ -117,6 +117,114 @@ object SaveGameIO {
         return if (file.exists()) file.lastModified() else 0L
     }
 
+    // ── Ring-buffer auto-save (6 slots × 10 min = 60 min history) ─────
+    //
+    // Architecture:
+    //   - 6 ring slots `auto_ring_0..5.json`
+    //   - On every 10-min tick, the oldest slot is overwritten with the
+    //     current snapshot. After 60 min you have a 1-hour rolling
+    //     history; after 70 min the oldest 10-min point falls off.
+    //   - Game-start always loads the NEWEST ring slot (= most recent
+    //     auto-save). Player can also browse older slots via LoadMenu.
+    //   - Stored as JSON; atomic-write via tmp+rename so a crash mid-
+    //     write never corrupts the file.
+
+    private const val AUTO_RING_PREFIX = "auto_ring_"
+    private const val AUTO_RING_SUFFIX = ".json"
+    private const val AUTO_RING_SIZE = 6
+    /** ~10 minutes between auto-saves. AutoSaveScheduler enforces this. */
+    const val AUTO_SAVE_INTERVAL_MS: Long = 10L * 60L * 1000L
+
+    /**
+     * Push [save] into the ring — overwrites the oldest of the 6 slots.
+     * Returns the slot index written to (0..5). Stable timestamp = file
+     * mtime, set by the OS on rename.
+     */
+    fun pushAutoRing(ctx: Context, save: SaveGame): Int {
+        val dir = java.io.File(ctx.filesDir, "aetherbound").apply { mkdirs() }
+        // Find oldest existing slot or first empty slot.
+        var oldestIdx = 0
+        var oldestMtime = Long.MAX_VALUE
+        for (i in 0 until AUTO_RING_SIZE) {
+            val f = java.io.File(dir, "$AUTO_RING_PREFIX$i$AUTO_RING_SUFFIX")
+            val m = if (f.exists()) f.lastModified() else 0L
+            if (m < oldestMtime) {
+                oldestMtime = m
+                oldestIdx = i
+                if (m == 0L) break    // empty slot — fill it first
+            }
+        }
+        runCatching {
+            val target = java.io.File(dir, "$AUTO_RING_PREFIX$oldestIdx$AUTO_RING_SUFFIX")
+            val tmp = java.io.File(dir, "$AUTO_RING_PREFIX$oldestIdx$AUTO_RING_SUFFIX.tmp")
+            tmp.writeText(toJson(save).toString(), Charsets.UTF_8)
+            // rename is the atomic moment; OS sets mtime here.
+            target.delete()    // ensure clean rename on Android
+            tmp.renameTo(target)
+        }
+        return oldestIdx
+    }
+
+    /** Snapshot of one ring slot — used by UI to render the load menu. */
+    data class RingSlot(
+        val slotIdx: Int,
+        val timestampMs: Long,
+        val save: SaveGame,
+    )
+
+    /**
+     * Read all populated ring slots, newest first. Empty/corrupt slots
+     * are skipped silently (UI shows only what's loadable).
+     */
+    fun listAutoRing(ctx: Context): List<RingSlot> {
+        val dir = java.io.File(ctx.filesDir, "aetherbound")
+        if (!dir.exists()) return emptyList()
+        val out = mutableListOf<RingSlot>()
+        for (i in 0 until AUTO_RING_SIZE) {
+            val f = java.io.File(dir, "$AUTO_RING_PREFIX$i$AUTO_RING_SUFFIX")
+            if (!f.exists()) continue
+            val parsed = runCatching { fromJson(JSONObject(f.readText(Charsets.UTF_8))) }.getOrNull()
+                ?: continue
+            out += RingSlot(slotIdx = i, timestampMs = f.lastModified(), save = parsed)
+        }
+        return out.sortedByDescending { it.timestampMs }
+    }
+
+    /**
+     * Latest ring-buffer save — the one the boot flow loads
+     * automatically. Returns null when the player is genuinely fresh
+     * (no saves exist yet) so the boot can route to NameInputScreen.
+     */
+    fun loadLatestAutoRing(ctx: Context): SaveGame? = listAutoRing(ctx).firstOrNull()?.save
+
+    // ── Manual save slot — never overwritten by auto-save ─────────────
+    //
+    // The user explicitly says "save now" and the game writes here. Auto-
+    // save NEVER touches this file, so a checkpoint the player wanted
+    // to keep stays intact even after 6 auto-pushes.
+
+    private const val MANUAL_SAVE_FILE = "manual.json"
+
+    fun saveManual(ctx: Context, save: SaveGame): Boolean = runCatching {
+        val dir = java.io.File(ctx.filesDir, "aetherbound").apply { mkdirs() }
+        val tmp = java.io.File(dir, "$MANUAL_SAVE_FILE.tmp")
+        val final = java.io.File(dir, MANUAL_SAVE_FILE)
+        tmp.writeText(toJson(save).toString(), Charsets.UTF_8)
+        final.delete()
+        tmp.renameTo(final)
+    }.getOrDefault(false)
+
+    fun loadManual(ctx: Context): SaveGame? {
+        val file = java.io.File(java.io.File(ctx.filesDir, "aetherbound"), MANUAL_SAVE_FILE)
+        if (!file.exists()) return null
+        return runCatching { fromJson(JSONObject(file.readText(Charsets.UTF_8))) }.getOrNull()
+    }
+
+    fun manualSlotTimestamp(ctx: Context): Long {
+        val file = java.io.File(java.io.File(ctx.filesDir, "aetherbound"), MANUAL_SAVE_FILE)
+        return if (file.exists()) file.lastModified() else 0L
+    }
+
     // ───────────────────────────────────────────────────────────────
     // Serialisation — keep Tuxemon-derived heavy data out of the file.
     // ───────────────────────────────────────────────────────────────

@@ -160,6 +160,7 @@ private fun GamePreviewRoot(
             )
         )
     }
+
     var detailIndex by remember { mutableStateOf(0) }
     var bagSelectedItem by remember { mutableStateOf<com.aetherbound.game.core.data.TuxemonItem?>(null) }
     var cameFromBattle by remember { mutableStateOf(false) }
@@ -275,6 +276,30 @@ private fun GamePreviewRoot(
     var currentMapPath by remember { mutableStateOf("game/maps/tuxemon/spyder_shores.tmx") }
     var spawnTileX by remember { mutableStateOf(8) }
     var spawnTileY by remember { mutableStateOf(8) }
+
+    // ── Boot-time auto-load (ring buffer) ───────────────────────────
+    // On first composition, look for the newest auto-save in the ring
+    // buffer. If found, restore everything so the player picks up
+    // exactly where they left off — no menu needed.
+    androidx.compose.runtime.LaunchedEffect(Unit) {
+        val latest = kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.IO) {
+            com.aetherbound.game.core.data.SaveGameIO.loadLatestAutoRing(ctx)
+        }
+        if (latest != null) {
+            progress = progress.copy(
+                playerName = latest.playerName,
+                playtimeSec = latest.playtimeSec,
+                collectedFlags = latest.flags.filterValues { it }.keys,
+                badgesEarned = latest.trainersDefeated,
+            )
+            party = latest.party
+            pcStorage = latest.pcStorage
+            inventory = latest.inventory
+            if (latest.currentMap.isNotBlank()) currentMapPath = latest.currentMap
+            spawnTileX = latest.playerTileX
+            spawnTileY = latest.playerTileY
+        }
+    }
 
     // ── Continuous auto-save — never lose progress ──────────────────────
     //
@@ -558,6 +583,30 @@ private fun GamePreviewRoot(
                             progress = progress.setFlag(flagId)
                             saveSlotMessage = "Picked up ${itemSlug.replace('_', ' ')}."
                             true
+                        },
+                        playerName = progress.playerName,
+                        playerGender = progress.playerGender,
+                        // 10-min auto-save tick — push current state into
+                        // the 6-slot ring buffer. Snapshot is built from
+                        // the activity's state so we capture EVERYTHING
+                        // the player accumulated, not just world position.
+                        onAutoSaveRequested = {
+                            val snap = com.aetherbound.game.core.data.SaveGame(
+                                playerName = progress.playerName,
+                                currentMap = currentMapPath,
+                                playerTileX = spawnTileX,
+                                playerTileY = spawnTileY,
+                                party = party,
+                                pcStorage = pcStorage,
+                                inventory = inventory,
+                                playtimeSec = progress.playtimeSec,
+                                flags = progress.collectedFlags.associateWith { true },
+                                trainersDefeated = progress.badgesEarned,
+                            )
+                            kotlinx.coroutines.withContext(kotlinx.coroutines.Dispatchers.IO) {
+                                com.aetherbound.game.core.data.SaveGameIO.pushAutoRing(ctx, snap)
+                            }
+                            Unit
                         },
                     )
                 }

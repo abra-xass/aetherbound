@@ -87,6 +87,14 @@ fun TuxemonWorldScene(
      */
     playerName: String = "",
     playerGender: com.aetherbound.game.core.data.Gender? = null,
+    /**
+     * Auto-save callback — called every 10 min by [AutoSaveScheduler].
+     * The activity provides the full snapshot-builder + ring-push logic;
+     * the scene just supplies the timer and the gold-disk flash UI.
+     * Default no-op so widgets that embed this scene without save support
+     * (e.g. the SP sandbox) don't need to wire it up.
+     */
+    onAutoSaveRequested: suspend () -> Unit = {},
     modifier: Modifier = Modifier,
 ) {
     val ctx = LocalContext.current
@@ -123,6 +131,11 @@ fun TuxemonWorldScene(
     var activeMemorial by remember {
         mutableStateOf<com.aetherbound.game.render.map.WorldEvent.Memorial?>(null)
     }
+    /**
+     * When true, the gold-floppy-disk SaveDiskIndicator is showing. Driven
+     * by AutoSaveScheduler — flashes ~600 ms on every auto-save tick.
+     */
+    val savingFlash = remember { androidx.compose.runtime.mutableStateOf(false) }
 
     // Async map load
     LaunchedEffect(tmxAssetPath) {
@@ -131,6 +144,13 @@ fun TuxemonWorldScene(
         collision = CollisionMap.fromMap(map)
         npcs = com.aetherbound.game.render.map.NpcSpawner.fromMap(map)
     }
+
+    // 10-minute auto-save tick — pushes a snapshot into the 6-slot ring
+    // buffer. Activity provides the actual snapshot+write callback.
+    AutoSaveScheduler(
+        savingFlash = savingFlash,
+        onAutoSaveRequested = onAutoSaveRequested,
+    )
 
     // Frame loop — advance MovementController, sample encounter check on each completed step
     LaunchedEffect(tmxAssetPath) {
@@ -304,7 +324,15 @@ fun TuxemonWorldScene(
         com.aetherbound.game.render.ui.WeatherHud(
             modifier = Modifier
                 .align(Alignment.TopEnd)
-                .padding(12.dp),
+                .padding(top = 12.dp, end = 12.dp),
+        )
+        // Gold-floppy save indicator — flashes briefly on every auto-save
+        // tick. Sits below the WeatherHud so the two never overlap.
+        com.aetherbound.game.render.ui.SaveDiskIndicator(
+            visible = savingFlash.value,
+            modifier = Modifier
+                .align(Alignment.TopEnd)
+                .padding(top = 84.dp, end = 12.dp),
         )
 
         if (statusLine.isNotEmpty()) {
