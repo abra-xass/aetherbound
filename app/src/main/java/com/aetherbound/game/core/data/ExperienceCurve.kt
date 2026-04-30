@@ -45,14 +45,64 @@ enum class ExperienceCurve {
  */
 object ExperienceEngine {
 
-    /** XP awarded when a wild Echoform faints. Mirrors Pokémon Gen-3 rough math. */
-    fun xpFromVictory(loserLevel: Int, loserBaseStatSum: Int = 360, isTrainer: Boolean = false): Int {
-        // Pokémon formula: a * L / 7  with `a` = base XP yield (~ baseStatSum * 0.4)
-        // and × 1.5 for trainer battles.
+    /** Source-of-XP context — different multipliers + anti-exploit gates per mode. */
+    enum class SourceMode { WILD, TRAINER, MULTIPLAYER }
+
+    /**
+     * XP awarded when an Echoform faints. Pokémon Gen-3-style formula plus a
+     * **level-differential scaler** that quadratically dampens XP when the
+     * winner is significantly higher level than the loser. Self-farming is
+     * still possible but auto-limited: a Lv 70 winner against its own Lv 20
+     * mon gets only ~8% of the XP it would get against an equal-level
+     * opponent — making the grind-loop unattractive without ever banning it.
+     *
+     *   xp = baseYield * loserLevel * (loserLevel/winnerLevel)^2 * modeMult / 7
+     *
+     * @param winnerLevel level of the active Echoform that delivered the KO
+     * @param loserLevel level of the fainted opponent
+     * @param loserBaseStatSum sum of the loser's six base stats (drives baseYield)
+     * @param sourceMode WILD → 1.0×, TRAINER → 1.5×, MULTIPLAYER → 1.2×
+     */
+    fun xpFromVictory(
+        winnerLevel: Int,
+        loserLevel: Int,
+        loserBaseStatSum: Int = 360,
+        sourceMode: SourceMode = SourceMode.WILD,
+    ): Int {
         val baseYield = (loserBaseStatSum * 0.4).toInt().coerceAtLeast(40)
         val raw = baseYield * loserLevel / 7
-        return (if (isTrainer) raw * 3 / 2 else raw).coerceAtLeast(1)
+
+        // Quadratic level-differential scaler. Capped at 1.0 (no bonus for
+        // beating higher-level mons) and floored at 0.05 (some XP always).
+        val ratio = (loserLevel.toDouble() / winnerLevel.coerceAtLeast(1).toDouble())
+            .coerceIn(0.05, 1.0)
+        val diffScaler = ratio * ratio
+
+        val modeMult = when (sourceMode) {
+            SourceMode.WILD -> 1.0
+            SourceMode.TRAINER -> 1.5
+            SourceMode.MULTIPLAYER -> 1.2
+        }
+
+        return (raw * diffScaler * modeMult).toInt().coerceAtLeast(1)
     }
+
+    /** Legacy overload kept for source-compat — delegates with assumed equal levels. */
+    @Deprecated(
+        message = "Pass winnerLevel + sourceMode for proper level-diff scaling",
+        replaceWith = ReplaceWith(
+            "xpFromVictory(winnerLevel = loserLevel, loserLevel = loserLevel, " +
+                "loserBaseStatSum = loserBaseStatSum, sourceMode = if (isTrainer) " +
+                "ExperienceEngine.SourceMode.TRAINER else ExperienceEngine.SourceMode.WILD)"
+        ),
+    )
+    fun xpFromVictory(loserLevel: Int, loserBaseStatSum: Int = 360, isTrainer: Boolean = false): Int =
+        xpFromVictory(
+            winnerLevel = loserLevel,
+            loserLevel = loserLevel,
+            loserBaseStatSum = loserBaseStatSum,
+            sourceMode = if (isTrainer) SourceMode.TRAINER else SourceMode.WILD,
+        )
 
     data class LevelUpResult(
         val oldLevel: Int,
