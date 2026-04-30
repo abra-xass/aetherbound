@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "map_id": "namaris_harbor",
+  "name": "Namaris Harbor",
+  "tileset": "coastal_obsidian",
+  "size": {"width": 80, "height": 60},
+  "services": ["aether_clinic", "general_store", "harbor_lab", "ferry_terminal"],
+  "npcs": ["Dr. Ilya Voss", "Mara Keir", "Hale Orra", "Pax Renn", "Kessa Brine", "Edda Maren"],
+  "exits": [
+    {"to": "harbor_road", "x": 74, "y": 42, "requires": "starter_chosen"},
+    {"to": "ferry_terminal", "x": 12, "y": 50, "requires": "ferry_pass"}
+  ],
+  "encounters": []
+}

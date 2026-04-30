@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360">
+  <rect width="900" height="360" fill="#101217"/>
+  <g id="namaris_arena">
+    <rect x="20" y="30" width="260" height="120" fill="#142b36"/>
+    <rect x="20" y="110" width="260" height="40" fill="#1d1f26"/>
+    <circle cx="150" cy="94" r="36" fill="none" stroke="#c89b3c" stroke-width="5"/>
+    <text x="78" y="178" fill="#f6d28b" font-family="sans-serif">Namaris Link Arena</text>
+  </g>
+  <g id="copperleaf_arena">
+    <rect x="320" y="30" width="260" height="120" fill="#334d2d"/>
+    <path d="M320 116h260" stroke="#c89b3c" stroke-width="10"/>
+    <circle cx="450" cy="94" r="36" fill="none" stroke="#59b66b" stroke-width="5"/>
+    <text x="375" y="178" fill="#f6d28b" font-family="sans-serif">Copperleaf Arena</text>
+  </g>
+  <g id="myr_arena">
+    <rect x="620" y="30" width="260" height="120" fill="#201d2d"/>
+    <path d="M650 50h200M650 75h160M650 100h180" stroke="#55d6c2" stroke-width="5"/>
+    <circle cx="750" cy="94" r="36" fill="none" stroke="#a77cff" stroke-width="5"/>
+    <text x="676" y="178" fill="#f6d28b" font-family="sans-serif">Myr Vault Board</text>
+  </g>
+</svg>

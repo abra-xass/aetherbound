@@ -1,0 +1,49 @@
+﻿{
+    "schema_version":  2,
+    "npc_population":  {
+                           "total_battle_pool":  2000,
+                           "fixed_world_battle":  700,
+                           "optional_rematch_postgame":  200,
+                           "simulation_matrix_pool":  1100,
+                           "rationale":  "Pokemon-like overworld density without placing 2000 trainers directly on maps."
+                       },
+    "legendary_rules":  {
+                            "total_legendary":  15,
+                            "legendary":  12,
+                            "very_legendary":  3,
+                            "legendary_ids":  "E286-E300",
+                            "very_legendary_ids":  [
+                                                       "E298",
+                                                       "E299",
+                                                       "E300"
+                                                   ],
+                            "npc_teams_may_use_legendary":  false,
+                            "normal_pvp_rule":  "max_one_legendary_no_very_legendary_by_default"
+                        },
+    "difficulty":  {
+                       "target":  "not_too_easy_not_too_hard",
+                       "early_game":  "basic AI, 2-3 creature teams, no held items",
+                       "mid_game":  "3-4 creature teams, simple synergy, first fusions",
+                       "late_game":  "5-6 creature teams, held items, terrain/weather",
+                       "post_game":  "expert AI, rematches, scaling, ranked-style legality"
+                   },
+    "level_curve":  {
+                        "city_01":  "1-8",
+                        "city_10":  "40-48",
+                        "city_20":  "46-56 optional",
+                        "city_30":  "94-100 post-game",
+                        "level_scaling":  "optional rematches and post-game scale within capped city band plus player average"
+                    },
+    "xp_pacing":  {
+                      "story_to_credits":  "roughly level 60-70 after main campaign",
+                      "level_100":  "completionist and post-game goal",
+                      "anti_farm":  "reduced XP for repeatedly beating weaker or same Matrix opponent"
+                  },
+    "balance_guardrails":  [
+                               "no NPC legendary teams",
+                               "bosses telegraph strategy before fight",
+                               "arena leaders use themed counters but not perfect coverage",
+                               "healing access before difficulty spikes",
+                               "PvP normalizes levels by format"
+                           ]
+}

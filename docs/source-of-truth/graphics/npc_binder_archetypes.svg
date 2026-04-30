@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="240" viewBox="0 0 800 240">
+  <rect width="800" height="240" fill="#101217"/>
+  <style>.label{font:13px sans-serif;fill:#f6d28b}.body{stroke:#0a0c10;stroke-width:3}</style>
+  <g transform="translate(35 25)"><circle cx="50" cy="40" r="24" fill="#b98a66"/><rect class="body" x="22" y="68" width="56" height="86" rx="14" fill="#2e5668"/><text class="label" x="5" y="182">Route Binder</text></g>
+  <g transform="translate(185 25)"><circle cx="50" cy="40" r="24" fill="#9f6d4e"/><rect class="body" x="22" y="68" width="56" height="86" rx="14" fill="#5b3c78"/><text class="label" x="0" y="182">Arena Apprentice</text></g>
+  <g transform="translate(350 25)"><circle cx="50" cy="40" r="24" fill="#c09070"/><rect class="body" x="22" y="68" width="56" height="86" rx="14" fill="#4f2228"/><path d="M22 86h56" stroke="#f05a28" stroke-width="5"/><text class="label" x="9" y="182">Veyr Scout</text></g>
+  <g transform="translate(500 25)"><circle cx="50" cy="40" r="24" fill="#8c6648"/><rect class="body" x="22" y="68" width="56" height="86" rx="14" fill="#6b5738"/><path d="M34 76l32 70" stroke="#c89b3c" stroke-width="5"/><text class="label" x="2" y="182">Relic Hunter</text></g>
+  <g transform="translate(650 25)"><circle cx="50" cy="40" r="24" fill="#b4805c"/><rect class="body" x="22" y="68" width="56" height="86" rx="14" fill="#183d39"/><path d="M50 70v70" stroke="#55d6c2" stroke-width="5"/><text class="label" x="0" y="182">Matrix Attendant</text></g>
+</svg>

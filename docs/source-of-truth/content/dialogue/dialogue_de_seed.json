@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "language": "de",
+  "lines": {
+    "intro_dr_voss_001": "Willkommen im Hafenlabor. Heute bindest du dich nicht an Macht, sondern an Verantwortung.",
+    "intro_dr_voss_002": "Waehle achtsam. Vulkid stuermt voran, Reeva schuetzt, Mosslyn kontrolliert das Feld.",
+    "mara_intro_001": "Du bist also der neue Binder. Dann zeig mir, ob dein Echoform mehr kann als huebsch leuchten.",
+    "senn_intro_001": "Ich zeichne Karten, aber Asterfall veraendert sich staendig. Wenn du neue Wege findest, sag mir Bescheid.",
+    "shop_hale_001": "Salves links, Prisms rechts. Und nein, Crown Prisms verkaufe ich nicht einfach so.",
+    "clinic_001": "Deine Echoforms sind in Low-Resonance gefallen. Wir bringen sie wieder in stabile Resonanz.",
+    "arena_talia_pre": "Hier in Copperleaf gewinnt nicht der staerkste Binder, sondern der, der das Feld versteht.",
+    "arena_talia_post": "Gut. Deine Bindung ist stabiler als ich erwartet habe. Nimm den Copper Seal.",
+    "matrix_board_intro": "Dies ist ein Loom Link Board. Waehle einen Kontakt oder gib eine Matrix-ID ein, wenn du remote kaempfen willst.",
+    "npc_route_pre_template": "Ich trainiere hier jeden Tag. Ein kurzer Kampf?",
+    "npc_route_post_template": "Guter Kampf. Deine Formation hat echte Absicht.",
+    "veyr_scout_pre": "Freie Bindung ist langsam. Wir zeigen dir, was erzwungene Fusion leisten kann.",
+    "veyr_scout_post": "Das war keine Schwäche des Shackle. Ich habe nur die Frequenz falsch gesetzt."
+  }
+}

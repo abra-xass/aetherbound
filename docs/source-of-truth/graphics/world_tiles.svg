@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <style>
+    .label{font:10px sans-serif;fill:#f4d28a}.tile{stroke:#0a0c10;stroke-width:2}
+  </style>
+  <rect width="512" height="512" fill="#101217"/>
+  <g id="tiles">
+    <rect class="tile" x="16" y="16" width="64" height="64" fill="#1b1f27"/><text class="label" x="24" y="52">obsidian</text>
+    <rect class="tile" x="96" y="16" width="64" height="64" fill="#2b5c3a"/><path d="M100 72c12-20 32-28 56-50" stroke="#59b66b" stroke-width="4" fill="none"/><text class="label" x="108" y="52">grass</text>
+    <rect class="tile" x="176" y="16" width="64" height="64" fill="#174b66"/><path d="M176 40c18 14 44-14 64 0M176 60c18 14 44-14 64 0" stroke="#58c7f3" stroke-width="3" fill="none"/><text class="label" x="188" y="52">tide</text>
+    <rect class="tile" x="256" y="16" width="64" height="64" fill="#7b5730"/><circle cx="288" cy="48" r="19" fill="#d7a44a"/><text class="label" x="267" y="52">sand</text>
+    <rect class="tile" x="336" y="16" width="64" height="64" fill="#d8eef5"/><path d="M350 30l36 36M386 30l-36 36" stroke="#8fcbe1" stroke-width="4"/><text class="label" x="347" y="52" fill="#28313a">frost</text>
+    <rect class="tile" x="416" y="16" width="64" height="64" fill="#2d252f"/><circle cx="448" cy="48" r="22" fill="#0c0d12"/><text class="label" x="428" y="52">null</text>
+    <rect class="tile" x="16" y="112" width="64" height="64" fill="#382a1b"/><rect x="26" y="124" width="44" height="40" fill="#87613c"/><text class="label" x="26" y="150">wood</text>
+    <rect class="tile" x="96" y="112" width="64" height="64" fill="#343842"/><path d="M112 160l32-32M116 128h28v28" stroke="#c89b3c" stroke-width="4" fill="none"/><text class="label" x="104" y="150">relay</text>
+    <rect class="tile" x="176" y="112" width="64" height="64" fill="#1f2f30"/><path d="M188 164c12-50 24-50 40 0" stroke="#55d6c2" stroke-width="4" fill="none"/><text class="label" x="190" y="150">reed</text>
+    <rect class="tile" x="256" y="112" width="64" height="64" fill="#292929"/><path d="M264 168l48-48" stroke="#b7653b" stroke-width="6"/><text class="label" x="267" y="150">lava</text>
+    <rect class="tile" x="336" y="112" width="64" height="64" fill="#26212d"/><path d="M368 120l16 48h-32z" fill="#9b7cff"/><text class="label" x="348" y="150">crystal</text>
+    <rect class="tile" x="416" y="112" width="64" height="64" fill="#20251d"/><circle cx="448" cy="144" r="23" fill="#43a047"/><text class="label" x="426" y="150">canopy</text>
+  </g>
+</svg>

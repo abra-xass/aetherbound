@@ -1,0 +1,35 @@
+{
+  "schema_version": 4,
+  "terminology": {
+    "public_name": "Element",
+    "internal_name": "Aspect",
+    "rule": "Every Echoform has one or two Elements. Every Technique has exactly one Element. An Echoform can only equip Techniques that match one of its own Elements or, while fused, one of the fused form's two Elements."
+  },
+  "aspects": [
+    {"id":"ember","name":"Ember","display_name_de":"Feuer","color":"#F05A28","identity":"heat, ignition, pressure","strong_against":["verdance","frost","metal"],"weak_against":["tide","stone","radiant"]},
+    {"id":"tide","name":"Tide","display_name_de":"Wasser","color":"#2F9EEA","identity":"water, flow, recovery","strong_against":["ember","stone","metal"],"weak_against":["verdance","spark","frost"]},
+    {"id":"verdance","name":"Verdance","display_name_de":"Pflanze","color":"#43A047","identity":"plants, growth, roots, spores","strong_against":["tide","stone","mind"],"weak_against":["ember","frost","metal"]},
+    {"id":"stone","name":"Stone","display_name_de":"Stein","color":"#8A7D66","identity":"minerals, mass, impact","strong_against":["spark","ember","gale"],"weak_against":["tide","verdance","mind"]},
+    {"id":"gale","name":"Gale","display_name_de":"Luft","color":"#87CDEB","identity":"wind, speed, altitude","strong_against":["verdance","echo","shade"],"weak_against":["stone","spark","frost"]},
+    {"id":"spark","name":"Spark","display_name_de":"Elektro","color":"#FFD43B","identity":"electricity, charge, interruption","strong_against":["tide","gale","metal"],"weak_against":["stone","verdance","echo"]},
+    {"id":"frost","name":"Frost","display_name_de":"Eis","color":"#A7E8FF","identity":"cold, stillness, preservation","strong_against":["verdance","gale","mind"],"weak_against":["ember","metal","radiant"]},
+    {"id":"metal","name":"Metal","display_name_de":"Metall","color":"#A6A9B6","identity":"armor, craft, blades","strong_against":["frost","radiant","shade"],"weak_against":["ember","tide","spark"]},
+    {"id":"shade","name":"Shade","display_name_de":"Schatten","color":"#5D3F7A","identity":"stealth, fear, decay","strong_against":["mind","radiant","echo"],"weak_against":["ember","metal","verdance"]},
+    {"id":"radiant","name":"Radiant","display_name_de":"Licht","color":"#FFD97A","identity":"light, clarity, healing","strong_against":["shade","tide","frost"],"weak_against":["metal","mind","ember"]},
+    {"id":"mind","name":"Mind","display_name_de":"Geist","color":"#C071D8","identity":"memory, prediction, psychic pressure","strong_against":["stone","radiant","ember"],"weak_against":["shade","echo","frost"]},
+    {"id":"echo","name":"Echo","display_name_de":"Echo","color":"#55D6C2","identity":"sound, signal, resonance","strong_against":["mind","spark","frost"],"weak_against":["gale","shade","metal"]}
+  ],
+  "multipliers": {
+    "strong": 2.0,
+    "weak": 0.5,
+    "neutral": 1.0,
+    "double_strong": 4.0,
+    "double_weak": 0.25,
+    "mixed_strong_weak": 1.0,
+    "same_aspect_affinity": 1.5
+  },
+  "non_elemental_states": [
+    {"id":"severed","name":"Severed","description":"story corruption state; not an Element and not valid for normal Technique typing"},
+    {"id":"severed_null","name":"Null-Severed","description":"late-story corruption state; not a thirteenth Element and not valid for normal Technique typing"}
+  ]
+}

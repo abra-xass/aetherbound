@@ -1,0 +1,1684 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1640" height="1104" viewBox="0 0 1640 1104">
+<rect width="100%" height="100%" fill="#121923"/>
+  <g id="NPC0001" data-name="Ari Silt" transform="translate(0 0)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f8dd8"/>
+    <path d="M27 47 H55" stroke="#6f7f8f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0001</text>
+  </g>
+  <g id="NPC0002" data-name="Bela Keir" transform="translate(82 0)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#4aa84f"/>
+    <path d="M27 47 H55" stroke="#2f2f3f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0002</text>
+  </g>
+  <g id="NPC0003" data-name="Cato Noct" transform="translate(164 0)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#f0c247"/>
+    <path d="M27 47 H55" stroke="#d9e4f5" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0003</text>
+  </g>
+  <g id="NPC0004" data-name="Dena Arc" transform="translate(246 0)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#8c5ac8"/>
+    <path d="M27 47 H55" stroke="#b5527a" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0004</text>
+  </g>
+  <g id="NPC0005" data-name="Eron Holt" transform="translate(328 0)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#3aa6a0"/>
+    <path d="M27 47 H55" stroke="#6cbd45" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0005</text>
+  </g>
+  <g id="NPC0006" data-name="Fia Sol" transform="translate(410 0)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d66d2e"/>
+    <path d="M27 47 H55" stroke="#dd9f2f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0006</text>
+  </g>
+  <g id="NPC0007" data-name="Garr Maren" transform="translate(492 0)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6f7f8f"/>
+    <path d="M27 47 H55" stroke="#e84d3d" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0007</text>
+  </g>
+  <g id="NPC0008" data-name="Hale Tor" transform="translate(574 0)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f2f3f"/>
+    <path d="M27 47 H55" stroke="#2f8dd8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0008</text>
+  </g>
+  <g id="NPC0009" data-name="Ira Vale" transform="translate(656 0)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d9e4f5"/>
+    <path d="M27 47 H55" stroke="#4aa84f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0009</text>
+  </g>
+  <g id="NPC0010" data-name="Juno Quill" transform="translate(738 0)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#b5527a"/>
+    <path d="M27 47 H55" stroke="#f0c247" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0010</text>
+  </g>
+  <g id="NPC0011" data-name="Kira Nox" transform="translate(820 0)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6cbd45"/>
+    <path d="M27 47 H55" stroke="#8c5ac8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0011</text>
+  </g>
+  <g id="NPC0012" data-name="Lio Reed" transform="translate(902 0)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#dd9f2f"/>
+    <path d="M27 47 H55" stroke="#3aa6a0" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0012</text>
+  </g>
+  <g id="NPC0013" data-name="Mira Esh" transform="translate(984 0)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#e84d3d"/>
+    <path d="M27 47 H55" stroke="#d66d2e" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0013</text>
+  </g>
+  <g id="NPC0014" data-name="Nox Rusk" transform="translate(1066 0)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f8dd8"/>
+    <path d="M27 47 H55" stroke="#6f7f8f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0014</text>
+  </g>
+  <g id="NPC0015" data-name="Oren Voss" transform="translate(1148 0)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#4aa84f"/>
+    <path d="M27 47 H55" stroke="#2f2f3f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0015</text>
+  </g>
+  <g id="NPC0016" data-name="Pax Rook" transform="translate(1230 0)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#f0c247"/>
+    <path d="M27 47 H55" stroke="#d9e4f5" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0016</text>
+  </g>
+  <g id="NPC0017" data-name="Quin Fenn" transform="translate(1312 0)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#8c5ac8"/>
+    <path d="M27 47 H55" stroke="#b5527a" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0017</text>
+  </g>
+  <g id="NPC0018" data-name="Rhea Wren" transform="translate(1394 0)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#3aa6a0"/>
+    <path d="M27 47 H55" stroke="#6cbd45" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0018</text>
+  </g>
+  <g id="NPC0019" data-name="Senn Pell" transform="translate(1476 0)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d66d2e"/>
+    <path d="M27 47 H55" stroke="#dd9f2f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0019</text>
+  </g>
+  <g id="NPC0020" data-name="Talia Thane" transform="translate(1558 0)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6f7f8f"/>
+    <path d="M27 47 H55" stroke="#e84d3d" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0020</text>
+  </g>
+  <g id="NPC0021" data-name="Uma Silt" transform="translate(0 92)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f2f3f"/>
+    <path d="M27 47 H55" stroke="#2f8dd8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0021</text>
+  </g>
+  <g id="NPC0022" data-name="Venn Keir" transform="translate(82 92)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d9e4f5"/>
+    <path d="M27 47 H55" stroke="#4aa84f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0022</text>
+  </g>
+  <g id="NPC0023" data-name="Wren Noct" transform="translate(164 92)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#b5527a"/>
+    <path d="M27 47 H55" stroke="#f0c247" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0023</text>
+  </g>
+  <g id="NPC0024" data-name="Xara Arc" transform="translate(246 92)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6cbd45"/>
+    <path d="M27 47 H55" stroke="#8c5ac8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0024</text>
+  </g>
+  <g id="NPC0025" data-name="Yven Holt" transform="translate(328 92)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#dd9f2f"/>
+    <path d="M27 47 H55" stroke="#3aa6a0" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0025</text>
+  </g>
+  <g id="NPC0026" data-name="Zale Sol" transform="translate(410 92)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#e84d3d"/>
+    <path d="M27 47 H55" stroke="#d66d2e" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0026</text>
+  </g>
+  <g id="NPC0027" data-name="Ari Maren" transform="translate(492 92)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f8dd8"/>
+    <path d="M27 47 H55" stroke="#6f7f8f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0027</text>
+  </g>
+  <g id="NPC0028" data-name="Bela Tor" transform="translate(574 92)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#4aa84f"/>
+    <path d="M27 47 H55" stroke="#2f2f3f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0028</text>
+  </g>
+  <g id="NPC0029" data-name="Cato Vale" transform="translate(656 92)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#f0c247"/>
+    <path d="M27 47 H55" stroke="#d9e4f5" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0029</text>
+  </g>
+  <g id="NPC0030" data-name="Dena Quill" transform="translate(738 92)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#8c5ac8"/>
+    <path d="M27 47 H55" stroke="#b5527a" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0030</text>
+  </g>
+  <g id="NPC0031" data-name="Eron Nox" transform="translate(820 92)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#3aa6a0"/>
+    <path d="M27 47 H55" stroke="#6cbd45" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0031</text>
+  </g>
+  <g id="NPC0032" data-name="Fia Reed" transform="translate(902 92)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d66d2e"/>
+    <path d="M27 47 H55" stroke="#dd9f2f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0032</text>
+  </g>
+  <g id="NPC0033" data-name="Garr Esh" transform="translate(984 92)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6f7f8f"/>
+    <path d="M27 47 H55" stroke="#e84d3d" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0033</text>
+  </g>
+  <g id="NPC0034" data-name="Hale Rusk" transform="translate(1066 92)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f2f3f"/>
+    <path d="M27 47 H55" stroke="#2f8dd8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0034</text>
+  </g>
+  <g id="NPC0035" data-name="Ira Voss" transform="translate(1148 92)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d9e4f5"/>
+    <path d="M27 47 H55" stroke="#4aa84f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0035</text>
+  </g>
+  <g id="NPC0036" data-name="Juno Rook" transform="translate(1230 92)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#b5527a"/>
+    <path d="M27 47 H55" stroke="#f0c247" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0036</text>
+  </g>
+  <g id="NPC0037" data-name="Kira Fenn" transform="translate(1312 92)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6cbd45"/>
+    <path d="M27 47 H55" stroke="#8c5ac8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0037</text>
+  </g>
+  <g id="NPC0038" data-name="Lio Wren" transform="translate(1394 92)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#dd9f2f"/>
+    <path d="M27 47 H55" stroke="#3aa6a0" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0038</text>
+  </g>
+  <g id="NPC0039" data-name="Mira Pell" transform="translate(1476 92)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#e84d3d"/>
+    <path d="M27 47 H55" stroke="#d66d2e" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0039</text>
+  </g>
+  <g id="NPC0040" data-name="Nox Thane" transform="translate(1558 92)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f8dd8"/>
+    <path d="M27 47 H55" stroke="#6f7f8f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0040</text>
+  </g>
+  <g id="NPC0041" data-name="Oren Silt" transform="translate(0 184)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#4aa84f"/>
+    <path d="M27 47 H55" stroke="#2f2f3f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0041</text>
+  </g>
+  <g id="NPC0042" data-name="Pax Keir" transform="translate(82 184)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#f0c247"/>
+    <path d="M27 47 H55" stroke="#d9e4f5" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0042</text>
+  </g>
+  <g id="NPC0043" data-name="Quin Noct" transform="translate(164 184)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#8c5ac8"/>
+    <path d="M27 47 H55" stroke="#b5527a" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0043</text>
+  </g>
+  <g id="NPC0044" data-name="Rhea Arc" transform="translate(246 184)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#3aa6a0"/>
+    <path d="M27 47 H55" stroke="#6cbd45" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0044</text>
+  </g>
+  <g id="NPC0045" data-name="Senn Holt" transform="translate(328 184)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d66d2e"/>
+    <path d="M27 47 H55" stroke="#dd9f2f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0045</text>
+  </g>
+  <g id="NPC0046" data-name="Talia Sol" transform="translate(410 184)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6f7f8f"/>
+    <path d="M27 47 H55" stroke="#e84d3d" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0046</text>
+  </g>
+  <g id="NPC0047" data-name="Uma Maren" transform="translate(492 184)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f2f3f"/>
+    <path d="M27 47 H55" stroke="#2f8dd8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0047</text>
+  </g>
+  <g id="NPC0048" data-name="Venn Tor" transform="translate(574 184)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d9e4f5"/>
+    <path d="M27 47 H55" stroke="#4aa84f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0048</text>
+  </g>
+  <g id="NPC0049" data-name="Wren Vale" transform="translate(656 184)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#b5527a"/>
+    <path d="M27 47 H55" stroke="#f0c247" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0049</text>
+  </g>
+  <g id="NPC0050" data-name="Xara Quill" transform="translate(738 184)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6cbd45"/>
+    <path d="M27 47 H55" stroke="#8c5ac8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0050</text>
+  </g>
+  <g id="NPC0051" data-name="Yven Nox" transform="translate(820 184)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#dd9f2f"/>
+    <path d="M27 47 H55" stroke="#3aa6a0" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0051</text>
+  </g>
+  <g id="NPC0052" data-name="Zale Reed" transform="translate(902 184)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#e84d3d"/>
+    <path d="M27 47 H55" stroke="#d66d2e" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0052</text>
+  </g>
+  <g id="NPC0053" data-name="Ari Esh" transform="translate(984 184)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f8dd8"/>
+    <path d="M27 47 H55" stroke="#6f7f8f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0053</text>
+  </g>
+  <g id="NPC0054" data-name="Bela Rusk" transform="translate(1066 184)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#4aa84f"/>
+    <path d="M27 47 H55" stroke="#2f2f3f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0054</text>
+  </g>
+  <g id="NPC0055" data-name="Cato Voss" transform="translate(1148 184)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#f0c247"/>
+    <path d="M27 47 H55" stroke="#d9e4f5" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0055</text>
+  </g>
+  <g id="NPC0056" data-name="Dena Rook" transform="translate(1230 184)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#8c5ac8"/>
+    <path d="M27 47 H55" stroke="#b5527a" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0056</text>
+  </g>
+  <g id="NPC0057" data-name="Eron Fenn" transform="translate(1312 184)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#3aa6a0"/>
+    <path d="M27 47 H55" stroke="#6cbd45" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0057</text>
+  </g>
+  <g id="NPC0058" data-name="Fia Wren" transform="translate(1394 184)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d66d2e"/>
+    <path d="M27 47 H55" stroke="#dd9f2f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0058</text>
+  </g>
+  <g id="NPC0059" data-name="Garr Pell" transform="translate(1476 184)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6f7f8f"/>
+    <path d="M27 47 H55" stroke="#e84d3d" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0059</text>
+  </g>
+  <g id="NPC0060" data-name="Hale Thane" transform="translate(1558 184)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f2f3f"/>
+    <path d="M27 47 H55" stroke="#2f8dd8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0060</text>
+  </g>
+  <g id="NPC0061" data-name="Ira Silt" transform="translate(0 276)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d9e4f5"/>
+    <path d="M27 47 H55" stroke="#4aa84f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0061</text>
+  </g>
+  <g id="NPC0062" data-name="Juno Keir" transform="translate(82 276)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#b5527a"/>
+    <path d="M27 47 H55" stroke="#f0c247" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0062</text>
+  </g>
+  <g id="NPC0063" data-name="Kira Noct" transform="translate(164 276)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6cbd45"/>
+    <path d="M27 47 H55" stroke="#8c5ac8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0063</text>
+  </g>
+  <g id="NPC0064" data-name="Lio Arc" transform="translate(246 276)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#dd9f2f"/>
+    <path d="M27 47 H55" stroke="#3aa6a0" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0064</text>
+  </g>
+  <g id="NPC0065" data-name="Mira Holt" transform="translate(328 276)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#e84d3d"/>
+    <path d="M27 47 H55" stroke="#d66d2e" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0065</text>
+  </g>
+  <g id="NPC0066" data-name="Nox Sol" transform="translate(410 276)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f8dd8"/>
+    <path d="M27 47 H55" stroke="#6f7f8f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0066</text>
+  </g>
+  <g id="NPC0067" data-name="Oren Maren" transform="translate(492 276)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#4aa84f"/>
+    <path d="M27 47 H55" stroke="#2f2f3f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0067</text>
+  </g>
+  <g id="NPC0068" data-name="Pax Tor" transform="translate(574 276)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#f0c247"/>
+    <path d="M27 47 H55" stroke="#d9e4f5" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0068</text>
+  </g>
+  <g id="NPC0069" data-name="Quin Vale" transform="translate(656 276)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#8c5ac8"/>
+    <path d="M27 47 H55" stroke="#b5527a" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0069</text>
+  </g>
+  <g id="NPC0070" data-name="Rhea Quill" transform="translate(738 276)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#3aa6a0"/>
+    <path d="M27 47 H55" stroke="#6cbd45" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0070</text>
+  </g>
+  <g id="NPC0071" data-name="Senn Nox" transform="translate(820 276)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d66d2e"/>
+    <path d="M27 47 H55" stroke="#dd9f2f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0071</text>
+  </g>
+  <g id="NPC0072" data-name="Talia Reed" transform="translate(902 276)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6f7f8f"/>
+    <path d="M27 47 H55" stroke="#e84d3d" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0072</text>
+  </g>
+  <g id="NPC0073" data-name="Uma Esh" transform="translate(984 276)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f2f3f"/>
+    <path d="M27 47 H55" stroke="#2f8dd8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0073</text>
+  </g>
+  <g id="NPC0074" data-name="Venn Rusk" transform="translate(1066 276)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d9e4f5"/>
+    <path d="M27 47 H55" stroke="#4aa84f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0074</text>
+  </g>
+  <g id="NPC0075" data-name="Wren Voss" transform="translate(1148 276)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#b5527a"/>
+    <path d="M27 47 H55" stroke="#f0c247" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0075</text>
+  </g>
+  <g id="NPC0076" data-name="Xara Rook" transform="translate(1230 276)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6cbd45"/>
+    <path d="M27 47 H55" stroke="#8c5ac8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0076</text>
+  </g>
+  <g id="NPC0077" data-name="Yven Fenn" transform="translate(1312 276)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#dd9f2f"/>
+    <path d="M27 47 H55" stroke="#3aa6a0" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0077</text>
+  </g>
+  <g id="NPC0078" data-name="Zale Wren" transform="translate(1394 276)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#e84d3d"/>
+    <path d="M27 47 H55" stroke="#d66d2e" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0078</text>
+  </g>
+  <g id="NPC0079" data-name="Ari Pell" transform="translate(1476 276)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f8dd8"/>
+    <path d="M27 47 H55" stroke="#6f7f8f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0079</text>
+  </g>
+  <g id="NPC0080" data-name="Bela Thane" transform="translate(1558 276)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#4aa84f"/>
+    <path d="M27 47 H55" stroke="#2f2f3f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0080</text>
+  </g>
+  <g id="NPC0081" data-name="Cato Silt" transform="translate(0 368)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#f0c247"/>
+    <path d="M27 47 H55" stroke="#d9e4f5" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0081</text>
+  </g>
+  <g id="NPC0082" data-name="Dena Keir" transform="translate(82 368)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#8c5ac8"/>
+    <path d="M27 47 H55" stroke="#b5527a" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0082</text>
+  </g>
+  <g id="NPC0083" data-name="Eron Noct" transform="translate(164 368)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#3aa6a0"/>
+    <path d="M27 47 H55" stroke="#6cbd45" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0083</text>
+  </g>
+  <g id="NPC0084" data-name="Fia Arc" transform="translate(246 368)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d66d2e"/>
+    <path d="M27 47 H55" stroke="#dd9f2f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0084</text>
+  </g>
+  <g id="NPC0085" data-name="Garr Holt" transform="translate(328 368)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6f7f8f"/>
+    <path d="M27 47 H55" stroke="#e84d3d" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0085</text>
+  </g>
+  <g id="NPC0086" data-name="Hale Sol" transform="translate(410 368)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f2f3f"/>
+    <path d="M27 47 H55" stroke="#2f8dd8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0086</text>
+  </g>
+  <g id="NPC0087" data-name="Ira Maren" transform="translate(492 368)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d9e4f5"/>
+    <path d="M27 47 H55" stroke="#4aa84f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0087</text>
+  </g>
+  <g id="NPC0088" data-name="Juno Tor" transform="translate(574 368)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#b5527a"/>
+    <path d="M27 47 H55" stroke="#f0c247" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0088</text>
+  </g>
+  <g id="NPC0089" data-name="Kira Vale" transform="translate(656 368)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6cbd45"/>
+    <path d="M27 47 H55" stroke="#8c5ac8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0089</text>
+  </g>
+  <g id="NPC0090" data-name="Lio Quill" transform="translate(738 368)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#dd9f2f"/>
+    <path d="M27 47 H55" stroke="#3aa6a0" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0090</text>
+  </g>
+  <g id="NPC0091" data-name="Mira Nox" transform="translate(820 368)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#e84d3d"/>
+    <path d="M27 47 H55" stroke="#d66d2e" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0091</text>
+  </g>
+  <g id="NPC0092" data-name="Nox Reed" transform="translate(902 368)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f8dd8"/>
+    <path d="M27 47 H55" stroke="#6f7f8f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0092</text>
+  </g>
+  <g id="NPC0093" data-name="Oren Esh" transform="translate(984 368)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#4aa84f"/>
+    <path d="M27 47 H55" stroke="#2f2f3f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0093</text>
+  </g>
+  <g id="NPC0094" data-name="Pax Rusk" transform="translate(1066 368)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#f0c247"/>
+    <path d="M27 47 H55" stroke="#d9e4f5" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0094</text>
+  </g>
+  <g id="NPC0095" data-name="Quin Voss" transform="translate(1148 368)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#8c5ac8"/>
+    <path d="M27 47 H55" stroke="#b5527a" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0095</text>
+  </g>
+  <g id="NPC0096" data-name="Rhea Rook" transform="translate(1230 368)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#3aa6a0"/>
+    <path d="M27 47 H55" stroke="#6cbd45" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0096</text>
+  </g>
+  <g id="NPC0097" data-name="Senn Fenn" transform="translate(1312 368)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d66d2e"/>
+    <path d="M27 47 H55" stroke="#dd9f2f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0097</text>
+  </g>
+  <g id="NPC0098" data-name="Talia Wren" transform="translate(1394 368)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6f7f8f"/>
+    <path d="M27 47 H55" stroke="#e84d3d" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0098</text>
+  </g>
+  <g id="NPC0099" data-name="Uma Pell" transform="translate(1476 368)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f2f3f"/>
+    <path d="M27 47 H55" stroke="#2f8dd8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0099</text>
+  </g>
+  <g id="NPC0100" data-name="Venn Thane" transform="translate(1558 368)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d9e4f5"/>
+    <path d="M27 47 H55" stroke="#4aa84f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0100</text>
+  </g>
+  <g id="NPC0101" data-name="Wren Silt" transform="translate(0 460)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#b5527a"/>
+    <path d="M27 47 H55" stroke="#f0c247" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0101</text>
+  </g>
+  <g id="NPC0102" data-name="Xara Keir" transform="translate(82 460)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6cbd45"/>
+    <path d="M27 47 H55" stroke="#8c5ac8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0102</text>
+  </g>
+  <g id="NPC0103" data-name="Yven Noct" transform="translate(164 460)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#dd9f2f"/>
+    <path d="M27 47 H55" stroke="#3aa6a0" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0103</text>
+  </g>
+  <g id="NPC0104" data-name="Zale Arc" transform="translate(246 460)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#e84d3d"/>
+    <path d="M27 47 H55" stroke="#d66d2e" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0104</text>
+  </g>
+  <g id="NPC0105" data-name="Ari Holt" transform="translate(328 460)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f8dd8"/>
+    <path d="M27 47 H55" stroke="#6f7f8f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0105</text>
+  </g>
+  <g id="NPC0106" data-name="Bela Sol" transform="translate(410 460)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#4aa84f"/>
+    <path d="M27 47 H55" stroke="#2f2f3f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0106</text>
+  </g>
+  <g id="NPC0107" data-name="Cato Maren" transform="translate(492 460)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#f0c247"/>
+    <path d="M27 47 H55" stroke="#d9e4f5" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0107</text>
+  </g>
+  <g id="NPC0108" data-name="Dena Tor" transform="translate(574 460)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#8c5ac8"/>
+    <path d="M27 47 H55" stroke="#b5527a" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0108</text>
+  </g>
+  <g id="NPC0109" data-name="Eron Vale" transform="translate(656 460)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#3aa6a0"/>
+    <path d="M27 47 H55" stroke="#6cbd45" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0109</text>
+  </g>
+  <g id="NPC0110" data-name="Fia Quill" transform="translate(738 460)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d66d2e"/>
+    <path d="M27 47 H55" stroke="#dd9f2f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0110</text>
+  </g>
+  <g id="NPC0111" data-name="Garr Nox" transform="translate(820 460)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6f7f8f"/>
+    <path d="M27 47 H55" stroke="#e84d3d" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0111</text>
+  </g>
+  <g id="NPC0112" data-name="Hale Reed" transform="translate(902 460)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f2f3f"/>
+    <path d="M27 47 H55" stroke="#2f8dd8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0112</text>
+  </g>
+  <g id="NPC0113" data-name="Ira Esh" transform="translate(984 460)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d9e4f5"/>
+    <path d="M27 47 H55" stroke="#4aa84f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0113</text>
+  </g>
+  <g id="NPC0114" data-name="Juno Rusk" transform="translate(1066 460)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#b5527a"/>
+    <path d="M27 47 H55" stroke="#f0c247" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0114</text>
+  </g>
+  <g id="NPC0115" data-name="Kira Voss" transform="translate(1148 460)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6cbd45"/>
+    <path d="M27 47 H55" stroke="#8c5ac8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0115</text>
+  </g>
+  <g id="NPC0116" data-name="Lio Rook" transform="translate(1230 460)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#dd9f2f"/>
+    <path d="M27 47 H55" stroke="#3aa6a0" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0116</text>
+  </g>
+  <g id="NPC0117" data-name="Mira Fenn" transform="translate(1312 460)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#e84d3d"/>
+    <path d="M27 47 H55" stroke="#d66d2e" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0117</text>
+  </g>
+  <g id="NPC0118" data-name="Nox Wren" transform="translate(1394 460)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f8dd8"/>
+    <path d="M27 47 H55" stroke="#6f7f8f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0118</text>
+  </g>
+  <g id="NPC0119" data-name="Oren Pell" transform="translate(1476 460)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#4aa84f"/>
+    <path d="M27 47 H55" stroke="#2f2f3f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0119</text>
+  </g>
+  <g id="NPC0120" data-name="Pax Thane" transform="translate(1558 460)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#f0c247"/>
+    <path d="M27 47 H55" stroke="#d9e4f5" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0120</text>
+  </g>
+  <g id="NPC0121" data-name="Quin Silt" transform="translate(0 552)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#8c5ac8"/>
+    <path d="M27 47 H55" stroke="#b5527a" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0121</text>
+  </g>
+  <g id="NPC0122" data-name="Rhea Keir" transform="translate(82 552)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#3aa6a0"/>
+    <path d="M27 47 H55" stroke="#6cbd45" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0122</text>
+  </g>
+  <g id="NPC0123" data-name="Senn Noct" transform="translate(164 552)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d66d2e"/>
+    <path d="M27 47 H55" stroke="#dd9f2f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0123</text>
+  </g>
+  <g id="NPC0124" data-name="Talia Arc" transform="translate(246 552)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6f7f8f"/>
+    <path d="M27 47 H55" stroke="#e84d3d" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0124</text>
+  </g>
+  <g id="NPC0125" data-name="Uma Holt" transform="translate(328 552)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f2f3f"/>
+    <path d="M27 47 H55" stroke="#2f8dd8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0125</text>
+  </g>
+  <g id="NPC0126" data-name="Venn Sol" transform="translate(410 552)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d9e4f5"/>
+    <path d="M27 47 H55" stroke="#4aa84f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0126</text>
+  </g>
+  <g id="NPC0127" data-name="Wren Maren" transform="translate(492 552)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#b5527a"/>
+    <path d="M27 47 H55" stroke="#f0c247" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0127</text>
+  </g>
+  <g id="NPC0128" data-name="Xara Tor" transform="translate(574 552)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6cbd45"/>
+    <path d="M27 47 H55" stroke="#8c5ac8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0128</text>
+  </g>
+  <g id="NPC0129" data-name="Yven Vale" transform="translate(656 552)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#dd9f2f"/>
+    <path d="M27 47 H55" stroke="#3aa6a0" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0129</text>
+  </g>
+  <g id="NPC0130" data-name="Zale Quill" transform="translate(738 552)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#e84d3d"/>
+    <path d="M27 47 H55" stroke="#d66d2e" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0130</text>
+  </g>
+  <g id="NPC0131" data-name="Ari Nox" transform="translate(820 552)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f8dd8"/>
+    <path d="M27 47 H55" stroke="#6f7f8f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0131</text>
+  </g>
+  <g id="NPC0132" data-name="Bela Reed" transform="translate(902 552)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#4aa84f"/>
+    <path d="M27 47 H55" stroke="#2f2f3f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0132</text>
+  </g>
+  <g id="NPC0133" data-name="Cato Esh" transform="translate(984 552)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#f0c247"/>
+    <path d="M27 47 H55" stroke="#d9e4f5" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0133</text>
+  </g>
+  <g id="NPC0134" data-name="Dena Rusk" transform="translate(1066 552)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#8c5ac8"/>
+    <path d="M27 47 H55" stroke="#b5527a" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0134</text>
+  </g>
+  <g id="NPC0135" data-name="Eron Voss" transform="translate(1148 552)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#3aa6a0"/>
+    <path d="M27 47 H55" stroke="#6cbd45" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0135</text>
+  </g>
+  <g id="NPC0136" data-name="Fia Rook" transform="translate(1230 552)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d66d2e"/>
+    <path d="M27 47 H55" stroke="#dd9f2f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0136</text>
+  </g>
+  <g id="NPC0137" data-name="Garr Fenn" transform="translate(1312 552)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6f7f8f"/>
+    <path d="M27 47 H55" stroke="#e84d3d" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0137</text>
+  </g>
+  <g id="NPC0138" data-name="Hale Wren" transform="translate(1394 552)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f2f3f"/>
+    <path d="M27 47 H55" stroke="#2f8dd8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0138</text>
+  </g>
+  <g id="NPC0139" data-name="Ira Pell" transform="translate(1476 552)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d9e4f5"/>
+    <path d="M27 47 H55" stroke="#4aa84f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0139</text>
+  </g>
+  <g id="NPC0140" data-name="Juno Thane" transform="translate(1558 552)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#b5527a"/>
+    <path d="M27 47 H55" stroke="#f0c247" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0140</text>
+  </g>
+  <g id="NPC0141" data-name="Kira Silt" transform="translate(0 644)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6cbd45"/>
+    <path d="M27 47 H55" stroke="#8c5ac8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0141</text>
+  </g>
+  <g id="NPC0142" data-name="Lio Keir" transform="translate(82 644)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#dd9f2f"/>
+    <path d="M27 47 H55" stroke="#3aa6a0" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0142</text>
+  </g>
+  <g id="NPC0143" data-name="Mira Noct" transform="translate(164 644)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#e84d3d"/>
+    <path d="M27 47 H55" stroke="#d66d2e" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0143</text>
+  </g>
+  <g id="NPC0144" data-name="Nox Arc" transform="translate(246 644)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f8dd8"/>
+    <path d="M27 47 H55" stroke="#6f7f8f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0144</text>
+  </g>
+  <g id="NPC0145" data-name="Oren Holt" transform="translate(328 644)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#4aa84f"/>
+    <path d="M27 47 H55" stroke="#2f2f3f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0145</text>
+  </g>
+  <g id="NPC0146" data-name="Pax Sol" transform="translate(410 644)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#f0c247"/>
+    <path d="M27 47 H55" stroke="#d9e4f5" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0146</text>
+  </g>
+  <g id="NPC0147" data-name="Quin Maren" transform="translate(492 644)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#8c5ac8"/>
+    <path d="M27 47 H55" stroke="#b5527a" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0147</text>
+  </g>
+  <g id="NPC0148" data-name="Rhea Tor" transform="translate(574 644)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#3aa6a0"/>
+    <path d="M27 47 H55" stroke="#6cbd45" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0148</text>
+  </g>
+  <g id="NPC0149" data-name="Senn Vale" transform="translate(656 644)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d66d2e"/>
+    <path d="M27 47 H55" stroke="#dd9f2f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0149</text>
+  </g>
+  <g id="NPC0150" data-name="Talia Quill" transform="translate(738 644)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6f7f8f"/>
+    <path d="M27 47 H55" stroke="#e84d3d" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0150</text>
+  </g>
+  <g id="NPC0151" data-name="Uma Nox" transform="translate(820 644)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f2f3f"/>
+    <path d="M27 47 H55" stroke="#2f8dd8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0151</text>
+  </g>
+  <g id="NPC0152" data-name="Venn Reed" transform="translate(902 644)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d9e4f5"/>
+    <path d="M27 47 H55" stroke="#4aa84f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0152</text>
+  </g>
+  <g id="NPC0153" data-name="Wren Esh" transform="translate(984 644)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#b5527a"/>
+    <path d="M27 47 H55" stroke="#f0c247" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0153</text>
+  </g>
+  <g id="NPC0154" data-name="Xara Rusk" transform="translate(1066 644)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6cbd45"/>
+    <path d="M27 47 H55" stroke="#8c5ac8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0154</text>
+  </g>
+  <g id="NPC0155" data-name="Yven Voss" transform="translate(1148 644)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#dd9f2f"/>
+    <path d="M27 47 H55" stroke="#3aa6a0" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0155</text>
+  </g>
+  <g id="NPC0156" data-name="Zale Rook" transform="translate(1230 644)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#e84d3d"/>
+    <path d="M27 47 H55" stroke="#d66d2e" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0156</text>
+  </g>
+  <g id="NPC0157" data-name="Ari Fenn" transform="translate(1312 644)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f8dd8"/>
+    <path d="M27 47 H55" stroke="#6f7f8f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0157</text>
+  </g>
+  <g id="NPC0158" data-name="Bela Wren" transform="translate(1394 644)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#4aa84f"/>
+    <path d="M27 47 H55" stroke="#2f2f3f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0158</text>
+  </g>
+  <g id="NPC0159" data-name="Cato Pell" transform="translate(1476 644)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#f0c247"/>
+    <path d="M27 47 H55" stroke="#d9e4f5" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0159</text>
+  </g>
+  <g id="NPC0160" data-name="Dena Thane" transform="translate(1558 644)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#8c5ac8"/>
+    <path d="M27 47 H55" stroke="#b5527a" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0160</text>
+  </g>
+  <g id="NPC0161" data-name="Eron Silt" transform="translate(0 736)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#3aa6a0"/>
+    <path d="M27 47 H55" stroke="#6cbd45" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0161</text>
+  </g>
+  <g id="NPC0162" data-name="Fia Keir" transform="translate(82 736)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d66d2e"/>
+    <path d="M27 47 H55" stroke="#dd9f2f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0162</text>
+  </g>
+  <g id="NPC0163" data-name="Garr Noct" transform="translate(164 736)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6f7f8f"/>
+    <path d="M27 47 H55" stroke="#e84d3d" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0163</text>
+  </g>
+  <g id="NPC0164" data-name="Hale Arc" transform="translate(246 736)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f2f3f"/>
+    <path d="M27 47 H55" stroke="#2f8dd8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0164</text>
+  </g>
+  <g id="NPC0165" data-name="Ira Holt" transform="translate(328 736)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d9e4f5"/>
+    <path d="M27 47 H55" stroke="#4aa84f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0165</text>
+  </g>
+  <g id="NPC0166" data-name="Juno Sol" transform="translate(410 736)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#b5527a"/>
+    <path d="M27 47 H55" stroke="#f0c247" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0166</text>
+  </g>
+  <g id="NPC0167" data-name="Kira Maren" transform="translate(492 736)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6cbd45"/>
+    <path d="M27 47 H55" stroke="#8c5ac8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0167</text>
+  </g>
+  <g id="NPC0168" data-name="Lio Tor" transform="translate(574 736)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#dd9f2f"/>
+    <path d="M27 47 H55" stroke="#3aa6a0" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0168</text>
+  </g>
+  <g id="NPC0169" data-name="Mira Vale" transform="translate(656 736)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#e84d3d"/>
+    <path d="M27 47 H55" stroke="#d66d2e" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0169</text>
+  </g>
+  <g id="NPC0170" data-name="Nox Quill" transform="translate(738 736)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f8dd8"/>
+    <path d="M27 47 H55" stroke="#6f7f8f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0170</text>
+  </g>
+  <g id="NPC0171" data-name="Oren Nox" transform="translate(820 736)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#4aa84f"/>
+    <path d="M27 47 H55" stroke="#2f2f3f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0171</text>
+  </g>
+  <g id="NPC0172" data-name="Pax Reed" transform="translate(902 736)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#f0c247"/>
+    <path d="M27 47 H55" stroke="#d9e4f5" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0172</text>
+  </g>
+  <g id="NPC0173" data-name="Quin Esh" transform="translate(984 736)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#8c5ac8"/>
+    <path d="M27 47 H55" stroke="#b5527a" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0173</text>
+  </g>
+  <g id="NPC0174" data-name="Rhea Rusk" transform="translate(1066 736)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#3aa6a0"/>
+    <path d="M27 47 H55" stroke="#6cbd45" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0174</text>
+  </g>
+  <g id="NPC0175" data-name="Senn Voss" transform="translate(1148 736)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d66d2e"/>
+    <path d="M27 47 H55" stroke="#dd9f2f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0175</text>
+  </g>
+  <g id="NPC0176" data-name="Talia Rook" transform="translate(1230 736)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6f7f8f"/>
+    <path d="M27 47 H55" stroke="#e84d3d" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0176</text>
+  </g>
+  <g id="NPC0177" data-name="Uma Fenn" transform="translate(1312 736)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f2f3f"/>
+    <path d="M27 47 H55" stroke="#2f8dd8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0177</text>
+  </g>
+  <g id="NPC0178" data-name="Venn Wren" transform="translate(1394 736)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d9e4f5"/>
+    <path d="M27 47 H55" stroke="#4aa84f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0178</text>
+  </g>
+  <g id="NPC0179" data-name="Wren Pell" transform="translate(1476 736)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#b5527a"/>
+    <path d="M27 47 H55" stroke="#f0c247" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0179</text>
+  </g>
+  <g id="NPC0180" data-name="Xara Thane" transform="translate(1558 736)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6cbd45"/>
+    <path d="M27 47 H55" stroke="#8c5ac8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0180</text>
+  </g>
+  <g id="NPC0181" data-name="Yven Silt" transform="translate(0 828)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#dd9f2f"/>
+    <path d="M27 47 H55" stroke="#3aa6a0" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0181</text>
+  </g>
+  <g id="NPC0182" data-name="Zale Keir" transform="translate(82 828)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#e84d3d"/>
+    <path d="M27 47 H55" stroke="#d66d2e" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0182</text>
+  </g>
+  <g id="NPC0183" data-name="Ari Noct" transform="translate(164 828)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f8dd8"/>
+    <path d="M27 47 H55" stroke="#6f7f8f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0183</text>
+  </g>
+  <g id="NPC0184" data-name="Bela Arc" transform="translate(246 828)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#4aa84f"/>
+    <path d="M27 47 H55" stroke="#2f2f3f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0184</text>
+  </g>
+  <g id="NPC0185" data-name="Cato Holt" transform="translate(328 828)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#f0c247"/>
+    <path d="M27 47 H55" stroke="#d9e4f5" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0185</text>
+  </g>
+  <g id="NPC0186" data-name="Dena Sol" transform="translate(410 828)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#8c5ac8"/>
+    <path d="M27 47 H55" stroke="#b5527a" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0186</text>
+  </g>
+  <g id="NPC0187" data-name="Eron Maren" transform="translate(492 828)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#3aa6a0"/>
+    <path d="M27 47 H55" stroke="#6cbd45" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0187</text>
+  </g>
+  <g id="NPC0188" data-name="Fia Tor" transform="translate(574 828)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d66d2e"/>
+    <path d="M27 47 H55" stroke="#dd9f2f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0188</text>
+  </g>
+  <g id="NPC0189" data-name="Garr Vale" transform="translate(656 828)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6f7f8f"/>
+    <path d="M27 47 H55" stroke="#e84d3d" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0189</text>
+  </g>
+  <g id="NPC0190" data-name="Hale Quill" transform="translate(738 828)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f2f3f"/>
+    <path d="M27 47 H55" stroke="#2f8dd8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0190</text>
+  </g>
+  <g id="NPC0191" data-name="Ira Nox" transform="translate(820 828)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d9e4f5"/>
+    <path d="M27 47 H55" stroke="#4aa84f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0191</text>
+  </g>
+  <g id="NPC0192" data-name="Juno Reed" transform="translate(902 828)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#b5527a"/>
+    <path d="M27 47 H55" stroke="#f0c247" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0192</text>
+  </g>
+  <g id="NPC0193" data-name="Kira Esh" transform="translate(984 828)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6cbd45"/>
+    <path d="M27 47 H55" stroke="#8c5ac8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0193</text>
+  </g>
+  <g id="NPC0194" data-name="Lio Rusk" transform="translate(1066 828)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#dd9f2f"/>
+    <path d="M27 47 H55" stroke="#3aa6a0" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0194</text>
+  </g>
+  <g id="NPC0195" data-name="Mira Voss" transform="translate(1148 828)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#e84d3d"/>
+    <path d="M27 47 H55" stroke="#d66d2e" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0195</text>
+  </g>
+  <g id="NPC0196" data-name="Nox Rook" transform="translate(1230 828)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f8dd8"/>
+    <path d="M27 47 H55" stroke="#6f7f8f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0196</text>
+  </g>
+  <g id="NPC0197" data-name="Oren Fenn" transform="translate(1312 828)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#4aa84f"/>
+    <path d="M27 47 H55" stroke="#2f2f3f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0197</text>
+  </g>
+  <g id="NPC0198" data-name="Pax Wren" transform="translate(1394 828)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#f0c247"/>
+    <path d="M27 47 H55" stroke="#d9e4f5" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0198</text>
+  </g>
+  <g id="NPC0199" data-name="Quin Pell" transform="translate(1476 828)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#8c5ac8"/>
+    <path d="M27 47 H55" stroke="#b5527a" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0199</text>
+  </g>
+  <g id="NPC0200" data-name="Rhea Thane" transform="translate(1558 828)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#3aa6a0"/>
+    <path d="M27 47 H55" stroke="#6cbd45" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0200</text>
+  </g>
+  <g id="NPC0201" data-name="Senn Silt" transform="translate(0 920)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d66d2e"/>
+    <path d="M27 47 H55" stroke="#dd9f2f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0201</text>
+  </g>
+  <g id="NPC0202" data-name="Talia Keir" transform="translate(82 920)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6f7f8f"/>
+    <path d="M27 47 H55" stroke="#e84d3d" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0202</text>
+  </g>
+  <g id="NPC0203" data-name="Uma Noct" transform="translate(164 920)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f2f3f"/>
+    <path d="M27 47 H55" stroke="#2f8dd8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0203</text>
+  </g>
+  <g id="NPC0204" data-name="Venn Arc" transform="translate(246 920)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d9e4f5"/>
+    <path d="M27 47 H55" stroke="#4aa84f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0204</text>
+  </g>
+  <g id="NPC0205" data-name="Wren Holt" transform="translate(328 920)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#b5527a"/>
+    <path d="M27 47 H55" stroke="#f0c247" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0205</text>
+  </g>
+  <g id="NPC0206" data-name="Xara Sol" transform="translate(410 920)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6cbd45"/>
+    <path d="M27 47 H55" stroke="#8c5ac8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0206</text>
+  </g>
+  <g id="NPC0207" data-name="Yven Maren" transform="translate(492 920)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#dd9f2f"/>
+    <path d="M27 47 H55" stroke="#3aa6a0" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0207</text>
+  </g>
+  <g id="NPC0208" data-name="Zale Tor" transform="translate(574 920)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#e84d3d"/>
+    <path d="M27 47 H55" stroke="#d66d2e" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0208</text>
+  </g>
+  <g id="NPC0209" data-name="Ari Vale" transform="translate(656 920)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f8dd8"/>
+    <path d="M27 47 H55" stroke="#6f7f8f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0209</text>
+  </g>
+  <g id="NPC0210" data-name="Bela Quill" transform="translate(738 920)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#4aa84f"/>
+    <path d="M27 47 H55" stroke="#2f2f3f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0210</text>
+  </g>
+  <g id="NPC0211" data-name="Cato Nox" transform="translate(820 920)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#f0c247"/>
+    <path d="M27 47 H55" stroke="#d9e4f5" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0211</text>
+  </g>
+  <g id="NPC0212" data-name="Dena Reed" transform="translate(902 920)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#8c5ac8"/>
+    <path d="M27 47 H55" stroke="#b5527a" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0212</text>
+  </g>
+  <g id="NPC0213" data-name="Eron Esh" transform="translate(984 920)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#3aa6a0"/>
+    <path d="M27 47 H55" stroke="#6cbd45" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0213</text>
+  </g>
+  <g id="NPC0214" data-name="Fia Rusk" transform="translate(1066 920)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d66d2e"/>
+    <path d="M27 47 H55" stroke="#dd9f2f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0214</text>
+  </g>
+  <g id="NPC0215" data-name="Garr Voss" transform="translate(1148 920)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6f7f8f"/>
+    <path d="M27 47 H55" stroke="#e84d3d" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0215</text>
+  </g>
+  <g id="NPC0216" data-name="Hale Rook" transform="translate(1230 920)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f2f3f"/>
+    <path d="M27 47 H55" stroke="#2f8dd8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0216</text>
+  </g>
+  <g id="NPC0217" data-name="Ira Fenn" transform="translate(1312 920)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d9e4f5"/>
+    <path d="M27 47 H55" stroke="#4aa84f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0217</text>
+  </g>
+  <g id="NPC0218" data-name="Juno Wren" transform="translate(1394 920)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#b5527a"/>
+    <path d="M27 47 H55" stroke="#f0c247" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0218</text>
+  </g>
+  <g id="NPC0219" data-name="Kira Pell" transform="translate(1476 920)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6cbd45"/>
+    <path d="M27 47 H55" stroke="#8c5ac8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0219</text>
+  </g>
+  <g id="NPC0220" data-name="Lio Thane" transform="translate(1558 920)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#dd9f2f"/>
+    <path d="M27 47 H55" stroke="#3aa6a0" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0220</text>
+  </g>
+  <g id="NPC0221" data-name="Mira Silt" transform="translate(0 1012)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#e84d3d"/>
+    <path d="M27 47 H55" stroke="#d66d2e" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0221</text>
+  </g>
+  <g id="NPC0222" data-name="Nox Keir" transform="translate(82 1012)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f8dd8"/>
+    <path d="M27 47 H55" stroke="#6f7f8f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0222</text>
+  </g>
+  <g id="NPC0223" data-name="Oren Noct" transform="translate(164 1012)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#4aa84f"/>
+    <path d="M27 47 H55" stroke="#2f2f3f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0223</text>
+  </g>
+  <g id="NPC0224" data-name="Pax Arc" transform="translate(246 1012)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#f0c247"/>
+    <path d="M27 47 H55" stroke="#d9e4f5" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0224</text>
+  </g>
+  <g id="NPC0225" data-name="Quin Holt" transform="translate(328 1012)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#8c5ac8"/>
+    <path d="M27 47 H55" stroke="#b5527a" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0225</text>
+  </g>
+  <g id="NPC0226" data-name="Rhea Sol" transform="translate(410 1012)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#3aa6a0"/>
+    <path d="M27 47 H55" stroke="#6cbd45" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0226</text>
+  </g>
+  <g id="NPC0227" data-name="Senn Maren" transform="translate(492 1012)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d66d2e"/>
+    <path d="M27 47 H55" stroke="#dd9f2f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0227</text>
+  </g>
+  <g id="NPC0228" data-name="Talia Tor" transform="translate(574 1012)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6f7f8f"/>
+    <path d="M27 47 H55" stroke="#e84d3d" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0228</text>
+  </g>
+  <g id="NPC0229" data-name="Uma Vale" transform="translate(656 1012)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f2f3f"/>
+    <path d="M27 47 H55" stroke="#2f8dd8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0229</text>
+  </g>
+  <g id="NPC0230" data-name="Venn Quill" transform="translate(738 1012)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d9e4f5"/>
+    <path d="M27 47 H55" stroke="#4aa84f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0230</text>
+  </g>
+  <g id="NPC0231" data-name="Wren Nox" transform="translate(820 1012)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#b5527a"/>
+    <path d="M27 47 H55" stroke="#f0c247" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0231</text>
+  </g>
+  <g id="NPC0232" data-name="Xara Reed" transform="translate(902 1012)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#6cbd45"/>
+    <path d="M27 47 H55" stroke="#8c5ac8" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0232</text>
+  </g>
+  <g id="NPC0233" data-name="Yven Esh" transform="translate(984 1012)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#dd9f2f"/>
+    <path d="M27 47 H55" stroke="#3aa6a0" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0233</text>
+  </g>
+  <g id="NPC0234" data-name="Zale Rusk" transform="translate(1066 1012)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#e84d3d"/>
+    <path d="M27 47 H55" stroke="#d66d2e" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0234</text>
+  </g>
+  <g id="NPC0235" data-name="Ari Voss" transform="translate(1148 1012)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#2f8dd8"/>
+    <path d="M27 47 H55" stroke="#6f7f8f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0235</text>
+  </g>
+  <g id="NPC0236" data-name="Bela Rook" transform="translate(1230 1012)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#4aa84f"/>
+    <path d="M27 47 H55" stroke="#2f2f3f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0236</text>
+  </g>
+  <g id="NPC0237" data-name="Cato Fenn" transform="translate(1312 1012)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#f0c247"/>
+    <path d="M27 47 H55" stroke="#d9e4f5" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0237</text>
+  </g>
+  <g id="NPC0238" data-name="Dena Wren" transform="translate(1394 1012)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#8c5ac8"/>
+    <path d="M27 47 H55" stroke="#b5527a" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0238</text>
+  </g>
+  <g id="NPC0239" data-name="Eron Pell" transform="translate(1476 1012)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#3aa6a0"/>
+    <path d="M27 47 H55" stroke="#6cbd45" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0239</text>
+  </g>
+  <g id="NPC0240" data-name="Fia Thane" transform="translate(1558 1012)">
+    <rect x="4" y="4" width="74" height="84" rx="7" fill="#1c2838" stroke="#33475f"/>
+    <circle cx="41" cy="25" r="13" fill="#d5a47d"/>
+    <path d="M24 71 C25 48 33 39 41 39 C49 39 57 48 58 71Z" fill="#d66d2e"/>
+    <path d="M27 47 H55" stroke="#dd9f2f" stroke-width="5"/>
+    <text x="41" y="79" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">NPC0240</text>
+  </g>
+</svg>
+

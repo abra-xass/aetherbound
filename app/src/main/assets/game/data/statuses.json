@@ -1,0 +1,1211 @@
+[
+  {
+    "modifiers": [],
+    "behaviors": {},
+    "category": "negative",
+    "effects": [
+      {
+        "type": "statchange"
+      }
+    ],
+    "icon": "gfx/ui/icons/status/icon_blinded.png",
+    "on_positive_status": "replaced",
+    "on_negative_status": "replaced",
+    "slug": "blinded",
+    "sort": "meta",
+    "stat_modifiers": {
+      "speed": {
+        "value": 0.5,
+        "operation": "*"
+      },
+      "dodge": {
+        "value": 0.5,
+        "operation": "*"
+      }
+    },
+    "cond_id": 17,
+    "use_failure": null,
+    "use_success": "combat_state_blinded_get",
+    "gain_cond": null,
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": "sfx_pulse",
+      "volume": 1.5
+    }
+  },
+  {
+    "modifiers": [
+      {
+        "attribute": "type",
+        "values": [
+          "fire"
+        ],
+        "multiplier": 0.0,
+        "source": "fire immunity"
+      },
+      {
+        "attribute": "type",
+        "values": [
+          "frost"
+        ],
+        "multiplier": 2.0,
+        "source": "fire extra damage"
+      }
+    ],
+    "behaviors": {
+      "persists_after_combat": true
+    },
+    "category": "negative",
+    "effects": [
+      {
+        "type": "burnt",
+        "parameters": [
+          "8",
+          "weakest"
+        ]
+      }
+    ],
+    "icon": "gfx/ui/icons/status/icon_burn.png",
+    "on_positive_status": "replaced",
+    "on_negative_status": "replaced",
+    "step_effect_value": 1.0,
+    "step_effect_type": "flat_damage",
+    "step_interval": 10,
+    "slug": "burn",
+    "sort": "meta",
+    "cond_id": 22,
+    "use_failure": "generic_failure",
+    "use_success": "combat_state_burn_end",
+    "gain_cond": "combat_state_burn_get",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": "sfx_pulse",
+      "volume": 1.5
+    }
+  },
+  {
+    "modifiers": [],
+    "behaviors": {},
+    "category": "positive",
+    "effects": [
+      {
+        "type": "statchange"
+      },
+      {
+        "type": "chargedup"
+      }
+    ],
+    "icon": "gfx/ui/icons/status/icon_chargedup.png",
+    "on_positive_status": "replaced",
+    "on_tech_use": "exhausted",
+    "slug": "chargedup",
+    "sort": "meta",
+    "stat_modifiers": {
+      "armour": {
+        "value": 2,
+        "operation": "*"
+      },
+      "dodge": {
+        "value": 2,
+        "operation": "*"
+      },
+      "melee": {
+        "value": 2,
+        "operation": "*"
+      },
+      "ranged": {
+        "value": 2,
+        "operation": "*"
+      },
+      "speed": {
+        "value": 2,
+        "operation": "*"
+      }
+    },
+    "cond_id": 9,
+    "use_failure": null,
+    "use_success": "combat_state_chargedup_get",
+    "gain_cond": null,
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": "sfx_pulse",
+      "volume": 1.5
+    }
+  },
+  {
+    "modifiers": [],
+    "behaviors": {},
+    "category": "positive",
+    "effects": [
+      {
+        "type": "charging"
+      }
+    ],
+    "icon": "gfx/ui/icons/status/icon_charging.png",
+    "on_positive_status": "replaced",
+    "on_tech_use": "chargedup",
+    "on_item_use": "chargedup",
+    "slug": "charging",
+    "sort": "meta",
+    "cond_id": 8,
+    "use_failure": null,
+    "use_success": "combat_state_charging_get",
+    "gain_cond": null,
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": "sfx_pulse",
+      "volume": 1.5
+    }
+  },
+  {
+    "modifiers": [],
+    "behaviors": {},
+    "category": "negative",
+    "effects": [
+      {
+        "type": "charmed",
+        "parameters": [
+          "0.5"
+        ]
+      }
+    ],
+    "icon": "gfx/ui/icons/status/icon_charmed.png",
+    "on_positive_status": "replaced",
+    "on_negative_status": "replaced",
+    "slug": "charmed",
+    "sort": "meta",
+    "cond_id": 25,
+    "use_failure": null,
+    "use_success": "combat_state_charmed_get",
+    "gain_cond": null,
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": "sfx_pulse",
+      "volume": 1.5
+    }
+  },
+  {
+    "modifiers": [],
+    "behaviors": {},
+    "category": "negative",
+    "effects": [
+      {
+        "type": "confused",
+        "parameters": [
+          "0.5"
+        ]
+      }
+    ],
+    "icon": "gfx/ui/icons/status/icon_confused.png",
+    "on_positive_status": "replaced",
+    "on_negative_status": "replaced",
+    "on_tech_use": "empty",
+    "slug": "confused",
+    "sort": "meta",
+    "cond_id": 19,
+    "use_failure": null,
+    "use_success": "combat_state_confused_get",
+    "gain_cond": null,
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": "sfx_pulse",
+      "volume": 1.5
+    }
+  },
+  {
+    "modifiers": [],
+    "behaviors": {},
+    "category": "positive",
+    "effects": [
+      {
+        "type": "diehard",
+        "parameters": [
+          "1"
+        ]
+      }
+    ],
+    "icon": "gfx/ui/icons/status/icon_diehard.png",
+    "on_positive_status": "replaced",
+    "on_negative_status": "replaced",
+    "slug": "diehard",
+    "sort": "meta",
+    "cond_id": 4,
+    "use_failure": null,
+    "use_success": "combat_state_diehard_get",
+    "gain_cond": null,
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": "sfx_pulse",
+      "volume": 1.5
+    }
+  },
+  {
+    "modifiers": [],
+    "behaviors": {},
+    "category": "positive",
+    "effects": [
+      {
+        "type": "elemental_shield",
+        "parameters": [
+          "16",
+          "special"
+        ]
+      }
+    ],
+    "icon": "gfx/ui/icons/status/icon_elementalshield.png",
+    "on_positive_status": "replaced",
+    "on_negative_status": "replaced",
+    "slug": "elementalshield",
+    "sort": "meta",
+    "cond_id": 28,
+    "use_failure": null,
+    "use_success": "combat_state_elemental_shield_get",
+    "gain_cond": null,
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": "sfx_pulse",
+      "volume": 1.5
+    }
+  },
+  {
+    "modifiers": [],
+    "behaviors": {},
+    "effects": [],
+    "icon": "gfx/ui/icons/status/icon_eliminated.png",
+    "slug": "eliminated",
+    "sort": "meta",
+    "cond_id": 0,
+    "use_failure": null,
+    "use_success": null,
+    "gain_cond": null,
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": "sfx_pulse",
+      "volume": 1.5
+    }
+  },
+  {
+    "modifiers": [],
+    "behaviors": {},
+    "category": "positive",
+    "effects": [
+      {
+        "type": "statchange"
+      }
+    ],
+    "icon": "gfx/ui/icons/status/icon_enraged.png",
+    "on_positive_status": "replaced",
+    "on_negative_status": "replaced",
+    "slug": "enraged",
+    "sort": "meta",
+    "stat_modifiers": {
+      "melee": {
+        "value": 2,
+        "operation": "*"
+      },
+      "ranged": {
+        "value": 0.5,
+        "operation": "*"
+      }
+    },
+    "cond_id": 12,
+    "use_failure": null,
+    "use_success": "combat_state_enraged_get",
+    "gain_cond": null,
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": "sfx_pulse",
+      "volume": 1.5
+    }
+  },
+  {
+    "modifiers": [],
+    "behaviors": {},
+    "category": "negative",
+    "effects": [
+      {
+        "type": "statchange"
+      },
+      {
+        "type": "exhausted"
+      }
+    ],
+    "icon": "gfx/ui/icons/status/icon_exhausted.png",
+    "on_negative_status": "replaced",
+    "slug": "exhausted",
+    "sort": "meta",
+    "stat_modifiers": {
+      "melee": {
+        "value": 0.5,
+        "operation": "*"
+      },
+      "ranged": {
+        "value": 0.5,
+        "operation": "*"
+      }
+    },
+    "cond_id": 11,
+    "use_failure": null,
+    "use_success": "combat_state_exhausted_get",
+    "gain_cond": null,
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": "sfx_pulse",
+      "volume": 1.5
+    }
+  },
+  {
+    "modifiers": [],
+    "behaviors": {},
+    "category": "neutral",
+    "effects": [],
+    "icon": "gfx/ui/icons/status/icon_faint.png",
+    "slug": "faint",
+    "sort": "meta",
+    "cond_id": 0,
+    "use_failure": null,
+    "use_success": null,
+    "gain_cond": null,
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": "sfx_faint",
+      "volume": 1.5
+    }
+  },
+  {
+    "modifiers": [],
+    "behaviors": {},
+    "category": "positive",
+    "effects": [
+      {
+        "type": "feedback",
+        "parameters": [
+          "8",
+          "ranged:reach"
+        ]
+      }
+    ],
+    "icon": "gfx/ui/icons/status/icon_feedback.png",
+    "on_positive_status": "replaced",
+    "on_negative_status": "replaced",
+    "slug": "feedback",
+    "sort": "meta",
+    "cond_id": 30,
+    "use_failure": null,
+    "use_success": "combat_state_feedback_get",
+    "gain_cond": null,
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": "sfx_pulse",
+      "volume": 1.5
+    }
+  },
+  {
+    "modifiers": [],
+    "behaviors": {},
+    "category": "negative",
+    "effects": [
+      {
+        "type": "festering"
+      }
+    ],
+    "icon": "gfx/ui/icons/status/icon_festering.png",
+    "on_negative_status": "replaced",
+    "slug": "festering",
+    "sort": "meta",
+    "cond_id": 20,
+    "use_failure": null,
+    "use_success": "combat_state_festering_get",
+    "gain_cond": null,
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": "sfx_pulse",
+      "volume": 1.5
+    }
+  },
+  {
+    "modifiers": [],
+    "behaviors": {},
+    "category": "negative",
+    "effects": [
+      {
+        "type": "flinching",
+        "parameters": [
+          "0.5"
+        ]
+      }
+    ],
+    "icon": "gfx/ui/icons/status/icon_flinching.png",
+    "on_positive_status": "replaced",
+    "on_negative_status": "replaced",
+    "on_tech_use": "empty",
+    "slug": "flinching",
+    "sort": "meta",
+    "cond_id": 25,
+    "use_failure": null,
+    "use_success": "combat_state_flinching_get",
+    "gain_cond": null,
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": "sfx_pulse",
+      "volume": 1.5
+    }
+  },
+  {
+    "modifiers": [],
+    "behaviors": {},
+    "category": "positive",
+    "effects": [
+      {
+        "type": "statchange"
+      }
+    ],
+    "icon": "gfx/ui/icons/status/icon_focused.png",
+    "on_positive_status": "replaced",
+    "on_negative_status": "removed",
+    "slug": "focused",
+    "sort": "meta",
+    "stat_modifiers": {
+      "dodge": {
+        "value": 1.5,
+        "operation": "*"
+      }
+    },
+    "cond_id": 14,
+    "use_failure": null,
+    "use_success": "combat_state_focused_get",
+    "gain_cond": null,
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": "sfx_pulse",
+      "volume": 1.5
+    }
+  },
+  {
+    "modifiers": [],
+    "behaviors": {},
+    "category": "negative",
+    "conditions": [
+      {
+        "type": "current_hp",
+        "parameters": [
+          ">",
+          "0"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "grabbed",
+        "parameters": [
+          "2",
+          "ranged:reach"
+        ]
+      }
+    ],
+    "icon": "gfx/ui/icons/status/icon_grabbed.png",
+    "on_positive_status": "replaced",
+    "on_negative_status": "replaced",
+    "bond": true,
+    "slug": "grabbed",
+    "sort": "meta",
+    "cond_id": 5,
+    "use_failure": null,
+    "use_success": "combat_state_grabbed_get",
+    "gain_cond": null,
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": "sfx_pulse",
+      "volume": 1.5
+    }
+  },
+  {
+    "modifiers": [],
+    "behaviors": {},
+    "category": "positive",
+    "effects": [
+      {
+        "type": "statchange"
+      }
+    ],
+    "icon": "gfx/ui/icons/status/icon_hardshell.png",
+    "on_positive_status": "replaced",
+    "on_negative_status": "removed",
+    "slug": "hardshell",
+    "sort": "meta",
+    "stat_modifiers": {
+      "armour": {
+        "value": 1.5,
+        "operation": "*"
+      }
+    },
+    "cond_id": 1,
+    "use_failure": null,
+    "use_success": "combat_state_hardshell_get",
+    "gain_cond": null,
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": "sfx_bite",
+      "volume": 1.5
+    }
+  },
+  {
+    "modifiers": [],
+    "behaviors": {},
+    "category": "negative",
+    "effects": [
+      {
+        "type": "harpooned",
+        "parameters": [
+          "8"
+        ]
+      }
+    ],
+    "icon": "gfx/ui/icons/status/icon_harpooned.png",
+    "on_positive_status": "replaced",
+    "on_negative_status": "replaced",
+    "slug": "harpooned",
+    "sort": "meta",
+    "cond_id": 27,
+    "use_failure": null,
+    "use_success": "combat_state_harpooned_get",
+    "gain_cond": null,
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": "sfx_pulse",
+      "volume": 1.5
+    }
+  },
+  {
+    "modifiers": [],
+    "behaviors": {},
+    "category": "negative",
+    "conditions": [
+      {
+        "type": "current_hp",
+        "parameters": [
+          ">",
+          "0"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "lifegift",
+        "parameters": [
+          "16"
+        ]
+      }
+    ],
+    "icon": "gfx/ui/icons/status/icon_lifegift.png",
+    "on_positive_status": "replaced",
+    "on_negative_status": "replaced",
+    "bond": true,
+    "slug": "lifegift",
+    "sort": "meta",
+    "cond_id": 33,
+    "use_failure": null,
+    "use_success": "combat_state_lifegift_end",
+    "gain_cond": "combat_state_lifegift_get",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": "sfx_bite",
+      "volume": 1.5
+    }
+  },
+  {
+    "modifiers": [],
+    "behaviors": {},
+    "category": "negative",
+    "conditions": [
+      {
+        "type": "current_hp",
+        "parameters": [
+          ">",
+          "0"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "lifeleech",
+        "parameters": [
+          "16"
+        ]
+      }
+    ],
+    "icon": "gfx/ui/icons/status/icon_lifeleech.png",
+    "on_positive_status": "replaced",
+    "on_negative_status": "replaced",
+    "bond": true,
+    "slug": "lifeleech",
+    "sort": "meta",
+    "cond_id": 3,
+    "use_failure": null,
+    "use_success": "combat_state_lifeleech_end",
+    "gain_cond": "combat_state_lifeleech_get",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": "sfx_bite",
+      "volume": 1.5
+    }
+  },
+  {
+    "modifiers": [],
+    "behaviors": {},
+    "category": "negative",
+    "effects": [
+      {
+        "type": "lockdown"
+      }
+    ],
+    "icon": "gfx/ui/icons/status/icon_lockdown.png",
+    "on_positive_status": "replaced",
+    "on_negative_status": "replaced",
+    "slug": "lockdown",
+    "sort": "meta",
+    "cond_id": 23,
+    "use_failure": null,
+    "use_success": "combat_state_lockdown_get",
+    "gain_cond": null,
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": "sfx_pulse",
+      "volume": 1.5
+    }
+  },
+  {
+    "modifiers": [],
+    "behaviors": {},
+    "category": "negative",
+    "effects": [
+      {
+        "type": "noddingoff",
+        "parameters": [
+          "0.5"
+        ]
+      }
+    ],
+    "icon": "gfx/ui/icons/status/icon_noddingoff.png",
+    "on_tech_use": "empty",
+    "slug": "noddingoff",
+    "sort": "meta",
+    "cond_id": 6,
+    "duration": 5,
+    "use_failure": null,
+    "use_success": "combat_state_dozing_get",
+    "gain_cond": "combat_state_noddingoff_get",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": "sfx_pulse",
+      "volume": 1.5
+    }
+  },
+  {
+    "modifiers": [
+      {
+        "attribute": "type",
+        "values": [
+          "venom"
+        ],
+        "multiplier": 0.0,
+        "source": "poison immunity"
+      }
+    ],
+    "behaviors": {
+      "persists_after_combat": true
+    },
+    "category": "negative",
+    "effects": [
+      {
+        "type": "poisoned",
+        "parameters": [
+          "8",
+          "weakest"
+        ]
+      }
+    ],
+    "icon": "gfx/ui/icons/status/icon_poison.png",
+    "on_positive_status": "replaced",
+    "on_negative_status": "replaced",
+    "step_effect_value": 1.0,
+    "step_effect_type": "flat_damage",
+    "step_interval": 10,
+    "slug": "poison",
+    "sort": "meta",
+    "cond_id": 2,
+    "use_failure": null,
+    "use_success": "combat_state_poison_end",
+    "gain_cond": "combat_state_poison_get",
+    "visuals": {
+      "animation": "drip_green",
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": "sfx_pulse",
+      "volume": 1.5
+    }
+  },
+  {
+    "modifiers": [],
+    "behaviors": {},
+    "category": "positive",
+    "effects": [
+      {
+        "type": "prickly",
+        "parameters": [
+          "8",
+          "touch:melee"
+        ]
+      }
+    ],
+    "icon": "gfx/ui/icons/status/icon_prickly.png",
+    "on_positive_status": "replaced",
+    "on_negative_status": "replaced",
+    "slug": "prickly",
+    "sort": "meta",
+    "cond_id": 29,
+    "use_failure": null,
+    "use_success": "combat_state_prickly_get",
+    "gain_cond": null,
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": "sfx_pulse",
+      "volume": 1.5
+    }
+  },
+  {
+    "modifiers": [],
+    "behaviors": {},
+    "category": "positive",
+    "effects": [
+      {
+        "type": "recover",
+        "parameters": [
+          "16"
+        ]
+      }
+    ],
+    "icon": "gfx/ui/icons/status/icon_recover.png",
+    "on_positive_status": "replaced",
+    "on_negative_status": "replaced",
+    "slug": "recover",
+    "sort": "meta",
+    "cond_id": 15,
+    "use_failure": null,
+    "use_success": "combat_state_recover_end",
+    "gain_cond": "combat_state_recover_get",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": "sfx_bite",
+      "volume": 1.5
+    }
+  },
+  {
+    "modifiers": [],
+    "behaviors": {},
+    "category": "positive",
+    "effects": [
+      {
+        "type": "retaliate"
+      }
+    ],
+    "icon": "gfx/ui/icons/status/icon_retaliate.png",
+    "on_positive_status": "replaced",
+    "on_negative_status": "replaced",
+    "slug": "retaliate",
+    "sort": "meta",
+    "cond_id": 31,
+    "use_failure": null,
+    "use_success": "combat_state_retaliate_get",
+    "gain_cond": null,
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": "sfx_pulse",
+      "volume": 1.5
+    }
+  },
+  {
+    "modifiers": [],
+    "behaviors": {},
+    "category": "positive",
+    "effects": [
+      {
+        "type": "revenge"
+      }
+    ],
+    "icon": "gfx/ui/icons/status/icon_revenge.png",
+    "on_positive_status": "replaced",
+    "on_negative_status": "replaced",
+    "slug": "revenge",
+    "sort": "meta",
+    "cond_id": 32,
+    "use_failure": null,
+    "use_success": "combat_state_revenge_get",
+    "gain_cond": null,
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": "sfx_pulse",
+      "volume": 1.5
+    }
+  },
+  {
+    "modifiers": [],
+    "behaviors": {},
+    "category": "negative",
+    "effects": [
+      {
+        "type": "statchange"
+      }
+    ],
+    "icon": "gfx/ui/icons/status/icon_slow.png",
+    "on_positive_status": "replaced",
+    "on_negative_status": "replaced",
+    "slug": "slow",
+    "sort": "meta",
+    "stat_modifiers": {
+      "speed": {
+        "value": 0.5,
+        "operation": "*"
+      }
+    },
+    "cond_id": 21,
+    "use_failure": null,
+    "use_success": "combat_state_slow_get",
+    "gain_cond": null,
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": "sfx_pulse",
+      "volume": 1.5
+    }
+  },
+  {
+    "modifiers": [],
+    "behaviors": {},
+    "category": "positive",
+    "effects": [
+      {
+        "type": "statchange"
+      }
+    ],
+    "icon": "gfx/ui/icons/status/icon_sniping.png",
+    "on_positive_status": "replaced",
+    "on_negative_status": "replaced",
+    "slug": "sniping",
+    "sort": "meta",
+    "stat_modifiers": {
+      "melee": {
+        "value": 0.5,
+        "operation": "*"
+      },
+      "ranged": {
+        "value": 2,
+        "operation": "*"
+      }
+    },
+    "cond_id": 13,
+    "use_failure": null,
+    "use_success": "combat_state_sniping_get",
+    "gain_cond": null,
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": "sfx_pulse",
+      "volume": 1.5
+    }
+  },
+  {
+    "modifiers": [],
+    "behaviors": {},
+    "category": "negative",
+    "effects": [
+      {
+        "type": "statchange"
+      }
+    ],
+    "icon": "gfx/ui/icons/status/icon_softened.png",
+    "on_positive_status": "replaced",
+    "on_negative_status": "replaced",
+    "slug": "softened",
+    "sort": "meta",
+    "stat_modifiers": {
+      "armour": {
+        "value": 0.5,
+        "operation": "*"
+      },
+      "speed": {
+        "value": 0.5,
+        "operation": "*"
+      }
+    },
+    "cond_id": 16,
+    "use_failure": null,
+    "use_success": "combat_state_softened_get",
+    "gain_cond": null,
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": "sfx_pulse",
+      "volume": 1.5
+    }
+  },
+  {
+    "modifiers": [],
+    "behaviors": {},
+    "category": "negative",
+    "effects": [
+      {
+        "type": "spiky",
+        "parameters": [
+          "8"
+        ]
+      }
+    ],
+    "icon": "gfx/ui/icons/status/icon_harpooned.png",
+    "on_positive_status": "replaced",
+    "on_negative_status": "replaced",
+    "slug": "spiky",
+    "sort": "meta",
+    "cond_id": 34,
+    "use_failure": null,
+    "use_success": "combat_state_spiky_get",
+    "gain_cond": null,
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": "sfx_pulse",
+      "volume": 1.5
+    }
+  },
+  {
+    "modifiers": [],
+    "behaviors": {},
+    "category": "negative",
+    "conditions": [
+      {
+        "type": "current_hp",
+        "parameters": [
+          ">",
+          "0"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "stuck",
+        "parameters": [
+          "2",
+          "melee:touch"
+        ]
+      }
+    ],
+    "icon": "gfx/ui/icons/status/icon_stuck.png",
+    "on_positive_status": "replaced",
+    "on_negative_status": "replaced",
+    "slug": "stuck",
+    "sort": "meta",
+    "cond_id": 18,
+    "use_failure": null,
+    "use_success": "combat_state_stuck_get",
+    "gain_cond": null,
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": "sfx_pulse",
+      "volume": 1.5
+    }
+  },
+  {
+    "modifiers": [],
+    "behaviors": {},
+    "category": "negative",
+    "effects": [
+      {
+        "type": "wasting",
+        "parameters": [
+          "16"
+        ]
+      }
+    ],
+    "icon": "gfx/ui/icons/status/icon_wasting.png",
+    "on_positive_status": "replaced",
+    "on_negative_status": "replaced",
+    "slug": "wasting",
+    "sort": "meta",
+    "cond_id": 24,
+    "use_failure": null,
+    "use_success": "combat_state_wasting_end",
+    "gain_cond": "combat_state_wasting_get",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": "sfx_pulse",
+      "volume": 1.5
+    }
+  },
+  {
+    "modifiers": [],
+    "behaviors": {},
+    "category": "negative",
+    "effects": [
+      {
+        "type": "wild",
+        "parameters": [
+          "0.25",
+          "8"
+        ]
+      }
+    ],
+    "icon": "gfx/ui/icons/status/icon_wild.png",
+    "on_positive_status": "replaced",
+    "on_negative_status": "replaced",
+    "on_tech_use": "empty",
+    "slug": "wild",
+    "sort": "meta",
+    "cond_id": 26,
+    "use_failure": null,
+    "use_success": "combat_state_wild_end",
+    "gain_cond": "combat_state_wild_get",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": "sfx_pulse",
+      "volume": 1.5
+    }
+  }
+]

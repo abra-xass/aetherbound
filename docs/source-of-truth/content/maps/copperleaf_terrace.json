@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "map_id": "copperleaf_terrace",
+  "name": "Copperleaf Terrace",
+  "tileset": "farmland_copper",
+  "size": {"width": 90, "height": 72},
+  "services": ["aether_clinic", "general_store", "fusion_lab_basic", "arena_vendor"],
+  "arena": {"leader":"Talia Rusk","seal":"Copper Seal","ruleset":"verdance_stone_field_fusion"},
+  "encounter_tables": [
+    {"zone":"terrace_grass","species":["E003","E005","E017","E025","E040"],"level_min":8,"level_max":14},
+    {"zone":"irrigation_channel","species":["E008","E016","E061","E089"],"level_min":9,"level_max":15}
+  ],
+  "battle_npcs": ["NPC0201","NPC0202","NPC0203","NPC0204","NPC0205","NPC0206","NPC0207","NPC0208"]
+}

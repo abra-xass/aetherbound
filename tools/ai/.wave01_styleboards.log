@@ -1,0 +1,18 @@
+>> 4 job(s) queued | model=flux | seed=42
+  pack: graphics-wave-01-prompt-pack.json
+  out:  app\src\main\assets\game
+
+[1/4] wave01_01_overworld_style_board  →  style-boards/wave01-overworld-style-board.png  (1536×1024)
+  prompt: Style board for a modern 2D monster-RPG overworld, hybrid pixel-art and HD-2D direction, t…
+  OK 109 KB in 2.0s
+[2/4] wave01_02_battle_style_board  →  style-boards/wave01-battle-style-board.png  (1536×1024)
+  prompt: Battle presentation style board for a modern 2D monster RPG, hybrid sprite and painted bat…
+  OK 115 KB in 0.7s
+[3/4] wave01_03_echoform_style_board  →  style-boards/wave01-echoform-style-board.png  (1536×1024)
+  prompt: Creature design style board for original collectible monsters called Echoforms, hybrid RPG…
+  OK 106 KB in 53.5s
+[4/4] wave01_04_vfx_style_board  →  style-boards/wave01-vfx-style-board.png  (1536×1024)
+  prompt: Elemental combat VFX style board for a 2D monster RPG, twelve distinct effect languages: e…
+  OK 106 KB in 87.3s
+
+-- done | 4/4 ok --

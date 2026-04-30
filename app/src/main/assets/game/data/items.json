@@ -1,0 +1,8288 @@
+[
+  {
+    "effects": [],
+    "slug": "aardant",
+    "sort": "utility",
+    "sprite": "gfx/items/aardant.png",
+    "category": "none",
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "allies_address",
+    "sort": "utility",
+    "sprite": "gfx/items/key-card.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [],
+    "effects": [
+      {
+        "type": "repellent",
+        "parameters": [
+          "100"
+        ]
+      }
+    ],
+    "slug": "alpha_seep",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "requires_monster_menu": false
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "ancient_egg",
+    "sort": "utility",
+    "sprite": "gfx/items/ancient_egg.png",
+    "category": "none",
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [],
+    "effects": [
+      {
+        "type": "gain_xp",
+        "parameters": [
+          "1500"
+        ]
+      }
+    ],
+    "slug": "ancient_tea",
+    "sort": "potion",
+    "sprite": "gfx/items/ancient_tea.png",
+    "category": "none",
+    "cost": 3150,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true,
+      "show_dialog_on_success": false
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "antidote_grapes",
+    "sort": "utility",
+    "sprite": "gfx/items/antidote-grapes.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false,
+      "holdable": true
+    },
+    "immunity_to_status": [
+      "poison"
+    ],
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "app_banking",
+    "sort": "utility",
+    "sprite": "gfx/items/app_banking.png",
+    "category": "phone",
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false,
+      "visible": false
+    },
+    "dynamic_menu": {
+      "position": 0,
+      "label_key": "app_banking",
+      "menu_type": "phone",
+      "state": "NuPhoneBanking"
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "app_contacts",
+    "sort": "utility",
+    "sprite": "gfx/items/app_contacts.png",
+    "category": "phone",
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false,
+      "visible": false
+    },
+    "dynamic_menu": {
+      "position": 1,
+      "label_key": "app_contacts",
+      "menu_type": "phone",
+      "state": "NuPhoneContacts"
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "app_map",
+    "sort": "utility",
+    "sprite": "gfx/items/app_map.png",
+    "category": "phone",
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false,
+      "visible": false
+    },
+    "dynamic_menu": {
+      "position": 2,
+      "label_key": "app_map",
+      "menu_type": "phone",
+      "state": "NuPhoneMap"
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "app_radio",
+    "sort": "utility",
+    "sprite": "gfx/items/app_contacts.png",
+    "category": "phone",
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false,
+      "visible": false
+    },
+    "dynamic_menu": {
+      "position": 4,
+      "label_key": "app_radio",
+      "menu_type": "phone",
+      "state": "NuPhoneRadioMenu"
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "app_renaming",
+    "sort": "utility",
+    "sprite": "gfx/items/app_renaming.png",
+    "category": "phone",
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false,
+      "visible": false
+    },
+    "dynamic_menu": {
+      "position": 3,
+      "label_key": "app_renaming",
+      "menu_type": "phone",
+      "state": "NuPhoneRenaming"
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "app_tuxepedia",
+    "sort": "utility",
+    "sprite": "gfx/items/app_tuxepedia.png",
+    "category": "phone",
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false,
+      "visible": false
+    },
+    "dynamic_menu": {
+      "position": 0,
+      "label_key": "menu_tuxepedia",
+      "menu_type": "world",
+      "state": "JournalChoice"
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [
+      {
+        "type": "heal",
+        "parameters": [
+          "-100",
+          "fixed"
+        ]
+      }
+    ],
+    "slug": "bite_of_despair",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [
+      {
+        "type": "bivouac"
+      }
+    ],
+    "slug": "bivouac",
+    "sort": "utility",
+    "sprite": "gfx/items/bivouac.png",
+    "category": "none",
+    "cost": 1800,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true,
+      "requires_monster_menu": false
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "bivouac_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "book_wishes",
+    "sort": "utility",
+    "sprite": "gfx/items/book_wishes.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [],
+    "effects": [
+      {
+        "type": "buff",
+        "parameters": [
+          "armour",
+          "0.2"
+        ]
+      }
+    ],
+    "slug": "boost_armour",
+    "sort": "utility",
+    "sprite": "gfx/items/boost_armour.png",
+    "category": "stats",
+    "cost": 550,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [],
+    "effects": [
+      {
+        "type": "buff",
+        "parameters": [
+          "dodge",
+          "0.2"
+        ]
+      }
+    ],
+    "slug": "boost_dodge",
+    "sort": "utility",
+    "sprite": "gfx/items/boost_dodge.png",
+    "category": "stats",
+    "cost": 550,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [],
+    "effects": [
+      {
+        "type": "buff",
+        "parameters": [
+          "melee",
+          "0.2"
+        ]
+      }
+    ],
+    "slug": "boost_melee",
+    "sort": "utility",
+    "sprite": "gfx/items/boost_melee.png",
+    "category": "stats",
+    "cost": 550,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [],
+    "effects": [
+      {
+        "type": "buff",
+        "parameters": [
+          "ranged",
+          "0.2"
+        ]
+      }
+    ],
+    "slug": "boost_ranged",
+    "sort": "utility",
+    "sprite": "gfx/items/boost_ranged.png",
+    "category": "stats",
+    "cost": 550,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [],
+    "effects": [
+      {
+        "type": "buff",
+        "parameters": [
+          "speed",
+          "0.2"
+        ]
+      }
+    ],
+    "slug": "boost_speed",
+    "sort": "utility",
+    "sprite": "gfx/items/boost_speed.png",
+    "category": "stats",
+    "cost": 550,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "can_evolve",
+        "operator": "is"
+      },
+      {
+        "type": "has_path",
+        "parameters": [
+          "booster_tech"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "evolve"
+      }
+    ],
+    "slug": "booster_tech",
+    "sort": "utility",
+    "sprite": "gfx/items/booster_tech.png",
+    "category": "morph",
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "show_dialog_on_success": false
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "base",
+        "parameters": [
+          "types",
+          "cosmic"
+        ],
+        "operator": "not"
+      }
+    ],
+    "effects": [
+      {
+        "type": "switch_type",
+        "parameters": [
+          "cosmic"
+        ]
+      }
+    ],
+    "slug": "cosmic_berry",
+    "sort": "utility",
+    "sprite": "gfx/items/cosmic_berry.png",
+    "category": "elements",
+    "cost": 450,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "cure_festering",
+    "sort": "utility",
+    "sprite": "gfx/items/cure-festering.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false,
+      "holdable": true
+    },
+    "immunity_to_status": [
+      "festering"
+    ],
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "current_hp",
+        "parameters": [
+          "<",
+          "1.0"
+        ],
+        "operator": "is"
+      },
+      {
+        "type": "current_hp",
+        "parameters": [
+          ">",
+          "0"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "heal",
+        "parameters": [
+          "1.0",
+          "percentage"
+        ]
+      },
+      {
+        "type": "restore"
+      }
+    ],
+    "slug": "cureall",
+    "sort": "potion",
+    "sprite": "gfx/items/orange.png",
+    "category": "potion",
+    "cost": 1500,
+    "usable_in": [
+      "MainCombatMenuState",
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [
+      {
+        "type": "die",
+        "parameters": [
+          "sniping:enraged"
+        ]
+      }
+    ],
+    "slug": "die",
+    "sort": "utility",
+    "sprite": "gfx/items/die.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false,
+      "holdable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "dojo_pass",
+    "sort": "utility",
+    "sprite": "gfx/items/dojo_pass.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [
+      {
+        "type": "heal",
+        "parameters": [
+          "-50",
+          "fixed"
+        ]
+      }
+    ],
+    "slug": "dread_omelette",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [
+      {
+        "type": "drone"
+      }
+    ],
+    "slug": "drone",
+    "sort": "utility",
+    "sprite": "gfx/items/drone.png",
+    "category": "none",
+    "cost": 400,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true,
+      "consumable": false,
+      "requires_monster_menu": false,
+      "show_dialog_on_success": false
+    },
+    "use_failure": "menu_storage_swap_monster_fail",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "base",
+        "parameters": [
+          "types",
+          "earth"
+        ],
+        "operator": "not"
+      }
+    ],
+    "effects": [
+      {
+        "type": "switch_type",
+        "parameters": [
+          "earth"
+        ]
+      }
+    ],
+    "slug": "earth_berry",
+    "sort": "utility",
+    "sprite": "gfx/items/earth_berry.png",
+    "category": "elements",
+    "cost": 450,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "can_evolve",
+        "operator": "is"
+      },
+      {
+        "type": "has_path",
+        "parameters": [
+          "earth_booster"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "evolve"
+      }
+    ],
+    "slug": "earth_booster",
+    "sort": "utility",
+    "sprite": "gfx/items/earth_booster.png",
+    "category": "morph",
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "show_dialog_on_success": false
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "earthmover_key",
+    "sort": "utility",
+    "sprite": "gfx/items/earthmover_key.png",
+    "category": "none",
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [
+      {
+        "type": "teleport_item",
+        "parameters": [
+          "center"
+        ]
+      }
+    ],
+    "slug": "escape_key",
+    "sort": "utility",
+    "sprite": "gfx/items/escape_key.png",
+    "category": "none",
+    "cost": 600,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true,
+      "resellable": true,
+      "requires_monster_menu": false,
+      "show_dialog_on_success": false
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "feather",
+    "sort": "utility",
+    "sprite": "gfx/items/feather.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false,
+      "holdable": true
+    },
+    "immunity_to_status": [
+      "grabbed"
+    ],
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "base",
+        "parameters": [
+          "types",
+          "fire"
+        ],
+        "operator": "not"
+      }
+    ],
+    "effects": [
+      {
+        "type": "switch_type",
+        "parameters": [
+          "fire"
+        ]
+      }
+    ],
+    "slug": "fire_berry",
+    "sort": "utility",
+    "sprite": "gfx/items/fire_berry.png",
+    "category": "elements",
+    "cost": 450,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "can_evolve",
+        "operator": "is"
+      },
+      {
+        "type": "has_path",
+        "parameters": [
+          "fire_booster"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "evolve"
+      }
+    ],
+    "slug": "fire_booster",
+    "sort": "utility",
+    "sprite": "gfx/items/fire_booster.png",
+    "category": "morph",
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "show_dialog_on_success": false
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "facing_tile",
+        "parameters": [
+          "surfable"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "fishing"
+      }
+    ],
+    "slug": "fishing_rod",
+    "sort": "utility",
+    "sprite": "gfx/items/fishing_rod.png",
+    "category": "fish",
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false,
+      "requires_monster_menu": false,
+      "show_dialog_on_success": false
+    },
+    "use_failure": "fishing_rod_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "can_evolve",
+        "operator": "is"
+      },
+      {
+        "type": "has_path",
+        "parameters": [
+          "flintstone"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "evolve"
+      }
+    ],
+    "slug": "flintstone",
+    "sort": "utility",
+    "sprite": "gfx/items/flintstone.png",
+    "category": "morph",
+    "cost": 2000,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "show_dialog_on_success": false,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "flute",
+    "sort": "utility",
+    "sprite": "gfx/items/flute.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false,
+      "holdable": true
+    },
+    "immunity_to_status": [
+      "noddingoff"
+    ],
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "beastmoss",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [
+      {
+        "type": "food_preference",
+        "parameters": [
+          "taste_refined",
+          "taste_soft"
+        ]
+      }
+    ],
+    "slug": "cheesecake",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "food",
+    "cost": 1000,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "crackle_salt",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [
+      {
+        "type": "food_preference",
+        "parameters": [
+          "taste_refined",
+          "taste_sweet"
+        ]
+      }
+    ],
+    "slug": "cream_puffs",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "food",
+    "cost": 1100,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [
+      {
+        "type": "food_preference",
+        "parameters": [
+          "taste_refined",
+          "taste_flakey"
+        ]
+      }
+    ],
+    "slug": "crepes",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "food",
+    "cost": 1300,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [
+      {
+        "type": "food_preference",
+        "parameters": [
+          "taste_salty",
+          "taste_flakey"
+        ]
+      }
+    ],
+    "slug": "croissants",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "food",
+    "cost": 1500,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "field_greens",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "flamehorn_shank",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "glowfat",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [
+      {
+        "type": "food_preference",
+        "parameters": [
+          "taste_hearty",
+          "taste_mild"
+        ]
+      }
+    ],
+    "slug": "hash",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "food",
+    "cost": 500,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [
+      {
+        "type": "food_preference",
+        "parameters": [
+          "taste_hearty",
+          "taste_sweet"
+        ]
+      }
+    ],
+    "slug": "honey_cake",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "food",
+    "cost": 1100,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [
+      {
+        "type": "food_preference",
+        "parameters": [
+          "taste_salty",
+          "taste_mild"
+        ]
+      }
+    ],
+    "slug": "mashed_potatoes",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "food",
+    "cost": 300,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "meal_dust",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [
+      {
+        "type": "food_preference",
+        "parameters": [
+          "taste_zesty",
+          "taste_mild"
+        ]
+      }
+    ],
+    "slug": "meatballs",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "food",
+    "cost": 700,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [
+      {
+        "type": "food_preference",
+        "parameters": [
+          "taste_refined",
+          "taste_mild"
+        ]
+      }
+    ],
+    "slug": "mille_feuille",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "food",
+    "cost": 1200,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "mistflour_eggs",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "moo_bloom",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [
+      {
+        "type": "food_preference",
+        "parameters": [
+          "taste_peppy",
+          "taste_soft"
+        ]
+      }
+    ],
+    "slug": "pancakes",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "food",
+    "cost": 700,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [
+      {
+        "type": "food_preference",
+        "parameters": [
+          "taste_peppy",
+          "taste_flakey"
+        ]
+      }
+    ],
+    "slug": "pastry",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "food",
+    "cost": 1200,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [
+      {
+        "type": "food_preference",
+        "parameters": [
+          "taste_zesty",
+          "taste_flakey"
+        ]
+      }
+    ],
+    "slug": "phyllo",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "food",
+    "cost": 1400,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [
+      {
+        "type": "food_preference",
+        "parameters": [
+          "taste_hearty",
+          "taste_pie"
+        ]
+      }
+    ],
+    "slug": "pie",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "food",
+    "cost": 800,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [
+      {
+        "type": "food_preference",
+        "parameters": [
+          "taste_peppy",
+          "taste_dry"
+        ]
+      }
+    ],
+    "slug": "pita",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "food",
+    "cost": 600,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [
+      {
+        "type": "food_preference",
+        "parameters": [
+          "taste_zesty",
+          "taste_sweet"
+        ]
+      }
+    ],
+    "slug": "potato_casserole",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "food",
+    "cost": 800,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [
+      {
+        "type": "food_preference",
+        "parameters": [
+          "taste_salty",
+          "taste_sweet"
+        ]
+      }
+    ],
+    "slug": "potato_fries",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "food",
+    "cost": 400,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [
+      {
+        "type": "food_preference",
+        "parameters": [
+          "taste_salty",
+          "taste_soft"
+        ]
+      }
+    ],
+    "slug": "pretzels",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "food",
+    "cost": 900,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [
+      {
+        "type": "food_preference",
+        "parameters": [
+          "taste_peppy",
+          "taste_sweet"
+        ]
+      }
+    ],
+    "slug": "pudding",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "food",
+    "cost": 900,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "root_beast_bark",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [
+      {
+        "type": "food_preference",
+        "parameters": [
+          "taste_salty",
+          "taste_dry"
+        ]
+      }
+    ],
+    "slug": "rub_chicken",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "food",
+    "cost": 700,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [
+      {
+        "type": "food_preference",
+        "parameters": [
+          "taste_refined",
+          "taste_dry"
+        ]
+      }
+    ],
+    "slug": "rub_pork_chops",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "food",
+    "cost": 800,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [
+      {
+        "type": "food_preference",
+        "parameters": [
+          "taste_hearty",
+          "taste_dry"
+        ]
+      }
+    ],
+    "slug": "rub_ribs",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "food",
+    "cost": 1000,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [
+      {
+        "type": "food_preference",
+        "parameters": [
+          "taste_zesty",
+          "taste_dry"
+        ]
+      }
+    ],
+    "slug": "rub_steak",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "food",
+    "cost": 900,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [
+      {
+        "type": "food_preference",
+        "parameters": [
+          "taste_zesty",
+          "taste_soft"
+        ]
+      }
+    ],
+    "slug": "shell_tacos",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "food",
+    "cost": 600,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "sky_feather",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [
+      {
+        "type": "food_preference",
+        "parameters": [
+          "taste_hearty",
+          "taste_soft"
+        ]
+      }
+    ],
+    "slug": "souffle",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "food",
+    "cost": 1600,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "spice_dust",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "starpepper",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "stonefruit_bulbs",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "suncrust_butter",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "sweetroot",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [
+      {
+        "type": "food_preference",
+        "parameters": [
+          "taste_peppy",
+          "taste_mild"
+        ]
+      }
+    ],
+    "slug": "wings",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "food",
+    "cost": 800,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "zestroot_wraps",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "zestsap",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "friendship_scroll",
+    "sort": "utility",
+    "sprite": "gfx/items/friendship_scroll.png",
+    "category": "none",
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false,
+      "visible": false
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "base",
+        "parameters": [
+          "types",
+          "frost"
+        ],
+        "operator": "not"
+      }
+    ],
+    "effects": [
+      {
+        "type": "switch_type",
+        "parameters": [
+          "frost"
+        ]
+      }
+    ],
+    "slug": "frost_berry",
+    "sort": "utility",
+    "sprite": "gfx/items/frost_berry.png",
+    "category": "elements",
+    "cost": 450,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "gold_pass",
+    "sort": "utility",
+    "sprite": "gfx/items/gold_pass.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [],
+    "effects": [],
+    "slug": "greenwash_badge",
+    "sort": "utility",
+    "sprite": "gfx/items/greenwash_badge.png",
+    "category": "badge",
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {},
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "facing_sprite",
+        "parameters": [
+          "log"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "remove_entity"
+      }
+    ],
+    "slug": "hatchet",
+    "sort": "utility",
+    "sprite": "gfx/items/hatchet.png",
+    "category": "destroy",
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false,
+      "requires_monster_menu": false
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "spyder_successful_log",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "base",
+        "parameters": [
+          "types",
+          "heroic"
+        ],
+        "operator": "not"
+      }
+    ],
+    "effects": [
+      {
+        "type": "switch_type",
+        "parameters": [
+          "heroic"
+        ]
+      }
+    ],
+    "slug": "heroic_berry",
+    "sort": "utility",
+    "sprite": "gfx/items/heroic_berry.png",
+    "category": "elements",
+    "cost": 450,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "horseshoe",
+    "sort": "utility",
+    "sprite": "gfx/items/horseshoe.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false,
+      "holdable": true
+    },
+    "immunity_to_status": [
+      "all"
+    ],
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "current_hp",
+        "parameters": [
+          "<",
+          "1.0"
+        ],
+        "operator": "is"
+      },
+      {
+        "type": "current_hp",
+        "parameters": [
+          ">",
+          "0"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "heal",
+        "parameters": [
+          "500",
+          "fixed"
+        ]
+      }
+    ],
+    "slug": "imperial_potion",
+    "sort": "potion",
+    "sprite": "gfx/items/imperial_potion.png",
+    "category": "potion",
+    "cost": 1000,
+    "usable_in": [
+      "MainCombatMenuState",
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [],
+    "effects": [
+      {
+        "type": "gain_xp",
+        "parameters": [
+          "3000"
+        ]
+      }
+    ],
+    "slug": "imperial_tea",
+    "sort": "potion",
+    "sprite": "gfx/items/imperial_tea.png",
+    "category": "none",
+    "cost": 3450,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true,
+      "show_dialog_on_success": false
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [
+      {
+        "type": "heal",
+        "parameters": [
+          "-200",
+          "fixed"
+        ]
+      }
+    ],
+    "slug": "inferno_custard",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "base",
+        "parameters": [
+          "types",
+          "lightning"
+        ],
+        "operator": "not"
+      }
+    ],
+    "effects": [
+      {
+        "type": "switch_type",
+        "parameters": [
+          "lightning"
+        ]
+      }
+    ],
+    "slug": "lightning_berry",
+    "sort": "utility",
+    "sprite": "gfx/items/lightning_berry.png",
+    "category": "elements",
+    "cost": 450,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "can_evolve",
+        "operator": "is"
+      },
+      {
+        "type": "has_path",
+        "parameters": [
+          "lima_pie"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "evolve"
+      }
+    ],
+    "slug": "lima_pie",
+    "sort": "utility",
+    "sprite": "gfx/items/lima_pie.png",
+    "category": "morph",
+    "cost": 2000,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "show_dialog_on_success": false,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "can_evolve",
+        "operator": "is"
+      },
+      {
+        "type": "has_path",
+        "parameters": [
+          "lucky_bamboo"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "evolve"
+      }
+    ],
+    "slug": "lucky_bamboo",
+    "sort": "utility",
+    "sprite": "gfx/items/lucky_bamboo.png",
+    "category": "morph",
+    "cost": 2000,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "show_dialog_on_success": false,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "marble",
+    "sort": "utility",
+    "sprite": "gfx/items/marble.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false,
+      "holdable": true
+    },
+    "immunity_to_status": [
+      "stuck"
+    ],
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "current_hp",
+        "parameters": [
+          "<",
+          "1.0"
+        ],
+        "operator": "is"
+      },
+      {
+        "type": "current_hp",
+        "parameters": [
+          ">",
+          "0"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "heal",
+        "parameters": [
+          "200",
+          "fixed"
+        ]
+      }
+    ],
+    "slug": "mega_potion",
+    "sort": "potion",
+    "sprite": "gfx/items/mega_potion.png",
+    "category": "potion",
+    "cost": 400,
+    "usable_in": [
+      "MainCombatMenuState",
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "base",
+        "parameters": [
+          "types",
+          "metal"
+        ],
+        "operator": "not"
+      }
+    ],
+    "effects": [
+      {
+        "type": "switch_type",
+        "parameters": [
+          "metal"
+        ]
+      }
+    ],
+    "slug": "metal_berry",
+    "sort": "utility",
+    "sprite": "gfx/items/metal_berry.png",
+    "category": "elements",
+    "cost": 450,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "can_evolve",
+        "operator": "is"
+      },
+      {
+        "type": "has_path",
+        "parameters": [
+          "metal_booster"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "evolve"
+      }
+    ],
+    "slug": "metal_booster",
+    "sort": "utility",
+    "sprite": "gfx/items/metal_booster.png",
+    "category": "morph",
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "show_dialog_on_success": false
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "can_evolve",
+        "operator": "is"
+      },
+      {
+        "type": "has_path",
+        "parameters": [
+          "miaow_milk"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "evolve"
+      }
+    ],
+    "slug": "miaow_milk",
+    "sort": "utility",
+    "sprite": "gfx/items/miaow_milk.png",
+    "category": "morph",
+    "cost": 2000,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "show_dialog_on_success": false,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "base",
+        "parameters": [
+          "types",
+          "earth"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "learn_mm",
+        "parameters": [
+          "earth"
+        ]
+      }
+    ],
+    "slug": "mm_earth",
+    "sort": "utility",
+    "sprite": "gfx/items/mm_earth.png",
+    "category": "technique",
+    "cost": 1000,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "base",
+        "parameters": [
+          "types",
+          "fire"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "learn_mm",
+        "parameters": [
+          "fire"
+        ]
+      }
+    ],
+    "slug": "mm_fire",
+    "sort": "utility",
+    "sprite": "gfx/items/mm_fire.png",
+    "category": "technique",
+    "cost": 1000,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "base",
+        "parameters": [
+          "types",
+          "metal"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "learn_mm",
+        "parameters": [
+          "metal"
+        ]
+      }
+    ],
+    "slug": "mm_metal",
+    "sort": "utility",
+    "sprite": "gfx/items/mm_metal.png",
+    "category": "technique",
+    "cost": 1000,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "base",
+        "parameters": [
+          "types",
+          "water"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "learn_mm",
+        "parameters": [
+          "water"
+        ]
+      }
+    ],
+    "slug": "mm_water",
+    "sort": "utility",
+    "sprite": "gfx/items/mm_water.png",
+    "category": "technique",
+    "cost": 1000,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "base",
+        "parameters": [
+          "types",
+          "wood"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "learn_mm",
+        "parameters": [
+          "wood"
+        ]
+      }
+    ],
+    "slug": "mm_wood",
+    "sort": "utility",
+    "sprite": "gfx/items/mm_wood.png",
+    "category": "technique",
+    "cost": 1000,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [],
+    "effects": [
+      {
+        "type": "gain_xp",
+        "parameters": [
+          "500"
+        ]
+      }
+    ],
+    "slug": "mystery_tea",
+    "sort": "potion",
+    "sprite": "gfx/items/mystery_tea.png",
+    "category": "none",
+    "cost": 1050,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true,
+      "show_dialog_on_success": false
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "facing_tile",
+        "parameters": [
+          "surfable"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "fishing"
+      }
+    ],
+    "slug": "neptune",
+    "sort": "utility",
+    "sprite": "gfx/items/neptune.png",
+    "category": "fish",
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false,
+      "requires_monster_menu": false,
+      "show_dialog_on_success": false
+    },
+    "use_failure": "fishing_rod_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [],
+    "effects": [],
+    "slug": "nimrod_badge",
+    "sort": "utility",
+    "sprite": "gfx/items/nimrod_badge.png",
+    "category": "badge",
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {},
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "base",
+        "parameters": [
+          "types",
+          "normal"
+        ],
+        "operator": "not"
+      }
+    ],
+    "effects": [
+      {
+        "type": "switch_type",
+        "parameters": [
+          "normal"
+        ]
+      }
+    ],
+    "slug": "normal_berry",
+    "sort": "utility",
+    "sprite": "gfx/items/normal_berry.png",
+    "category": "elements",
+    "cost": 450,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "nu_phone",
+    "sort": "utility",
+    "sprite": "gfx/items/nu_phone.png",
+    "category": "phone",
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false,
+      "visible": false
+    },
+    "dynamic_menu": {
+      "position": 3,
+      "label_key": "nu_phone",
+      "menu_type": "world",
+      "state": "NuPhone"
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "can_evolve",
+        "operator": "is"
+      },
+      {
+        "type": "has_path",
+        "parameters": [
+          "omnichannel_badge"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [],
+    "slug": "omnichannel_badge",
+    "sort": "utility",
+    "sprite": "gfx/items/omnichannel_badge.png",
+    "category": "badge",
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {},
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "open_hand",
+    "sort": "utility",
+    "sprite": "gfx/items/open-hand.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false,
+      "holdable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "can_evolve",
+        "operator": "is"
+      },
+      {
+        "type": "has_path",
+        "parameters": [
+          "ox_stick"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "evolve"
+      }
+    ],
+    "slug": "ox_stick",
+    "sort": "utility",
+    "sprite": "gfx/items/ox_stick.png",
+    "category": "morph",
+    "cost": 2000,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "show_dialog_on_success": false,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "p_monsters_eyes",
+    "sort": "utility",
+    "sprite": "gfx/items/monsters_eyes.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "p_starry_night",
+    "sort": "utility",
+    "sprite": "gfx/items/starry_night.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "p_trepidation",
+    "sort": "utility",
+    "sprite": "gfx/items/trepidation.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "can_evolve",
+        "operator": "is"
+      },
+      {
+        "type": "has_path",
+        "parameters": [
+          "peace_lily"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "evolve"
+      }
+    ],
+    "slug": "peace_lily",
+    "sort": "utility",
+    "sprite": "gfx/items/peace_lily.png",
+    "category": "morph",
+    "cost": 2000,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "show_dialog_on_success": false,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "can_evolve",
+        "operator": "is"
+      },
+      {
+        "type": "has_path",
+        "parameters": [
+          "petrified_dung"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "evolve"
+      }
+    ],
+    "slug": "petrified_dung",
+    "sort": "utility",
+    "sprite": "gfx/items/petrified_dung.png",
+    "category": "morph",
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "show_dialog_on_success": false
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "facing_tile",
+        "parameters": [
+          "surfable"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "fishing"
+      }
+    ],
+    "slug": "poseidon",
+    "sort": "utility",
+    "sprite": "gfx/items/poseidon.png",
+    "category": "fish",
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false,
+      "requires_monster_menu": false,
+      "show_dialog_on_success": false
+    },
+    "use_failure": "fishing_rod_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "current_hp",
+        "parameters": [
+          "<",
+          "1.0"
+        ],
+        "operator": "is"
+      },
+      {
+        "type": "current_hp",
+        "parameters": [
+          ">",
+          "0"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "heal",
+        "parameters": [
+          "50",
+          "fixed"
+        ]
+      }
+    ],
+    "slug": "potion",
+    "sort": "potion",
+    "sprite": "gfx/items/potion.png",
+    "category": "potion",
+    "cost": 50,
+    "usable_in": [
+      "MainCombatMenuState",
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "can_evolve",
+        "operator": "is"
+      },
+      {
+        "type": "has_path",
+        "parameters": [
+          "pyramidion"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "evolve"
+      }
+    ],
+    "slug": "pyramidion",
+    "sort": "utility",
+    "sprite": "gfx/items/pyramidion.png",
+    "category": "morph",
+    "cost": 2000,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "show_dialog_on_success": false,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [],
+    "effects": [
+      {
+        "type": "change_stat",
+        "parameters": [
+          "armour",
+          "0.05"
+        ]
+      }
+    ],
+    "slug": "raise_armour",
+    "sort": "utility",
+    "sprite": "gfx/items/raise_armour.png",
+    "category": "stats",
+    "cost": 10000,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [],
+    "effects": [
+      {
+        "type": "change_stat",
+        "parameters": [
+          "dodge",
+          "0.05"
+        ]
+      }
+    ],
+    "slug": "raise_dodge",
+    "sort": "utility",
+    "sprite": "gfx/items/raise_dodge.png",
+    "category": "stats",
+    "cost": 10000,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [],
+    "effects": [
+      {
+        "type": "change_stat",
+        "parameters": [
+          "hp",
+          "0.05"
+        ]
+      }
+    ],
+    "slug": "raise_hp",
+    "sort": "utility",
+    "sprite": "gfx/items/raise_hp.png",
+    "category": "stats",
+    "cost": 10000,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [],
+    "effects": [
+      {
+        "type": "change_stat",
+        "parameters": [
+          "melee",
+          "0.05"
+        ]
+      }
+    ],
+    "slug": "raise_melee",
+    "sort": "utility",
+    "sprite": "gfx/items/raise_melee.png",
+    "category": "stats",
+    "cost": 10000,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [],
+    "effects": [
+      {
+        "type": "change_stat",
+        "parameters": [
+          "ranged",
+          "0.05"
+        ]
+      }
+    ],
+    "slug": "raise_ranged",
+    "sort": "utility",
+    "sprite": "gfx/items/raise_ranged.png",
+    "category": "stats",
+    "cost": 10000,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [],
+    "effects": [
+      {
+        "type": "change_stat",
+        "parameters": [
+          "speed",
+          "0.05"
+        ]
+      }
+    ],
+    "slug": "raise_speed",
+    "sort": "utility",
+    "sprite": "gfx/items/raise_speed.png",
+    "category": "stats",
+    "cost": 10000,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "refreshing_slice",
+    "sort": "utility",
+    "sprite": "gfx/items/refreshing-slice.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false,
+      "holdable": true
+    },
+    "immunity_to_status": [
+      "exhausted"
+    ],
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "reg_papers",
+    "sort": "utility",
+    "sprite": "gfx/items/key-card.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "has_status",
+        "operator": "is"
+      },
+      {
+        "type": "current_hp",
+        "parameters": [
+          "<",
+          "1.0"
+        ],
+        "operator": "is"
+      },
+      {
+        "type": "current_hp",
+        "parameters": [
+          ">",
+          "0"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "restore"
+      }
+    ],
+    "slug": "restoration",
+    "sort": "potion",
+    "sprite": "gfx/items/apple.png",
+    "category": "potion",
+    "cost": 700,
+    "usable_in": [
+      "MainCombatMenuState",
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "current_hp",
+        "parameters": [
+          "==",
+          "0"
+        ],
+        "operator": "is"
+      },
+      {
+        "type": "status",
+        "parameters": [
+          "faint"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "restore"
+      },
+      {
+        "type": "heal",
+        "parameters": [
+          "20",
+          "fixed"
+        ]
+      }
+    ],
+    "slug": "revive",
+    "sort": "potion",
+    "sprite": "gfx/items/revive.png",
+    "category": "potion",
+    "cost": 1500,
+    "usable_in": [
+      "MainCombatMenuState",
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "can_evolve",
+        "operator": "is"
+      },
+      {
+        "type": "has_path",
+        "parameters": [
+          "rhincus_fossil"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "evolve"
+      }
+    ],
+    "slug": "rhincus_fossil",
+    "sort": "utility",
+    "sprite": "gfx/items/rhincus_fossil.png",
+    "category": "fossil",
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "show_dialog_on_success": false
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "can_evolve",
+        "operator": "is"
+      },
+      {
+        "type": "has_path",
+        "parameters": [
+          "scoop_badge"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [],
+    "slug": "scoop_badge",
+    "sort": "utility",
+    "sprite": "gfx/items/scoop_badge.png",
+    "category": "badge",
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {},
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "can_evolve",
+        "operator": "is"
+      },
+      {
+        "type": "has_path",
+        "parameters": [
+          "sea_girdle"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "evolve"
+      }
+    ],
+    "slug": "sea_girdle",
+    "sort": "utility",
+    "sprite": "gfx/items/sea_girdle.png",
+    "category": "morph",
+    "cost": 2000,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "show_dialog_on_success": false,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "base",
+        "parameters": [
+          "types",
+          "shadow"
+        ],
+        "operator": "not"
+      }
+    ],
+    "effects": [
+      {
+        "type": "switch_type",
+        "parameters": [
+          "shadow"
+        ]
+      }
+    ],
+    "slug": "shadow_berry",
+    "sort": "utility",
+    "sprite": "gfx/items/shadow_berry.png",
+    "category": "elements",
+    "cost": 450,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [],
+    "effects": [],
+    "slug": "shaft_badge",
+    "sort": "utility",
+    "sprite": "gfx/items/shaft_badge.png",
+    "category": "badge",
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {},
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "can_evolve",
+        "operator": "is"
+      },
+      {
+        "type": "has_path",
+        "parameters": [
+          "shammer_fossil"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "evolve"
+      }
+    ],
+    "slug": "shammer_fossil",
+    "sort": "utility",
+    "sprite": "gfx/items/shammer_fossil.png",
+    "category": "fossil",
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "show_dialog_on_success": false
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "base",
+        "parameters": [
+          "types",
+          "sky"
+        ],
+        "operator": "not"
+      }
+    ],
+    "effects": [
+      {
+        "type": "switch_type",
+        "parameters": [
+          "sky"
+        ]
+      }
+    ],
+    "slug": "sky_berry",
+    "sort": "utility",
+    "sprite": "gfx/items/sky_berry.png",
+    "category": "elements",
+    "cost": 450,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "facing_sprite",
+        "parameters": [
+          "boulder"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "remove_entity"
+      }
+    ],
+    "slug": "sledgehammer",
+    "sort": "utility",
+    "sprite": "gfx/items/sledgehammer.png",
+    "category": "destroy",
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false,
+      "requires_monster_menu": false
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "spyder_successful_boulder",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "spyder_pass",
+    "sort": "utility",
+    "sprite": "gfx/items/spyder_pass.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "can_evolve",
+        "operator": "is"
+      },
+      {
+        "type": "has_path",
+        "parameters": [
+          "stovepipe"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "evolve"
+      }
+    ],
+    "slug": "stovepipe",
+    "sort": "utility",
+    "sprite": "gfx/items/stovepipe.png",
+    "category": "morph",
+    "cost": 2000,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "show_dialog_on_success": false,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "current_hp",
+        "parameters": [
+          "<",
+          "1.0"
+        ],
+        "operator": "is"
+      },
+      {
+        "type": "current_hp",
+        "parameters": [
+          ">",
+          "0"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "heal",
+        "parameters": [
+          "100",
+          "fixed"
+        ]
+      }
+    ],
+    "slug": "super_potion",
+    "sort": "potion",
+    "sprite": "gfx/items/super_potion.png",
+    "category": "potion",
+    "cost": 100,
+    "usable_in": [
+      "MainCombatMenuState",
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "surfboard",
+    "sort": "utility",
+    "sprite": "gfx/items/surfboard.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "can_evolve",
+        "operator": "is"
+      },
+      {
+        "type": "has_path",
+        "parameters": [
+          "sweet_sand"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "evolve"
+      }
+    ],
+    "slug": "sweet_sand",
+    "sort": "utility",
+    "sprite": "gfx/items/sweet_sand.png",
+    "category": "morph",
+    "cost": 2000,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "show_dialog_on_success": false,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [],
+    "effects": [
+      {
+        "type": "gain_xp",
+        "parameters": [
+          "125"
+        ]
+      }
+    ],
+    "slug": "tea",
+    "sort": "potion",
+    "sprite": "gfx/items/tea.png",
+    "category": "none",
+    "cost": 300,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true,
+      "show_dialog_on_success": false
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "can_evolve",
+        "operator": "is"
+      },
+      {
+        "type": "has_path",
+        "parameters": [
+          "tectonic_drill"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "evolve"
+      }
+    ],
+    "slug": "tectonic_drill",
+    "sort": "utility",
+    "sprite": "gfx/items/tectonic_drill.png",
+    "category": "morph",
+    "cost": 2000,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "show_dialog_on_success": false,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "can_evolve",
+        "operator": "is"
+      },
+      {
+        "type": "has_path",
+        "parameters": [
+          "thunderstone"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "evolve"
+      }
+    ],
+    "slug": "thunderstone",
+    "sort": "utility",
+    "sprite": "gfx/items/thunderstone.png",
+    "category": "morph",
+    "cost": 2000,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "show_dialog_on_success": false,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "has_tech",
+        "parameters": [
+          "acid"
+        ],
+        "operator": "not"
+      }
+    ],
+    "effects": [
+      {
+        "type": "learn_tm",
+        "parameters": [
+          "acid"
+        ]
+      }
+    ],
+    "slug": "tm_acid",
+    "sort": "utility",
+    "sprite": "gfx/items/tm_generic.png",
+    "category": "technique",
+    "cost": 2500,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "base",
+        "parameters": [
+          "tags",
+          "leadership:fury"
+        ],
+        "operator": "is"
+      },
+      {
+        "type": "has_tech",
+        "parameters": [
+          "all_in"
+        ],
+        "operator": "not"
+      }
+    ],
+    "effects": [
+      {
+        "type": "learn_tm",
+        "parameters": [
+          "all_in"
+        ]
+      }
+    ],
+    "slug": "tm_all_in",
+    "sort": "utility",
+    "sprite": "gfx/items/tm_generic.png",
+    "category": "technique",
+    "cost": 2500,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "base",
+        "parameters": [
+          "tags",
+          "calamity:ice:rock"
+        ],
+        "operator": "is"
+      },
+      {
+        "type": "has_tech",
+        "parameters": [
+          "avalanche"
+        ],
+        "operator": "not"
+      }
+    ],
+    "effects": [
+      {
+        "type": "learn_tm",
+        "parameters": [
+          "avalanche"
+        ]
+      }
+    ],
+    "slug": "tm_avalanche",
+    "sort": "utility",
+    "sprite": "gfx/items/tm_earth.png",
+    "category": "technique",
+    "cost": 2500,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "base",
+        "parameters": [
+          "tags",
+          "sharp:steel"
+        ],
+        "operator": "is"
+      },
+      {
+        "type": "has_tech",
+        "parameters": [
+          "blade"
+        ],
+        "operator": "not"
+      }
+    ],
+    "effects": [
+      {
+        "type": "learn_tm",
+        "parameters": [
+          "blade"
+        ]
+      }
+    ],
+    "slug": "tm_blade",
+    "sort": "utility",
+    "sprite": "gfx/items/tm_generic.png",
+    "category": "technique",
+    "cost": 2500,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "base",
+        "parameters": [
+          "tags",
+          "plant:healing:bug"
+        ],
+        "operator": "is"
+      },
+      {
+        "type": "has_tech",
+        "parameters": [
+          "blossom"
+        ],
+        "operator": "not"
+      }
+    ],
+    "effects": [
+      {
+        "type": "learn_tm",
+        "parameters": [
+          "blossom"
+        ]
+      }
+    ],
+    "slug": "tm_blossom",
+    "sort": "utility",
+    "sprite": "gfx/items/tm_wood.png",
+    "category": "technique",
+    "cost": 2500,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "base",
+        "parameters": [
+          "types",
+          "earth"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [],
+    "slug": "tm_earth",
+    "sort": "utility",
+    "sprite": "gfx/items/tm_earth.png",
+    "category": "technique",
+    "cost": 2500,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "base",
+        "parameters": [
+          "types",
+          "fire"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [],
+    "slug": "tm_fire",
+    "sort": "utility",
+    "sprite": "gfx/items/tm_fire.png",
+    "category": "technique",
+    "cost": 2500,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "base",
+        "parameters": [
+          "tags",
+          "bite:ice"
+        ],
+        "operator": "is"
+      },
+      {
+        "type": "has_tech",
+        "parameters": [
+          "frostbite"
+        ],
+        "operator": "not"
+      }
+    ],
+    "effects": [
+      {
+        "type": "learn_tm",
+        "parameters": [
+          "frostbite"
+        ]
+      }
+    ],
+    "slug": "tm_frostbite",
+    "sort": "utility",
+    "sprite": "gfx/items/tm_water.png",
+    "category": "technique",
+    "cost": 2500,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "base",
+        "parameters": [
+          "types",
+          "frost"
+        ],
+        "operator": "is"
+      },
+      {
+        "type": "has_tech",
+        "parameters": [
+          "ice_shield"
+        ],
+        "operator": "not"
+      }
+    ],
+    "effects": [
+      {
+        "type": "learn_tm",
+        "parameters": [
+          "ice_shield"
+        ]
+      }
+    ],
+    "slug": "tm_ice_shield",
+    "sort": "utility",
+    "sprite": "gfx/items/tm_water.png",
+    "category": "technique",
+    "cost": 2500,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "base",
+        "parameters": [
+          "types",
+          "metal"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [],
+    "slug": "tm_metal",
+    "sort": "utility",
+    "sprite": "gfx/items/tm_metal.png",
+    "category": "technique",
+    "cost": 2500,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "base",
+        "parameters": [
+          "tags",
+          "gadgets:calamity:bomber"
+        ],
+        "operator": "is"
+      },
+      {
+        "type": "has_tech",
+        "parameters": [
+          "panjandrum"
+        ],
+        "operator": "not"
+      }
+    ],
+    "effects": [
+      {
+        "type": "learn_tm",
+        "parameters": [
+          "panjandrum"
+        ]
+      }
+    ],
+    "slug": "tm_panjandrum",
+    "sort": "utility",
+    "sprite": "gfx/items/tm_generic.png",
+    "category": "technique",
+    "cost": 2500,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "has_tech",
+        "parameters": [
+          "scope"
+        ],
+        "operator": "not"
+      }
+    ],
+    "effects": [
+      {
+        "type": "learn_tm",
+        "parameters": [
+          "scope"
+        ]
+      }
+    ],
+    "slug": "tm_scope",
+    "sort": "utility",
+    "sprite": "gfx/items/tm_generic.png",
+    "category": "technique",
+    "cost": 2500,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "base",
+        "parameters": [
+          "tags",
+          "fists:darkness"
+        ],
+        "operator": "is"
+      },
+      {
+        "type": "has_tech",
+        "parameters": [
+          "shadow_boxing"
+        ],
+        "operator": "not"
+      }
+    ],
+    "effects": [
+      {
+        "type": "learn_tm",
+        "parameters": [
+          "shadow_boxing"
+        ]
+      }
+    ],
+    "slug": "tm_shadow_boxing",
+    "sort": "utility",
+    "sprite": "gfx/items/tm_generic.png",
+    "category": "technique",
+    "cost": 2500,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "base",
+        "parameters": [
+          "tags",
+          "celestial:light"
+        ],
+        "operator": "is"
+      },
+      {
+        "type": "has_tech",
+        "parameters": [
+          "supernova"
+        ],
+        "operator": "not"
+      }
+    ],
+    "effects": [
+      {
+        "type": "learn_tm",
+        "parameters": [
+          "supernova"
+        ]
+      }
+    ],
+    "slug": "tm_supernova",
+    "sort": "utility",
+    "sprite": "gfx/items/tm_fire.png",
+    "category": "technique",
+    "cost": 2500,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "base",
+        "parameters": [
+          "types",
+          "water"
+        ],
+        "operator": "is"
+      },
+      {
+        "type": "base",
+        "parameters": [
+          "shape",
+          "piscine:polliwog:leviathan"
+        ],
+        "operator": "is"
+      },
+      {
+        "type": "has_tech",
+        "parameters": [
+          "surf"
+        ],
+        "operator": "not"
+      }
+    ],
+    "effects": [
+      {
+        "type": "learn_tm",
+        "parameters": [
+          "surf"
+        ]
+      }
+    ],
+    "slug": "tm_surf",
+    "sort": "utility",
+    "sprite": "gfx/items/tm_water.png",
+    "category": "technique",
+    "cost": 2500,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "base",
+        "parameters": [
+          "tags",
+          "shapeshifter"
+        ],
+        "operator": "is"
+      },
+      {
+        "type": "has_tech",
+        "parameters": [
+          "ubuntu"
+        ],
+        "operator": "not"
+      }
+    ],
+    "effects": [
+      {
+        "type": "learn_tm",
+        "parameters": [
+          "ubuntu"
+        ]
+      }
+    ],
+    "slug": "tm_ubuntu",
+    "sort": "utility",
+    "sprite": "gfx/items/tm_generic.png",
+    "category": "technique",
+    "cost": 2500,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "has_tech",
+        "parameters": [
+          "vorpal"
+        ],
+        "operator": "not"
+      }
+    ],
+    "effects": [
+      {
+        "type": "learn_tm",
+        "parameters": [
+          "vorpal"
+        ]
+      }
+    ],
+    "slug": "tm_vorpal",
+    "sort": "utility",
+    "sprite": "gfx/items/tm_metal.png",
+    "category": "technique",
+    "cost": 2500,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "base",
+        "parameters": [
+          "types",
+          "water"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [],
+    "slug": "tm_water",
+    "sort": "utility",
+    "sprite": "gfx/items/tm_water.png",
+    "category": "technique",
+    "cost": 2500,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "base",
+        "parameters": [
+          "types",
+          "wood"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [],
+    "slug": "tm_wood",
+    "sort": "utility",
+    "sprite": "gfx/items/tm_wood.png",
+    "category": "technique",
+    "cost": 2500,
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "archeologist_sensor",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {},
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "cream_puffs",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {},
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "buzz_resonator",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {},
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "cream_puffs",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {},
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "cream_puffs",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {},
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "field_transcriber",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {},
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "mystery_analyzer",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {},
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "pollen_decoder",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {},
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "researcher_stylus",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {},
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "starlight_lens",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {},
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "tachyon_collector",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {},
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "toy_bear",
+    "sort": "utility",
+    "sprite": "gfx/items/toy-bear.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false,
+      "holdable": true
+    },
+    "immunity_to_status": [
+      "lifeleech"
+    ],
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "bio_sample",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "dusty_datalog",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "echo_core",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "encoded_chip",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "cream_puffs",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "flickering_drive",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "latent_relic",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "cream_puffs",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "cream_puffs",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "signal_node",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "wild_monster",
+        "operator": "is"
+      },
+      {
+        "type": "base",
+        "parameters": [
+          "species",
+          "!threat"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "capture"
+      }
+    ],
+    "slug": "tuxeball",
+    "sort": "utility",
+    "sprite": "gfx/items/tuxeball.png",
+    "category": "capture",
+    "cost": 100,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "throwable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": "tuxeball",
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "wild_monster",
+        "operator": "is"
+      },
+      {
+        "type": "base",
+        "parameters": [
+          "species",
+          "!threat"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "capture"
+      }
+    ],
+    "slug": "tuxeball_ancient",
+    "sort": "utility",
+    "sprite": "gfx/items/tuxeball_ancient.png",
+    "category": "capture",
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "throwable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": "capture_1",
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "wild_monster",
+        "operator": "is"
+      },
+      {
+        "type": "base",
+        "parameters": [
+          "species",
+          "!threat"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "capture"
+      }
+    ],
+    "slug": "tuxeball_candy",
+    "sort": "utility",
+    "sprite": "gfx/items/tuxeball_candy.png",
+    "category": "capture",
+    "cost": 1000,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "throwable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": "capture_1",
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "wild_monster",
+        "operator": "is"
+      },
+      {
+        "type": "base",
+        "parameters": [
+          "species",
+          "!threat"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "capture"
+      }
+    ],
+    "slug": "tuxeball_crusher",
+    "sort": "utility",
+    "sprite": "gfx/items/tuxeball_crusher.png",
+    "category": "capture",
+    "cost": 400,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "throwable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": "capture_1",
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "wild_monster",
+        "operator": "is"
+      },
+      {
+        "type": "base",
+        "parameters": [
+          "species",
+          "!threat"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "capture"
+      }
+    ],
+    "slug": "tuxeball_diurnal",
+    "sort": "utility",
+    "sprite": "gfx/items/tuxeball_diurnal.png",
+    "category": "capture",
+    "cost": 350,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "throwable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": "capture_1",
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "wild_monster",
+        "operator": "is"
+      },
+      {
+        "type": "base",
+        "parameters": [
+          "species",
+          "!threat"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "capture"
+      }
+    ],
+    "slug": "tuxeball_earth",
+    "sort": "utility",
+    "sprite": "gfx/items/tuxeball_earth.png",
+    "category": "capture",
+    "cost": 250,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "throwable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": "capture_1",
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "wild_monster",
+        "operator": "is"
+      },
+      {
+        "type": "base",
+        "parameters": [
+          "species",
+          "!threat"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "capture"
+      }
+    ],
+    "slug": "tuxeball_female",
+    "sort": "utility",
+    "sprite": "gfx/items/tuxeball_female.png",
+    "category": "capture",
+    "cost": 250,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "throwable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": "capture_1",
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "wild_monster",
+        "operator": "is"
+      },
+      {
+        "type": "base",
+        "parameters": [
+          "species",
+          "!threat"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "capture"
+      }
+    ],
+    "slug": "tuxeball_fire",
+    "sort": "utility",
+    "sprite": "gfx/items/tuxeball_fire.png",
+    "category": "capture",
+    "cost": 250,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "throwable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": "capture_1",
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "wild_monster",
+        "operator": "is"
+      },
+      {
+        "type": "base",
+        "parameters": [
+          "species",
+          "!threat"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "capture"
+      }
+    ],
+    "slug": "tuxeball_gambler",
+    "sort": "utility",
+    "sprite": "gfx/items/tuxeball_gambler.png",
+    "category": "capture",
+    "cost": 400,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "throwable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": "capture_1",
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "wild_monster",
+        "operator": "is"
+      },
+      {
+        "type": "base",
+        "parameters": [
+          "species",
+          "!threat"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "capture"
+      }
+    ],
+    "slug": "tuxeball_grand",
+    "sort": "utility",
+    "sprite": "gfx/items/tuxeball_grand.png",
+    "category": "capture",
+    "cost": 500,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "throwable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": "capture_1",
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "wild_monster",
+        "operator": "is"
+      },
+      {
+        "type": "base",
+        "parameters": [
+          "species",
+          "!threat"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "capture"
+      }
+    ],
+    "slug": "tuxeball_hardened",
+    "sort": "utility",
+    "sprite": "gfx/items/tuxeball_hardened.png",
+    "category": "capture",
+    "cost": 350,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "throwable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": "capture_1",
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "wild_monster",
+        "operator": "is"
+      },
+      {
+        "type": "base",
+        "parameters": [
+          "species",
+          "!threat"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "capture"
+      }
+    ],
+    "slug": "tuxeball_hearty",
+    "sort": "utility",
+    "sprite": "gfx/items/tuxeball_hearty.png",
+    "category": "capture",
+    "cost": 450,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "throwable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": "capture_1",
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "wild_monster",
+        "operator": "is"
+      },
+      {
+        "type": "base",
+        "parameters": [
+          "species",
+          "!threat"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "capture"
+      }
+    ],
+    "slug": "tuxeball_lavish",
+    "sort": "utility",
+    "sprite": "gfx/items/tuxeball_lavish.png",
+    "category": "capture",
+    "cost": 300,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "throwable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": "capture_1",
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "wild_monster",
+        "operator": "is"
+      },
+      {
+        "type": "base",
+        "parameters": [
+          "species",
+          "!threat"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "capture"
+      }
+    ],
+    "slug": "tuxeball_majestic",
+    "sort": "utility",
+    "sprite": "gfx/items/tuxeball_majestic.png",
+    "category": "capture",
+    "cost": 600,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "throwable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": "capture_1",
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "wild_monster",
+        "operator": "is"
+      },
+      {
+        "type": "base",
+        "parameters": [
+          "species",
+          "!threat"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "capture"
+      }
+    ],
+    "slug": "tuxeball_male",
+    "sort": "utility",
+    "sprite": "gfx/items/tuxeball_male.png",
+    "category": "capture",
+    "cost": 250,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "throwable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": "capture_1",
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "wild_monster",
+        "operator": "is"
+      },
+      {
+        "type": "base",
+        "parameters": [
+          "species",
+          "!threat"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "capture"
+      }
+    ],
+    "slug": "tuxeball_metal",
+    "sort": "utility",
+    "sprite": "gfx/items/tuxeball_metal.png",
+    "category": "capture",
+    "cost": 250,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "throwable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": "capture_1",
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "wild_monster",
+        "operator": "is"
+      },
+      {
+        "type": "base",
+        "parameters": [
+          "species",
+          "!threat"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "capture"
+      }
+    ],
+    "slug": "tuxeball_neuter",
+    "sort": "utility",
+    "sprite": "gfx/items/tuxeball_neuter.png",
+    "category": "capture",
+    "cost": 250,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "throwable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": "capture_1",
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "wild_monster",
+        "operator": "is"
+      },
+      {
+        "type": "base",
+        "parameters": [
+          "species",
+          "!threat"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "capture"
+      }
+    ],
+    "slug": "tuxeball_noble",
+    "sort": "utility",
+    "sprite": "gfx/items/tuxeball_noble.png",
+    "category": "capture",
+    "cost": 200,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "throwable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": "capture_1",
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "wild_monster",
+        "operator": "is"
+      },
+      {
+        "type": "base",
+        "parameters": [
+          "species",
+          "!threat"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "capture"
+      }
+    ],
+    "slug": "tuxeball_nocturnal",
+    "sort": "utility",
+    "sprite": "gfx/items/tuxeball_nocturnal.png",
+    "category": "capture",
+    "cost": 350,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "throwable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": "capture_1",
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "wild_monster",
+        "operator": "is"
+      },
+      {
+        "type": "base",
+        "parameters": [
+          "species",
+          "!threat"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "capture_combined",
+        "parameters": [
+          "monster",
+          "omni",
+          "0.3",
+          "1.4"
+        ]
+      }
+    ],
+    "slug": "tuxeball_omni",
+    "sort": "utility",
+    "sprite": "gfx/items/tuxeball_omni.png",
+    "category": "capture",
+    "cost": 250,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "throwable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": "capture_1",
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "wild_monster",
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "park",
+        "parameters": [
+          "capture"
+        ]
+      }
+    ],
+    "slug": "tuxeball_park",
+    "sort": "utility",
+    "sprite": "gfx/items/tuxeball_park.png",
+    "category": "capture",
+    "usable_in": [
+      "MainParkMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "throwable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": "capture_1",
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "wild_monster",
+        "operator": "is"
+      },
+      {
+        "type": "base",
+        "parameters": [
+          "species",
+          "!threat"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "capture"
+      }
+    ],
+    "slug": "tuxeball_peppy",
+    "sort": "utility",
+    "sprite": "gfx/items/tuxeball_peppy.png",
+    "category": "capture",
+    "cost": 450,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "throwable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": "capture_1",
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "wild_monster",
+        "operator": "is"
+      },
+      {
+        "type": "base",
+        "parameters": [
+          "species",
+          "!threat"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "capture"
+      }
+    ],
+    "slug": "tuxeball_refined",
+    "sort": "utility",
+    "sprite": "gfx/items/tuxeball_refined.png",
+    "category": "capture",
+    "cost": 450,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "throwable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": "capture_1",
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "wild_monster",
+        "operator": "is"
+      },
+      {
+        "type": "base",
+        "parameters": [
+          "species",
+          "!threat"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "capture"
+      }
+    ],
+    "slug": "tuxeball_salty",
+    "sort": "utility",
+    "sprite": "gfx/items/tuxeball_salty.png",
+    "category": "capture",
+    "cost": 450,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "throwable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": "capture_1",
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "wild_monster",
+        "operator": "is"
+      },
+      {
+        "type": "base",
+        "parameters": [
+          "species",
+          "!threat"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "capture"
+      }
+    ],
+    "slug": "tuxeball_water",
+    "sort": "utility",
+    "sprite": "gfx/items/tuxeball_water.png",
+    "category": "capture",
+    "cost": 250,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "throwable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": "capture_1",
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "wild_monster",
+        "operator": "is"
+      },
+      {
+        "type": "base",
+        "parameters": [
+          "species",
+          "!threat"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "capture"
+      }
+    ],
+    "slug": "tuxeball_wood",
+    "sort": "utility",
+    "sprite": "gfx/items/tuxeball_wood.png",
+    "category": "capture",
+    "cost": 250,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "throwable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": "capture_1",
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "wild_monster",
+        "operator": "is"
+      },
+      {
+        "type": "base",
+        "parameters": [
+          "species",
+          "!threat"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "capture_combined",
+        "parameters": [
+          "monster",
+          "xero",
+          "0.3",
+          "1.4"
+        ]
+      }
+    ],
+    "slug": "tuxeball_xero",
+    "sort": "utility",
+    "sprite": "gfx/items/tuxeball_xero.png",
+    "category": "capture",
+    "cost": 300,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "throwable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": "capture_1",
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "wild_monster",
+        "operator": "is"
+      },
+      {
+        "type": "base",
+        "parameters": [
+          "species",
+          "!threat"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "capture"
+      }
+    ],
+    "slug": "tuxeball_zesty",
+    "sort": "utility",
+    "sprite": "gfx/items/tuxeball_zesty.png",
+    "category": "capture",
+    "cost": 450,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "throwable": true,
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": "capture_1",
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "unknown_object",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "base",
+        "parameters": [
+          "types",
+          "venom"
+        ],
+        "operator": "not"
+      }
+    ],
+    "effects": [
+      {
+        "type": "switch_type",
+        "parameters": [
+          "venom"
+        ]
+      }
+    ],
+    "slug": "venom_berry",
+    "sort": "utility",
+    "sprite": "gfx/items/venom_berry.png",
+    "category": "elements",
+    "cost": 450,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "base",
+        "parameters": [
+          "types",
+          "water"
+        ],
+        "operator": "not"
+      }
+    ],
+    "effects": [
+      {
+        "type": "switch_type",
+        "parameters": [
+          "water"
+        ]
+      }
+    ],
+    "slug": "water_berry",
+    "sort": "utility",
+    "sprite": "gfx/items/water_berry.png",
+    "category": "elements",
+    "cost": 450,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "can_evolve",
+        "operator": "is"
+      },
+      {
+        "type": "has_path",
+        "parameters": [
+          "water_booster"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "evolve"
+      }
+    ],
+    "slug": "water_booster",
+    "sort": "utility",
+    "sprite": "gfx/items/water_booster.png",
+    "category": "morph",
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "show_dialog_on_success": false
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [
+      {
+        "type": "heal",
+        "parameters": [
+          "-500",
+          "fixed"
+        ]
+      }
+    ],
+    "slug": "whispersoup",
+    "sort": "utility",
+    "sprite": "gfx/items/box.png",
+    "category": "none",
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "base",
+        "parameters": [
+          "types",
+          "wood"
+        ],
+        "operator": "not"
+      }
+    ],
+    "effects": [
+      {
+        "type": "switch_type",
+        "parameters": [
+          "wood"
+        ]
+      }
+    ],
+    "slug": "wood_berry",
+    "sort": "utility",
+    "sprite": "gfx/items/wood_berry.png",
+    "category": "elements",
+    "cost": 450,
+    "usable_in": [
+      "MainCombatMenuState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "resellable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "conditions": [
+      {
+        "type": "can_evolve",
+        "operator": "is"
+      },
+      {
+        "type": "has_path",
+        "parameters": [
+          "wood_booster"
+        ],
+        "operator": "is"
+      }
+    ],
+    "effects": [
+      {
+        "type": "evolve"
+      }
+    ],
+    "slug": "wood_booster",
+    "sort": "utility",
+    "sprite": "gfx/items/wood_booster.png",
+    "category": "morph",
+    "usable_in": [
+      "WorldState"
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "show_dialog_on_success": false
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "xp_feeder",
+    "sort": "utility",
+    "reward_method": "xp_feeder",
+    "sprite": "gfx/items/xp-feeder.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false,
+      "holdable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  },
+  {
+    "effects": [],
+    "slug": "xp_transmitter",
+    "sort": "utility",
+    "reward_method": "xp_transmitter",
+    "sprite": "gfx/items/xp_transmitter.png",
+    "category": "none",
+    "usable_in": [
+      ""
+    ],
+    "modifiers": [],
+    "behaviors": {
+      "consumable": false,
+      "holdable": true
+    },
+    "use_failure": "generic_failure",
+    "use_item": "combat_used_x",
+    "use_success": "generic_success",
+    "visuals": {
+      "animation": null,
+      "flip_axes": "",
+      "loop": 0
+    },
+    "sound": {
+      "sfx": null,
+      "volume": 0.0
+    }
+  }
+]

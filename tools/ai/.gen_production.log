@@ -1,0 +1,10 @@
+>> inline | echoforms/E001.png (1024x1024) seed=142 model=flux
+  prompt: Vulkid, original ember-aspect collectible creature for a hybrid 2D monster RPG, salamander...
+  OK 57 KB in 3.0s
+>> inline | echoforms/E002.png (1024x1024) seed=242 model=flux
+  prompt: Reeva, original tide-aspect collectible creature for a hybrid 2D monster RPG, river-guardi...
+  OK 39 KB in 89.0s
+>> inline | cities/namaris_harbor.png (1920x1080) seed=342 model=flux
+  prompt: Namaris Harbor battle arena, single dramatic stage scene, wet black stone foreground platf...
+  OK 97 KB in 89.9s
+DONE

@@ -1,0 +1,57 @@
+﻿{
+    "schema_version":  1,
+    "purpose":  "Links generated prep graphics to future Android import targets.",
+    "source_folder":  "app/src/test/Thot Fusion/graphics",
+    "sheets":  [
+                   {
+                       "usage":  "tile prototypes for overworld maps",
+                       "file":  "world_tiles.svg",
+                       "import_target":  "drawable or tiled map atlas"
+                   },
+                   {
+                       "usage":  "Asterfall 30-city region overview",
+                       "file":  "world_map_overview.svg",
+                       "import_target":  "world map screen background"
+                   },
+                   {
+                       "usage":  "300 creature placeholder sprites keyed by Echoform ID",
+                       "file":  "echoform_sprite_atlas.svg",
+                       "import_target":  "creature sprite atlas"
+                   },
+                   {
+                       "usage":  "starter presentation art",
+                       "file":  "creature_starters.svg",
+                       "import_target":  "starter select screen"
+                   },
+                   {
+                       "usage":  "180 item icons keyed by item ID",
+                       "file":  "item_catalog_atlas.svg",
+                       "import_target":  "inventory icon atlas"
+                   },
+                   {
+                       "usage":  "core UI icons and base item samples",
+                       "file":  "items_and_ui.svg",
+                       "import_target":  "battle and inventory UI"
+                   },
+                   {
+                       "usage":  "240 visible NPC sprite variants; 2000 NPCs can map to these via deterministic modulo",
+                       "file":  "npc_binder_sprite_atlas.svg",
+                       "import_target":  "npc overworld atlas"
+                   },
+                   {
+                       "usage":  "named trainer archetype presentation sheet",
+                       "file":  "npc_binder_archetypes.svg",
+                       "import_target":  "trainer card portraits"
+                   },
+                   {
+                       "usage":  "12-element animation visual primitives; the 450 unique attack definitions live in content/animations/attack_animation_manifest.json",
+                       "file":  "attack_animations.svg",
+                       "import_target":  "battle animation renderer"
+                   },
+                   {
+                       "usage":  "arena/backdrop prototypes",
+                       "file":  "battle_backgrounds.svg",
+                       "import_target":  "battle scene backgrounds"
+                   }
+               ]
+}

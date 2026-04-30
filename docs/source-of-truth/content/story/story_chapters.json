@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "title": "Aetherbound",
+  "chapters": [
+    {
+      "id": "chapter_01",
+      "name": "Harbor Signal",
+      "level_band": "1-14",
+      "summary": "The player receives a starter Echoform in Namaris Harbor and survives the first corrupted Loom pulse.",
+      "objectives": [
+        "Create Binder profile and optional Matrix ID binding",
+        "Choose Vulkid, Reeva, or Mosslyn",
+        "Learn movement, interaction, wild encounters, Attunement, healing, and shops",
+        "Defeat Talia Rusk in Copperleaf Terrace"
+      ],
+      "key_npcs": ["Dr. Ilya Voss", "Mara Keir", "Senn Vale", "Edda Maren", "Talia Rusk"],
+      "maps": ["namaris_harbor", "harbor_road", "glassreed_marsh", "copperleaf_terrace", "obsidian_underpass"]
+    },
+    {
+      "id": "chapter_02",
+      "name": "Marsh Lights",
+      "level_band": "12-22",
+      "summary": "The Glassreed Marsh reveals unstable fusion pockets and Veyr scouts testing Shackles.",
+      "objectives": ["Reach Glassreed Crossing", "Craft Aspect Prisms", "Defeat Oren Silt", "Rescue a forced-fused Reedle"],
+      "key_npcs": ["Oren Silt", "Senn Vale", "Pax Renn", "Veyr Scout Kavo"]
+    },
+    {
+      "id": "chapter_03",
+      "name": "The Vault Below",
+      "level_band": "20-32",
+      "summary": "Myr Vault City opens the deeper history of the Aether Loom and unlocks the first Matrix challenge board.",
+      "objectives": ["Enter Myr Vault City", "Complete archive memory puzzle", "Unlock full Fusion Lab", "Win first Loom Link tutorial duel"],
+      "key_npcs": ["Archivist Orun", "Mara Keir", "AI Custodian MYR-0"]
+    },
+    {
+      "id": "chapter_04",
+      "name": "Desert Transmission",
+      "level_band": "32-44",
+      "summary": "Relay mirrors buried in Sableglass Oasis expose Cassian Rook's restoration project.",
+      "objectives": ["Cross Sableglass Dunes", "Solve mirror-light puzzle", "Disrupt Veyr extraction camp", "Defeat Nahla Voss"]
+    },
+    {
+      "id": "chapter_05",
+      "name": "Canopy Accord",
+      "level_band": "40-56",
+      "summary": "Lumenwood communities distrust the player until non-battle quests prove ethical binding.",
+      "objectives": ["Restore canopy lifts", "Heal unstable Echoforms", "Unlock hybrid field abilities", "Defeat Elian Vale"]
+    },
+    {
+      "id": "chapter_06",
+      "name": "Frostline Truth",
+      "level_band": "52-68",
+      "summary": "The Observatory reveals that the Great Severing stopped the Loom from overwriting identity.",
+      "objectives": ["Reach Frostline Observatory", "Solve star-weather puzzle", "Recover Severing record", "Defeat Professor Iven Rime"]
+    },
+    {
+      "id": "chapter_07",
+      "name": "Seal Circuit",
+      "level_band": "60-78",
+      "summary": "The player challenges higher Arenas while Mara exposes manipulated official trials.",
+      "objectives": ["Earn remaining story Seals", "Defeat Mara at Veyrscar", "Unlock post-game Arena rematches"]
+    },
+    {
+      "id": "chapter_08",
+      "name": "Severed Core",
+      "level_band": "76-100",
+      "summary": "The final route into the Loom heart forces a choice: restore, seal, or community-govern the signal network.",
+      "objectives": ["Enter Severglass Citadel", "Defeat Cassian Rook", "Stabilize First Echo", "Choose ending state"]
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+﻿{
+    "schema_version":  1,
+    "rule":  "Each Echoform sprite has base animation states; final art can use sprite sheets, Spine-like bones, or Compose canvas, but state names stay stable.",
+    "states":  [
+                   "idle",
+                   "walk_down",
+                   "walk_up",
+                   "walk_left",
+                   "walk_right",
+                   "battle_idle",
+                   "attack_ready",
+                   "hit_react",
+                   "low_vigor",
+                   "faint",
+                   "attune_success",
+                   "level_up",
+                   "ascend",
+                   "fusion_start",
+                   "fusion_idle",
+                   "fusion_end"
+               ],
+    "timing":  {
+                   "idle_ms":  1200,
+                   "walk_cycle_ms":  520,
+                   "hit_react_ms":  360,
+                   "faint_ms":  780,
+                   "battle_idle_ms":  900,
+                   "fusion_start_ms":  1100
+               },
+    "per_echoform_rule":  "E001-E300 use the same state list with species-specific silhouette offset, breathing amplitude, eye blink timing, and element particle overlay.",
+    "element_overlays":  [
+                             {
+                                 "overlay_id":  "overlay_ember",
+                                 "blend_mode":  "screen_or_additive",
+                                 "particle_rate":  "low_to_medium",
+                                 "aspect":  "ember"
+                             },
+                             {
+                                 "overlay_id":  "overlay_tide",
+                                 "blend_mode":  "screen_or_additive",
+                                 "particle_rate":  "low_to_medium",
+                                 "aspect":  "tide"
+                             },
+                             {
+                                 "overlay_id":  "overlay_verdance",
+                                 "blend_mode":  "screen_or_additive",
+                                 "particle_rate":  "low_to_medium",
+                                 "aspect":  "verdance"
+                             },
+                             {
+                                 "overlay_id":  "overlay_stone",
+                                 "blend_mode":  "screen_or_additive",
+                                 "particle_rate":  "low_to_medium",
+                                 "aspect":  "stone"
+                             },
+                             {
+                                 "overlay_id":  "overlay_gale",
+                                 "blend_mode":  "screen_or_additive",
+                                 "particle_rate":  "low_to_medium",
+                                 "aspect":  "gale"
+                             },
+                             {
+                                 "overlay_id":  "overlay_spark",
+                                 "blend_mode":  "screen_or_additive",
+                                 "particle_rate":  "low_to_medium",
+                                 "aspect":  "spark"
+                             },
+                             {
+                                 "overlay_id":  "overlay_frost",
+                                 "blend_mode":  "screen_or_additive",
+                                 "particle_rate":  "low_to_medium",
+                                 "aspect":  "frost"
+                             },
+                             {
+                                 "overlay_id":  "overlay_metal",
+                                 "blend_mode":  "screen_or_additive",
+                                 "particle_rate":  "low_to_medium",
+                                 "aspect":  "metal"
+                             },
+                             {
+                                 "overlay_id":  "overlay_shade",
+                                 "blend_mode":  "screen_or_additive",
+                                 "particle_rate":  "low_to_medium",
+                                 "aspect":  "shade"
+                             },
+                             {
+                                 "overlay_id":  "overlay_radiant",
+                                 "blend_mode":  "screen_or_additive",
+                                 "particle_rate":  "low_to_medium",
+                                 "aspect":  "radiant"
+                             },
+                             {
+                                 "overlay_id":  "overlay_mind",
+                                 "blend_mode":  "screen_or_additive",
+                                 "particle_rate":  "low_to_medium",
+                                 "aspect":  "mind"
+                             },
+                             {
+                                 "overlay_id":  "overlay_echo",
+                                 "blend_mode":  "screen_or_additive",
+                                 "particle_rate":  "low_to_medium",
+                                 "aspect":  "echo"
+                             }
+                         ]
+}

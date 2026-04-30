@@ -1,0 +1,136 @@
+﻿{
+    "schema_version":  1,
+    "rule":  "World animation is tile/tag driven so maps stay lightweight and offline-safe.",
+    "animated_tiles":  [
+                           {
+                               "usage":  "coasts, canals, flooded ruins",
+                               "tags":  [
+                                            "tide",
+                                            "coast",
+                                            "marsh"
+                                        ],
+                               "frames":  8,
+                               "id":  "water_shimmer",
+                               "duration_ms":  960
+                           },
+                           {
+                               "usage":  "tall grass encounter tiles",
+                               "tags":  [
+                                            "verdance",
+                                            "field"
+                                        ],
+                               "frames":  6,
+                               "id":  "grass_sway",
+                               "duration_ms":  720
+                           },
+                           {
+                               "usage":  "foundry, lava vents, desert heat",
+                               "tags":  [
+                                            "ember",
+                                            "volcanic"
+                                        ],
+                               "frames":  10,
+                               "id":  "ember_heat_haze",
+                               "duration_ms":  1100
+                           },
+                           {
+                               "usage":  "relay towers and puzzles",
+                               "tags":  [
+                                            "spark",
+                                            "circuit"
+                                        ],
+                               "frames":  7,
+                               "id":  "spark_relay",
+                               "duration_ms":  640
+                           },
+                           {
+                               "usage":  "cliff flags, wind bridges",
+                               "tags":  [
+                                            "gale",
+                                            "bridge"
+                                        ],
+                               "frames":  8,
+                               "id":  "gale_streamer",
+                               "duration_ms":  820
+                           },
+                           {
+                               "usage":  "frozen caves and observatory mirrors",
+                               "tags":  [
+                                            "frost",
+                                            "ice"
+                                        ],
+                               "frames":  9,
+                               "id":  "frost_glint",
+                               "duration_ms":  1280
+                           },
+                           {
+                               "usage":  "foundries, vault doors, lifts",
+                               "tags":  [
+                                            "metal",
+                                            "machine"
+                                        ],
+                               "frames":  12,
+                               "id":  "metal_gear_turn",
+                               "duration_ms":  960
+                           },
+                           {
+                               "usage":  "night marshes and corrupted routes",
+                               "tags":  [
+                                            "shade",
+                                            "night"
+                                        ],
+                               "frames":  10,
+                               "id":  "shade_mist",
+                               "duration_ms":  1400
+                           },
+                           {
+                               "usage":  "healing stations and arena seals",
+                               "tags":  [
+                                            "radiant",
+                                            "sanctum"
+                                        ],
+                               "frames":  12,
+                               "id":  "radiant_lumen",
+                               "duration_ms":  1500
+                           },
+                           {
+                               "usage":  "memory vault puzzles",
+                               "tags":  [
+                                            "mind",
+                                            "archive"
+                                        ],
+                               "frames":  12,
+                               "id":  "mind_glyph_loop",
+                               "duration_ms":  1320
+                           },
+                           {
+                               "usage":  "signal towers, resonance gates",
+                               "tags":  [
+                                            "echo",
+                                            "signal"
+                                        ],
+                               "frames":  9,
+                               "id":  "echo_wave_loop",
+                               "duration_ms":  900
+                           },
+                           {
+                               "usage":  "Null corruption as story hazard, not element",
+                               "tags":  [
+                                            "story",
+                                            "severed"
+                                        ],
+                               "frames":  11,
+                               "id":  "severed_glitch",
+                               "duration_ms":  1000
+                           }
+                       ],
+    "npc_animation_states":  [
+                                 "idle",
+                                 "turn",
+                                 "walk",
+                                 "notice_player",
+                                 "challenge_pose",
+                                 "defeated",
+                                 "rematch_ready"
+                             ]
+}

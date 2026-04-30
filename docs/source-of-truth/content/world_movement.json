@@ -1,0 +1,382 @@
+﻿{
+    "schema_version":  1,
+    "movement":  {
+                     "grid":  "tile_collision_with_smooth_interpolation",
+                     "walk_tiles_per_second":  3,
+                     "sprint_tiles_per_second":  4.2,
+                     "indoor_sprint_cap_tiles_per_second":  3.6,
+                     "signal_wheel_tiles_per_second":  6.2,
+                     "input":  [
+                                   "keyboard_wasd",
+                                   "controller_dpad_or_stick",
+                                   "mobile_virtual_stick",
+                                   "mobile_tap_steer"
+                               ],
+                     "interaction":  [
+                                         "talk",
+                                         "inspect",
+                                         "open",
+                                         "pick_up",
+                                         "push",
+                                         "activate",
+                                         "challenge"
+                                     ]
+                 },
+    "rendering":  {
+                      "style":  "2d_top_down_or_three_quarter_tilemap",
+                      "layers":  [
+                                     "ground",
+                                     "lower_decoration",
+                                     "collision_objects",
+                                     "actors",
+                                     "upper_decoration",
+                                     "weather_and_light",
+                                     "ui"
+                                 ],
+                      "camera":  "smooth_follow_with_dead_zone_and_map_clamp",
+                      "offline_required":  true
+                  },
+    "traversal_unlocks":  {
+                              "signal_wheel":  "earned after city_02 Arena; bike-equivalent fast travel on roads and open routes",
+                              "loom_jump":  "earned after city_10 major Loom restoration; fast travel only to visited activated beacons",
+                              "field_tools":  [
+                                                  "cut_roots",
+                                                  "light_pulse",
+                                                  "anchor_step",
+                                                  "drift_wake",
+                                                  "signal_tap",
+                                                  "thermal_veil",
+                                                  "sever_ward"
+                                              ]
+                          },
+    "fast_travel_rules":  {
+                              "allowed_targets":  [
+                                                      "visited_cities",
+                                                      "activated_camps",
+                                                      "docks",
+                                                      "sanctums",
+                                                      "last_heal_station"
+                                                  ],
+                              "blocked_contexts":  [
+                                                       "dungeon",
+                                                       "hostile_zone",
+                                                       "scripted_danger",
+                                                       "matrix_pvp_room",
+                                                       "active_battle",
+                                                       "puzzle_lock_room"
+                                                   ]
+                          },
+    "arena_rewards":  {
+                          "public_term":  "Seal",
+                          "forbidden_visible_term":  "badge",
+                          "default_rewards":  [
+                                                  "seal",
+                                                  "marks",
+                                                  "technique_script",
+                                                  "shop_unlock",
+                                                  "rematch_flag"
+                                              ]
+                      },
+    "city_seals":  [
+                       {
+                           "city_id":  "city_01",
+                           "city_name":  "Namaris Harbor",
+                           "arena":  "Harbor Sanctum",
+                           "leader":  "Edda Maren",
+                           "seal":  "Harbor Seal",
+                           "unlocks":  [
+                                           "shop_inventory_tier_1"
+                                       ]
+                       },
+                       {
+                           "city_id":  "city_02",
+                           "city_name":  "Copperleaf Terrace",
+                           "arena":  "Copperleaf Arena",
+                           "leader":  "Talia Rusk",
+                           "seal":  "Copperleaf Seal",
+                           "unlocks":  [
+                                           "signal_wheel"
+                                       ]
+                       },
+                       {
+                           "city_id":  "city_03",
+                           "city_name":  "Glassreed Crossing",
+                           "arena":  "Glassreed Sanctum",
+                           "leader":  "Oren Silt",
+                           "seal":  "Glassreed Seal",
+                           "unlocks":  [
+                                           "shop_inventory_tier_1"
+                                       ]
+                       },
+                       {
+                           "city_id":  "city_04",
+                           "city_name":  "Bronzegate",
+                           "arena":  "Bronzegate Forge Arena",
+                           "leader":  "Mael Tor",
+                           "seal":  "Bronzegate Seal",
+                           "unlocks":  [
+                                           "shop_inventory_tier_1"
+                                       ]
+                       },
+                       {
+                           "city_id":  "city_05",
+                           "city_name":  "Myr Vault City",
+                           "arena":  "Vault Memory Court",
+                           "leader":  "Archivist Orun",
+                           "seal":  "Vault Seal",
+                           "unlocks":  [
+                                           "shop_inventory_tier_1"
+                                       ]
+                       },
+                       {
+                           "city_id":  "city_06",
+                           "city_name":  "Ashquay",
+                           "arena":  "Ashquay Pressure Hall",
+                           "leader":  "Sera Cind",
+                           "seal":  "Ashquay Seal",
+                           "unlocks":  [
+                                           "shop_inventory_tier_2"
+                                       ]
+                       },
+                       {
+                           "city_id":  "city_07",
+                           "city_name":  "Lumenwood Crown",
+                           "arena":  "Canopy Light Sanctum",
+                           "leader":  "Elian Vale",
+                           "seal":  "Canopy Seal",
+                           "unlocks":  [
+                                           "shop_inventory_tier_2"
+                                       ]
+                       },
+                       {
+                           "city_id":  "city_08",
+                           "city_name":  "Sableglass Oasis",
+                           "arena":  "Mirage Ring",
+                           "leader":  "Nahla Voss",
+                           "seal":  "Mirage Seal",
+                           "unlocks":  [
+                                           "shop_inventory_tier_2"
+                                       ]
+                       },
+                       {
+                           "city_id":  "city_09",
+                           "city_name":  "Frostline Observatory",
+                           "arena":  "Starweather Dome",
+                           "leader":  "Professor Iven Rime",
+                           "seal":  "Starweather Seal",
+                           "unlocks":  [
+                                           "shop_inventory_tier_2"
+                                       ]
+                       },
+                       {
+                           "city_id":  "city_10",
+                           "city_name":  "Voltfen Relay",
+                           "arena":  "Relay Circuit Board",
+                           "leader":  "Jax Korrin",
+                           "seal":  "Relay Seal",
+                           "unlocks":  [
+                                           "loom_jump_fast_travel"
+                                       ]
+                       },
+                       {
+                           "city_id":  "city_11",
+                           "city_name":  "Orison Steps",
+                           "arena":  "Bond Trial Steps",
+                           "leader":  "Mira Sol",
+                           "seal":  "Orison Seal",
+                           "unlocks":  [
+                                           "shop_inventory_tier_3"
+                                       ]
+                       },
+                       {
+                           "city_id":  "city_12",
+                           "city_name":  "Blacktide Docks",
+                           "arena":  "Stormdock Ring",
+                           "leader":  "Captain Roan Pell",
+                           "seal":  "Stormdock Seal",
+                           "unlocks":  [
+                                           "shop_inventory_tier_3"
+                                       ]
+                       },
+                       {
+                           "city_id":  "city_13",
+                           "city_name":  "Ferrum Hollow",
+                           "arena":  "Hollow Anvil",
+                           "leader":  "Borrik Vane",
+                           "seal":  "Anvil Seal",
+                           "unlocks":  [
+                                           "shop_inventory_tier_3"
+                                       ]
+                       },
+                       {
+                           "city_id":  "city_14",
+                           "city_name":  "Skylace Aerie",
+                           "arena":  "Aerie Duel Bridge",
+                           "leader":  "Lyra Keir",
+                           "seal":  "Aerie Seal",
+                           "unlocks":  [
+                                           "shop_inventory_tier_3"
+                                       ]
+                       },
+                       {
+                           "city_id":  "city_15",
+                           "city_name":  "Veyrscar",
+                           "arena":  "Scar Reconciliation Court",
+                           "leader":  "Mara Keir",
+                           "seal":  "Scar Seal",
+                           "unlocks":  [
+                                           "advanced_fusion_license"
+                                       ]
+                       },
+                       {
+                           "city_id":  "city_16",
+                           "city_name":  "Sunken Bell",
+                           "arena":  "Sunken Bell Chamber",
+                           "leader":  "Neris Quill",
+                           "seal":  "Sunken Seal",
+                           "unlocks":  [
+                                           "shop_inventory_tier_4"
+                                       ]
+                       },
+                       {
+                           "city_id":  "city_17",
+                           "city_name":  "Goldroot Market",
+                           "arena":  "Market Rule Ring",
+                           "leader":  "Davo Esh",
+                           "seal":  "Goldroot Seal",
+                           "unlocks":  [
+                                           "shop_inventory_tier_4"
+                                       ]
+                       },
+                       {
+                           "city_id":  "city_18",
+                           "city_name":  "Emberglass Foundry",
+                           "arena":  "Foundry Heatline",
+                           "leader":  "Hedra Fenn",
+                           "seal":  "Foundry Seal",
+                           "unlocks":  [
+                                           "shop_inventory_tier_4"
+                                       ]
+                       },
+                       {
+                           "city_id":  "city_19",
+                           "city_name":  "Pale Circuit",
+                           "arena":  "Pale Signal Hall",
+                           "leader":  "Tovin Arc",
+                           "seal":  "Pale Signal Seal",
+                           "unlocks":  [
+                                           "shop_inventory_tier_4"
+                                       ]
+                       },
+                       {
+                           "city_id":  "city_20",
+                           "city_name":  "Moonfen",
+                           "arena":  "Moonfen Veil Court",
+                           "leader":  "Selka Nox",
+                           "seal":  "Moonfen Seal",
+                           "unlocks":  [
+                                           "shop_inventory_tier_4"
+                                       ]
+                       },
+                       {
+                           "city_id":  "city_21",
+                           "city_name":  "Rimeharp",
+                           "arena":  "Harp Ice Stage",
+                           "leader":  "Calo Wren",
+                           "seal":  "Rimeharp Seal",
+                           "unlocks":  [
+                                           "shop_inventory_tier_5"
+                                       ]
+                       },
+                       {
+                           "city_id":  "city_22",
+                           "city_name":  "High Aster",
+                           "arena":  "Capital Seal Court",
+                           "leader":  "Director Cassian Rook",
+                           "seal":  "Capital Seal",
+                           "unlocks":  [
+                                           "shop_inventory_tier_5"
+                                       ]
+                       },
+                       {
+                           "city_id":  "city_23",
+                           "city_name":  "Stonewake",
+                           "arena":  "Stonewake Gauntlet",
+                           "leader":  "Garrun Holt",
+                           "seal":  "Stonewake Seal",
+                           "unlocks":  [
+                                           "shop_inventory_tier_5"
+                                       ]
+                       },
+                       {
+                           "city_id":  "city_24",
+                           "city_name":  "Verdant Quay",
+                           "arena":  "Glasshouse Quay",
+                           "leader":  "Isha Reed",
+                           "seal":  "Glasshouse Seal",
+                           "unlocks":  [
+                                           "shop_inventory_tier_5"
+                                       ]
+                       },
+                       {
+                           "city_id":  "city_25",
+                           "city_name":  "Nullward Bastion",
+                           "arena":  "Nullward Bastion",
+                           "leader":  "Warden Sael Noct",
+                           "seal":  "Bastion Seal",
+                           "unlocks":  [
+                                           "postgame_rematch_rule"
+                                       ]
+                       },
+                       {
+                           "city_id":  "city_26",
+                           "city_name":  "Auric Spire",
+                           "arena":  "Auric Spire",
+                           "leader":  "Aurelia Senn",
+                           "seal":  "Auric Seal",
+                           "unlocks":  [
+                                           "postgame_rematch_rule"
+                                       ]
+                       },
+                       {
+                           "city_id":  "city_27",
+                           "city_name":  "Tempest Ring",
+                           "arena":  "Tempest Ring",
+                           "leader":  "Rooke Thane",
+                           "seal":  "Tempest Seal",
+                           "unlocks":  [
+                                           "postgame_rematch_rule"
+                                       ]
+                       },
+                       {
+                           "city_id":  "city_28",
+                           "city_name":  "Deep Myr Annex",
+                           "arena":  "Deep Archive Simulation",
+                           "leader":  "AI Custodian MYR-0",
+                           "seal":  "Deep Archive Seal",
+                           "unlocks":  [
+                                           "postgame_rematch_rule"
+                                       ]
+                       },
+                       {
+                           "city_id":  "city_29",
+                           "city_name":  "Severglass Citadel",
+                           "arena":  "Severglass Citadel",
+                           "leader":  "Umbra Vale",
+                           "seal":  "Severglass Seal",
+                           "unlocks":  [
+                                           "postgame_rematch_rule"
+                                       ]
+                       },
+                       {
+                           "city_id":  "city_30",
+                           "city_name":  "Loomheart City",
+                           "arena":  "Loomheart Master Court",
+                           "leader":  "The First Echo",
+                           "seal":  "Loomheart Seal",
+                           "unlocks":  [
+                                           "postgame_rematch_rule"
+                                       ]
+                       }
+                   ]
+}

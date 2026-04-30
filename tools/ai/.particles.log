@@ -1,0 +1,293 @@
+>> 144 particle textures queued
+[1/144] ember_spark.png
+  OK 6 KB
+[2/144] ember_droplet.png
+  OK 5 KB
+[3/144] ember_shard.png
+  OK 8 KB
+[4/144] ember_aura_ring.png
+  OK 9 KB
+[5/144] ember_beam_segment.png
+  OK 5 KB
+[6/144] ember_impact_ring.png
+  OK 9 KB
+[7/144] ember_background_glow.png
+  OK 7 KB
+[8/144] ember_orb.png
+  OK 7 KB
+[9/144] ember_trail_wisp.png
+  OK 6 KB
+[10/144] ember_sub_particle.png
+  OK 6 KB
+[11/144] tide_spark.png
+  OK 7 KB
+[12/144] tide_droplet.png
+  OK 4 KB
+[13/144] tide_shard.png
+    retry 1: HTTPError: HTTP Error 502: Bad Gateway
+  OK 8 KB
+[14/144] tide_aura_ring.png
+  OK 9 KB
+[15/144] tide_beam_segment.png
+  OK 7 KB
+[16/144] tide_impact_ring.png
+  OK 12 KB
+[17/144] tide_background_glow.png
+  OK 6 KB
+[18/144] tide_orb.png
+  OK 7 KB
+[19/144] tide_trail_wisp.png
+  OK 5 KB
+[20/144] tide_sub_particle.png
+  OK 9 KB
+[21/144] verdance_spark.png
+  OK 8 KB
+[22/144] verdance_droplet.png
+  OK 8 KB
+[23/144] verdance_shard.png
+  OK 9 KB
+[24/144] verdance_aura_ring.png
+  OK 11 KB
+[25/144] verdance_beam_segment.png
+  OK 8 KB
+[26/144] verdance_impact_ring.png
+  OK 17 KB
+[27/144] verdance_background_glow.png
+  OK 7 KB
+[28/144] verdance_orb.png
+  OK 9 KB
+[29/144] verdance_trail_wisp.png
+  OK 6 KB
+[30/144] verdance_sub_particle.png
+  OK 9 KB
+[31/144] stone_spark.png
+    retry 1: HTTPError: HTTP Error 502: Bad Gateway
+  OK 6 KB
+[32/144] stone_droplet.png
+  OK 8 KB
+[33/144] stone_shard.png
+  OK 11 KB
+[34/144] stone_aura_ring.png
+  OK 11 KB
+[35/144] stone_beam_segment.png
+  OK 5 KB
+[36/144] stone_impact_ring.png
+  OK 12 KB
+[37/144] stone_background_glow.png
+  OK 6 KB
+[38/144] stone_orb.png
+  OK 7 KB
+[39/144] stone_trail_wisp.png
+  OK 7 KB
+[40/144] stone_sub_particle.png
+  OK 9 KB
+[41/144] gale_spark.png
+  OK 6 KB
+[42/144] gale_droplet.png
+  OK 4 KB
+[43/144] gale_shard.png
+  OK 9 KB
+[44/144] gale_aura_ring.png
+  OK 7 KB
+[45/144] gale_beam_segment.png
+  OK 3 KB
+[46/144] gale_impact_ring.png
+  OK 8 KB
+[47/144] gale_background_glow.png
+  OK 5 KB
+[48/144] gale_orb.png
+  OK 5 KB
+[49/144] gale_trail_wisp.png
+  OK 4 KB
+[50/144] gale_sub_particle.png
+  OK 7 KB
+[51/144] spark_spark.png
+  OK 7 KB
+[52/144] spark_droplet.png
+  OK 5 KB
+[53/144] spark_shard.png
+  OK 9 KB
+[54/144] spark_aura_ring.png
+  OK 9 KB
+[55/144] spark_beam_segment.png
+  OK 6 KB
+[56/144] spark_impact_ring.png
+  OK 10 KB
+[57/144] spark_background_glow.png
+  OK 6 KB
+[58/144] spark_orb.png
+  OK 9 KB
+[59/144] spark_trail_wisp.png
+  OK 6 KB
+[60/144] spark_sub_particle.png
+  OK 6 KB
+[61/144] frost_spark.png
+  OK 9 KB
+[62/144] frost_droplet.png
+  OK 6 KB
+[63/144] frost_shard.png
+  OK 10 KB
+[64/144] frost_aura_ring.png
+  OK 9 KB
+[65/144] frost_beam_segment.png
+  OK 5 KB
+[66/144] frost_impact_ring.png
+    retry 1: HTTPError: HTTP Error 502: Bad Gateway
+  OK 12 KB
+[67/144] frost_background_glow.png
+  OK 6 KB
+[68/144] frost_orb.png
+  OK 7 KB
+[69/144] frost_trail_wisp.png
+  OK 5 KB
+[70/144] frost_sub_particle.png
+  OK 7 KB
+[71/144] metal_spark.png
+  OK 8 KB
+[72/144] metal_droplet.png
+  OK 6 KB
+[73/144] metal_shard.png
+  OK 11 KB
+[74/144] metal_aura_ring.png
+  OK 7 KB
+[75/144] metal_beam_segment.png
+  OK 3 KB
+[76/144] metal_impact_ring.png
+  OK 12 KB
+[77/144] metal_background_glow.png
+  OK 6 KB
+[78/144] metal_orb.png
+  OK 6 KB
+[79/144] metal_trail_wisp.png
+  OK 5 KB
+[80/144] metal_sub_particle.png
+  OK 9 KB
+[81/144] shade_spark.png
+  OK 7 KB
+[82/144] shade_droplet.png
+  OK 4 KB
+[83/144] shade_shard.png
+  OK 7 KB
+[84/144] shade_aura_ring.png
+  OK 7 KB
+[85/144] shade_beam_segment.png
+  OK 3 KB
+[86/144] shade_impact_ring.png
+  OK 9 KB
+[87/144] shade_background_glow.png
+  OK 5 KB
+[88/144] shade_orb.png
+  OK 5 KB
+[89/144] shade_trail_wisp.png
+  OK 5 KB
+[90/144] shade_sub_particle.png
+  OK 5 KB
+[91/144] radiant_spark.png
+  OK 8 KB
+[92/144] radiant_droplet.png
+  OK 5 KB
+[93/144] radiant_shard.png
+  OK 8 KB
+[94/144] radiant_aura_ring.png
+  OK 9 KB
+[95/144] radiant_beam_segment.png
+  OK 5 KB
+[96/144] radiant_impact_ring.png
+  OK 12 KB
+[97/144] radiant_background_glow.png
+  OK 6 KB
+[98/144] radiant_orb.png
+  OK 6 KB
+[99/144] radiant_trail_wisp.png
+  OK 6 KB
+[100/144] radiant_sub_particle.png
+  OK 6 KB
+[101/144] mind_spark.png
+  OK 6 KB
+[102/144] mind_droplet.png
+  OK 5 KB
+[103/144] mind_shard.png
+  OK 10 KB
+[104/144] mind_aura_ring.png
+  OK 8 KB
+[105/144] mind_beam_segment.png
+  OK 4 KB
+[106/144] mind_impact_ring.png
+  OK 13 KB
+[107/144] mind_background_glow.png
+  OK 5 KB
+[108/144] mind_orb.png
+  OK 7 KB
+[109/144] mind_trail_wisp.png
+  OK 7 KB
+[110/144] mind_sub_particle.png
+  OK 9 KB
+[111/144] echo_spark.png
+  OK 6 KB
+[112/144] echo_droplet.png
+  OK 4 KB
+[113/144] echo_shard.png
+  OK 8 KB
+[114/144] echo_aura_ring.png
+  OK 7 KB
+[115/144] echo_beam_segment.png
+  OK 4 KB
+[116/144] echo_impact_ring.png
+  OK 10 KB
+[117/144] echo_background_glow.png
+  OK 6 KB
+[118/144] echo_orb.png
+  OK 6 KB
+[119/144] echo_trail_wisp.png
+  OK 5 KB
+[120/144] echo_sub_particle.png
+  OK 10 KB
+[121/144] universal_shockwave.png
+  OK 6 KB
+[122/144] universal_slash.png
+  OK 5 KB
+[123/144] universal_explosion.png
+  OK 10 KB
+[124/144] universal_speed_lines.png
+  OK 6 KB
+[125/144] universal_lightning_bolt.png
+  OK 6 KB
+[126/144] universal_glow_orb_white.png
+  OK 4 KB
+[127/144] universal_glow_orb_gold.png
+  OK 5 KB
+[128/144] universal_smoke_puff.png
+  OK 5 KB
+[129/144] universal_ash_fleck.png
+  OK 8 KB
+[130/144] universal_crit_flash.png
+  OK 11 KB
+[131/144] universal_frame_burst.png
+  OK 9 KB
+[132/144] universal_dust_cloud.png
+  OK 8 KB
+[133/144] universal_crack_line.png
+  OK 6 KB
+[134/144] universal_droplet_white.png
+  OK 5 KB
+[135/144] universal_petal_light.png
+  OK 8 KB
+[136/144] universal_rune_mark.png
+  OK 6 KB
+[137/144] universal_gear_cog.png
+  OK 7 KB
+[138/144] universal_vortex_swirl.png
+  OK 9 KB
+[139/144] universal_crystal_chip.png
+  OK 7 KB
+[140/144] universal_ribbon_arc.png
+  OK 4 KB
+[141/144] universal_pulse_ring.png
+  OK 8 KB
+[142/144] universal_shard_burst.png
+  OK 11 KB
+[143/144] universal_scatter_dot.png
+  OK 10 KB
+[144/144] universal_halo_thin.png
+  OK 5 KB
+-- done | 144/144 ok --

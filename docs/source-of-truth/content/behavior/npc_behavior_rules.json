@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "battle_start_default": "talk_to_battle",
+  "sightline_battle_usage": "rare_story_or_arena_only",
+  "npc_scaling": {
+    "formula": "clamp(max(zoneMinimumLevel, averageTopPartyLevel - npcDifficultyOffset), zoneMinimumLevel, zoneMaximumLevel + storyScalingBonus)",
+    "first_clear_story_trainers": "do_not_scale_above_teaching_role",
+    "optional_binders": "scale_with_story_and_party",
+    "rematches": "scale_aggressively",
+    "arena_leaders": "first_clear_fixed_rematch_scaled"
+  },
+  "ai_tiers": [
+    {"id":"tier_0","name":"Beginner","behavior":["uses_highest_power_known","rarely_switches"]},
+    {"id":"tier_1","name":"Route Binder","behavior":["uses_effective_aspect","uses_one_status_plan","switches_if_rooted"]},
+    {"id":"tier_2","name":"Arena Apprentice","behavior":["sets_terrain","protects_ace","uses_items_once"]},
+    {"id":"tier_3","name":"Leader","behavior":["team_synergy","predicts_switches","uses_fusion_timing"]},
+    {"id":"tier_4","name":"Master","behavior":["counts_flux","plays_around_status","uses_double_battle_positioning"]},
+    {"id":"tier_5","name":"Validator","behavior":["deterministic_optimal_scoring","ranked_legal_only"]}
+  ],
+  "overworld_behaviors": [
+    {"id":"wander_small","description":"walks inside a small rectangle and faces player on talk"},
+    {"id":"patrol_line","description":"walks between two points; battle only starts when talked to"},
+    {"id":"shop_idle","description":"fixed facing down with shop interaction"},
+    {"id":"clinic_idle","description":"healing service interaction"},
+    {"id":"arena_gate","description":"checks Seal/story requirements"},
+    {"id":"matrix_board_attendant","description":"opens Matrix challenge explanation and lobby"}
+  ]
+}

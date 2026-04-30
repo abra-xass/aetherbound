@@ -1,0 +1,157 @@
+name: Release
+
+# Pushes a tag like `v0.2.0` → builds APK + asset-packs → creates GitHub
+# Release with all assets attached. After this runs, the in-app
+# UpdateChecker on every player's device will offer the new version.
+#
+# Required repo secrets (Settings → Secrets and variables → Actions):
+#   AETHER_KEYSTORE_BASE64    base64-encoded contents of the .keystore file
+#   AETHER_KEYSTORE_PASS      keystore password
+#   AETHER_KEY_ALIAS          key alias inside the keystore
+#   AETHER_KEY_PASS           key password
+#
+# Encode the keystore once on your machine:
+#   base64 -w0 aetherbound-release.keystore > kb64.txt   (Linux/Mac)
+#   certutil -encode aetherbound-release.keystore kb64.txt   (Windows)
+# Paste the result into the AETHER_KEYSTORE_BASE64 secret.
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+permissions:
+  contents: write   # needed to create the GitHub Release + upload assets
+
+jobs:
+  build-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Set up Python (for asset-pack builder)
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python deps
+        run: pip install Pillow PyYAML
+
+      - name: Clone Tuxemon (asset source)
+        run: |
+          # Tuxemon ships under GPL-3.0 (code) + CC-BY-SA-3.0 (assets).
+          # We import only assets per docs/asset-credits.md — attribution mandatory.
+          git clone --depth 1 https://github.com/Tuxemon/Tuxemon.git ../Tuxemon
+          ls ../Tuxemon | head
+
+      - name: Import Tuxemon assets
+        run: |
+          # Phase 1-9 importer: 411 mons + 274 moves + 223 items + 235 maps
+          # + 192 SFX + 111 BGM tracks → app/src/main/assets/{game,audio}/
+          python tools/ai/import_tuxemon.py
+
+      - name: Decode keystore
+        env:
+          KEYSTORE_B64: ${{ secrets.AETHER_KEYSTORE_BASE64 }}
+        run: |
+          mkdir -p keys
+          echo "$KEYSTORE_B64" | base64 -d > keys/aetherbound-release.keystore
+          ls -la keys/
+
+      - name: Extract version from tag
+        id: version
+        run: |
+          TAG="${GITHUB_REF#refs/tags/}"
+          VERSION="${TAG#v}"
+          # versionCode = numeric strip of "0.2.0" → 020 → 20 (zero-padded)
+          IFS='.' read -r major minor patch <<< "$VERSION"
+          CODE=$((major * 10000 + minor * 100 + patch))
+          echo "tag=$TAG" >> $GITHUB_OUTPUT
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "code=$CODE" >> $GITHUB_OUTPUT
+          echo "Building $TAG (versionCode=$CODE, versionName=$VERSION)"
+
+      - name: Build asset packs
+        run: |
+          python tools/build/build_asset_packs.py --strip
+          ls -la build/asset-packs/
+
+      - name: Build signed release APK
+        env:
+          AETHER_KEYSTORE_PATH: ${{ github.workspace }}/keys/aetherbound-release.keystore
+          AETHER_KEYSTORE_PASS: ${{ secrets.AETHER_KEYSTORE_PASS }}
+          AETHER_KEY_ALIAS: ${{ secrets.AETHER_KEY_ALIAS }}
+          AETHER_KEY_PASS: ${{ secrets.AETHER_KEY_PASS }}
+          AETHER_VERSION_NAME: ${{ steps.version.outputs.version }}
+          AETHER_VERSION_CODE: ${{ steps.version.outputs.code }}
+        run: |
+          chmod +x ./gradlew
+          ./gradlew :app:assembleRelease --no-daemon
+
+      - name: Rename APK
+        id: apk
+        run: |
+          SRC=$(find app/build/outputs/apk/release -name "*.apk" | head -n 1)
+          DEST="aetherbound-${{ steps.version.outputs.version }}.apk"
+          cp "$SRC" "$DEST"
+          echo "apk=$DEST" >> $GITHUB_OUTPUT
+          echo "Built APK: $DEST ($(du -h $DEST | cut -f1))"
+
+      - name: Generate release notes
+        id: notes
+        run: |
+          NOTES_FILE="release-notes.md"
+          {
+            echo "## Aetherbound ${{ steps.version.outputs.tag }}"
+            echo ""
+            echo "Built on $(date -u +'%Y-%m-%d %H:%M UTC') from \`${GITHUB_SHA:0:7}\`."
+            echo ""
+            echo "### Install"
+            echo ""
+            echo "**Already have Aetherbound installed?** Open the game → MENU → Check for Updates → DOWNLOAD → INSTALL. No browser required."
+            echo ""
+            echo "**Fresh install:** Download \`aetherbound-${{ steps.version.outputs.version }}.apk\` below, allow 'Install from unknown sources' when prompted, and tap to install."
+            echo ""
+            echo "### Asset Packs (optional)"
+            echo ""
+            echo "Open MENU → Asset Packs in-game and tap a pack to download:"
+            echo "- \`audio.zip\` — full SFX + BGM library (~145 MB)"
+            echo "- \`graphics.zip\` — full move-FX animations for all 274 techniques"
+            echo "- \`maps.zip\` — all 235 imported Tuxemon maps"
+            echo ""
+            echo "### Changes"
+            echo ""
+            git log --pretty=format:"- %s" $(git describe --tags --abbrev=0 HEAD~ 2>/dev/null || git rev-list --max-parents=0 HEAD)..HEAD || echo "- Initial release"
+          } > "$NOTES_FILE"
+          echo "notes_file=$NOTES_FILE" >> $GITHUB_OUTPUT
+
+      - name: Create GitHub Release + upload assets
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.version.outputs.tag }}
+          name: Aetherbound ${{ steps.version.outputs.tag }}
+          body_path: ${{ steps.notes.outputs.notes_file }}
+          draft: false
+          prerelease: ${{ contains(steps.version.outputs.tag, '-') }}
+          files: |
+            ${{ steps.apk.outputs.apk }}
+            build/asset-packs/audio.zip
+            build/asset-packs/graphics.zip
+            build/asset-packs/maps.zip
+            build/asset-packs/manifest.json
+
+      - name: Cleanup keystore
+        if: always()
+        run: rm -f keys/aetherbound-release.keystore

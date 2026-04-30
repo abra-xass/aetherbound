@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="768" height="256" viewBox="0 0 768 256">
+  <rect width="768" height="256" fill="#101217"/>
+  <style>.label{font:12px sans-serif;fill:#f6d28b}.icon{stroke:#0a0c10;stroke-width:2}</style>
+  <g id="prism" transform="translate(32 28)">
+    <path class="icon" d="M48 0l40 32-16 64H24L8 32z" fill="#55d6c2"/>
+    <path d="M48 0v96M8 32h80" stroke="#e7ffff" stroke-width="3"/>
+    <text class="label" x="13" y="126">Prism</text>
+  </g>
+  <g id="salve" transform="translate(160 28)">
+    <rect class="icon" x="22" y="18" width="52" height="82" rx="12" fill="#c43d4d"/>
+    <rect x="34" y="4" width="28" height="20" fill="#f6d28b"/>
+    <path d="M48 40v38M30 59h36" stroke="#fff" stroke-width="8"/>
+    <text class="label" x="20" y="126">Salve</text>
+  </g>
+  <g id="script" transform="translate(288 28)">
+    <path class="icon" d="M18 16h72v88H18z" fill="#d8c28e"/>
+    <path d="M30 34h48M30 52h48M30 70h32" stroke="#3b2d1c" stroke-width="5"/>
+    <text class="label" x="14" y="126">Script</text>
+  </g>
+  <g id="mark" transform="translate(416 28)">
+    <circle class="icon" cx="48" cy="56" r="42" fill="#c89b3c"/>
+    <path d="M48 24v64M24 56h48" stroke="#101217" stroke-width="8"/>
+    <text class="label" x="22" y="126">Marks</text>
+  </g>
+  <g id="aether_glass" transform="translate(544 28)">
+    <path class="icon" d="M48 8l40 48-40 48L8 56z" fill="#a77cff"/>
+    <path d="M48 8v96M8 56h80" stroke="#f4eaff" stroke-width="3"/>
+    <text class="label" x="2" y="126">Aether Glass</text>
+  </g>
+  <g id="flux" transform="translate(664 28)">
+    <circle class="icon" cx="48" cy="56" r="42" fill="#18272a"/>
+    <path d="M30 72c28-70 62-44 36 0 18-10 22 8 8 20" stroke="#55d6c2" stroke-width="7" fill="none"/>
+    <text class="label" x="26" y="126">Flux</text>
+  </g>
+</svg>

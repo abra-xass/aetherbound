@@ -1,0 +1,19 @@
+>> hosting C:\project\Neu\Aetherbound\app\src\main\assets\game\echoforms on local HTTP for img2img...
+   serving at http://192.168.0.194:7777
+>> 2 echoforms | strength=0.6
+    vision retry 1: HTTPError: HTTP Error 403: Forbidden
+    vision retry 2: HTTPError: HTTP Error 403: Forbidden
+    vision retry 3: HTTPError: HTTP Error 403: Forbidden
+[1/2] E001  desc: original 16-bit pixel-art monster sprite…
+  OK front (44 KB)
+  OK back (40 KB)
+    vision retry 1: HTTPError: HTTP Error 403: Forbidden
+    vision retry 2: HTTPError: HTTP Error 403: Forbidden
+    vision retry 3: HTTPError: HTTP Error 403: Forbidden
+[2/2] E002  desc: original 16-bit pixel-art monster sprite…
+  OK front (39 KB)
+  OK back (34 KB)
+-- done | 2/2 ok --
+
+Backups in: C:\project\Neu\Aetherbound\tools\ai\echoforms-backup-pre-mature
+Restore with: cp tools/ai/echoforms-backup-pre-mature/E001.png app/src/main/assets/game/echoforms/

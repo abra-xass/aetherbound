@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360">
+  <rect width="900" height="360" fill="#101217"/>
+  <style>.label{font:14px sans-serif;fill:#f6d28b}.frame{fill:none;stroke:#333b48;stroke-width:2}</style>
+  <g id="ember_strike" transform="translate(30 30)">
+    <rect class="frame" width="120" height="120"/><path d="M20 96c30-70 62-40 36 2 28-30 54-6 24 18" fill="#f05a28"/><text class="label" x="12" y="148">ember strike</text>
+  </g>
+  <g id="tide_pulse" transform="translate(190 30)">
+    <rect class="frame" width="120" height="120"/><path d="M12 70c30-24 54 24 96 0M12 94c30-24 54 24 96 0" stroke="#2f9eea" stroke-width="8" fill="none"/><text class="label" x="18" y="148">tide pulse</text>
+  </g>
+  <g id="verdance_bind" transform="translate(350 30)">
+    <rect class="frame" width="120" height="120"/><path d="M30 112c8-60 28-82 70-98M68 112c-8-60-28-82-50-98" stroke="#43a047" stroke-width="8" fill="none"/><text class="label" x="10" y="148">verdance bind</text>
+  </g>
+  <g id="spark_hit" transform="translate(510 30)">
+    <rect class="frame" width="120" height="120"/><path d="M72 8L30 64h34l-24 48 58-66H66z" fill="#ffd43b"/><text class="label" x="25" y="148">spark hit</text>
+  </g>
+  <g id="null_wave" transform="translate(670 30)">
+    <rect class="frame" width="120" height="120"/><circle cx="60" cy="60" r="42" fill="#05060a"/><path d="M24 60h72M60 24v72" stroke="#6e7180" stroke-width="6"/><text class="label" x="28" y="148">null wave</text>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "map_id": "glassreed_marsh",
+  "name": "Glassreed Marsh",
+  "tileset": "marsh_reed",
+  "size": {"width": 110, "height": 72},
+  "encounter_tables": [
+    {"zone":"reeds","species":["E008","E016","E026","E034","E044"],"level_min":8,"level_max":16},
+    {"zone":"marsh_lights","species":["E006","E023","E038","E051"],"level_min":10,"level_max":18}
+  ],
+  "puzzles": [{"id":"marsh_water_01","kind":"water_level","difficulty":"simple"},{"id":"reed_bridge_02","kind":"route_toggle","difficulty":"medium"}],
+  "battle_npcs": ["NPC0101","NPC0102","NPC0103","NPC0104","NPC0105","NPC0106","NPC0107"]
+}

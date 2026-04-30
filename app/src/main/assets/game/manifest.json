@@ -1,0 +1,40 @@
+{
+  "source": "Tuxemon (https://github.com/Tuxemon/Tuxemon)",
+  "license_code": "GPL-3.0",
+  "license_assets": "CC-BY-SA-3.0",
+  "import_stats": {
+    "sfx": 192,
+    "music": 111
+  },
+  "structure_version": 1,
+  "categories": {
+    "echoforms": {
+      "source": "tuxemon",
+      "overridable": true
+    },
+    "techniques": {
+      "source": "tuxemon",
+      "overridable": true
+    },
+    "items": {
+      "source": "tuxemon",
+      "overridable": true
+    },
+    "tilesets": {
+      "source": "tuxemon",
+      "overridable": true
+    },
+    "maps": {
+      "source": "tuxemon",
+      "overridable": true
+    },
+    "characters": {
+      "source": "tuxemon",
+      "overridable": true
+    },
+    "ui": {
+      "source": "tuxemon",
+      "overridable": true
+    }
+  }
+}

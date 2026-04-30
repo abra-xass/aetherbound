@@ -1,0 +1,104 @@
+package com.thot.messenger.game.preview
+
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
+import app.cash.paparazzi.DeviceConfig
+import app.cash.paparazzi.Paparazzi
+import com.thot.messenger.game.preview.content.PilotEchoforms
+import com.thot.messenger.game.preview.render.battle.HpBar
+import com.thot.messenger.game.preview.render.battle.MoveSelector
+import com.thot.messenger.game.preview.render.theme.AetherColors
+import com.thot.messenger.game.preview.render.theme.AetherboundTheme
+import com.thot.messenger.game.preview.render.theme.LocalQualityPreset
+import com.thot.messenger.game.preview.render.theme.QualityPreset
+import org.junit.Rule
+import org.junit.Test
+
+/**
+ * Compose snapshot tests via Paparazzi (no emulator needed).
+ *
+ * Run:  ./gradlew :app:recordPaparazziDebug   (creates snapshots/)
+ * Verify: ./gradlew :app:verifyPaparazziDebug (compares to baseline)
+ *
+ * Snapshots land in `app/src/test/snapshots/images/`. Inspect them visually
+ * to confirm the UI renders correctly without spinning up an Android device.
+ */
+class GamePreviewSnapshotTest {
+
+    @get:Rule
+    val paparazzi = Paparazzi(
+        deviceConfig = DeviceConfig.PIXEL_5,
+        renderingMode = com.android.ide.common.rendering.api.SessionParams.RenderingMode.NORMAL,
+    )
+
+    @Test fun hpBar_full() {
+        paparazzi.snapshot {
+            AetherboundTheme(quality = QualityPreset.Balanced) {
+                Box(
+                    Modifier
+                        .fillMaxSize()
+                        .background(AetherColors.Obsidian)
+                        .padding(16.dp),
+                ) {
+                    HpBar(
+                        name = "Vulkid",
+                        level = 18,
+                        currentVigor = 68,
+                        maxVigor = 68,
+                        modifier = Modifier.fillMaxWidth(0.7f),
+                    )
+                }
+            }
+        }
+    }
+
+    @Test fun hpBar_low() {
+        paparazzi.snapshot {
+            AetherboundTheme(quality = QualityPreset.Balanced) {
+                Box(
+                    Modifier
+                        .fillMaxSize()
+                        .background(AetherColors.Obsidian)
+                        .padding(16.dp),
+                ) {
+                    HpBar(
+                        name = "Reeva",
+                        level = 18,
+                        currentVigor = 12,
+                        maxVigor = 95,
+                        modifier = Modifier.fillMaxWidth(0.7f),
+                    )
+                }
+            }
+        }
+    }
+
+    @Test fun moveSelector_with_type_effectiveness() {
+        val player = PilotEchoforms.playerStarter()
+        val opponent = PilotEchoforms.opponent()
+        paparazzi.snapshot {
+            AetherboundTheme(quality = QualityPreset.Balanced) {
+                Box(
+                    Modifier
+                        .fillMaxSize()
+                        .background(AetherColors.Obsidian)
+                        .padding(16.dp),
+                ) {
+                    MoveSelector(
+                        techniques = player.techniques,
+                        enabled = true,
+                        target = opponent,
+                        onPick = {},
+                        modifier = Modifier.fillMaxWidth(),
+                    )
+                }
+            }
+        }
+    }
+}

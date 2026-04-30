@@ -1,0 +1,53 @@
+# ── Build outputs ─────────────────────────────────────────────
+*.iml
+.gradle/
+local.properties
+.idea/
+build/
+captures/
+.externalNativeBuild
+.cxx/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+release/
+
+# ── Secrets — never commit ────────────────────────────────────
+keystore.properties
+keys/
+*.keystore
+*.jks
+*.p12
+
+# ── OS / IDE noise ────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# ── Asset packs (built artifacts, not source) ─────────────────
+build/asset-packs/*.zip
+build/asset-packs/manifest.json
+
+# ── Imported Tuxemon assets — regenerated via tools/ai/import_tuxemon.py ──
+# CI clones Tuxemon and re-imports them. Source-of-truth lives upstream.
+# Keep small JSON dexes in the repo so the app boots without an import step.
+app/src/main/assets/audio/sfx/
+app/src/main/assets/audio/music/
+app/src/main/assets/game/echoforms/tuxemon/
+app/src/main/assets/game/techniques/tuxemon/
+app/src/main/assets/game/maps/tuxemon/
+app/src/main/assets/game/tilesets/tuxemon/
+app/src/main/assets/game/characters/tuxemon/
+app/src/main/assets/game/ui/tuxemon/
+# (game/data/*.json and game/items/tuxemon/ stay — small and core)
+
+# ── Worktrees ─────────────────────────────────────────────────
+.claude/worktrees/
+
+# ── Python ────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+.venv/

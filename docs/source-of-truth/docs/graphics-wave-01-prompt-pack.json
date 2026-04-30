@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "pack_name": "graphics_wave_01",
+  "purpose": "First real image-generation wave for the new Thot Fusion hybrid art direction.",
+  "notes": [
+    "Use these prompts as separate generation jobs, not as one multi-subject batch image.",
+    "Keep outputs non-destructive and versioned.",
+    "Do not use the old placeholder SVG atlases as style references.",
+    "Approve style boards first, then region art, then starters, then VFX."
+  ],
+  "global_style_lock": {
+    "positive": [
+      "hybrid 2D monster RPG art direction",
+      "modern handheld-scale readability",
+      "strong silhouettes",
+      "dark elegant fantasy science world",
+      "material contrast",
+      "game-ready concept quality",
+      "not nostalgic parody"
+    ],
+    "negative": [
+      "cheap retro pixel filter",
+      "flat vector icon look",
+      "generic mobile game asset slop",
+      "washed-out fantasy palette",
+      "Pokemon clone",
+      "muddy overpainted noise"
+    ]
+  },
+  "jobs": [
+    {
+      "id": "wave01_01_overworld_style_board",
+      "target_filename": "wave01-overworld-style-board.png",
+      "asset_type": "style_board",
+      "prompt": "Style board for a modern 2D monster-RPG overworld, hybrid pixel-art and HD-2D direction, top-down and slight three-quarter top-down camera references, dark coastal fantasy region called Asterfall, wet black stone streets, brass relay machines, glowing tide reflections, hanging lanterns, reeds, storm clouds, signal towers, modular town layout logic, readable tile-based exploration, strong atmosphere, handcrafted game environment concept sheet, cohesive color direction, premium handheld RPG quality.",
+      "negative_prompt": "cheap retro pixel filter, flat vector icons, mobile game asset slop, generic anime town, 3D realistic render, chibi toy proportions, blurry painterly mess, purple neon cyberpunk, empty white background"
+    },
+    {
+      "id": "wave01_02_battle_style_board",
+      "target_filename": "wave01-battle-style-board.png",
+      "asset_type": "style_board",
+      "prompt": "Battle presentation style board for a modern 2D monster RPG, hybrid sprite and painted battle look, large readable creature sprites, layered arena backdrops, impact-driven elemental effects, clean combat staging, dramatic but controlled lighting, premium handheld RPG battle scenes, one ember creature scene, one tide or verdance creature scene, one legendary ritual battle scene, strong silhouette clarity, not nostalgic mockup, not generic mobile RPG.",
+      "negative_prompt": "fighting game HUD, MMO raid clutter, overexposed spell spam, tiny unreadable creatures, retro parody, simplistic flash animation, diagram arrows, card game layout"
+    },
+    {
+      "id": "wave01_03_echoform_style_board",
+      "target_filename": "wave01-echoform-style-board.png",
+      "asset_type": "style_board",
+      "prompt": "Creature design style board for original collectible monsters called Echoforms, hybrid RPG art direction, strong silhouettes, believable fantasy anatomy, elemental traits integrated into body form, dark elegant world tone, designs for starter creatures, early route creatures, midgame predators, and legendary entities, premium creature concept art sheet, readable shapes, game-ready monster family design language, not derivative of existing monster franchises.",
+      "negative_prompt": "Pokemon clone, Digimon clone, mascot overload, rubber toy style, random spikes, flat symbols, cutesy mobile pet game, repetitive horn variants, generic fantasy beast collage"
+    },
+    {
+      "id": "wave01_04_vfx_style_board",
+      "target_filename": "wave01-vfx-style-board.png",
+      "asset_type": "style_board",
+      "prompt": "Elemental combat VFX style board for a 2D monster RPG, twelve distinct effect languages: ember, tide, verdance, stone, gale, spark, frost, metal, shade, radiant, mind, echo, each shown as a short impact or projectile study, clean readable game VFX, high contrast, premium 2D battle effects, not infographic, not UI icons, not generic fantasy spell spam.",
+      "negative_prompt": "flat vector arrows, random sparkles, over-rendered smoke, MMO spell clutter, soft blurry effects, logo marks, minimalist symbols, fake retro effect strips"
+    },
+    {
+      "id": "wave01_05_namaris_harbor",
+      "target_filename": "wave01-namaris-harbor-concept.png",
+      "asset_type": "region_concept",
+      "prompt": "Namaris Harbor, original monster-RPG city, dark stormy coastal hub, wet black stone streets, tide pools, rope docks, brass lanterns, teal reflected water light, small harbor lab, relay beacon technology mixed with old masonry, top-down and slight three-quarter game environment concept, highly readable modular RPG town, premium hybrid pixel-art and painted reference.",
+      "negative_prompt": "sunny tropical beach town, cartoon pirate village, steampunk overload, bright cheerful vacation port, realistic 3D render, empty plaza"
+    },
+    {
+      "id": "wave01_06_glassreed_crossing",
+      "target_filename": "wave01-glassreed-crossing-concept.png",
+      "asset_type": "region_concept",
+      "prompt": "Glassreed Crossing, marsh settlement in an original monster RPG, unstable boardwalk town above dark reflective water, tall reeds, low fog, muted green and black palette, small signal lamps, bioluminescent plants, elegant but dangerous marsh atmosphere, modular top-down RPG environment concept, handcrafted worldbuilding, high readability for exploration.",
+      "negative_prompt": "bright jungle, generic swamp horror cliché, cartoon marsh, flat green mud, photorealistic drone shot, oversaturated fairy forest"
+    },
+    {
+      "id": "wave01_07_myr_vault_city",
+      "target_filename": "wave01-myr-vault-city-concept.png",
+      "asset_type": "region_concept",
+      "prompt": "Myr Vault City, archive metropolis for an original monster RPG, vertical stone archives, suspended bridges, metallic library structures, glowing glyph elevators, memory and signal technology, mind and echo visual identity, top-down RPG city concept, premium hybrid 2D game environment, dense readable architecture, not fantasy cliché.",
+      "negative_prompt": "generic wizard library, spaceship corridor, modern office interior, bright academy campus, flat city map infographic"
+    },
+    {
+      "id": "wave01_08_vulkid_premium_concept",
+      "target_filename": "wave01-vulkid-premium-concept.png",
+      "asset_type": "starter_concept",
+      "prompt": "Original starter monster concept, Vulkid, ember element, compact salamander-like creature with pressure-heat anatomy, volcanic vents along back, bright ember glands, aggressive but appealing posture, collectible creature silhouette, premium battle-sprite concept for a modern 2D monster RPG, not a dragon clone, not a Pokemon imitation.",
+      "negative_prompt": "dragon mascot, Charmander clone, generic lizard, soft plush toy, baby cartoon proportions, random spikes everywhere, flat symbol face"
+    },
+    {
+      "id": "wave01_09_reeva_premium_concept",
+      "target_filename": "wave01-reeva-premium-concept.png",
+      "asset_type": "starter_concept",
+      "prompt": "Original starter monster concept, Reeva, tide element, river guardian creature with smooth aquatic anatomy, elegant fins or crest shapes, calm and resilient expression, collectible creature silhouette, premium battle-sprite concept for a modern 2D monster RPG, not fish mascot, not Pokemon imitation.",
+      "negative_prompt": "water mascot clone, dolphin cartoon, generic fish pet, plush toy look, shapeless blob creature, overdesigned mermaid creature"
+    },
+    {
+      "id": "wave01_10_mosslyn_premium_concept",
+      "target_filename": "wave01-mosslyn-premium-concept.png",
+      "asset_type": "starter_concept",
+      "prompt": "Original starter monster concept, Mosslyn, verdance element, woodland fox-deer hybrid creature with living moss and root textures, agile body plan, clever expression, premium collectible creature design for a modern 2D monster RPG, strong silhouette, not generic grass mascot, not Pokemon imitation.",
+      "negative_prompt": "grass fox clone, woodland plush toy, generic deer, overgrown plant blob, flat mascot proportions, random antlers without anatomy"
+    },
+    {
+      "id": "wave01_11_ember_vfx_base_pack",
+      "target_filename": "wave01-ember-vfx-base-pack.png",
+      "asset_type": "vfx_sheet",
+      "prompt": "2D battle VFX concept sheet for ember element attacks in a monster RPG, ignition arcs, ember bursts, ash trails, pressure flashes, readable short combat timing, premium game VFX, high contrast, not infographic, not logo design.",
+      "negative_prompt": "flat flame icon, generic fire emoji, MMO spell clutter, blurry glow cloud, UI symbol chart"
+    },
+    {
+      "id": "wave01_12_tide_vfx_base_pack",
+      "target_filename": "wave01-tide-vfx-base-pack.png",
+      "asset_type": "vfx_sheet",
+      "prompt": "2D battle VFX concept sheet for tide element attacks in a monster RPG, surge ribbons, water lashes, splash curtains, droplets, rippling impact rings, readable short combat timing, premium game VFX, not generic fantasy spell art.",
+      "negative_prompt": "water icon set, infographic arrows, aquarium background, blurry splash photography, MMO healer effects"
+    },
+    {
+      "id": "wave01_13_verdance_vfx_base_pack",
+      "target_filename": "wave01-verdance-vfx-base-pack.png",
+      "asset_type": "vfx_sheet",
+      "prompt": "2D battle VFX concept sheet for verdance element attacks in a monster RPG, root bursts, leaf arcs, spore sprays, growth surges, grasping vines, readable game combat effects, premium 2D VFX, not decorative botanical wallpaper.",
+      "negative_prompt": "flat leaf icons, floral wallpaper, generic druid spell mess, blurred green smoke, infographic vines"
+    }
+  ]
+}

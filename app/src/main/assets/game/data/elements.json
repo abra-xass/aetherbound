@@ -1,0 +1,756 @@
+[
+  {
+    "slug": "cosmic",
+    "icon": "gfx/ui/icons/element/cosmic_type.png",
+    "types": [
+      {
+        "against": "earth",
+        "multiplier": 1
+      },
+      {
+        "against": "fire",
+        "multiplier": 1
+      },
+      {
+        "against": "frost",
+        "multiplier": 1
+      },
+      {
+        "against": "heroic",
+        "multiplier": 2
+      },
+      {
+        "against": "lightning",
+        "multiplier": 1
+      },
+      {
+        "against": "cosmic",
+        "multiplier": 1
+      },
+      {
+        "against": "metal",
+        "multiplier": 1
+      },
+      {
+        "against": "normal",
+        "multiplier": 1
+      },
+      {
+        "against": "shadow",
+        "multiplier": 0.5
+      },
+      {
+        "against": "sky",
+        "multiplier": 1
+      },
+      {
+        "against": "venom",
+        "multiplier": 2
+      },
+      {
+        "against": "water",
+        "multiplier": 1
+      },
+      {
+        "against": "wood",
+        "multiplier": 1
+      }
+    ]
+  },
+  {
+    "slug": "earth",
+    "icon": "gfx/ui/icons/element/earth_type.png",
+    "types": [
+      {
+        "against": "earth",
+        "multiplier": 1
+      },
+      {
+        "against": "fire",
+        "multiplier": 2
+      },
+      {
+        "against": "frost",
+        "multiplier": 1
+      },
+      {
+        "against": "heroic",
+        "multiplier": 1
+      },
+      {
+        "against": "lightning",
+        "multiplier": 2
+      },
+      {
+        "against": "cosmic",
+        "multiplier": 1
+      },
+      {
+        "against": "metal",
+        "multiplier": 1
+      },
+      {
+        "against": "normal",
+        "multiplier": 1
+      },
+      {
+        "against": "shadow",
+        "multiplier": 1
+      },
+      {
+        "against": "sky",
+        "multiplier": 0.5
+      },
+      {
+        "against": "venom",
+        "multiplier": 1
+      },
+      {
+        "against": "water",
+        "multiplier": 1
+      },
+      {
+        "against": "wood",
+        "multiplier": 0.5
+      }
+    ]
+  },
+  {
+    "slug": "fire",
+    "icon": "gfx/ui/icons/element/fire_type.png",
+    "types": [
+      {
+        "against": "earth",
+        "multiplier": 0.5
+      },
+      {
+        "against": "fire",
+        "multiplier": 0.5
+      },
+      {
+        "against": "frost",
+        "multiplier": 0.5
+      },
+      {
+        "against": "heroic",
+        "multiplier": 1
+      },
+      {
+        "against": "lightning",
+        "multiplier": 1
+      },
+      {
+        "against": "cosmic",
+        "multiplier": 1
+      },
+      {
+        "against": "metal",
+        "multiplier": 2
+      },
+      {
+        "against": "normal",
+        "multiplier": 1
+      },
+      {
+        "against": "shadow",
+        "multiplier": 1
+      },
+      {
+        "against": "sky",
+        "multiplier": 1
+      },
+      {
+        "against": "venom",
+        "multiplier": 2
+      },
+      {
+        "against": "water",
+        "multiplier": 0.5
+      },
+      {
+        "against": "wood",
+        "multiplier": 2
+      }
+    ]
+  },
+  {
+    "slug": "frost",
+    "icon": "gfx/ui/icons/element/frost_type.png",
+    "types": [
+      {
+        "against": "earth",
+        "multiplier": 2
+      },
+      {
+        "against": "fire",
+        "multiplier": 1
+      },
+      {
+        "against": "frost",
+        "multiplier": 0.5
+      },
+      {
+        "against": "heroic",
+        "multiplier": 1
+      },
+      {
+        "against": "lightning",
+        "multiplier": 1
+      },
+      {
+        "against": "cosmic",
+        "multiplier": 1
+      },
+      {
+        "against": "metal",
+        "multiplier": 0.5
+      },
+      {
+        "against": "normal",
+        "multiplier": 1
+      },
+      {
+        "against": "shadow",
+        "multiplier": 0.5
+      },
+      {
+        "against": "sky",
+        "multiplier": 2
+      },
+      {
+        "against": "venom",
+        "multiplier": 1
+      },
+      {
+        "against": "water",
+        "multiplier": 0.5
+      },
+      {
+        "against": "wood",
+        "multiplier": 2
+      }
+    ]
+  },
+  {
+    "slug": "heroic",
+    "icon": "gfx/ui/icons/element/heroic_type.png",
+    "types": [
+      {
+        "against": "earth",
+        "multiplier": 1
+      },
+      {
+        "against": "fire",
+        "multiplier": 1
+      },
+      {
+        "against": "frost",
+        "multiplier": 2
+      },
+      {
+        "against": "heroic",
+        "multiplier": 1
+      },
+      {
+        "against": "lightning",
+        "multiplier": 1
+      },
+      {
+        "against": "cosmic",
+        "multiplier": 0.5
+      },
+      {
+        "against": "metal",
+        "multiplier": 1
+      },
+      {
+        "against": "normal",
+        "multiplier": 2
+      },
+      {
+        "against": "shadow",
+        "multiplier": 2
+      },
+      {
+        "against": "sky",
+        "multiplier": 1
+      },
+      {
+        "against": "venom",
+        "multiplier": 0.5
+      },
+      {
+        "against": "water",
+        "multiplier": 1
+      },
+      {
+        "against": "wood",
+        "multiplier": 1
+      }
+    ]
+  },
+  {
+    "slug": "lightning",
+    "icon": "gfx/ui/icons/element/lightning_type.png",
+    "types": [
+      {
+        "against": "earth",
+        "multiplier": 0.5
+      },
+      {
+        "against": "fire",
+        "multiplier": 1
+      },
+      {
+        "against": "frost",
+        "multiplier": 1
+      },
+      {
+        "against": "heroic",
+        "multiplier": 1
+      },
+      {
+        "against": "lightning",
+        "multiplier": 0.5
+      },
+      {
+        "against": "cosmic",
+        "multiplier": 1
+      },
+      {
+        "against": "metal",
+        "multiplier": 2
+      },
+      {
+        "against": "normal",
+        "multiplier": 1
+      },
+      {
+        "against": "shadow",
+        "multiplier": 1
+      },
+      {
+        "against": "sky",
+        "multiplier": 2
+      },
+      {
+        "against": "venom",
+        "multiplier": 1
+      },
+      {
+        "against": "water",
+        "multiplier": 2
+      },
+      {
+        "against": "wood",
+        "multiplier": 0.5
+      }
+    ]
+  },
+  {
+    "slug": "metal",
+    "icon": "gfx/ui/icons/element/metal_type.png",
+    "types": [
+      {
+        "against": "earth",
+        "multiplier": 2
+      },
+      {
+        "against": "fire",
+        "multiplier": 0.5
+      },
+      {
+        "against": "frost",
+        "multiplier": 1
+      },
+      {
+        "against": "heroic",
+        "multiplier": 1
+      },
+      {
+        "against": "lightning",
+        "multiplier": 1
+      },
+      {
+        "against": "cosmic",
+        "multiplier": 2
+      },
+      {
+        "against": "metal",
+        "multiplier": 0.5
+      },
+      {
+        "against": "normal",
+        "multiplier": 1
+      },
+      {
+        "against": "shadow",
+        "multiplier": 1
+      },
+      {
+        "against": "sky",
+        "multiplier": 1
+      },
+      {
+        "against": "venom",
+        "multiplier": 1
+      },
+      {
+        "against": "water",
+        "multiplier": 0.5
+      },
+      {
+        "against": "wood",
+        "multiplier": 1
+      }
+    ]
+  },
+  {
+    "slug": "normal",
+    "icon": "gfx/ui/icons/element/normal_type.png",
+    "types": [
+      {
+        "against": "earth",
+        "multiplier": 1
+      },
+      {
+        "against": "fire",
+        "multiplier": 1
+      },
+      {
+        "against": "frost",
+        "multiplier": 1
+      },
+      {
+        "against": "heroic",
+        "multiplier": 1
+      },
+      {
+        "against": "lightning",
+        "multiplier": 1
+      },
+      {
+        "against": "cosmic",
+        "multiplier": 1
+      },
+      {
+        "against": "metal",
+        "multiplier": 0.5
+      },
+      {
+        "against": "normal",
+        "multiplier": 1
+      },
+      {
+        "against": "shadow",
+        "multiplier": 1
+      },
+      {
+        "against": "sky",
+        "multiplier": 1
+      },
+      {
+        "against": "venom",
+        "multiplier": 1
+      },
+      {
+        "against": "water",
+        "multiplier": 1
+      },
+      {
+        "against": "wood",
+        "multiplier": 1
+      }
+    ]
+  },
+  {
+    "slug": "shadow",
+    "icon": "gfx/ui/icons/element/shadow_type.png",
+    "types": [
+      {
+        "against": "earth",
+        "multiplier": 0.5
+      },
+      {
+        "against": "fire",
+        "multiplier": 1
+      },
+      {
+        "against": "frost",
+        "multiplier": 1
+      },
+      {
+        "against": "heroic",
+        "multiplier": 0.5
+      },
+      {
+        "against": "lightning",
+        "multiplier": 1
+      },
+      {
+        "against": "cosmic",
+        "multiplier": 2
+      },
+      {
+        "against": "metal",
+        "multiplier": 1
+      },
+      {
+        "against": "normal",
+        "multiplier": 1
+      },
+      {
+        "against": "shadow",
+        "multiplier": 1
+      },
+      {
+        "against": "sky",
+        "multiplier": 2
+      },
+      {
+        "against": "venom",
+        "multiplier": 1
+      },
+      {
+        "against": "water",
+        "multiplier": 1
+      },
+      {
+        "against": "wood",
+        "multiplier": 1
+      }
+    ]
+  },
+  {
+    "slug": "sky",
+    "icon": "gfx/ui/icons/element/sky_type.png",
+    "types": [
+      {
+        "against": "earth",
+        "multiplier": 2
+      },
+      {
+        "against": "fire",
+        "multiplier": 0.5
+      },
+      {
+        "against": "frost",
+        "multiplier": 1
+      },
+      {
+        "against": "heroic",
+        "multiplier": 2
+      },
+      {
+        "against": "lightning",
+        "multiplier": 1
+      },
+      {
+        "against": "cosmic",
+        "multiplier": 1
+      },
+      {
+        "against": "metal",
+        "multiplier": 1
+      },
+      {
+        "against": "normal",
+        "multiplier": 1
+      },
+      {
+        "against": "shadow",
+        "multiplier": 1
+      },
+      {
+        "against": "sky",
+        "multiplier": 1
+      },
+      {
+        "against": "venom",
+        "multiplier": 1
+      },
+      {
+        "against": "water",
+        "multiplier": 1
+      },
+      {
+        "against": "wood",
+        "multiplier": 2
+      }
+    ]
+  },
+  {
+    "slug": "venom",
+    "icon": "gfx/ui/icons/element/venom_type.png",
+    "types": [
+      {
+        "against": "earth",
+        "multiplier": 0.5
+      },
+      {
+        "against": "fire",
+        "multiplier": 1
+      },
+      {
+        "against": "frost",
+        "multiplier": 1
+      },
+      {
+        "against": "heroic",
+        "multiplier": 1
+      },
+      {
+        "against": "lightning",
+        "multiplier": 1
+      },
+      {
+        "against": "cosmic",
+        "multiplier": 1
+      },
+      {
+        "against": "metal",
+        "multiplier": 0.5
+      },
+      {
+        "against": "normal",
+        "multiplier": 2
+      },
+      {
+        "against": "shadow",
+        "multiplier": 1
+      },
+      {
+        "against": "sky",
+        "multiplier": 1
+      },
+      {
+        "against": "venom",
+        "multiplier": 0.5
+      },
+      {
+        "against": "water",
+        "multiplier": 0.5
+      },
+      {
+        "against": "wood",
+        "multiplier": 2
+      }
+    ]
+  },
+  {
+    "slug": "water",
+    "icon": "gfx/ui/icons/element/water_type.png",
+    "types": [
+      {
+        "against": "earth",
+        "multiplier": 1
+      },
+      {
+        "against": "fire",
+        "multiplier": 2
+      },
+      {
+        "against": "frost",
+        "multiplier": 0.5
+      },
+      {
+        "against": "heroic",
+        "multiplier": 1
+      },
+      {
+        "against": "lightning",
+        "multiplier": 1
+      },
+      {
+        "against": "cosmic",
+        "multiplier": 1
+      },
+      {
+        "against": "metal",
+        "multiplier": 1
+      },
+      {
+        "against": "normal",
+        "multiplier": 1
+      },
+      {
+        "against": "shadow",
+        "multiplier": 1
+      },
+      {
+        "against": "sky",
+        "multiplier": 1
+      },
+      {
+        "against": "venom",
+        "multiplier": 1
+      },
+      {
+        "against": "water",
+        "multiplier": 0.5
+      },
+      {
+        "against": "wood",
+        "multiplier": 0.5
+      }
+    ]
+  },
+  {
+    "slug": "wood",
+    "icon": "gfx/ui/icons/element/wood_type.png",
+    "types": [
+      {
+        "against": "earth",
+        "multiplier": 2
+      },
+      {
+        "against": "fire",
+        "multiplier": 0.5
+      },
+      {
+        "against": "frost",
+        "multiplier": 1
+      },
+      {
+        "against": "heroic",
+        "multiplier": 1
+      },
+      {
+        "against": "lightning",
+        "multiplier": 1
+      },
+      {
+        "against": "cosmic",
+        "multiplier": 1
+      },
+      {
+        "against": "metal",
+        "multiplier": 1
+      },
+      {
+        "against": "normal",
+        "multiplier": 1
+      },
+      {
+        "against": "shadow",
+        "multiplier": 1
+      },
+      {
+        "against": "sky",
+        "multiplier": 1
+      },
+      {
+        "against": "venom",
+        "multiplier": 0.5
+      },
+      {
+        "against": "water",
+        "multiplier": 2
+      },
+      {
+        "against": "wood",
+        "multiplier": 0.5
+      }
+    ]
+  }
+]

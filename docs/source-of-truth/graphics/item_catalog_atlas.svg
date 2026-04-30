@@ -1,0 +1,1264 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1548" height="860" viewBox="0 0 1548 860">
+<rect width="100%" height="100%" fill="#111820"/>
+  <g id="IT001" data-name="Ember Salve 1" transform="translate(0 0)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#d94f4f" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Ember Salve 1</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT001 80</text>
+  </g>
+  <g id="IT002" data-name="Tide Salve 2" transform="translate(86 0)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#d94f4f" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Tide Salve 2</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT002 100</text>
+  </g>
+  <g id="IT003" data-name="Verdance Salve 3" transform="translate(172 0)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#d94f4f" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Verdance Salve 3</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT003 120</text>
+  </g>
+  <g id="IT004" data-name="Stone Salve 4" transform="translate(258 0)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#d94f4f" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Stone Salve 4</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT004 140</text>
+  </g>
+  <g id="IT005" data-name="Gale Salve 5" transform="translate(344 0)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#d94f4f" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Gale Salve 5</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT005 160</text>
+  </g>
+  <g id="IT006" data-name="Spark Salve 6" transform="translate(430 0)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#d94f4f" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Spark Salve 6</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT006 180</text>
+  </g>
+  <g id="IT007" data-name="Frost Salve 7" transform="translate(516 0)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#d94f4f" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Frost Salve 7</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT007 200</text>
+  </g>
+  <g id="IT008" data-name="Metal Salve 8" transform="translate(602 0)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#d94f4f" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Metal Salve 8</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT008 220</text>
+  </g>
+  <g id="IT009" data-name="Shade Salve 9" transform="translate(688 0)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#d94f4f" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Shade Salve 9</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT009 240</text>
+  </g>
+  <g id="IT010" data-name="Radiant Salve 10" transform="translate(774 0)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#d94f4f" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Radiant Salve 10</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT010 260</text>
+  </g>
+  <g id="IT011" data-name="Mind Salve 11" transform="translate(860 0)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#d94f4f" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Mind Salve 11</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT011 280</text>
+  </g>
+  <g id="IT012" data-name="Echo Salve 12" transform="translate(946 0)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#d94f4f" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Echo Salve 12</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT012 300</text>
+  </g>
+  <g id="IT013" data-name="Null Salve 13" transform="translate(1032 0)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#d94f4f" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Null Salve 13</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT013 320</text>
+  </g>
+  <g id="IT014" data-name="Ember Salve 14" transform="translate(1118 0)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#d94f4f" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Ember Salve 14</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT014 340</text>
+  </g>
+  <g id="IT015" data-name="Tide Salve 15" transform="translate(1204 0)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#d94f4f" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Tide Salve 15</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT015 360</text>
+  </g>
+  <g id="IT016" data-name="Verdance Salve 16" transform="translate(1290 0)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#d94f4f" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Verdance Salve 16</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT016 380</text>
+  </g>
+  <g id="IT017" data-name="Stone Salve 17" transform="translate(1376 0)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#d94f4f" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Stone Salve 17</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT017 400</text>
+  </g>
+  <g id="IT018" data-name="Gale Salve 18" transform="translate(1462 0)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#d94f4f" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Gale Salve 18</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT018 420</text>
+  </g>
+  <g id="IT019" data-name="Spark Patch 1" transform="translate(0 86)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Spark Patch 1</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT019 120</text>
+  </g>
+  <g id="IT020" data-name="Frost Patch 2" transform="translate(86 86)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Frost Patch 2</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT020 144</text>
+  </g>
+  <g id="IT021" data-name="Metal Patch 3" transform="translate(172 86)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Metal Patch 3</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT021 168</text>
+  </g>
+  <g id="IT022" data-name="Shade Patch 4" transform="translate(258 86)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Shade Patch 4</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT022 192</text>
+  </g>
+  <g id="IT023" data-name="Radiant Patch 5" transform="translate(344 86)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Radiant Patch 5</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT023 216</text>
+  </g>
+  <g id="IT024" data-name="Mind Patch 6" transform="translate(430 86)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Mind Patch 6</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT024 240</text>
+  </g>
+  <g id="IT025" data-name="Echo Patch 7" transform="translate(516 86)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Echo Patch 7</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT025 264</text>
+  </g>
+  <g id="IT026" data-name="Null Patch 8" transform="translate(602 86)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Null Patch 8</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT026 288</text>
+  </g>
+  <g id="IT027" data-name="Ember Patch 9" transform="translate(688 86)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Ember Patch 9</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT027 312</text>
+  </g>
+  <g id="IT028" data-name="Tide Patch 10" transform="translate(774 86)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Tide Patch 10</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT028 336</text>
+  </g>
+  <g id="IT029" data-name="Verdance Patch 11" transform="translate(860 86)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Verdance Patch 11</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT029 360</text>
+  </g>
+  <g id="IT030" data-name="Stone Patch 12" transform="translate(946 86)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Stone Patch 12</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT030 384</text>
+  </g>
+  <g id="IT031" data-name="Gale Patch 13" transform="translate(1032 86)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Gale Patch 13</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT031 408</text>
+  </g>
+  <g id="IT032" data-name="Spark Patch 14" transform="translate(1118 86)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Spark Patch 14</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT032 432</text>
+  </g>
+  <g id="IT033" data-name="Frost Patch 15" transform="translate(1204 86)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Frost Patch 15</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT033 456</text>
+  </g>
+  <g id="IT034" data-name="Metal Patch 16" transform="translate(1290 86)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Metal Patch 16</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT034 480</text>
+  </g>
+  <g id="IT035" data-name="Shade Patch 17" transform="translate(1376 86)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Shade Patch 17</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT035 504</text>
+  </g>
+  <g id="IT036" data-name="Radiant Patch 18" transform="translate(1462 86)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Radiant Patch 18</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT036 528</text>
+  </g>
+  <g id="IT037" data-name="Mind Prism 1" transform="translate(0 172)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Mind Prism 1</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT037 100</text>
+  </g>
+  <g id="IT038" data-name="Echo Prism 2" transform="translate(86 172)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Echo Prism 2</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT038 120</text>
+  </g>
+  <g id="IT039" data-name="Null Prism 3" transform="translate(172 172)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Null Prism 3</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT039 140</text>
+  </g>
+  <g id="IT040" data-name="Ember Prism 4" transform="translate(258 172)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Ember Prism 4</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT040 160</text>
+  </g>
+  <g id="IT041" data-name="Tide Prism 5" transform="translate(344 172)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Tide Prism 5</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT041 180</text>
+  </g>
+  <g id="IT042" data-name="Verdance Prism 6" transform="translate(430 172)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Verdance Prism 6</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT042 200</text>
+  </g>
+  <g id="IT043" data-name="Stone Prism 7" transform="translate(516 172)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Stone Prism 7</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT043 220</text>
+  </g>
+  <g id="IT044" data-name="Gale Prism 8" transform="translate(602 172)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Gale Prism 8</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT044 240</text>
+  </g>
+  <g id="IT045" data-name="Spark Prism 9" transform="translate(688 172)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Spark Prism 9</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT045 260</text>
+  </g>
+  <g id="IT046" data-name="Frost Prism 10" transform="translate(774 172)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Frost Prism 10</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT046 280</text>
+  </g>
+  <g id="IT047" data-name="Metal Prism 11" transform="translate(860 172)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Metal Prism 11</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT047 300</text>
+  </g>
+  <g id="IT048" data-name="Shade Prism 12" transform="translate(946 172)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Shade Prism 12</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT048 320</text>
+  </g>
+  <g id="IT049" data-name="Radiant Prism 13" transform="translate(1032 172)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Radiant Prism 13</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT049 340</text>
+  </g>
+  <g id="IT050" data-name="Mind Prism 14" transform="translate(1118 172)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Mind Prism 14</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT050 360</text>
+  </g>
+  <g id="IT051" data-name="Echo Prism 15" transform="translate(1204 172)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Echo Prism 15</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT051 380</text>
+  </g>
+  <g id="IT052" data-name="Null Prism 16" transform="translate(1290 172)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Null Prism 16</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT052 400</text>
+  </g>
+  <g id="IT053" data-name="Ember Prism 17" transform="translate(1376 172)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Ember Prism 17</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT053 420</text>
+  </g>
+  <g id="IT054" data-name="Tide Prism 18" transform="translate(1462 172)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Tide Prism 18</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT054 440</text>
+  </g>
+  <g id="IT055" data-name="Verdance Prism 19" transform="translate(0 258)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Verdance Prism 19</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT055 460</text>
+  </g>
+  <g id="IT056" data-name="Stone Prism 20" transform="translate(86 258)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Stone Prism 20</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT056 480</text>
+  </g>
+  <g id="IT057" data-name="Gale Prism 21" transform="translate(172 258)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Gale Prism 21</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT057 500</text>
+  </g>
+  <g id="IT058" data-name="Spark Prism 22" transform="translate(258 258)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Spark Prism 22</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT058 520</text>
+  </g>
+  <g id="IT059" data-name="Frost Prism 23" transform="translate(344 258)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Frost Prism 23</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT059 540</text>
+  </g>
+  <g id="IT060" data-name="Metal Prism 24" transform="translate(430 258)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Metal Prism 24</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT060 560</text>
+  </g>
+  <g id="IT061" data-name="Shade Prism 25" transform="translate(516 258)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Shade Prism 25</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT061 580</text>
+  </g>
+  <g id="IT062" data-name="Radiant Prism 26" transform="translate(602 258)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Radiant Prism 26</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT062 600</text>
+  </g>
+  <g id="IT063" data-name="Mind Prism 27" transform="translate(688 258)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Mind Prism 27</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT063 620</text>
+  </g>
+  <g id="IT064" data-name="Echo Prism 28" transform="translate(774 258)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Echo Prism 28</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT064 640</text>
+  </g>
+  <g id="IT065" data-name="Null Prism 29" transform="translate(860 258)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Null Prism 29</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT065 660</text>
+  </g>
+  <g id="IT066" data-name="Ember Prism 30" transform="translate(946 258)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Ember Prism 30</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT066 680</text>
+  </g>
+  <g id="IT067" data-name="Tide Veil 1" transform="translate(1032 258)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Tide Veil 1</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT067 300</text>
+  </g>
+  <g id="IT068" data-name="Verdance Veil 2" transform="translate(1118 258)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Verdance Veil 2</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT068 360</text>
+  </g>
+  <g id="IT069" data-name="Stone Veil 3" transform="translate(1204 258)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Stone Veil 3</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT069 420</text>
+  </g>
+  <g id="IT070" data-name="Gale Veil 4" transform="translate(1290 258)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Gale Veil 4</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT070 480</text>
+  </g>
+  <g id="IT071" data-name="Spark Veil 5" transform="translate(1376 258)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Spark Veil 5</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT071 540</text>
+  </g>
+  <g id="IT072" data-name="Frost Veil 6" transform="translate(1462 258)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Frost Veil 6</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT072 600</text>
+  </g>
+  <g id="IT073" data-name="Metal Veil 7" transform="translate(0 344)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Metal Veil 7</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT073 660</text>
+  </g>
+  <g id="IT074" data-name="Shade Veil 8" transform="translate(86 344)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Shade Veil 8</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT074 720</text>
+  </g>
+  <g id="IT075" data-name="Radiant Veil 9" transform="translate(172 344)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Radiant Veil 9</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT075 780</text>
+  </g>
+  <g id="IT076" data-name="Mind Veil 10" transform="translate(258 344)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Mind Veil 10</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT076 840</text>
+  </g>
+  <g id="IT077" data-name="Echo Veil 11" transform="translate(344 344)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Echo Veil 11</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT077 900</text>
+  </g>
+  <g id="IT078" data-name="Null Veil 12" transform="translate(430 344)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Null Veil 12</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT078 960</text>
+  </g>
+  <g id="IT079" data-name="Ember Veil 13" transform="translate(516 344)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Ember Veil 13</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT079 1020</text>
+  </g>
+  <g id="IT080" data-name="Tide Veil 14" transform="translate(602 344)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Tide Veil 14</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT080 1080</text>
+  </g>
+  <g id="IT081" data-name="Verdance Veil 15" transform="translate(688 344)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Verdance Veil 15</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT081 1140</text>
+  </g>
+  <g id="IT082" data-name="Stone Veil 16" transform="translate(774 344)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Stone Veil 16</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT082 1200</text>
+  </g>
+  <g id="IT083" data-name="Gale Veil 17" transform="translate(860 344)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Gale Veil 17</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT083 1260</text>
+  </g>
+  <g id="IT084" data-name="Spark Veil 18" transform="translate(946 344)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Spark Veil 18</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT084 1320</text>
+  </g>
+  <g id="IT085" data-name="Frost Veil 19" transform="translate(1032 344)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Frost Veil 19</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT085 1380</text>
+  </g>
+  <g id="IT086" data-name="Metal Veil 20" transform="translate(1118 344)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Metal Veil 20</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT086 1440</text>
+  </g>
+  <g id="IT087" data-name="Shade Veil 21" transform="translate(1204 344)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Shade Veil 21</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT087 1500</text>
+  </g>
+  <g id="IT088" data-name="Radiant Veil 22" transform="translate(1290 344)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Radiant Veil 22</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT088 1560</text>
+  </g>
+  <g id="IT089" data-name="Mind Veil 23" transform="translate(1376 344)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Mind Veil 23</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT089 1620</text>
+  </g>
+  <g id="IT090" data-name="Echo Veil 24" transform="translate(1462 344)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Echo Veil 24</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT090 1680</text>
+  </g>
+  <g id="IT091" data-name="Null Charm 1" transform="translate(0 430)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Null Charm 1</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT091 600</text>
+  </g>
+  <g id="IT092" data-name="Ember Charm 2" transform="translate(86 430)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Ember Charm 2</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT092 720</text>
+  </g>
+  <g id="IT093" data-name="Tide Charm 3" transform="translate(172 430)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Tide Charm 3</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT093 840</text>
+  </g>
+  <g id="IT094" data-name="Verdance Charm 4" transform="translate(258 430)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Verdance Charm 4</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT094 960</text>
+  </g>
+  <g id="IT095" data-name="Stone Charm 5" transform="translate(344 430)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Stone Charm 5</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT095 1080</text>
+  </g>
+  <g id="IT096" data-name="Gale Charm 6" transform="translate(430 430)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Gale Charm 6</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT096 1200</text>
+  </g>
+  <g id="IT097" data-name="Spark Charm 7" transform="translate(516 430)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Spark Charm 7</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT097 1320</text>
+  </g>
+  <g id="IT098" data-name="Frost Charm 8" transform="translate(602 430)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Frost Charm 8</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT098 1440</text>
+  </g>
+  <g id="IT099" data-name="Metal Charm 9" transform="translate(688 430)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Metal Charm 9</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT099 1560</text>
+  </g>
+  <g id="IT100" data-name="Shade Charm 10" transform="translate(774 430)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Shade Charm 10</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT100 1680</text>
+  </g>
+  <g id="IT101" data-name="Radiant Charm 11" transform="translate(860 430)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Radiant Charm 11</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT101 1800</text>
+  </g>
+  <g id="IT102" data-name="Mind Charm 12" transform="translate(946 430)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Mind Charm 12</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT102 1920</text>
+  </g>
+  <g id="IT103" data-name="Echo Charm 13" transform="translate(1032 430)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Echo Charm 13</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT103 2040</text>
+  </g>
+  <g id="IT104" data-name="Null Charm 14" transform="translate(1118 430)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Null Charm 14</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT104 2160</text>
+  </g>
+  <g id="IT105" data-name="Ember Charm 15" transform="translate(1204 430)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Ember Charm 15</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT105 2280</text>
+  </g>
+  <g id="IT106" data-name="Tide Charm 16" transform="translate(1290 430)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Tide Charm 16</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT106 2400</text>
+  </g>
+  <g id="IT107" data-name="Verdance Charm 17" transform="translate(1376 430)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Verdance Charm 17</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT107 2520</text>
+  </g>
+  <g id="IT108" data-name="Stone Charm 18" transform="translate(1462 430)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Stone Charm 18</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT108 2640</text>
+  </g>
+  <g id="IT109" data-name="Gale Charm 19" transform="translate(0 516)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Gale Charm 19</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT109 2760</text>
+  </g>
+  <g id="IT110" data-name="Spark Charm 20" transform="translate(86 516)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Spark Charm 20</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT110 2880</text>
+  </g>
+  <g id="IT111" data-name="Frost Charm 21" transform="translate(172 516)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Frost Charm 21</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT111 3000</text>
+  </g>
+  <g id="IT112" data-name="Metal Charm 22" transform="translate(258 516)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Metal Charm 22</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT112 3120</text>
+  </g>
+  <g id="IT113" data-name="Shade Charm 23" transform="translate(344 516)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Shade Charm 23</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT113 3240</text>
+  </g>
+  <g id="IT114" data-name="Radiant Charm 24" transform="translate(430 516)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Radiant Charm 24</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT114 3360</text>
+  </g>
+  <g id="IT115" data-name="Mind Charm 25" transform="translate(516 516)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Mind Charm 25</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT115 3480</text>
+  </g>
+  <g id="IT116" data-name="Echo Charm 26" transform="translate(602 516)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Echo Charm 26</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT116 3600</text>
+  </g>
+  <g id="IT117" data-name="Null Charm 27" transform="translate(688 516)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Null Charm 27</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT117 3720</text>
+  </g>
+  <g id="IT118" data-name="Ember Charm 28" transform="translate(774 516)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Ember Charm 28</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT118 3840</text>
+  </g>
+  <g id="IT119" data-name="Tide Charm 29" transform="translate(860 516)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Tide Charm 29</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT119 3960</text>
+  </g>
+  <g id="IT120" data-name="Verdance Charm 30" transform="translate(946 516)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Verdance Charm 30</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT120 4080</text>
+  </g>
+  <g id="IT121" data-name="Stone Meal 1" transform="translate(1032 516)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Stone Meal 1</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT121 250</text>
+  </g>
+  <g id="IT122" data-name="Gale Meal 2" transform="translate(1118 516)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Gale Meal 2</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT122 300</text>
+  </g>
+  <g id="IT123" data-name="Spark Meal 3" transform="translate(1204 516)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Spark Meal 3</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT123 350</text>
+  </g>
+  <g id="IT124" data-name="Frost Meal 4" transform="translate(1290 516)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Frost Meal 4</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT124 400</text>
+  </g>
+  <g id="IT125" data-name="Metal Meal 5" transform="translate(1376 516)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Metal Meal 5</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT125 450</text>
+  </g>
+  <g id="IT126" data-name="Shade Meal 6" transform="translate(1462 516)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Shade Meal 6</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT126 500</text>
+  </g>
+  <g id="IT127" data-name="Radiant Meal 7" transform="translate(0 602)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Radiant Meal 7</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT127 550</text>
+  </g>
+  <g id="IT128" data-name="Mind Meal 8" transform="translate(86 602)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Mind Meal 8</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT128 600</text>
+  </g>
+  <g id="IT129" data-name="Echo Meal 9" transform="translate(172 602)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Echo Meal 9</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT129 650</text>
+  </g>
+  <g id="IT130" data-name="Null Meal 10" transform="translate(258 602)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Null Meal 10</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT130 700</text>
+  </g>
+  <g id="IT131" data-name="Ember Meal 11" transform="translate(344 602)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Ember Meal 11</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT131 750</text>
+  </g>
+  <g id="IT132" data-name="Tide Meal 12" transform="translate(430 602)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Tide Meal 12</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT132 800</text>
+  </g>
+  <g id="IT133" data-name="Verdance Meal 13" transform="translate(516 602)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Verdance Meal 13</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT133 850</text>
+  </g>
+  <g id="IT134" data-name="Stone Meal 14" transform="translate(602 602)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Stone Meal 14</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT134 900</text>
+  </g>
+  <g id="IT135" data-name="Gale Meal 15" transform="translate(688 602)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Gale Meal 15</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT135 950</text>
+  </g>
+  <g id="IT136" data-name="Spark Meal 16" transform="translate(774 602)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Spark Meal 16</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT136 1000</text>
+  </g>
+  <g id="IT137" data-name="Frost Meal 17" transform="translate(860 602)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Frost Meal 17</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT137 1050</text>
+  </g>
+  <g id="IT138" data-name="Metal Meal 18" transform="translate(946 602)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Metal Meal 18</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT138 1100</text>
+  </g>
+  <g id="IT139" data-name="Shade Catalyst 1" transform="translate(1032 602)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Shade Catalyst 1</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT139 500</text>
+  </g>
+  <g id="IT140" data-name="Radiant Catalyst 2" transform="translate(1118 602)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Radiant Catalyst 2</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT140 600</text>
+  </g>
+  <g id="IT141" data-name="Mind Catalyst 3" transform="translate(1204 602)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Mind Catalyst 3</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT141 700</text>
+  </g>
+  <g id="IT142" data-name="Echo Catalyst 4" transform="translate(1290 602)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Echo Catalyst 4</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT142 800</text>
+  </g>
+  <g id="IT143" data-name="Null Catalyst 5" transform="translate(1376 602)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Null Catalyst 5</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT143 900</text>
+  </g>
+  <g id="IT144" data-name="Ember Catalyst 6" transform="translate(1462 602)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Ember Catalyst 6</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT144 1000</text>
+  </g>
+  <g id="IT145" data-name="Tide Catalyst 7" transform="translate(0 688)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Tide Catalyst 7</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT145 1100</text>
+  </g>
+  <g id="IT146" data-name="Verdance Catalyst 8" transform="translate(86 688)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Verdance Catalyst 8</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT146 1200</text>
+  </g>
+  <g id="IT147" data-name="Stone Catalyst 9" transform="translate(172 688)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Stone Catalyst 9</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT147 1300</text>
+  </g>
+  <g id="IT148" data-name="Gale Catalyst 10" transform="translate(258 688)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Gale Catalyst 10</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT148 1400</text>
+  </g>
+  <g id="IT149" data-name="Spark Catalyst 11" transform="translate(344 688)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Spark Catalyst 11</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT149 1500</text>
+  </g>
+  <g id="IT150" data-name="Frost Catalyst 12" transform="translate(430 688)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Frost Catalyst 12</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT150 1600</text>
+  </g>
+  <g id="IT151" data-name="Metal Catalyst 13" transform="translate(516 688)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Metal Catalyst 13</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT151 1700</text>
+  </g>
+  <g id="IT152" data-name="Shade Catalyst 14" transform="translate(602 688)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Shade Catalyst 14</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT152 1800</text>
+  </g>
+  <g id="IT153" data-name="Radiant Catalyst 15" transform="translate(688 688)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Radiant Catalyst 15</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT153 1900</text>
+  </g>
+  <g id="IT154" data-name="Mind Catalyst 16" transform="translate(774 688)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Mind Catalyst 16</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT154 2000</text>
+  </g>
+  <g id="IT155" data-name="Echo Catalyst 17" transform="translate(860 688)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Echo Catalyst 17</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT155 2100</text>
+  </g>
+  <g id="IT156" data-name="Null Catalyst 18" transform="translate(946 688)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Null Catalyst 18</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT156 2200</text>
+  </g>
+  <g id="IT157" data-name="Ember Catalyst 19" transform="translate(1032 688)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Ember Catalyst 19</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT157 2300</text>
+  </g>
+  <g id="IT158" data-name="Tide Catalyst 20" transform="translate(1118 688)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Tide Catalyst 20</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT158 2400</text>
+  </g>
+  <g id="IT159" data-name="Verdance Catalyst 21" transform="translate(1204 688)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Verdance Catalyst 21</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT159 2500</text>
+  </g>
+  <g id="IT160" data-name="Stone Catalyst 22" transform="translate(1290 688)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Stone Catalyst 22</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT160 2600</text>
+  </g>
+  <g id="IT161" data-name="Gale Script 1" transform="translate(1376 688)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Gale Script 1</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT161 800</text>
+  </g>
+  <g id="IT162" data-name="Spark Script 2" transform="translate(1462 688)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Spark Script 2</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT162 960</text>
+  </g>
+  <g id="IT163" data-name="Frost Script 3" transform="translate(0 774)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Frost Script 3</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT163 1120</text>
+  </g>
+  <g id="IT164" data-name="Metal Script 4" transform="translate(86 774)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Metal Script 4</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT164 1280</text>
+  </g>
+  <g id="IT165" data-name="Shade Script 5" transform="translate(172 774)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Shade Script 5</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT165 1440</text>
+  </g>
+  <g id="IT166" data-name="Radiant Script 6" transform="translate(258 774)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Radiant Script 6</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT166 1600</text>
+  </g>
+  <g id="IT167" data-name="Mind Script 7" transform="translate(344 774)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Mind Script 7</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT167 1760</text>
+  </g>
+  <g id="IT168" data-name="Echo Script 8" transform="translate(430 774)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Echo Script 8</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT168 1920</text>
+  </g>
+  <g id="IT169" data-name="Null Script 9" transform="translate(516 774)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Null Script 9</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT169 2080</text>
+  </g>
+  <g id="IT170" data-name="Ember Script 10" transform="translate(602 774)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Ember Script 10</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT170 2240</text>
+  </g>
+  <g id="IT171" data-name="Tide Script 11" transform="translate(688 774)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Tide Script 11</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT171 2400</text>
+  </g>
+  <g id="IT172" data-name="Verdance Script 12" transform="translate(774 774)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Verdance Script 12</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT172 2560</text>
+  </g>
+  <g id="IT173" data-name="Stone Script 13" transform="translate(860 774)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Stone Script 13</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT173 2720</text>
+  </g>
+  <g id="IT174" data-name="Gale Script 14" transform="translate(946 774)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Gale Script 14</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT174 2880</text>
+  </g>
+  <g id="IT175" data-name="Spark Script 15" transform="translate(1032 774)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Spark Script 15</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT175 3040</text>
+  </g>
+  <g id="IT176" data-name="Frost Script 16" transform="translate(1118 774)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Frost Script 16</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT176 3200</text>
+  </g>
+  <g id="IT177" data-name="Metal Script 17" transform="translate(1204 774)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Metal Script 17</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT177 3360</text>
+  </g>
+  <g id="IT178" data-name="Shade Script 18" transform="translate(1290 774)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Shade Script 18</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT178 3520</text>
+  </g>
+  <g id="IT179" data-name="Radiant Script 19" transform="translate(1376 774)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Radiant Script 19</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT179 3680</text>
+  </g>
+  <g id="IT180" data-name="Mind Script 20" transform="translate(1462 774)">
+    <rect x="4" y="4" width="78" height="78" rx="7" fill="#182535" stroke="#2d3d52"/>
+    <circle cx="43" cy="32" r="18" fill="#8794a8" stroke="#f6f0da" stroke-width="2"/>
+    <path d="M31 32 H55 M43 20 V44" stroke="#111820" stroke-width="5" stroke-linecap="round" opacity="0.75"/>
+    <text x="43" y="61" text-anchor="middle" font-size="7" fill="#e8edf5" font-family="Arial, sans-serif">Mind Script 20</text>
+    <text x="43" y="73" text-anchor="middle" font-size="7" fill="#9fb0c4" font-family="Arial, sans-serif">IT180 3840</text>
+  </g>
+</svg>
+

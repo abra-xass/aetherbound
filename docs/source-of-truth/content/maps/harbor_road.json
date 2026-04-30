@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "map_id": "harbor_road",
+  "name": "Harbor Road",
+  "tileset": "coastal_grass",
+  "size": {"width": 96, "height": 48},
+  "encounter_tables": [
+    {"zone":"low_grass","species":["E004","E005","E006","E010"],"level_min":2,"level_max":6},
+    {"zone":"shoreline","species":["E002","E016","E038"],"level_min":3,"level_max":7}
+  ],
+  "battle_npcs": ["NPC0001","NPC0002","NPC0003","NPC0004","NPC0005"],
+  "obstacles": [{"kind":"one_way_ledge","x":44,"y":20},{"kind":"relay_door","x":80,"y":8,"requires":"signal_tap"}]
+}
