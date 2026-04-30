@@ -87,6 +87,36 @@ object SaveGameIO {
             ?.sorted() ?: emptyList()
     }
 
+    // ── Auto-save slot — for post-match commits ──────────────────────
+    //
+    // Multiplayer matches MUST persist immediately on end so the W/L
+    // counter, pot delta, and bestiary updates can't be reverted by a
+    // force-stop. The auto-save is a separate file from the 5 manual
+    // slots so it never overwrites user-curated saves.
+
+    private const val AUTO_SAVE_FILE = "save_auto.json"
+
+    fun saveAuto(ctx: Context, save: SaveGame): Boolean = runCatching {
+        val dir = java.io.File(ctx.filesDir, "aetherbound").apply { mkdirs() }
+        // Use atomic write: tmp file then rename, so a crash mid-write
+        // never produces a corrupt file.
+        val tmp = java.io.File(dir, "$AUTO_SAVE_FILE.tmp")
+        val final = java.io.File(dir, AUTO_SAVE_FILE)
+        tmp.writeText(toJson(save).toString(), Charsets.UTF_8)
+        tmp.renameTo(final)
+    }.getOrDefault(false)
+
+    fun loadAuto(ctx: Context): SaveGame? {
+        val file = java.io.File(java.io.File(ctx.filesDir, "aetherbound"), AUTO_SAVE_FILE)
+        if (!file.exists()) return null
+        return runCatching { fromJson(JSONObject(file.readText(Charsets.UTF_8))) }.getOrNull()
+    }
+
+    fun autoSlotTimestamp(ctx: Context): Long {
+        val file = java.io.File(java.io.File(ctx.filesDir, "aetherbound"), AUTO_SAVE_FILE)
+        return if (file.exists()) file.lastModified() else 0L
+    }
+
     // ───────────────────────────────────────────────────────────────
     // Serialisation — keep Tuxemon-derived heavy data out of the file.
     // ───────────────────────────────────────────────────────────────

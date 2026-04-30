@@ -190,6 +190,36 @@ private fun GamePreviewRoot(
             for (a in mpPeerActionsChannel) emit(a)
         }
     }
+
+    // Cross-app relay: Thot broadcasts decoded battle.* events here; we
+    // funnel battle.move into the per-turn channel that ArenaScene reads.
+    androidx.compose.runtime.LaunchedEffect(scene) {
+        if (scene != Scene.MultiplayerArena && scene != Scene.MultiplayerLobby) return@LaunchedEffect
+        com.aetherbound.game.core.data.BattleRelayChannel.events.collect { ev ->
+            when (ev.type) {
+                com.aetherbound.game.core.data.MatrixWireFormat.EventType.BATTLE_MOVE -> {
+                    val moveIdx = ev.body.optInt("moveIdx", 0)
+                    mpPeerActionsChannel.trySend(moveIdx)
+                }
+                com.aetherbound.game.core.data.MatrixWireFormat.EventType.BATTLE_INVITE_REPLY -> {
+                    if (ev.body.optBoolean("accepted", false)) mpPeerReady = true
+                }
+                com.aetherbound.game.core.data.MatrixWireFormat.EventType.BATTLE_END -> {
+                    saveSlotMessage = "Opponent ended the match: ${ev.body.optString("winner")}"
+                }
+                else -> { /* trade / capability / spectate ignored in arena */ }
+            }
+        }
+    }
+
+    // If we were killed mid-match, surface a banner offering to roll back
+    // the player to their pre-match party state. The match itself can't
+    // resume cleanly (peer's state is gone) so we just clear gracefully.
+    var pendingResume by remember { mutableStateOf<com.aetherbound.game.core.data.ActiveMatchPersist.Snapshot?>(null) }
+    androidx.compose.runtime.LaunchedEffect(Unit) {
+        pendingResume = com.aetherbound.game.core.data.ActiveMatchPersist.load(ctx)
+    }
+
     var pendingStoryBeat by remember { mutableStateOf<com.aetherbound.game.core.data.StoryBeats.Beat?>(null) }
     fun fireBeat(beat: com.aetherbound.game.core.data.StoryBeats.Beat) {
         if (!progress.hasFlag(beat.flag)) pendingStoryBeat = beat
@@ -642,8 +672,22 @@ private fun GamePreviewRoot(
                             mpMode = m
                             mpLevelCap = cap
                             mpIAmReady = true
-                            // Once both ready, transition to arena.
-                            // For MVP single-device demo we go straight in.
+                            // Persist the active-match snapshot so a kill mid-match
+                            // can be detected on next launch and the player at least
+                            // gets their pre-match party restored.
+                            mpSnapshot?.let { snap ->
+                                com.aetherbound.game.core.data.ActiveMatchPersist.save(
+                                    ctx,
+                                    com.aetherbound.game.core.data.ActiveMatchPersist.Snapshot(
+                                        roomId = mpRoomId,
+                                        peerMatrixId = mpPeerMatrixId,
+                                        rngSeed = mpRngSeed,
+                                        mode = m.name,
+                                        turn = 0,
+                                        matchSnapshot = snap,
+                                    ),
+                                )
+                            }
                             scene = Scene.MultiplayerArena
                         },
                         onDecline = {
@@ -729,9 +773,45 @@ private fun GamePreviewRoot(
                                 mpSnapshot = null
                                 mpIAmReady = false
                                 mpPeerReady = false
+                                // Atomic auto-save: persist W/L + pot delta IMMEDIATELY
+                                // so a crash/force-stop after the match can't revert them.
+                                // Cleans active-match-persist file too.
+                                com.aetherbound.game.core.data.SaveGameIO.saveAuto(
+                                    ctx,
+                                    com.aetherbound.game.core.data.SaveGame(
+                                        playerName = progress.playerName,
+                                        currentMap = currentMapPath,
+                                        playerTileX = spawnTileX,
+                                        playerTileY = spawnTileY,
+                                        party = party,
+                                        pcStorage = pcStorage,
+                                        inventory = inventory,
+                                    ),
+                                )
+                                com.aetherbound.game.core.data.ActiveMatchPersist.clear(ctx)
                                 scene = Scene.TuxemonWorld
                             },
                             onConcede = {
+                                // Concede counts as a loss for ranked matches —
+                                // record before restore so stats persist.
+                                if (mpMode == com.aetherbound.game.core.data.MultiplayerRewards.Mode.RANKED) {
+                                    val pot = com.aetherbound.game.core.data.MultiplayerRewards.computePotAnte(inventory.money)
+                                    val (newBal, _) = com.aetherbound.game.core.data.MultiplayerRewards
+                                        .applyLoss(inventory.money, pot)
+                                    inventory = inventory.copy(money = newBal)
+                                    progress = progress.copy(
+                                        multiplayer = progress.multiplayer.recordMatch(
+                                            com.aetherbound.game.core.data.MatchRecord(
+                                                opponentDisplayName = mpPeerMatrixId.substringBefore(":").removePrefix("@"),
+                                                opponentMatrixId = mpPeerMatrixId,
+                                                won = false,
+                                                finalTurn = 0,
+                                                playerSweep = false,
+                                            ),
+                                            potDelta = -pot,
+                                        ),
+                                    )
+                                }
                                 party = snap.partyDeepCopy
                                 currentMapPath = snap.worldMapPath
                                 spawnTileX = snap.worldTileX
@@ -739,6 +819,21 @@ private fun GamePreviewRoot(
                                 mpSnapshot = null
                                 mpIAmReady = false
                                 saveSlotMessage = "Conceded the match."
+                                // Auto-save the loss + restored party so concede
+                                // can't be undone by force-stop.
+                                com.aetherbound.game.core.data.SaveGameIO.saveAuto(
+                                    ctx,
+                                    com.aetherbound.game.core.data.SaveGame(
+                                        playerName = progress.playerName,
+                                        currentMap = currentMapPath,
+                                        playerTileX = spawnTileX,
+                                        playerTileY = spawnTileY,
+                                        party = party,
+                                        pcStorage = pcStorage,
+                                        inventory = inventory,
+                                    ),
+                                )
+                                com.aetherbound.game.core.data.ActiveMatchPersist.clear(ctx)
                                 scene = Scene.TuxemonWorld
                             },
                         )
@@ -837,6 +932,25 @@ private fun GamePreviewRoot(
                 onDismiss = {
                     progress = progress.setFlag("mp_battery_prompt_seen")
                     showBatteryPrompt = false
+                },
+            )
+        }
+
+        // Interrupted-match recovery prompt — restores party to pre-match state.
+        pendingResume?.let { snap ->
+            com.aetherbound.game.render.ui.NpcDialogOverlay(
+                speakerName = "Aether-Vision",
+                lines = listOf(
+                    "An Aether bond was interrupted while you were away.",
+                    "Your party is restored to the state before the match. The opponent's outcome stands.",
+                ),
+                onClose = {
+                    party = snap.matchSnapshot.partyDeepCopy
+                    currentMapPath = snap.matchSnapshot.worldMapPath
+                    spawnTileX = snap.matchSnapshot.worldTileX
+                    spawnTileY = snap.matchSnapshot.worldTileY
+                    com.aetherbound.game.core.data.ActiveMatchPersist.clear(ctx)
+                    pendingResume = null
                 },
             )
         }

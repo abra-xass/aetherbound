@@ -35,6 +35,19 @@
             </intent-filter>
         </activity>
 
+        <!-- BroadcastReceiver for cross-app battle-event relay from Thot.
+             Thot decodes io.aether.battle.* events from Matrix and forwards
+             them here via package-targeted broadcasts. exported=true is
+             required for cross-app delivery; payload is non-privileged JSON
+             validated by the deterministic resolver downstream. -->
+        <receiver
+            android:name="com.aetherbound.game.core.data.BattleRelayReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="io.aether.action.BATTLE_RELAY" />
+            </intent-filter>
+        </receiver>
+
         <!-- FileProvider so we can hand a downloaded APK to Android's package installer
              without exposing internal file paths. Required for REQUEST_INSTALL_PACKAGES. -->
         <provider
