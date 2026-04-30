@@ -35,6 +35,7 @@ import com.aetherbound.game.core.BattleState
 import com.aetherbound.game.core.EchoformInstance
 import com.aetherbound.game.core.Side
 import com.aetherbound.game.core.data.MultiplayerRewards
+import com.aetherbound.game.core.data.BattleTimeouts
 import com.aetherbound.game.core.data.MultiplayerSnapshot
 import com.aetherbound.game.render.theme.AetherColors
 import com.aetherbound.game.render.ui.MultiplayerStatusIndicator
@@ -42,6 +43,7 @@ import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.withTimeoutOrNull
 
 /**
  * Live multiplayer-battle scene driven by:
@@ -99,7 +101,27 @@ fun MultiplayerArenaScene(
             onLocalAction(mine)
             statusLine = "Waiting for $peerDisplayName…"
             phase = Phase.Waiting
-            val peer = peerActions.first()
+            // Bounded wait: if the peer's BATTLE_MOVE doesn't arrive within
+            // the Tor-aware moveTimeout (default 45s — schluckt Tor-circuit-
+            // flaps), the local client treats the peer as forfeit. The post-
+            // match restore then rolls our party back to pre-match state.
+            val peer = withTimeoutOrNull(BattleTimeouts.Tor.moveTimeout) {
+                peerActions.first()
+            }
+            if (peer == null) {
+                statusLine = "$peerDisplayName timed out. Match forfeit."
+                onMatchEnd(
+                    MatchEndResult(
+                        won = true,
+                        isDraw = false,
+                        potDelta = 0,    // forfeit doesn't pay pot — anti-grief
+                        xpDelta = 0,
+                        finalTurn = state.turn,
+                        playerSweep = false,
+                    )
+                )
+                return@LaunchedEffect
+            }
             val resolved = BattleResolver.resolveTurn(
                 state = state,
                 playerAction = BattleAction.UseTechnique(mine),

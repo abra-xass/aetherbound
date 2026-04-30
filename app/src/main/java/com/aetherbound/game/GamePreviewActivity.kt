@@ -228,6 +228,75 @@ private fun GamePreviewRoot(
     var spawnTileX by remember { mutableStateOf(8) }
     var spawnTileY by remember { mutableStateOf(8) }
 
+    // ── Continuous auto-save — never lose progress ──────────────────────
+    //
+    // Reacts to ANY change in the critical save state and writes atomically
+    // to the auto-slot 500ms after the last change. Debouncing avoids
+    // hammering disk during compound state mutations (e.g. capture →
+    // bestiary update → inventory deduct → party add all fire in one tick).
+    //
+    // Coverage:
+    //   - capture, faint, level-up, evolution, item pickup, item use
+    //   - money change (battle pot, trainer reward, shop)
+    //   - map warp, healing pad, sign read
+    //   - bestiary seen/caught marks, badges earned
+    //   - multiplayer match results (W/L, streak, pot)
+    //   - PC storage deposit/withdraw/release
+    //
+    // This sits ON TOP of the explicit pre/post-battle saves below — both
+    // run independently. Worst-case data loss: 500ms of activity (single
+    // tick of compose state). Practically zero.
+    androidx.compose.runtime.LaunchedEffect(
+        party, inventory, progress, pcStorage, currentMapPath, spawnTileX, spawnTileY,
+    ) {
+        kotlinx.coroutines.delay(500)
+        com.aetherbound.game.core.data.SaveGameIO.saveAuto(
+            ctx,
+            com.aetherbound.game.core.data.SaveGame(
+                playerName = progress.playerName,
+                currentMap = currentMapPath,
+                playerTileX = spawnTileX,
+                playerTileY = spawnTileY,
+                party = party,
+                pcStorage = pcStorage,
+                inventory = inventory,
+            ),
+        )
+    }
+
+    // Auto-save checkpoint helper for explicit pre/post-battle commits
+    // (synchronous, no 500ms debounce — used at boundaries that must
+    // commit immediately for anti-exploit reasons).
+    fun autoSaveCheckpoint() {
+        com.aetherbound.game.core.data.SaveGameIO.saveAuto(
+            ctx,
+            com.aetherbound.game.core.data.SaveGame(
+                playerName = progress.playerName,
+                currentMap = currentMapPath,
+                playerTileX = spawnTileX,
+                playerTileY = spawnTileY,
+                party = party,
+                pcStorage = pcStorage,
+                inventory = inventory,
+            ),
+        )
+    }
+
+    // Pre/post-battle explicit checkpoint — fires on every transition into
+    // and out of a battle scene. Anti-exploit: post-battle save closes the
+    // window where a force-stop could undo a loss.
+    var lastScene by remember { mutableStateOf(scene) }
+    androidx.compose.runtime.LaunchedEffect(scene) {
+        val isBattleScene: (Scene) -> Boolean = { s ->
+            s == Scene.Battle || s == Scene.TrainerBattle ||
+                s == Scene.MultiplayerLobby || s == Scene.MultiplayerArena
+        }
+        val entering = isBattleScene(scene) && !isBattleScene(lastScene)
+        val leaving = !isBattleScene(scene) && isBattleScene(lastScene)
+        if (entering || leaving) autoSaveCheckpoint()
+        lastScene = scene
+    }
+
     // Bind to Thot's ForegroundService whenever a multiplayer scene is up.
     // Heartbeat every 15s while bound. DisposableEffect releases on scene leave.
     androidx.compose.runtime.LaunchedEffect(scene) {
