@@ -115,6 +115,14 @@ fun TuxemonWorldScene(
 
     var statusLine by remember { mutableStateOf("") }
     var activeDialog by remember { mutableStateOf<DialogPayload?>(null) }
+    /**
+     * When non-null, [MemorialOverlay] takes over the screen. Set when
+     * the player walks onto a tile registered in [com.aetherbound.game.render.map.MemorialRegistry].
+     * Tap-to-dismiss returns control to the world scene.
+     */
+    var activeMemorial by remember {
+        mutableStateOf<com.aetherbound.game.render.map.WorldEvent.Memorial?>(null)
+    }
 
     // Async map load
     LaunchedEffect(tmxAssetPath) {
@@ -135,6 +143,18 @@ fun TuxemonWorldScene(
             val stepCompleted = movement.tick(dtMs, collision)
             if (stepCompleted) {
                 val r = renderer
+
+                // Memorial-tile check runs BEFORE the regular eventAt
+                // dispatch so we can park on a tile that also has e.g. a
+                // generic encounter zone underneath without that firing.
+                com.aetherbound.game.render.map.MemorialRegistry
+                    .findAt(tmxAssetPath, movement.tileX, movement.tileY)
+                    ?.let { memorial ->
+                        activeMemorial = memorial
+                        // Don't fall through to encounter-roll on a memorial tile.
+                        delay(16); continue
+                    }
+
                 val event = if (r != null) ObjectDispatcher.eventAt(r.map, movement.tileX, movement.tileY) else null
                 when (event) {
                     is WorldEvent.HealZone -> {
@@ -301,6 +321,14 @@ fun TuxemonWorldScene(
                 modifier = Modifier.fillMaxSize(),
             )
         }
+
+        // Memorial overlay — full-screen tribute, takes precedence over
+        // dialog when both are set. Tap anywhere to dismiss.
+        MemorialOverlay(
+            memorial = activeMemorial,
+            onDismiss = { activeMemorial = null },
+            modifier = Modifier.fillMaxSize(),
+        )
 
         // DPad
         DPadOverlay(

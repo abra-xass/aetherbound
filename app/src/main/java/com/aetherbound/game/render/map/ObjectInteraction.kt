@@ -32,6 +32,20 @@ sealed class WorldEvent {
     /** Item pickup — disappears once collected (track in save flags). */
     data class ItemDrop(val itemSlug: String, val flagId: String) : WorldEvent()
 
+    /**
+     * Memorial — a tappable in-world tribute to someone. Player walks
+     * onto the tile and sees an image overlay with caption + quote.
+     * Not declared in any TMX file; resolved by [MemorialRegistry] from
+     * (mapPath, tileX, tileY) before the dispatcher fires.
+     */
+    data class Memorial(
+        val id: String,
+        val imageAsset: String,
+        val caption: String,
+        val quote: String,
+        val attribution: String,
+    ) : WorldEvent()
+
     /** Generic — unrecognised type, just pass type+props through. */
     data class Generic(val type: String, val properties: Map<String, String>) : WorldEvent()
 }
