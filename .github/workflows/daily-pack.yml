@@ -1,0 +1,54 @@
+name: Daily Pack — meteo Zurich
+
+# Hourly cron — pulls Zurich weather + commits content/daily-pack.json
+# back into the repo. Aetherbound's DailyPackFetcher reads this static
+# file once per app launch (or once per hour) and feeds the values
+# into AmbientTime.forcedWeather + DialogueContext daily slots.
+#
+# Runs even on weekends; ~3 minutes per run; 24 runs/day = ~72 min/day
+# = ~36 hours/month (well within GitHub Actions free tier of unlimited
+# minutes for public repos).
+
+on:
+  schedule:
+    # Hourly at minute 5 to avoid the top-of-hour rush on GitHub runners.
+    - cron: '5 * * * *'
+  # Manual trigger button on the Actions tab — useful when iterating
+  # on the python script or recovering from a paused-cron state.
+  workflow_dispatch:
+
+permissions:
+  # Needs write so the workflow can commit + push the regenerated JSON.
+  contents: write
+
+concurrency:
+  # Coalesce overlapping runs (e.g. two cron triggers near the same minute).
+  group: daily-pack
+  cancel-in-progress: false
+
+jobs:
+  build-and-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build daily pack
+        run: python scripts/daily_pack_build.py
+
+      - name: Commit daily-pack.json (only if changed)
+        run: |
+          if ! git diff --quiet content/daily-pack.json 2>/dev/null; then
+            git config user.name  "Aetherbound Daily-Pack Bot"
+            git config user.email "bot@github.com"
+            git add content/daily-pack.json
+            git commit -m "Daily pack — $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          else
+            echo "No change in daily-pack.json — skipping commit."
+          fi
