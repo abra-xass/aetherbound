@@ -78,8 +78,15 @@ private enum class Scene {
     Title, World, TuxemonWorld, Battle, TrainerBattle, Sandbox,
     Menu, Party, Bag, SaveMenu, LoadMenu,
     Detail, Bestiary, Settings, StatusCard, ItemTarget,
-    AssetPacks, Updates,
+    AssetPacks, Updates, MoveLearning,
 }
+
+/** Pending move-learning event from a level-up. Queue may hold several
+ *  if multiple level-ups happened (e.g. exp share boost). */
+private data class MoveLearnEvent(
+    val partyIndex: Int,
+    val newMove: com.aetherbound.game.core.Technique,
+)
 
 @Composable
 private fun GamePreviewRoot(
@@ -112,6 +119,7 @@ private fun GamePreviewRoot(
             )
         )
     }
+    val ctx = LocalContext.current
     var saveSlotMessage by remember { mutableStateOf("") }
     var progress by remember {
         mutableStateOf(
@@ -125,6 +133,7 @@ private fun GamePreviewRoot(
     var detailIndex by remember { mutableStateOf(0) }
     var bagSelectedItem by remember { mutableStateOf<com.aetherbound.game.core.data.TuxemonItem?>(null) }
     var cameFromBattle by remember { mutableStateOf(false) }
+    var moveLearnQueue by remember { mutableStateOf<List<MoveLearnEvent>>(emptyList()) }
 
     // Hoisted audio engine — single instance per activity, auto-released on dispose.
     val audio = com.aetherbound.game.render.audio.rememberAudioEngine()
@@ -181,7 +190,8 @@ private fun GamePreviewRoot(
             }
             Scene.World -> scene = Scene.Title
             Scene.Sandbox -> scene = Scene.Title
-            Scene.Battle, Scene.TrainerBattle -> { /* battles ignore back; let the user EXIT manually */ }
+            Scene.Battle, Scene.TrainerBattle,
+            Scene.MoveLearning -> { /* modal — user must pick an option, no back */ }
             Scene.Title -> onExit()
         }
     }
@@ -255,13 +265,20 @@ private fun GamePreviewRoot(
                     BattleScene(
                         onExit = {
                             tuxemonWildSlug = null
-                            scene = if (sceneBeforeMenu == Scene.TuxemonWorld) Scene.TuxemonWorld else Scene.World
+                            // After battle ends, surface any queued move-learn prompts.
+                            scene = when {
+                                moveLearnQueue.isNotEmpty() -> Scene.MoveLearning
+                                sceneBeforeMenu == Scene.TuxemonWorld -> Scene.TuxemonWorld
+                                else -> Scene.World
+                            }
                         },
                         opponentSpeciesId = if (tuxSlug == null) encounterSpeciesId else null,
                         tuxemonOpponentSlug = tuxSlug,
                         tuxemonOpponentLevel = tuxemonWildLevel,
                         tuxemonPlayerSlug = if (tuxSlug != null) "agnidon" else null,
                         tuxemonPlayerLevel = if (tuxSlug != null) 8 else 18,
+                        // Live-sync to current active party member: switch / heal flow back here.
+                        playerOverride = party.active,
                         onSpeciesSeen = { slug -> progress = progress.see(slug) },
                         onSpeciesCaptured = { slug, instance ->
                             progress = progress.capture(slug)
@@ -281,21 +298,48 @@ private fun GamePreviewRoot(
                             scene = Scene.Bag
                         },
                         onVictory = { loser, xp ->
-                            // XP applied to active party member; level-up triggers stat refresh.
+                            // XP applied to active party member; level-up triggers stat refresh
+                            // and may unlock new moves via the species moveset table.
                             val active = party.active
+                            val activeIdx = party.activeIndex
                             if (active != null) {
                                 val curve = com.aetherbound.game.core.data.ExperienceCurve.MEDIUM_FAST
                                 val baseLevelXp = curve.xpForLevel(active.level)
+                                // Build the move table for level-range detection.
+                                val movesetByLevel: List<Pair<Int, com.aetherbound.game.core.Technique>> =
+                                    com.aetherbound.game.core.data.TuxemonEchoformDex
+                                        .levelMovesetMap(ctx, active.species.id)
                                 val result = com.aetherbound.game.core.data.ExperienceEngine.addXp(
                                     instance = active,
                                     currentTotalXp = baseLevelXp,
                                     xpDelta = xp,
                                     curve = curve,
+                                    movesetByLevel = movesetByLevel,
                                 )
                                 if (result.didLevelUp) {
                                     val newLevel = result.newLevel
-                                    party = party.replace(party.activeIndex, active.copy(level = newLevel))
+                                    val updated = active.copy(level = newLevel)
+                                    party = party.replace(activeIdx, updated)
                                     saveSlotMessage = "${active.species.name} grew to Lv.$newLevel!"
+                                    // Distribute newly-learned moves: auto-append if a
+                                    // slot is free, otherwise queue the prompt to let
+                                    // the player choose which old move to forget.
+                                    if (result.newlyLearned.isNotEmpty()) {
+                                        var current = updated
+                                        val toPrompt = mutableListOf<MoveLearnEvent>()
+                                        for (newMove in result.newlyLearned) {
+                                            if (current.techniques.size < 4) {
+                                                current = current.copy(techniques = current.techniques + newMove)
+                                                saveSlotMessage = "${current.species.name} learned ${newMove.name}!"
+                                            } else {
+                                                toPrompt += MoveLearnEvent(activeIdx, newMove)
+                                            }
+                                        }
+                                        if (current !== updated) {
+                                            party = party.replace(activeIdx, current)
+                                        }
+                                        if (toPrompt.isNotEmpty()) moveLearnQueue = moveLearnQueue + toPrompt
+                                    }
                                 }
                             }
                         },
@@ -405,6 +449,41 @@ private fun GamePreviewRoot(
                 Scene.Updates -> com.aetherbound.game.render.ui.UpdatePromptScreen(
                     onBack = { scene = Scene.Menu },
                 )
+                Scene.MoveLearning -> {
+                    val head = moveLearnQueue.firstOrNull()
+                    val target = head?.let { party.members.getOrNull(it.partyIndex) }
+                    if (head == null || target == null) {
+                        // Queue drained or party shifted — bail back to world.
+                        scene = if (sceneBeforeMenu == Scene.TuxemonWorld) Scene.TuxemonWorld else Scene.World
+                    } else {
+                        com.aetherbound.game.render.ui.MoveLearningPrompt(
+                            instance = target,
+                            newMove = head.newMove,
+                            onForget = { slotIdx ->
+                                // Replace move at [slotIdx] with the new one.
+                                val newTechs = target.techniques.toMutableList()
+                                if (slotIdx in newTechs.indices) {
+                                    newTechs[slotIdx] = head.newMove
+                                } else if (newTechs.size < 4) {
+                                    newTechs += head.newMove
+                                }
+                                party = party.replace(head.partyIndex, target.copy(techniques = newTechs))
+                                saveSlotMessage = "${target.species.name} learned ${head.newMove.name}!"
+                                moveLearnQueue = moveLearnQueue.drop(1)
+                                if (moveLearnQueue.isEmpty()) {
+                                    scene = if (sceneBeforeMenu == Scene.TuxemonWorld) Scene.TuxemonWorld else Scene.World
+                                }
+                            },
+                            onSkip = {
+                                saveSlotMessage = "${target.species.name} did not learn ${head.newMove.name}."
+                                moveLearnQueue = moveLearnQueue.drop(1)
+                                if (moveLearnQueue.isEmpty()) {
+                                    scene = if (sceneBeforeMenu == Scene.TuxemonWorld) Scene.TuxemonWorld else Scene.World
+                                }
+                            },
+                        )
+                    }
+                }
                 Scene.SaveMenu -> com.aetherbound.game.render.ui.SaveLoadMenu(
                     mode = com.aetherbound.game.render.ui.SaveLoadMode.SAVE,
                     currentSave = com.aetherbound.game.core.data.SaveGame(

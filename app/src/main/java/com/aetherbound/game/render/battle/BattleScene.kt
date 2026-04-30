@@ -105,6 +105,18 @@ fun BattleScene(
     onSwitchRequest: () -> Unit = {},
     /** Fires when player taps "Bag" — caller opens BagScreen as modal. */
     onBagRequest: () -> Unit = {},
+    /**
+     * Source-of-truth override for the player Echoform. When non-null,
+     * the scene replaces its internal state.player whenever this value
+     * changes — this is how Switch and Bag-heal feed back into the
+     * running battle. Behaviour:
+     *
+     *   - Same speciesId + same nickname → treat as HP/PP/status update
+     *     (potion-heal mid-battle).
+     *   - Different speciesId → treat as Switch: clear playerStatuses,
+     *     reset attack-animation, return turn to Choosing phase.
+     */
+    playerOverride: com.aetherbound.game.core.EchoformInstance? = null,
 ) {
     val preset = LocalQualityPreset.current
     val ctx = androidx.compose.ui.platform.LocalContext.current
@@ -132,6 +144,25 @@ fun BattleScene(
     // Bestiary "seen" trigger — fires once per battle start.
     androidx.compose.runtime.LaunchedEffect(state.opponent.species.id) {
         onSpeciesSeen(state.opponent.species.id)
+    }
+
+    // Player-side state override: when the activity changes the active party
+    // member or heals via Bag, propagate it into the running battle state.
+    androidx.compose.runtime.LaunchedEffect(playerOverride) {
+        val incoming = playerOverride ?: return@LaunchedEffect
+        val current = state.player
+        val isSameMon = incoming.species.id == current.species.id
+        state = if (isSameMon) {
+            // Heal / item / minor mutation — keep statuses + log + turn.
+            state.copy(player = incoming)
+        } else {
+            // Real switch — Pokémon convention: switching clears status conditions
+            // on the *outgoing* mon's slot. Statuses on the opponent stay.
+            state.copy(
+                player = incoming,
+                playerStatuses = emptyList(),
+            )
+        }
     }
 
     // Battle SFX observer — every time the event log grows we scan the

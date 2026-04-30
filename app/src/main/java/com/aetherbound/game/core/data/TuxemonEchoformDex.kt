@@ -62,6 +62,21 @@ object TuxemonEchoformDex {
     fun activeMovesetAt(ctx: Context, slug: String, level: Int, slots: Int = 4): List<Technique> =
         movesetAt(ctx, slug, level).takeLast(slots)
 
+    /**
+     * Full level-keyed moveset map for [slug]. Used by [ExperienceEngine.addXp]
+     * to detect which moves unlock between an old level and a new level after
+     * an XP gain. Each pair is `(levelLearned, technique)`.
+     */
+    fun levelMovesetMap(ctx: Context, slug: String): List<Pair<Int, Technique>> {
+        val mon = TuxemonDex.bySlug(ctx, slug) ?: return emptyList()
+        val techDex = TuxemonTechniqueDex.load(ctx)
+        return mon.moveset
+            .sortedBy { it.levelLearned }
+            .mapNotNull { entry ->
+                techDex[entry.technique]?.let { entry.levelLearned to TuxemonAdapter.techniqueFromTuxemon(it) }
+            }
+    }
+
     /** Encounter pool filtered by biome. Returns at most [count] species. */
     fun encounterPool(
         ctx: Context,
