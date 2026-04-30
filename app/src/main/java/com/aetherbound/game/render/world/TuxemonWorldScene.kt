@@ -115,6 +115,17 @@ fun TuxemonWorldScene(
      * Fly menu unlocks new destinations.
      */
     onTownEntered: (townMapPath: String) -> Unit = {},
+    /**
+     * Set of map asset paths the player has visited at least once.
+     * Drives Fly-menu destination list. Empty = Fly chip is hidden.
+     */
+    visitedTowns: Set<String> = emptySet(),
+    /**
+     * Fires when the player picks a town from the FlyMenu. Activity
+     * warps the player to the town's arrival tile coordinates.
+     */
+    onFlyTo: (townMapPath: String, arrivalTileX: Int, arrivalTileY: Int) -> Unit =
+        { _, _, _ -> },
     modifier: Modifier = Modifier,
 ) {
     val ctx = LocalContext.current
@@ -160,6 +171,8 @@ fun TuxemonWorldScene(
     var surfActive by remember(tmxAssetPath) { mutableStateOf(false) }
     /** Bike mode (on/off). Visible only if [hasBicycle]. Halves step duration. */
     var bikeActive by remember(tmxAssetPath) { mutableStateOf(false) }
+    /** When true, [FlyMenu] takes over the screen for fast-travel pick. */
+    var flyMenuOpen by remember { mutableStateOf(false) }
 
     // Sync MovementController.stepMs with bikeActive — bike halves walk
     // duration so the player covers ground twice as fast when riding.
@@ -384,14 +397,26 @@ fun TuxemonWorldScene(
             hasBicycle = hasBicycle,
             bikeActive = bikeActive,
             onBikeToggle = { bikeActive = !bikeActive },
-            // Fly is wired from the activity (it switches the map). Disabled
-            // here for now; Session 5 wires it up via onFlyRequested.
-            canFly = false,
-            onFlyTap = { /* TODO: open FlyMenu */ },
+            // Fly is unlocked once the player has visited at least one town.
+            canFly = visitedTowns.isNotEmpty(),
+            onFlyTap = { flyMenuOpen = true },
             modifier = Modifier
                 .align(Alignment.BottomEnd)
                 .padding(bottom = 80.dp, end = 12.dp),
         )
+
+        // Fly-menu overlay — appears when the player taps the Fly chip.
+        if (flyMenuOpen) {
+            com.aetherbound.game.render.ui.FlyMenu(
+                visitedTowns = visitedTowns,
+                onPick = { town ->
+                    flyMenuOpen = false
+                    onFlyTo(town.mapAssetPath, town.arrivalTileX, town.arrivalTileY)
+                },
+                onCancel = { flyMenuOpen = false },
+                modifier = Modifier.fillMaxSize(),
+            )
+        }
 
         if (statusLine.isNotEmpty()) {
             Box(

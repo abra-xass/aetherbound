@@ -1,0 +1,6002 @@
+[
+  {
+    "ordinal": 0,
+    "name": "Peleith",
+    "aspect": "FIRE",
+    "folder": "Peleith"
+  },
+  {
+    "ordinal": 1,
+    "name": "Cyrthar",
+    "aspect": "FIRE",
+    "folder": "Cyrthar"
+  },
+  {
+    "ordinal": 2,
+    "name": "Helaumbror",
+    "aspect": "FIRE",
+    "folder": "Helaumbror"
+  },
+  {
+    "ordinal": 3,
+    "name": "Volclc",
+    "aspect": "FIRE",
+    "folder": "Volclc"
+  },
+  {
+    "ordinal": 4,
+    "name": "Torcheniotheld",
+    "aspect": "FIRE",
+    "folder": "Torcheniotheld"
+  },
+  {
+    "ordinal": 5,
+    "name": "Vyrgonoth",
+    "aspect": "FIRE",
+    "folder": "Vyrgonoth"
+  },
+  {
+    "ordinal": 6,
+    "name": "Draaamar",
+    "aspect": "FIRE",
+    "folder": "Draaamar"
+  },
+  {
+    "ordinal": 7,
+    "name": "Cremor",
+    "aspect": "FIRE",
+    "folder": "Cremor"
+  },
+  {
+    "ordinal": 8,
+    "name": "Carminith",
+    "aspect": "FIRE",
+    "folder": "Carminith"
+  },
+  {
+    "ordinal": 9,
+    "name": "Sekthar",
+    "aspect": "FIRE",
+    "folder": "Sekthar"
+  },
+  {
+    "ordinal": 10,
+    "name": "Blazessor",
+    "aspect": "FIRE",
+    "folder": "Blazessor"
+  },
+  {
+    "ordinal": 11,
+    "name": "Ashsh",
+    "aspect": "FIRE",
+    "folder": "Ashsh"
+  },
+  {
+    "ordinal": 12,
+    "name": "Torchenaanjar",
+    "aspect": "FIRE",
+    "folder": "Torchenaanjar"
+  },
+  {
+    "ordinal": 13,
+    "name": "Vyrgonarl",
+    "aspect": "FIRE",
+    "folder": "Vyrgonarl"
+  },
+  {
+    "ordinal": 14,
+    "name": "Draiek",
+    "aspect": "FIRE",
+    "folder": "Draiek"
+  },
+  {
+    "ordinal": 15,
+    "name": "Cremloth",
+    "aspect": "FIRE",
+    "folder": "Cremloth"
+  },
+  {
+    "ordinal": 16,
+    "name": "Kaguwyr",
+    "aspect": "FIRE",
+    "folder": "Kaguwyr"
+  },
+  {
+    "ordinal": 17,
+    "name": "Sekrelt",
+    "aspect": "FIRE",
+    "folder": "Sekrelt"
+  },
+  {
+    "ordinal": 18,
+    "name": "Blazanor",
+    "aspect": "FIRE",
+    "folder": "Blazanor"
+  },
+  {
+    "ordinal": 19,
+    "name": "Pelericor",
+    "aspect": "FIRE",
+    "folder": "Pelericor"
+  },
+  {
+    "ordinal": 20,
+    "name": "Krathihild",
+    "aspect": "FIRE",
+    "folder": "Krathihild"
+  },
+  {
+    "ordinal": 21,
+    "name": "Moxarek",
+    "aspect": "FIRE",
+    "folder": "Moxarek"
+  },
+  {
+    "ordinal": 22,
+    "name": "Scoeioss",
+    "aspect": "FIRE",
+    "folder": "Scoeioss"
+  },
+  {
+    "ordinal": 23,
+    "name": "Brandmund",
+    "aspect": "FIRE",
+    "folder": "Brandmund"
+  },
+  {
+    "ordinal": 24,
+    "name": "Brennanith",
+    "aspect": "FIRE",
+    "folder": "Brennanith"
+  },
+  {
+    "ordinal": 25,
+    "name": "Frydanelt",
+    "aspect": "FIRE",
+    "folder": "Frydanelt"
+  },
+  {
+    "ordinal": 26,
+    "name": "Blazvaldor",
+    "aspect": "FIRE",
+    "folder": "Blazvaldor"
+  },
+  {
+    "ordinal": 27,
+    "name": "Peleanor",
+    "aspect": "FIRE",
+    "folder": "Peleanor"
+  },
+  {
+    "ordinal": 28,
+    "name": "Kratheiric",
+    "aspect": "FIRE",
+    "folder": "Kratheiric"
+  },
+  {
+    "ordinal": 29,
+    "name": "Moxaron",
+    "aspect": "FIRE",
+    "folder": "Moxaron"
+  },
+  {
+    "ordinal": 30,
+    "name": "Scoaoyth",
+    "aspect": "FIRE",
+    "folder": "Scoaoyth"
+  },
+  {
+    "ordinal": 31,
+    "name": "Brandskar",
+    "aspect": "FIRE",
+    "folder": "Brandskar"
+  },
+  {
+    "ordinal": 32,
+    "name": "Brennanren",
+    "aspect": "FIRE",
+    "folder": "Brennanren"
+  },
+  {
+    "ordinal": 33,
+    "name": "Pyrith",
+    "aspect": "FIRE",
+    "folder": "Pyrith"
+  },
+  {
+    "ordinal": 34,
+    "name": "Kinddrikor",
+    "aspect": "FIRE",
+    "folder": "Kinddrikor"
+  },
+  {
+    "ordinal": 35,
+    "name": "Cindnd",
+    "aspect": "FIRE",
+    "folder": "Cindnd"
+  },
+  {
+    "ordinal": 36,
+    "name": "Farukaoaze",
+    "aspect": "FIRE",
+    "folder": "Farukaoaze"
+  },
+  {
+    "ordinal": 37,
+    "name": "Caudus",
+    "aspect": "FIRE",
+    "folder": "Caudus"
+  },
+  {
+    "ordinal": 38,
+    "name": "Foraiius",
+    "aspect": "FIRE",
+    "folder": "Foraiius"
+  },
+  {
+    "ordinal": 39,
+    "name": "Cyrnelt",
+    "aspect": "FIRE",
+    "folder": "Cyrnelt"
+  },
+  {
+    "ordinal": 40,
+    "name": "Hephaesren",
+    "aspect": "FIRE",
+    "folder": "Hephaesren"
+  },
+  {
+    "ordinal": 41,
+    "name": "Torchenren",
+    "aspect": "FIRE",
+    "folder": "Torchenren"
+  },
+  {
+    "ordinal": 42,
+    "name": "Kindbrandor",
+    "aspect": "FIRE",
+    "folder": "Kindbrandor"
+  },
+  {
+    "ordinal": 43,
+    "name": "Pelaubrand",
+    "aspect": "FIRE",
+    "folder": "Pelaubrand"
+  },
+  {
+    "ordinal": 44,
+    "name": "Farukaiur",
+    "aspect": "FIRE",
+    "folder": "Farukaiur"
+  },
+  {
+    "ordinal": 45,
+    "name": "Caudulf",
+    "aspect": "FIRE",
+    "folder": "Caudulf"
+  },
+  {
+    "ordinal": 46,
+    "name": "Foriaaen",
+    "aspect": "FIRE",
+    "folder": "Foriaaen"
+  },
+  {
+    "ordinal": 47,
+    "name": "Peleot",
+    "aspect": "FIRE",
+    "folder": "Peleot"
+  },
+  {
+    "ordinal": 48,
+    "name": "Kagugu",
+    "aspect": "FIRE",
+    "folder": "Kagugu"
+  },
+  {
+    "ordinal": 49,
+    "name": "Fenixelt",
+    "aspect": "FIRE",
+    "folder": "Fenixelt"
+  },
+  {
+    "ordinal": 50,
+    "name": "Smolvenor",
+    "aspect": "FIRE",
+    "folder": "Smolvenor"
+  },
+  {
+    "ordinal": 51,
+    "name": "Vesuvuv",
+    "aspect": "FIRE",
+    "folder": "Vesuvuv"
+  },
+  {
+    "ordinal": 52,
+    "name": "Helvaiaot",
+    "aspect": "FIRE",
+    "folder": "Helvaiaot"
+  },
+  {
+    "ordinal": 53,
+    "name": "Magmafenn",
+    "aspect": "FIRE",
+    "folder": "Magmafenn"
+  },
+  {
+    "ordinal": 54,
+    "name": "Phaaoar",
+    "aspect": "FIRE",
+    "folder": "Phaaoar"
+  },
+  {
+    "ordinal": 55,
+    "name": "Peloubrand",
+    "aspect": "FIRE",
+    "folder": "Peloubrand"
+  },
+  {
+    "ordinal": 56,
+    "name": "Khoaiumbr",
+    "aspect": "FIRE",
+    "folder": "Khoaiumbr"
+  },
+  {
+    "ordinal": 57,
+    "name": "Forgmaror",
+    "aspect": "FIRE",
+    "folder": "Forgmaror"
+  },
+  {
+    "ordinal": 58,
+    "name": "Smoluror",
+    "aspect": "FIRE",
+    "folder": "Smoluror"
+  },
+  {
+    "ordinal": 59,
+    "name": "Peloaoss",
+    "aspect": "FIRE",
+    "folder": "Peloaoss"
+  },
+  {
+    "ordinal": 60,
+    "name": "Helvaoumbr",
+    "aspect": "FIRE",
+    "folder": "Helvaoumbr"
+  },
+  {
+    "ordinal": 61,
+    "name": "Magmaad",
+    "aspect": "FIRE",
+    "folder": "Magmaad"
+  },
+  {
+    "ordinal": 62,
+    "name": "Phaeuean",
+    "aspect": "FIRE",
+    "folder": "Phaeuean"
+  },
+  {
+    "ordinal": 63,
+    "name": "Brimstonewyr",
+    "aspect": "FIRE",
+    "folder": "Brimstonewyr"
+  },
+  {
+    "ordinal": 64,
+    "name": "Carnoxren",
+    "aspect": "FIRE",
+    "folder": "Carnoxren"
+  },
+  {
+    "ordinal": 65,
+    "name": "Salamelt",
+    "aspect": "FIRE",
+    "folder": "Salamelt"
+  },
+  {
+    "ordinal": 66,
+    "name": "Ignossor",
+    "aspect": "FIRE",
+    "folder": "Ignossor"
+  },
+  {
+    "ordinal": 67,
+    "name": "Sehkhk",
+    "aspect": "FIRE",
+    "folder": "Sehkhk"
+  },
+  {
+    "ordinal": 68,
+    "name": "Ahriueess",
+    "aspect": "FIRE",
+    "folder": "Ahriueess"
+  },
+  {
+    "ordinal": 69,
+    "name": "Magmaalt",
+    "aspect": "FIRE",
+    "folder": "Magmaalt"
+  },
+  {
+    "ordinal": 70,
+    "name": "Phaeyuan",
+    "aspect": "FIRE",
+    "folder": "Phaeyuan"
+  },
+  {
+    "ordinal": 71,
+    "name": "Pelioss",
+    "aspect": "FIRE",
+    "folder": "Pelioss"
+  },
+  {
+    "ordinal": 72,
+    "name": "Torcricor",
+    "aspect": "FIRE",
+    "folder": "Torcricor"
+  },
+  {
+    "ordinal": 73,
+    "name": "Glowel",
+    "aspect": "FIRE",
+    "folder": "Glowel"
+  },
+  {
+    "ordinal": 74,
+    "name": "Ignador",
+    "aspect": "FIRE",
+    "folder": "Ignador"
+  },
+  {
+    "ordinal": 75,
+    "name": "Pelaaen",
+    "aspect": "FIRE",
+    "folder": "Pelaaen"
+  },
+  {
+    "ordinal": 76,
+    "name": "Ahriyuax",
+    "aspect": "FIRE",
+    "folder": "Ahriyuax"
+  },
+  {
+    "ordinal": 77,
+    "name": "Atlanim",
+    "aspect": "WATER",
+    "folder": "Atlanim"
+  },
+  {
+    "ordinal": 78,
+    "name": "Waveoan",
+    "aspect": "WATER",
+    "folder": "Waveoan"
+  },
+  {
+    "ordinal": 79,
+    "name": "Lagoonwyr",
+    "aspect": "WATER",
+    "folder": "Lagoonwyr"
+  },
+  {
+    "ordinal": 80,
+    "name": "Dolphren",
+    "aspect": "WATER",
+    "folder": "Dolphren"
+  },
+  {
+    "ordinal": 81,
+    "name": "Founelt",
+    "aspect": "WATER",
+    "folder": "Founelt"
+  },
+  {
+    "ordinal": 82,
+    "name": "Hydroryxor",
+    "aspect": "WATER",
+    "folder": "Hydroryxor"
+  },
+  {
+    "ordinal": 83,
+    "name": "Morsrs",
+    "aspect": "WATER",
+    "folder": "Morsrs"
+  },
+  {
+    "ordinal": 84,
+    "name": "Krakenauis",
+    "aspect": "WATER",
+    "folder": "Krakenauis"
+  },
+  {
+    "ordinal": 85,
+    "name": "Atlthar",
+    "aspect": "WATER",
+    "folder": "Atlthar"
+  },
+  {
+    "ordinal": 86,
+    "name": "Waveoian",
+    "aspect": "WATER",
+    "folder": "Waveoian"
+  },
+  {
+    "ordinal": 87,
+    "name": "Reeeeaen",
+    "aspect": "WATER",
+    "folder": "Reeeeaen"
+  },
+  {
+    "ordinal": 88,
+    "name": "Fjordanan",
+    "aspect": "WATER",
+    "folder": "Fjordanan"
+  },
+  {
+    "ordinal": 89,
+    "name": "Leviathren",
+    "aspect": "WATER",
+    "folder": "Leviathren"
+  },
+  {
+    "ordinal": 90,
+    "name": "Hydraenor",
+    "aspect": "WATER",
+    "folder": "Hydraenor"
+  },
+  {
+    "ordinal": 91,
+    "name": "Reeionjar",
+    "aspect": "WATER",
+    "folder": "Reeionjar"
+  },
+  {
+    "ordinal": 92,
+    "name": "Morsoidrik",
+    "aspect": "WATER",
+    "folder": "Morsoidrik"
+  },
+  {
+    "ordinal": 93,
+    "name": "Strthar",
+    "aspect": "WATER",
+    "folder": "Strthar"
+  },
+  {
+    "ordinal": 94,
+    "name": "Maraan",
+    "aspect": "WATER",
+    "folder": "Maraan"
+  },
+  {
+    "ordinal": 95,
+    "name": "Nymphwyr",
+    "aspect": "WATER",
+    "folder": "Nymphwyr"
+  },
+  {
+    "ordinal": 96,
+    "name": "Lapusren",
+    "aspect": "WATER",
+    "folder": "Lapusren"
+  },
+  {
+    "ordinal": 97,
+    "name": "Nautilelt",
+    "aspect": "WATER",
+    "folder": "Nautilelt"
+  },
+  {
+    "ordinal": 98,
+    "name": "Hydraror",
+    "aspect": "WATER",
+    "folder": "Hydraror"
+  },
+  {
+    "ordinal": 99,
+    "name": "Reeeaen",
+    "aspect": "WATER",
+    "folder": "Reeeaen"
+  },
+  {
+    "ordinal": 100,
+    "name": "Morsith",
+    "aspect": "WATER",
+    "folder": "Morsith"
+  },
+  {
+    "ordinal": 101,
+    "name": "Founek",
+    "aspect": "WATER",
+    "folder": "Founek"
+  },
+  {
+    "ordinal": 102,
+    "name": "Marauan",
+    "aspect": "WATER",
+    "folder": "Marauan"
+  },
+  {
+    "ordinal": 103,
+    "name": "Reeaovald",
+    "aspect": "WATER",
+    "folder": "Reeaovald"
+  },
+  {
+    "ordinal": 104,
+    "name": "Oarfishsh",
+    "aspect": "WATER",
+    "folder": "Oarfishsh"
+  },
+  {
+    "ordinal": 105,
+    "name": "Currrr",
+    "aspect": "WATER",
+    "folder": "Currrr"
+  },
+  {
+    "ordinal": 106,
+    "name": "Reeftheldor",
+    "aspect": "WATER",
+    "folder": "Reeftheldor"
+  },
+  {
+    "ordinal": 107,
+    "name": "Fontainene",
+    "aspect": "WATER",
+    "folder": "Fontainene"
+  },
+  {
+    "ordinal": 108,
+    "name": "Undinith",
+    "aspect": "WATER",
+    "folder": "Undinith"
+  },
+  {
+    "ordinal": 109,
+    "name": "Ocethar",
+    "aspect": "WATER",
+    "folder": "Ocethar"
+  },
+  {
+    "ordinal": 110,
+    "name": "Leviathouan",
+    "aspect": "WATER",
+    "folder": "Leviathouan"
+  },
+  {
+    "ordinal": 111,
+    "name": "Tritonwyr",
+    "aspect": "WATER",
+    "folder": "Tritonwyr"
+  },
+  {
+    "ordinal": 112,
+    "name": "Tritonren",
+    "aspect": "WATER",
+    "folder": "Tritonren"
+  },
+  {
+    "ordinal": 113,
+    "name": "Leviatheeek",
+    "aspect": "WATER",
+    "folder": "Leviatheeek"
+  },
+  {
+    "ordinal": 114,
+    "name": "Reefnjaror",
+    "aspect": "WATER",
+    "folder": "Reefnjaror"
+  },
+  {
+    "ordinal": 115,
+    "name": "Fontainearl",
+    "aspect": "WATER",
+    "folder": "Fontainearl"
+  },
+  {
+    "ordinal": 116,
+    "name": "Oarfishwyr",
+    "aspect": "WATER",
+    "folder": "Oarfishwyr"
+  },
+  {
+    "ordinal": 117,
+    "name": "Leviathioius",
+    "aspect": "WATER",
+    "folder": "Leviathioius"
+  },
+  {
+    "ordinal": 118,
+    "name": "Leviathuan",
+    "aspect": "WATER",
+    "folder": "Leviathuan"
+  },
+  {
+    "ordinal": 119,
+    "name": "Reefenyaan",
+    "aspect": "WATER",
+    "folder": "Reefenyaan"
+  },
+  {
+    "ordinal": 120,
+    "name": "Oarfishoth",
+    "aspect": "WATER",
+    "folder": "Oarfishoth"
+  },
+  {
+    "ordinal": 121,
+    "name": "Currelt",
+    "aspect": "WATER",
+    "folder": "Currelt"
+  },
+  {
+    "ordinal": 122,
+    "name": "Meluhildor",
+    "aspect": "WATER",
+    "folder": "Meluhildor"
+  },
+  {
+    "ordinal": 123,
+    "name": "Glaucusek",
+    "aspect": "WATER",
+    "folder": "Glaucusek"
+  },
+  {
+    "ordinal": 124,
+    "name": "Marinith",
+    "aspect": "WATER",
+    "folder": "Marinith"
+  },
+  {
+    "ordinal": 125,
+    "name": "Flothar",
+    "aspect": "WATER",
+    "folder": "Flothar"
+  },
+  {
+    "ordinal": 126,
+    "name": "Whirleean",
+    "aspect": "WATER",
+    "folder": "Whirleean"
+  },
+  {
+    "ordinal": 127,
+    "name": "Reefenaan",
+    "aspect": "WATER",
+    "folder": "Reefenaan"
+  },
+  {
+    "ordinal": 128,
+    "name": "Abysanor",
+    "aspect": "WATER",
+    "folder": "Abysanor"
+  },
+  {
+    "ordinal": 129,
+    "name": "Leviathaaius",
+    "aspect": "WATER",
+    "folder": "Leviathaaius"
+  },
+  {
+    "ordinal": 130,
+    "name": "Meluric",
+    "aspect": "WATER",
+    "folder": "Meluric"
+  },
+  {
+    "ordinal": 131,
+    "name": "Glaucuson",
+    "aspect": "WATER",
+    "folder": "Glaucuson"
+  },
+  {
+    "ordinal": 132,
+    "name": "Oarfishel",
+    "aspect": "WATER",
+    "folder": "Oarfishel"
+  },
+  {
+    "ordinal": 133,
+    "name": "Tidede",
+    "aspect": "WATER",
+    "folder": "Tidede"
+  },
+  {
+    "ordinal": 134,
+    "name": "Whirliean",
+    "aspect": "WATER",
+    "folder": "Whirliean"
+  },
+  {
+    "ordinal": 135,
+    "name": "Selchwyr",
+    "aspect": "WATER",
+    "folder": "Selchwyr"
+  },
+  {
+    "ordinal": 136,
+    "name": "Merren",
+    "aspect": "WATER",
+    "folder": "Merren"
+  },
+  {
+    "ordinal": 137,
+    "name": "Aquelt",
+    "aspect": "WATER",
+    "folder": "Aquelt"
+  },
+  {
+    "ordinal": 138,
+    "name": "Brayeaze",
+    "aspect": "WATER",
+    "folder": "Brayeaze"
+  },
+  {
+    "ordinal": 139,
+    "name": "Calypmund",
+    "aspect": "WATER",
+    "folder": "Calypmund"
+  },
+  {
+    "ordinal": 140,
+    "name": "Rivith",
+    "aspect": "WATER",
+    "folder": "Rivith"
+  },
+  {
+    "ordinal": 141,
+    "name": "Tidthar",
+    "aspect": "WATER",
+    "folder": "Tidthar"
+  },
+  {
+    "ordinal": 142,
+    "name": "Whirluan",
+    "aspect": "WATER",
+    "folder": "Whirluan"
+  },
+  {
+    "ordinal": 143,
+    "name": "Reefenioan",
+    "aspect": "WATER",
+    "folder": "Reefenioan"
+  },
+  {
+    "ordinal": 144,
+    "name": "Brinaaan",
+    "aspect": "WATER",
+    "folder": "Brinaaan"
+  },
+  {
+    "ordinal": 145,
+    "name": "Aquix",
+    "aspect": "WATER",
+    "folder": "Aquix"
+  },
+  {
+    "ordinal": 146,
+    "name": "Braieyth",
+    "aspect": "WATER",
+    "folder": "Braieyth"
+  },
+  {
+    "ordinal": 147,
+    "name": "Calypulf",
+    "aspect": "WATER",
+    "folder": "Calypulf"
+  },
+  {
+    "ordinal": 148,
+    "name": "Oarfishon",
+    "aspect": "WATER",
+    "folder": "Oarfishon"
+  },
+  {
+    "ordinal": 149,
+    "name": "Leviathibrand",
+    "aspect": "WATER",
+    "folder": "Leviathibrand"
+  },
+  {
+    "ordinal": 150,
+    "name": "Seabirdyean",
+    "aspect": "WATER",
+    "folder": "Seabirdyean"
+  },
+  {
+    "ordinal": 151,
+    "name": "Sirinwyr",
+    "aspect": "WATER",
+    "folder": "Sirinwyr"
+  },
+  {
+    "ordinal": 152,
+    "name": "Pelagren",
+    "aspect": "WATER",
+    "folder": "Pelagren"
+  },
+  {
+    "ordinal": 153,
+    "name": "Fjordanus",
+    "aspect": "WATER",
+    "folder": "Fjordanus"
+  },
+  {
+    "ordinal": 154,
+    "name": "Setyaot",
+    "aspect": "FROST",
+    "folder": "Setyaot"
+  },
+  {
+    "ordinal": 155,
+    "name": "Borealfenn",
+    "aspect": "FROST",
+    "folder": "Borealfenn"
+  },
+  {
+    "ordinal": 156,
+    "name": "Aureliaith",
+    "aspect": "FROST",
+    "folder": "Aureliaith"
+  },
+  {
+    "ordinal": 157,
+    "name": "Glathar",
+    "aspect": "FROST",
+    "folder": "Glathar"
+  },
+  {
+    "ordinal": 158,
+    "name": "Thrymean",
+    "aspect": "FROST",
+    "folder": "Thrymean"
+  },
+  {
+    "ordinal": 159,
+    "name": "Jokulwyr",
+    "aspect": "FROST",
+    "folder": "Jokulwyr"
+  },
+  {
+    "ordinal": 160,
+    "name": "Brumren",
+    "aspect": "FROST",
+    "folder": "Brumren"
+  },
+  {
+    "ordinal": 161,
+    "name": "Tjornloth",
+    "aspect": "FROST",
+    "folder": "Tjornloth"
+  },
+  {
+    "ordinal": 162,
+    "name": "Setyiumbr",
+    "aspect": "FROST",
+    "folder": "Setyiumbr"
+  },
+  {
+    "ordinal": 163,
+    "name": "Borealad",
+    "aspect": "FROST",
+    "folder": "Borealad"
+  },
+  {
+    "ordinal": 164,
+    "name": "Iceith",
+    "aspect": "FROST",
+    "folder": "Iceith"
+  },
+  {
+    "ordinal": 165,
+    "name": "Skathar",
+    "aspect": "FROST",
+    "folder": "Skathar"
+  },
+  {
+    "ordinal": 166,
+    "name": "Gelidayaan",
+    "aspect": "FROST",
+    "folder": "Gelidayaan"
+  },
+  {
+    "ordinal": 167,
+    "name": "Halvwyr",
+    "aspect": "FROST",
+    "folder": "Halvwyr"
+  },
+  {
+    "ordinal": 168,
+    "name": "Hibyioss",
+    "aspect": "FROST",
+    "folder": "Hibyioss"
+  },
+  {
+    "ordinal": 169,
+    "name": "Febrargrim",
+    "aspect": "FROST",
+    "folder": "Febrargrim"
+  },
+  {
+    "ordinal": 170,
+    "name": "Geleess",
+    "aspect": "FROST",
+    "folder": "Geleess"
+  },
+  {
+    "ordinal": 171,
+    "name": "Borealath",
+    "aspect": "FROST",
+    "folder": "Borealath"
+  },
+  {
+    "ordinal": 172,
+    "name": "Febrarwyr",
+    "aspect": "FROST",
+    "folder": "Febrarwyr"
+  },
+  {
+    "ordinal": 173,
+    "name": "Fimbulith",
+    "aspect": "FROST",
+    "folder": "Fimbulith"
+  },
+  {
+    "ordinal": 174,
+    "name": "Gelidayian",
+    "aspect": "FROST",
+    "folder": "Gelidayian"
+  },
+  {
+    "ordinal": 175,
+    "name": "Glacessor",
+    "aspect": "FROST",
+    "folder": "Glacessor"
+  },
+  {
+    "ordinal": 176,
+    "name": "Hibead",
+    "aspect": "FROST",
+    "folder": "Hibead"
+  },
+  {
+    "ordinal": 177,
+    "name": "Febrargar",
+    "aspect": "FROST",
+    "folder": "Febrargar"
+  },
+  {
+    "ordinal": 178,
+    "name": "Gelooan",
+    "aspect": "FROST",
+    "folder": "Gelooan"
+  },
+  {
+    "ordinal": 179,
+    "name": "Stormim",
+    "aspect": "FROST",
+    "folder": "Stormim"
+  },
+  {
+    "ordinal": 180,
+    "name": "Permafith",
+    "aspect": "FROST",
+    "folder": "Permafith"
+  },
+  {
+    "ordinal": 181,
+    "name": "Perthar",
+    "aspect": "FROST",
+    "folder": "Perthar"
+  },
+  {
+    "ordinal": 182,
+    "name": "Wintaean",
+    "aspect": "FROST",
+    "folder": "Wintaean"
+  },
+  {
+    "ordinal": 183,
+    "name": "Bergrg",
+    "aspect": "FROST",
+    "folder": "Bergrg"
+  },
+  {
+    "ordinal": 184,
+    "name": "Sleetoooryx",
+    "aspect": "FROST",
+    "folder": "Sleetoooryx"
+  },
+  {
+    "ordinal": 185,
+    "name": "Febraralt",
+    "aspect": "FROST",
+    "folder": "Febraralt"
+  },
+  {
+    "ordinal": 186,
+    "name": "Gelyiis",
+    "aspect": "FROST",
+    "folder": "Gelyiis"
+  },
+  {
+    "ordinal": 187,
+    "name": "Stormarius",
+    "aspect": "FROST",
+    "folder": "Stormarius"
+  },
+  {
+    "ordinal": 188,
+    "name": "Pikaiur",
+    "aspect": "FROST",
+    "folder": "Pikaiur"
+  },
+  {
+    "ordinal": 189,
+    "name": "Permama",
+    "aspect": "FROST",
+    "folder": "Permama"
+  },
+  {
+    "ordinal": 190,
+    "name": "Wintooan",
+    "aspect": "FROST",
+    "folder": "Wintooan"
+  },
+  {
+    "ordinal": 191,
+    "name": "Glacdrikor",
+    "aspect": "FROST",
+    "folder": "Glacdrikor"
+  },
+  {
+    "ordinal": 192,
+    "name": "Sleeteuax",
+    "aspect": "FROST",
+    "folder": "Sleeteuax"
+  },
+  {
+    "ordinal": 193,
+    "name": "Norraek",
+    "aspect": "FROST",
+    "folder": "Norraek"
+  },
+  {
+    "ordinal": 194,
+    "name": "Snoaedrik",
+    "aspect": "FROST",
+    "folder": "Snoaedrik"
+  },
+  {
+    "ordinal": 195,
+    "name": "Tundrynth",
+    "aspect": "FROST",
+    "folder": "Tundrynth"
+  },
+  {
+    "ordinal": 196,
+    "name": "Cryoith",
+    "aspect": "FROST",
+    "folder": "Cryoith"
+  },
+  {
+    "ordinal": 197,
+    "name": "Hrithar",
+    "aspect": "FROST",
+    "folder": "Hrithar"
+  },
+  {
+    "ordinal": 198,
+    "name": "Aufeiusor",
+    "aspect": "FROST",
+    "folder": "Aufeiusor"
+  },
+  {
+    "ordinal": 199,
+    "name": "Yetiti",
+    "aspect": "FROST",
+    "folder": "Yetiti"
+  },
+  {
+    "ordinal": 200,
+    "name": "Sleetaear",
+    "aspect": "FROST",
+    "folder": "Sleetaear"
+  },
+  {
+    "ordinal": 201,
+    "name": "Norraonn",
+    "aspect": "FROST",
+    "folder": "Norraonn"
+  },
+  {
+    "ordinal": 202,
+    "name": "Snooabrand",
+    "aspect": "FROST",
+    "folder": "Snooabrand"
+  },
+  {
+    "ordinal": 203,
+    "name": "Tundryk",
+    "aspect": "FROST",
+    "folder": "Tundryk"
+  },
+  {
+    "ordinal": 204,
+    "name": "Skayuvald",
+    "aspect": "FROST",
+    "folder": "Skayuvald"
+  },
+  {
+    "ordinal": 205,
+    "name": "Hyemwyr",
+    "aspect": "FROST",
+    "folder": "Hyemwyr"
+  },
+  {
+    "ordinal": 206,
+    "name": "Aufeaenor",
+    "aspect": "FROST",
+    "folder": "Aufeaenor"
+  },
+  {
+    "ordinal": 207,
+    "name": "Glacekor",
+    "aspect": "FROST",
+    "folder": "Glacekor"
+  },
+  {
+    "ordinal": 208,
+    "name": "Frostoatheld",
+    "aspect": "FROST",
+    "folder": "Frostoatheld"
+  },
+  {
+    "ordinal": 209,
+    "name": "Jotunoth",
+    "aspect": "FROST",
+    "folder": "Jotunoth"
+  },
+  {
+    "ordinal": 210,
+    "name": "Skaeumar",
+    "aspect": "FROST",
+    "folder": "Skaeumar"
+  },
+  {
+    "ordinal": 211,
+    "name": "Hyemor",
+    "aspect": "FROST",
+    "folder": "Hyemor"
+  },
+  {
+    "ordinal": 212,
+    "name": "Krystosith",
+    "aspect": "FROST",
+    "folder": "Krystosith"
+  },
+  {
+    "ordinal": 213,
+    "name": "Hekaraelt",
+    "aspect": "FROST",
+    "folder": "Hekaraelt"
+  },
+  {
+    "ordinal": 214,
+    "name": "Aufeessor",
+    "aspect": "FROST",
+    "folder": "Aufeessor"
+  },
+  {
+    "ordinal": 215,
+    "name": "Glactheldor",
+    "aspect": "FROST",
+    "folder": "Glactheldor"
+  },
+  {
+    "ordinal": 216,
+    "name": "Frostinjar",
+    "aspect": "FROST",
+    "folder": "Frostinjar"
+  },
+  {
+    "ordinal": 217,
+    "name": "Jotunyk",
+    "aspect": "FROST",
+    "folder": "Jotunyk"
+  },
+  {
+    "ordinal": 218,
+    "name": "Skaioek",
+    "aspect": "FROST",
+    "folder": "Skaioek"
+  },
+  {
+    "ordinal": 219,
+    "name": "Hyemloth",
+    "aspect": "FROST",
+    "folder": "Hyemloth"
+  },
+  {
+    "ordinal": 220,
+    "name": "Hibiusor",
+    "aspect": "FROST",
+    "folder": "Hibiusor"
+  },
+  {
+    "ordinal": 221,
+    "name": "Blancheix",
+    "aspect": "FROST",
+    "folder": "Blancheix"
+  },
+  {
+    "ordinal": 222,
+    "name": "Niphanor",
+    "aspect": "FROST",
+    "folder": "Niphanor"
+  },
+  {
+    "ordinal": 223,
+    "name": "Crystalal",
+    "aspect": "FROST",
+    "folder": "Crystalal"
+  },
+  {
+    "ordinal": 224,
+    "name": "Fimbuliomar",
+    "aspect": "FROST",
+    "folder": "Fimbuliomar"
+  },
+  {
+    "ordinal": 225,
+    "name": "Frigusek",
+    "aspect": "FROST",
+    "folder": "Frigusek"
+  },
+  {
+    "ordinal": 226,
+    "name": "Skoaaoss",
+    "aspect": "FROST",
+    "folder": "Skoaaoss"
+  },
+  {
+    "ordinal": 227,
+    "name": "Yetargrim",
+    "aspect": "FROST",
+    "folder": "Yetargrim"
+  },
+  {
+    "ordinal": 228,
+    "name": "Glacinren",
+    "aspect": "FROST",
+    "folder": "Glacinren"
+  },
+  {
+    "ordinal": 229,
+    "name": "Hibaan",
+    "aspect": "FROST",
+    "folder": "Hibaan"
+  },
+  {
+    "ordinal": 230,
+    "name": "Niphvaldor",
+    "aspect": "FROST",
+    "folder": "Niphvaldor"
+  },
+  {
+    "ordinal": 231,
+    "name": "Argigi",
+    "aspect": "EARTH",
+    "folder": "Argigi"
+  },
+  {
+    "ordinal": 232,
+    "name": "Massifaaric",
+    "aspect": "EARTH",
+    "folder": "Massifaaric"
+  },
+  {
+    "ordinal": 233,
+    "name": "Quarton",
+    "aspect": "EARTH",
+    "folder": "Quarton"
+  },
+  {
+    "ordinal": 234,
+    "name": "Eroiad",
+    "aspect": "EARTH",
+    "folder": "Eroiad"
+  },
+  {
+    "ordinal": 235,
+    "name": "Moshskar",
+    "aspect": "EARTH",
+    "folder": "Moshskar"
+  },
+  {
+    "ordinal": 236,
+    "name": "Rockethren",
+    "aspect": "EARTH",
+    "folder": "Rockethren"
+  },
+  {
+    "ordinal": 237,
+    "name": "Torathelt",
+    "aspect": "EARTH",
+    "folder": "Torathelt"
+  },
+  {
+    "ordinal": 238,
+    "name": "Magnhildor",
+    "aspect": "EARTH",
+    "folder": "Magnhildor"
+  },
+  {
+    "ordinal": 239,
+    "name": "Quarar",
+    "aspect": "EARTH",
+    "folder": "Quarar"
+  },
+  {
+    "ordinal": 240,
+    "name": "Ironbarkaiaze",
+    "aspect": "EARTH",
+    "folder": "Ironbarkaiaze"
+  },
+  {
+    "ordinal": 241,
+    "name": "Brakmund",
+    "aspect": "EARTH",
+    "folder": "Brakmund"
+  },
+  {
+    "ordinal": 242,
+    "name": "Fereiius",
+    "aspect": "EARTH",
+    "folder": "Fereiius"
+  },
+  {
+    "ordinal": 243,
+    "name": "Moshwyr",
+    "aspect": "EARTH",
+    "folder": "Moshwyr"
+  },
+  {
+    "ordinal": 244,
+    "name": "Uminin",
+    "aspect": "EARTH",
+    "folder": "Uminin"
+  },
+  {
+    "ordinal": 245,
+    "name": "Massifren",
+    "aspect": "EARTH",
+    "folder": "Massifren"
+  },
+  {
+    "ordinal": 246,
+    "name": "Magnbrandor",
+    "aspect": "EARTH",
+    "folder": "Magnbrandor"
+  },
+  {
+    "ordinal": 247,
+    "name": "Rocioot",
+    "aspect": "EARTH",
+    "folder": "Rocioot"
+  },
+  {
+    "ordinal": 248,
+    "name": "Ironbarkeiyth",
+    "aspect": "EARTH",
+    "folder": "Ironbarkeiyth"
+  },
+  {
+    "ordinal": 249,
+    "name": "Brakulf",
+    "aspect": "EARTH",
+    "folder": "Brakulf"
+  },
+  {
+    "ordinal": 250,
+    "name": "Feraoaen",
+    "aspect": "EARTH",
+    "folder": "Feraoaen"
+  },
+  {
+    "ordinal": 251,
+    "name": "Cragwyr",
+    "aspect": "EARTH",
+    "folder": "Cragwyr"
+  },
+  {
+    "ordinal": 252,
+    "name": "Gobrren",
+    "aspect": "EARTH",
+    "folder": "Gobrren"
+  },
+  {
+    "ordinal": 253,
+    "name": "Cellarelt",
+    "aspect": "EARTH",
+    "folder": "Cellarelt"
+  },
+  {
+    "ordinal": 254,
+    "name": "Forgvenor",
+    "aspect": "EARTH",
+    "folder": "Forgvenor"
+  },
+  {
+    "ordinal": 255,
+    "name": "Stoaoa",
+    "aspect": "EARTH",
+    "folder": "Stoaoa"
+  },
+  {
+    "ordinal": 256,
+    "name": "Obsidiaoot",
+    "aspect": "EARTH",
+    "folder": "Obsidiaoot"
+  },
+  {
+    "ordinal": 257,
+    "name": "Pyrfenn",
+    "aspect": "EARTH",
+    "folder": "Pyrfenn"
+  },
+  {
+    "ordinal": 258,
+    "name": "Feraiar",
+    "aspect": "EARTH",
+    "folder": "Feraiar"
+  },
+  {
+    "ordinal": 259,
+    "name": "Rocaaot",
+    "aspect": "EARTH",
+    "folder": "Rocaaot"
+  },
+  {
+    "ordinal": 260,
+    "name": "Kharumbror",
+    "aspect": "EARTH",
+    "folder": "Kharumbror"
+  },
+  {
+    "ordinal": 261,
+    "name": "Cragor",
+    "aspect": "EARTH",
+    "folder": "Cragor"
+  },
+  {
+    "ordinal": 262,
+    "name": "Forguror",
+    "aspect": "EARTH",
+    "folder": "Forguror"
+  },
+  {
+    "ordinal": 263,
+    "name": "Rocouax",
+    "aspect": "EARTH",
+    "folder": "Rocouax"
+  },
+  {
+    "ordinal": 264,
+    "name": "Obsidiaiumbr",
+    "aspect": "EARTH",
+    "folder": "Obsidiaiumbr"
+  },
+  {
+    "ordinal": 265,
+    "name": "Pyrad",
+    "aspect": "EARTH",
+    "folder": "Pyrad"
+  },
+  {
+    "ordinal": 266,
+    "name": "Slateiaan",
+    "aspect": "EARTH",
+    "folder": "Slateiaan"
+  },
+  {
+    "ordinal": 267,
+    "name": "Siltwyr",
+    "aspect": "EARTH",
+    "folder": "Siltwyr"
+  },
+  {
+    "ordinal": 268,
+    "name": "Dolmenren",
+    "aspect": "EARTH",
+    "folder": "Dolmenren"
+  },
+  {
+    "ordinal": 269,
+    "name": "Moleelt",
+    "aspect": "EARTH",
+    "folder": "Moleelt"
+  },
+  {
+    "ordinal": 270,
+    "name": "Chthotor",
+    "aspect": "EARTH",
+    "folder": "Chthotor"
+  },
+  {
+    "ordinal": 271,
+    "name": "Clinkerer",
+    "aspect": "EARTH",
+    "folder": "Clinkerer"
+  },
+  {
+    "ordinal": 272,
+    "name": "Obsidiiaess",
+    "aspect": "EARTH",
+    "folder": "Obsidiiaess"
+  },
+  {
+    "ordinal": 273,
+    "name": "Pyrath",
+    "aspect": "EARTH",
+    "folder": "Pyrath"
+  },
+  {
+    "ordinal": 274,
+    "name": "Slateaoan",
+    "aspect": "EARTH",
+    "folder": "Slateaoan"
+  },
+  {
+    "ordinal": 275,
+    "name": "Rocuax",
+    "aspect": "EARTH",
+    "folder": "Rocuax"
+  },
+  {
+    "ordinal": 276,
+    "name": "Georicor",
+    "aspect": "EARTH",
+    "folder": "Georicor"
+  },
+  {
+    "ordinal": 277,
+    "name": "Steppeim",
+    "aspect": "EARTH",
+    "folder": "Steppeim"
+  },
+  {
+    "ordinal": 278,
+    "name": "Chthador",
+    "aspect": "EARTH",
+    "folder": "Chthador"
+  },
+  {
+    "ordinal": 279,
+    "name": "Rocinjar",
+    "aspect": "EARTH",
+    "folder": "Rocinjar"
+  },
+  {
+    "ordinal": 280,
+    "name": "Mushrooroan",
+    "aspect": "EARTH",
+    "folder": "Mushrooroan"
+  },
+  {
+    "ordinal": 281,
+    "name": "Stethar",
+    "aspect": "EARTH",
+    "folder": "Stethar"
+  },
+  {
+    "ordinal": 282,
+    "name": "Brunuean",
+    "aspect": "EARTH",
+    "folder": "Brunuean"
+  },
+  {
+    "ordinal": 283,
+    "name": "Uminwyr",
+    "aspect": "EARTH",
+    "folder": "Uminwyr"
+  },
+  {
+    "ordinal": 284,
+    "name": "Menhirren",
+    "aspect": "EARTH",
+    "folder": "Menhirren"
+  },
+  {
+    "ordinal": 285,
+    "name": "Tiluselt",
+    "aspect": "EARTH",
+    "folder": "Tiluselt"
+  },
+  {
+    "ordinal": 286,
+    "name": "Bouloryxor",
+    "aspect": "EARTH",
+    "folder": "Bouloryxor"
+  },
+  {
+    "ordinal": 287,
+    "name": "Rocyiax",
+    "aspect": "EARTH",
+    "folder": "Rocyiax"
+  },
+  {
+    "ordinal": 288,
+    "name": "Mushroorueis",
+    "aspect": "EARTH",
+    "folder": "Mushroorueis"
+  },
+  {
+    "ordinal": 289,
+    "name": "Clinkerfenn",
+    "aspect": "EARTH",
+    "folder": "Clinkerfenn"
+  },
+  {
+    "ordinal": 290,
+    "name": "Brunyuan",
+    "aspect": "EARTH",
+    "folder": "Brunyuan"
+  },
+  {
+    "ordinal": 291,
+    "name": "Roceinjar",
+    "aspect": "EARTH",
+    "folder": "Roceinjar"
+  },
+  {
+    "ordinal": 292,
+    "name": "Magnauean",
+    "aspect": "EARTH",
+    "folder": "Magnauean"
+  },
+  {
+    "ordinal": 293,
+    "name": "Verdede",
+    "aspect": "EARTH",
+    "folder": "Verdede"
+  },
+  {
+    "ordinal": 294,
+    "name": "Boulaxor",
+    "aspect": "EARTH",
+    "folder": "Boulaxor"
+  },
+  {
+    "ordinal": 295,
+    "name": "Heathth",
+    "aspect": "EARTH",
+    "folder": "Heathth"
+  },
+  {
+    "ordinal": 296,
+    "name": "Yoseikith",
+    "aspect": "EARTH",
+    "folder": "Yoseikith"
+  },
+  {
+    "ordinal": 297,
+    "name": "Petthar",
+    "aspect": "EARTH",
+    "folder": "Petthar"
+  },
+  {
+    "ordinal": 298,
+    "name": "Tarloan",
+    "aspect": "EARTH",
+    "folder": "Tarloan"
+  },
+  {
+    "ordinal": 299,
+    "name": "Gnomoswyr",
+    "aspect": "EARTH",
+    "folder": "Gnomoswyr"
+  },
+  {
+    "ordinal": 300,
+    "name": "Kharren",
+    "aspect": "EARTH",
+    "folder": "Kharren"
+  },
+  {
+    "ordinal": 301,
+    "name": "Cellarwyr",
+    "aspect": "EARTH",
+    "folder": "Cellarwyr"
+  },
+  {
+    "ordinal": 302,
+    "name": "Boularor",
+    "aspect": "EARTH",
+    "folder": "Boularor"
+  },
+  {
+    "ordinal": 303,
+    "name": "Rockethoan",
+    "aspect": "EARTH",
+    "folder": "Rockethoan"
+  },
+  {
+    "ordinal": 304,
+    "name": "Uminalt",
+    "aspect": "EARTH",
+    "folder": "Uminalt"
+  },
+  {
+    "ordinal": 305,
+    "name": "Massifioryx",
+    "aspect": "EARTH",
+    "folder": "Massifioryx"
+  },
+  {
+    "ordinal": 306,
+    "name": "Tarloian",
+    "aspect": "EARTH",
+    "folder": "Tarloian"
+  },
+  {
+    "ordinal": 307,
+    "name": "Rockethiean",
+    "aspect": "EARTH",
+    "folder": "Rockethiean"
+  },
+  {
+    "ordinal": 308,
+    "name": "Pichren",
+    "aspect": "WOOD",
+    "folder": "Pichren"
+  },
+  {
+    "ordinal": 309,
+    "name": "Mosshelt",
+    "aspect": "WOOD",
+    "folder": "Mosshelt"
+  },
+  {
+    "ordinal": 310,
+    "name": "Verdtheldor",
+    "aspect": "WOOD",
+    "folder": "Verdtheldor"
+  },
+  {
+    "ordinal": 311,
+    "name": "Birchoth",
+    "aspect": "WOOD",
+    "folder": "Birchoth"
+  },
+  {
+    "ordinal": 312,
+    "name": "Hyllith",
+    "aspect": "WOOD",
+    "folder": "Hyllith"
+  },
+  {
+    "ordinal": 313,
+    "name": "Chrthar",
+    "aspect": "WOOD",
+    "folder": "Chrthar"
+  },
+  {
+    "ordinal": 314,
+    "name": "Veldaan",
+    "aspect": "WOOD",
+    "folder": "Veldaan"
+  },
+  {
+    "ordinal": 315,
+    "name": "Camelwyr",
+    "aspect": "WOOD",
+    "folder": "Camelwyr"
+  },
+  {
+    "ordinal": 316,
+    "name": "Dryadalt",
+    "aspect": "WOOD",
+    "folder": "Dryadalt"
+  },
+  {
+    "ordinal": 317,
+    "name": "Gillyeioryx",
+    "aspect": "WOOD",
+    "folder": "Gillyeioryx"
+  },
+  {
+    "ordinal": 318,
+    "name": "Verdnjaror",
+    "aspect": "WOOD",
+    "folder": "Verdnjaror"
+  },
+  {
+    "ordinal": 319,
+    "name": "Birchyk",
+    "aspect": "WOOD",
+    "folder": "Birchyk"
+  },
+  {
+    "ordinal": 320,
+    "name": "Dryadoth",
+    "aspect": "WOOD",
+    "folder": "Dryadoth"
+  },
+  {
+    "ordinal": 321,
+    "name": "Gillyeetheld",
+    "aspect": "WOOD",
+    "folder": "Gillyeetheld"
+  },
+  {
+    "ordinal": 322,
+    "name": "Veldauan",
+    "aspect": "WOOD",
+    "folder": "Veldauan"
+  },
+  {
+    "ordinal": 323,
+    "name": "Forestuean",
+    "aspect": "WOOD",
+    "folder": "Forestuean"
+  },
+  {
+    "ordinal": 324,
+    "name": "Roothren",
+    "aspect": "WOOD",
+    "folder": "Roothren"
+  },
+  {
+    "ordinal": 325,
+    "name": "Vineelt",
+    "aspect": "WOOD",
+    "folder": "Vineelt"
+  },
+  {
+    "ordinal": 326,
+    "name": "Myramar",
+    "aspect": "WOOD",
+    "folder": "Myramar"
+  },
+  {
+    "ordinal": 327,
+    "name": "Cypressek",
+    "aspect": "WOOD",
+    "folder": "Cypressek"
+  },
+  {
+    "ordinal": 328,
+    "name": "Boughith",
+    "aspect": "WOOD",
+    "folder": "Boughith"
+  },
+  {
+    "ordinal": 329,
+    "name": "Teithar",
+    "aspect": "WOOD",
+    "folder": "Teithar"
+  },
+  {
+    "ordinal": 330,
+    "name": "Veldouan",
+    "aspect": "WOOD",
+    "folder": "Veldouan"
+  },
+  {
+    "ordinal": 331,
+    "name": "Forestian",
+    "aspect": "WOOD",
+    "folder": "Forestian"
+  },
+  {
+    "ordinal": 332,
+    "name": "Gillyyaan",
+    "aspect": "WOOD",
+    "folder": "Gillyyaan"
+  },
+  {
+    "ordinal": 333,
+    "name": "Gillyietheld",
+    "aspect": "WOOD",
+    "folder": "Gillyietheld"
+  },
+  {
+    "ordinal": 334,
+    "name": "Myreeric",
+    "aspect": "WOOD",
+    "folder": "Myreeric"
+  },
+  {
+    "ordinal": 335,
+    "name": "Cypresson",
+    "aspect": "WOOD",
+    "folder": "Cypresson"
+  },
+  {
+    "ordinal": 336,
+    "name": "Dryadloth",
+    "aspect": "WOOD",
+    "folder": "Dryadloth"
+  },
+  {
+    "ordinal": 337,
+    "name": "Gillyaaric",
+    "aspect": "WOOD",
+    "folder": "Gillyaaric"
+  },
+  {
+    "ordinal": 338,
+    "name": "Hawthuan",
+    "aspect": "WOOD",
+    "folder": "Hawthuan"
+  },
+  {
+    "ordinal": 339,
+    "name": "Mistlewyr",
+    "aspect": "WOOD",
+    "folder": "Mistlewyr"
+  },
+  {
+    "ordinal": 340,
+    "name": "Gladeren",
+    "aspect": "WOOD",
+    "folder": "Gladeren"
+  },
+  {
+    "ordinal": 341,
+    "name": "Taigelt",
+    "aspect": "WOOD",
+    "folder": "Taigelt"
+  },
+  {
+    "ordinal": 342,
+    "name": "Forouaze",
+    "aspect": "WOOD",
+    "folder": "Forouaze"
+  },
+  {
+    "ordinal": 343,
+    "name": "Greenoremund",
+    "aspect": "WOOD",
+    "folder": "Greenoremund"
+  },
+  {
+    "ordinal": 344,
+    "name": "Iepith",
+    "aspect": "WOOD",
+    "folder": "Iepith"
+  },
+  {
+    "ordinal": 345,
+    "name": "Gillyooan",
+    "aspect": "WOOD",
+    "folder": "Gillyooan"
+  },
+  {
+    "ordinal": 346,
+    "name": "Hawtheean",
+    "aspect": "WOOD",
+    "folder": "Hawtheean"
+  },
+  {
+    "ordinal": 347,
+    "name": "Foresteean",
+    "aspect": "WOOD",
+    "folder": "Foresteean"
+  },
+  {
+    "ordinal": 348,
+    "name": "Dryadon",
+    "aspect": "WOOD",
+    "folder": "Dryadon"
+  },
+  {
+    "ordinal": 349,
+    "name": "Taigix",
+    "aspect": "WOOD",
+    "folder": "Taigix"
+  },
+  {
+    "ordinal": 350,
+    "name": "Foruyth",
+    "aspect": "WOOD",
+    "folder": "Foruyth"
+  },
+  {
+    "ordinal": 351,
+    "name": "Greenoreskar",
+    "aspect": "WOOD",
+    "folder": "Greenoreskar"
+  },
+  {
+    "ordinal": 352,
+    "name": "Dryadwyr",
+    "aspect": "WOOD",
+    "folder": "Dryadwyr"
+  },
+  {
+    "ordinal": 353,
+    "name": "Licthar",
+    "aspect": "WOOD",
+    "folder": "Licthar"
+  },
+  {
+    "ordinal": 354,
+    "name": "Gillyiean",
+    "aspect": "WOOD",
+    "folder": "Gillyiean"
+  },
+  {
+    "ordinal": 355,
+    "name": "Larvynwyr",
+    "aspect": "WOOD",
+    "folder": "Larvynwyr"
+  },
+  {
+    "ordinal": 356,
+    "name": "Treantren",
+    "aspect": "WOOD",
+    "folder": "Treantren"
+  },
+  {
+    "ordinal": 357,
+    "name": "Folius",
+    "aspect": "WOOD",
+    "folder": "Folius"
+  },
+  {
+    "ordinal": 358,
+    "name": "Cedyeius",
+    "aspect": "WOOD",
+    "folder": "Cedyeius"
+  },
+  {
+    "ordinal": 359,
+    "name": "Greenorefenn",
+    "aspect": "WOOD",
+    "folder": "Greenorefenn"
+  },
+  {
+    "ordinal": 360,
+    "name": "Willowuan",
+    "aspect": "WOOD",
+    "folder": "Willowuan"
+  },
+  {
+    "ordinal": 361,
+    "name": "Gillyyubrand",
+    "aspect": "WOOD",
+    "folder": "Gillyyubrand"
+  },
+  {
+    "ordinal": 362,
+    "name": "Arborelt",
+    "aspect": "WOOD",
+    "folder": "Arborelt"
+  },
+  {
+    "ordinal": 363,
+    "name": "Forestaaan",
+    "aspect": "WOOD",
+    "folder": "Forestaaan"
+  },
+  {
+    "ordinal": 364,
+    "name": "Treantyeur",
+    "aspect": "WOOD",
+    "folder": "Treantyeur"
+  },
+  {
+    "ordinal": 365,
+    "name": "Foliulf",
+    "aspect": "WOOD",
+    "folder": "Foliulf"
+  },
+  {
+    "ordinal": 366,
+    "name": "Cedieumbr",
+    "aspect": "WOOD",
+    "folder": "Cedieumbr"
+  },
+  {
+    "ordinal": 367,
+    "name": "Caulad",
+    "aspect": "WOOD",
+    "folder": "Caulad"
+  },
+  {
+    "ordinal": 368,
+    "name": "Faunith",
+    "aspect": "WOOD",
+    "folder": "Faunith"
+  },
+  {
+    "ordinal": 369,
+    "name": "Murthar",
+    "aspect": "WOOD",
+    "folder": "Murthar"
+  },
+  {
+    "ordinal": 370,
+    "name": "Fernyean",
+    "aspect": "WOOD",
+    "folder": "Fernyean"
+  },
+  {
+    "ordinal": 371,
+    "name": "Loopwyr",
+    "aspect": "WOOD",
+    "folder": "Loopwyr"
+  },
+  {
+    "ordinal": 372,
+    "name": "Briareot",
+    "aspect": "WOOD",
+    "folder": "Briareot"
+  },
+  {
+    "ordinal": 373,
+    "name": "Yarngrim",
+    "aspect": "WOOD",
+    "folder": "Yarngrim"
+  },
+  {
+    "ordinal": 374,
+    "name": "Cedyaess",
+    "aspect": "WOOD",
+    "folder": "Cedyaess"
+  },
+  {
+    "ordinal": 375,
+    "name": "Caulath",
+    "aspect": "WOOD",
+    "folder": "Caulath"
+  },
+  {
+    "ordinal": 376,
+    "name": "Maplewyr",
+    "aspect": "WOOD",
+    "folder": "Maplewyr"
+  },
+  {
+    "ordinal": 377,
+    "name": "Gillyith",
+    "aspect": "WOOD",
+    "folder": "Gillyith"
+  },
+  {
+    "ordinal": 378,
+    "name": "Fernean",
+    "aspect": "WOOD",
+    "folder": "Fernean"
+  },
+  {
+    "ordinal": 379,
+    "name": "Loopop",
+    "aspect": "WOOD",
+    "folder": "Loopop"
+  },
+  {
+    "ordinal": 380,
+    "name": "Briaryaad",
+    "aspect": "WOOD",
+    "folder": "Briaryaad"
+  },
+  {
+    "ordinal": 381,
+    "name": "Yarngar",
+    "aspect": "WOOD",
+    "folder": "Yarngar"
+  },
+  {
+    "ordinal": 382,
+    "name": "Wilyian",
+    "aspect": "WOOD",
+    "folder": "Wilyian"
+  },
+  {
+    "ordinal": 383,
+    "name": "Petalel",
+    "aspect": "WOOD",
+    "folder": "Petalel"
+  },
+  {
+    "ordinal": 384,
+    "name": "Dryaith",
+    "aspect": "WOOD",
+    "folder": "Dryaith"
+  },
+  {
+    "ordinal": 385,
+    "name": "Brothar",
+    "aspect": "LIGHTNING",
+    "folder": "Brothar"
+  },
+  {
+    "ordinal": 386,
+    "name": "Tonanyaan",
+    "aspect": "LIGHTNING",
+    "folder": "Tonanyaan"
+  },
+  {
+    "ordinal": 387,
+    "name": "Fulgugu",
+    "aspect": "LIGHTNING",
+    "folder": "Fulgugu"
+  },
+  {
+    "ordinal": 388,
+    "name": "Stormyioryx",
+    "aspect": "LIGHTNING",
+    "folder": "Stormyioryx"
+  },
+  {
+    "ordinal": 389,
+    "name": "Teslaalt",
+    "aspect": "LIGHTNING",
+    "folder": "Teslaalt"
+  },
+  {
+    "ordinal": 390,
+    "name": "Thoevald",
+    "aspect": "LIGHTNING",
+    "folder": "Thoevald"
+  },
+  {
+    "ordinal": 391,
+    "name": "Bistarius",
+    "aspect": "LIGHTNING",
+    "folder": "Bistarius"
+  },
+  {
+    "ordinal": 392,
+    "name": "Shockith",
+    "aspect": "LIGHTNING",
+    "folder": "Shockith"
+  },
+  {
+    "ordinal": 393,
+    "name": "Lichtenith",
+    "aspect": "LIGHTNING",
+    "folder": "Lichtenith"
+  },
+  {
+    "ordinal": 394,
+    "name": "Tonaythor",
+    "aspect": "LIGHTNING",
+    "folder": "Tonaythor"
+  },
+  {
+    "ordinal": 395,
+    "name": "Leviuror",
+    "aspect": "LIGHTNING",
+    "folder": "Leviuror"
+  },
+  {
+    "ordinal": 396,
+    "name": "Ekleax",
+    "aspect": "LIGHTNING",
+    "folder": "Ekleax"
+  },
+  {
+    "ordinal": 397,
+    "name": "Koruim",
+    "aspect": "LIGHTNING",
+    "folder": "Koruim"
+  },
+  {
+    "ordinal": 398,
+    "name": "Leyoodrik",
+    "aspect": "LIGHTNING",
+    "folder": "Leyoodrik"
+  },
+  {
+    "ordinal": 399,
+    "name": "Voltikynth",
+    "aspect": "LIGHTNING",
+    "folder": "Voltikynth"
+  },
+  {
+    "ordinal": 400,
+    "name": "Boltith",
+    "aspect": "LIGHTNING",
+    "folder": "Boltith"
+  },
+  {
+    "ordinal": 401,
+    "name": "Clethar",
+    "aspect": "LIGHTNING",
+    "folder": "Clethar"
+  },
+  {
+    "ordinal": 402,
+    "name": "Tanniusor",
+    "aspect": "LIGHTNING",
+    "folder": "Tanniusor"
+  },
+  {
+    "ordinal": 403,
+    "name": "Levidrikor",
+    "aspect": "LIGHTNING",
+    "folder": "Levidrikor"
+  },
+  {
+    "ordinal": 404,
+    "name": "Ekloois",
+    "aspect": "LIGHTNING",
+    "folder": "Ekloois"
+  },
+  {
+    "ordinal": 405,
+    "name": "Koruonn",
+    "aspect": "LIGHTNING",
+    "folder": "Koruonn"
+  },
+  {
+    "ordinal": 406,
+    "name": "Leyeubrand",
+    "aspect": "LIGHTNING",
+    "folder": "Leyeubrand"
+  },
+  {
+    "ordinal": 407,
+    "name": "Voltikix",
+    "aspect": "LIGHTNING",
+    "folder": "Voltikix"
+  },
+  {
+    "ordinal": 408,
+    "name": "Strobewyr",
+    "aspect": "LIGHTNING",
+    "folder": "Strobewyr"
+  },
+  {
+    "ordinal": 409,
+    "name": "Clemenselt",
+    "aspect": "LIGHTNING",
+    "folder": "Clemenselt"
+  },
+  {
+    "ordinal": 410,
+    "name": "Tannaenor",
+    "aspect": "LIGHTNING",
+    "folder": "Tannaenor"
+  },
+  {
+    "ordinal": 411,
+    "name": "Chargrg",
+    "aspect": "LIGHTNING",
+    "folder": "Chargrg"
+  },
+  {
+    "ordinal": 412,
+    "name": "Gloweutheld",
+    "aspect": "LIGHTNING",
+    "folder": "Gloweutheld"
+  },
+  {
+    "ordinal": 413,
+    "name": "Strobeoth",
+    "aspect": "LIGHTNING",
+    "folder": "Strobeoth"
+  },
+  {
+    "ordinal": 414,
+    "name": "Ohraeven",
+    "aspect": "LIGHTNING",
+    "folder": "Ohraeven"
+  },
+  {
+    "ordinal": 415,
+    "name": "Zappor",
+    "aspect": "LIGHTNING",
+    "folder": "Zappor"
+  },
+  {
+    "ordinal": 416,
+    "name": "Fulith",
+    "aspect": "LIGHTNING",
+    "folder": "Fulith"
+  },
+  {
+    "ordinal": 417,
+    "name": "Teslala",
+    "aspect": "LIGHTNING",
+    "folder": "Teslala"
+  },
+  {
+    "ordinal": 418,
+    "name": "Tannaror",
+    "aspect": "LIGHTNING",
+    "folder": "Tannaror"
+  },
+  {
+    "ordinal": 419,
+    "name": "Leviekor",
+    "aspect": "LIGHTNING",
+    "folder": "Leviekor"
+  },
+  {
+    "ordinal": 420,
+    "name": "Glowaenjar",
+    "aspect": "LIGHTNING",
+    "folder": "Glowaenjar"
+  },
+  {
+    "ordinal": 421,
+    "name": "Strobeyk",
+    "aspect": "LIGHTNING",
+    "folder": "Strobeyk"
+  },
+  {
+    "ordinal": 422,
+    "name": "Ohroaek",
+    "aspect": "LIGHTNING",
+    "folder": "Ohroaek"
+  },
+  {
+    "ordinal": 423,
+    "name": "Zapploth",
+    "aspect": "LIGHTNING",
+    "folder": "Zapploth"
+  },
+  {
+    "ordinal": 424,
+    "name": "Fulren",
+    "aspect": "LIGHTNING",
+    "folder": "Fulren"
+  },
+  {
+    "ordinal": 425,
+    "name": "Ampereelt",
+    "aspect": "LIGHTNING",
+    "folder": "Ampereelt"
+  },
+  {
+    "ordinal": 426,
+    "name": "Skoranor",
+    "aspect": "LIGHTNING",
+    "folder": "Skoranor"
+  },
+  {
+    "ordinal": 427,
+    "name": "Cracklele",
+    "aspect": "LIGHTNING",
+    "folder": "Cracklele"
+  },
+  {
+    "ordinal": 428,
+    "name": "Voltoamar",
+    "aspect": "LIGHTNING",
+    "folder": "Voltoamar"
+  },
+  {
+    "ordinal": 429,
+    "name": "Raijinek",
+    "aspect": "LIGHTNING",
+    "folder": "Raijinek"
+  },
+  {
+    "ordinal": 430,
+    "name": "Yareuoss",
+    "aspect": "LIGHTNING",
+    "folder": "Yareuoss"
+  },
+  {
+    "ordinal": 431,
+    "name": "Ohmgrim",
+    "aspect": "LIGHTNING",
+    "folder": "Ohmgrim"
+  },
+  {
+    "ordinal": 432,
+    "name": "Fenauaze",
+    "aspect": "LIGHTNING",
+    "folder": "Fenauaze"
+  },
+  {
+    "ordinal": 433,
+    "name": "Lichtenren",
+    "aspect": "LIGHTNING",
+    "folder": "Lichtenren"
+  },
+  {
+    "ordinal": 434,
+    "name": "Skorvaldor",
+    "aspect": "LIGHTNING",
+    "folder": "Skorvaldor"
+  },
+  {
+    "ordinal": 435,
+    "name": "Leveuius",
+    "aspect": "LIGHTNING",
+    "folder": "Leveuius"
+  },
+  {
+    "ordinal": 436,
+    "name": "Voltiek",
+    "aspect": "LIGHTNING",
+    "folder": "Voltiek"
+  },
+  {
+    "ordinal": 437,
+    "name": "Raijinon",
+    "aspect": "LIGHTNING",
+    "folder": "Raijinon"
+  },
+  {
+    "ordinal": 438,
+    "name": "Yarioad",
+    "aspect": "LIGHTNING",
+    "folder": "Yarioad"
+  },
+  {
+    "ordinal": 439,
+    "name": "Ohmgar",
+    "aspect": "LIGHTNING",
+    "folder": "Ohmgar"
+  },
+  {
+    "ordinal": 440,
+    "name": "Helioren",
+    "aspect": "LIGHTNING",
+    "folder": "Helioren"
+  },
+  {
+    "ordinal": 441,
+    "name": "Joveelt",
+    "aspect": "LIGHTNING",
+    "folder": "Joveelt"
+  },
+  {
+    "ordinal": 442,
+    "name": "Flashildor",
+    "aspect": "LIGHTNING",
+    "folder": "Flashildor"
+  },
+  {
+    "ordinal": 443,
+    "name": "Plasas",
+    "aspect": "LIGHTNING",
+    "folder": "Plasas"
+  },
+  {
+    "ordinal": 444,
+    "name": "Fenrikioaze",
+    "aspect": "LIGHTNING",
+    "folder": "Fenrikioaze"
+  },
+  {
+    "ordinal": 445,
+    "name": "Arcmund",
+    "aspect": "LIGHTNING",
+    "folder": "Arcmund"
+  },
+  {
+    "ordinal": 446,
+    "name": "Yaraaoryx",
+    "aspect": "LIGHTNING",
+    "folder": "Yaraaoryx"
+  },
+  {
+    "ordinal": 447,
+    "name": "Ohmwyr",
+    "aspect": "LIGHTNING",
+    "folder": "Ohmwyr"
+  },
+  {
+    "ordinal": 448,
+    "name": "Strobebe",
+    "aspect": "LIGHTNING",
+    "folder": "Strobebe"
+  },
+  {
+    "ordinal": 449,
+    "name": "Amperewyr",
+    "aspect": "LIGHTNING",
+    "folder": "Amperewyr"
+  },
+  {
+    "ordinal": 450,
+    "name": "Flasricor",
+    "aspect": "LIGHTNING",
+    "folder": "Flasricor"
+  },
+  {
+    "ordinal": 451,
+    "name": "Spaeean",
+    "aspect": "LIGHTNING",
+    "folder": "Spaeean"
+  },
+  {
+    "ordinal": 452,
+    "name": "Fenrikaayth",
+    "aspect": "LIGHTNING",
+    "folder": "Fenrikaayth"
+  },
+  {
+    "ordinal": 453,
+    "name": "Arcskar",
+    "aspect": "LIGHTNING",
+    "folder": "Arcskar"
+  },
+  {
+    "ordinal": 454,
+    "name": "Suriaen",
+    "aspect": "LIGHTNING",
+    "folder": "Suriaen"
+  },
+  {
+    "ordinal": 455,
+    "name": "Joulwyr",
+    "aspect": "LIGHTNING",
+    "folder": "Joulwyr"
+  },
+  {
+    "ordinal": 456,
+    "name": "Levinaren",
+    "aspect": "LIGHTNING",
+    "folder": "Levinaren"
+  },
+  {
+    "ordinal": 457,
+    "name": "Keraunelt",
+    "aspect": "LIGHTNING",
+    "folder": "Keraunelt"
+  },
+  {
+    "ordinal": 458,
+    "name": "Aervenor",
+    "aspect": "LIGHTNING",
+    "folder": "Aervenor"
+  },
+  {
+    "ordinal": 459,
+    "name": "Statat",
+    "aspect": "LIGHTNING",
+    "folder": "Statat"
+  },
+  {
+    "ordinal": 460,
+    "name": "Lichtenaiius",
+    "aspect": "LIGHTNING",
+    "folder": "Lichtenaiius"
+  },
+  {
+    "ordinal": 461,
+    "name": "Arcfenn",
+    "aspect": "LIGHTNING",
+    "folder": "Arcfenn"
+  },
+  {
+    "ordinal": 462,
+    "name": "Galeeian",
+    "aspect": "SKY",
+    "folder": "Galeeian"
+  },
+  {
+    "ordinal": 463,
+    "name": "Wingwyr",
+    "aspect": "SKY",
+    "folder": "Wingwyr"
+  },
+  {
+    "ordinal": 464,
+    "name": "Alcyoneren",
+    "aspect": "SKY",
+    "folder": "Alcyoneren"
+  },
+  {
+    "ordinal": 465,
+    "name": "Mistralelt",
+    "aspect": "SKY",
+    "folder": "Mistralelt"
+  },
+  {
+    "ordinal": 466,
+    "name": "Boreuror",
+    "aspect": "SKY",
+    "folder": "Boreuror"
+  },
+  {
+    "ordinal": 467,
+    "name": "Aquilil",
+    "aspect": "SKY",
+    "folder": "Aquilil"
+  },
+  {
+    "ordinal": 468,
+    "name": "Craneeiumbr",
+    "aspect": "SKY",
+    "folder": "Craneeiumbr"
+  },
+  {
+    "ordinal": 469,
+    "name": "Caelumad",
+    "aspect": "SKY",
+    "folder": "Caelumad"
+  },
+  {
+    "ordinal": 470,
+    "name": "Leviaoan",
+    "aspect": "SKY",
+    "folder": "Leviaoan"
+  },
+  {
+    "ordinal": 471,
+    "name": "Zeniwyr",
+    "aspect": "SKY",
+    "folder": "Zeniwyr"
+  },
+  {
+    "ordinal": 472,
+    "name": "Skybornren",
+    "aspect": "SKY",
+    "folder": "Skybornren"
+  },
+  {
+    "ordinal": 473,
+    "name": "Glastelt",
+    "aspect": "SKY",
+    "folder": "Glastelt"
+  },
+  {
+    "ordinal": 474,
+    "name": "Liftotor",
+    "aspect": "SKY",
+    "folder": "Liftotor"
+  },
+  {
+    "ordinal": 475,
+    "name": "Skyooan",
+    "aspect": "SKY",
+    "folder": "Skyooan"
+  },
+  {
+    "ordinal": 476,
+    "name": "Craneaoess",
+    "aspect": "SKY",
+    "folder": "Craneaoess"
+  },
+  {
+    "ordinal": 477,
+    "name": "Caethar",
+    "aspect": "SKY",
+    "folder": "Caethar"
+  },
+  {
+    "ordinal": 478,
+    "name": "Leviaian",
+    "aspect": "SKY",
+    "folder": "Leviaian"
+  },
+  {
+    "ordinal": 479,
+    "name": "Skyaibrand",
+    "aspect": "SKY",
+    "folder": "Skyaibrand"
+  },
+  {
+    "ordinal": 480,
+    "name": "Heronon",
+    "aspect": "SKY",
+    "folder": "Heronon"
+  },
+  {
+    "ordinal": 481,
+    "name": "Craneren",
+    "aspect": "SKY",
+    "folder": "Craneren"
+  },
+  {
+    "ordinal": 482,
+    "name": "Liftador",
+    "aspect": "SKY",
+    "folder": "Liftador"
+  },
+  {
+    "ordinal": 483,
+    "name": "Cirruru",
+    "aspect": "SKY",
+    "folder": "Cirruru"
+  },
+  {
+    "ordinal": 484,
+    "name": "Pegasusuean",
+    "aspect": "SKY",
+    "folder": "Pegasusuean"
+  },
+  {
+    "ordinal": 485,
+    "name": "Nimthar",
+    "aspect": "SKY",
+    "folder": "Nimthar"
+  },
+  {
+    "ordinal": 486,
+    "name": "Skyeiaan",
+    "aspect": "SKY",
+    "folder": "Skyeiaan"
+  },
+  {
+    "ordinal": 487,
+    "name": "Celestwyr",
+    "aspect": "SKY",
+    "folder": "Celestwyr"
+  },
+  {
+    "ordinal": 488,
+    "name": "Zephyrren",
+    "aspect": "SKY",
+    "folder": "Zephyrren"
+  },
+  {
+    "ordinal": 489,
+    "name": "Volaelt",
+    "aspect": "SKY",
+    "folder": "Volaelt"
+  },
+  {
+    "ordinal": 490,
+    "name": "Liftoryxor",
+    "aspect": "SKY",
+    "folder": "Liftoryxor"
+  },
+  {
+    "ordinal": 491,
+    "name": "Skyyubrand",
+    "aspect": "SKY",
+    "folder": "Skyyubrand"
+  },
+  {
+    "ordinal": 492,
+    "name": "Pegasusith",
+    "aspect": "SKY",
+    "folder": "Pegasusith"
+  },
+  {
+    "ordinal": 493,
+    "name": "Cirrugrim",
+    "aspect": "SKY",
+    "folder": "Cirrugrim"
+  },
+  {
+    "ordinal": 494,
+    "name": "Skyeoan",
+    "aspect": "SKY",
+    "folder": "Skyeoan"
+  },
+  {
+    "ordinal": 495,
+    "name": "Skyyeoss",
+    "aspect": "SKY",
+    "folder": "Skyyeoss"
+  },
+  {
+    "ordinal": 496,
+    "name": "Soareneian",
+    "aspect": "SKY",
+    "folder": "Soareneian"
+  },
+  {
+    "ordinal": 497,
+    "name": "Azurara",
+    "aspect": "SKY",
+    "folder": "Azurara"
+  },
+  {
+    "ordinal": 498,
+    "name": "Clouaxor",
+    "aspect": "SKY",
+    "folder": "Clouaxor"
+  },
+  {
+    "ordinal": 499,
+    "name": "Skyborneian",
+    "aspect": "SKY",
+    "folder": "Skyborneian"
+  },
+  {
+    "ordinal": 500,
+    "name": "Siroccoith",
+    "aspect": "SKY",
+    "folder": "Siroccoith"
+  },
+  {
+    "ordinal": 501,
+    "name": "Marthar",
+    "aspect": "SKY",
+    "folder": "Marthar"
+  },
+  {
+    "ordinal": 502,
+    "name": "Vortauean",
+    "aspect": "SKY",
+    "folder": "Vortauean"
+  },
+  {
+    "ordinal": 503,
+    "name": "Aurorawyr",
+    "aspect": "SKY",
+    "folder": "Aurorawyr"
+  },
+  {
+    "ordinal": 504,
+    "name": "Heronath",
+    "aspect": "SKY",
+    "folder": "Heronath"
+  },
+  {
+    "ordinal": 505,
+    "name": "Craneaiess",
+    "aspect": "SKY",
+    "folder": "Craneaiess"
+  },
+  {
+    "ordinal": 506,
+    "name": "Clouisor",
+    "aspect": "SKY",
+    "folder": "Clouisor"
+  },
+  {
+    "ordinal": 507,
+    "name": "Azuraonn",
+    "aspect": "SKY",
+    "folder": "Azuraonn"
+  },
+  {
+    "ordinal": 508,
+    "name": "Heronynth",
+    "aspect": "SKY",
+    "folder": "Heronynth"
+  },
+  {
+    "ordinal": 509,
+    "name": "Craneudrik",
+    "aspect": "SKY",
+    "folder": "Craneudrik"
+  },
+  {
+    "ordinal": 510,
+    "name": "Vortayuan",
+    "aspect": "SKY",
+    "folder": "Vortayuan"
+  },
+  {
+    "ordinal": 511,
+    "name": "Skybornaoan",
+    "aspect": "SKY",
+    "folder": "Skybornaoan"
+  },
+  {
+    "ordinal": 512,
+    "name": "Australren",
+    "aspect": "SKY",
+    "folder": "Australren"
+  },
+  {
+    "ordinal": 513,
+    "name": "Thundeelt",
+    "aspect": "SKY",
+    "folder": "Thundeelt"
+  },
+  {
+    "ordinal": 514,
+    "name": "Halvtheldor",
+    "aspect": "SKY",
+    "folder": "Halvtheldor"
+  },
+  {
+    "ordinal": 515,
+    "name": "Hwindoth",
+    "aspect": "SKY",
+    "folder": "Hwindoth"
+  },
+  {
+    "ordinal": 516,
+    "name": "Empyrith",
+    "aspect": "SKY",
+    "folder": "Empyrith"
+  },
+  {
+    "ordinal": 517,
+    "name": "Halthar",
+    "aspect": "SKY",
+    "folder": "Halthar"
+  },
+  {
+    "ordinal": 518,
+    "name": "Pluvioan",
+    "aspect": "SKY",
+    "folder": "Pluvioan"
+  },
+  {
+    "ordinal": 519,
+    "name": "Skybornaaan",
+    "aspect": "SKY",
+    "folder": "Skybornaaan"
+  },
+  {
+    "ordinal": 520,
+    "name": "Arcumaror",
+    "aspect": "SKY",
+    "folder": "Arcumaror"
+  },
+  {
+    "ordinal": 521,
+    "name": "Craneyedrik",
+    "aspect": "SKY",
+    "folder": "Craneyedrik"
+  },
+  {
+    "ordinal": 522,
+    "name": "Halvnjaror",
+    "aspect": "SKY",
+    "folder": "Halvnjaror"
+  },
+  {
+    "ordinal": 523,
+    "name": "Hwindyk",
+    "aspect": "SKY",
+    "folder": "Hwindyk"
+  },
+  {
+    "ordinal": 524,
+    "name": "Heronulf",
+    "aspect": "SKY",
+    "folder": "Heronulf"
+  },
+  {
+    "ordinal": 525,
+    "name": "Craneeiek",
+    "aspect": "SKY",
+    "folder": "Craneeiek"
+  },
+  {
+    "ordinal": 526,
+    "name": "Pluvioian",
+    "aspect": "SKY",
+    "folder": "Pluvioian"
+  },
+  {
+    "ordinal": 527,
+    "name": "Heronwyr",
+    "aspect": "SKY",
+    "folder": "Heronwyr"
+  },
+  {
+    "ordinal": 528,
+    "name": "Ventren",
+    "aspect": "SKY",
+    "folder": "Ventren"
+  },
+  {
+    "ordinal": 529,
+    "name": "Aetherelt",
+    "aspect": "SKY",
+    "folder": "Aetherelt"
+  },
+  {
+    "ordinal": 530,
+    "name": "Straumar",
+    "aspect": "SKY",
+    "folder": "Straumar"
+  },
+  {
+    "ordinal": 531,
+    "name": "Wyvernor",
+    "aspect": "SKY",
+    "folder": "Wyvernor"
+  },
+  {
+    "ordinal": 532,
+    "name": "Plumbith",
+    "aspect": "SKY",
+    "folder": "Plumbith"
+  },
+  {
+    "ordinal": 533,
+    "name": "Craneaetheld",
+    "aspect": "SKY",
+    "folder": "Craneaetheld"
+  },
+  {
+    "ordinal": 534,
+    "name": "Pluviaan",
+    "aspect": "SKY",
+    "folder": "Pluviaan"
+  },
+  {
+    "ordinal": 535,
+    "name": "Skybornuan",
+    "aspect": "SKY",
+    "folder": "Skybornuan"
+  },
+  {
+    "ordinal": 536,
+    "name": "Heronloth",
+    "aspect": "SKY",
+    "folder": "Heronloth"
+  },
+  {
+    "ordinal": 537,
+    "name": "Craneaoek",
+    "aspect": "SKY",
+    "folder": "Craneaoek"
+  },
+  {
+    "ordinal": 538,
+    "name": "Strouek",
+    "aspect": "SKY",
+    "folder": "Strouek"
+  },
+  {
+    "ordinal": 539,
+    "name": "Spectreon",
+    "aspect": "SHADOW",
+    "folder": "Spectreon"
+  },
+  {
+    "ordinal": 540,
+    "name": "Necroith",
+    "aspect": "SHADOW",
+    "folder": "Necroith"
+  },
+  {
+    "ordinal": 541,
+    "name": "Blathar",
+    "aspect": "SHADOW",
+    "folder": "Blathar"
+  },
+  {
+    "ordinal": 542,
+    "name": "Umbrauan",
+    "aspect": "SHADOW",
+    "folder": "Umbrauan"
+  },
+  {
+    "ordinal": 543,
+    "name": "Wraithwyr",
+    "aspect": "SHADOW",
+    "folder": "Wraithwyr"
+  },
+  {
+    "ordinal": 544,
+    "name": "Drowren",
+    "aspect": "SHADOW",
+    "folder": "Drowren"
+  },
+  {
+    "ordinal": 545,
+    "name": "Erebusek",
+    "aspect": "SHADOW",
+    "folder": "Erebusek"
+  },
+  {
+    "ordinal": 546,
+    "name": "Kalaaze",
+    "aspect": "SHADOW",
+    "folder": "Kalaaze"
+  },
+  {
+    "ordinal": 547,
+    "name": "Midnightmund",
+    "aspect": "SHADOW",
+    "folder": "Midnightmund"
+  },
+  {
+    "ordinal": 548,
+    "name": "Hexloth",
+    "aspect": "SHADOW",
+    "folder": "Hexloth"
+  },
+  {
+    "ordinal": 549,
+    "name": "Vampiroiric",
+    "aspect": "SHADOW",
+    "folder": "Vampiroiric"
+  },
+  {
+    "ordinal": 550,
+    "name": "Umbrouan",
+    "aspect": "SHADOW",
+    "folder": "Umbrouan"
+  },
+  {
+    "ordinal": 551,
+    "name": "Murmeian",
+    "aspect": "SHADOW",
+    "folder": "Murmeian"
+  },
+  {
+    "ordinal": 552,
+    "name": "Hexwyr",
+    "aspect": "SHADOW",
+    "folder": "Hexwyr"
+  },
+  {
+    "ordinal": 553,
+    "name": "Erebusix",
+    "aspect": "SHADOW",
+    "folder": "Erebusix"
+  },
+  {
+    "ordinal": 554,
+    "name": "Kaleeyth",
+    "aspect": "SHADOW",
+    "folder": "Kaleeyth"
+  },
+  {
+    "ordinal": 555,
+    "name": "Midnightskar",
+    "aspect": "SHADOW",
+    "folder": "Midnightskar"
+  },
+  {
+    "ordinal": 556,
+    "name": "Gloamith",
+    "aspect": "SHADOW",
+    "folder": "Gloamith"
+  },
+  {
+    "ordinal": 557,
+    "name": "Shrthar",
+    "aspect": "SHADOW",
+    "folder": "Shrthar"
+  },
+  {
+    "ordinal": 558,
+    "name": "Achlysuan",
+    "aspect": "SHADOW",
+    "folder": "Achlysuan"
+  },
+  {
+    "ordinal": 559,
+    "name": "Tartarwyr",
+    "aspect": "SHADOW",
+    "folder": "Tartarwyr"
+  },
+  {
+    "ordinal": 560,
+    "name": "Raveleeven",
+    "aspect": "SHADOW",
+    "folder": "Raveleeven"
+  },
+  {
+    "ordinal": 561,
+    "name": "Hektus",
+    "aspect": "SHADOW",
+    "folder": "Hektus"
+  },
+  {
+    "ordinal": 562,
+    "name": "Kalouius",
+    "aspect": "SHADOW",
+    "folder": "Kalouius"
+  },
+  {
+    "ordinal": 563,
+    "name": "Midnightwyr",
+    "aspect": "SHADOW",
+    "folder": "Midnightwyr"
+  },
+  {
+    "ordinal": 564,
+    "name": "Murmauan",
+    "aspect": "SHADOW",
+    "folder": "Murmauan"
+  },
+  {
+    "ordinal": 565,
+    "name": "Vampirith",
+    "aspect": "SHADOW",
+    "folder": "Vampirith"
+  },
+  {
+    "ordinal": 566,
+    "name": "Achlyseean",
+    "aspect": "SHADOW",
+    "folder": "Achlyseean"
+  },
+  {
+    "ordinal": 567,
+    "name": "Murmmaror",
+    "aspect": "SHADOW",
+    "folder": "Murmmaror"
+  },
+  {
+    "ordinal": 568,
+    "name": "Ravelieur",
+    "aspect": "SHADOW",
+    "folder": "Ravelieur"
+  },
+  {
+    "ordinal": 569,
+    "name": "Hektulf",
+    "aspect": "SHADOW",
+    "folder": "Hektulf"
+  },
+  {
+    "ordinal": 570,
+    "name": "Scouaen",
+    "aspect": "SHADOW",
+    "folder": "Scouaen"
+  },
+  {
+    "ordinal": 571,
+    "name": "Grimad",
+    "aspect": "SHADOW",
+    "folder": "Grimad"
+  },
+  {
+    "ordinal": 572,
+    "name": "Phantomith",
+    "aspect": "SHADOW",
+    "folder": "Phantomith"
+  },
+  {
+    "ordinal": 573,
+    "name": "Tenthar",
+    "aspect": "SHADOW",
+    "folder": "Tenthar"
+  },
+  {
+    "ordinal": 574,
+    "name": "Vampiriean",
+    "aspect": "SHADOW",
+    "folder": "Vampiriean"
+  },
+  {
+    "ordinal": 575,
+    "name": "Lythehe",
+    "aspect": "SHADOW",
+    "folder": "Lythehe"
+  },
+  {
+    "ordinal": 576,
+    "name": "Cryptuot",
+    "aspect": "SHADOW",
+    "folder": "Cryptuot"
+  },
+  {
+    "ordinal": 577,
+    "name": "Hektfenn",
+    "aspect": "SHADOW",
+    "folder": "Hektfenn"
+  },
+  {
+    "ordinal": 578,
+    "name": "Scoyeess",
+    "aspect": "SHADOW",
+    "folder": "Scoyeess"
+  },
+  {
+    "ordinal": 579,
+    "name": "Grimath",
+    "aspect": "SHADOW",
+    "folder": "Grimath"
+  },
+  {
+    "ordinal": 580,
+    "name": "Nihieaen",
+    "aspect": "SHADOW",
+    "folder": "Nihieaen"
+  },
+  {
+    "ordinal": 581,
+    "name": "Bansheeith",
+    "aspect": "SHADOW",
+    "folder": "Bansheeith"
+  },
+  {
+    "ordinal": 582,
+    "name": "Vampiryaan",
+    "aspect": "SHADOW",
+    "folder": "Vampiryaan"
+  },
+  {
+    "ordinal": 583,
+    "name": "Murmythor",
+    "aspect": "SHADOW",
+    "folder": "Murmythor"
+  },
+  {
+    "ordinal": 584,
+    "name": "Cryptyeumbr",
+    "aspect": "SHADOW",
+    "folder": "Cryptyeumbr"
+  },
+  {
+    "ordinal": 585,
+    "name": "Vespgar",
+    "aspect": "SHADOW",
+    "folder": "Vespgar"
+  },
+  {
+    "ordinal": 586,
+    "name": "Muriean",
+    "aspect": "SHADOW",
+    "folder": "Muriean"
+  },
+  {
+    "ordinal": 587,
+    "name": "Shadeel",
+    "aspect": "SHADOW",
+    "folder": "Shadeel"
+  },
+  {
+    "ordinal": 588,
+    "name": "Veilith",
+    "aspect": "SHADOW",
+    "folder": "Veilith"
+  },
+  {
+    "ordinal": 589,
+    "name": "Nocthar",
+    "aspect": "SHADOW",
+    "folder": "Nocthar"
+  },
+  {
+    "ordinal": 590,
+    "name": "Bansossor",
+    "aspect": "SHADOW",
+    "folder": "Bansossor"
+  },
+  {
+    "ordinal": 591,
+    "name": "Murmhildor",
+    "aspect": "SHADOW",
+    "folder": "Murmhildor"
+  },
+  {
+    "ordinal": 592,
+    "name": "Crypteoryx",
+    "aspect": "SHADOW",
+    "folder": "Crypteoryx"
+  },
+  {
+    "ordinal": 593,
+    "name": "Vespalt",
+    "aspect": "SHADOW",
+    "folder": "Vespalt"
+  },
+  {
+    "ordinal": 594,
+    "name": "Muryavald",
+    "aspect": "SHADOW",
+    "folder": "Muryavald"
+  },
+  {
+    "ordinal": 595,
+    "name": "Shadearius",
+    "aspect": "SHADOW",
+    "folder": "Shadearius"
+  },
+  {
+    "ordinal": 596,
+    "name": "Obsyaek",
+    "aspect": "SHADOW",
+    "folder": "Obsyaek"
+  },
+  {
+    "ordinal": 597,
+    "name": "Noctwyr",
+    "aspect": "SHADOW",
+    "folder": "Noctwyr"
+  },
+  {
+    "ordinal": 598,
+    "name": "Bansador",
+    "aspect": "SHADOW",
+    "folder": "Bansador"
+  },
+  {
+    "ordinal": 599,
+    "name": "Spectct",
+    "aspect": "SHADOW",
+    "folder": "Spectct"
+  },
+  {
+    "ordinal": 600,
+    "name": "Stygiyaax",
+    "aspect": "SHADOW",
+    "folder": "Stygiyaax"
+  },
+  {
+    "ordinal": 601,
+    "name": "Asphoim",
+    "aspect": "SHADOW",
+    "folder": "Asphoim"
+  },
+  {
+    "ordinal": 602,
+    "name": "Ghoyihild",
+    "aspect": "SHADOW",
+    "folder": "Ghoyihild"
+  },
+  {
+    "ordinal": 603,
+    "name": "Thornynth",
+    "aspect": "SHADOW",
+    "folder": "Thornynth"
+  },
+  {
+    "ordinal": 604,
+    "name": "Asheith",
+    "aspect": "SHADOW",
+    "folder": "Asheith"
+  },
+  {
+    "ordinal": 605,
+    "name": "Melanelt",
+    "aspect": "SHADOW",
+    "folder": "Melanelt"
+  },
+  {
+    "ordinal": 606,
+    "name": "Bansiusor",
+    "aspect": "SHADOW",
+    "folder": "Bansiusor"
+  },
+  {
+    "ordinal": 607,
+    "name": "Murmuror",
+    "aspect": "SHADOW",
+    "folder": "Murmuror"
+  },
+  {
+    "ordinal": 608,
+    "name": "Stygiyiis",
+    "aspect": "SHADOW",
+    "folder": "Stygiyiis"
+  },
+  {
+    "ordinal": 609,
+    "name": "Asphoarius",
+    "aspect": "SHADOW",
+    "folder": "Asphoarius"
+  },
+  {
+    "ordinal": 610,
+    "name": "Ghoebrand",
+    "aspect": "SHADOW",
+    "folder": "Ghoebrand"
+  },
+  {
+    "ordinal": 611,
+    "name": "Thornix",
+    "aspect": "SHADOW",
+    "folder": "Thornix"
+  },
+  {
+    "ordinal": 612,
+    "name": "Kaliisor",
+    "aspect": "SHADOW",
+    "folder": "Kaliisor"
+  },
+  {
+    "ordinal": 613,
+    "name": "Hollowskar",
+    "aspect": "SHADOW",
+    "folder": "Hollowskar"
+  },
+  {
+    "ordinal": 614,
+    "name": "Abysaenor",
+    "aspect": "SHADOW",
+    "folder": "Abysaenor"
+  },
+  {
+    "ordinal": 615,
+    "name": "Smearar",
+    "aspect": "SHADOW",
+    "folder": "Smearar"
+  },
+  {
+    "ordinal": 616,
+    "name": "Kalaedrik",
+    "aspect": "COSMIC",
+    "folder": "Kalaedrik"
+  },
+  {
+    "ordinal": 617,
+    "name": "Centauroth",
+    "aspect": "COSMIC",
+    "folder": "Centauroth"
+  },
+  {
+    "ordinal": 618,
+    "name": "Capooven",
+    "aspect": "COSMIC",
+    "folder": "Capooven"
+  },
+  {
+    "ordinal": 619,
+    "name": "Seraus",
+    "aspect": "COSMIC",
+    "folder": "Seraus"
+  },
+  {
+    "ordinal": 620,
+    "name": "Auraith",
+    "aspect": "COSMIC",
+    "folder": "Auraith"
+  },
+  {
+    "ordinal": 621,
+    "name": "Helixelt",
+    "aspect": "COSMIC",
+    "folder": "Helixelt"
+  },
+  {
+    "ordinal": 622,
+    "name": "Betearor",
+    "aspect": "COSMIC",
+    "folder": "Betearor"
+  },
+  {
+    "ordinal": 623,
+    "name": "Solarar",
+    "aspect": "COSMIC",
+    "folder": "Solarar"
+  },
+  {
+    "ordinal": 624,
+    "name": "Kaloonjar",
+    "aspect": "COSMIC",
+    "folder": "Kaloonjar"
+  },
+  {
+    "ordinal": 625,
+    "name": "Centauryk",
+    "aspect": "COSMIC",
+    "folder": "Centauryk"
+  },
+  {
+    "ordinal": 626,
+    "name": "Capeuur",
+    "aspect": "COSMIC",
+    "folder": "Capeuur"
+  },
+  {
+    "ordinal": 627,
+    "name": "Seraloth",
+    "aspect": "COSMIC",
+    "folder": "Seraloth"
+  },
+  {
+    "ordinal": 628,
+    "name": "Prismren",
+    "aspect": "COSMIC",
+    "folder": "Prismren"
+  },
+  {
+    "ordinal": 629,
+    "name": "Pleiadelt",
+    "aspect": "COSMIC",
+    "folder": "Pleiadelt"
+  },
+  {
+    "ordinal": 630,
+    "name": "Zoditheldor",
+    "aspect": "COSMIC",
+    "folder": "Zoditheldor"
+  },
+  {
+    "ordinal": 631,
+    "name": "Eonon",
+    "aspect": "COSMIC",
+    "folder": "Eonon"
+  },
+  {
+    "ordinal": 632,
+    "name": "Novaeumar",
+    "aspect": "COSMIC",
+    "folder": "Novaeumar"
+  },
+  {
+    "ordinal": 633,
+    "name": "Cygnusor",
+    "aspect": "COSMIC",
+    "folder": "Cygnusor"
+  },
+  {
+    "ordinal": 634,
+    "name": "Capaeoss",
+    "aspect": "COSMIC",
+    "folder": "Capaeoss"
+  },
+  {
+    "ordinal": 635,
+    "name": "Seragrim",
+    "aspect": "COSMIC",
+    "folder": "Seragrim"
+  },
+  {
+    "ordinal": 636,
+    "name": "Cygnusus",
+    "aspect": "COSMIC",
+    "folder": "Cygnusus"
+  },
+  {
+    "ordinal": 637,
+    "name": "Polariren",
+    "aspect": "COSMIC",
+    "folder": "Polariren"
+  },
+  {
+    "ordinal": 638,
+    "name": "Zodivaldor",
+    "aspect": "COSMIC",
+    "folder": "Zodivaldor"
+  },
+  {
+    "ordinal": 639,
+    "name": "Draatheld",
+    "aspect": "COSMIC",
+    "folder": "Draatheld"
+  },
+  {
+    "ordinal": 640,
+    "name": "Novaaeek",
+    "aspect": "COSMIC",
+    "folder": "Novaaeek"
+  },
+  {
+    "ordinal": 641,
+    "name": "Cygnuson",
+    "aspect": "COSMIC",
+    "folder": "Cygnuson"
+  },
+  {
+    "ordinal": 642,
+    "name": "Chyoaad",
+    "aspect": "COSMIC",
+    "folder": "Chyoaad"
+  },
+  {
+    "ordinal": 643,
+    "name": "Halonnwyr",
+    "aspect": "COSMIC",
+    "folder": "Halonnwyr"
+  },
+  {
+    "ordinal": 644,
+    "name": "Stellren",
+    "aspect": "COSMIC",
+    "folder": "Stellren"
+  },
+  {
+    "ordinal": 645,
+    "name": "Cassioelt",
+    "aspect": "COSMIC",
+    "folder": "Cassioelt"
+  },
+  {
+    "ordinal": 646,
+    "name": "Andrhildor",
+    "aspect": "COSMIC",
+    "folder": "Andrhildor"
+  },
+  {
+    "ordinal": 647,
+    "name": "Pulsarar",
+    "aspect": "COSMIC",
+    "folder": "Pulsarar"
+  },
+  {
+    "ordinal": 648,
+    "name": "Astooaaze",
+    "aspect": "COSMIC",
+    "folder": "Astooaaze"
+  },
+  {
+    "ordinal": 649,
+    "name": "Cygnusmund",
+    "aspect": "COSMIC",
+    "folder": "Cygnusmund"
+  },
+  {
+    "ordinal": 650,
+    "name": "Chyeuoryx",
+    "aspect": "COSMIC",
+    "folder": "Chyeuoryx"
+  },
+  {
+    "ordinal": 651,
+    "name": "Drayetheld",
+    "aspect": "COSMIC",
+    "folder": "Drayetheld"
+  },
+  {
+    "ordinal": 652,
+    "name": "Rigelel",
+    "aspect": "COSMIC",
+    "folder": "Rigelel"
+  },
+  {
+    "ordinal": 653,
+    "name": "Pleiadgrim",
+    "aspect": "COSMIC",
+    "folder": "Pleiadgrim"
+  },
+  {
+    "ordinal": 654,
+    "name": "Andrricor",
+    "aspect": "COSMIC",
+    "folder": "Andrricor"
+  },
+  {
+    "ordinal": 655,
+    "name": "Draeiric",
+    "aspect": "COSMIC",
+    "folder": "Draeiric"
+  },
+  {
+    "ordinal": 656,
+    "name": "Astoiyth",
+    "aspect": "COSMIC",
+    "folder": "Astoiyth"
+  },
+  {
+    "ordinal": 657,
+    "name": "Rigelskar",
+    "aspect": "COSMIC",
+    "folder": "Rigelskar"
+  },
+  {
+    "ordinal": 658,
+    "name": "Selenaioan",
+    "aspect": "COSMIC",
+    "folder": "Selenaioan"
+  },
+  {
+    "ordinal": 659,
+    "name": "Plywyr",
+    "aspect": "COSMIC",
+    "folder": "Plywyr"
+  },
+  {
+    "ordinal": 660,
+    "name": "Velaren",
+    "aspect": "COSMIC",
+    "folder": "Velaren"
+  },
+  {
+    "ordinal": 661,
+    "name": "Spicaelt",
+    "aspect": "COSMIC",
+    "folder": "Spicaelt"
+  },
+  {
+    "ordinal": 662,
+    "name": "Aethazeor",
+    "aspect": "COSMIC",
+    "folder": "Aethazeor"
+  },
+  {
+    "ordinal": 663,
+    "name": "Draaetheld",
+    "aspect": "COSMIC",
+    "folder": "Draaetheld"
+  },
+  {
+    "ordinal": 664,
+    "name": "Astoioius",
+    "aspect": "COSMIC",
+    "folder": "Astoioius"
+  },
+  {
+    "ordinal": 665,
+    "name": "Rigelwyr",
+    "aspect": "COSMIC",
+    "folder": "Rigelwyr"
+  },
+  {
+    "ordinal": 666,
+    "name": "Selenaaaan",
+    "aspect": "COSMIC",
+    "folder": "Selenaaaan"
+  },
+  {
+    "ordinal": 667,
+    "name": "Draaoric",
+    "aspect": "COSMIC",
+    "folder": "Draaoric"
+  },
+  {
+    "ordinal": 668,
+    "name": "Dracythor",
+    "aspect": "COSMIC",
+    "folder": "Dracythor"
+  },
+  {
+    "ordinal": 669,
+    "name": "Plyynth",
+    "aspect": "COSMIC",
+    "folder": "Plyynth"
+  },
+  {
+    "ordinal": 670,
+    "name": "Aethuror",
+    "aspect": "COSMIC",
+    "folder": "Aethuror"
+  },
+  {
+    "ordinal": 671,
+    "name": "Etherer",
+    "aspect": "COSMIC",
+    "folder": "Etherer"
+  },
+  {
+    "ordinal": 672,
+    "name": "Perseaaaen",
+    "aspect": "COSMIC",
+    "folder": "Perseaaaen"
+  },
+  {
+    "ordinal": 673,
+    "name": "Arcthar",
+    "aspect": "COSMIC",
+    "folder": "Arcthar"
+  },
+  {
+    "ordinal": 674,
+    "name": "Gemyian",
+    "aspect": "COSMIC",
+    "folder": "Gemyian"
+  },
+  {
+    "ordinal": 675,
+    "name": "Lumewyr",
+    "aspect": "COSMIC",
+    "folder": "Lumewyr"
+  },
+  {
+    "ordinal": 676,
+    "name": "Ursidaren",
+    "aspect": "COSMIC",
+    "folder": "Ursidaren"
+  },
+  {
+    "ordinal": 677,
+    "name": "Altairelt",
+    "aspect": "COSMIC",
+    "folder": "Altairelt"
+  },
+  {
+    "ordinal": 678,
+    "name": "Aethotor",
+    "aspect": "COSMIC",
+    "folder": "Aethotor"
+  },
+  {
+    "ordinal": 679,
+    "name": "Draoiric",
+    "aspect": "COSMIC",
+    "folder": "Draoiric"
+  },
+  {
+    "ordinal": 680,
+    "name": "Perseaiess",
+    "aspect": "COSMIC",
+    "folder": "Perseaiess"
+  },
+  {
+    "ordinal": 681,
+    "name": "Rigelath",
+    "aspect": "COSMIC",
+    "folder": "Rigelath"
+  },
+  {
+    "ordinal": 682,
+    "name": "Gemyeian",
+    "aspect": "COSMIC",
+    "folder": "Gemyeian"
+  },
+  {
+    "ordinal": 683,
+    "name": "Drayaot",
+    "aspect": "COSMIC",
+    "folder": "Drayaot"
+  },
+  {
+    "ordinal": 684,
+    "name": "Kalean",
+    "aspect": "COSMIC",
+    "folder": "Kalean"
+  },
+  {
+    "ordinal": 685,
+    "name": "Constelel",
+    "aspect": "COSMIC",
+    "folder": "Constelel"
+  },
+  {
+    "ordinal": 686,
+    "name": "Maguumbror",
+    "aspect": "COSMIC",
+    "folder": "Maguumbror"
+  },
+  {
+    "ordinal": 687,
+    "name": "Vororo",
+    "aspect": "COSMIC",
+    "folder": "Vororo"
+  },
+  {
+    "ordinal": 688,
+    "name": "Ophiusith",
+    "aspect": "COSMIC",
+    "folder": "Ophiusith"
+  },
+  {
+    "ordinal": 689,
+    "name": "Conthar",
+    "aspect": "COSMIC",
+    "folder": "Conthar"
+  },
+  {
+    "ordinal": 690,
+    "name": "Lyricaoan",
+    "aspect": "COSMIC",
+    "folder": "Lyricaoan"
+  },
+  {
+    "ordinal": 691,
+    "name": "Quaswyr",
+    "aspect": "COSMIC",
+    "folder": "Quaswyr"
+  },
+  {
+    "ordinal": 692,
+    "name": "Ophiisor",
+    "aspect": "COSMIC",
+    "folder": "Ophiisor"
+  },
+  {
+    "ordinal": 693,
+    "name": "Ferreuselt",
+    "aspect": "METAL",
+    "folder": "Ferreuselt"
+  },
+  {
+    "ordinal": 694,
+    "name": "Nickoryxor",
+    "aspect": "METAL",
+    "folder": "Nickoryxor"
+  },
+  {
+    "ordinal": 695,
+    "name": "Riveve",
+    "aspect": "METAL",
+    "folder": "Riveve"
+  },
+  {
+    "ordinal": 696,
+    "name": "Silverith",
+    "aspect": "METAL",
+    "folder": "Silverith"
+  },
+  {
+    "ordinal": 697,
+    "name": "Mecthar",
+    "aspect": "METAL",
+    "folder": "Mecthar"
+  },
+  {
+    "ordinal": 698,
+    "name": "Bronaian",
+    "aspect": "METAL",
+    "folder": "Bronaian"
+  },
+  {
+    "ordinal": 699,
+    "name": "Cuprwyr",
+    "aspect": "METAL",
+    "folder": "Cuprwyr"
+  },
+  {
+    "ordinal": 700,
+    "name": "Leadren",
+    "aspect": "METAL",
+    "folder": "Leadren"
+  },
+  {
+    "ordinal": 701,
+    "name": "Volkelt",
+    "aspect": "METAL",
+    "folder": "Volkelt"
+  },
+  {
+    "ordinal": 702,
+    "name": "Adamaxor",
+    "aspect": "METAL",
+    "folder": "Adamaxor"
+  },
+  {
+    "ordinal": 703,
+    "name": "Aurur",
+    "aspect": "METAL",
+    "folder": "Aurur"
+  },
+  {
+    "ordinal": 704,
+    "name": "Zincith",
+    "aspect": "METAL",
+    "folder": "Zincith"
+  },
+  {
+    "ordinal": 705,
+    "name": "Slathar",
+    "aspect": "METAL",
+    "folder": "Slathar"
+  },
+  {
+    "ordinal": 706,
+    "name": "Tungiaan",
+    "aspect": "METAL",
+    "folder": "Tungiaan"
+  },
+  {
+    "ordinal": 707,
+    "name": "Leadioan",
+    "aspect": "METAL",
+    "folder": "Leadioan"
+  },
+  {
+    "ordinal": 708,
+    "name": "Titaniek",
+    "aspect": "METAL",
+    "folder": "Titaniek"
+  },
+  {
+    "ordinal": 709,
+    "name": "Zincyahild",
+    "aspect": "METAL",
+    "folder": "Zincyahild"
+  },
+  {
+    "ordinal": 710,
+    "name": "Adamisor",
+    "aspect": "METAL",
+    "folder": "Adamisor"
+  },
+  {
+    "ordinal": 711,
+    "name": "Aurarius",
+    "aspect": "METAL",
+    "folder": "Aurarius"
+  },
+  {
+    "ordinal": 712,
+    "name": "Titaniskar",
+    "aspect": "METAL",
+    "folder": "Titaniskar"
+  },
+  {
+    "ordinal": 713,
+    "name": "Zincaiur",
+    "aspect": "METAL",
+    "folder": "Zincaiur"
+  },
+  {
+    "ordinal": 714,
+    "name": "Tungoan",
+    "aspect": "METAL",
+    "folder": "Tungoan"
+  },
+  {
+    "ordinal": 715,
+    "name": "Platewyr",
+    "aspect": "METAL",
+    "folder": "Platewyr"
+  },
+  {
+    "ordinal": 716,
+    "name": "Platinren",
+    "aspect": "METAL",
+    "folder": "Platinren"
+  },
+  {
+    "ordinal": 717,
+    "name": "Coldelt",
+    "aspect": "METAL",
+    "folder": "Coldelt"
+  },
+  {
+    "ordinal": 718,
+    "name": "Irondrikor",
+    "aspect": "METAL",
+    "folder": "Irondrikor"
+  },
+  {
+    "ordinal": 719,
+    "name": "Spikeoth",
+    "aspect": "METAL",
+    "folder": "Spikeoth"
+  },
+  {
+    "ordinal": 720,
+    "name": "Galliumith",
+    "aspect": "METAL",
+    "folder": "Galliumith"
+  },
+  {
+    "ordinal": 721,
+    "name": "Zinceudrik",
+    "aspect": "METAL",
+    "folder": "Zinceudrik"
+  },
+  {
+    "ordinal": 722,
+    "name": "Tunguean",
+    "aspect": "METAL",
+    "folder": "Tunguean"
+  },
+  {
+    "ordinal": 723,
+    "name": "Platiniean",
+    "aspect": "METAL",
+    "folder": "Platiniean"
+  },
+  {
+    "ordinal": 724,
+    "name": "Titaniulf",
+    "aspect": "METAL",
+    "folder": "Titaniulf"
+  },
+  {
+    "ordinal": 725,
+    "name": "Zinciaur",
+    "aspect": "METAL",
+    "folder": "Zinciaur"
+  },
+  {
+    "ordinal": 726,
+    "name": "Iroonjar",
+    "aspect": "METAL",
+    "folder": "Iroonjar"
+  },
+  {
+    "ordinal": 727,
+    "name": "Spikeyk",
+    "aspect": "METAL",
+    "folder": "Spikeyk"
+  },
+  {
+    "ordinal": 728,
+    "name": "Titaniath",
+    "aspect": "METAL",
+    "folder": "Titaniath"
+  },
+  {
+    "ordinal": 729,
+    "name": "Damthar",
+    "aspect": "METAL",
+    "folder": "Damthar"
+  },
+  {
+    "ordinal": 730,
+    "name": "Betoyuan",
+    "aspect": "METAL",
+    "folder": "Betoyuan"
+  },
+  {
+    "ordinal": 731,
+    "name": "Crystalwyr",
+    "aspect": "METAL",
+    "folder": "Crystalwyr"
+  },
+  {
+    "ordinal": 732,
+    "name": "Aurumren",
+    "aspect": "METAL",
+    "folder": "Aurumren"
+  },
+  {
+    "ordinal": 733,
+    "name": "Stahlelt",
+    "aspect": "METAL",
+    "folder": "Stahlelt"
+  },
+  {
+    "ordinal": 734,
+    "name": "Foroimar",
+    "aspect": "METAL",
+    "folder": "Foroimar"
+  },
+  {
+    "ordinal": 735,
+    "name": "Goldor",
+    "aspect": "METAL",
+    "folder": "Goldor"
+  },
+  {
+    "ordinal": 736,
+    "name": "Betoaror",
+    "aspect": "METAL",
+    "folder": "Betoaror"
+  },
+  {
+    "ordinal": 737,
+    "name": "Zincauek",
+    "aspect": "METAL",
+    "folder": "Zincauek"
+  },
+  {
+    "ordinal": 738,
+    "name": "Betoauan",
+    "aspect": "METAL",
+    "folder": "Betoauan"
+  },
+  {
+    "ordinal": 739,
+    "name": "Platinaian",
+    "aspect": "METAL",
+    "folder": "Platinaian"
+  },
+  {
+    "ordinal": 740,
+    "name": "Titanialt",
+    "aspect": "METAL",
+    "folder": "Titanialt"
+  },
+  {
+    "ordinal": 741,
+    "name": "Stahlarl",
+    "aspect": "METAL",
+    "folder": "Stahlarl"
+  },
+  {
+    "ordinal": 742,
+    "name": "Foryuek",
+    "aspect": "METAL",
+    "folder": "Foryuek"
+  },
+  {
+    "ordinal": 743,
+    "name": "Goldloth",
+    "aspect": "METAL",
+    "folder": "Goldloth"
+  },
+  {
+    "ordinal": 744,
+    "name": "Chalcumith",
+    "aspect": "METAL",
+    "folder": "Chalcumith"
+  },
+  {
+    "ordinal": 745,
+    "name": "Zincaotheld",
+    "aspect": "METAL",
+    "folder": "Zincaotheld"
+  },
+  {
+    "ordinal": 746,
+    "name": "Plumboian",
+    "aspect": "METAL",
+    "folder": "Plumboian"
+  },
+  {
+    "ordinal": 747,
+    "name": "Tinwyr",
+    "aspect": "METAL",
+    "folder": "Tinwyr"
+  },
+  {
+    "ordinal": 748,
+    "name": "Boltren",
+    "aspect": "METAL",
+    "folder": "Boltren"
+  },
+  {
+    "ordinal": 749,
+    "name": "Anvilek",
+    "aspect": "METAL",
+    "folder": "Anvilek"
+  },
+  {
+    "ordinal": 750,
+    "name": "Forauoss",
+    "aspect": "METAL",
+    "folder": "Forauoss"
+  },
+  {
+    "ordinal": 751,
+    "name": "Goldmund",
+    "aspect": "METAL",
+    "folder": "Goldmund"
+  },
+  {
+    "ordinal": 752,
+    "name": "Krugaaan",
+    "aspect": "METAL",
+    "folder": "Krugaaan"
+  },
+  {
+    "ordinal": 753,
+    "name": "Zincoaoryx",
+    "aspect": "METAL",
+    "folder": "Zincoaoryx"
+  },
+  {
+    "ordinal": 754,
+    "name": "Plumbaan",
+    "aspect": "METAL",
+    "folder": "Plumbaan"
+  },
+  {
+    "ordinal": 755,
+    "name": "Platinyean",
+    "aspect": "METAL",
+    "folder": "Platinyean"
+  },
+  {
+    "ordinal": 756,
+    "name": "Boltauric",
+    "aspect": "METAL",
+    "folder": "Boltauric"
+  },
+  {
+    "ordinal": 757,
+    "name": "Anvilon",
+    "aspect": "METAL",
+    "folder": "Anvilon"
+  },
+  {
+    "ordinal": 758,
+    "name": "Argouyth",
+    "aspect": "METAL",
+    "folder": "Argouyth"
+  },
+  {
+    "ordinal": 759,
+    "name": "Mercurskar",
+    "aspect": "METAL",
+    "folder": "Mercurskar"
+  },
+  {
+    "ordinal": 760,
+    "name": "Krugith",
+    "aspect": "METAL",
+    "folder": "Krugith"
+  },
+  {
+    "ordinal": 761,
+    "name": "Mitthar",
+    "aspect": "METAL",
+    "folder": "Mitthar"
+  },
+  {
+    "ordinal": 762,
+    "name": "Ferrauan",
+    "aspect": "METAL",
+    "folder": "Ferrauan"
+  },
+  {
+    "ordinal": 763,
+    "name": "Titaniwyr",
+    "aspect": "METAL",
+    "folder": "Titaniwyr"
+  },
+  {
+    "ordinal": 764,
+    "name": "Cinderouaze",
+    "aspect": "METAL",
+    "folder": "Cinderouaze"
+  },
+  {
+    "ordinal": 765,
+    "name": "Anvilus",
+    "aspect": "METAL",
+    "folder": "Anvilus"
+  },
+  {
+    "ordinal": 766,
+    "name": "Argaius",
+    "aspect": "METAL",
+    "folder": "Argaius"
+  },
+  {
+    "ordinal": 767,
+    "name": "Mercurwyr",
+    "aspect": "METAL",
+    "folder": "Mercurwyr"
+  },
+  {
+    "ordinal": 768,
+    "name": "Alluedrik",
+    "aspect": "METAL",
+    "folder": "Alluedrik"
+  },
+  {
+    "ordinal": 769,
+    "name": "Stahlwyr",
+    "aspect": "METAL",
+    "folder": "Stahlwyr"
+  },
+  {
+    "ordinal": 770,
+    "name": "Valaouan",
+    "aspect": "HEROIC",
+    "folder": "Valaouan"
+  },
+  {
+    "ordinal": 771,
+    "name": "Valenciaia",
+    "aspect": "HEROIC",
+    "folder": "Valenciaia"
+  },
+  {
+    "ordinal": 772,
+    "name": "Olymaur",
+    "aspect": "HEROIC",
+    "folder": "Olymaur"
+  },
+  {
+    "ordinal": 773,
+    "name": "Cavaliulf",
+    "aspect": "HEROIC",
+    "folder": "Cavaliulf"
+  },
+  {
+    "ordinal": 774,
+    "name": "Elyeeaen",
+    "aspect": "HEROIC",
+    "folder": "Elyeeaen"
+  },
+  {
+    "ordinal": 775,
+    "name": "Rolandek",
+    "aspect": "HEROIC",
+    "folder": "Rolandek"
+  },
+  {
+    "ordinal": 776,
+    "name": "Bannith",
+    "aspect": "HEROIC",
+    "folder": "Bannith"
+  },
+  {
+    "ordinal": 777,
+    "name": "Regthar",
+    "aspect": "HEROIC",
+    "folder": "Regthar"
+  },
+  {
+    "ordinal": 778,
+    "name": "Majestuan",
+    "aspect": "HEROIC",
+    "folder": "Majestuan"
+  },
+  {
+    "ordinal": 779,
+    "name": "Sevemaror",
+    "aspect": "HEROIC",
+    "folder": "Sevemaror"
+  },
+  {
+    "ordinal": 780,
+    "name": "Olymeeot",
+    "aspect": "HEROIC",
+    "folder": "Olymeeot"
+  },
+  {
+    "ordinal": 781,
+    "name": "Cavalifenn",
+    "aspect": "HEROIC",
+    "folder": "Cavalifenn"
+  },
+  {
+    "ordinal": 782,
+    "name": "Elyiear",
+    "aspect": "HEROIC",
+    "folder": "Elyiear"
+  },
+  {
+    "ordinal": 783,
+    "name": "Rolandath",
+    "aspect": "HEROIC",
+    "folder": "Rolandath"
+  },
+  {
+    "ordinal": 784,
+    "name": "Valenciawyr",
+    "aspect": "HEROIC",
+    "folder": "Valenciawyr"
+  },
+  {
+    "ordinal": 785,
+    "name": "Gardianith",
+    "aspect": "HEROIC",
+    "folder": "Gardianith"
+  },
+  {
+    "ordinal": 786,
+    "name": "Majeekor",
+    "aspect": "HEROIC",
+    "folder": "Majeekor"
+  },
+  {
+    "ordinal": 787,
+    "name": "Lancece",
+    "aspect": "HEROIC",
+    "folder": "Lancece"
+  },
+  {
+    "ordinal": 788,
+    "name": "Royalieumbr",
+    "aspect": "HEROIC",
+    "folder": "Royalieumbr"
+  },
+  {
+    "ordinal": 789,
+    "name": "Triumfad",
+    "aspect": "HEROIC",
+    "folder": "Triumfad"
+  },
+  {
+    "ordinal": 790,
+    "name": "Oatuan",
+    "aspect": "HEROIC",
+    "folder": "Oatuan"
+  },
+  {
+    "ordinal": 791,
+    "name": "Arthurel",
+    "aspect": "HEROIC",
+    "folder": "Arthurel"
+  },
+  {
+    "ordinal": 792,
+    "name": "Theodith",
+    "aspect": "HEROIC",
+    "folder": "Theodith"
+  },
+  {
+    "ordinal": 793,
+    "name": "Maethar",
+    "aspect": "HEROIC",
+    "folder": "Maethar"
+  },
+  {
+    "ordinal": 794,
+    "name": "Majeossor",
+    "aspect": "HEROIC",
+    "folder": "Majeossor"
+  },
+  {
+    "ordinal": 795,
+    "name": "Seveythor",
+    "aspect": "HEROIC",
+    "folder": "Seveythor"
+  },
+  {
+    "ordinal": 796,
+    "name": "Royaluess",
+    "aspect": "HEROIC",
+    "folder": "Royaluess"
+  },
+  {
+    "ordinal": 797,
+    "name": "Triumfalt",
+    "aspect": "HEROIC",
+    "folder": "Triumfalt"
+  },
+  {
+    "ordinal": 798,
+    "name": "Oatyevald",
+    "aspect": "HEROIC",
+    "folder": "Oatyevald"
+  },
+  {
+    "ordinal": 799,
+    "name": "Arthurarl",
+    "aspect": "HEROIC",
+    "folder": "Arthurarl"
+  },
+  {
+    "ordinal": 800,
+    "name": "Baldricor",
+    "aspect": "HEROIC",
+    "folder": "Baldricor"
+  },
+  {
+    "ordinal": 801,
+    "name": "Maerim",
+    "aspect": "HEROIC",
+    "folder": "Maerim"
+  },
+  {
+    "ordinal": 802,
+    "name": "Lyonador",
+    "aspect": "HEROIC",
+    "folder": "Lyonador"
+  },
+  {
+    "ordinal": 803,
+    "name": "Edgarar",
+    "aspect": "HEROIC",
+    "folder": "Edgarar"
+  },
+  {
+    "ordinal": 804,
+    "name": "Hyperiyeax",
+    "aspect": "HEROIC",
+    "folder": "Hyperiyeax"
+  },
+  {
+    "ordinal": 805,
+    "name": "Vailim",
+    "aspect": "HEROIC",
+    "folder": "Vailim"
+  },
+  {
+    "ordinal": 806,
+    "name": "Chaiehild",
+    "aspect": "HEROIC",
+    "folder": "Chaiehild"
+  },
+  {
+    "ordinal": 807,
+    "name": "Halvynth",
+    "aspect": "HEROIC",
+    "folder": "Halvynth"
+  },
+  {
+    "ordinal": 808,
+    "name": "Theodyaan",
+    "aspect": "HEROIC",
+    "folder": "Theodyaan"
+  },
+  {
+    "ordinal": 809,
+    "name": "Maerelt",
+    "aspect": "HEROIC",
+    "folder": "Maerelt"
+  },
+  {
+    "ordinal": 810,
+    "name": "Lyonoryxor",
+    "aspect": "HEROIC",
+    "folder": "Lyonoryxor"
+  },
+  {
+    "ordinal": 811,
+    "name": "Seveessor",
+    "aspect": "HEROIC",
+    "folder": "Seveessor"
+  },
+  {
+    "ordinal": 812,
+    "name": "Hyperieis",
+    "aspect": "HEROIC",
+    "folder": "Hyperieis"
+  },
+  {
+    "ordinal": 813,
+    "name": "Vailarius",
+    "aspect": "HEROIC",
+    "folder": "Vailarius"
+  },
+  {
+    "ordinal": 814,
+    "name": "Chayabrand",
+    "aspect": "HEROIC",
+    "folder": "Chayabrand"
+  },
+  {
+    "ordinal": 815,
+    "name": "Halvix",
+    "aspect": "HEROIC",
+    "folder": "Halvix"
+  },
+  {
+    "ordinal": 816,
+    "name": "Andreith",
+    "aspect": "HEROIC",
+    "folder": "Andreith"
+  },
+  {
+    "ordinal": 817,
+    "name": "Palaelt",
+    "aspect": "HEROIC",
+    "folder": "Palaelt"
+  },
+  {
+    "ordinal": 818,
+    "name": "Gardaenor",
+    "aspect": "HEROIC",
+    "folder": "Gardaenor"
+  },
+  {
+    "ordinal": 819,
+    "name": "Sunstst",
+    "aspect": "HEROIC",
+    "folder": "Sunstst"
+  },
+  {
+    "ordinal": 820,
+    "name": "Aetheryadrik",
+    "aspect": "HEROIC",
+    "folder": "Aetheryadrik"
+  },
+  {
+    "ordinal": 821,
+    "name": "Oressynth",
+    "aspect": "HEROIC",
+    "folder": "Oressynth"
+  },
+  {
+    "ordinal": 822,
+    "name": "Sevyiven",
+    "aspect": "HEROIC",
+    "folder": "Sevyiven"
+  },
+  {
+    "ordinal": 823,
+    "name": "Halvus",
+    "aspect": "HEROIC",
+    "folder": "Halvus"
+  },
+  {
+    "ordinal": 824,
+    "name": "Andreren",
+    "aspect": "HEROIC",
+    "folder": "Andreren"
+  },
+  {
+    "ordinal": 825,
+    "name": "Gardianren",
+    "aspect": "HEROIC",
+    "folder": "Gardianren"
+  },
+  {
+    "ordinal": 826,
+    "name": "Gardaror",
+    "aspect": "HEROIC",
+    "folder": "Gardaror"
+  },
+  {
+    "ordinal": 827,
+    "name": "Sevoudrik",
+    "aspect": "HEROIC",
+    "folder": "Sevoudrik"
+  },
+  {
+    "ordinal": 828,
+    "name": "Aetheryibrand",
+    "aspect": "HEROIC",
+    "folder": "Aetheryibrand"
+  },
+  {
+    "ordinal": 829,
+    "name": "Oressyk",
+    "aspect": "HEROIC",
+    "folder": "Oressyk"
+  },
+  {
+    "ordinal": 830,
+    "name": "Seveur",
+    "aspect": "HEROIC",
+    "folder": "Seveur"
+  },
+  {
+    "ordinal": 831,
+    "name": "Kriosulf",
+    "aspect": "HEROIC",
+    "folder": "Kriosulf"
+  },
+  {
+    "ordinal": 832,
+    "name": "Knighren",
+    "aspect": "HEROIC",
+    "folder": "Knighren"
+  },
+  {
+    "ordinal": 833,
+    "name": "Gloryelt",
+    "aspect": "HEROIC",
+    "folder": "Gloryelt"
+  },
+  {
+    "ordinal": 834,
+    "name": "Baldtheldor",
+    "aspect": "HEROIC",
+    "folder": "Baldtheldor"
+  },
+  {
+    "ordinal": 835,
+    "name": "Crownene",
+    "aspect": "HEROIC",
+    "folder": "Crownene"
+  },
+  {
+    "ordinal": 836,
+    "name": "Krisaemar",
+    "aspect": "HEROIC",
+    "folder": "Krisaemar"
+  },
+  {
+    "ordinal": 837,
+    "name": "Oressor",
+    "aspect": "HEROIC",
+    "folder": "Oressor"
+  },
+  {
+    "ordinal": 838,
+    "name": "Sevooot",
+    "aspect": "HEROIC",
+    "folder": "Sevooot"
+  },
+  {
+    "ordinal": 839,
+    "name": "Krioswyr",
+    "aspect": "HEROIC",
+    "folder": "Krioswyr"
+  },
+  {
+    "ordinal": 840,
+    "name": "Aegivenor",
+    "aspect": "HEROIC",
+    "folder": "Aegivenor"
+  },
+  {
+    "ordinal": 841,
+    "name": "Edgaronn",
+    "aspect": "HEROIC",
+    "folder": "Edgaronn"
+  },
+  {
+    "ordinal": 842,
+    "name": "Baldnjaror",
+    "aspect": "HEROIC",
+    "folder": "Baldnjaror"
+  },
+  {
+    "ordinal": 843,
+    "name": "Seviek",
+    "aspect": "HEROIC",
+    "folder": "Seviek"
+  },
+  {
+    "ordinal": 844,
+    "name": "Krisooek",
+    "aspect": "HEROIC",
+    "folder": "Krisooek"
+  },
+  {
+    "ordinal": 845,
+    "name": "Crownloth",
+    "aspect": "HEROIC",
+    "folder": "Crownloth"
+  },
+  {
+    "ordinal": 846,
+    "name": "Galeuad",
+    "aspect": "HEROIC",
+    "folder": "Galeuad"
+  },
+  {
+    "ordinal": 847,
+    "name": "Putriwyr",
+    "aspect": "VENOM",
+    "folder": "Putriwyr"
+  },
+  {
+    "ordinal": 848,
+    "name": "Aspiren",
+    "aspect": "VENOM",
+    "folder": "Aspiren"
+  },
+  {
+    "ordinal": 849,
+    "name": "Wormelt",
+    "aspect": "VENOM",
+    "folder": "Wormelt"
+  },
+  {
+    "ordinal": 850,
+    "name": "Cobrhildor",
+    "aspect": "VENOM",
+    "folder": "Cobrhildor"
+  },
+  {
+    "ordinal": 851,
+    "name": "Adderer",
+    "aspect": "VENOM",
+    "folder": "Adderer"
+  },
+  {
+    "ordinal": 852,
+    "name": "Chymeeuoss",
+    "aspect": "VENOM",
+    "folder": "Chymeeuoss"
+  },
+  {
+    "ordinal": 853,
+    "name": "Scorpmund",
+    "aspect": "VENOM",
+    "folder": "Scorpmund"
+  },
+  {
+    "ordinal": 854,
+    "name": "Rattleaean",
+    "aspect": "VENOM",
+    "folder": "Rattleaean"
+  },
+  {
+    "ordinal": 855,
+    "name": "Kiniaek",
+    "aspect": "VENOM",
+    "folder": "Kiniaek"
+  },
+  {
+    "ordinal": 856,
+    "name": "Gabonon",
+    "aspect": "VENOM",
+    "folder": "Gabonon"
+  },
+  {
+    "ordinal": 857,
+    "name": "Mocassren",
+    "aspect": "VENOM",
+    "folder": "Mocassren"
+  },
+  {
+    "ordinal": 858,
+    "name": "Cobrricor",
+    "aspect": "VENOM",
+    "folder": "Cobrricor"
+  },
+  {
+    "ordinal": 859,
+    "name": "Kineeoryx",
+    "aspect": "VENOM",
+    "folder": "Kineeoryx"
+  },
+  {
+    "ordinal": 860,
+    "name": "Murinioyth",
+    "aspect": "VENOM",
+    "folder": "Murinioyth"
+  },
+  {
+    "ordinal": 861,
+    "name": "Reekskar",
+    "aspect": "VENOM",
+    "folder": "Reekskar"
+  },
+  {
+    "ordinal": 862,
+    "name": "Wicknoaan",
+    "aspect": "VENOM",
+    "folder": "Wicknoaan"
+  },
+  {
+    "ordinal": 863,
+    "name": "Pythwyr",
+    "aspect": "VENOM",
+    "folder": "Pythwyr"
+  },
+  {
+    "ordinal": 864,
+    "name": "Fangren",
+    "aspect": "VENOM",
+    "folder": "Fangren"
+  },
+  {
+    "ordinal": 865,
+    "name": "Cyanielt",
+    "aspect": "VENOM",
+    "folder": "Cyanielt"
+  },
+  {
+    "ordinal": 866,
+    "name": "Cobrazeor",
+    "aspect": "VENOM",
+    "folder": "Cobrazeor"
+  },
+  {
+    "ordinal": 867,
+    "name": "Kinauek",
+    "aspect": "VENOM",
+    "folder": "Kinauek"
+  },
+  {
+    "ordinal": 868,
+    "name": "Murinoaius",
+    "aspect": "VENOM",
+    "folder": "Murinoaius"
+  },
+  {
+    "ordinal": 869,
+    "name": "Reethar",
+    "aspect": "VENOM",
+    "folder": "Reethar"
+  },
+  {
+    "ordinal": 870,
+    "name": "Wicknian",
+    "aspect": "VENOM",
+    "folder": "Wicknian"
+  },
+  {
+    "ordinal": 871,
+    "name": "Kineius",
+    "aspect": "VENOM",
+    "folder": "Kineius"
+  },
+  {
+    "ordinal": 872,
+    "name": "Centipoian",
+    "aspect": "VENOM",
+    "folder": "Centipoian"
+  },
+  {
+    "ordinal": 873,
+    "name": "Pythth",
+    "aspect": "VENOM",
+    "folder": "Pythth"
+  },
+  {
+    "ordinal": 874,
+    "name": "Ophiythor",
+    "aspect": "VENOM",
+    "folder": "Ophiythor"
+  },
+  {
+    "ordinal": 875,
+    "name": "Wyrmrm",
+    "aspect": "VENOM",
+    "folder": "Wyrmrm"
+  },
+  {
+    "ordinal": 876,
+    "name": "Toxiaen",
+    "aspect": "VENOM",
+    "folder": "Toxiaen"
+  },
+  {
+    "ordinal": 877,
+    "name": "Gabthar",
+    "aspect": "VENOM",
+    "folder": "Gabthar"
+  },
+  {
+    "ordinal": 878,
+    "name": "Slugioan",
+    "aspect": "VENOM",
+    "folder": "Slugioan"
+  },
+  {
+    "ordinal": 879,
+    "name": "Bitterwyr",
+    "aspect": "VENOM",
+    "folder": "Bitterwyr"
+  },
+  {
+    "ordinal": 880,
+    "name": "Tarantren",
+    "aspect": "VENOM",
+    "folder": "Tarantren"
+  },
+  {
+    "ordinal": 881,
+    "name": "Amaroqwyr",
+    "aspect": "VENOM",
+    "folder": "Amaroqwyr"
+  },
+  {
+    "ordinal": 882,
+    "name": "Ophiotor",
+    "aspect": "VENOM",
+    "folder": "Ophiotor"
+  },
+  {
+    "ordinal": 883,
+    "name": "Kinoaius",
+    "aspect": "VENOM",
+    "folder": "Kinoaius"
+  },
+  {
+    "ordinal": 884,
+    "name": "Toxioar",
+    "aspect": "VENOM",
+    "folder": "Toxioar"
+  },
+  {
+    "ordinal": 885,
+    "name": "Reekath",
+    "aspect": "VENOM",
+    "folder": "Reekath"
+  },
+  {
+    "ordinal": 886,
+    "name": "Slugaaan",
+    "aspect": "VENOM",
+    "folder": "Slugaaan"
+  },
+  {
+    "ordinal": 887,
+    "name": "Kinuean",
+    "aspect": "VENOM",
+    "folder": "Kinuean"
+  },
+  {
+    "ordinal": 888,
+    "name": "Stinguan",
+    "aspect": "VENOM",
+    "folder": "Stinguan"
+  },
+  {
+    "ordinal": 889,
+    "name": "Taipanelt",
+    "aspect": "VENOM",
+    "folder": "Taipanelt"
+  },
+  {
+    "ordinal": 890,
+    "name": "Bogumbror",
+    "aspect": "VENOM",
+    "folder": "Bogumbror"
+  },
+  {
+    "ordinal": 891,
+    "name": "Slimim",
+    "aspect": "VENOM",
+    "folder": "Slimim"
+  },
+  {
+    "ordinal": 892,
+    "name": "Leechith",
+    "aspect": "VENOM",
+    "folder": "Leechith"
+  },
+  {
+    "ordinal": 893,
+    "name": "Copthar",
+    "aspect": "VENOM",
+    "folder": "Copthar"
+  },
+  {
+    "ordinal": 894,
+    "name": "Acridian",
+    "aspect": "VENOM",
+    "folder": "Acridian"
+  },
+  {
+    "ordinal": 895,
+    "name": "Kingian",
+    "aspect": "VENOM",
+    "folder": "Kingian"
+  },
+  {
+    "ordinal": 896,
+    "name": "Gabonor",
+    "aspect": "VENOM",
+    "folder": "Gabonor"
+  },
+  {
+    "ordinal": 897,
+    "name": "Mocassemar",
+    "aspect": "VENOM",
+    "folder": "Mocassemar"
+  },
+  {
+    "ordinal": 898,
+    "name": "Bogessor",
+    "aspect": "VENOM",
+    "folder": "Bogessor"
+  },
+  {
+    "ordinal": 899,
+    "name": "Kingaan",
+    "aspect": "VENOM",
+    "folder": "Kingaan"
+  },
+  {
+    "ordinal": 900,
+    "name": "Gabongar",
+    "aspect": "VENOM",
+    "folder": "Gabongar"
+  },
+  {
+    "ordinal": 901,
+    "name": "Mocassaoyth",
+    "aspect": "VENOM",
+    "folder": "Mocassaoyth"
+  },
+  {
+    "ordinal": 902,
+    "name": "Acrideian",
+    "aspect": "VENOM",
+    "folder": "Acrideian"
+  },
+  {
+    "ordinal": 903,
+    "name": "Viprwyr",
+    "aspect": "VENOM",
+    "folder": "Viprwyr"
+  },
+  {
+    "ordinal": 904,
+    "name": "Centipren",
+    "aspect": "VENOM",
+    "folder": "Centipren"
+  },
+  {
+    "ordinal": 905,
+    "name": "Kraitelt",
+    "aspect": "VENOM",
+    "folder": "Kraitelt"
+  },
+  {
+    "ordinal": 906,
+    "name": "Carraxor",
+    "aspect": "VENOM",
+    "folder": "Carraxor"
+  },
+  {
+    "ordinal": 907,
+    "name": "Aschim",
+    "aspect": "VENOM",
+    "folder": "Aschim"
+  },
+  {
+    "ordinal": 908,
+    "name": "Broodith",
+    "aspect": "VENOM",
+    "folder": "Broodith"
+  },
+  {
+    "ordinal": 909,
+    "name": "Druthar",
+    "aspect": "VENOM",
+    "folder": "Druthar"
+  },
+  {
+    "ordinal": 910,
+    "name": "Acridaoan",
+    "aspect": "VENOM",
+    "folder": "Acridaoan"
+  },
+  {
+    "ordinal": 911,
+    "name": "Kingeean",
+    "aspect": "VENOM",
+    "folder": "Kingeean"
+  },
+  {
+    "ordinal": 912,
+    "name": "Gabonskar",
+    "aspect": "VENOM",
+    "folder": "Gabonskar"
+  },
+  {
+    "ordinal": 913,
+    "name": "Mocassueyth",
+    "aspect": "VENOM",
+    "folder": "Mocassueyth"
+  },
+  {
+    "ordinal": 914,
+    "name": "Carrisor",
+    "aspect": "VENOM",
+    "folder": "Carrisor"
+  },
+  {
+    "ordinal": 915,
+    "name": "Ascharius",
+    "aspect": "VENOM",
+    "folder": "Ascharius"
+  },
+  {
+    "ordinal": 916,
+    "name": "Copperhdonn",
+    "aspect": "VENOM",
+    "folder": "Copperhdonn"
+  },
+  {
+    "ordinal": 917,
+    "name": "Mocassyaess",
+    "aspect": "VENOM",
+    "folder": "Mocassyaess"
+  },
+  {
+    "ordinal": 918,
+    "name": "Mambaian",
+    "aspect": "VENOM",
+    "folder": "Mambaian"
+  },
+  {
+    "ordinal": 919,
+    "name": "Biliwyr",
+    "aspect": "VENOM",
+    "folder": "Biliwyr"
+  },
+  {
+    "ordinal": 920,
+    "name": "Bleakren",
+    "aspect": "VENOM",
+    "folder": "Bleakren"
+  },
+  {
+    "ordinal": 921,
+    "name": "Shogelt",
+    "aspect": "VENOM",
+    "folder": "Shogelt"
+  },
+  {
+    "ordinal": 922,
+    "name": "Najaodrik",
+    "aspect": "VENOM",
+    "folder": "Najaodrik"
+  },
+  {
+    "ordinal": 923,
+    "name": "Venoynth",
+    "aspect": "VENOM",
+    "folder": "Venoynth"
+  },
+  {
+    "ordinal": 924,
+    "name": "Vistaith",
+    "aspect": "NORMAL",
+    "folder": "Vistaith"
+  },
+  {
+    "ordinal": 925,
+    "name": "Grethar",
+    "aspect": "NORMAL",
+    "folder": "Grethar"
+  },
+  {
+    "ordinal": 926,
+    "name": "Mendeliaan",
+    "aspect": "NORMAL",
+    "folder": "Mendeliaan"
+  },
+  {
+    "ordinal": 927,
+    "name": "Ventowyr",
+    "aspect": "NORMAL",
+    "folder": "Ventowyr"
+  },
+  {
+    "ordinal": 928,
+    "name": "Pembren",
+    "aspect": "NORMAL",
+    "folder": "Pembren"
+  },
+  {
+    "ordinal": 929,
+    "name": "Vallelt",
+    "aspect": "NORMAL",
+    "folder": "Vallelt"
+  },
+  {
+    "ordinal": 930,
+    "name": "Vesuebrand",
+    "aspect": "NORMAL",
+    "folder": "Vesuebrand"
+  },
+  {
+    "ordinal": 931,
+    "name": "Lumeyk",
+    "aspect": "NORMAL",
+    "folder": "Lumeyk"
+  },
+  {
+    "ordinal": 932,
+    "name": "Arianith",
+    "aspect": "NORMAL",
+    "folder": "Arianith"
+  },
+  {
+    "ordinal": 933,
+    "name": "Verthar",
+    "aspect": "NORMAL",
+    "folder": "Verthar"
+  },
+  {
+    "ordinal": 934,
+    "name": "Cottagoan",
+    "aspect": "NORMAL",
+    "folder": "Cottagoan"
+  },
+  {
+    "ordinal": 935,
+    "name": "Lambdawyr",
+    "aspect": "NORMAL",
+    "folder": "Lambdawyr"
+  },
+  {
+    "ordinal": 936,
+    "name": "Wendren",
+    "aspect": "NORMAL",
+    "folder": "Wendren"
+  },
+  {
+    "ordinal": 937,
+    "name": "Ethoth",
+    "aspect": "NORMAL",
+    "folder": "Ethoth"
+  },
+  {
+    "ordinal": 938,
+    "name": "Plaiamar",
+    "aspect": "NORMAL",
+    "folder": "Plaiamar"
+  },
+  {
+    "ordinal": 939,
+    "name": "Lumeor",
+    "aspect": "NORMAL",
+    "folder": "Lumeor"
+  },
+  {
+    "ordinal": 940,
+    "name": "Orinath",
+    "aspect": "NORMAL",
+    "folder": "Orinath"
+  },
+  {
+    "ordinal": 941,
+    "name": "Driftiooryx",
+    "aspect": "NORMAL",
+    "folder": "Driftiooryx"
+  },
+  {
+    "ordinal": 942,
+    "name": "Cottaguean",
+    "aspect": "NORMAL",
+    "folder": "Cottaguean"
+  },
+  {
+    "ordinal": 943,
+    "name": "Wendyaan",
+    "aspect": "NORMAL",
+    "folder": "Wendyaan"
+  },
+  {
+    "ordinal": 944,
+    "name": "Orinynth",
+    "aspect": "NORMAL",
+    "folder": "Orinynth"
+  },
+  {
+    "ordinal": 945,
+    "name": "Etharl",
+    "aspect": "NORMAL",
+    "folder": "Etharl"
+  },
+  {
+    "ordinal": 946,
+    "name": "Plaoek",
+    "aspect": "NORMAL",
+    "folder": "Plaoek"
+  },
+  {
+    "ordinal": 947,
+    "name": "Cinqueloth",
+    "aspect": "NORMAL",
+    "folder": "Cinqueloth"
+  },
+  {
+    "ordinal": 948,
+    "name": "Driftith",
+    "aspect": "NORMAL",
+    "folder": "Driftith"
+  },
+  {
+    "ordinal": 949,
+    "name": "Drithar",
+    "aspect": "NORMAL",
+    "folder": "Drithar"
+  },
+  {
+    "ordinal": 950,
+    "name": "Reepyuan",
+    "aspect": "NORMAL",
+    "folder": "Reepyuan"
+  },
+  {
+    "ordinal": 951,
+    "name": "Auraliswyr",
+    "aspect": "NORMAL",
+    "folder": "Auraliswyr"
+  },
+  {
+    "ordinal": 952,
+    "name": "Placidohild",
+    "aspect": "NORMAL",
+    "folder": "Placidohild"
+  },
+  {
+    "ordinal": 953,
+    "name": "Ethek",
+    "aspect": "NORMAL",
+    "folder": "Ethek"
+  },
+  {
+    "ordinal": 954,
+    "name": "Plaoioss",
+    "aspect": "NORMAL",
+    "folder": "Plaoioss"
+  },
+  {
+    "ordinal": 955,
+    "name": "Cinquegrim",
+    "aspect": "NORMAL",
+    "folder": "Cinquegrim"
+  },
+  {
+    "ordinal": 956,
+    "name": "Orinwyr",
+    "aspect": "NORMAL",
+    "folder": "Orinwyr"
+  },
+  {
+    "ordinal": 957,
+    "name": "Iterer",
+    "aspect": "NORMAL",
+    "folder": "Iterer"
+  },
+  {
+    "ordinal": 958,
+    "name": "Reepauan",
+    "aspect": "NORMAL",
+    "folder": "Reepauan"
+  },
+  {
+    "ordinal": 959,
+    "name": "Wendumbror",
+    "aspect": "NORMAL",
+    "folder": "Wendumbror"
+  },
+  {
+    "ordinal": 960,
+    "name": "Placidoiric",
+    "aspect": "NORMAL",
+    "folder": "Placidoiric"
+  },
+  {
+    "ordinal": 961,
+    "name": "Arcanon",
+    "aspect": "NORMAL",
+    "folder": "Arcanon"
+  },
+  {
+    "ordinal": 962,
+    "name": "Humyuad",
+    "aspect": "NORMAL",
+    "folder": "Humyuad"
+  },
+  {
+    "ordinal": 963,
+    "name": "Fontainskar",
+    "aspect": "NORMAL",
+    "folder": "Fontainskar"
+  },
+  {
+    "ordinal": 964,
+    "name": "Mumurith",
+    "aspect": "NORMAL",
+    "folder": "Mumurith"
+  },
+  {
+    "ordinal": 965,
+    "name": "Codthar",
+    "aspect": "NORMAL",
+    "folder": "Codthar"
+  },
+  {
+    "ordinal": 966,
+    "name": "Placoian",
+    "aspect": "NORMAL",
+    "folder": "Placoian"
+  },
+  {
+    "ordinal": 967,
+    "name": "Laurur",
+    "aspect": "NORMAL",
+    "folder": "Laurur"
+  },
+  {
+    "ordinal": 968,
+    "name": "Placidaaze",
+    "aspect": "NORMAL",
+    "folder": "Placidaaze"
+  },
+  {
+    "ordinal": 969,
+    "name": "Arcanmund",
+    "aspect": "NORMAL",
+    "folder": "Arcanmund"
+  },
+  {
+    "ordinal": 970,
+    "name": "Humauius",
+    "aspect": "NORMAL",
+    "folder": "Humauius"
+  },
+  {
+    "ordinal": 971,
+    "name": "Fontainwyr",
+    "aspect": "NORMAL",
+    "folder": "Fontainwyr"
+  },
+  {
+    "ordinal": 972,
+    "name": "Mineitheld",
+    "aspect": "NORMAL",
+    "folder": "Mineitheld"
+  },
+  {
+    "ordinal": 973,
+    "name": "Ethwyr",
+    "aspect": "NORMAL",
+    "folder": "Ethwyr"
+  },
+  {
+    "ordinal": 974,
+    "name": "Placaan",
+    "aspect": "NORMAL",
+    "folder": "Placaan"
+  },
+  {
+    "ordinal": 975,
+    "name": "Wendisor",
+    "aspect": "NORMAL",
+    "folder": "Wendisor"
+  },
+  {
+    "ordinal": 976,
+    "name": "Saxumauyth",
+    "aspect": "NORMAL",
+    "folder": "Saxumauyth"
+  },
+  {
+    "ordinal": 977,
+    "name": "Trelulf",
+    "aspect": "NORMAL",
+    "folder": "Trelulf"
+  },
+  {
+    "ordinal": 978,
+    "name": "Mirouaen",
+    "aspect": "NORMAL",
+    "folder": "Mirouaen"
+  },
+  {
+    "ordinal": 979,
+    "name": "Vericek",
+    "aspect": "NORMAL",
+    "folder": "Vericek"
+  },
+  {
+    "ordinal": 980,
+    "name": "Espith",
+    "aspect": "NORMAL",
+    "folder": "Espith"
+  },
+  {
+    "ordinal": 981,
+    "name": "Solthar",
+    "aspect": "NORMAL",
+    "folder": "Solthar"
+  },
+  {
+    "ordinal": 982,
+    "name": "Placauan",
+    "aspect": "NORMAL",
+    "folder": "Placauan"
+  },
+  {
+    "ordinal": 983,
+    "name": "Placador",
+    "aspect": "NORMAL",
+    "folder": "Placador"
+  },
+  {
+    "ordinal": 984,
+    "name": "Saxumouot",
+    "aspect": "NORMAL",
+    "folder": "Saxumouot"
+  },
+  {
+    "ordinal": 985,
+    "name": "Trelfenn",
+    "aspect": "NORMAL",
+    "folder": "Trelfenn"
+  },
+  {
+    "ordinal": 986,
+    "name": "Miraar",
+    "aspect": "NORMAL",
+    "folder": "Miraar"
+  },
+  {
+    "ordinal": 987,
+    "name": "Vericonn",
+    "aspect": "NORMAL",
+    "folder": "Vericonn"
+  },
+  {
+    "ordinal": 988,
+    "name": "Menaoad",
+    "aspect": "NORMAL",
+    "folder": "Menaoad"
+  },
+  {
+    "ordinal": 989,
+    "name": "Laurwyr",
+    "aspect": "NORMAL",
+    "folder": "Laurwyr"
+  },
+  {
+    "ordinal": 990,
+    "name": "Callumus",
+    "aspect": "NORMAL",
+    "folder": "Callumus"
+  },
+  {
+    "ordinal": 991,
+    "name": "Caelel",
+    "aspect": "NORMAL",
+    "folder": "Caelel"
+  },
+  {
+    "ordinal": 992,
+    "name": "Lambeuumbr",
+    "aspect": "NORMAL",
+    "folder": "Lambeuumbr"
+  },
+  {
+    "ordinal": 993,
+    "name": "Quaintad",
+    "aspect": "NORMAL",
+    "folder": "Quaintad"
+  },
+  {
+    "ordinal": 994,
+    "name": "Mineetheld",
+    "aspect": "NORMAL",
+    "folder": "Mineetheld"
+  },
+  {
+    "ordinal": 995,
+    "name": "Callumel",
+    "aspect": "NORMAL",
+    "folder": "Callumel"
+  },
+  {
+    "ordinal": 996,
+    "name": "Glaceith",
+    "aspect": "NORMAL",
+    "folder": "Glaceith"
+  },
+  {
+    "ordinal": 997,
+    "name": "Vergrg",
+    "aspect": "NORMAL",
+    "folder": "Vergrg"
+  },
+  {
+    "ordinal": 998,
+    "name": "Aethossor",
+    "aspect": "NORMAL",
+    "folder": "Aethossor"
+  },
+  {
+    "ordinal": 999,
+    "name": "Placaror",
+    "aspect": "NORMAL",
+    "folder": "Placaror"
+  }
+]

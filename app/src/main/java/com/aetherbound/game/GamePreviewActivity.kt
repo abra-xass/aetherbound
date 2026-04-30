@@ -597,6 +597,18 @@ private fun GamePreviewRoot(
                                         .displayNameFor(townMapPath)
                             }
                         },
+                        visitedTowns = progress.visitedTowns,
+                        onFlyTo = { townMap, ax, ay ->
+                            // Warp the player to the picked town. Same code-
+                            // path the warp tiles already use, just driven
+                            // from the FlyMenu pick instead of a tile-event.
+                            currentMapPath = townMap
+                            spawnTileX = ax
+                            spawnTileY = ay
+                            saveSlotMessage = "Geflogen nach " +
+                                com.aetherbound.game.core.data.TownRegistry
+                                    .displayNameFor(townMap)
+                        },
                         // 10-min auto-save tick — push current state into
                         // the 6-slot ring buffer. Snapshot is built from
                         // the activity's state so we capture EVERYTHING
@@ -822,11 +834,11 @@ private fun GamePreviewRoot(
                     onChange = { progress = it },
                     onBack = { scene = Scene.Menu },
                 )
-                Scene.StatusCard -> com.aetherbound.game.render.ui.PlayerStatusCard(
+                Scene.StatusCard -> com.aetherbound.game.render.ui.ProfileScreen(
                     progress = progress,
-                    party = party,
                     inventory = inventory,
-                    onBack = { scene = Scene.Menu },
+                    totalSpeciesCount = 1000,
+                    onClose = { scene = Scene.Menu },
                 )
                 Scene.PcStorage -> com.aetherbound.game.render.ui.PcStorageScreen(
                     storage = pcStorage,

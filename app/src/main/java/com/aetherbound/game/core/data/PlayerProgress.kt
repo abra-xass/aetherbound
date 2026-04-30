@@ -73,12 +73,27 @@ data class PlayerProgress(
      * any map flagged as a town in [com.aetherbound.game.core.data.TownRegistry].
      */
     val visitedTowns: Set<String> = emptySet(),
+    /**
+     * Slug → first-catch map asset path. Drives the Aetherdex location
+     * pins ("Du hast diese Echoform in Cotton Town gefangen"). Empty
+     * for legacy saves; populated by [capture].
+     */
+    val caughtAt: Map<String, String> = emptyMap(),
 ) {
     fun see(slug: String): PlayerProgress = copy(seenSlugs = seenSlugs + slug)
-    fun capture(slug: String): PlayerProgress = copy(
+    fun capture(slug: String, mapPath: String? = null): PlayerProgress = copy(
         seenSlugs = seenSlugs + slug,
         caughtSlugs = caughtSlugs + slug,
+        caughtAt = if (mapPath != null && slug !in caughtAt)
+            caughtAt + (slug to mapPath) else caughtAt,
     )
+
+    /** Where this slug was first caught — formatted via TownRegistry name if known. */
+    fun catchLocationFor(slug: String): String? {
+        val raw = caughtAt[slug] ?: return null
+        return TownRegistry.byMapPath(raw)?.displayName
+            ?: raw.substringAfterLast('/').removeSuffix(".tmx")
+    }
     fun earnBadge(trainerId: String): PlayerProgress =
         copy(badgesEarned = badgesEarned + trainerId)
     fun setFlag(flag: String): PlayerProgress = copy(collectedFlags = collectedFlags + flag)
@@ -87,7 +102,7 @@ data class PlayerProgress(
     fun grantSurf(): PlayerProgress = copy(hasSurf = true)
 
     /** Pokédex-style completion percentage out of [totalSpecies]. */
-    fun completionPercent(totalSpecies: Int = 411): Int =
+    fun completionPercent(totalSpecies: Int = 1000): Int =
         if (totalSpecies <= 0) 0 else (caughtSlugs.size * 100 / totalSpecies)
 }
 
