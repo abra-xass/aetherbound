@@ -215,20 +215,25 @@ private fun GamePreviewRoot(
                 com.aetherbound.game.core.data.MatrixWireFormat.EventType.BATTLE_INVITE_REPLY -> {
                     if (ev.body.optBoolean("accepted", false)) {
                         mpPeerReady = true
-                        // Host-only: when both peers have ready'd, emit BATTLE_START
-                        // with both teams. Both clients then build identical state.
-                        if (mpIsHost && mpIAmReady) {
-                            val host = party.members.toList()
-                            // Guest team is unknown to us until BATTLE_START is parsed
-                            // on the other side. For MVP we use the wire's hostTeam as
-                            // both — this works for 1v1; full team-exchange protocol
-                            // would have guest emit their team ahead. Punt on that
-                            // for now: 1v1 demo from a single mon.
-                            val guest = host    // placeholder until guest-team event lands
+                        // Real team-exchange: the peer's lobby-ready payload carries
+                        // their full team JSON under "team". Host parses it as the
+                        // guestTeam; guest parses it as the hostTeam (informational
+                        // only — guest still gets the canonical pair via BATTLE_START).
+                        val peerTeam = com.aetherbound.game.core.data.MatrixWireFormat
+                            .decodeTeam(ev.body.optJSONArray("team"))
+                        if (mpIsHost && peerTeam.isNotEmpty()) {
+                            mpGuestTeam = peerTeam
+                        } else if (!mpIsHost && peerTeam.isNotEmpty()) {
+                            mpHostTeam = peerTeam
+                        }
+                        // Host-only: when both peers have ready'd AND we have the
+                        // guest team, emit BATTLE_START with both real teams. Both
+                        // clients then build identical deterministic state.
+                        if (mpIsHost && mpIAmReady && mpGuestTeam.isNotEmpty()) {
+                            val host = mpHostTeam.ifEmpty { party.members.toList() }
                             mpHostTeam = host
-                            mpGuestTeam = guest
                             com.aetherbound.game.core.data.AetherSendBridge.sendBattleStart(
-                                ctx, mpRoomId, mpRngSeed, host, guest,
+                                ctx, mpRoomId, mpRngSeed, host, mpGuestTeam,
                             )
                             scene = Scene.MultiplayerArena
                         }
@@ -794,24 +799,30 @@ private fun GamePreviewRoot(
                                     ),
                                 )
                             }
-                            // Tell the peer we're ready. If we're the host AND peer is
-                            // already ready, the relay-collector will fire BATTLE_START
-                            // and transition. If we're the guest, we wait for host's
-                            // BATTLE_START to arrive (collector handles the transition).
+                            // Stake our own team into our slot up-front so the host
+                            // path can read mpHostTeam without re-deriving it.
+                            val myTeam = party.members.toList()
+                            if (mpIsHost) mpHostTeam = myTeam else mpGuestTeam = myTeam
+
+                            // Tell the peer we're ready AND publish our full team so
+                            // the host can plug it into BATTLE_START as the guestTeam.
+                            // If we're the host AND peer already ready'd (their team
+                            // arrived before us), the branch below fires BATTLE_START.
+                            // If we're the guest, we wait for the host's BATTLE_START
+                            // to arrive — the relay collector handles that transition.
                             com.aetherbound.game.core.data.AetherSendBridge.sendLobbyReady(
-                                ctx, mpRoomId, mpInviteEventId,
+                                ctx, mpRoomId, mpInviteEventId, myTeam,
                             )
-                            // Single-device demo: if both flags resolve immediately
-                            // (peer-ready already true OR no real peer in dev), step in.
-                            if (mpIsHost && mpPeerReady) {
-                                val host = party.members.toList()
-                                mpHostTeam = host; mpGuestTeam = host
+                            // Race-handler: if peer's lobby_ready already landed (with
+                            // their team) before we ready'd, we have everything to
+                            // emit BATTLE_START right now.
+                            if (mpIsHost && mpPeerReady && mpGuestTeam.isNotEmpty()) {
                                 com.aetherbound.game.core.data.AetherSendBridge.sendBattleStart(
-                                    ctx, mpRoomId, mpRngSeed, host, host,
+                                    ctx, mpRoomId, mpRngSeed, myTeam, mpGuestTeam,
                                 )
                                 scene = Scene.MultiplayerArena
-                            } else if (!mpIsHost && mpHostTeam.isNotEmpty()) {
-                                // Guest already received BATTLE_START before they ready'd.
+                            } else if (!mpIsHost && mpHostTeam.isNotEmpty() && mpGuestTeam.isNotEmpty()) {
+                                // Guest received BATTLE_START before they ready'd.
                                 scene = Scene.MultiplayerArena
                             }
                         },
@@ -825,15 +836,18 @@ private fun GamePreviewRoot(
                 }
                 Scene.MultiplayerArena -> {
                     val snap = mpSnapshot
-                    val player = party.active
-                    if (snap == null || player == null) {
+                    // Real teams from BATTLE_START / lobby-ready exchange. Host
+                    // reads mpHostTeam (their own) + mpGuestTeam (peer's); guest
+                    // reads the inverted pair. We fall back to local party.active
+                    // only if the wire never delivered a team — which would be a
+                    // bug, but we degrade gracefully instead of crashing.
+                    val ownTeam = if (mpIsHost) mpHostTeam else mpGuestTeam
+                    val peerTeam = if (mpIsHost) mpGuestTeam else mpHostTeam
+                    val player = ownTeam.firstOrNull() ?: party.active
+                    val opponent = peerTeam.firstOrNull()
+                    if (snap == null || player == null || opponent == null) {
                         scene = Scene.TuxemonWorld
                     } else {
-                        // Build a placeholder opponent — real wire would receive
-                        // it via BATTLE_START event payload.
-                        val opponent = com.aetherbound.game.core.data.TuxemonBattleSetup
-                            .build(ctx, "rockitten", player.level)
-                            ?: player
                         com.aetherbound.game.render.battle.MultiplayerArenaScene(
                             initialPlayer = player,
                             initialOpponent = opponent,

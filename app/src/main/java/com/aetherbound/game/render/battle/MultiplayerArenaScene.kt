@@ -1,51 +1,71 @@
 package com.aetherbound.game.render.battle
 
-import androidx.compose.animation.core.Animatable
-import androidx.compose.animation.core.tween
+import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.BoxWithConstraints
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
-import com.aetherbound.game.render.ui.EchoformSpriteImage
-import com.aetherbound.game.render.ui.EchoformSpriteVariant
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.mutableLongStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.runtime.withFrameNanos
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.aetherbound.game.content.PilotTechniques
 import com.aetherbound.game.core.BattleAction
 import com.aetherbound.game.core.BattleEvent
 import com.aetherbound.game.core.BattleResolver
 import com.aetherbound.game.core.BattleState
 import com.aetherbound.game.core.EchoformInstance
 import com.aetherbound.game.core.Side
-import com.aetherbound.game.core.data.MultiplayerRewards
+import com.aetherbound.game.core.Technique
 import com.aetherbound.game.core.data.BattleTimeouts
+import com.aetherbound.game.core.data.MultiplayerRewards
 import com.aetherbound.game.core.data.MultiplayerSnapshot
+import com.aetherbound.game.render.animation.AnimationRecipe
+import com.aetherbound.game.render.animation.AttackAnimationState
+import com.aetherbound.game.render.animation.CasterMotion
+import com.aetherbound.game.render.animation.ImpactVisual
+import com.aetherbound.game.render.animation.ProjectilePath
+import com.aetherbound.game.render.animation.ShaderEffect
+import com.aetherbound.game.render.animation.TimingEnvelope
+import com.aetherbound.game.render.animation.advance
+import com.aetherbound.game.render.animation.casterOffset
+import com.aetherbound.game.render.animation.defenderImpactOffset
+import com.aetherbound.game.render.animation.drawHitFlash
+import com.aetherbound.game.render.animation.drawProjectileHead
+import com.aetherbound.game.render.particle.ParticleSystem
+import com.aetherbound.game.render.particle.rememberParticleTextures
+import com.aetherbound.game.render.shader.BloomLayer
 import com.aetherbound.game.render.theme.AetherColors
+import com.aetherbound.game.render.theme.LocalQualityPreset
+import com.aetherbound.game.render.ui.EchoformSpriteImage
+import com.aetherbound.game.render.ui.EchoformSpriteVariant
 import com.aetherbound.game.render.ui.MultiplayerStatusIndicator
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.delay
@@ -110,24 +130,72 @@ fun MultiplayerArenaScene(
     var showSwitchPicker by remember { mutableStateOf(false) }
     var activeMemberIdx by remember { mutableIntStateOf(party.activeIndex) }
 
-    // ── Lightweight attack animation state ─────────────────────────
-    // No full SP-BattleScene-style recipe rendering yet — just a sprite-
-    // lunge for whoever just acted, plus a defender-fade-flash to convey
-    // the impact. Driven by a one-shot animation on each TechniqueResolved.
-    val playerLunge = remember { Animatable(0f) }
-    val opponentLunge = remember { Animatable(0f) }
-    val playerFlash = remember { Animatable(1f) }
-    val opponentFlash = remember { Animatable(1f) }
-    suspend fun playLungeAnim(side: Side) {
-        val anim = if (side == Side.PLAYER) playerLunge else opponentLunge
-        val direction = if (side == Side.PLAYER) 30f else -30f
-        anim.animateTo(direction, tween(120))
-        anim.animateTo(0f, tween(140))
+    // ── Full SP-recipe attack animation state ──────────────────────
+    // Same renderer the SP BattleScene uses: caster motion + projectile
+    // path + impact burst + bloom layer + cinematic letterbox/slow-mo for
+    // Storm/Legendary tier. Recipes come from PilotTechniques.recipes
+    // when the technique has a hand-tuned recipe, otherwise we derive a
+    // sensible default from the technique's aspect + power.
+    val preset = LocalQualityPreset.current
+    val particleTextures = rememberParticleTextures()
+    val particles = remember(preset, particleTextures) {
+        ParticleSystem(preset.maxParticles, particleTextures)
     }
-    suspend fun playFlashAnim(side: Side) {
-        val anim = if (side == Side.PLAYER) opponentFlash else playerFlash    // opposite side flashes
-        anim.animateTo(0.35f, tween(80))
-        anim.animateTo(1f, tween(180))
+    var current by remember { mutableStateOf<AttackAnimationState?>(null) }
+    var attackerSide by remember { mutableStateOf<Side?>(null) }
+    var frameTick by remember { mutableLongStateOf(0L) }
+    var playerAnchorState by remember { mutableStateOf(Offset.Zero) }
+    var opponentAnchorState by remember { mutableStateOf(Offset.Zero) }
+
+    /**
+     * Recipe for [techId]. Returns the hand-tuned PilotTechniques recipe
+     * if available; otherwise builds a generic LUNGE/BEAM/RING_POP recipe
+     * from the technique itself, scaled by its power tier. This means
+     * every Tuxemon-derived MP technique gets a real visual, not silence.
+     */
+    fun recipeFor(techId: String, tech: Technique?): AnimationRecipe? {
+        PilotTechniques.recipes[techId]?.let { return it }
+        if (tech == null) return null
+        return AnimationRecipe(
+            techniqueId = tech.id,
+            techniqueName = tech.name,
+            aspect = tech.aspect,
+            casterMotion = CasterMotion.LUNGE,
+            projectilePath = ProjectilePath.BEAM,
+            impactVisual = ImpactVisual.RING_POP,
+            shader = ShaderEffect.NONE,
+            envelope = TimingEnvelope.SNAP,
+            power = tech.power,
+        )
+    }
+
+    /**
+     * Run the recipe-driven attack animation for [attacker] and suspend
+     * until it finishes (incl. cinematic post-hit pause). Mirrors the
+     * frame-pump pattern from SP BattleScene's LaunchedEffect(current).
+     */
+    suspend fun playAttack(recipe: AnimationRecipe, attacker: Side) {
+        val origin = if (attacker == Side.PLAYER) playerAnchorState else opponentAnchorState
+        val target = if (attacker == Side.PLAYER) opponentAnchorState else playerAnchorState
+        val seed = state.rngSeed xor state.turn.toLong()
+        val st = AttackAnimationState(recipe, origin, target, particles, seed)
+        attackerSide = attacker
+        current = st
+        var lastNs = 0L
+        while (!st.finished) {
+            withFrameNanos { now ->
+                val dt = if (lastNs == 0L) 16f
+                else ((now - lastNs) / 1_000_000f).coerceAtMost(50f)
+                lastNs = now
+                val timeScale = cinematicTimeScale(st)
+                st.advance(dt * timeScale)
+                frameTick = now
+            }
+        }
+        val pause = st.recipe.cinematic.postHitPauseMs
+        if (pause > 0) delay(pause.toLong())
+        current = null
+        attackerSide = null
     }
 
     /** Helper: replace state.player with party.members[idx], reset statuses. */
@@ -209,13 +277,17 @@ fun MultiplayerArenaScene(
             val tail = resolved.log.drop(state.log.size)
             // Play attack animations in chronological order — usually one
             // hit per side per turn (host first then guest, or vice versa).
+            // Each recipe runs through the SP-quality renderer (caster motion +
+            // projectile + impact burst + bloom + cinematic letterbox).
             tail.filterIsInstance<BattleEvent.TechniqueResolved>().forEach { ev ->
                 statusLine = if (ev.missed) "${nameForSide(state, ev.side)} missed!"
                 else "${nameForSide(state, ev.side)} dealt ${ev.damage}" +
                     (if (ev.crit) " CRIT" else "") +
                     (if (ev.stab) " STAB" else "")
-                playLungeAnim(ev.side)
-                if (!ev.missed) playFlashAnim(ev.side)
+                val tech = state.player.techniques.firstOrNull { it.id == ev.techniqueId }
+                    ?: state.opponent.techniques.firstOrNull { it.id == ev.techniqueId }
+                val recipe = recipeFor(ev.techniqueId, tech)
+                if (recipe != null) playAttack(recipe, ev.side)
             }
             tail.filterIsInstance<BattleEvent.Faint>().forEach { f ->
                 if (f.side == Side.PLAYER) playerFaints++
@@ -295,39 +367,63 @@ fun MultiplayerArenaScene(
 
         // Echoform sprites — opponent at top-right, player bottom-left.
         // Reuses the same PNG-loader the SP BattleScene + Party UI use.
+        // Caster lunge + defender hit-bounce come from the recipe-driven
+        // AttackAnimationState; sprite Boxes are positioned via graphicsLayer
+        // translation in raw pixels for sub-pixel accuracy and so the
+        // particle Canvas above (in raw pixels too) lines up exactly.
         BoxWithConstraints(Modifier.fillMaxSize()) {
-            val w = maxWidth
-            val h = maxHeight
-            Box(
-                Modifier
-                    .offset(
-                        x = w * 0.55f + opponentLunge.value.dp,
-                        y = h * 0.20f,
+            val wPx = constraints.maxWidth.toFloat()
+            val hPx = constraints.maxHeight.toFloat()
+            // Anchor = sprite center. SP uses the same sized-Box pattern.
+            val playerAnchor = Offset(wPx * 0.20f, hPx * 0.62f)
+            val opponentAnchor = Offset(wPx * 0.72f, hPx * 0.30f)
+            playerAnchorState = playerAnchor
+            opponentAnchorState = opponentAnchor
+
+            // Subscribe this composition to per-frame state.
+            @Suppress("UNUSED_VARIABLE") val tick = frameTick
+            val playerOffset = current?.let { st ->
+                if (attackerSide == Side.PLAYER) st.casterOffset(facingRight = true)
+                else st.defenderImpactOffset()
+            } ?: Offset.Zero
+            val opponentOffset = current?.let { st ->
+                if (attackerSide == Side.OPPONENT) st.casterOffset(facingRight = false)
+                else st.defenderImpactOffset()
+            } ?: Offset.Zero
+
+            SpriteAt(anchorPx = playerAnchor + playerOffset, sizeDp = 200.dp) {
+                BloomLayer(tint = Color(0x33F05A28), intensity = 0.5f) {
+                    EchoformSpriteImage(
+                        slug = state.player.species.id,
+                        variant = EchoformSpriteVariant.BACK,
+                        modifier = Modifier.fillMaxSize(),
                     )
-                    .size(160.dp)
-                    .alpha(opponentFlash.value),
-            ) {
-                EchoformSpriteImage(
-                    slug = state.opponent.species.id,
-                    variant = EchoformSpriteVariant.FRONT,
-                    modifier = Modifier.fillMaxSize(),
-                )
+                }
             }
-            Box(
-                Modifier
-                    .offset(
-                        x = w * 0.05f + playerLunge.value.dp,
-                        y = h * 0.50f,
+            SpriteAt(anchorPx = opponentAnchor + opponentOffset, sizeDp = 160.dp) {
+                BloomLayer(tint = Color(0x332F9EEA), intensity = 0.5f) {
+                    EchoformSpriteImage(
+                        slug = state.opponent.species.id,
+                        variant = EchoformSpriteVariant.FRONT,
+                        modifier = Modifier.fillMaxSize(),
                     )
-                    .size(200.dp)
-                    .alpha(playerFlash.value),
-            ) {
-                EchoformSpriteImage(
-                    slug = state.player.species.id,
-                    variant = EchoformSpriteVariant.BACK,
-                    modifier = Modifier.fillMaxSize(),
-                )
+                }
             }
+
+            // Particle + projectile + hit-flash overlay. Reading frameTick
+            // forces a redraw every animation tick so particles animate.
+            Canvas(Modifier.fillMaxSize()) {
+                @Suppress("UNUSED_VARIABLE") val _t = frameTick
+                particles.draw(this)
+                current?.let { st ->
+                    drawProjectileHead(st)
+                    val anchor = if (attackerSide == Side.PLAYER) opponentAnchor else playerAnchor
+                    drawHitFlash(st, Size(wPx, hPx), anchor)
+                }
+            }
+
+            // Cinematic letterbox + full-screen flash for Storm/Legendary tier.
+            CinematicLayer(state = current, modifier = Modifier.fillMaxSize())
         }
 
         // HP bars + status line
@@ -533,6 +629,24 @@ data class MatchEndResult(
     val finalTurn: Int,
     val playerSweep: Boolean,
 )
+
+@Composable
+private fun SpriteAt(
+    anchorPx: Offset,
+    sizeDp: androidx.compose.ui.unit.Dp,
+    content: @Composable () -> Unit,
+) {
+    Box(
+        modifier = Modifier
+            .size(sizeDp)
+            .graphicsLayer {
+                translationX = anchorPx.x - this.size.width / 2f
+                translationY = anchorPx.y - this.size.height / 2f
+            },
+    ) {
+        content()
+    }
+}
 
 @Composable
 private fun BannerSlot(

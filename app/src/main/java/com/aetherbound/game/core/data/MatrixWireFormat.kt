@@ -162,6 +162,19 @@ object MatrixWireFormat {
         guestTeam = decodeEchoforms(obj.optJSONArray("guestTeam")),
     )
 
+    // ── Team reveal (carried inside BATTLE_INVITE_REPLY when used as
+    //    a lobby-ready signal). Lets the host build BATTLE_START with the
+    //    guest's real team, and the guest receive the host's team via
+    //    BATTLE_START. No separate event-type — the team rides on the
+    //    existing reply payload to keep the wire surface small. ──────────
+
+    /** Encode a single team as JSON for lobby-ready exchange. */
+    fun encodeTeam(team: List<EchoformInstance>): JSONArray =
+        JSONArray(team.map { encodeEchoform(it) })
+
+    /** Decode a team payload — empty list when absent or malformed. */
+    fun decodeTeam(arr: JSONArray?): List<EchoformInstance> = decodeEchoforms(arr)
+
     // ── Battle action events ────────────────────────────────────
 
     fun encodeBattleMove(turn: Int, side: String, moveIdx: Int, stateHash: String): JSONObject =

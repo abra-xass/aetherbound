@@ -69,15 +69,23 @@ object AetherSendBridge {
     /**
      * Lobby ready-signal — both peers fire this when tapping Ready.
      * Reuses BATTLE_INVITE_REPLY as a generic "I'm in the lobby committed"
-     * signal so we don't need a new event-type.
+     * signal so we don't need a new event-type. The sender's full team
+     * rides along under "team" so the host can build BATTLE_START with
+     * both real teams (no more guest-team placeholder).
      */
-    fun sendLobbyReady(ctx: Context, roomId: String, inviteEventId: String) {
+    fun sendLobbyReady(
+        ctx: Context,
+        roomId: String,
+        inviteEventId: String,
+        team: List<com.aetherbound.game.core.EchoformInstance> = emptyList(),
+    ) {
         send(
             ctx, roomId, MatrixWireFormat.EventType.BATTLE_INVITE_REPLY,
             JSONObject().apply {
                 put("originalEventId", inviteEventId)
                 put("accepted", true)
                 put("phase", "lobby_ready")
+                if (team.isNotEmpty()) put("team", MatrixWireFormat.encodeTeam(team))
                 put("ts", System.currentTimeMillis())
             },
         )
