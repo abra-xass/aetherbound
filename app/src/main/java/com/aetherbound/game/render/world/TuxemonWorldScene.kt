@@ -65,6 +65,21 @@ fun TuxemonWorldScene(
     onEncounter: (EchoformInstance) -> Unit,
     onMenu: () -> Unit = {},
     onTrainerEncounter: (trainerId: String) -> Unit = {},
+    /** Fires when player walks onto a warp tile. Caller swaps tmxAssetPath. */
+    onWarp: (destMap: String, destTileX: Int, destTileY: Int) -> Unit = { _, _, _ -> },
+    /** Fires when player walks onto a HealZone. Caller restores party. */
+    onHealRequest: () -> Unit = {},
+    /**
+     * Fires when player walks onto an ItemDrop (and the flag wasn't yet set).
+     * Caller adds item, sets the flag, returns true if handled (suppresses
+     * future re-trigger on this map session).
+     */
+    onItemPickup: (itemSlug: String, flagId: String) -> Boolean = { _, _ -> false },
+    /** Where the player should spawn when this map loads (tile coords). */
+    spawnTileX: Int = 8,
+    spawnTileY: Int = 8,
+    /** Set of flags already collected — suppresses re-triggers. */
+    collectedFlags: Set<String> = emptySet(),
     modifier: Modifier = Modifier,
 ) {
     val ctx = LocalContext.current
@@ -85,7 +100,7 @@ fun TuxemonWorldScene(
         }
     }
 
-    val movement = remember(tmxAssetPath) { MovementController(initialTileX = 8, initialTileY = 8) }
+    val movement = remember(tmxAssetPath) { MovementController(initialTileX = spawnTileX, initialTileY = spawnTileY) }
     val encounter = remember(tmxAssetPath) { EncounterEngine(ctx) }
     val rng = remember { Random(System.nanoTime()) }
 
@@ -116,7 +131,7 @@ fun TuxemonWorldScene(
                 val event = if (r != null) ObjectDispatcher.eventAt(r.map, movement.tileX, movement.tileY) else null
                 when (event) {
                     is WorldEvent.HealZone -> {
-                        statusLine = "Your party is restored."
+                        onHealRequest()
                         activeDialog = DialogPayload(
                             speakerName = "Aether Pulse",
                             lines = listOf("Your Echoforms recover their full Vigor."),
@@ -129,7 +144,21 @@ fun TuxemonWorldScene(
                         )
                     }
                     is WorldEvent.Warp -> {
-                        statusLine = "Warp → ${event.destMap.substringAfterLast('/').removeSuffix(".tmx")}"
+                        if (event.destMap.isNotBlank()) {
+                            statusLine = "Warp → ${event.destMap.substringAfterLast('/').removeSuffix(".tmx")}"
+                            onWarp(event.destMap, event.destTileX, event.destTileY)
+                        }
+                    }
+                    is WorldEvent.ItemDrop -> {
+                        if (event.flagId !in collectedFlags) {
+                            val handled = onItemPickup(event.itemSlug, event.flagId)
+                            if (handled) {
+                                activeDialog = DialogPayload(
+                                    speakerName = "Item Found",
+                                    lines = listOf("You found a ${event.itemSlug.replace('_', ' ')}!"),
+                                )
+                            }
+                        }
                     }
                     is WorldEvent.Npc -> {
                         if (event.trainerId != null) {

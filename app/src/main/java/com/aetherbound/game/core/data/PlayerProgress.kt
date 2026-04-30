@@ -23,6 +23,12 @@ data class PlayerProgress(
     val playtimeSec: Long = 0,
     val audio: AudioSettings = AudioSettings(),
     val controls: ControlSettings = ControlSettings(),
+    /**
+     * One-shot world flags — used by [com.aetherbound.game.render.map.WorldEvent.ItemDrop]
+     * pickups and any future story flags so they don't re-trigger on revisit.
+     * Examples: `"item_pokeball_route1"`, `"story_intro_done"`, `"trainer_hiker_beaten"`.
+     */
+    val collectedFlags: Set<String> = emptySet(),
 ) {
     fun see(slug: String): PlayerProgress = copy(seenSlugs = seenSlugs + slug)
     fun capture(slug: String): PlayerProgress = copy(
@@ -31,6 +37,8 @@ data class PlayerProgress(
     )
     fun earnBadge(trainerId: String): PlayerProgress =
         copy(badgesEarned = badgesEarned + trainerId)
+    fun setFlag(flag: String): PlayerProgress = copy(collectedFlags = collectedFlags + flag)
+    fun hasFlag(flag: String): Boolean = flag in collectedFlags
 
     /** Pokédex-style completion percentage out of [totalSpecies]. */
     fun completionPercent(totalSpecies: Int = 411): Int =

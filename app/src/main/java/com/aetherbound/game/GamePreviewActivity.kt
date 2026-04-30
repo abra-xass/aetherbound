@@ -78,7 +78,7 @@ private enum class Scene {
     Title, World, TuxemonWorld, Battle, TrainerBattle, Sandbox,
     Menu, Party, Bag, SaveMenu, LoadMenu,
     Detail, Bestiary, Settings, StatusCard, ItemTarget,
-    AssetPacks, Updates, MoveLearning,
+    AssetPacks, Updates, MoveLearning, PcStorage,
 }
 
 /** Pending move-learning event from a level-up. Queue may hold several
@@ -134,6 +134,14 @@ private fun GamePreviewRoot(
     var bagSelectedItem by remember { mutableStateOf<com.aetherbound.game.core.data.TuxemonItem?>(null) }
     var cameFromBattle by remember { mutableStateOf(false) }
     var moveLearnQueue by remember { mutableStateOf<List<MoveLearnEvent>>(emptyList()) }
+    var pcStorage by remember { mutableStateOf(com.aetherbound.game.core.data.PcStorage()) }
+    var pendingStoryBeat by remember { mutableStateOf<com.aetherbound.game.core.data.StoryBeats.Beat?>(null) }
+    fun fireBeat(beat: com.aetherbound.game.core.data.StoryBeats.Beat) {
+        if (!progress.hasFlag(beat.flag)) pendingStoryBeat = beat
+    }
+    var currentMapPath by remember { mutableStateOf("game/maps/tuxemon/spyder_shores.tmx") }
+    var spawnTileX by remember { mutableStateOf(8) }
+    var spawnTileY by remember { mutableStateOf(8) }
 
     // Hoisted audio engine — single instance per activity, auto-released on dispose.
     val audio = com.aetherbound.game.render.audio.rememberAudioEngine()
@@ -178,7 +186,7 @@ private fun GamePreviewRoot(
         when (scene) {
             Scene.Party, Scene.Bag, Scene.Bestiary, Scene.Settings,
             Scene.StatusCard, Scene.SaveMenu, Scene.LoadMenu,
-            Scene.AssetPacks, Scene.Updates -> scene = Scene.Menu
+            Scene.AssetPacks, Scene.Updates, Scene.PcStorage -> scene = Scene.Menu
             Scene.Detail -> scene = Scene.Party
             Scene.ItemTarget -> { bagSelectedItem = null; scene = Scene.Bag }
             Scene.Menu -> scene = sceneBeforeMenu
@@ -221,13 +229,17 @@ private fun GamePreviewRoot(
                     onExit = { scene = Scene.Title },
                 )
                 Scene.TuxemonWorld -> {
-                    // Install pilot trainers once.
+                    // Install pilot trainers once + fire intro beat on first entry.
                     androidx.compose.runtime.LaunchedEffect(Unit) {
                         com.aetherbound.game.core.data.TrainerRegistry.Pilot.installAll()
+                        fireBeat(com.aetherbound.game.core.data.StoryBeats.INTRO)
                     }
                     com.aetherbound.game.render.world.TuxemonWorldScene(
-                        tmxAssetPath = "game/maps/tuxemon/spyder_shores.tmx",
+                        tmxAssetPath = currentMapPath,
                         biome = com.aetherbound.game.core.ScreenTheme.Beach,
+                        spawnTileX = spawnTileX,
+                        spawnTileY = spawnTileY,
+                        collectedFlags = progress.collectedFlags,
                         onExit = { scene = Scene.Title },
                         onEncounter = { wild ->
                             tuxemonWildSlug = wild.species.id
@@ -244,6 +256,31 @@ private fun GamePreviewRoot(
                             sceneBeforeMenu = Scene.TuxemonWorld
                             scene = Scene.Menu
                         },
+                        onWarp = { destMap, dx, dy ->
+                            // If the path is relative ("foo.tmx"), keep the
+                            // tuxemon prefix so it resolves under assets/.
+                            val resolved = when {
+                                destMap.startsWith("game/maps/") -> destMap
+                                destMap.endsWith(".tmx") -> "game/maps/tuxemon/$destMap"
+                                else -> "game/maps/tuxemon/$destMap.tmx"
+                            }
+                            currentMapPath = resolved
+                            spawnTileX = dx
+                            spawnTileY = dy
+                            saveSlotMessage = "Entered ${destMap.substringAfterLast('/').removeSuffix(".tmx")}"
+                        },
+                        onHealRequest = {
+                            // Restore HP + clear faint flag on every party member.
+                            val healed = party.members.map { it.copy(currentVigor = it.maxVigor) }
+                            party = party.copy(members = healed)
+                            saveSlotMessage = "Party fully restored."
+                        },
+                        onItemPickup = { itemSlug, flagId ->
+                            inventory = inventory.add(itemSlug, 1)
+                            progress = progress.setFlag(flagId)
+                            saveSlotMessage = "Picked up ${itemSlug.replace('_', ' ')}."
+                            true
+                        },
                     )
                 }
                 Scene.TrainerBattle -> {
@@ -255,6 +292,11 @@ private fun GamePreviewRoot(
                             progress = progress.earnBadge(spec.id)
                             inventory = inventory.earn(spec.moneyReward)
                             saveSlotMessage = "Defeated ${spec.displayName}! +$${spec.moneyReward}"
+                            // Story beats — fire once per save.
+                            fireBeat(com.aetherbound.game.core.data.StoryBeats.FIRST_TRAINER)
+                            if (spec.id == com.aetherbound.game.core.data.TrainerRegistry.Pilot.GYM_LEADER.id) {
+                                fireBeat(com.aetherbound.game.core.data.StoryBeats.GYM_LEADER)
+                            }
                             pendingTrainer = null
                             scene = Scene.TuxemonWorld
                         },
@@ -282,12 +324,16 @@ private fun GamePreviewRoot(
                         onSpeciesSeen = { slug -> progress = progress.see(slug) },
                         onSpeciesCaptured = { slug, instance ->
                             progress = progress.capture(slug)
-                            // Add to party if room, else PC storage stub.
                             if (!party.isFull) {
                                 party = (party.add(instance) as? com.aetherbound.game.core.data.Party.AddResult.Added)
                                     ?.party ?: party
+                                saveSlotMessage = "${instance.species.name} caught!"
+                            } else {
+                                // Party full → deposit to PC.
+                                pcStorage = pcStorage.deposit(instance)
+                                saveSlotMessage = "${instance.species.name} sent to PC."
                             }
-                            saveSlotMessage = "${instance.species.name} caught!"
+                            fireBeat(com.aetherbound.game.core.data.StoryBeats.FIRST_CAPTURE)
                         },
                         onSwitchRequest = {
                             cameFromBattle = true
@@ -355,6 +401,7 @@ private fun GamePreviewRoot(
                     onBestiary = { scene = Scene.Bestiary },
                     onStatus = { scene = Scene.StatusCard },
                     onSettings = { scene = Scene.Settings },
+                    onPcStorage = { scene = Scene.PcStorage },
                     onAssetPacks = { scene = Scene.AssetPacks },
                     onUpdates = { scene = Scene.Updates },
                     onSave = { scene = Scene.SaveMenu },
@@ -443,6 +490,29 @@ private fun GamePreviewRoot(
                     inventory = inventory,
                     onBack = { scene = Scene.Menu },
                 )
+                Scene.PcStorage -> com.aetherbound.game.render.ui.PcStorageScreen(
+                    storage = pcStorage,
+                    party = party,
+                    onBack = { scene = Scene.Menu },
+                    onWithdraw = { boxIdx, slotIdx ->
+                        val box = pcStorage.boxes.getOrNull(boxIdx) ?: return@PcStorageScreen
+                        val mon = box.slots.getOrNull(slotIdx) ?: return@PcStorageScreen
+                        if (party.isFull) return@PcStorageScreen
+                        val newSlots = box.slots.toMutableList().also { it.removeAt(slotIdx) }
+                        val newBoxes = pcStorage.boxes.toMutableList().also { it[boxIdx] = box.copy(slots = newSlots) }
+                        pcStorage = pcStorage.copy(boxes = newBoxes)
+                        party = (party.add(mon) as? com.aetherbound.game.core.data.Party.AddResult.Added)?.party ?: party
+                        saveSlotMessage = "Withdrew ${mon.species.name}."
+                    },
+                    onRelease = { boxIdx, slotIdx ->
+                        val box = pcStorage.boxes.getOrNull(boxIdx) ?: return@PcStorageScreen
+                        val mon = box.slots.getOrNull(slotIdx) ?: return@PcStorageScreen
+                        val newSlots = box.slots.toMutableList().also { it.removeAt(slotIdx) }
+                        val newBoxes = pcStorage.boxes.toMutableList().also { it[boxIdx] = box.copy(slots = newSlots) }
+                        pcStorage = pcStorage.copy(boxes = newBoxes)
+                        saveSlotMessage = "${mon.species.name} released into the wild."
+                    },
+                )
                 Scene.AssetPacks -> com.aetherbound.game.render.ui.AssetPackPrompt(
                     onClose = { scene = Scene.Menu },
                 )
@@ -515,6 +585,20 @@ private fun GamePreviewRoot(
                 .align(Alignment.TopEnd)
                 .padding(top = 8.dp, end = 8.dp),
         )
+
+        // Story-beat overlay — fires above any scene when a one-shot
+        // narrative trigger is queued. Closing it sets the flag so the
+        // beat never repeats this save.
+        pendingStoryBeat?.let { beat ->
+            com.aetherbound.game.render.ui.NpcDialogOverlay(
+                speakerName = beat.speaker,
+                lines = beat.lines,
+                onClose = {
+                    progress = progress.setFlag(beat.flag)
+                    pendingStoryBeat = null
+                },
+            )
+        }
     }
     }
 }
@@ -527,6 +611,7 @@ private fun MenuOverlay(
     onBestiary: () -> Unit,
     onStatus: () -> Unit,
     onSettings: () -> Unit,
+    onPcStorage: () -> Unit,
     onSave: () -> Unit,
     onLoad: () -> Unit,
     onAssetPacks: () -> Unit,
@@ -559,6 +644,7 @@ private fun MenuOverlay(
             MenuButton("Bag", onBag)
             MenuButton("Bestiary", onBestiary)
             MenuButton("Trainer Card", onStatus)
+            MenuButton("PC Storage", onPcStorage)
             MenuButton("Settings", onSettings)
             MenuButton("Asset Packs", onAssetPacks)
             MenuButton("Check for Updates", onUpdates)

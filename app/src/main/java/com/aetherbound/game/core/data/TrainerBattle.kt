@@ -130,9 +130,77 @@ object TrainerRegistry {
             outroDefeat = "Hooked you good.",
         )
 
+        val FOREST_RANGER = TrainerSpec(
+            id = "forest_ranger",
+            displayName = "Ranger Voss",
+            sprite = "game/characters/tuxemon/adventurer_green/walk_south_0.png",
+            team = listOf(
+                TeamMember("eyenemy", 12),
+                TeamMember("bumbleboar", 14),
+                TeamMember("aardart", 13),
+            ),
+            moneyReward = 380,
+            intro = "These woods listen back. Hear them?",
+            outroVictory = "The grove rests, for now.",
+            outroDefeat = "Roots remember the wrong trail.",
+        )
+
+        val DESERT_NOMAD = TrainerSpec(
+            id = "desert_nomad",
+            displayName = "Nomad Iska",
+            sprite = "game/characters/tuxemon/adventurer_yellow/walk_south_0.png",
+            team = listOf(
+                TeamMember("agnidon", 16),
+                TeamMember("dunsparrow", 17),
+                TeamMember("vivipere", 18),
+            ),
+            moneyReward = 540,
+            intro = "Sand teaches patience. Show me yours.",
+            outroVictory = "The dunes fold over my pride.",
+            outroDefeat = "Some lessons sting like the noon sun.",
+        )
+
+        val CAVE_HERMIT = TrainerSpec(
+            id = "cave_hermit",
+            displayName = "Hermit Solas",
+            sprite = "game/characters/tuxemon/alchemist/walk_south_0.png",
+            team = listOf(
+                TeamMember("sumchon", 22),
+                TeamMember("nudimind", 22),
+                TeamMember("anu", 24),
+                TeamMember("rockitten", 23),
+            ),
+            moneyReward = 720,
+            intro = "Down here, light is a luxury. So is mercy.",
+            outroVictory = "The dark welcomes you. Rest a while.",
+            outroDefeat = "Echoes always return.",
+        )
+
+        val GYM_LEADER = TrainerSpec(
+            id = "gym_leader_aether",
+            displayName = "Adept Lumin",
+            sprite = "game/characters/tuxemon/adventurer/walk_south_0.png",
+            team = listOf(
+                TeamMember("agnidon", 28),
+                TeamMember("nudimind", 30),
+                TeamMember("sumchon", 30),
+                TeamMember("memnomnom", 32),
+                TeamMember("vivipere", 32),
+                TeamMember("eyenemy", 34),
+            ),
+            moneyReward = 1500,
+            intro = "Welcome, challenger. Show me the bond you've forged.",
+            outroVictory = "You've earned the Aether-Sigil. The path opens.",
+            outroDefeat = "Return when your echoes ring true.",
+        )
+
         fun installAll() {
             register(ROUTE1_HIKER)
             register(PORT_FISHER)
+            register(FOREST_RANGER)
+            register(DESERT_NOMAD)
+            register(CAVE_HERMIT)
+            register(GYM_LEADER)
         }
     }
 }

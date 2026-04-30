@@ -61,7 +61,19 @@ fun BagScreen(
         resolved = TuxemonItemDex.load(ctx)
     }
 
-    val grouped = inventory.groupedBySort { resolved[it] }
+    var activeTab by remember { mutableStateOf(BagTab.All) }
+
+    // Slug-based classification (Tuxemon items.json only has potion/utility
+    // sort fields — too coarse). We bucket by name pattern so the bag pages
+    // map to player intent.
+    val classified = inventory.stacks.entries.groupBy { (slug, _) ->
+        BagTab.classify(slug, resolved[slug])
+    }
+    val visible = if (activeTab == BagTab.All) {
+        inventory.stacks.entries.toList()
+    } else {
+        classified[activeTab] ?: emptyList()
+    }
 
     Column(
         modifier
@@ -101,33 +113,135 @@ fun BagScreen(
         }
         Spacer(Modifier.height(8.dp))
 
-        if (inventory.isEmpty) {
+        // Category tabs
+        Row(
+            Modifier.fillMaxWidth().padding(vertical = 4.dp),
+            horizontalArrangement = Arrangement.spacedBy(4.dp),
+        ) {
+            for (tab in BagTab.values()) {
+                val active = tab == activeTab
+                val count = if (tab == BagTab.All) inventory.totalItems
+                else (classified[tab]?.sumOf { it.value } ?: 0)
+                Box(
+                    Modifier
+                        .clip(RoundedCornerShape(6.dp))
+                        .background(if (active) AetherColors.GoldCore else AetherColors.Slate)
+                        .clickable { activeTab = tab }
+                        .padding(horizontal = 8.dp, vertical = 6.dp),
+                ) {
+                    Text(
+                        "${tab.label} ($count)",
+                        color = if (active) AetherColors.Obsidian else AetherColors.ParchmentText,
+                        fontSize = 10.sp,
+                        fontWeight = FontWeight.Bold,
+                    )
+                }
+            }
+        }
+        Spacer(Modifier.height(4.dp))
+
+        if (visible.isEmpty()) {
             Box(
                 Modifier.fillMaxSize().padding(32.dp),
                 contentAlignment = Alignment.Center,
             ) {
                 Text(
-                    text = "Bag is empty.",
+                    text = if (inventory.isEmpty) "Bag is empty." else "No ${activeTab.label} items.",
                     color = AetherColors.MutedText,
                     fontSize = 14.sp,
                 )
             }
         } else {
-            LazyColumn(verticalArrangement = Arrangement.spacedBy(12.dp)) {
-                grouped.entries.sortedBy { it.key }.forEach { (sort, entries) ->
-                    item("h-$sort") {
-                        SortHeader(label = sort)
-                    }
-                    items(items = entries, key = { (slug, _) -> "$sort-$slug" }) { (slug, count) ->
-                        val item = resolved[slug]
-                        BagRow(
-                            slug = slug,
-                            count = count,
-                            item = item,
-                            onClick = { item?.let(onUseItem) },
-                        )
-                    }
+            LazyColumn(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                items(items = visible, key = { (slug, _) -> "$activeTab-$slug" }) { entry ->
+                    val (slug, count) = entry
+                    val item = resolved[slug]
+                    BagRow(
+                        slug = slug,
+                        count = count,
+                        item = item,
+                        onClick = { item?.let(onUseItem) },
+                    )
                 }
+            }
+        }
+    }
+}
+
+/**
+ * Render a one-line human description from an item's [TuxemonItem.effects]
+ * payload. Tuxemon's locale `.po` files carry richer descriptions but we
+ * don't import them; this synthesised line shows the *intent* of each effect
+ * so the player knows what the item does.
+ */
+private fun describeItemEffects(item: com.aetherbound.game.core.data.TuxemonItem): String {
+    if (item.effects.isEmpty()) return item.category.replaceFirstChar { it.uppercase() }
+    return item.effects.joinToString(" · ") { spec ->
+        val params = spec.parameters
+        when (spec.type) {
+            "heal" -> {
+                val amount = params.getOrNull(0)?.toDoubleOrNull() ?: 0.0
+                val mode = params.getOrNull(1) ?: "fixed"
+                if (mode == "percent") "Restores ${amount.toInt()}% HP"
+                else if (amount < 0) "Deals ${-amount.toInt()} damage"
+                else "Restores ${amount.toInt()} HP"
+            }
+            "restore" -> "Cures ${params.getOrNull(0) ?: "any status"}"
+            "capture" -> "Standard capture chance"
+            "capture_combined" -> {
+                val mult = params.getOrNull(3)?.toDoubleOrNull() ?: 1.0
+                "Capture × ${"%.1f".format(mult)}"
+            }
+            "evolve" -> "Triggers evolution"
+            "learn_tm" -> "Teaches ${params.getOrNull(0) ?: "a technique"}"
+            "learn_mm" -> "Teaches a master move"
+            "gain_xp" -> "+${params.getOrNull(0) ?: "?"} XP"
+            "buff", "change_stat" -> {
+                val stat = params.getOrNull(0) ?: "stats"
+                val v = params.getOrNull(1) ?: "?"
+                "Boosts $stat by $v"
+            }
+            "repellent" -> "Repels wild Echoforms for ${params.getOrNull(0) ?: "?"} steps"
+            "fishing" -> "Used to fish water-type Echoforms"
+            "switch_type" -> "Changes type to ${params.getOrNull(0) ?: "?"}"
+            "teleport_item" -> "Teleports to a known location"
+            "food_preference" -> "Affects flavor preference"
+            "bivouac" -> "Sets up camp"
+            else -> spec.type.replace('_', ' ').replaceFirstChar { it.uppercase() }
+        }
+    }
+}
+
+/** Bag-page category. Auto-classified from item slug + effects payload. */
+enum class BagTab(val label: String) {
+    All("All"),
+    Heal("Heal"),
+    Balls("Balls"),
+    Berries("Berries"),
+    Stones("Stones"),
+    TMs("TMs"),
+    Key("Key"),
+    Misc("Misc");
+
+    companion object {
+        fun classify(slug: String, item: com.aetherbound.game.core.data.TuxemonItem?): BagTab {
+            val s = slug.lowercase()
+            // Effect-driven first (most reliable), slug-pattern as fallback.
+            val effectTypes = item?.effects?.map { it.type } ?: emptyList()
+            if (effectTypes.any { it == "heal" || it == "restore" }) return Heal
+            if (effectTypes.any { it == "capture" || it == "capture_combined" }) return Balls
+            if (effectTypes.any { it == "evolve" }) return Stones
+            if (effectTypes.any { it == "learn_tm" || it == "learn_mm" }) return TMs
+
+            return when {
+                "potion" in s || "revive" in s || "elixir" in s -> Heal
+                s.startsWith("tuxeball") || "capture" in s -> Balls
+                "berry" in s -> Berries
+                "stone" in s -> Stones
+                s.startsWith("tm_") || s.startsWith("mm_") -> TMs
+                item?.usableIn?.any { it.equals("WorldState", true) } == true &&
+                    item.consumable.not() -> Key
+                else -> Misc
             }
         }
     }
@@ -187,7 +301,7 @@ private fun BagRow(slug: String, count: Int, item: TuxemonItem?, onClick: () -> 
             )
             if (item != null) {
                 Text(
-                    text = item.category.replaceFirstChar { it.uppercase() },
+                    text = describeItemEffects(item),
                     color = AetherColors.MutedText,
                     fontSize = 11.sp,
                 )
