@@ -24,6 +24,15 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <!-- Thot integration: open Aetherbound directly into multiplayer flows.
+                 Thot's AetherbroundLauncher fires these with room_id + peer_matrix_id
+                 + invite_event_id extras. See docs/multiplayer-thot-binding.md. -->
+            <intent-filter>
+                <action android:name="io.aether.action.OPEN_TITLE" />
+                <action android:name="io.aether.action.BATTLE_INVITE" />
+                <action android:name="io.aether.action.TRADE_OFFER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
 
         <!-- FileProvider so we can hand a downloaded APK to Android's package installer
