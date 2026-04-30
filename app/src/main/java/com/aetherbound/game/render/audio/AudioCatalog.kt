@@ -51,7 +51,7 @@ object AudioCatalog {
             }
         }
         return when (theme) {
-            ScreenTheme.Beach, ScreenTheme.Harbor -> "08_overworld"
+            ScreenTheme.Beach, ScreenTheme.Harbor, ScreenTheme.WaterSurface -> "08_overworld"
             ScreenTheme.Forest, ScreenTheme.Marsh -> "07_town"
             ScreenTheme.Mountain, ScreenTheme.Cave -> "10_the_empire"
             ScreenTheme.Desert -> "11_ostrich_"

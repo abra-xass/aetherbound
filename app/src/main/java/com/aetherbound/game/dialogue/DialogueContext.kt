@@ -19,9 +19,16 @@ data class DialogueContext(
     /** In-game days played — lets time-aware NPCs ("lange nicht gesehen") work. */
     val daysPlayed: Int = 0,
     /**
-     * Daily-pack slot overrides — e.g. `today_weather="Föhn"`,
-     * `btc_price="47230"`, `iran_oil_event="Hormuz-Blockade"`. Empty by
-     * default; fed by DailyPackFetcher (next session).
+     * Snapshot of the world's time/weather/weekday — feeds the
+     * `#dayPhase#`, `#weekday#`, `#weather#`, `#weekdayAspect#` Tracery
+     * slots used by spawn-hint NPC dialogue. Defaults to a generic clear
+     * Wednesday-noon if not set.
+     */
+    val world: com.aetherbound.game.core.data.AmbientTime.Snapshot? = null,
+    /**
+     * Daily-pack slot overrides — e.g. `btc_price="47230"`,
+     * `iran_oil_event="Hormuz-Blockade"`. Empty by default; fed by the
+     * DailyPackFetcher (separate session).
      */
     val dailySlots: Map<String, String> = emptyMap(),
 ) {
@@ -39,7 +46,30 @@ data class DialogueContext(
             Gender.NEUTRAL, null -> "they"
         }
         out["daysPlayed"] = daysPlayed.toString()
+
+        // World snapshot → time/weather/weekday slots for spawn-hint
+        // templates. Each is filled with a sensible default if no world
+        // snapshot was passed.
+        val snapshot = world ?: com.aetherbound.game.core.data.AmbientTime.snapshotNow()
+        out["dayPhase"] = phaseDe(snapshot.phase)
+        out["weekday"] = com.aetherbound.game.core.WeekdayLore.displayDe(snapshot.weekday)
+        out["weekdayPlural"] = com.aetherbound.game.core.WeekdayLore.displayDePlural(snapshot.weekday)
+        out["weather"] = snapshot.weather.displayDe
+        out["weatherAdj"] = snapshot.weather.tracerySlot
+        out["weatherEmoji"] = snapshot.weather.emoji
+        val biasAspect = com.aetherbound.game.core.WeekdayLore.biasedAspect(snapshot.weekday)
+        out["weekdayAspect"] = com.aetherbound.game.core.WeekdayLore.displayDeAspect(biasAspect)
+
         out.putAll(dailySlots)
         return out
+    }
+
+    private fun phaseDe(phase: com.aetherbound.game.core.data.DayNightPhase): String = when (phase) {
+        com.aetherbound.game.core.data.DayNightPhase.DAWN    -> "Morgendämmerung"
+        com.aetherbound.game.core.data.DayNightPhase.MORNING -> "Morgen"
+        com.aetherbound.game.core.data.DayNightPhase.NOON    -> "Mittag"
+        com.aetherbound.game.core.data.DayNightPhase.EVENING -> "Abend"
+        com.aetherbound.game.core.data.DayNightPhase.DUSK    -> "Abenddämmerung"
+        com.aetherbound.game.core.data.DayNightPhase.NIGHT   -> "Nacht"
     }
 }

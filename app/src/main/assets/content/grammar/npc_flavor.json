@@ -16,7 +16,38 @@
     "#name_reaction#",
     "#don_juan_quote#",
     "#andy_memory#",
-    "#commercial_break#"
+    "#commercial_break#",
+    "#spawn_hint_direct#",
+    "#spawn_hint_hearsay#",
+    "#spawn_hint_cryptic#",
+    "#weather_remark_today#"
+  ],
+
+  "spawn_hint_direct": [
+    "Heute ist #weekday#. Da spawnen mehr #weekdayAspect#-Echoforms — schau in passenden Biomen nach.",
+    "An #weekdayPlural# kommen die #weekdayAspect#-Wesen raus. Heute also: #weekday#.",
+    "#weather# heute. Manche Echoforms mögen das, andere nicht."
+  ],
+
+  "spawn_hint_hearsay": [
+    "Mein Bruder fing letzte Nacht ein Schatten-Wesen. Bei Vollmond, sagte er.",
+    "Hörte gestern: bei #weatherAdj#em Wetter zeigen sich seltenere #weekdayAspect#-Echoforms.",
+    "Onkel sagt, an #weekdayPlural# wäre die Welt durchsichtiger. Glaub ihm langsam.",
+    "Cousin schwört: bei Schnee fängst du Frost-Echoforms in einer Stunde, sonst Wochen."
+  ],
+
+  "spawn_hint_cryptic": [
+    "An #weekdayPlural# ist die Welt durchsichtiger. Manche sehen, was andere verpassen.",
+    "Was bei Tag verborgen ist, zeigt sich bei #dayPhase# — wenn du bereit bist.",
+    "#weekday# trägt sein eigenes Lied. Wer es hört, sammelt anders.",
+    "Bei #weather# spricht der Aether anders. Hör hin, statt zu jagen."
+  ],
+
+  "weather_remark_today": [
+    "#weather# heute, schon wieder.",
+    "Bisschen #weather#, aber egal — Echoforms warten nicht aufs Wetter.",
+    "Föhn macht mich kopfwehig. Dich auch?",
+    "Dieses Wetter — typisch für einen #weekday#."
   ],
 
   "name_reaction": [

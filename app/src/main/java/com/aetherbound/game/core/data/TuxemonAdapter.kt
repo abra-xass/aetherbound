@@ -135,6 +135,11 @@ object TuxemonAdapter {
         val baseStats = baseStatsFromShape(mon.shape, rarity)
         val biomes = biomesFromTerrains(mon.terrains)
         val id = ordinal?.let { "E%03d".format(it) } ?: mon.slug
+        val spawn = autoSpawnConditions(
+            primaryAspect = mon.primaryType,
+            rarity = rarity,
+            slugHash = mon.slug.hashCode(),
+        )
         return EchoformSpecies(
             id = id,
             name = mon.slug.replaceFirstChar { it.uppercase() },
@@ -145,7 +150,276 @@ object TuxemonAdapter {
             rarity = rarity,
             biomes = biomes,
             isLegendary = isLegendary,
+            spawn = spawn,
         )
+    }
+
+    /**
+     * Auto-curate spawn conditions from primary aspect + rarity.
+     *
+     * **Lock model (per design lock):**
+     *   - Time-of-day (Tag/Nacht/Dämmerung) → ALWAYS hard lock
+     *   - Weekday → ALWAYS hard lock
+     *   - Weather → NEVER lock; only [SpawnConditions.spawnRateBoost] multiplier
+     *
+     * **Coverage by rarity:**
+     *   - Common (180):  ~60% get a weather-boost only (no time/weekday lock)
+     *   - Uncommon (75): ~80% get either a weekday-only OR time-only lock
+     *   - Rare (30):     100% combined (weekday + dayPhase-half) hard lock
+     *   - VeryRare (12): 100% combined hard lock, often the rarest combos
+     *
+     * **Weekday × dayPhase coverage** (Rare/VeryRare):
+     *   42 hard-locked species spread over 7 weekdays × 2 day-halves
+     *   (≈ 14 combinations). On average ~3 species per combination so
+     *   each "Monday Night" / "Saturday Day" / etc. has its set.
+     *
+     * **Aspect-driven time bias** (overrides the random dayPhase pick):
+     *   - SHADOW / COSMIC: forced into NIGHT half regardless of slugHash
+     *   - HEROIC: forced into DAY half
+     *   - VENOM: forced into DAWN/DUSK transition
+     *
+     * Everything else uses slugHash to pick day-half so distribution
+     * stays even.
+     */
+    private fun autoSpawnConditions(
+        primaryAspect: com.aetherbound.game.core.Aspect,
+        rarity: com.aetherbound.game.core.Rarity,
+        slugHash: Int,
+    ): com.aetherbound.game.core.SpawnConditions {
+        // ── Coverage gate by rarity ─────────────────────────────────────
+        val nibble = slugHash ushr 4 and 0xF    // 0..15
+        val gateThreshold = when (rarity) {
+            com.aetherbound.game.core.Rarity.Common    -> 6     // ~62% conditioned (weather-only)
+            com.aetherbound.game.core.Rarity.Uncommon  -> 12    // ~80% conditioned (weekday OR time)
+            else                                       -> 16    // always conditioned (Rare/VeryRare)
+        }
+        val conditioned = nibble < gateThreshold
+        if (!conditioned) return com.aetherbound.game.core.SpawnConditions.ANYTIME
+
+        val isHard = rarity == com.aetherbound.game.core.Rarity.Rare ||
+            rarity == com.aetherbound.game.core.Rarity.VeryRare
+
+        // ── Pick weekday (hard lock for Rare/VeryRare) ──────────────────
+        // For Rare/VeryRare: assign a single weekday derived from slugHash
+        // so the 42 hard-locked species spread evenly across all 7 days.
+        // For Uncommon: 50% chance of weekday lock (simpler 2-day window).
+        val weekdayLock: Set<java.time.DayOfWeek>? = when {
+            isHard -> setOf(java.time.DayOfWeek.values()[(slugHash and 0x7) % 7])
+            rarity == com.aetherbound.game.core.Rarity.Uncommon && (slugHash ushr 2 and 1) == 1 -> {
+                // 2-day window for Uncommon (Mon-Tue, Wed-Thu, Fri-Sat, Sun)
+                val pair = (slugHash ushr 1 and 0x3)
+                when (pair) {
+                    0 -> setOf(java.time.DayOfWeek.MONDAY, java.time.DayOfWeek.TUESDAY)
+                    1 -> setOf(java.time.DayOfWeek.WEDNESDAY, java.time.DayOfWeek.THURSDAY)
+                    2 -> setOf(java.time.DayOfWeek.FRIDAY, java.time.DayOfWeek.SATURDAY)
+                    else -> setOf(java.time.DayOfWeek.SUNDAY)
+                }
+            }
+            else -> null
+        }
+
+        // ── Pick dayPhase half (hard lock when isHard) ─────────────────
+        // Aspect-driven override: SHADOW/COSMIC always night, HEROIC always day,
+        // VENOM always dawn/dusk, FROST always day-or-dawn (cold morning).
+        // Else: slugHash picks day-half evenly so 50% of unrestricted aspects
+        // are night-spawn, 50% day-spawn.
+        val isNightHalf = (slugHash ushr 8) and 1 == 1
+        val phaseLock: Set<com.aetherbound.game.core.data.DayNightPhase>? = when {
+            primaryAspect == com.aetherbound.game.core.Aspect.SHADOW ||
+                primaryAspect == com.aetherbound.game.core.Aspect.COSMIC ->
+                setOf(
+                    com.aetherbound.game.core.data.DayNightPhase.DUSK,
+                    com.aetherbound.game.core.data.DayNightPhase.NIGHT,
+                )
+            primaryAspect == com.aetherbound.game.core.Aspect.HEROIC ->
+                setOf(
+                    com.aetherbound.game.core.data.DayNightPhase.MORNING,
+                    com.aetherbound.game.core.data.DayNightPhase.NOON,
+                    com.aetherbound.game.core.data.DayNightPhase.EVENING,
+                )
+            primaryAspect == com.aetherbound.game.core.Aspect.VENOM ->
+                setOf(
+                    com.aetherbound.game.core.data.DayNightPhase.DAWN,
+                    com.aetherbound.game.core.data.DayNightPhase.DUSK,
+                )
+            isHard && isNightHalf -> setOf(
+                com.aetherbound.game.core.data.DayNightPhase.DUSK,
+                com.aetherbound.game.core.data.DayNightPhase.NIGHT,
+            )
+            isHard && !isNightHalf -> setOf(
+                com.aetherbound.game.core.data.DayNightPhase.MORNING,
+                com.aetherbound.game.core.data.DayNightPhase.NOON,
+                com.aetherbound.game.core.data.DayNightPhase.EVENING,
+            )
+            // Uncommon w/o weekday: optional time-only lock (2-of-3 chance)
+            !isHard && rarity == com.aetherbound.game.core.Rarity.Uncommon &&
+                weekdayLock == null && (slugHash ushr 5 and 0x3) != 0 ->
+                if (isNightHalf) setOf(
+                    com.aetherbound.game.core.data.DayNightPhase.DUSK,
+                    com.aetherbound.game.core.data.DayNightPhase.NIGHT,
+                ) else setOf(
+                    com.aetherbound.game.core.data.DayNightPhase.MORNING,
+                    com.aetherbound.game.core.data.DayNightPhase.NOON,
+                )
+            else -> null
+        }
+
+        // ── Weather preference (always soft boost — never locks) ─────
+        // Each aspect has 1-3 preferred weather types that boost spawn rate.
+        val weatherPref: Set<com.aetherbound.game.core.Weather>? = when (primaryAspect) {
+            com.aetherbound.game.core.Aspect.WATER -> setOf(
+                com.aetherbound.game.core.Weather.RAIN,
+                com.aetherbound.game.core.Weather.STORM,
+            )
+            com.aetherbound.game.core.Aspect.FROST -> setOf(
+                com.aetherbound.game.core.Weather.SNOW,
+                com.aetherbound.game.core.Weather.FOG,
+            )
+            com.aetherbound.game.core.Aspect.LIGHTNING -> setOf(
+                com.aetherbound.game.core.Weather.STORM,
+                com.aetherbound.game.core.Weather.RAIN,
+            )
+            com.aetherbound.game.core.Aspect.FIRE -> setOf(
+                com.aetherbound.game.core.Weather.HEAT,
+                com.aetherbound.game.core.Weather.CLEAR,
+            )
+            com.aetherbound.game.core.Aspect.SKY -> setOf(
+                com.aetherbound.game.core.Weather.STORM,
+                com.aetherbound.game.core.Weather.FOEHN,
+                com.aetherbound.game.core.Weather.CLEAR,
+            )
+            com.aetherbound.game.core.Aspect.WOOD -> setOf(
+                com.aetherbound.game.core.Weather.CLEAR,
+                com.aetherbound.game.core.Weather.RAIN,
+            )
+            com.aetherbound.game.core.Aspect.SHADOW -> setOf(
+                com.aetherbound.game.core.Weather.FOG,
+                com.aetherbound.game.core.Weather.STORM,
+            )
+            com.aetherbound.game.core.Aspect.EARTH -> setOf(
+                com.aetherbound.game.core.Weather.CLEAR,
+                com.aetherbound.game.core.Weather.HEAT,
+            )
+            com.aetherbound.game.core.Aspect.METAL -> setOf(
+                com.aetherbound.game.core.Weather.CLEAR,
+                com.aetherbound.game.core.Weather.FOEHN,
+            )
+            com.aetherbound.game.core.Aspect.VENOM -> setOf(
+                com.aetherbound.game.core.Weather.FOG,
+                com.aetherbound.game.core.Weather.RAIN,
+            )
+            com.aetherbound.game.core.Aspect.COSMIC -> setOf(
+                com.aetherbound.game.core.Weather.CLEAR,
+                com.aetherbound.game.core.Weather.FOG,
+            )
+            com.aetherbound.game.core.Aspect.HEROIC -> setOf(
+                com.aetherbound.game.core.Weather.CLEAR,
+                com.aetherbound.game.core.Weather.HEAT,
+            )
+            else -> null
+        }
+
+        // Boost: harder rarity = bigger weather-match multiplier.
+        val boost: Float = when (rarity) {
+            com.aetherbound.game.core.Rarity.VeryRare -> 2.5f
+            com.aetherbound.game.core.Rarity.Rare -> 2.0f
+            com.aetherbound.game.core.Rarity.Uncommon -> 1.6f
+            else -> 1.3f
+        }
+
+        return com.aetherbound.game.core.SpawnConditions(
+            timeOfDay = phaseLock,
+            weekdays = weekdayLock,
+            weather = weatherPref,
+            spawnRateBoost = boost,
+        )
+    }
+
+    // Old aspect-driven when block — replaced by the combined-lock above.
+    @Suppress("unused", "UNUSED_VARIABLE")
+    private fun deprecatedAspectSwitch(
+        primaryAspect: com.aetherbound.game.core.Aspect,
+        rarity: com.aetherbound.game.core.Rarity,
+        slugHash: Int,
+        isHard: Boolean,
+    ): com.aetherbound.game.core.SpawnConditions {
+        val cond: com.aetherbound.game.core.SpawnConditions = when (primaryAspect) {
+            // Tag/Nacht-Bindung ist IMMER hard — auch für Common-Species.
+            // Schatten erscheint NIE bei Tag, Heroische NIE bei Nacht. Punkt.
+            com.aetherbound.game.core.Aspect.SHADOW ->
+                com.aetherbound.game.core.SpawnConditions.NIGHT_ONLY
+            com.aetherbound.game.core.Aspect.COSMIC ->
+                if (slugHash and 1 == 0)
+                    com.aetherbound.game.core.SpawnConditions.NIGHT_ONLY
+                else com.aetherbound.game.core.SpawnConditions.onlyOnWeekday(
+                    java.time.DayOfWeek.WEDNESDAY)
+            com.aetherbound.game.core.Aspect.HEROIC ->
+                com.aetherbound.game.core.SpawnConditions.DAY_ONLY
+            com.aetherbound.game.core.Aspect.FROST ->
+                if (isHard) com.aetherbound.game.core.SpawnConditions(
+                    weather = setOf(com.aetherbound.game.core.Weather.SNOW),
+                    spawnRateBoost = 2.5f,
+                ) else com.aetherbound.game.core.SpawnConditions.SNOW_BOOST
+            com.aetherbound.game.core.Aspect.WATER ->
+                com.aetherbound.game.core.SpawnConditions.RAIN_BOOST
+            com.aetherbound.game.core.Aspect.LIGHTNING ->
+                if (isHard) com.aetherbound.game.core.SpawnConditions.STORM_ONLY
+                else com.aetherbound.game.core.SpawnConditions(
+                    weather = setOf(
+                        com.aetherbound.game.core.Weather.STORM,
+                        com.aetherbound.game.core.Weather.RAIN,
+                    ),
+                    spawnRateBoost = 1.8f,
+                )
+            com.aetherbound.game.core.Aspect.FIRE ->
+                com.aetherbound.game.core.SpawnConditions(
+                    weather = if (isHard) setOf(com.aetherbound.game.core.Weather.HEAT)
+                    else setOf(
+                        com.aetherbound.game.core.Weather.HEAT,
+                        com.aetherbound.game.core.Weather.CLEAR,
+                    ),
+                    spawnRateBoost = if (isHard) 2.0f else 1.5f,
+                )
+            com.aetherbound.game.core.Aspect.SKY ->
+                com.aetherbound.game.core.SpawnConditions(
+                    weather = setOf(
+                        com.aetherbound.game.core.Weather.STORM,
+                        com.aetherbound.game.core.Weather.CLEAR,
+                        com.aetherbound.game.core.Weather.FOEHN,
+                    ),
+                    spawnRateBoost = if (isHard) 1.0f else 1.4f,
+                )
+            // Gift erscheint NUR an Dämmerungen — egal welche Seltenheit.
+            com.aetherbound.game.core.Aspect.VENOM ->
+                com.aetherbound.game.core.SpawnConditions.DAWN_DUSK
+            com.aetherbound.game.core.Aspect.WOOD ->
+                com.aetherbound.game.core.SpawnConditions(
+                    timeOfDay = setOf(
+                        com.aetherbound.game.core.data.DayNightPhase.DAWN,
+                        com.aetherbound.game.core.data.DayNightPhase.MORNING,
+                        com.aetherbound.game.core.data.DayNightPhase.NOON,
+                    ),
+                    spawnRateBoost = if (isHard) 1.0f else 1.3f,
+                )
+            com.aetherbound.game.core.Aspect.METAL ->
+                com.aetherbound.game.core.SpawnConditions.onlyOnWeekday(java.time.DayOfWeek.MONDAY)
+                    .takeIf { isHard }
+                    ?: com.aetherbound.game.core.SpawnConditions(
+                        weekdays = setOf(java.time.DayOfWeek.MONDAY, java.time.DayOfWeek.TUESDAY),
+                        spawnRateBoost = 1.6f,
+                    )
+            com.aetherbound.game.core.Aspect.EARTH ->
+                com.aetherbound.game.core.SpawnConditions(
+                    weather = setOf(
+                        com.aetherbound.game.core.Weather.CLEAR,
+                        com.aetherbound.game.core.Weather.CLOUDY,
+                        com.aetherbound.game.core.Weather.HEAT,
+                    ),
+                    spawnRateBoost = 1.3f,
+                )
+            else -> com.aetherbound.game.core.SpawnConditions.ANYTIME
+        }
+        return cond
     }
 
     // ───────────────────────────────────────────────────────────────

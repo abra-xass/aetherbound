@@ -9,7 +9,10 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.graphics.Color
 import kotlinx.coroutines.delay
+import java.time.DayOfWeek
+import java.time.LocalDate
 import java.time.LocalTime
+import com.aetherbound.game.core.Weather
 
 /**
  * "Bound to Aether" — the in-game day/night cycle is tied to the real
@@ -42,6 +45,35 @@ object AmbientTime {
         val now = LocalTime.now()
         return DayNightCycle.smoothTint(hour = now.hour, minute = now.minute)
     }
+
+    /**
+     * Override the weather. Daily-pack-fetcher will set this once per
+     * day (real Swiss meteo). Until that lands, stays on [Weather.CLEAR].
+     */
+    var forcedWeather: Weather? = null
+
+    /** Current weather — defaults to [Weather.CLEAR] until DailyPack overrides. */
+    fun weatherNow(): Weather = forcedWeather ?: Weather.CLEAR
+
+    /** Today's weekday on the device clock (Mon..Sun). */
+    fun weekdayNow(): DayOfWeek = LocalDate.now().dayOfWeek
+
+    /**
+     * One-shot snapshot of the world's time/weather/weekday — used by
+     * [com.aetherbound.game.dialogue.DialogueContext] and the encounter-
+     * pool spawn-condition filter so a single call sees a consistent view.
+     */
+    data class Snapshot(
+        val phase: DayNightPhase,
+        val weekday: DayOfWeek,
+        val weather: Weather,
+    )
+
+    fun snapshotNow(): Snapshot = Snapshot(
+        phase = phaseNow(),
+        weekday = weekdayNow(),
+        weather = weatherNow(),
+    )
 
     /** Encounter-pool predicate: returns true when [species] may spawn now. */
     fun isAllowedToSpawn(speciesPrimary: com.aetherbound.game.core.Aspect): Boolean {

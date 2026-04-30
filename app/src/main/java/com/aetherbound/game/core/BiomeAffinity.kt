@@ -12,17 +12,30 @@ package com.aetherbound.game.core
 object BiomeAffinity {
 
     private val MAP: Map<ScreenTheme, List<Aspect>> = mapOf(
-        ScreenTheme.Harbor to listOf(Aspect.WATER, Aspect.FROST, Aspect.EARTH),
+        // Coastal — kalter Stahl & Wasser
+        ScreenTheme.Harbor to listOf(Aspect.WATER, Aspect.FROST, Aspect.METAL),
+        // Strand mit Sturm-Resonanz
         ScreenTheme.Beach to listOf(Aspect.WATER, Aspect.SKY, Aspect.LIGHTNING),
+        // Tiefer mystischer Wald
         ScreenTheme.Forest to listOf(Aspect.WOOD, Aspect.EARTH, Aspect.COSMIC),
-        ScreenTheme.Plains to listOf(Aspect.WOOD, Aspect.SKY, Aspect.LIGHTNING),
-        ScreenTheme.Mountain to listOf(Aspect.EARTH, Aspect.FROST, Aspect.METAL),
-        ScreenTheme.Marsh to listOf(Aspect.WOOD, Aspect.WATER, Aspect.SHADOW),
+        // Offene Felder, Anfänger-Pool
+        ScreenTheme.Plains to listOf(Aspect.WOOD, Aspect.SKY, Aspect.NORMAL),
+        // Gipfel mit Erz und Schnee
+        ScreenTheme.Mountain to listOf(Aspect.FROST, Aspect.EARTH, Aspect.METAL),
+        // Giftiger Sumpf
+        ScreenTheme.Marsh to listOf(Aspect.WATER, Aspect.SHADOW, Aspect.VENOM),
+        // Sengende Wüste
         ScreenTheme.Desert to listOf(Aspect.FIRE, Aspect.LIGHTNING, Aspect.EARTH),
-        ScreenTheme.Cave to listOf(Aspect.EARTH, Aspect.SHADOW, Aspect.METAL),
-        ScreenTheme.Castle to listOf(Aspect.COSMIC, Aspect.VENOM, Aspect.HEROIC),
-        ScreenTheme.Town to listOf(Aspect.COSMIC, Aspect.VENOM, Aspect.HEROIC),
-        ScreenTheme.Sanctum to listOf(Aspect.VENOM, Aspect.HEROIC, Aspect.SHADOW),
+        // Lava-Höhlen
+        ScreenTheme.Cave to listOf(Aspect.SHADOW, Aspect.METAL, Aspect.FIRE),
+        // Königliche Festung
+        ScreenTheme.Castle to listOf(Aspect.METAL, Aspect.HEROIC, Aspect.COSMIC),
+        // Bürgerstadt mit dunklen Gassen
+        ScreenTheme.Town to listOf(Aspect.NORMAL, Aspect.HEROIC, Aspect.VENOM),
+        // Heiligtum mit Schattenseiten
+        ScreenTheme.Sanctum to listOf(Aspect.COSMIC, Aspect.VENOM, Aspect.SHADOW),
+        // Surf-only — Tiefsee-exklusiv
+        ScreenTheme.WaterSurface to listOf(Aspect.WATER, Aspect.FROST, Aspect.COSMIC),
     )
 
     /** Aspects that this biome favours. Empty list = no preference. */

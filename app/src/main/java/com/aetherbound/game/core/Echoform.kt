@@ -14,6 +14,13 @@ data class EchoformSpecies(
     val biomes: List<ScreenTheme> = emptyList(),
     /** True for the 3 unique roaming legendary species (E298/E299/E300). */
     val isLegendary: Boolean = false,
+    /**
+     * Time-of-day / weekday / weather restrictions on spawning. Most
+     * species use [SpawnConditions.ANYTIME] — no restrictions. Auto-
+     * curated in [com.aetherbound.game.core.data.TuxemonAdapter] from
+     * primary aspect + rarity, can be overridden per species.
+     */
+    val spawn: SpawnConditions = SpawnConditions.ANYTIME,
 )
 
 data class EchoformInstance(

@@ -7,6 +7,12 @@ package com.aetherbound.game.core
 enum class ScreenTheme {
     Town, Harbor, Forest, Mountain, Marsh, Desert, Castle,
     Plains, Beach, Cave, Sanctum,
+    /**
+     * Surfing-only biome. Activated when the player moves across a
+     * `surfable=true` water-tile. Unlocks an exclusive pool of deep-sea
+     * Echoforms not reachable from any land biome.
+     */
+    WaterSurface,
 }
 
 /** Direction of a cross-screen exit. */

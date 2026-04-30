@@ -1,0 +1,52 @@
+{
+  "_comment": "Spawn-Hinweise für NPCs in 3 Tier-Mischungen — direkt / hörensagen / kryptisch. Wird von npc_flavor / barmaid / alchemist / aviator / mystic / merchant referenziert. Nutzt #weekday#, #dayPhase#, #weather#, #weekdayAspect# Slots aus DialogueContext.",
+
+  "tier_mix": [
+    "#tier1_direct#", "#tier1_direct#", "#tier1_direct#",
+    "#tier2_hearsay#", "#tier2_hearsay#",
+    "#tier3_cryptic#"
+  ],
+
+  "tier1_direct": [
+    "Heute ist #weekday#. Da spawnen mehr #weekdayAspect#-Echoforms — lohnt sich nachzuschauen.",
+    "An #weekdayPlural# kommen die #weekdayAspect#-Wesen raus. Heute ein #weekday#, also halt die Augen offen.",
+    "#weather# heute. Das bringt manche Echoforms, die du sonst nie siehst.",
+    "Es ist #dayPhase#. Schau dich um — wer jetzt nicht da ist, kommt erst später.",
+    "#weekday# bedeutet: #weekdayAspect#-Tag. Pack die richtige Ausrüstung ein.",
+    "Bei #weatherAdj#em Wetter sind die Aether-Otter unterwegs. Echt jetzt, schau bei Wasser nach.",
+    "Bei #dayPhase# spawnen Schatten-Echoforms in den Marschen. Nicht alle, aber genug.",
+    "Mein Tipp: Frost-Echoforms wirst du bei diesem #weather# kaum sehen. Komm wieder, wenn's schneit."
+  ],
+
+  "tier2_hearsay": [
+    "Mein Bruder fing letzte Nacht ein Schatten-Wesen. Bei Vollmond, sagte er.",
+    "Hörte gestern: bei #weatherAdj#em Wetter zeigen sich die selteneren #weekdayAspect#-Echoforms öfter.",
+    "Eine Wirtin oben in der Stadt sagt, an #weekdayPlural# wäre die Welt durchsichtiger. Ich glaub ihr.",
+    "Onkel Heinrich behauptete, er hätte mal eine Lightning-Echoform im Sturm gefangen. Übertreibt sicher. Vielleicht aber auch nicht.",
+    "Im Markt erzählt man, an Mittwochen kämen die Cosmic-Echoforms aus dem Sanctum.",
+    "Mein Cousin schwört: bei Schnee fängst du Frost-Echoforms in einer Stunde, sonst Wochen.",
+    "Letzte Woche fingen drei Trainer dieselbe seltene Echoform — alle bei Föhn am Strand.",
+    "Die alte Geschichte sagt: Heroische Wesen verschwinden bei Sonnenuntergang. Warum, weiß keiner.",
+    "Bei einem #weatherAdj#en #dayPhase# soll das Sammeln am ergiebigsten sein. Meine Tante sagt das."
+  ],
+
+  "tier3_cryptic": [
+    "An #weekdayPlural# ist die Welt durchsichtiger. Manche sehen, was andere verpassen.",
+    "Frost antwortet nur auf Schnee. Stell dir das mal vor.",
+    "Was bei Tag verborgen ist, zeigt sich bei #dayPhase# — wenn du bereit bist.",
+    "Don Juan würde sagen: Echoforms folgen dem Mond, nicht dem Kalender. Aber der Kalender lügt manchmal weniger.",
+    "Die Echoforms wissen, welcher Tag es ist. Wir Menschen verlernen das.",
+    "Ein Krieger zählt die Mondzyklen. Die Echoforms tun es auch.",
+    "Wenn der Föhn kommt, erinnern sich die Lightning-Wesen an etwas. Frag mich nicht was.",
+    "#weekday# trägt sein eigenes Lied. Wer es hört, sammelt anders.",
+    "Bei #weather# spricht der Aether anders. Hör hin, statt zu jagen."
+  ],
+
+  "weather_complaint": [
+    "#weather# heute, schon wieder.",
+    "Föhn macht mich kopfwehig. Aber die Echoforms freut's.",
+    "Bei #weatherAdj#em Wetter bleib ich daheim — du nicht?",
+    "Bisschen #weather#, aber egal — Echoforms warten nicht aufs Wetter.",
+    "Dieses Wetter — typisch für einen #weekday#."
+  ]
+}

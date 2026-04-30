@@ -218,6 +218,7 @@ fun TuxemonWorldScene(
                             val dialogCtx = com.aetherbound.game.dialogue.DialogueContext(
                                 playerName = playerName,
                                 playerGender = playerGender,
+                                world = com.aetherbound.game.core.data.AmbientTime.snapshotNow(),
                             )
                             val resolved = com.aetherbound.game.dialogue.DialogueResolver
                                 .get(ctx)
@@ -284,7 +285,7 @@ fun TuxemonWorldScene(
                 .background(tint.first.copy(alpha = tint.second)),
         )
 
-        // HUD
+        // HUD — top-left: phase + tile coords
         Column(Modifier.align(Alignment.TopStart).padding(12.dp)) {
             Text(
                 text = AmbientTime.phaseNow().displayName.uppercase(),
@@ -298,6 +299,13 @@ fun TuxemonWorldScene(
                 fontSize = 11.sp,
             )
         }
+        // HUD — top-right: weekday + weather + biased aspect
+        // Players read this to plan: "Mi + klar → Cosmic im Sanctum"
+        com.aetherbound.game.render.ui.WeatherHud(
+            modifier = Modifier
+                .align(Alignment.TopEnd)
+                .padding(12.dp),
+        )
 
         if (statusLine.isNotEmpty()) {
             Box(

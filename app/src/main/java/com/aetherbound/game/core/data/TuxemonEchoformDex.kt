@@ -77,22 +77,39 @@ object TuxemonEchoformDex {
             }
     }
 
-    /** Encounter pool filtered by biome. Returns at most [count] species. */
+    /**
+     * Encounter pool filtered by biome **and** spawn-conditions
+     * (time-of-day / weekday / weather). Returns at most [count] species.
+     *
+     * Each species' [com.aetherbound.game.core.SpawnConditions.spawnRateBoost]
+     * multiplies its rarity poolWeight when conditions match — so a
+     * weather-affinity species gets ~2× spawn-rate when it rains.
+     */
     fun encounterPool(
         ctx: Context,
         theme: ScreenTheme,
         regionSeed: Long,
         count: Int = 8,
     ): List<EchoformSpecies> {
+        // One snapshot for the whole roll — keeps the pool internally
+        // consistent (a species either passes all conditions or none).
+        val snapshot = AmbientTime.snapshotNow()
         val candidates = load(ctx).values.filter {
-            !it.isLegendary && (theme in it.biomes || it.biomes.isEmpty())
+            !it.isLegendary &&
+                (theme in it.biomes || it.biomes.isEmpty()) &&
+                it.spawn.matches(snapshot)
         }
         if (candidates.isEmpty()) return emptyList()
         val rng = Random(regionSeed)
         val picks = mutableListOf<EchoformSpecies>()
         repeat(count * 4) {
             val sp = candidates.random(rng)
-            if (rng.nextInt(100) < sp.rarity.poolWeight) {
+            // Effective weight = base rarity poolWeight × effectiveBoost
+            // (boost handles weather as soft multiplier — weather never
+            // excludes, only multiplies the spawn rate when it matches).
+            val boost = sp.spawn.effectiveBoost(snapshot)
+            val weight = (sp.rarity.poolWeight * boost).toInt().coerceIn(1, 100)
+            if (rng.nextInt(100) < weight) {
                 picks += sp
                 if (picks.size >= count) return picks.distinctBy { it.id }
             }
