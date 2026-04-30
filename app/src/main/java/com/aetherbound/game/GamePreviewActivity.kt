@@ -180,6 +180,12 @@ private fun GamePreviewRoot(
     var mpSnapshot by remember { mutableStateOf<com.aetherbound.game.core.data.MultiplayerSnapshot?>(null) }
     var mpIAmReady by remember { mutableStateOf(false) }
     var mpPeerReady by remember { mutableStateOf(false) }
+    // True when WE issued the invite (host); false when we accepted it (guest).
+    // Host emits BATTLE_START; guest waits for it.
+    var mpIsHost by remember { mutableStateOf(false) }
+    // Once BATTLE_START arrives or is locally constructed, holds both teams.
+    var mpHostTeam by remember { mutableStateOf<List<com.aetherbound.game.core.EchoformInstance>>(emptyList()) }
+    var mpGuestTeam by remember { mutableStateOf<List<com.aetherbound.game.core.EchoformInstance>>(emptyList()) }
     // Channel that the bridge feeds with peer move-indices when the
     // BATTLE_MOVE Matrix event lands. ArenaScene's resolver-loop suspends on it.
     val mpPeerActionsChannel = remember {
@@ -207,7 +213,35 @@ private fun GamePreviewRoot(
                     )
                 }
                 com.aetherbound.game.core.data.MatrixWireFormat.EventType.BATTLE_INVITE_REPLY -> {
-                    if (ev.body.optBoolean("accepted", false)) mpPeerReady = true
+                    if (ev.body.optBoolean("accepted", false)) {
+                        mpPeerReady = true
+                        // Host-only: when both peers have ready'd, emit BATTLE_START
+                        // with both teams. Both clients then build identical state.
+                        if (mpIsHost && mpIAmReady) {
+                            val host = party.members.toList()
+                            // Guest team is unknown to us until BATTLE_START is parsed
+                            // on the other side. For MVP we use the wire's hostTeam as
+                            // both — this works for 1v1; full team-exchange protocol
+                            // would have guest emit their team ahead. Punt on that
+                            // for now: 1v1 demo from a single mon.
+                            val guest = host    // placeholder until guest-team event lands
+                            mpHostTeam = host
+                            mpGuestTeam = guest
+                            com.aetherbound.game.core.data.AetherSendBridge.sendBattleStart(
+                                ctx, mpRoomId, mpRngSeed, host, guest,
+                            )
+                            scene = Scene.MultiplayerArena
+                        }
+                    }
+                }
+                com.aetherbound.game.core.data.MatrixWireFormat.EventType.BATTLE_START -> {
+                    // Guest-side: parse the host's BATTLE_START, extract teams,
+                    // transition to arena.
+                    val parsed = com.aetherbound.game.core.data.MatrixWireFormat.decodeBattleStart(ev.body)
+                    mpRngSeed = parsed.rngSeed
+                    mpHostTeam = parsed.hostTeam
+                    mpGuestTeam = parsed.guestTeam
+                    scene = Scene.MultiplayerArena
                 }
                 com.aetherbound.game.core.data.MatrixWireFormat.EventType.BATTLE_END -> {
                     saveSlotMessage = "Opponent ended the match: ${ev.body.optString("winner")}"
@@ -331,6 +365,7 @@ private fun GamePreviewRoot(
                 mpRoomId = ii.roomId
                 mpPeerMatrixId = ii.peerMatrixId
                 mpInviteEventId = ii.inviteEventId
+                mpIsHost = ii.isHost
                 // Pre-match snapshot — restored verbatim post-match.
                 mpSnapshot = com.aetherbound.game.core.data.MultiplayerSnapshot.capture(
                     party = party,
@@ -746,9 +781,6 @@ private fun GamePreviewRoot(
                             mpMode = m
                             mpLevelCap = cap
                             mpIAmReady = true
-                            // Persist the active-match snapshot so a kill mid-match
-                            // can be detected on next launch and the player at least
-                            // gets their pre-match party restored.
                             mpSnapshot?.let { snap ->
                                 com.aetherbound.game.core.data.ActiveMatchPersist.save(
                                     ctx,
@@ -762,7 +794,26 @@ private fun GamePreviewRoot(
                                     ),
                                 )
                             }
-                            scene = Scene.MultiplayerArena
+                            // Tell the peer we're ready. If we're the host AND peer is
+                            // already ready, the relay-collector will fire BATTLE_START
+                            // and transition. If we're the guest, we wait for host's
+                            // BATTLE_START to arrive (collector handles the transition).
+                            com.aetherbound.game.core.data.AetherSendBridge.sendLobbyReady(
+                                ctx, mpRoomId, mpInviteEventId,
+                            )
+                            // Single-device demo: if both flags resolve immediately
+                            // (peer-ready already true OR no real peer in dev), step in.
+                            if (mpIsHost && mpPeerReady) {
+                                val host = party.members.toList()
+                                mpHostTeam = host; mpGuestTeam = host
+                                com.aetherbound.game.core.data.AetherSendBridge.sendBattleStart(
+                                    ctx, mpRoomId, mpRngSeed, host, host,
+                                )
+                                scene = Scene.MultiplayerArena
+                            } else if (!mpIsHost && mpHostTeam.isNotEmpty()) {
+                                // Guest already received BATTLE_START before they ready'd.
+                                scene = Scene.MultiplayerArena
+                            }
                         },
                         onDecline = {
                             mpIAmReady = false

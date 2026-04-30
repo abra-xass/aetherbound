@@ -20,6 +20,7 @@ sealed class IncomingIntent {
         val roomId: String,
         val peerMatrixId: String,
         val inviteEventId: String,
+        val isHost: Boolean = false,
     ) : IncomingIntent()
     data class TradeOffer(
         val roomId: String,
@@ -34,6 +35,7 @@ sealed class IncomingIntent {
         const val EXTRA_ROOM_ID = "io.aether.extra.ROOM_ID"
         const val EXTRA_PEER_MATRIX_ID = "io.aether.extra.PEER_MATRIX_ID"
         const val EXTRA_INVITE_EVENT_ID = "io.aether.extra.INVITE_EVENT_ID"
+        const val EXTRA_IS_HOST = "io.aether.extra.IS_HOST"
 
         fun from(intent: Intent?): IncomingIntent {
             if (intent == null) return None
@@ -43,6 +45,7 @@ sealed class IncomingIntent {
                     roomId = intent.getStringExtra(EXTRA_ROOM_ID).orEmpty(),
                     peerMatrixId = intent.getStringExtra(EXTRA_PEER_MATRIX_ID).orEmpty(),
                     inviteEventId = intent.getStringExtra(EXTRA_INVITE_EVENT_ID).orEmpty(),
+                    isHost = intent.getBooleanExtra(EXTRA_IS_HOST, false),
                 )
                 ACTION_TRADE_OFFER -> TradeOffer(
                     roomId = intent.getStringExtra(EXTRA_ROOM_ID).orEmpty(),

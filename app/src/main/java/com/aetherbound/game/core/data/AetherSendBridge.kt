@@ -48,6 +48,41 @@ object AetherSendBridge {
         })
     }
 
+    /**
+     * Host-only: emit BATTLE_START after both peers have ready'd in the
+     * lobby. Carries the rngSeed (deterministic resolver) plus full host
+     * + guest team JSONs. Both sides transition to the arena right after.
+     */
+    fun sendBattleStart(
+        ctx: Context,
+        roomId: String,
+        rngSeed: Long,
+        hostTeam: List<com.aetherbound.game.core.EchoformInstance>,
+        guestTeam: List<com.aetherbound.game.core.EchoformInstance>,
+    ) {
+        send(
+            ctx, roomId, MatrixWireFormat.EventType.BATTLE_START,
+            MatrixWireFormat.encodeBattleStart(rngSeed, hostTeam, guestTeam),
+        )
+    }
+
+    /**
+     * Lobby ready-signal — both peers fire this when tapping Ready.
+     * Reuses BATTLE_INVITE_REPLY as a generic "I'm in the lobby committed"
+     * signal so we don't need a new event-type.
+     */
+    fun sendLobbyReady(ctx: Context, roomId: String, inviteEventId: String) {
+        send(
+            ctx, roomId, MatrixWireFormat.EventType.BATTLE_INVITE_REPLY,
+            JSONObject().apply {
+                put("originalEventId", inviteEventId)
+                put("accepted", true)
+                put("phase", "lobby_ready")
+                put("ts", System.currentTimeMillis())
+            },
+        )
+    }
+
     fun sendBattleEnd(ctx: Context, roomId: String, winner: String) {
         send(ctx, roomId, MatrixWireFormat.EventType.BATTLE_END, JSONObject().apply {
             put("winner", winner)

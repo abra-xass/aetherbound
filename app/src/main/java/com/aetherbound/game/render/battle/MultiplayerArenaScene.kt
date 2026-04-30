@@ -1,5 +1,7 @@
 package com.aetherbound.game.render.battle
 
+import androidx.compose.animation.core.Animatable
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -28,6 +30,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
@@ -107,6 +110,26 @@ fun MultiplayerArenaScene(
     var showSwitchPicker by remember { mutableStateOf(false) }
     var activeMemberIdx by remember { mutableIntStateOf(party.activeIndex) }
 
+    // ── Lightweight attack animation state ─────────────────────────
+    // No full SP-BattleScene-style recipe rendering yet — just a sprite-
+    // lunge for whoever just acted, plus a defender-fade-flash to convey
+    // the impact. Driven by a one-shot animation on each TechniqueResolved.
+    val playerLunge = remember { Animatable(0f) }
+    val opponentLunge = remember { Animatable(0f) }
+    val playerFlash = remember { Animatable(1f) }
+    val opponentFlash = remember { Animatable(1f) }
+    suspend fun playLungeAnim(side: Side) {
+        val anim = if (side == Side.PLAYER) playerLunge else opponentLunge
+        val direction = if (side == Side.PLAYER) 30f else -30f
+        anim.animateTo(direction, tween(120))
+        anim.animateTo(0f, tween(140))
+    }
+    suspend fun playFlashAnim(side: Side) {
+        val anim = if (side == Side.PLAYER) opponentFlash else playerFlash    // opposite side flashes
+        anim.animateTo(0.35f, tween(80))
+        anim.animateTo(1f, tween(180))
+    }
+
     /** Helper: replace state.player with party.members[idx], reset statuses. */
     fun swapToMember(newIdx: Int) {
         val newMember = party.members.getOrNull(newIdx) ?: return
@@ -184,11 +207,15 @@ fun MultiplayerArenaScene(
             onLocalAction(mine, ourHash)
             phase = Phase.Animating
             val tail = resolved.log.drop(state.log.size)
-            tail.filterIsInstance<BattleEvent.TechniqueResolved>().firstOrNull()?.let { ev ->
+            // Play attack animations in chronological order — usually one
+            // hit per side per turn (host first then guest, or vice versa).
+            tail.filterIsInstance<BattleEvent.TechniqueResolved>().forEach { ev ->
                 statusLine = if (ev.missed) "${nameForSide(state, ev.side)} missed!"
                 else "${nameForSide(state, ev.side)} dealt ${ev.damage}" +
                     (if (ev.crit) " CRIT" else "") +
                     (if (ev.stab) " STAB" else "")
+                playLungeAnim(ev.side)
+                if (!ev.missed) playFlashAnim(ev.side)
             }
             tail.filterIsInstance<BattleEvent.Faint>().forEach { f ->
                 if (f.side == Side.PLAYER) playerFaints++
@@ -273,8 +300,12 @@ fun MultiplayerArenaScene(
             val h = maxHeight
             Box(
                 Modifier
-                    .offset(x = w * 0.55f, y = h * 0.20f)
-                    .size(160.dp),
+                    .offset(
+                        x = w * 0.55f + opponentLunge.value.dp,
+                        y = h * 0.20f,
+                    )
+                    .size(160.dp)
+                    .alpha(opponentFlash.value),
             ) {
                 EchoformSpriteImage(
                     slug = state.opponent.species.id,
@@ -284,8 +315,12 @@ fun MultiplayerArenaScene(
             }
             Box(
                 Modifier
-                    .offset(x = w * 0.05f, y = h * 0.50f)
-                    .size(200.dp),
+                    .offset(
+                        x = w * 0.05f + playerLunge.value.dp,
+                        y = h * 0.50f,
+                    )
+                    .size(200.dp)
+                    .alpha(playerFlash.value),
             ) {
                 EchoformSpriteImage(
                     slug = state.player.species.id,
