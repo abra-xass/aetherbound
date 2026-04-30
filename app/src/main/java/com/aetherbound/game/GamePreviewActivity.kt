@@ -1,5 +1,6 @@
 package com.aetherbound.game
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -53,8 +54,20 @@ import com.aetherbound.game.render.world.WorldScene
  * Three scenes, internally routed: Title → World → Battle → World.
  */
 class GamePreviewActivity : ComponentActivity() {
+    /**
+     * Incoming intent state — observed by the Compose tree. Set in
+     * [onCreate] from the launching intent, refreshed in [onNewIntent]
+     * when Thot launches us while we're already running. The composable
+     * reads it via [androidx.compose.runtime.mutableStateOf] reference
+     * passed through the local-composition.
+     */
+    private val incoming = mutableStateOf<com.aetherbound.game.core.data.IncomingIntent>(
+        com.aetherbound.game.core.data.IncomingIntent.None
+    )
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        incoming.value = com.aetherbound.game.core.data.IncomingIntent.from(intent)
         setContent {
             var quality by remember { mutableStateOf(QualityPreset.Balanced) }
             AetherboundTheme(quality = quality) {
@@ -68,9 +81,18 @@ class GamePreviewActivity : ComponentActivity() {
                         }
                     },
                     onExit = { finish() },
+                    incomingIntent = incoming.value,
+                    consumeIntent = {
+                        incoming.value = com.aetherbound.game.core.data.IncomingIntent.None
+                    },
                 )
             }
         }
+    }
+
+    override fun onNewIntent(intent: Intent) {
+        super.onNewIntent(intent)
+        incoming.value = com.aetherbound.game.core.data.IncomingIntent.from(intent)
     }
 }
 
@@ -79,6 +101,7 @@ private enum class Scene {
     Menu, Party, Bag, SaveMenu, LoadMenu,
     Detail, Bestiary, Settings, StatusCard, ItemTarget,
     AssetPacks, Updates, MoveLearning, PcStorage,
+    MultiplayerLobby, MultiplayerArena,
 }
 
 /** Pending move-learning event from a level-up. Queue may hold several
@@ -93,6 +116,9 @@ private fun GamePreviewRoot(
     quality: QualityPreset,
     onCycleQuality: () -> Unit,
     onExit: () -> Unit,
+    incomingIntent: com.aetherbound.game.core.data.IncomingIntent =
+        com.aetherbound.game.core.data.IncomingIntent.None,
+    consumeIntent: () -> Unit = {},
 ) {
     var scene by remember { mutableStateOf(Scene.Title) }
     var sceneBeforeMenu by remember { mutableStateOf(Scene.Title) }
@@ -135,6 +161,27 @@ private fun GamePreviewRoot(
     var cameFromBattle by remember { mutableStateOf(false) }
     var moveLearnQueue by remember { mutableStateOf<List<MoveLearnEvent>>(emptyList()) }
     var pcStorage by remember { mutableStateOf(com.aetherbound.game.core.data.PcStorage()) }
+
+    // ── Multiplayer match state ────────────────────────────────────
+    var mpRoomId by remember { mutableStateOf("") }
+    var mpPeerMatrixId by remember { mutableStateOf("") }
+    var mpInviteEventId by remember { mutableStateOf("") }
+    var mpRngSeed by remember { mutableStateOf(0L) }
+    var mpMode by remember { mutableStateOf(com.aetherbound.game.core.data.MultiplayerRewards.Mode.RANKED) }
+    var mpLevelCap by remember { mutableStateOf(50) }
+    var mpSnapshot by remember { mutableStateOf<com.aetherbound.game.core.data.MultiplayerSnapshot?>(null) }
+    var mpIAmReady by remember { mutableStateOf(false) }
+    var mpPeerReady by remember { mutableStateOf(false) }
+    // Channel that the bridge feeds with peer move-indices when the
+    // BATTLE_MOVE Matrix event lands. ArenaScene's resolver-loop suspends on it.
+    val mpPeerActionsChannel = remember {
+        kotlinx.coroutines.channels.Channel<Int>(kotlinx.coroutines.channels.Channel.CONFLATED)
+    }
+    val mpPeerActionsFlow = remember(mpPeerActionsChannel) {
+        kotlinx.coroutines.flow.flow {
+            for (a in mpPeerActionsChannel) emit(a)
+        }
+    }
     var pendingStoryBeat by remember { mutableStateOf<com.aetherbound.game.core.data.StoryBeats.Beat?>(null) }
     fun fireBeat(beat: com.aetherbound.game.core.data.StoryBeats.Beat) {
         if (!progress.hasFlag(beat.flag)) pendingStoryBeat = beat
@@ -142,6 +189,37 @@ private fun GamePreviewRoot(
     var currentMapPath by remember { mutableStateOf("game/maps/tuxemon/spyder_shores.tmx") }
     var spawnTileX by remember { mutableStateOf(8) }
     var spawnTileY by remember { mutableStateOf(8) }
+
+    // Route incoming Thot intents (BATTLE_INVITE, TRADE_OFFER, OPEN_TITLE) into scenes.
+    androidx.compose.runtime.LaunchedEffect(incomingIntent) {
+        when (val ii = incomingIntent) {
+            is com.aetherbound.game.core.data.IncomingIntent.BattleInvite -> {
+                mpRoomId = ii.roomId
+                mpPeerMatrixId = ii.peerMatrixId
+                mpInviteEventId = ii.inviteEventId
+                // Pre-match snapshot — restored verbatim post-match.
+                mpSnapshot = com.aetherbound.game.core.data.MultiplayerSnapshot.capture(
+                    party = party,
+                    worldMapPath = currentMapPath,
+                    worldTileX = spawnTileX,
+                    worldTileY = spawnTileY,
+                )
+                // Both peers derive the same seed from the invite event-id.
+                mpRngSeed = ii.inviteEventId.hashCode().toLong()
+                scene = Scene.MultiplayerLobby
+                consumeIntent()
+            }
+            is com.aetherbound.game.core.data.IncomingIntent.TradeOffer -> {
+                saveSlotMessage = "Trade offer from ${ii.peerMatrixId} (TBD)"
+                consumeIntent()
+            }
+            com.aetherbound.game.core.data.IncomingIntent.OpenTitle -> {
+                scene = Scene.Title
+                consumeIntent()
+            }
+            com.aetherbound.game.core.data.IncomingIntent.None -> Unit
+        }
+    }
 
     // Hoisted audio engine — single instance per activity, auto-released on dispose.
     val audio = com.aetherbound.game.render.audio.rememberAudioEngine()
@@ -198,8 +276,14 @@ private fun GamePreviewRoot(
             }
             Scene.World -> scene = Scene.Title
             Scene.Sandbox -> scene = Scene.Title
-            Scene.Battle, Scene.TrainerBattle,
+            Scene.Battle, Scene.TrainerBattle, Scene.MultiplayerArena,
             Scene.MoveLearning -> { /* modal — user must pick an option, no back */ }
+            Scene.MultiplayerLobby -> {
+                mpIAmReady = false
+                mpPeerReady = false
+                mpSnapshot = null
+                scene = Scene.TuxemonWorld
+            }
             Scene.Title -> onExit()
         }
     }
@@ -513,6 +597,123 @@ private fun GamePreviewRoot(
                         saveSlotMessage = "${mon.species.name} released into the wild."
                     },
                 )
+                Scene.MultiplayerLobby -> {
+                    com.aetherbound.game.render.battle.MultiplayerLobbyScene(
+                        selfDisplayName = progress.playerName,
+                        selfStats = progress.multiplayer,
+                        selfMoney = inventory.money,
+                        peerDisplayName = mpPeerMatrixId.substringBefore(":").removePrefix("@")
+                            .ifEmpty { "Opponent" },
+                        peerStats = null,    // peer Matrix-state-event reveal pending
+                        peerMoney = null,
+                        iAmReady = mpIAmReady,
+                        peerReady = mpPeerReady,
+                        onReady = { m, cap ->
+                            mpMode = m
+                            mpLevelCap = cap
+                            mpIAmReady = true
+                            // Once both ready, transition to arena.
+                            // For MVP single-device demo we go straight in.
+                            scene = Scene.MultiplayerArena
+                        },
+                        onDecline = {
+                            mpIAmReady = false
+                            mpPeerReady = false
+                            mpSnapshot = null
+                            scene = Scene.TuxemonWorld
+                        },
+                    )
+                }
+                Scene.MultiplayerArena -> {
+                    val snap = mpSnapshot
+                    val player = party.active
+                    if (snap == null || player == null) {
+                        scene = Scene.TuxemonWorld
+                    } else {
+                        // Build a placeholder opponent — real wire would receive
+                        // it via BATTLE_START event payload.
+                        val opponent = com.aetherbound.game.core.data.TuxemonBattleSetup
+                            .build(ctx, "rockitten", player.level)
+                            ?: player
+                        com.aetherbound.game.render.battle.MultiplayerArenaScene(
+                            initialPlayer = player,
+                            initialOpponent = opponent,
+                            rngSeed = mpRngSeed,
+                            snapshot = snap,
+                            selfDisplayName = progress.playerName,
+                            peerDisplayName = mpPeerMatrixId.substringBefore(":").removePrefix("@")
+                                .ifEmpty { "Opponent" },
+                            selfWins = progress.multiplayer.wins,
+                            selfLosses = progress.multiplayer.losses,
+                            peerWins = 0, peerLosses = 0,
+                            mode = mpMode,
+                            peerActions = mpPeerActionsFlow,
+                            onLocalAction = { idx ->
+                                // Real impl: bridge.sendBattleMove(roomId, turn, idx, stateHash)
+                                // MVP demo: feed peer-action channel with a random reply
+                                // so the resolver loop progresses on a single device.
+                                mpPeerActionsChannel.trySend(
+                                    (0 until (party.active?.techniques?.size ?: 1)).random()
+                                )
+                            },
+                            onMatchEnd = { result ->
+                                // Apply rewards. Use real wallet figures here.
+                                if (result.won && mpMode == com.aetherbound.game.core.data.MultiplayerRewards.Mode.RANKED) {
+                                    val pot = com.aetherbound.game.core.data.MultiplayerRewards.computePotAnte(
+                                        loserMoney = inventory.money,    // opponent-money proxy for MVP
+                                    )
+                                    inventory = inventory.copy(money = inventory.money + pot)
+                                    val record = com.aetherbound.game.core.data.MatchRecord(
+                                        opponentDisplayName = mpPeerMatrixId.substringBefore(":").removePrefix("@"),
+                                        opponentMatrixId = mpPeerMatrixId,
+                                        won = true,
+                                        finalTurn = result.finalTurn,
+                                        playerSweep = result.playerSweep,
+                                    )
+                                    progress = progress.copy(
+                                        multiplayer = progress.multiplayer.recordMatch(record, potDelta = pot),
+                                    )
+                                    saveSlotMessage = "Victory! +\$$pot"
+                                } else if (!result.won && mpMode == com.aetherbound.game.core.data.MultiplayerRewards.Mode.RANKED) {
+                                    val pot = com.aetherbound.game.core.data.MultiplayerRewards.computePotAnte(inventory.money)
+                                    val (newBalance, _) = com.aetherbound.game.core.data.MultiplayerRewards
+                                        .applyLoss(inventory.money, pot)
+                                    inventory = inventory.copy(money = newBalance)
+                                    val record = com.aetherbound.game.core.data.MatchRecord(
+                                        opponentDisplayName = mpPeerMatrixId.substringBefore(":").removePrefix("@"),
+                                        opponentMatrixId = mpPeerMatrixId,
+                                        won = false,
+                                        finalTurn = result.finalTurn,
+                                        playerSweep = false,
+                                    )
+                                    progress = progress.copy(
+                                        multiplayer = progress.multiplayer.recordMatch(record, potDelta = -pot),
+                                    )
+                                    saveSlotMessage = "Defeat. -\$$pot"
+                                }
+                                // Restore party + world position from snapshot.
+                                party = snap.partyDeepCopy
+                                currentMapPath = snap.worldMapPath
+                                spawnTileX = snap.worldTileX
+                                spawnTileY = snap.worldTileY
+                                mpSnapshot = null
+                                mpIAmReady = false
+                                mpPeerReady = false
+                                scene = Scene.TuxemonWorld
+                            },
+                            onConcede = {
+                                party = snap.partyDeepCopy
+                                currentMapPath = snap.worldMapPath
+                                spawnTileX = snap.worldTileX
+                                spawnTileY = snap.worldTileY
+                                mpSnapshot = null
+                                mpIAmReady = false
+                                saveSlotMessage = "Conceded the match."
+                                scene = Scene.TuxemonWorld
+                            },
+                        )
+                    }
+                }
                 Scene.AssetPacks -> com.aetherbound.game.render.ui.AssetPackPrompt(
                     onClose = { scene = Scene.Menu },
                 )
