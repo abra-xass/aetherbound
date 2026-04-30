@@ -541,10 +541,13 @@ fun BattleScene(
             if (state.winner == Side.PLAYER) {
                 val loser = state.opponent
                 val baseStatSum = with(loser.species.baseStats) { vigor + force + focus + guard + ward + tempo }
+                // Wild encounter (single-player). Trainer + Multiplayer override
+                // the source-mode at the activity level via dedicated callbacks.
                 val xp = com.aetherbound.game.core.data.ExperienceEngine.xpFromVictory(
+                    winnerLevel = state.player.level,
                     loserLevel = loser.level,
                     loserBaseStatSum = baseStatSum,
-                    isTrainer = false,
+                    sourceMode = com.aetherbound.game.core.data.ExperienceEngine.SourceMode.WILD,
                 )
                 onVictory(loser, xp)
             }

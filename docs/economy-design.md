@@ -18,19 +18,40 @@ fühlen sich wie unterschiedliche Belohnungs-Curves an, nicht alle gleich.
 | Trainer-Sieg (2-3-Mon-Team) | 400-700 |
 | Trainer-Sieg (4-5-Mon-Team) | 800-1200 |
 | Gym Leader | 1500-3500 |
-| Multiplayer-Sieg | 5% des **eigenen Wallets** des Verlierers, min 50, max 2000 |
+| Multiplayer-Sieg | max(5,000, 5% des Verlierer-Wallets) — kein Upper-Cap |
 | Story-Quest-Reward | 500-3000 |
 | Hidden-Pickup (Item-Drop) | 200-1500 |
 
-**Multiplayer-Pot-Logik:**
+**Multiplayer-Pot-Logik (flat-floor, debt-cap):**
 ```
-loser_pays = clamp(loser.money * 0.05, 50, 2000)
-winner_gains = loser_pays
+pot = max(5000, loser.money * 0.05)
+loser.money clamped at -5000 floor
+winner.money += actually_paid
 ```
-- Wenn Bob mit $10000 verliert → zahlt $500 (gerade spürbar, nicht ruinös)
-- Wenn Bob mit $200 verliert → zahlt $50 (Mindestverlust, nicht erniedrigend)
-- Wenn Alice $30000 hat, Bob $30000 → Pot von $1500 (genug um Beuteempfindlich)
-- Wenn Alice $300 hat, Bob $300 → Pot von $50 (anti-bankruptcy floor)
+- Bob mit $10.000: zahlt $5.000 (5% wäre $500, aber Floor zieht hoch)
+- Bob mit $50.000: zahlt $2.500 → Floor greift, **$5.000 zahlt er**
+- Bob mit $200.000: zahlt $10.000 (5% schlägt durch, kein Cap mehr)
+- Bob mit $200: zahlt $200 + geht auf -$4.800 Schulden
+- Bob mit -$5.000 (Schulden-Floor): zahlt $0, Match-Pot leer aber er kann
+  weiterspielen, nur Winner bekommt nichts mehr in Cash
+
+**Eintritts-Schwelle:** Spieler braucht effektiv keine Mindestsumme um zu
+matchen — auch ein neuer Spieler mit $1.500 Startgeld kann sofort
+multiplayer-fechten. Ein Verlust setzt ihn auf -$3.500, ein zweiter auf
+-$5.000 (Floor). Dritter Verlust kostet ihn nichts mehr in Geld
+(Schulden-Floor erreicht), aber er bleibt verschuldet bis er Trainer-Wins
+sammelt um aus dem Minus zu kommen.
+
+**Schmerz-Curve im Detail:**
+| Verlierer-Wallet | Pot (was Winner kriegt) | Verlierer-Resultat |
+|---:|---:|---|
+| $200 | $5.000 | $200 → -$4.800 |
+| $1.500 | $5.000 | $1.500 → -$3.500 |
+| $5.000 | $5.000 | $5.000 → $0 |
+| $50.000 | $5.000 | -10% Wallet (Floor greift) |
+| $200.000 | $10.000 | -5% Wallet |
+| $1.000.000 | $50.000 | -5% Wallet (kein Cap mehr) |
+| -$5.000 (Floor) | $0 | bleibt -$5.000, kein Cash-Flow |
 
 ### Ausgeben
 

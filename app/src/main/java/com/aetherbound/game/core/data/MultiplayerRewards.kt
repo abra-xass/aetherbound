@@ -26,13 +26,41 @@ object MultiplayerRewards {
     )
 
     /**
-     * Pot ante — winner takes 5% of loser's wallet, clamped 50..2000.
-     * Floor avoids erniedrigend-low loss when the loser is broke;
-     * cap avoids ruinous losses for end-game whales.
+     * Flat pot floor — every match has a 5,000 stake. Wealthier players
+     * pay proportionally more (5% of wallet) but never less than 5,000.
+     * No upper cap any more — late-game whales can lose big, which keeps
+     * pots meaningful even when wallets balloon.
+     *
+     * Pairs with [MAX_DEBT]: a broke player still owes 5,000, but their
+     * wallet floors at −5,000 instead of running into infinite negatives.
      */
     fun computePotAnte(loserMoney: Int): Int {
-        val raw = (loserMoney * 0.05).toInt()
-        return raw.coerceIn(50, 2000)
+        val proportional = (loserMoney * 0.05).toInt()
+        return maxOf(MIN_POT, proportional)
+    }
+
+    /** Minimum match stake — every win/loss moves at least this much. */
+    const val MIN_POT = 5_000
+
+    /** Player's wallet can go this far below zero before debt clamps. */
+    const val MAX_DEBT = -5_000
+
+    /**
+     * Apply a pot to a wallet, respecting the [MAX_DEBT] floor.
+     *
+     * Returns (newBalance, paidAmount). The paid amount is what actually
+     * left the loser's wallet — equal to [potAmount] when they could
+     * afford it, less when the debt-floor clipped them.
+     */
+    fun applyLoss(currentMoney: Int, potAmount: Int): Pair<Int, Int> {
+        val targetBalance = currentMoney - potAmount
+        return if (targetBalance >= MAX_DEBT) {
+            targetBalance to potAmount
+        } else {
+            // Floor at MAX_DEBT — only pay what brings us to the floor.
+            val actuallyPaid = currentMoney - MAX_DEBT
+            MAX_DEBT to actuallyPaid.coerceAtLeast(0)
+        }
     }
 
     /**

@@ -128,6 +128,69 @@ fun PlayerStatusCard(
 
         Spacer(Modifier.height(16.dp))
 
+        // Aether Battle Record (only if any matches played)
+        val mp = progress.multiplayer
+        if (mp.totalMatches > 0 || inventory.money < 0) {
+            Text(
+                "AETHER BATTLE RECORD",
+                color = AetherColors.GoldBright,
+                fontSize = 13.sp,
+                fontWeight = FontWeight.Bold,
+            )
+            Spacer(Modifier.height(6.dp))
+            Column(
+                Modifier
+                    .fillMaxWidth()
+                    .clip(RoundedCornerShape(8.dp))
+                    .background(AetherColors.Slate)
+                    .border(1.dp, AetherColors.GoldCore, RoundedCornerShape(8.dp))
+                    .padding(12.dp),
+                verticalArrangement = Arrangement.spacedBy(6.dp),
+            ) {
+                StatGrid(items = listOf(
+                    "Wins"      to "${mp.wins}",
+                    "Losses"    to "${mp.losses}",
+                    "Win-Rate"  to "${(mp.winRate * 100).toInt()}%",
+                    "Streak"    to streakLabel(mp),
+                    "Biggest Upset" to (if (mp.biggestUpset > 0) "+${mp.biggestUpset} levels" else "—"),
+                    "Net Pot"   to formatMoney(mp.netPot),
+                ))
+                if (inventory.money < 0) {
+                    Spacer(Modifier.height(4.dp))
+                    Box(
+                        Modifier
+                            .fillMaxWidth()
+                            .clip(RoundedCornerShape(6.dp))
+                            .background(AetherColors.WarningRed.copy(alpha = 0.18f))
+                            .border(1.dp, AetherColors.WarningRed, RoundedCornerShape(6.dp))
+                            .padding(horizontal = 10.dp, vertical = 6.dp),
+                    ) {
+                        Text(
+                            "DEBT  ${'$'}${inventory.money}  /  -${'$'}5000 floor",
+                            color = AetherColors.WarningRed,
+                            fontSize = 11.sp,
+                            fontWeight = FontWeight.Bold,
+                        )
+                    }
+                }
+                if (mp.recentMatches.isNotEmpty()) {
+                    Spacer(Modifier.height(4.dp))
+                    Text("Last ${mp.recentMatches.size} matches:",
+                        color = AetherColors.MutedText, fontSize = 10.sp)
+                    mp.recentMatches.take(5).forEach { rec ->
+                        Text(
+                            "${if (rec.won) "W" else "L"} vs ${rec.opponentDisplayName} · " +
+                                "${rec.finalTurn} turns" +
+                                (if (rec.playerSweep) " · sweep!" else ""),
+                            color = if (rec.won) AetherColors.GoldBright else AetherColors.MutedText,
+                            fontSize = 11.sp,
+                        )
+                    }
+                }
+            }
+            Spacer(Modifier.height(16.dp))
+        }
+
         // Badge ribbon
         if (progress.badgesEarned.isNotEmpty()) {
             Text(
@@ -196,3 +259,12 @@ private fun formatPlaytime(sec: Long): String {
     val m = (sec % 3600) / 60
     return "${h}h ${m}m"
 }
+
+private fun streakLabel(mp: com.aetherbound.game.core.data.MultiplayerStats): String = when {
+    mp.currentStreak > 0 -> "+${mp.currentStreak}  (max +${mp.longestStreak})"
+    mp.currentStreak < 0 -> "${mp.currentStreak}  (max +${mp.longestStreak})"
+    else -> "—  (max +${mp.longestStreak})"
+}
+
+private fun formatMoney(amount: Int): String =
+    if (amount < 0) "-${'$'}${-amount}" else "${'$'}${amount}"

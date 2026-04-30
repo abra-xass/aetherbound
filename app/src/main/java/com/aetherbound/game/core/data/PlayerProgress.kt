@@ -29,6 +29,11 @@ data class PlayerProgress(
      * Examples: `"item_pokeball_route1"`, `"story_intro_done"`, `"trainer_hiker_beaten"`.
      */
     val collectedFlags: Set<String> = emptySet(),
+    /**
+     * Aggregated multiplayer record (W/L, streak, recent matches, pot
+     * winnings). Defaults to zero for legacy saves so loading is safe.
+     */
+    val multiplayer: MultiplayerStats = MultiplayerStats(),
 ) {
     fun see(slug: String): PlayerProgress = copy(seenSlugs = seenSlugs + slug)
     fun capture(slug: String): PlayerProgress = copy(
