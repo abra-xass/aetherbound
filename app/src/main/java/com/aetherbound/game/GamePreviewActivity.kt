@@ -162,6 +162,14 @@ private fun GamePreviewRoot(
     var moveLearnQueue by remember { mutableStateOf<List<MoveLearnEvent>>(emptyList()) }
     var pcStorage by remember { mutableStateOf(com.aetherbound.game.core.data.PcStorage()) }
 
+    // Thot ForegroundService bind + heartbeat — keeps Tor connection alive
+    // while a multiplayer match is running. Auto-released on dispose.
+    val thotKeeper = remember { com.aetherbound.game.core.data.ThotConnectionKeeper(ctx) }
+    var showBatteryPrompt by remember { mutableStateOf(false) }
+    androidx.compose.runtime.DisposableEffect(thotKeeper) {
+        onDispose { thotKeeper.stop() }
+    }
+
     // ── Multiplayer match state ────────────────────────────────────
     var mpRoomId by remember { mutableStateOf("") }
     var mpPeerMatrixId by remember { mutableStateOf("") }
@@ -189,6 +197,28 @@ private fun GamePreviewRoot(
     var currentMapPath by remember { mutableStateOf("game/maps/tuxemon/spyder_shores.tmx") }
     var spawnTileX by remember { mutableStateOf(8) }
     var spawnTileY by remember { mutableStateOf(8) }
+
+    // Bind to Thot's ForegroundService whenever a multiplayer scene is up.
+    // Heartbeat every 15s while bound. DisposableEffect releases on scene leave.
+    androidx.compose.runtime.LaunchedEffect(scene) {
+        val isMp = scene == Scene.MultiplayerLobby || scene == Scene.MultiplayerArena
+        if (isMp) {
+            thotKeeper.start()
+            // Battery-optim prompt — fire only once per save (flag-tracked).
+            if (!progress.hasFlag("mp_battery_prompt_seen") &&
+                !com.aetherbound.game.render.ui.isBatteryOptimisationOk(ctx)) {
+                showBatteryPrompt = true
+            }
+            // Heartbeat loop.
+            while (scene == Scene.MultiplayerLobby || scene == Scene.MultiplayerArena) {
+                thotKeeper.heartbeat()
+                kotlinx.coroutines.delay(15_000)
+            }
+            thotKeeper.stop()
+        } else {
+            thotKeeper.stop()
+        }
+    }
 
     // Route incoming Thot intents (BATTLE_INVITE, TRADE_OFFER, OPEN_TITLE) into scenes.
     androidx.compose.runtime.LaunchedEffect(incomingIntent) {
@@ -797,6 +827,16 @@ private fun GamePreviewRoot(
                 onClose = {
                     progress = progress.setFlag(beat.flag)
                     pendingStoryBeat = null
+                },
+            )
+        }
+
+        // First-multiplayer-match battery-optimisation prompt.
+        if (showBatteryPrompt) {
+            com.aetherbound.game.render.ui.BatteryOptimizationPrompt(
+                onDismiss = {
+                    progress = progress.setFlag("mp_battery_prompt_seen")
+                    showBatteryPrompt = false
                 },
             )
         }
