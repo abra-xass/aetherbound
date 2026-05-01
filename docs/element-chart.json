@@ -1,0 +1,254 @@
+{
+  "Fire": {
+    "strong": [
+      "Wood",
+      "Ice",
+      "Metal"
+    ],
+    "weak": [
+      "Water",
+      "Earth",
+      "Storm"
+    ],
+    "immune": []
+  },
+  "Water": {
+    "strong": [
+      "Fire",
+      "Earth",
+      "Storm"
+    ],
+    "weak": [
+      "Wood",
+      "Ice",
+      "Sound"
+    ],
+    "immune": []
+  },
+  "Ice": {
+    "strong": [
+      "Wood",
+      "Wind",
+      "Earth"
+    ],
+    "weak": [
+      "Fire",
+      "Metal",
+      "Storm"
+    ],
+    "immune": []
+  },
+  "Earth": {
+    "strong": [
+      "Fire",
+      "Storm",
+      "Crystal"
+    ],
+    "weak": [
+      "Wood",
+      "Ice",
+      "Wind"
+    ],
+    "immune": []
+  },
+  "Wood": {
+    "strong": [
+      "Water",
+      "Earth",
+      "Sound"
+    ],
+    "weak": [
+      "Fire",
+      "Ice",
+      "Venom"
+    ],
+    "immune": []
+  },
+  "Metal": {
+    "strong": [
+      "Ice",
+      "Crystal",
+      "Wind"
+    ],
+    "weak": [
+      "Fire",
+      "Storm",
+      "Earth"
+    ],
+    "immune": [
+      "Venom"
+    ]
+  },
+  "Storm": {
+    "strong": [
+      "Water",
+      "Wind",
+      "Metal"
+    ],
+    "weak": [
+      "Earth",
+      "Ice",
+      "Crystal"
+    ],
+    "immune": []
+  },
+  "Wind": {
+    "strong": [
+      "Wood",
+      "Venom",
+      "Earth"
+    ],
+    "weak": [
+      "Storm",
+      "Ice",
+      "Crystal"
+    ],
+    "immune": []
+  },
+  "Shadow": {
+    "strong": [
+      "Mind",
+      "Light",
+      "Dream"
+    ],
+    "weak": [
+      "Light",
+      "Aether",
+      "Sound"
+    ],
+    "immune": []
+  },
+  "Light": {
+    "strong": [
+      "Shadow",
+      "Venom",
+      "Crystal"
+    ],
+    "weak": [
+      "Shadow",
+      "Cosmic",
+      "Time"
+    ],
+    "immune": []
+  },
+  "Venom": {
+    "strong": [
+      "Wood",
+      "Water",
+      "Blood"
+    ],
+    "weak": [
+      "Earth",
+      "Metal",
+      "Aether"
+    ],
+    "immune": []
+  },
+  "Cosmic": {
+    "strong": [
+      "Mind",
+      "Light",
+      "Time"
+    ],
+    "weak": [
+      "Aether",
+      "Shadow",
+      "Venom"
+    ],
+    "immune": []
+  },
+  "Aether": {
+    "strong": [
+      "Shadow",
+      "Venom",
+      "Cosmic"
+    ],
+    "weak": [
+      "Cosmic",
+      "Time"
+    ],
+    "immune": [
+      "Mind"
+    ]
+  },
+  "Dream": {
+    "strong": [
+      "Mind",
+      "Time",
+      "Blood"
+    ],
+    "weak": [
+      "Shadow",
+      "Light",
+      "Sound"
+    ],
+    "immune": []
+  },
+  "Mind": {
+    "strong": [
+      "Sound",
+      "Venom",
+      "Dream"
+    ],
+    "weak": [
+      "Shadow",
+      "Cosmic",
+      "Aether"
+    ],
+    "immune": []
+  },
+  "Sound": {
+    "strong": [
+      "Mind",
+      "Crystal",
+      "Wind"
+    ],
+    "weak": [
+      "Wood",
+      "Water",
+      "Earth"
+    ],
+    "immune": [
+      "Aether"
+    ]
+  },
+  "Time": {
+    "strong": [
+      "Light",
+      "Aether",
+      "Blood"
+    ],
+    "weak": [
+      "Cosmic",
+      "Shadow",
+      "Dream"
+    ],
+    "immune": []
+  },
+  "Crystal": {
+    "strong": [
+      "Earth",
+      "Wind",
+      "Storm"
+    ],
+    "weak": [
+      "Sound",
+      "Metal",
+      "Light"
+    ],
+    "immune": []
+  },
+  "Blood": {
+    "strong": [
+      "Time",
+      "Aether",
+      "Crystal"
+    ],
+    "weak": [
+      "Venom",
+      "Dream",
+      "Light"
+    ],
+    "immune": []
+  }
+}
