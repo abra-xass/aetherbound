@@ -35513,6 +35513,13 @@
     "ai_prompt": "Pokemon-style monster creature named \"Orru\". PRIMARY ELEMENT: Ice — pale blue, cyan, frost-white, glacial silver. SECONDARY ELEMENT: Wood — deep forest green, bark-brown, autumn ochre. CREATURE ARCHETYPE: mythic-form. RARITY TIER: Legendary (mythical and divine appearance, multiple body modifications, otherworldly aura, dramatic pose, reality-bending visual flourishes (e.g. floating limbs, energy halo, asymmetric wings)). KEY DESIGN FEATURES: snowflake markings, shattered-glass exoskeleton, plus leaf-mane accents from Wood-element, made of glacier shards. AURA / MOOD: crisp frost mist. STYLE REFERENCE: like Glaceon — crystalline ice plates over fur. LEGENDARY SIZE BOOST: render this creature ~35% LARGER than non-legendary echoforms — silhouette dominates ~85% of frame instead of ~60% for commons. More imposing scale conveys legendary status. OUTPUT VIEWS: render three separate images per creature — (1) full-body front view, (2) three-quarter back view rotated ~135 degrees from front, (3) pure side-profile view. GENERATION RES: render at 512x512 for AI quality, then DOWNSCALE to FINAL 96x96 PNG. FINAL IMAGE SPECS: 96x96 PNG, transparent background, indexed palette (max 256 colors), TARGET FILE SIZE: under 5 KB per image. Use clean Pokemon-style line art, vibrant saturated colors, single creature centered in frame, tightly cropped to silhouette (no padding wider than 2px), no text or watermarks.",
     "evolution": {
       "in_chain": false
+    },
+    "signature_move": {
+      "name": "Glaziale Singularität",
+      "element": "Ice",
+      "power": 285,
+      "description_de": "Schafft einen kristallinen Punkt absoluter Kälte — alles in der Nähe gefriert auf molekularer Ebene.",
+      "note": "EXCLUSIVE to Orru — no other monster (incl. other legendaries) can learn this."
     }
   },
   {
@@ -35546,6 +35553,13 @@
     "ai_prompt": "Pokemon-style monster creature named \"Xundraintu\". PRIMARY ELEMENT: Earth — rich brown, ochre, terracotta, mossy green. CREATURE ARCHETYPE: quadruped. RARITY TIER: Legendary (mythical and divine appearance, multiple body modifications, otherworldly aura, dramatic pose, reality-bending visual flourishes (e.g. floating limbs, energy halo, asymmetric wings)). KEY DESIGN FEATURES: boulder-shoulder, root-bound horns, made of clay scales. AURA / MOOD: small dust kicked up around feet. STYLE REFERENCE: like Rhydon — heavy earth-armored beast. LEGENDARY SIZE BOOST: render this creature ~35% LARGER than non-legendary echoforms — silhouette dominates ~85% of frame instead of ~60% for commons. More imposing scale conveys legendary status. OUTPUT VIEWS: render three separate images per creature — (1) full-body front view, (2) three-quarter back view rotated ~135 degrees from front, (3) pure side-profile view. GENERATION RES: render at 512x512 for AI quality, then DOWNSCALE to FINAL 96x96 PNG. FINAL IMAGE SPECS: 96x96 PNG, transparent background, indexed palette (max 256 colors), TARGET FILE SIZE: under 5 KB per image. Use clean Pokemon-style line art, vibrant saturated colors, single creature centered in frame, tightly cropped to silhouette (no padding wider than 2px), no text or watermarks.",
     "evolution": {
       "in_chain": false
+    },
+    "signature_move": {
+      "name": "Tektonische Verwerfung",
+      "element": "Earth",
+      "power": 275,
+      "description_de": "Spaltet die Erde unter dem Gegner und wirft ihn in einen Schlund aus glühender Magma.",
+      "note": "EXCLUSIVE to Xundraintu — no other monster (incl. other legendaries) can learn this."
     }
   },
   {
@@ -35578,6 +35592,13 @@
     "ai_prompt": "Pokemon-style monster creature named \"Resosdienth\". PRIMARY ELEMENT: Wood — deep forest green, bark-brown, autumn ochre. SECONDARY ELEMENT: Earth — rich brown, ochre, terracotta, mossy green. CREATURE ARCHETYPE: bipedal-humanoid. RARITY TIER: Legendary (mythical and divine appearance, multiple body modifications, otherworldly aura, dramatic pose, reality-bending visual flourishes (e.g. floating limbs, energy halo, asymmetric wings)). KEY DESIGN FEATURES: moss back, moss back, plus stone-plate armor accents from Earth-element, made of mushroom growths. AURA / MOOD: petals drifting in air. STYLE REFERENCE: like Sceptile — slender tree-leaf creature. LEGENDARY SIZE BOOST: render this creature ~35% LARGER than non-legendary echoforms — silhouette dominates ~85% of frame instead of ~60% for commons. More imposing scale conveys legendary status. OUTPUT VIEWS: render three separate images per creature — (1) full-body front view, (2) three-quarter back view rotated ~135 degrees from front, (3) pure side-profile view. GENERATION RES: render at 512x512 for AI quality, then DOWNSCALE to FINAL 96x96 PNG. FINAL IMAGE SPECS: 96x96 PNG, transparent background, indexed palette (max 256 colors), TARGET FILE SIZE: under 5 KB per image. Use clean Pokemon-style line art, vibrant saturated colors, single creature centered in frame, tightly cropped to silhouette (no padding wider than 2px), no text or watermarks.",
     "evolution": {
       "in_chain": false
+    },
+    "signature_move": {
+      "name": "Weltbaum-Wurzelschlag",
+      "element": "Wood",
+      "power": 270,
+      "description_de": "Ruft die uralten Wurzeln des Weltbaums hervor — sie umschlingen und zermalmen den Feind.",
+      "note": "EXCLUSIVE to Resosdienth — no other monster (incl. other legendaries) can learn this."
     }
   },
   {
@@ -35611,6 +35632,13 @@
     "ai_prompt": "Pokemon-style monster creature named \"Xazzyrth\". PRIMARY ELEMENT: Metal — iron grey, steel blue, brass-gold accents. SECONDARY ELEMENT: Ice — pale blue, cyan, frost-white, glacial silver. CREATURE ARCHETYPE: quadruped. RARITY TIER: Legendary (mythical and divine appearance, multiple body modifications, otherworldly aura, dramatic pose, reality-bending visual flourishes (e.g. floating limbs, energy halo, asymmetric wings)). KEY DESIGN FEATURES: gear joints, riveted plating, plus frost-breath accents from Ice-element, made of iron skin. AURA / MOOD: metallic clinking, static-spark. STYLE REFERENCE: like Scizor — armored insectoid steel-plated. LEGENDARY SIZE BOOST: render this creature ~35% LARGER than non-legendary echoforms — silhouette dominates ~85% of frame instead of ~60% for commons. More imposing scale conveys legendary status. OUTPUT VIEWS: render three separate images per creature — (1) full-body front view, (2) three-quarter back view rotated ~135 degrees from front, (3) pure side-profile view. GENERATION RES: render at 512x512 for AI quality, then DOWNSCALE to FINAL 96x96 PNG. FINAL IMAGE SPECS: 96x96 PNG, transparent background, indexed palette (max 256 colors), TARGET FILE SIZE: under 5 KB per image. Use clean Pokemon-style line art, vibrant saturated colors, single creature centered in frame, tightly cropped to silhouette (no padding wider than 2px), no text or watermarks.",
     "evolution": {
       "in_chain": false
+    },
+    "signature_move": {
+      "name": "Mithril-Zerschlag",
+      "element": "Metal",
+      "power": 295,
+      "description_de": "Eine Klinge aus reinem Mithril, gehärtet im Aether, die jede Rüstung durchschneidet.",
+      "note": "EXCLUSIVE to Xazzyrth — no other monster (incl. other legendaries) can learn this."
     }
   },
   {
@@ -35643,6 +35671,13 @@
     "ai_prompt": "Pokemon-style monster creature named \"Indrusdet\". PRIMARY ELEMENT: Storm — violet-electric, indigo, sulphur-yellow accents. CREATURE ARCHETYPE: spirit-form. RARITY TIER: Legendary (mythical and divine appearance, multiple body modifications, otherworldly aura, dramatic pose, reality-bending visual flourishes (e.g. floating limbs, energy halo, asymmetric wings)). KEY DESIGN FEATURES: thunder cloud collar, rain-soaked aura, made of charged feather. AURA / MOOD: arcing electric tendrils. STYLE REFERENCE: like Zapdos — feathered electric storm-bird. LEGENDARY SIZE BOOST: render this creature ~35% LARGER than non-legendary echoforms — silhouette dominates ~85% of frame instead of ~60% for commons. More imposing scale conveys legendary status. OUTPUT VIEWS: render three separate images per creature — (1) full-body front view, (2) three-quarter back view rotated ~135 degrees from front, (3) pure side-profile view. GENERATION RES: render at 512x512 for AI quality, then DOWNSCALE to FINAL 96x96 PNG. FINAL IMAGE SPECS: 96x96 PNG, transparent background, indexed palette (max 256 colors), TARGET FILE SIZE: under 5 KB per image. Use clean Pokemon-style line art, vibrant saturated colors, single creature centered in frame, tightly cropped to silhouette (no padding wider than 2px), no text or watermarks.",
     "evolution": {
       "in_chain": false
+    },
+    "signature_move": {
+      "name": "Sturm-Apokalypse",
+      "element": "Storm",
+      "power": 300,
+      "description_de": "Ein einzelner Blitzschlag, der die Atmosphäre zerreißt und den Gegner in Plasma verwandelt.",
+      "note": "EXCLUSIVE to Indrusdet — no other monster (incl. other legendaries) can learn this."
     }
   },
   {
@@ -35675,6 +35710,13 @@
     "ai_prompt": "Pokemon-style monster creature named \"Froizainteo\". PRIMARY ELEMENT: Wind — sky-blue, white, silver, dawn-pink accents. SECONDARY ELEMENT: Venom — sickly green, bile-yellow, deep purple veins. CREATURE ARCHETYPE: beast. RARITY TIER: Legendary (mythical and divine appearance, multiple body modifications, otherworldly aura, dramatic pose, reality-bending visual flourishes (e.g. floating limbs, energy halo, asymmetric wings)). KEY DESIGN FEATURES: crescent horns, cloud-puff mane, plus hood flare accents from Venom-element, made of vapor body. AURA / MOOD: ribbon-trails of air. STYLE REFERENCE: like Pidgeot — majestic raptor with wind-sweep mane. LEGENDARY SIZE BOOST: render this creature ~35% LARGER than non-legendary echoforms — silhouette dominates ~85% of frame instead of ~60% for commons. More imposing scale conveys legendary status. OUTPUT VIEWS: render three separate images per creature — (1) full-body front view, (2) three-quarter back view rotated ~135 degrees from front, (3) pure side-profile view. GENERATION RES: render at 512x512 for AI quality, then DOWNSCALE to FINAL 96x96 PNG. FINAL IMAGE SPECS: 96x96 PNG, transparent background, indexed palette (max 256 colors), TARGET FILE SIZE: under 5 KB per image. Use clean Pokemon-style line art, vibrant saturated colors, single creature centered in frame, tightly cropped to silhouette (no padding wider than 2px), no text or watermarks.",
     "evolution": {
       "in_chain": false
+    },
+    "signature_move": {
+      "name": "Hyperion-Hurrikan",
+      "element": "Wind",
+      "power": 280,
+      "description_de": "Beschwört einen Wirbelsturm, der Gegner in die Stratosphäre saugt und zermalmt.",
+      "note": "EXCLUSIVE to Froizainteo — no other monster (incl. other legendaries) can learn this."
     }
   },
   {
@@ -35708,6 +35750,13 @@
     "ai_prompt": "Pokemon-style monster creature named \"Poton\". PRIMARY ELEMENT: Shadow — midnight-black, deep purple, blood-red eye glow. CREATURE ARCHETYPE: spirit-form. RARITY TIER: Legendary (mythical and divine appearance, multiple body modifications, otherworldly aura, dramatic pose, reality-bending visual flourishes (e.g. floating limbs, energy halo, asymmetric wings)). KEY DESIGN FEATURES: smoke-tendrils, void-eyes, made of shadow-silk skin. AURA / MOOD: darkness pooling at feet. STYLE REFERENCE: like Gengar — phantasmal grin with floating limbs. LEGENDARY SIZE BOOST: render this creature ~35% LARGER than non-legendary echoforms — silhouette dominates ~85% of frame instead of ~60% for commons. More imposing scale conveys legendary status. OUTPUT VIEWS: render three separate images per creature — (1) full-body front view, (2) three-quarter back view rotated ~135 degrees from front, (3) pure side-profile view. GENERATION RES: render at 512x512 for AI quality, then DOWNSCALE to FINAL 96x96 PNG. FINAL IMAGE SPECS: 96x96 PNG, transparent background, indexed palette (max 256 colors), TARGET FILE SIZE: under 5 KB per image. Use clean Pokemon-style line art, vibrant saturated colors, single creature centered in frame, tightly cropped to silhouette (no padding wider than 2px), no text or watermarks.",
     "evolution": {
       "in_chain": false
+    },
+    "signature_move": {
+      "name": "Abyssal-Verschlingung",
+      "element": "Shadow",
+      "power": 305,
+      "description_de": "Öffnet einen Riss in die leere Dimension — was hineinfällt, kommt nie zurück.",
+      "note": "EXCLUSIVE to Poton — no other monster (incl. other legendaries) can learn this."
     }
   },
   {
@@ -35751,6 +35800,13 @@
       "start_level": null,
       "guaranteed_level": null,
       "note": "final stage"
+    },
+    "signature_move": {
+      "name": "Sternenkrönung",
+      "element": "Light",
+      "power": 275,
+      "description_de": "Ein einziger Strahl reinen Lichts, gebündelt aus dem Herzen einer sterbenden Sonne.",
+      "note": "EXCLUSIVE to Chekyntom — no other monster (incl. other legendaries) can learn this."
     }
   },
   {
@@ -35784,6 +35840,13 @@
     "ai_prompt": "Pokemon-style monster creature named \"Grutin\". PRIMARY ELEMENT: Venom — sickly green, bile-yellow, deep purple veins. SECONDARY ELEMENT: Water — deep ocean blue, teal, foam-white, kelp-green. CREATURE ARCHETYPE: reptile. RARITY TIER: Legendary (mythical and divine appearance, multiple body modifications, otherworldly aura, dramatic pose, reality-bending visual flourishes (e.g. floating limbs, energy halo, asymmetric wings)). KEY DESIGN FEATURES: festering boils, hood flare, plus water-droplet halo accents from Water-element, made of secreting pores. AURA / MOOD: pungent green vapor. STYLE REFERENCE: like Seviper — snake-like with venom drip. LEGENDARY SIZE BOOST: render this creature ~35% LARGER than non-legendary echoforms — silhouette dominates ~85% of frame instead of ~60% for commons. More imposing scale conveys legendary status. OUTPUT VIEWS: render three separate images per creature — (1) full-body front view, (2) three-quarter back view rotated ~135 degrees from front, (3) pure side-profile view. GENERATION RES: render at 512x512 for AI quality, then DOWNSCALE to FINAL 96x96 PNG. FINAL IMAGE SPECS: 96x96 PNG, transparent background, indexed palette (max 256 colors), TARGET FILE SIZE: under 5 KB per image. Use clean Pokemon-style line art, vibrant saturated colors, single creature centered in frame, tightly cropped to silhouette (no padding wider than 2px), no text or watermarks.",
     "evolution": {
       "in_chain": false
+    },
+    "signature_move": {
+      "name": "Welken-Plage",
+      "element": "Venom",
+      "power": 270,
+      "description_de": "Verbreitet eine Pestwolke, die Zellen schneller altern lässt als die Zeit es zulässt.",
+      "note": "EXCLUSIVE to Grutin — no other monster (incl. other legendaries) can learn this."
     }
   },
   {
@@ -35816,6 +35879,13 @@
     "ai_prompt": "Pokemon-style monster creature named \"Orgasdam\". PRIMARY ELEMENT: Cosmic — deep space black, nebula-purple, starlight-white pinpricks. CREATURE ARCHETYPE: mythic-form. RARITY TIER: Legendary (mythical and divine appearance, multiple body modifications, otherworldly aura, dramatic pose, reality-bending visual flourishes (e.g. floating limbs, energy halo, asymmetric wings)). KEY DESIGN FEATURES: void-eyes, asteroid horns, made of meteorite plates. AURA / MOOD: tiny planet-models orbiting. STYLE REFERENCE: like Lunala — celestial wraith form. LEGENDARY SIZE BOOST: render this creature ~35% LARGER than non-legendary echoforms — silhouette dominates ~85% of frame instead of ~60% for commons. More imposing scale conveys legendary status. OUTPUT VIEWS: render three separate images per creature — (1) full-body front view, (2) three-quarter back view rotated ~135 degrees from front, (3) pure side-profile view. GENERATION RES: render at 512x512 for AI quality, then DOWNSCALE to FINAL 96x96 PNG. FINAL IMAGE SPECS: 96x96 PNG, transparent background, indexed palette (max 256 colors), TARGET FILE SIZE: under 5 KB per image. Use clean Pokemon-style line art, vibrant saturated colors, single creature centered in frame, tightly cropped to silhouette (no padding wider than 2px), no text or watermarks.",
     "evolution": {
       "in_chain": false
+    },
+    "signature_move": {
+      "name": "Galaktische Explosion",
+      "element": "Cosmic",
+      "power": 320,
+      "description_de": "Die Detonation eines kollabierenden Sterns, gefangen und freigesetzt — die ultimative Attacke.",
+      "note": "EXCLUSIVE to Orgasdam — no other monster (incl. other legendaries) can learn this."
     }
   }
 ]
