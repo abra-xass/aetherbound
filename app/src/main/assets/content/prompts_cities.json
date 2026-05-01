@@ -1,0 +1,14 @@
+{
+  "total": 1,
+  "prompts": [
+    {
+      "file_path": "game/cities/namaris_harbor.png",
+      "filename": "namaris_harbor.png",
+      "slug": "namaris_harbor",
+      "width": 134217728,
+      "height": 134221569,
+      "max_kb": 300,
+      "ai_prompt": "Painterly Pokemon-style BATTLE-ARENA backdrop: \"namaris_harbor\". 1024×768 px (or match source dimensions 134217728×134221569), atmospheric perspective, slight south-east lighting, vibrant saturated colors, no text. SCENE: namaris harbor — interpret slug as Aetherbound region (e.g. \"namaris_harbor\" = coastal town with lighthouse, fishing boats, gold-trimmed obsidian rooftops, cliff backdrop). Used as battle-scene background — keep horizon line low, ground detail subtle so monster sprites pop. Max file-size 300 KB."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "attacks": 190,
+  "attack_frames_avg": "0.0",
+  "technique_data_entries": 274,
+  "technique_elements": {
+    "venom": 17,
+    "metal": 28,
+    "sky": 17,
+    "heroic": 17,
+    "cosmic": 41,
+    "earth": 22,
+    "normal": 54,
+    "lightning": 13,
+    "water": 15,
+    "shadow": 14,
+    "wood": 26,
+    "fire": 20,
+    "frost": 10
+  },
+  "technique_power_distribution": {
+    "tiny": 81,
+    "low": 4,
+    "mid": 91,
+    "high": 66,
+    "huge": 32
+  },
+  "npc_variants": 357,
+  "npc_archetypes": 119,
+  "tilesets": 78
+}

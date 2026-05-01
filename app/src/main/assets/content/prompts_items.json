@@ -1,0 +1,1775 @@
+{
+  "total": 177,
+  "prompts": [
+    {
+      "file_path": "game/items/tuxemon/aardant.png",
+      "filename": "aardant.png",
+      "slug": "aardant",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"aardant\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"aardant\". SUBJECT: item \"aardant\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"aardant.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/ancient_egg.png",
+      "filename": "ancient_egg.png",
+      "slug": "ancient_egg",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"ancient_egg\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"ancient_egg\". SUBJECT: item \"ancient_egg\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"ancient_egg.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/ancient_tea.png",
+      "filename": "ancient_tea.png",
+      "slug": "ancient_tea",
+      "width": 24,
+      "height": 24,
+      "flavor": "earthen mug with glowing tea, vine pattern",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"ancient_tea\". SUBJECT: earthen mug with glowing tea, vine pattern. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"ancient_tea.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/antidote-grapes.png",
+      "filename": "antidote-grapes.png",
+      "slug": "antidote-grapes",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"antidote-grapes\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"antidote-grapes\". SUBJECT: item \"antidote-grapes\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"antidote-grapes.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/apple.png",
+      "filename": "apple.png",
+      "slug": "apple",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"apple\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"apple\". SUBJECT: item \"apple\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"apple.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/app_banking.png",
+      "filename": "app_banking.png",
+      "slug": "app_banking",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"app_banking\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"app_banking\". SUBJECT: item \"app_banking\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"app_banking.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/app_contacts.png",
+      "filename": "app_contacts.png",
+      "slug": "app_contacts",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"app_contacts\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"app_contacts\". SUBJECT: item \"app_contacts\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"app_contacts.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/app_map.png",
+      "filename": "app_map.png",
+      "slug": "app_map",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"app_map\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"app_map\". SUBJECT: item \"app_map\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"app_map.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/app_renaming.png",
+      "filename": "app_renaming.png",
+      "slug": "app_renaming",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"app_renaming\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"app_renaming\". SUBJECT: item \"app_renaming\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"app_renaming.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/app_tuxepedia.png",
+      "filename": "app_tuxepedia.png",
+      "slug": "app_tuxepedia",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"app_tuxepedia\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"app_tuxepedia\". SUBJECT: item \"app_tuxepedia\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"app_tuxepedia.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/banana.png",
+      "filename": "banana.png",
+      "slug": "banana",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"banana\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"banana\". SUBJECT: item \"banana\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"banana.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/bivouac.png",
+      "filename": "bivouac.png",
+      "slug": "bivouac",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"bivouac\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"bivouac\". SUBJECT: item \"bivouac\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"bivouac.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/blue-potion.png",
+      "filename": "blue-potion.png",
+      "slug": "blue-potion",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"blue-potion\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"blue-potion\". SUBJECT: item \"blue-potion\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"blue-potion.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/book_wishes.png",
+      "filename": "book_wishes.png",
+      "slug": "book_wishes",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"book_wishes\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"book_wishes\". SUBJECT: item \"book_wishes\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"book_wishes.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/booster_tech.png",
+      "filename": "booster_tech.png",
+      "slug": "booster_tech",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"booster_tech\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"booster_tech\". SUBJECT: item \"booster_tech\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"booster_tech.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/boost_armour.png",
+      "filename": "boost_armour.png",
+      "slug": "boost_armour",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"boost_armour\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"boost_armour\". SUBJECT: item \"boost_armour\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"boost_armour.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/boost_dodge.png",
+      "filename": "boost_dodge.png",
+      "slug": "boost_dodge",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"boost_dodge\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"boost_dodge\". SUBJECT: item \"boost_dodge\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"boost_dodge.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/boost_melee.png",
+      "filename": "boost_melee.png",
+      "slug": "boost_melee",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"boost_melee\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"boost_melee\". SUBJECT: item \"boost_melee\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"boost_melee.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/boost_ranged.png",
+      "filename": "boost_ranged.png",
+      "slug": "boost_ranged",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"boost_ranged\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"boost_ranged\". SUBJECT: item \"boost_ranged\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"boost_ranged.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/boost_speed.png",
+      "filename": "boost_speed.png",
+      "slug": "boost_speed",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"boost_speed\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"boost_speed\". SUBJECT: item \"boost_speed\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"boost_speed.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/box.png",
+      "filename": "box.png",
+      "slug": "box",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"box\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"box\". SUBJECT: item \"box\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"box.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/cosmic_berry.png",
+      "filename": "cosmic_berry.png",
+      "slug": "cosmic_berry",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"cosmic_berry\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"cosmic_berry\". SUBJECT: item \"cosmic_berry\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"cosmic_berry.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/cure-festering.png",
+      "filename": "cure-festering.png",
+      "slug": "cure-festering",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"cure-festering\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"cure-festering\". SUBJECT: item \"cure-festering\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"cure-festering.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/die.png",
+      "filename": "die.png",
+      "slug": "die",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"die\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"die\". SUBJECT: item \"die\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"die.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/dojo_pass.png",
+      "filename": "dojo_pass.png",
+      "slug": "dojo_pass",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"dojo_pass\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"dojo_pass\". SUBJECT: item \"dojo_pass\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"dojo_pass.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/drone.png",
+      "filename": "drone.png",
+      "slug": "drone",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"drone\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"drone\". SUBJECT: item \"drone\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"drone.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/earthmover_key.png",
+      "filename": "earthmover_key.png",
+      "slug": "earthmover_key",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"earthmover_key\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"earthmover_key\". SUBJECT: item \"earthmover_key\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"earthmover_key.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/earth_berry.png",
+      "filename": "earth_berry.png",
+      "slug": "earth_berry",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"earth_berry\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"earth_berry\". SUBJECT: item \"earth_berry\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"earth_berry.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/earth_booster.png",
+      "filename": "earth_booster.png",
+      "slug": "earth_booster",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"earth_booster\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"earth_booster\". SUBJECT: item \"earth_booster\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"earth_booster.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/escape_key.png",
+      "filename": "escape_key.png",
+      "slug": "escape_key",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"escape_key\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"escape_key\". SUBJECT: item \"escape_key\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"escape_key.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/feather.png",
+      "filename": "feather.png",
+      "slug": "feather",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"feather\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"feather\". SUBJECT: item \"feather\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"feather.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/fire_berry.png",
+      "filename": "fire_berry.png",
+      "slug": "fire_berry",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"fire_berry\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"fire_berry\". SUBJECT: item \"fire_berry\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"fire_berry.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/fire_booster.png",
+      "filename": "fire_booster.png",
+      "slug": "fire_booster",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"fire_booster\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"fire_booster\". SUBJECT: item \"fire_booster\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"fire_booster.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/fishing_rod.png",
+      "filename": "fishing_rod.png",
+      "slug": "fishing_rod",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"fishing_rod\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"fishing_rod\". SUBJECT: item \"fishing_rod\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"fishing_rod.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/flintstone.png",
+      "filename": "flintstone.png",
+      "slug": "flintstone",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"flintstone\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"flintstone\". SUBJECT: item \"flintstone\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"flintstone.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/flute.png",
+      "filename": "flute.png",
+      "slug": "flute",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"flute\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"flute\". SUBJECT: item \"flute\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"flute.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/friendship_scroll.png",
+      "filename": "friendship_scroll.png",
+      "slug": "friendship_scroll",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"friendship_scroll\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"friendship_scroll\". SUBJECT: item \"friendship_scroll\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"friendship_scroll.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/frost_berry.png",
+      "filename": "frost_berry.png",
+      "slug": "frost_berry",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"frost_berry\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"frost_berry\". SUBJECT: item \"frost_berry\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"frost_berry.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/gem_blue_assymetrical.png",
+      "filename": "gem_blue_assymetrical.png",
+      "slug": "gem_blue_assymetrical",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"gem_blue_assymetrical\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"gem_blue_assymetrical\". SUBJECT: item \"gem_blue_assymetrical\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"gem_blue_assymetrical.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/gem_blue_emerald.png",
+      "filename": "gem_blue_emerald.png",
+      "slug": "gem_blue_emerald",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"gem_blue_emerald\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"gem_blue_emerald\". SUBJECT: item \"gem_blue_emerald\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"gem_blue_emerald.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/gem_blue_triangular.png",
+      "filename": "gem_blue_triangular.png",
+      "slug": "gem_blue_triangular",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"gem_blue_triangular\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"gem_blue_triangular\". SUBJECT: item \"gem_blue_triangular\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"gem_blue_triangular.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/gem_blue_triangular2.png",
+      "filename": "gem_blue_triangular2.png",
+      "slug": "gem_blue_triangular2",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"gem_blue_triangular2\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"gem_blue_triangular2\". SUBJECT: item \"gem_blue_triangular2\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"gem_blue_triangular2.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/gem_cyan_assymetrical.png",
+      "filename": "gem_cyan_assymetrical.png",
+      "slug": "gem_cyan_assymetrical",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"gem_cyan_assymetrical\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"gem_cyan_assymetrical\". SUBJECT: item \"gem_cyan_assymetrical\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"gem_cyan_assymetrical.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/gem_cyan_emerald.png",
+      "filename": "gem_cyan_emerald.png",
+      "slug": "gem_cyan_emerald",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"gem_cyan_emerald\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"gem_cyan_emerald\". SUBJECT: item \"gem_cyan_emerald\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"gem_cyan_emerald.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/gem_cyan_triangular.png",
+      "filename": "gem_cyan_triangular.png",
+      "slug": "gem_cyan_triangular",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"gem_cyan_triangular\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"gem_cyan_triangular\". SUBJECT: item \"gem_cyan_triangular\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"gem_cyan_triangular.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/gem_cyan_triangular2.png",
+      "filename": "gem_cyan_triangular2.png",
+      "slug": "gem_cyan_triangular2",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"gem_cyan_triangular2\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"gem_cyan_triangular2\". SUBJECT: item \"gem_cyan_triangular2\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"gem_cyan_triangular2.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/gem_gray_assymetrical.png",
+      "filename": "gem_gray_assymetrical.png",
+      "slug": "gem_gray_assymetrical",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"gem_gray_assymetrical\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"gem_gray_assymetrical\". SUBJECT: item \"gem_gray_assymetrical\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"gem_gray_assymetrical.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/gem_gray_emerald.png",
+      "filename": "gem_gray_emerald.png",
+      "slug": "gem_gray_emerald",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"gem_gray_emerald\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"gem_gray_emerald\". SUBJECT: item \"gem_gray_emerald\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"gem_gray_emerald.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/gem_gray_triangular.png",
+      "filename": "gem_gray_triangular.png",
+      "slug": "gem_gray_triangular",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"gem_gray_triangular\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"gem_gray_triangular\". SUBJECT: item \"gem_gray_triangular\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"gem_gray_triangular.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/gem_gray_triangular2.png",
+      "filename": "gem_gray_triangular2.png",
+      "slug": "gem_gray_triangular2",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"gem_gray_triangular2\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"gem_gray_triangular2\". SUBJECT: item \"gem_gray_triangular2\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"gem_gray_triangular2.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/gem_green_assymetrical.png",
+      "filename": "gem_green_assymetrical.png",
+      "slug": "gem_green_assymetrical",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"gem_green_assymetrical\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"gem_green_assymetrical\". SUBJECT: item \"gem_green_assymetrical\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"gem_green_assymetrical.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/gem_green_emerald.png",
+      "filename": "gem_green_emerald.png",
+      "slug": "gem_green_emerald",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"gem_green_emerald\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"gem_green_emerald\". SUBJECT: item \"gem_green_emerald\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"gem_green_emerald.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/gem_green_triangular.png",
+      "filename": "gem_green_triangular.png",
+      "slug": "gem_green_triangular",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"gem_green_triangular\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"gem_green_triangular\". SUBJECT: item \"gem_green_triangular\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"gem_green_triangular.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/gem_green_triangular2.png",
+      "filename": "gem_green_triangular2.png",
+      "slug": "gem_green_triangular2",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"gem_green_triangular2\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"gem_green_triangular2\". SUBJECT: item \"gem_green_triangular2\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"gem_green_triangular2.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/gem_pink_assymetrical.png",
+      "filename": "gem_pink_assymetrical.png",
+      "slug": "gem_pink_assymetrical",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"gem_pink_assymetrical\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"gem_pink_assymetrical\". SUBJECT: item \"gem_pink_assymetrical\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"gem_pink_assymetrical.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/gem_pink_emerald.png",
+      "filename": "gem_pink_emerald.png",
+      "slug": "gem_pink_emerald",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"gem_pink_emerald\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"gem_pink_emerald\". SUBJECT: item \"gem_pink_emerald\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"gem_pink_emerald.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/gem_pink_triangular.png",
+      "filename": "gem_pink_triangular.png",
+      "slug": "gem_pink_triangular",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"gem_pink_triangular\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"gem_pink_triangular\". SUBJECT: item \"gem_pink_triangular\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"gem_pink_triangular.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/gem_pink_triangular2.png",
+      "filename": "gem_pink_triangular2.png",
+      "slug": "gem_pink_triangular2",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"gem_pink_triangular2\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"gem_pink_triangular2\". SUBJECT: item \"gem_pink_triangular2\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"gem_pink_triangular2.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/gem_red_assymetrical.png",
+      "filename": "gem_red_assymetrical.png",
+      "slug": "gem_red_assymetrical",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"gem_red_assymetrical\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"gem_red_assymetrical\". SUBJECT: item \"gem_red_assymetrical\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"gem_red_assymetrical.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/gem_red_emerald.png",
+      "filename": "gem_red_emerald.png",
+      "slug": "gem_red_emerald",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"gem_red_emerald\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"gem_red_emerald\". SUBJECT: item \"gem_red_emerald\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"gem_red_emerald.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/gem_red_triangular.png",
+      "filename": "gem_red_triangular.png",
+      "slug": "gem_red_triangular",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"gem_red_triangular\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"gem_red_triangular\". SUBJECT: item \"gem_red_triangular\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"gem_red_triangular.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/gem_red_triangular2.png",
+      "filename": "gem_red_triangular2.png",
+      "slug": "gem_red_triangular2",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"gem_red_triangular2\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"gem_red_triangular2\". SUBJECT: item \"gem_red_triangular2\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"gem_red_triangular2.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/gem_yellow_assymetrical.png",
+      "filename": "gem_yellow_assymetrical.png",
+      "slug": "gem_yellow_assymetrical",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"gem_yellow_assymetrical\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"gem_yellow_assymetrical\". SUBJECT: item \"gem_yellow_assymetrical\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"gem_yellow_assymetrical.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/gem_yellow_emerald.png",
+      "filename": "gem_yellow_emerald.png",
+      "slug": "gem_yellow_emerald",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"gem_yellow_emerald\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"gem_yellow_emerald\". SUBJECT: item \"gem_yellow_emerald\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"gem_yellow_emerald.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/gem_yellow_triangular.png",
+      "filename": "gem_yellow_triangular.png",
+      "slug": "gem_yellow_triangular",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"gem_yellow_triangular\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"gem_yellow_triangular\". SUBJECT: item \"gem_yellow_triangular\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"gem_yellow_triangular.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/gem_yellow_triangular2.png",
+      "filename": "gem_yellow_triangular2.png",
+      "slug": "gem_yellow_triangular2",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"gem_yellow_triangular2\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"gem_yellow_triangular2\". SUBJECT: item \"gem_yellow_triangular2\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"gem_yellow_triangular2.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/gold_pass.png",
+      "filename": "gold_pass.png",
+      "slug": "gold_pass",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"gold_pass\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"gold_pass\". SUBJECT: item \"gold_pass\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"gold_pass.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/green-potion.png",
+      "filename": "green-potion.png",
+      "slug": "green-potion",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"green-potion\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"green-potion\". SUBJECT: item \"green-potion\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"green-potion.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/greenwash_badge.png",
+      "filename": "greenwash_badge.png",
+      "slug": "greenwash_badge",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"greenwash_badge\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"greenwash_badge\". SUBJECT: item \"greenwash_badge\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"greenwash_badge.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/hatchet.png",
+      "filename": "hatchet.png",
+      "slug": "hatchet",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"hatchet\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"hatchet\". SUBJECT: item \"hatchet\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"hatchet.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/heroic_berry.png",
+      "filename": "heroic_berry.png",
+      "slug": "heroic_berry",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"heroic_berry\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"heroic_berry\". SUBJECT: item \"heroic_berry\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"heroic_berry.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/horseshoe.png",
+      "filename": "horseshoe.png",
+      "slug": "horseshoe",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"horseshoe\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"horseshoe\". SUBJECT: item \"horseshoe\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"horseshoe.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/imperial_potion.png",
+      "filename": "imperial_potion.png",
+      "slug": "imperial_potion",
+      "width": 24,
+      "height": 24,
+      "flavor": "ornate gold-rimmed bottle, royal-blue liquid, regal crest",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"imperial_potion\". SUBJECT: ornate gold-rimmed bottle, royal-blue liquid, regal crest. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"imperial_potion.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/imperial_tea.png",
+      "filename": "imperial_tea.png",
+      "slug": "imperial_tea",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"imperial_tea\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"imperial_tea\". SUBJECT: item \"imperial_tea\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"imperial_tea.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/key-card.png",
+      "filename": "key-card.png",
+      "slug": "key-card",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"key-card\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"key-card\". SUBJECT: item \"key-card\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"key-card.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/lightning_berry.png",
+      "filename": "lightning_berry.png",
+      "slug": "lightning_berry",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"lightning_berry\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"lightning_berry\". SUBJECT: item \"lightning_berry\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"lightning_berry.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/lima_pie.png",
+      "filename": "lima_pie.png",
+      "slug": "lima_pie",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"lima_pie\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"lima_pie\". SUBJECT: item \"lima_pie\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"lima_pie.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/lucky_bamboo.png",
+      "filename": "lucky_bamboo.png",
+      "slug": "lucky_bamboo",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"lucky_bamboo\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"lucky_bamboo\". SUBJECT: item \"lucky_bamboo\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"lucky_bamboo.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/luminescent-potion.png",
+      "filename": "luminescent-potion.png",
+      "slug": "luminescent-potion",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"luminescent-potion\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"luminescent-potion\". SUBJECT: item \"luminescent-potion\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"luminescent-potion.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/marble.png",
+      "filename": "marble.png",
+      "slug": "marble",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"marble\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"marble\". SUBJECT: item \"marble\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"marble.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/mega_potion.png",
+      "filename": "mega_potion.png",
+      "slug": "mega_potion",
+      "width": 24,
+      "height": 24,
+      "flavor": "huge magenta bottle with starburst label",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"mega_potion\". SUBJECT: huge magenta bottle with starburst label. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"mega_potion.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/metal_berry.png",
+      "filename": "metal_berry.png",
+      "slug": "metal_berry",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"metal_berry\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"metal_berry\". SUBJECT: item \"metal_berry\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"metal_berry.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/metal_booster.png",
+      "filename": "metal_booster.png",
+      "slug": "metal_booster",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"metal_booster\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"metal_booster\". SUBJECT: item \"metal_booster\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"metal_booster.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/miaow_milk.png",
+      "filename": "miaow_milk.png",
+      "slug": "miaow_milk",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"miaow_milk\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"miaow_milk\". SUBJECT: item \"miaow_milk\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"miaow_milk.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/mm_earth.png",
+      "filename": "mm_earth.png",
+      "slug": "mm_earth",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"mm_earth\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"mm_earth\". SUBJECT: item \"mm_earth\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"mm_earth.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/mm_fire.png",
+      "filename": "mm_fire.png",
+      "slug": "mm_fire",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"mm_fire\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"mm_fire\". SUBJECT: item \"mm_fire\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"mm_fire.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/mm_metal.png",
+      "filename": "mm_metal.png",
+      "slug": "mm_metal",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"mm_metal\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"mm_metal\". SUBJECT: item \"mm_metal\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"mm_metal.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/mm_water.png",
+      "filename": "mm_water.png",
+      "slug": "mm_water",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"mm_water\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"mm_water\". SUBJECT: item \"mm_water\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"mm_water.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/mm_wood.png",
+      "filename": "mm_wood.png",
+      "slug": "mm_wood",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"mm_wood\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"mm_wood\". SUBJECT: item \"mm_wood\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"mm_wood.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/monsters_eyes.png",
+      "filename": "monsters_eyes.png",
+      "slug": "monsters_eyes",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"monsters_eyes\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"monsters_eyes\". SUBJECT: item \"monsters_eyes\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"monsters_eyes.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/mystery_tea.png",
+      "filename": "mystery_tea.png",
+      "slug": "mystery_tea",
+      "width": 24,
+      "height": 24,
+      "flavor": "wooden cup with steaming iridescent liquid, spice-flecks",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"mystery_tea\". SUBJECT: wooden cup with steaming iridescent liquid, spice-flecks. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"mystery_tea.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/neptune.png",
+      "filename": "neptune.png",
+      "slug": "neptune",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"neptune\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"neptune\". SUBJECT: item \"neptune\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"neptune.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/nimrod_badge.png",
+      "filename": "nimrod_badge.png",
+      "slug": "nimrod_badge",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"nimrod_badge\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"nimrod_badge\". SUBJECT: item \"nimrod_badge\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"nimrod_badge.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/normal_berry.png",
+      "filename": "normal_berry.png",
+      "slug": "normal_berry",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"normal_berry\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"normal_berry\". SUBJECT: item \"normal_berry\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"normal_berry.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/nu_phone.png",
+      "filename": "nu_phone.png",
+      "slug": "nu_phone",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"nu_phone\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"nu_phone\". SUBJECT: item \"nu_phone\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"nu_phone.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/omnichannel_badge.png",
+      "filename": "omnichannel_badge.png",
+      "slug": "omnichannel_badge",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"omnichannel_badge\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"omnichannel_badge\". SUBJECT: item \"omnichannel_badge\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"omnichannel_badge.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/open-hand.png",
+      "filename": "open-hand.png",
+      "slug": "open-hand",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"open-hand\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"open-hand\". SUBJECT: item \"open-hand\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"open-hand.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/orange.png",
+      "filename": "orange.png",
+      "slug": "orange",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"orange\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"orange\". SUBJECT: item \"orange\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"orange.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/ox_stick.png",
+      "filename": "ox_stick.png",
+      "slug": "ox_stick",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"ox_stick\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"ox_stick\". SUBJECT: item \"ox_stick\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"ox_stick.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/peace_lily.png",
+      "filename": "peace_lily.png",
+      "slug": "peace_lily",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"peace_lily\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"peace_lily\". SUBJECT: item \"peace_lily\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"peace_lily.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/petrified_dung.png",
+      "filename": "petrified_dung.png",
+      "slug": "petrified_dung",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"petrified_dung\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"petrified_dung\". SUBJECT: item \"petrified_dung\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"petrified_dung.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/pink-potion.png",
+      "filename": "pink-potion.png",
+      "slug": "pink-potion",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"pink-potion\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"pink-potion\". SUBJECT: item \"pink-potion\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"pink-potion.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/poseidon.png",
+      "filename": "poseidon.png",
+      "slug": "poseidon",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"poseidon\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"poseidon\". SUBJECT: item \"poseidon\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"poseidon.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/potion.png",
+      "filename": "potion.png",
+      "slug": "potion",
+      "width": 24,
+      "height": 24,
+      "flavor": "small glass vial with magenta healing liquid + cork",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"potion\". SUBJECT: small glass vial with magenta healing liquid + cork. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"potion.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/purple-potion.png",
+      "filename": "purple-potion.png",
+      "slug": "purple-potion",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"purple-potion\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"purple-potion\". SUBJECT: item \"purple-potion\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"purple-potion.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/pyramidion.png",
+      "filename": "pyramidion.png",
+      "slug": "pyramidion",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"pyramidion\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"pyramidion\". SUBJECT: item \"pyramidion\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"pyramidion.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/raise_armour.png",
+      "filename": "raise_armour.png",
+      "slug": "raise_armour",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"raise_armour\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"raise_armour\". SUBJECT: item \"raise_armour\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"raise_armour.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/raise_dodge.png",
+      "filename": "raise_dodge.png",
+      "slug": "raise_dodge",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"raise_dodge\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"raise_dodge\". SUBJECT: item \"raise_dodge\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"raise_dodge.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/raise_hp.png",
+      "filename": "raise_hp.png",
+      "slug": "raise_hp",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"raise_hp\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"raise_hp\". SUBJECT: item \"raise_hp\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"raise_hp.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/raise_melee.png",
+      "filename": "raise_melee.png",
+      "slug": "raise_melee",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"raise_melee\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"raise_melee\". SUBJECT: item \"raise_melee\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"raise_melee.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/raise_ranged.png",
+      "filename": "raise_ranged.png",
+      "slug": "raise_ranged",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"raise_ranged\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"raise_ranged\". SUBJECT: item \"raise_ranged\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"raise_ranged.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/raise_speed.png",
+      "filename": "raise_speed.png",
+      "slug": "raise_speed",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"raise_speed\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"raise_speed\". SUBJECT: item \"raise_speed\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"raise_speed.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/red-potion.png",
+      "filename": "red-potion.png",
+      "slug": "red-potion",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"red-potion\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"red-potion\". SUBJECT: item \"red-potion\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"red-potion.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/refreshing-slice.png",
+      "filename": "refreshing-slice.png",
+      "slug": "refreshing-slice",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"refreshing-slice\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"refreshing-slice\". SUBJECT: item \"refreshing-slice\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"refreshing-slice.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/revive.png",
+      "filename": "revive.png",
+      "slug": "revive",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"revive\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"revive\". SUBJECT: item \"revive\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"revive.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/rhincus_fossil.png",
+      "filename": "rhincus_fossil.png",
+      "slug": "rhincus_fossil",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"rhincus_fossil\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"rhincus_fossil\". SUBJECT: item \"rhincus_fossil\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"rhincus_fossil.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/scoop_badge.png",
+      "filename": "scoop_badge.png",
+      "slug": "scoop_badge",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"scoop_badge\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"scoop_badge\". SUBJECT: item \"scoop_badge\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"scoop_badge.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/sea_girdle.png",
+      "filename": "sea_girdle.png",
+      "slug": "sea_girdle",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"sea_girdle\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"sea_girdle\". SUBJECT: item \"sea_girdle\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"sea_girdle.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/shadow_berry.png",
+      "filename": "shadow_berry.png",
+      "slug": "shadow_berry",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"shadow_berry\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"shadow_berry\". SUBJECT: item \"shadow_berry\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"shadow_berry.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/shaft_badge.png",
+      "filename": "shaft_badge.png",
+      "slug": "shaft_badge",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"shaft_badge\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"shaft_badge\". SUBJECT: item \"shaft_badge\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"shaft_badge.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/shammer_fossil.png",
+      "filename": "shammer_fossil.png",
+      "slug": "shammer_fossil",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"shammer_fossil\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"shammer_fossil\". SUBJECT: item \"shammer_fossil\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"shammer_fossil.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/sky_berry.png",
+      "filename": "sky_berry.png",
+      "slug": "sky_berry",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"sky_berry\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"sky_berry\". SUBJECT: item \"sky_berry\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"sky_berry.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/sledgehammer.png",
+      "filename": "sledgehammer.png",
+      "slug": "sledgehammer",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"sledgehammer\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"sledgehammer\". SUBJECT: item \"sledgehammer\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"sledgehammer.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/spyder_pass.png",
+      "filename": "spyder_pass.png",
+      "slug": "spyder_pass",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"spyder_pass\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"spyder_pass\". SUBJECT: item \"spyder_pass\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"spyder_pass.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/starry_night.png",
+      "filename": "starry_night.png",
+      "slug": "starry_night",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"starry_night\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"starry_night\". SUBJECT: item \"starry_night\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"starry_night.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/stovepipe.png",
+      "filename": "stovepipe.png",
+      "slug": "stovepipe",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"stovepipe\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"stovepipe\". SUBJECT: item \"stovepipe\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"stovepipe.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/super_potion.png",
+      "filename": "super_potion.png",
+      "slug": "super_potion",
+      "width": 24,
+      "height": 24,
+      "flavor": "larger glass vial with deeper purple-red liquid, gold trim",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"super_potion\". SUBJECT: larger glass vial with deeper purple-red liquid, gold trim. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"super_potion.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/surfboard.png",
+      "filename": "surfboard.png",
+      "slug": "surfboard",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"surfboard\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"surfboard\". SUBJECT: item \"surfboard\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"surfboard.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/sweet_sand.png",
+      "filename": "sweet_sand.png",
+      "slug": "sweet_sand",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"sweet_sand\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"sweet_sand\". SUBJECT: item \"sweet_sand\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"sweet_sand.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tea.png",
+      "filename": "tea.png",
+      "slug": "tea",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tea\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tea\". SUBJECT: item \"tea\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tea.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tectonic_drill.png",
+      "filename": "tectonic_drill.png",
+      "slug": "tectonic_drill",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tectonic_drill\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tectonic_drill\". SUBJECT: item \"tectonic_drill\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tectonic_drill.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/thunderstone.png",
+      "filename": "thunderstone.png",
+      "slug": "thunderstone",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"thunderstone\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"thunderstone\". SUBJECT: item \"thunderstone\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"thunderstone.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tm_earth.png",
+      "filename": "tm_earth.png",
+      "slug": "tm_earth",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tm_earth\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tm_earth\". SUBJECT: item \"tm_earth\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tm_earth.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tm_fire.png",
+      "filename": "tm_fire.png",
+      "slug": "tm_fire",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tm_fire\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tm_fire\". SUBJECT: item \"tm_fire\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tm_fire.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tm_generic.png",
+      "filename": "tm_generic.png",
+      "slug": "tm_generic",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tm_generic\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tm_generic\". SUBJECT: item \"tm_generic\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tm_generic.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tm_metal.png",
+      "filename": "tm_metal.png",
+      "slug": "tm_metal",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tm_metal\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tm_metal\". SUBJECT: item \"tm_metal\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tm_metal.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tm_water.png",
+      "filename": "tm_water.png",
+      "slug": "tm_water",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tm_water\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tm_water\". SUBJECT: item \"tm_water\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tm_water.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tm_wood.png",
+      "filename": "tm_wood.png",
+      "slug": "tm_wood",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tm_wood\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tm_wood\". SUBJECT: item \"tm_wood\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tm_wood.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/toy-bear.png",
+      "filename": "toy-bear.png",
+      "slug": "toy-bear",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"toy-bear\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"toy-bear\". SUBJECT: item \"toy-bear\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"toy-bear.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/trepidation.png",
+      "filename": "trepidation.png",
+      "slug": "trepidation",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"trepidation\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"trepidation\". SUBJECT: item \"trepidation\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"trepidation.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tuxeball.png",
+      "filename": "tuxeball.png",
+      "slug": "tuxeball",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tuxeball\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tuxeball\". SUBJECT: item \"tuxeball\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tuxeball.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tuxeball_ancient.png",
+      "filename": "tuxeball_ancient.png",
+      "slug": "tuxeball_ancient",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tuxeball_ancient\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tuxeball_ancient\". SUBJECT: item \"tuxeball_ancient\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tuxeball_ancient.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tuxeball_candy.png",
+      "filename": "tuxeball_candy.png",
+      "slug": "tuxeball_candy",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tuxeball_candy\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tuxeball_candy\". SUBJECT: item \"tuxeball_candy\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tuxeball_candy.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tuxeball_crusher.png",
+      "filename": "tuxeball_crusher.png",
+      "slug": "tuxeball_crusher",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tuxeball_crusher\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tuxeball_crusher\". SUBJECT: item \"tuxeball_crusher\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tuxeball_crusher.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tuxeball_diurnal.png",
+      "filename": "tuxeball_diurnal.png",
+      "slug": "tuxeball_diurnal",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tuxeball_diurnal\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tuxeball_diurnal\". SUBJECT: item \"tuxeball_diurnal\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tuxeball_diurnal.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tuxeball_earth.png",
+      "filename": "tuxeball_earth.png",
+      "slug": "tuxeball_earth",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tuxeball_earth\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tuxeball_earth\". SUBJECT: item \"tuxeball_earth\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tuxeball_earth.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tuxeball_female.png",
+      "filename": "tuxeball_female.png",
+      "slug": "tuxeball_female",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tuxeball_female\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tuxeball_female\". SUBJECT: item \"tuxeball_female\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tuxeball_female.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tuxeball_fire.png",
+      "filename": "tuxeball_fire.png",
+      "slug": "tuxeball_fire",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tuxeball_fire\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tuxeball_fire\". SUBJECT: item \"tuxeball_fire\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tuxeball_fire.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tuxeball_gambler.png",
+      "filename": "tuxeball_gambler.png",
+      "slug": "tuxeball_gambler",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tuxeball_gambler\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tuxeball_gambler\". SUBJECT: item \"tuxeball_gambler\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tuxeball_gambler.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tuxeball_grand.png",
+      "filename": "tuxeball_grand.png",
+      "slug": "tuxeball_grand",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tuxeball_grand\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tuxeball_grand\". SUBJECT: item \"tuxeball_grand\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tuxeball_grand.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tuxeball_hardened.png",
+      "filename": "tuxeball_hardened.png",
+      "slug": "tuxeball_hardened",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tuxeball_hardened\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tuxeball_hardened\". SUBJECT: item \"tuxeball_hardened\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tuxeball_hardened.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tuxeball_hearty.png",
+      "filename": "tuxeball_hearty.png",
+      "slug": "tuxeball_hearty",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tuxeball_hearty\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tuxeball_hearty\". SUBJECT: item \"tuxeball_hearty\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tuxeball_hearty.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tuxeball_lavish.png",
+      "filename": "tuxeball_lavish.png",
+      "slug": "tuxeball_lavish",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tuxeball_lavish\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tuxeball_lavish\". SUBJECT: item \"tuxeball_lavish\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tuxeball_lavish.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tuxeball_majestic.png",
+      "filename": "tuxeball_majestic.png",
+      "slug": "tuxeball_majestic",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tuxeball_majestic\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tuxeball_majestic\". SUBJECT: item \"tuxeball_majestic\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tuxeball_majestic.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tuxeball_male.png",
+      "filename": "tuxeball_male.png",
+      "slug": "tuxeball_male",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tuxeball_male\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tuxeball_male\". SUBJECT: item \"tuxeball_male\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tuxeball_male.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tuxeball_metal.png",
+      "filename": "tuxeball_metal.png",
+      "slug": "tuxeball_metal",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tuxeball_metal\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tuxeball_metal\". SUBJECT: item \"tuxeball_metal\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tuxeball_metal.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tuxeball_neuter.png",
+      "filename": "tuxeball_neuter.png",
+      "slug": "tuxeball_neuter",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tuxeball_neuter\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tuxeball_neuter\". SUBJECT: item \"tuxeball_neuter\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tuxeball_neuter.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tuxeball_noble.png",
+      "filename": "tuxeball_noble.png",
+      "slug": "tuxeball_noble",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tuxeball_noble\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tuxeball_noble\". SUBJECT: item \"tuxeball_noble\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tuxeball_noble.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tuxeball_nocturnal.png",
+      "filename": "tuxeball_nocturnal.png",
+      "slug": "tuxeball_nocturnal",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tuxeball_nocturnal\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tuxeball_nocturnal\". SUBJECT: item \"tuxeball_nocturnal\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tuxeball_nocturnal.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tuxeball_omni.png",
+      "filename": "tuxeball_omni.png",
+      "slug": "tuxeball_omni",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tuxeball_omni\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tuxeball_omni\". SUBJECT: item \"tuxeball_omni\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tuxeball_omni.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tuxeball_park.png",
+      "filename": "tuxeball_park.png",
+      "slug": "tuxeball_park",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tuxeball_park\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tuxeball_park\". SUBJECT: item \"tuxeball_park\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tuxeball_park.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tuxeball_peppy.png",
+      "filename": "tuxeball_peppy.png",
+      "slug": "tuxeball_peppy",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tuxeball_peppy\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tuxeball_peppy\". SUBJECT: item \"tuxeball_peppy\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tuxeball_peppy.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tuxeball_refined.png",
+      "filename": "tuxeball_refined.png",
+      "slug": "tuxeball_refined",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tuxeball_refined\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tuxeball_refined\". SUBJECT: item \"tuxeball_refined\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tuxeball_refined.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tuxeball_salty.png",
+      "filename": "tuxeball_salty.png",
+      "slug": "tuxeball_salty",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tuxeball_salty\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tuxeball_salty\". SUBJECT: item \"tuxeball_salty\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tuxeball_salty.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tuxeball_water.png",
+      "filename": "tuxeball_water.png",
+      "slug": "tuxeball_water",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tuxeball_water\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tuxeball_water\". SUBJECT: item \"tuxeball_water\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tuxeball_water.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tuxeball_wood.png",
+      "filename": "tuxeball_wood.png",
+      "slug": "tuxeball_wood",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tuxeball_wood\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tuxeball_wood\". SUBJECT: item \"tuxeball_wood\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tuxeball_wood.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tuxeball_xero.png",
+      "filename": "tuxeball_xero.png",
+      "slug": "tuxeball_xero",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tuxeball_xero\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tuxeball_xero\". SUBJECT: item \"tuxeball_xero\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tuxeball_xero.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/tuxeball_zesty.png",
+      "filename": "tuxeball_zesty.png",
+      "slug": "tuxeball_zesty",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"tuxeball_zesty\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"tuxeball_zesty\". SUBJECT: item \"tuxeball_zesty\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"tuxeball_zesty.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/venom_berry.png",
+      "filename": "venom_berry.png",
+      "slug": "venom_berry",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"venom_berry\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"venom_berry\". SUBJECT: item \"venom_berry\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"venom_berry.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/water_berry.png",
+      "filename": "water_berry.png",
+      "slug": "water_berry",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"water_berry\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"water_berry\". SUBJECT: item \"water_berry\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"water_berry.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/water_booster.png",
+      "filename": "water_booster.png",
+      "slug": "water_booster",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"water_booster\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"water_booster\". SUBJECT: item \"water_booster\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"water_booster.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/wood_berry.png",
+      "filename": "wood_berry.png",
+      "slug": "wood_berry",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"wood_berry\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"wood_berry\". SUBJECT: item \"wood_berry\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"wood_berry.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/wood_booster.png",
+      "filename": "wood_booster.png",
+      "slug": "wood_booster",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"wood_booster\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"wood_booster\". SUBJECT: item \"wood_booster\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"wood_booster.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/xp-feeder.png",
+      "filename": "xp-feeder.png",
+      "slug": "xp-feeder",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"xp-feeder\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"xp-feeder\". SUBJECT: item \"xp-feeder\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"xp-feeder.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/xp_transmitter.png",
+      "filename": "xp_transmitter.png",
+      "slug": "xp_transmitter",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"xp_transmitter\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"xp_transmitter\". SUBJECT: item \"xp_transmitter\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"xp_transmitter.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/yellow-key.png",
+      "filename": "yellow-key.png",
+      "slug": "yellow-key",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"yellow-key\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"yellow-key\". SUBJECT: item \"yellow-key\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"yellow-key.png\" — engine resolves items by exact slug match."
+    },
+    {
+      "file_path": "game/items/tuxemon/yellow-potion.png",
+      "filename": "yellow-potion.png",
+      "slug": "yellow-potion",
+      "width": 24,
+      "height": 24,
+      "flavor": "item \"yellow-potion\" — interpret slug words as visual hints",
+      "max_kb": 3,
+      "ai_prompt": "Pokemon-style inventory icon: \"yellow-potion\". SUBJECT: item \"yellow-potion\" — interpret slug words as visual hints. Single object centered in frame, slight diagonal lighting from top-left. DIMENSIONS: 24×24 PNG, transparent background, indexed-256 palette, ≤ 3 KB. STYLE: clean line-art, vibrant saturated colors, readable at thumbnail size, no text, no watermark. NEVER change filename \"yellow-potion.png\" — engine resolves items by exact slug match."
+    }
+  ]
+}

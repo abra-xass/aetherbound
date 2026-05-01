@@ -139,3 +139,11 @@ Damit kann ich automatisch:
 - maps + UI + chars: ~30 MB
 - **Total Tuxemon-Originals**: **~260 MB**
 - Mit DLC-Splitting (Core 80 MB + DLC-Packs) shippbar
+
+## Echoform-Generierungsworkflow
+
+- Pro Monster einen Generatorlauf als gut getrenntes Dreier-Sheet mit `front`, `three_quarter_back` und `profile` verwenden, wenn das weniger Ressourcen verbraucht.
+- Zwischen den drei Ansichten viel Abstand lassen, damit sie lokal sauber ausgeschnitten werden koennen.
+- Danach lokal in drei Dateien schneiden, Hintergrund entfernen, auf `96x96` skalieren und Dateigroesse pruefen.
+- Bilder nicht im Chat anzeigen oder visuell ausfuehrlich besprechen; die finalen PNGs werden nur in den Monsterordner gelegt.
+- Evolutionsstufen visuell staffeln: Stufe 1 deutlich kleiner und schlichter, mittlere Stufen groesser und kraeftiger, letzte Stufe normale Monster-Groesse. Legendaere Monster sind groesser und maechtiger als normale Monster.

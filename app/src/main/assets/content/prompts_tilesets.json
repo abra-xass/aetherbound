@@ -1,0 +1,1045 @@
+{
+  "total": 104,
+  "prompts": [
+    {
+      "file_path": "game/tilesets/outside_e.png",
+      "filename": "outside_e.png",
+      "width": 256,
+      "height": 13504,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"outside_e.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 256×13504 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/Basic_Buch_Tiles_Compiled.png",
+      "filename": "Basic_Buch_Tiles_Compiled.png",
+      "width": 512,
+      "height": 224,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 350,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"Basic_Buch_Tiles_Compiled.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 512×224 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 350 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/boxfont.png",
+      "filename": "boxfont.png",
+      "width": 208,
+      "height": 192,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"boxfont.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 208×192 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/buddha-statues.png",
+      "filename": "buddha-statues.png",
+      "width": 80,
+      "height": 32,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"buddha-statues.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 80×32 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/buildings.png",
+      "filename": "buildings.png",
+      "width": 575,
+      "height": 381,
+      "type": "tileset",
+      "biome": "town",
+      "max_kb": 350,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"buildings.png\". BIOME: town — cobblestone streets, building façades, lamp-posts, awning-strips. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 575×381 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 350 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/Car,_Black_by_Isaiah658.png",
+      "filename": "Car,_Black_by_Isaiah658.png",
+      "width": 96,
+      "height": 96,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"Car,_Black_by_Isaiah658.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 96×96 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/Cave_Tiles_by_ArMM1998_(Tuxemon_Style).png",
+      "filename": "Cave_Tiles_by_ArMM1998_(Tuxemon_Style).png",
+      "width": 256,
+      "height": 160,
+      "type": "tileset",
+      "biome": "cave",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"Cave_Tiles_by_ArMM1998_(Tuxemon_Style).png\". BIOME: cave — dark stone walls, glowing crystals, lava cracks, mineral deposits. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 256×160 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/Cave_Tiles_by_George_.png",
+      "filename": "Cave_Tiles_by_George_.png",
+      "width": 224,
+      "height": 181,
+      "type": "tileset",
+      "biome": "cave",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"Cave_Tiles_by_George_.png\". BIOME: cave — dark stone walls, glowing crystals, lava cracks, mineral deposits. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 224×181 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/city tiles.png",
+      "filename": "city tiles.png",
+      "width": 64,
+      "height": 64,
+      "type": "tileset",
+      "biome": "town",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"city tiles.png\". BIOME: town — cobblestone streets, building façades, lamp-posts, awning-strips. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 64×64 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/Colored_ceilings_16x16.png",
+      "filename": "Colored_ceilings_16x16.png",
+      "width": 336,
+      "height": 256,
+      "type": "tileset",
+      "biome": "indoor",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"Colored_ceilings_16x16.png\". BIOME: indoor — wood plank floors, plaster walls, rugs, kitchen tiles, brick textures. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 336×256 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/core_buildings.png",
+      "filename": "core_buildings.png",
+      "width": 760,
+      "height": 800,
+      "type": "tileset",
+      "biome": "town",
+      "max_kb": 350,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"core_buildings.png\". BIOME: town — cobblestone streets, building façades, lamp-posts, awning-strips. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 760×800 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 350 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/core_city_and_country.png",
+      "filename": "core_city_and_country.png",
+      "width": 640,
+      "height": 576,
+      "type": "tileset",
+      "biome": "town",
+      "max_kb": 350,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"core_city_and_country.png\". BIOME: town — cobblestone streets, building façades, lamp-posts, awning-strips. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 640×576 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 350 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/core_indoor_floors.png",
+      "filename": "core_indoor_floors.png",
+      "width": 736,
+      "height": 1344,
+      "type": "tileset",
+      "biome": "indoor",
+      "max_kb": 350,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"core_indoor_floors.png\". BIOME: indoor — wood plank floors, plaster walls, rugs, kitchen tiles, brick textures. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 736×1344 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 350 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/core_indoor_stairs.png",
+      "filename": "core_indoor_stairs.png",
+      "width": 720,
+      "height": 1056,
+      "type": "tileset",
+      "biome": "indoor",
+      "max_kb": 350,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"core_indoor_stairs.png\". BIOME: indoor — wood plank floors, plaster walls, rugs, kitchen tiles, brick textures. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 720×1056 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 350 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/core_indoor_walls.png",
+      "filename": "core_indoor_walls.png",
+      "width": 736,
+      "height": 1344,
+      "type": "tileset",
+      "biome": "indoor",
+      "max_kb": 350,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"core_indoor_walls.png\". BIOME: indoor — wood plank floors, plaster walls, rugs, kitchen tiles, brick textures. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 736×1344 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 350 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/core_outdoor.png",
+      "filename": "core_outdoor.png",
+      "width": 592,
+      "height": 1200,
+      "type": "tileset",
+      "biome": "outdoor",
+      "max_kb": 350,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"core_outdoor.png\". BIOME: outdoor — varied grass, dirt paths, fence-post, shrubs, mixed terrain. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 592×1200 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 350 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/core_outdoor_nature.png",
+      "filename": "core_outdoor_nature.png",
+      "width": 1024,
+      "height": 2048,
+      "type": "tileset",
+      "biome": "forest",
+      "max_kb": 350,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"core_outdoor_nature.png\". BIOME: forest — rich foliage, bark textures, moss, root patterns, dappled light. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 1024×2048 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 350 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/core_outdoor_water.png",
+      "filename": "core_outdoor_water.png",
+      "width": 1024,
+      "height": 2048,
+      "type": "tileset",
+      "biome": "water",
+      "max_kb": 350,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"core_outdoor_water.png\". BIOME: water — water surface variants, foam edges, depth-color gradient, ripples. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 1024×2048 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 350 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/core_set pieces.png",
+      "filename": "core_set pieces.png",
+      "width": 496,
+      "height": 800,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"core_set pieces.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 496×800 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/couch.png",
+      "filename": "couch.png",
+      "width": 64,
+      "height": 64,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"couch.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 64×64 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/doors.png",
+      "filename": "doors.png",
+      "width": 176,
+      "height": 192,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"doors.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 176×192 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/Drokoro_overland_update.png",
+      "filename": "Drokoro_overland_update.png",
+      "width": 96,
+      "height": 64,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"Drokoro_overland_update.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 96×64 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/electronics.png",
+      "filename": "electronics.png",
+      "width": 64,
+      "height": 64,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"electronics.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 64×64 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/factory.png",
+      "filename": "factory.png",
+      "width": 128,
+      "height": 64,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"factory.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 128×64 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/floorsandwalls.png",
+      "filename": "floorsandwalls.png",
+      "width": 176,
+      "height": 128,
+      "type": "tileset",
+      "biome": "beach",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"floorsandwalls.png\". BIOME: beach — warm sand, shells, driftwood, wet/dry transitions, coral splashes. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 176×128 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/furniture.png",
+      "filename": "furniture.png",
+      "width": 192,
+      "height": 96,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"furniture.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 192×96 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/Furniture_and_Fittings_by_George.png",
+      "filename": "Furniture_and_Fittings_by_George.png",
+      "width": 160,
+      "height": 176,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"Furniture_and_Fittings_by_George.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 160×176 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/gothicvania.png",
+      "filename": "gothicvania.png",
+      "width": 272,
+      "height": 204,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"gothicvania.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 272×204 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/Interiors 2 by Redshrike.PNG",
+      "filename": "Interiors 2 by Redshrike.PNG",
+      "width": 112,
+      "height": 64,
+      "type": "tileset",
+      "biome": "indoor",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"Interiors 2 by Redshrike.PNG\". BIOME: indoor — wood plank floors, plaster walls, rugs, kitchen tiles, brick textures. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 112×64 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/Interiors by Redshrike.png",
+      "filename": "Interiors by Redshrike.png",
+      "width": 112,
+      "height": 192,
+      "type": "tileset",
+      "biome": "indoor",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"Interiors by Redshrike.png\". BIOME: indoor — wood plank floors, plaster walls, rugs, kitchen tiles, brick textures. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 112×192 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/Interiors_16x16.png",
+      "filename": "Interiors_16x16.png",
+      "width": 256,
+      "height": 2592,
+      "type": "tileset",
+      "biome": "indoor",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"Interiors_16x16.png\". BIOME: indoor — wood plank floors, plaster walls, rugs, kitchen tiles, brick textures. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 256×2592 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/Interior_Floors_by_George.png",
+      "filename": "Interior_Floors_by_George.png",
+      "width": 144,
+      "height": 96,
+      "type": "tileset",
+      "biome": "indoor",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"Interior_Floors_by_George.png\". BIOME: indoor — wood plank floors, plaster walls, rugs, kitchen tiles, brick textures. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 144×96 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/Interior_Tiles_by_ArMM1998.png",
+      "filename": "Interior_Tiles_by_ArMM1998.png",
+      "width": 640,
+      "height": 400,
+      "type": "tileset",
+      "biome": "indoor",
+      "max_kb": 350,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"Interior_Tiles_by_ArMM1998.png\". BIOME: indoor — wood plank floors, plaster walls, rugs, kitchen tiles, brick textures. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 640×400 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 350 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/Interior_Tiles_by_Mike_Bramson.png",
+      "filename": "Interior_Tiles_by_Mike_Bramson.png",
+      "width": 176,
+      "height": 128,
+      "type": "tileset",
+      "biome": "indoor",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"Interior_Tiles_by_Mike_Bramson.png\". BIOME: indoor — wood plank floors, plaster walls, rugs, kitchen tiles, brick textures. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 176×128 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/Interior_Walls_by_George.png",
+      "filename": "Interior_Walls_by_George.png",
+      "width": 240,
+      "height": 224,
+      "type": "tileset",
+      "biome": "indoor",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"Interior_Walls_by_George.png\". BIOME: indoor — wood plank floors, plaster walls, rugs, kitchen tiles, brick textures. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 240×224 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/items.png",
+      "filename": "items.png",
+      "width": 48,
+      "height": 32,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"items.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 48×32 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/KelvinShadewing_Buildings.png",
+      "filename": "KelvinShadewing_Buildings.png",
+      "width": 320,
+      "height": 544,
+      "type": "tileset",
+      "biome": "town",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"KelvinShadewing_Buildings.png\". BIOME: town — cobblestone streets, building façades, lamp-posts, awning-strips. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 320×544 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/KelvinShadewing_Terrain.png",
+      "filename": "KelvinShadewing_Terrain.png",
+      "width": 304,
+      "height": 240,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"KelvinShadewing_Terrain.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 304×240 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/kitchen.png",
+      "filename": "kitchen.png",
+      "width": 64,
+      "height": 64,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"kitchen.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 64×64 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/ladders.png",
+      "filename": "ladders.png",
+      "width": 32,
+      "height": 32,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"ladders.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 32×32 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/Medieval_Tiles_by_Chickenshowman.png",
+      "filename": "Medieval_Tiles_by_Chickenshowman.png",
+      "width": 354,
+      "height": 262,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"Medieval_Tiles_by_Chickenshowman.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 354×262 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/MK_buildings.png",
+      "filename": "MK_buildings.png",
+      "width": 512,
+      "height": 448,
+      "type": "tileset",
+      "biome": "town",
+      "max_kb": 350,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"MK_buildings.png\". BIOME: town — cobblestone streets, building façades, lamp-posts, awning-strips. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 512×448 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 350 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/mountain.png",
+      "filename": "mountain.png",
+      "width": 112,
+      "height": 192,
+      "type": "tileset",
+      "biome": "mountain",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"mountain.png\". BIOME: mountain — rocky outcrops, snow-cap highlights, frost crystals, weathered stone. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 112×192 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/My_tuxemon_sheet.png",
+      "filename": "My_tuxemon_sheet.png",
+      "width": 128,
+      "height": 208,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"My_tuxemon_sheet.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 128×208 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/My_tuxemon_sheet_BW.png",
+      "filename": "My_tuxemon_sheet_BW.png",
+      "width": 128,
+      "height": 208,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"My_tuxemon_sheet_BW.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 128×208 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/Objects_by_ArMM1998.png",
+      "filename": "Objects_by_ArMM1998.png",
+      "width": 528,
+      "height": 320,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 350,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"Objects_by_ArMM1998.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 528×320 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 350 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/oceanset_outside.tiles.png",
+      "filename": "oceanset_outside.tiles.png",
+      "width": 256,
+      "height": 1800,
+      "type": "tileset",
+      "biome": "water",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"oceanset_outside.tiles.png\". BIOME: water — water surface variants, foam edges, depth-color gradient, ripples. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 256×1800 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/Office_interiors_16x16.png",
+      "filename": "Office_interiors_16x16.png",
+      "width": 352,
+      "height": 384,
+      "type": "tileset",
+      "biome": "mountain",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"Office_interiors_16x16.png\". BIOME: mountain — rocky outcrops, snow-cap highlights, frost crystals, weathered stone. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 352×384 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/Office_interiors_shadowless_16x16.png",
+      "filename": "Office_interiors_shadowless_16x16.png",
+      "width": 352,
+      "height": 384,
+      "type": "tileset",
+      "biome": "mountain",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"Office_interiors_shadowless_16x16.png\". BIOME: mountain — rocky outcrops, snow-cap highlights, frost crystals, weathered stone. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 352×384 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/outdoor.png",
+      "filename": "outdoor.png",
+      "width": 256,
+      "height": 256,
+      "type": "tileset",
+      "biome": "outdoor",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"outdoor.png\". BIOME: outdoor — varied grass, dirt paths, fence-post, shrubs, mixed terrain. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 256×256 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/Outdoor_odds_and_ends_by_Isaiah658.png",
+      "filename": "Outdoor_odds_and_ends_by_Isaiah658.png",
+      "width": 160,
+      "height": 80,
+      "type": "tileset",
+      "biome": "outdoor",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"Outdoor_odds_and_ends_by_Isaiah658.png\". BIOME: outdoor — varied grass, dirt paths, fence-post, shrubs, mixed terrain. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 160×80 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/Outdoor_Tiles_-_City_and_Country_-_by_Kelvin_Shadewing.png",
+      "filename": "Outdoor_Tiles_-_City_and_Country_-_by_Kelvin_Shadewing.png",
+      "width": 320,
+      "height": 400,
+      "type": "tileset",
+      "biome": "town",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"Outdoor_Tiles_-_City_and_Country_-_by_Kelvin_Shadewing.png\". BIOME: town — cobblestone streets, building façades, lamp-posts, awning-strips. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 320×400 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/Pacheesi Tiles.png",
+      "filename": "Pacheesi Tiles.png",
+      "width": 112,
+      "height": 48,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"Pacheesi Tiles.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 112×48 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/PastTheFuture_Grass_Sand_Snow.png",
+      "filename": "PastTheFuture_Grass_Sand_Snow.png",
+      "width": 384,
+      "height": 240,
+      "type": "tileset",
+      "biome": "beach",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"PastTheFuture_Grass_Sand_Snow.png\". BIOME: beach — warm sand, shells, driftwood, wet/dry transitions, coral splashes. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 384×240 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/plants.png",
+      "filename": "plants.png",
+      "width": 16,
+      "height": 32,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"plants.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 16×32 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/prototyping_outdoor.png",
+      "filename": "prototyping_outdoor.png",
+      "width": 512,
+      "height": 1024,
+      "type": "tileset",
+      "biome": "outdoor",
+      "max_kb": 350,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"prototyping_outdoor.png\". BIOME: outdoor — varied grass, dirt paths, fence-post, shrubs, mixed terrain. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 512×1024 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 350 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/rubberduck_outdoor.png",
+      "filename": "rubberduck_outdoor.png",
+      "width": 592,
+      "height": 592,
+      "type": "tileset",
+      "biome": "outdoor",
+      "max_kb": 350,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"rubberduck_outdoor.png\". BIOME: outdoor — varied grass, dirt paths, fence-post, shrubs, mixed terrain. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 592×592 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 350 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/Sand_n_water.png",
+      "filename": "Sand_n_water.png",
+      "width": 128,
+      "height": 208,
+      "type": "tileset",
+      "biome": "water",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"Sand_n_water.png\". BIOME: water — water surface variants, foam edges, depth-color gradient, ripples. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 128×208 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/setPiecesTSR.png",
+      "filename": "setPiecesTSR.png",
+      "width": 671,
+      "height": 512,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 350,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"setPiecesTSR.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 671×512 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 350 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/setPieces_glitch.png",
+      "filename": "setPieces_glitch.png",
+      "width": 192,
+      "height": 112,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"setPieces_glitch.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 192×112 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/Set_Pieces_by_Kelvin_Shadewing.png",
+      "filename": "Set_Pieces_by_Kelvin_Shadewing.png",
+      "width": 720,
+      "height": 512,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 350,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"Set_Pieces_by_Kelvin_Shadewing.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 720×512 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 350 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/shade.png",
+      "filename": "shade.png",
+      "width": 32,
+      "height": 16,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"shade.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 32×16 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/signs.png",
+      "filename": "signs.png",
+      "width": 48,
+      "height": 16,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"signs.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 48×16 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/stairs.png",
+      "filename": "stairs.png",
+      "width": 128,
+      "height": 48,
+      "type": "tileset",
+      "biome": "indoor",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"stairs.png\". BIOME: indoor — wood plank floors, plaster walls, rugs, kitchen tiles, brick textures. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 128×48 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/stairs_down.png",
+      "filename": "stairs_down.png",
+      "width": 64,
+      "height": 48,
+      "type": "tileset",
+      "biome": "indoor",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"stairs_down.png\". BIOME: indoor — wood plank floors, plaster walls, rugs, kitchen tiles, brick textures. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 64×48 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/Superpowers_Tilesheet.png",
+      "filename": "Superpowers_Tilesheet.png",
+      "width": 640,
+      "height": 640,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 350,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"Superpowers_Tilesheet.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 640×640 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 350 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/Terrain_by_George.png",
+      "filename": "Terrain_by_George.png",
+      "width": 240,
+      "height": 384,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"Terrain_by_George.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 240×384 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/Terrain_by_KelvinShadewing.png",
+      "filename": "Terrain_by_KelvinShadewing.png",
+      "width": 304,
+      "height": 240,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"Terrain_by_KelvinShadewing.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 304×240 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/Tileset.png",
+      "filename": "Tileset.png",
+      "width": 448,
+      "height": 640,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"Tileset.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 448×640 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/Tilesets_16x16.png",
+      "filename": "Tilesets_16x16.png",
+      "width": 640,
+      "height": 704,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 350,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"Tilesets_16x16.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 640×704 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 350 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/Tiles_packed.png",
+      "filename": "Tiles_packed.png",
+      "width": 368,
+      "height": 128,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"Tiles_packed.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 368×128 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/Truck-red-all.png",
+      "filename": "Truck-red-all.png",
+      "width": 96,
+      "height": 96,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"Truck-red-all.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 96×96 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/updated_ground_tiles_by_rubberduck.png",
+      "filename": "updated_ground_tiles_by_rubberduck.png",
+      "width": 592,
+      "height": 592,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 350,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"updated_ground_tiles_by_rubberduck.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 592×592 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 350 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/Vegetation_and_Outdoor_Fittings_by_George.png",
+      "filename": "Vegetation_and_Outdoor_Fittings_by_George.png",
+      "width": 240,
+      "height": 64,
+      "type": "tileset",
+      "biome": "outdoor",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"Vegetation_and_Outdoor_Fittings_by_George.png\". BIOME: outdoor — varied grass, dirt paths, fence-post, shrubs, mixed terrain. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 240×64 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/volcoli.png",
+      "filename": "volcoli.png",
+      "width": 32,
+      "height": 32,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"volcoli.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 32×32 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/Warmachine_black_and_yellow.png",
+      "filename": "Warmachine_black_and_yellow.png",
+      "width": 224,
+      "height": 80,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"Warmachine_black_and_yellow.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 224×80 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/Warmachine_yellow_demilitarised.png",
+      "filename": "Warmachine_yellow_demilitarised.png",
+      "width": 96,
+      "height": 80,
+      "type": "tileset",
+      "biome": "generic",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"Warmachine_yellow_demilitarised.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 96×80 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/tuxemon/Waterfall_by_George.png",
+      "filename": "Waterfall_by_George.png",
+      "width": 144,
+      "height": 160,
+      "type": "tileset",
+      "biome": "water",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"Waterfall_by_George.png\". BIOME: water — water surface variants, foam edges, depth-color gradient, ripples. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 144×160 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/tilesets/underwater.png",
+      "filename": "underwater.png",
+      "width": 256,
+      "height": 448,
+      "type": "tileset",
+      "biome": "water",
+      "max_kb": 150,
+      "ai_prompt": "Pokemon-style top-down TILESET sheet: \"underwater.png\". BIOME: water — water surface variants, foam edges, depth-color gradient, ripples. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Tile-positions referenced by every TMX map — never reorder, never rename. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 256×448 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 150 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/autotiles/Beach.png",
+      "filename": "Beach.png",
+      "width": 768,
+      "height": 192,
+      "type": "autotile",
+      "biome": "beach",
+      "max_kb": 20,
+      "ai_prompt": "Pokemon-style top-down AUTOTILE sheet: \"Beach.png\". BIOME: beach — warm sand, shells, driftwood, wet/dry transitions, coral splashes. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Autotile generators slice positions by hard-coded coordinates — never reorder cells, never resize. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 768×192 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 20 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/autotiles/Deep water.png",
+      "filename": "Deep water.png",
+      "width": 768,
+      "height": 192,
+      "type": "autotile",
+      "biome": "water",
+      "max_kb": 20,
+      "ai_prompt": "Pokemon-style top-down AUTOTILE sheet: \"Deep water.png\". BIOME: water — water surface variants, foam edges, depth-color gradient, ripples. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Autotile generators slice positions by hard-coded coordinates — never reorder cells, never resize. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 768×192 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 20 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/autotiles/Flag animation left.png",
+      "filename": "Flag animation left.png",
+      "width": 128,
+      "height": 32,
+      "type": "autotile",
+      "biome": "generic",
+      "max_kb": 20,
+      "ai_prompt": "Pokemon-style top-down AUTOTILE sheet: \"Flag animation left.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Autotile generators slice positions by hard-coded coordinates — never reorder cells, never resize. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 128×32 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 20 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/autotiles/Flag animation right.png",
+      "filename": "Flag animation right.png",
+      "width": 128,
+      "height": 32,
+      "type": "autotile",
+      "biome": "generic",
+      "max_kb": 20,
+      "ai_prompt": "Pokemon-style top-down AUTOTILE sheet: \"Flag animation right.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Autotile generators slice positions by hard-coded coordinates — never reorder cells, never resize. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 128×32 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 20 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/autotiles/Flag animation.png",
+      "filename": "Flag animation.png",
+      "width": 384,
+      "height": 128,
+      "type": "autotile",
+      "biome": "generic",
+      "max_kb": 20,
+      "ai_prompt": "Pokemon-style top-down AUTOTILE sheet: \"Flag animation.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Autotile generators slice positions by hard-coded coordinates — never reorder cells, never resize. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 384×128 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 20 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/autotiles/Pink orange flower[10].png",
+      "filename": "Pink orange flower[10].png",
+      "width": 128,
+      "height": 32,
+      "type": "autotile",
+      "biome": "generic",
+      "max_kb": 20,
+      "ai_prompt": "Pokemon-style top-down AUTOTILE sheet: \"Pink orange flower[10].png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Autotile generators slice positions by hard-coded coordinates — never reorder cells, never resize. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 128×32 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 20 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/autotiles/raft water tiles.png",
+      "filename": "raft water tiles.png",
+      "width": 384,
+      "height": 128,
+      "type": "autotile",
+      "biome": "water",
+      "max_kb": 20,
+      "ai_prompt": "Pokemon-style top-down AUTOTILE sheet: \"raft water tiles.png\". BIOME: water — water surface variants, foam edges, depth-color gradient, ripples. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Autotile generators slice positions by hard-coded coordinates — never reorder cells, never resize. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 384×128 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 20 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/autotiles/Rafts.png",
+      "filename": "Rafts.png",
+      "width": 384,
+      "height": 128,
+      "type": "autotile",
+      "biome": "generic",
+      "max_kb": 20,
+      "ai_prompt": "Pokemon-style top-down AUTOTILE sheet: \"Rafts.png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Autotile generators slice positions by hard-coded coordinates — never reorder cells, never resize. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 384×128 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 20 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/autotiles/Sand shore1.png",
+      "filename": "Sand shore1.png",
+      "width": 768,
+      "height": 192,
+      "type": "autotile",
+      "biome": "beach",
+      "max_kb": 20,
+      "ai_prompt": "Pokemon-style top-down AUTOTILE sheet: \"Sand shore1.png\". BIOME: beach — warm sand, shells, driftwood, wet/dry transitions, coral splashes. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Autotile generators slice positions by hard-coded coordinates — never reorder cells, never resize. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 768×192 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 20 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/autotiles/Seaweed dark.png",
+      "filename": "Seaweed dark.png",
+      "width": 128,
+      "height": 32,
+      "type": "autotile",
+      "biome": "cave",
+      "max_kb": 20,
+      "ai_prompt": "Pokemon-style top-down AUTOTILE sheet: \"Seaweed dark.png\". BIOME: cave — dark stone walls, glowing crystals, lava cracks, mineral deposits. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Autotile generators slice positions by hard-coded coordinates — never reorder cells, never resize. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 128×32 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 20 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/autotiles/Seaweed light.png",
+      "filename": "Seaweed light.png",
+      "width": 128,
+      "height": 32,
+      "type": "autotile",
+      "biome": "water",
+      "max_kb": 20,
+      "ai_prompt": "Pokemon-style top-down AUTOTILE sheet: \"Seaweed light.png\". BIOME: water — water surface variants, foam edges, depth-color gradient, ripples. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Autotile generators slice positions by hard-coded coordinates — never reorder cells, never resize. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 128×32 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 20 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/autotiles/Shaded water.png",
+      "filename": "Shaded water.png",
+      "width": 768,
+      "height": 128,
+      "type": "autotile",
+      "biome": "water",
+      "max_kb": 20,
+      "ai_prompt": "Pokemon-style top-down AUTOTILE sheet: \"Shaded water.png\". BIOME: water — water surface variants, foam edges, depth-color gradient, ripples. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Autotile generators slice positions by hard-coded coordinates — never reorder cells, never resize. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 768×128 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 20 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/autotiles/shallow autotile beach.png",
+      "filename": "shallow autotile beach.png",
+      "width": 768,
+      "height": 128,
+      "type": "autotile",
+      "biome": "beach",
+      "max_kb": 20,
+      "ai_prompt": "Pokemon-style top-down AUTOTILE sheet: \"shallow autotile beach.png\". BIOME: beach — warm sand, shells, driftwood, wet/dry transitions, coral splashes. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Autotile generators slice positions by hard-coded coordinates — never reorder cells, never resize. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 768×128 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 20 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/autotiles/Standard flower[10].png",
+      "filename": "Standard flower[10].png",
+      "width": 128,
+      "height": 32,
+      "type": "autotile",
+      "biome": "generic",
+      "max_kb": 20,
+      "ai_prompt": "Pokemon-style top-down AUTOTILE sheet: \"Standard flower[10].png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Autotile generators slice positions by hard-coded coordinates — never reorder cells, never resize. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 128×32 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 20 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/autotiles/Underwater dark.png",
+      "filename": "Underwater dark.png",
+      "width": 96,
+      "height": 128,
+      "type": "autotile",
+      "biome": "cave",
+      "max_kb": 20,
+      "ai_prompt": "Pokemon-style top-down AUTOTILE sheet: \"Underwater dark.png\". BIOME: cave — dark stone walls, glowing crystals, lava cracks, mineral deposits. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Autotile generators slice positions by hard-coded coordinates — never reorder cells, never resize. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 96×128 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 20 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/autotiles/Water current autotile.png",
+      "filename": "Water current autotile.png",
+      "width": 768,
+      "height": 192,
+      "type": "autotile",
+      "biome": "water",
+      "max_kb": 20,
+      "ai_prompt": "Pokemon-style top-down AUTOTILE sheet: \"Water current autotile.png\". BIOME: water — water surface variants, foam edges, depth-color gradient, ripples. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Autotile generators slice positions by hard-coded coordinates — never reorder cells, never resize. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 768×192 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 20 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/autotiles/Water current east.png",
+      "filename": "Water current east.png",
+      "width": 256,
+      "height": 32,
+      "type": "autotile",
+      "biome": "water",
+      "max_kb": 20,
+      "ai_prompt": "Pokemon-style top-down AUTOTILE sheet: \"Water current east.png\". BIOME: water — water surface variants, foam edges, depth-color gradient, ripples. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Autotile generators slice positions by hard-coded coordinates — never reorder cells, never resize. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 256×32 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 20 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/autotiles/Water current north.png",
+      "filename": "Water current north.png",
+      "width": 256,
+      "height": 32,
+      "type": "autotile",
+      "biome": "water",
+      "max_kb": 20,
+      "ai_prompt": "Pokemon-style top-down AUTOTILE sheet: \"Water current north.png\". BIOME: water — water surface variants, foam edges, depth-color gradient, ripples. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Autotile generators slice positions by hard-coded coordinates — never reorder cells, never resize. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 256×32 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 20 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/autotiles/Water current south.png",
+      "filename": "Water current south.png",
+      "width": 256,
+      "height": 32,
+      "type": "autotile",
+      "biome": "water",
+      "max_kb": 20,
+      "ai_prompt": "Pokemon-style top-down AUTOTILE sheet: \"Water current south.png\". BIOME: water — water surface variants, foam edges, depth-color gradient, ripples. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Autotile generators slice positions by hard-coded coordinates — never reorder cells, never resize. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 256×32 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 20 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/autotiles/Water current west.png",
+      "filename": "Water current west.png",
+      "width": 256,
+      "height": 32,
+      "type": "autotile",
+      "biome": "water",
+      "max_kb": 20,
+      "ai_prompt": "Pokemon-style top-down AUTOTILE sheet: \"Water current west.png\". BIOME: water — water surface variants, foam edges, depth-color gradient, ripples. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Autotile generators slice positions by hard-coded coordinates — never reorder cells, never resize. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 256×32 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 20 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/autotiles/Water rock.png",
+      "filename": "Water rock.png",
+      "width": 768,
+      "height": 128,
+      "type": "autotile",
+      "biome": "water",
+      "max_kb": 20,
+      "ai_prompt": "Pokemon-style top-down AUTOTILE sheet: \"Water rock.png\". BIOME: water — water surface variants, foam edges, depth-color gradient, ripples. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Autotile generators slice positions by hard-coded coordinates — never reorder cells, never resize. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 768×128 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 20 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/autotiles/Waterfall bottom.png",
+      "filename": "Waterfall bottom.png",
+      "width": 128,
+      "height": 32,
+      "type": "autotile",
+      "biome": "water",
+      "max_kb": 20,
+      "ai_prompt": "Pokemon-style top-down AUTOTILE sheet: \"Waterfall bottom.png\". BIOME: water — water surface variants, foam edges, depth-color gradient, ripples. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Autotile generators slice positions by hard-coded coordinates — never reorder cells, never resize. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 128×32 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 20 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/autotiles/Waterfall crest.png",
+      "filename": "Waterfall crest.png",
+      "width": 128,
+      "height": 32,
+      "type": "autotile",
+      "biome": "water",
+      "max_kb": 20,
+      "ai_prompt": "Pokemon-style top-down AUTOTILE sheet: \"Waterfall crest.png\". BIOME: water — water surface variants, foam edges, depth-color gradient, ripples. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Autotile generators slice positions by hard-coded coordinates — never reorder cells, never resize. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 128×32 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 20 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/autotiles/Waterfall.png",
+      "filename": "Waterfall.png",
+      "width": 128,
+      "height": 32,
+      "type": "autotile",
+      "biome": "water",
+      "max_kb": 20,
+      "ai_prompt": "Pokemon-style top-down AUTOTILE sheet: \"Waterfall.png\". BIOME: water — water surface variants, foam edges, depth-color gradient, ripples. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Autotile generators slice positions by hard-coded coordinates — never reorder cells, never resize. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 128×32 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 20 KB. NEVER change filename or dimensions."
+    },
+    {
+      "file_path": "game/autotiles/Yellow blue small flower[10].png",
+      "filename": "Yellow blue small flower[10].png",
+      "width": 128,
+      "height": 32,
+      "type": "autotile",
+      "biome": "generic",
+      "max_kb": 20,
+      "ai_prompt": "Pokemon-style top-down AUTOTILE sheet: \"Yellow blue small flower[10].png\". BIOME: generic — varied environment, flexible-purpose tile mix. LAYOUT: keep the EXACT cell-grid as the source. Each 16x16 cell = one game-world tile. Autotile generators slice positions by hard-coded coordinates — never reorder cells, never resize. PERSPECTIVE: top-down, slight south-east light, no parallax. STYLE: clean Pokemon-DS pixel-art, vibrant saturated colors, readable shapes when stitched into a 32-tile-wide map. DIMENSIONS: 128×32 px — MATCH EXACTLY. PNG, transparent where source is transparent. Max file-size: 20 KB. NEVER change filename or dimensions."
+    }
+  ]
+}
