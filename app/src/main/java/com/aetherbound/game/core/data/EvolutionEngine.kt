@@ -23,7 +23,11 @@ import com.aetherbound.game.core.StatKey
  */
 object EvolutionEngine {
 
-    enum class Trigger { LEVEL_UP, STONE, TRADE, FRIENDSHIP, MOVE_LEARNED }
+    enum class Trigger {
+        LEVEL_UP, STONE, TRADE, FRIENDSHIP, MOVE_LEARNED,
+        // Aetherbound-only triggers driven by real-clock + DailyPack data.
+        MOON_FULL, MOON_NEW, WEATHER_STORM, WEATHER_RAIN,
+    }
 
     data class Condition(
         val targetSlug: String,
@@ -61,6 +65,11 @@ object EvolutionEngine {
             Trigger.TRADE -> target  // any trade triggers evolution if the species has one
             Trigger.FRIENDSHIP -> if (happiness >= 220) target else null
             Trigger.MOVE_LEARNED -> null  // requires per-mon move-evolution table
+            // Aetherbound moon/weather triggers — handled via the new
+            // chain-based path in [checkChainTrigger]. Legacy Tuxemon
+            // path doesn't know about them, so they always fail here.
+            Trigger.MOON_FULL, Trigger.MOON_NEW,
+            Trigger.WEATHER_STORM, Trigger.WEATHER_RAIN -> null
         }
     }
 
@@ -74,6 +83,91 @@ object EvolutionEngine {
         "stage2" -> 100  // already final
         "standalone" -> 100
         else -> 16
+    }
+
+    // ── Aetherbound 152-chain evaluation ────────────────────────────
+    //
+    // Replaces the heuristic Tuxemon-stage logic for the 1000-monster
+    // matrix. Reads chain definitions from EvolutionChainRegistry and
+    // applies the right trigger:
+    //
+    //   level         → P(level) ramp, must roll on level-up
+    //   stone         → instant if matching stone item is consumed
+    //   moon_full     → instant on full-moon nights (real-clock)
+    //   moon_new      → instant on new-moon nights
+    //   weather_storm → instant when DailyPack reports STORM
+    //   weather_rain  → instant when DailyPack reports RAIN
+    //
+    // All checks pass instance.species.id (the Echoform's name slug)
+    // through to the chain registry.
+
+    /**
+     * Outcome of a chain-evaluation step. The caller (BattleScene /
+     * level-up handler / item-use handler) acts on `nextStageName`.
+     */
+    data class ChainResult(
+        val triggered: Boolean,
+        val nextStageName: String?,
+        val reason: String,
+    )
+
+    /**
+     * Decide whether [instance] should evolve right now given the trigger
+     * context. Pass only the inputs that matter for the trigger type
+     * (e.g. for STONE pass [stoneItemSlug]; for level-up pass nothing
+     * beyond the instance, which already carries its current level).
+     *
+     * Returns [ChainResult.triggered] = true and [nextStageName] when
+     * the evolution fires. Caller then applies [evolveTo] to swap species.
+     */
+    fun checkChainTrigger(
+        ctx: Context,
+        instance: EchoformInstance,
+        trigger: Trigger,
+        stoneItemSlug: String? = null,
+        currentWeather: com.aetherbound.game.core.Weather =
+            com.aetherbound.game.core.Weather.CLEAR,
+        rng: kotlin.random.Random = kotlin.random.Random.Default,
+    ): ChainResult {
+        val name = instance.species.id
+        val pair = EvolutionChainRegistry.forMember(ctx, name)
+            ?: return ChainResult(false, null, "$name is standalone (not in any chain)")
+        val (chain, idx) = pair
+        if (idx + 1 >= chain.members.size) {
+            return ChainResult(false, null, "$name is already at final stage")
+        }
+        val nextName = chain.members[idx + 1]
+
+        // Match the instance's chain trigger to the requested trigger.
+        // Mismatched triggers are silently rejected (returns false, no error).
+        val match = when (chain.triggerType) {
+            "level" -> trigger == Trigger.LEVEL_UP
+            "stone" -> trigger == Trigger.STONE && stoneItemSlug == chain.stoneItem
+            "moon_full" -> trigger == Trigger.MOON_FULL && com.aetherbound.game.core.MoonPhase.isFullMoonNight()
+            "moon_new" -> trigger == Trigger.MOON_NEW && com.aetherbound.game.core.MoonPhase.isNewMoonNight()
+            "weather_storm" -> trigger == Trigger.WEATHER_STORM &&
+                currentWeather == com.aetherbound.game.core.Weather.STORM
+            "weather_rain" -> trigger == Trigger.WEATHER_RAIN &&
+                currentWeather == com.aetherbound.game.core.Weather.RAIN
+            else -> false
+        }
+        if (!match) {
+            return ChainResult(false, null, "trigger mismatch: chain wants ${chain.triggerType}")
+        }
+
+        // For LEVEL trigger, roll probability. Other triggers fire instantly.
+        if (chain.triggerType == "level") {
+            val p = EvolutionChainRegistry.levelEvolutionProbability(ctx, name, instance.level)
+            if (p <= 0f) return ChainResult(false, null, "level too low for $name")
+            if (rng.nextFloat() > p) return ChainResult(false, null, "rolled ${rng.nextFloat()} > p=$p")
+        }
+        return ChainResult(true, nextName, "evolution fired: $name → $nextName via ${chain.triggerType}")
+    }
+
+    /** Force-evolve to the next chain stage. Wraps [evolve] with name lookup. */
+    fun evolveToNextStage(ctx: Context, instance: EchoformInstance): EchoformInstance? {
+        val nextName = EvolutionChainRegistry.nextStage(ctx, instance.species.id) ?: return null
+        return evolve(ctx, instance, nextName)
     }
 
     /**

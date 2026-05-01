@@ -1,0 +1,1712 @@
+{
+  "total_chains": 152,
+  "chains_in_aspect": 8,
+  "monsters_in_chains": 342,
+  "monsters_standalone": 658,
+  "probability_curve": {
+    "stage_1": "P(evolve|level) = max(0, (level - 10) / 10), saturates 100% at lvl 20",
+    "stage_2": "P(evolve|level) = max(0, (level - 30) / 15), saturates 100% at lvl 45",
+    "notes": "Stones/moon/weather fire instantly when matched, bypassing probability roll."
+  },
+  "triggers": {
+    "level": "default",
+    "stone": "element-keyed item",
+    "moon_full": "real-clock full-moon night",
+    "moon_new": "real-clock new-moon night",
+    "weather_storm": "DailyPack STORM",
+    "weather_rain": "DailyPack RAIN"
+  },
+  "chains": [
+    {
+      "chainId": "fire_chain_1",
+      "aspect": "Fire",
+      "members": [
+        "Bealix",
+        "Beatle",
+        "Beatric"
+      ],
+      "stages": 3,
+      "triggerType": "weather_storm",
+      "stoneItem": null
+    },
+    {
+      "chainId": "fire_chain_2",
+      "aspect": "Fire",
+      "members": [
+        "Boneton",
+        "Chamelite"
+      ],
+      "stages": 2,
+      "triggerType": "weather_rain",
+      "stoneItem": null
+    },
+    {
+      "chainId": "fire_chain_3",
+      "aspect": "Fire",
+      "members": [
+        "Charingo",
+        "Chickig"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "fire_chain_4",
+      "aspect": "Fire",
+      "members": [
+        "Cobruna",
+        "Crocath"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "fire_chain_5",
+      "aspect": "Fire",
+      "members": [
+        "Crocette",
+        "Crocodette"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "fire_chain_6",
+      "aspect": "Fire",
+      "members": [
+        "Eartherpillar",
+        "Electriboon",
+        "Elepion"
+      ],
+      "stages": 3,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "fire_chain_7",
+      "aspect": "Fire",
+      "members": [
+        "Fiefly",
+        "Fieraros"
+      ],
+      "stages": 2,
+      "triggerType": "stone"
+    },
+    {
+      "chainId": "fire_chain_8",
+      "aspect": "Fire",
+      "members": [
+        "Flamephin",
+        "Flamisire"
+      ],
+      "stages": 2,
+      "triggerType": "moon_full",
+      "stoneItem": null
+    },
+    {
+      "chainId": "water_chain_1",
+      "aspect": "Water",
+      "members": [
+        "Armadaza",
+        "Ashboon",
+        "Blastacuda"
+      ],
+      "stages": 3,
+      "triggerType": "moon_full",
+      "stoneItem": null
+    },
+    {
+      "chainId": "water_chain_2",
+      "aspect": "Water",
+      "members": [
+        "Chimemite",
+        "Croloon"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "water_chain_3",
+      "aspect": "Water",
+      "members": [
+        "Dragoron",
+        "Elemite"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "water_chain_4",
+      "aspect": "Water",
+      "members": [
+        "Elesaur",
+        "Frorvocrat"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "water_chain_5",
+      "aspect": "Water",
+      "members": [
+        "Glacican",
+        "Gorilite"
+      ],
+      "stages": 2,
+      "triggerType": "stone"
+    },
+    {
+      "chainId": "water_chain_6",
+      "aspect": "Water",
+      "members": [
+        "Hamstola",
+        "Hippopyss",
+        "Hippostar"
+      ],
+      "stages": 3,
+      "triggerType": "moon_full",
+      "stoneItem": null
+    },
+    {
+      "chainId": "water_chain_7",
+      "aspect": "Water",
+      "members": [
+        "Horropion",
+        "Hyecross"
+      ],
+      "stages": 2,
+      "triggerType": "weather_storm",
+      "stoneItem": null
+    },
+    {
+      "chainId": "water_chain_8",
+      "aspect": "Water",
+      "members": [
+        "Hyenuzz",
+        "Hypena"
+      ],
+      "stages": 2,
+      "triggerType": "weather_rain",
+      "stoneItem": null
+    },
+    {
+      "chainId": "ice_chain_1",
+      "aspect": "Ice",
+      "members": [
+        "Allicoon",
+        "Alliganium",
+        "Aquatopus"
+      ],
+      "stages": 3,
+      "triggerType": "weather_rain",
+      "stoneItem": null
+    },
+    {
+      "chainId": "ice_chain_2",
+      "aspect": "Ice",
+      "members": [
+        "Barracia",
+        "Bellabura"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "ice_chain_3",
+      "aspect": "Ice",
+      "members": [
+        "Belleleon",
+        "Camrycrin"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "ice_chain_4",
+      "aspect": "Ice",
+      "members": [
+        "Caterpion",
+        "Catetle"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "ice_chain_5",
+      "aspect": "Ice",
+      "members": [
+        "Cherdorurth",
+        "Chimemingo"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "ice_chain_6",
+      "aspect": "Ice",
+      "members": [
+        "Chimetile",
+        "Chimuar",
+        "Cobrawl"
+      ],
+      "stages": 3,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "ice_chain_7",
+      "aspect": "Ice",
+      "members": [
+        "Crocoom",
+        "Demapi"
+      ],
+      "stages": 2,
+      "triggerType": "stone"
+    },
+    {
+      "chainId": "ice_chain_8",
+      "aspect": "Ice",
+      "members": [
+        "Dewibia",
+        "Dracotto"
+      ],
+      "stages": 2,
+      "triggerType": "moon_full",
+      "stoneItem": null
+    },
+    {
+      "chainId": "earth_chain_1",
+      "aspect": "Earth",
+      "members": [
+        "Alligatar",
+        "Aquatalo",
+        "Aquatamel"
+      ],
+      "stages": 3,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "earth_chain_2",
+      "aspect": "Earth",
+      "members": [
+        "Aquataros",
+        "Arred"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "earth_chain_3",
+      "aspect": "Earth",
+      "members": [
+        "Banite",
+        "Cateceon"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "earth_chain_4",
+      "aspect": "Earth",
+      "members": [
+        "Caterak",
+        "Chimebil"
+      ],
+      "stages": 2,
+      "triggerType": "stone"
+    },
+    {
+      "chainId": "earth_chain_5",
+      "aspect": "Earth",
+      "members": [
+        "Chimpanther",
+        "Cocobra"
+      ],
+      "stages": 2,
+      "triggerType": "moon_full",
+      "stoneItem": null
+    },
+    {
+      "chainId": "earth_chain_6",
+      "aspect": "Earth",
+      "members": [
+        "Crazedine",
+        "Crocodos",
+        "Demonkey"
+      ],
+      "stages": 3,
+      "triggerType": "weather_storm",
+      "stoneItem": null
+    },
+    {
+      "chainId": "earth_chain_7",
+      "aspect": "Earth",
+      "members": [
+        "Doomeleon",
+        "Dradily"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "earth_chain_8",
+      "aspect": "Earth",
+      "members": [
+        "Elephuzz",
+        "Elesion"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "wood_chain_1",
+      "aspect": "Wood",
+      "members": [
+        "Antelobster",
+        "Aquatadger",
+        "Autoad"
+      ],
+      "stages": 3,
+      "triggerType": "stone"
+    },
+    {
+      "chainId": "wood_chain_2",
+      "aspect": "Wood",
+      "members": [
+        "Badgoth",
+        "Barracite"
+      ],
+      "stages": 2,
+      "triggerType": "moon_full",
+      "stoneItem": null
+    },
+    {
+      "chainId": "wood_chain_3",
+      "aspect": "Wood",
+      "members": [
+        "Biemborth",
+        "Bisotto"
+      ],
+      "stages": 2,
+      "triggerType": "weather_rain",
+      "stoneItem": null
+    },
+    {
+      "chainId": "wood_chain_4",
+      "aspect": "Wood",
+      "members": [
+        "Chimadillo",
+        "Chimpash"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "wood_chain_5",
+      "aspect": "Wood",
+      "members": [
+        "Chimpazar",
+        "Cobrius"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "wood_chain_6",
+      "aspect": "Wood",
+      "members": [
+        "Cobrix",
+        "Coyonite",
+        "Crazeray"
+      ],
+      "stages": 3,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "wood_chain_7",
+      "aspect": "Wood",
+      "members": [
+        "Crocyle",
+        "Dewephant"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "wood_chain_8",
+      "aspect": "Wood",
+      "members": [
+        "Elecling",
+        "Elecnea"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "metal_chain_1",
+      "aspect": "Metal",
+      "members": [
+        "Alligette",
+        "Aquatorb",
+        "Bamboa"
+      ],
+      "stages": 3,
+      "triggerType": "stone"
+    },
+    {
+      "chainId": "metal_chain_2",
+      "aspect": "Metal",
+      "members": [
+        "Bipet",
+        "Brawnkey"
+      ],
+      "stages": 2,
+      "triggerType": "weather_storm",
+      "stoneItem": null
+    },
+    {
+      "chainId": "metal_chain_3",
+      "aspect": "Metal",
+      "members": [
+        "Buffaphy",
+        "Chethesdurth"
+      ],
+      "stages": 2,
+      "triggerType": "weather_rain",
+      "stoneItem": null
+    },
+    {
+      "chainId": "metal_chain_4",
+      "aspect": "Metal",
+      "members": [
+        "Chickygon",
+        "Chillpion"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "metal_chain_5",
+      "aspect": "Metal",
+      "members": [
+        "Crocoduno",
+        "Dewilla"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "metal_chain_6",
+      "aspect": "Metal",
+      "members": [
+        "Draceo",
+        "Dracory",
+        "Dranub"
+      ],
+      "stages": 3,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "metal_chain_7",
+      "aspect": "Metal",
+      "members": [
+        "Drummingbird",
+        "Eleloon"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "metal_chain_8",
+      "aspect": "Metal",
+      "members": [
+        "Falceat",
+        "Fieroyote"
+      ],
+      "stages": 2,
+      "triggerType": "stone"
+    },
+    {
+      "chainId": "storm_chain_1",
+      "aspect": "Storm",
+      "members": [
+        "Alligactric",
+        "Alligoth",
+        "Allirak"
+      ],
+      "stages": 3,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "storm_chain_2",
+      "aspect": "Storm",
+      "members": [
+        "Armanium",
+        "Baphy"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "storm_chain_3",
+      "aspect": "Storm",
+      "members": [
+        "Basaur",
+        "Bealite"
+      ],
+      "stages": 2,
+      "triggerType": "stone"
+    },
+    {
+      "chainId": "storm_chain_4",
+      "aspect": "Storm",
+      "members": [
+        "Bellamel",
+        "Belloon"
+      ],
+      "stages": 2,
+      "triggerType": "moon_full",
+      "stoneItem": null
+    },
+    {
+      "chainId": "storm_chain_5",
+      "aspect": "Storm",
+      "members": [
+        "Belluar",
+        "Bonerine"
+      ],
+      "stages": 2,
+      "triggerType": "weather_storm",
+      "stoneItem": null
+    },
+    {
+      "chainId": "storm_chain_6",
+      "aspect": "Storm",
+      "members": [
+        "Bonican",
+        "Byrroisdot",
+        "Camoose"
+      ],
+      "stages": 3,
+      "triggerType": "weather_rain",
+      "stoneItem": null
+    },
+    {
+      "chainId": "storm_chain_7",
+      "aspect": "Storm",
+      "members": [
+        "Chimekey",
+        "Coyomite"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "storm_chain_8",
+      "aspect": "Storm",
+      "members": [
+        "Crocuna",
+        "Demander"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "wind_chain_1",
+      "aspect": "Wind",
+      "members": [
+        "Alliros",
+        "Apricode",
+        "Aquaking"
+      ],
+      "stages": 3,
+      "triggerType": "moon_full",
+      "stoneItem": null
+    },
+    {
+      "chainId": "wind_chain_2",
+      "aspect": "Wind",
+      "members": [
+        "Baboom",
+        "Belling"
+      ],
+      "stages": 2,
+      "triggerType": "moon_new",
+      "stoneItem": null
+    },
+    {
+      "chainId": "wind_chain_3",
+      "aspect": "Wind",
+      "members": [
+        "Brasshopper",
+        "Buffeaf"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "wind_chain_4",
+      "aspect": "Wind",
+      "members": [
+        "Catetic",
+        "Chillecta"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "wind_chain_5",
+      "aspect": "Wind",
+      "members": [
+        "Chimepecker",
+        "Crolix"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "wind_chain_6",
+      "aspect": "Wind",
+      "members": [
+        "Dewida",
+        "Donkairy",
+        "Dracithe"
+      ],
+      "stages": 3,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "wind_chain_7",
+      "aspect": "Wind",
+      "members": [
+        "Dracoss",
+        "Electriwing"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "wind_chain_8",
+      "aspect": "Wind",
+      "members": [
+        "Fierguin",
+        "Flamepion"
+      ],
+      "stages": 2,
+      "triggerType": "moon_full",
+      "stoneItem": null
+    },
+    {
+      "chainId": "shadow_chain_1",
+      "aspect": "Shadow",
+      "members": [
+        "Alligotto",
+        "Ashking",
+        "Basire"
+      ],
+      "stages": 3,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "shadow_chain_2",
+      "aspect": "Shadow",
+      "members": [
+        "Bealow",
+        "Berriot"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "shadow_chain_3",
+      "aspect": "Shadow",
+      "members": [
+        "Blastpecker",
+        "Brawlphin"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "shadow_chain_4",
+      "aspect": "Shadow",
+      "members": [
+        "Chimeraffe",
+        "Chuvrirth"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "shadow_chain_5",
+      "aspect": "Shadow",
+      "members": [
+        "Crocung",
+        "Donkhi"
+      ],
+      "stages": 2,
+      "triggerType": "stone"
+    },
+    {
+      "chainId": "shadow_chain_6",
+      "aspect": "Shadow",
+      "members": [
+        "Doomroach",
+        "Elecacle",
+        "Elelite"
+      ],
+      "stages": 3,
+      "triggerType": "moon_full",
+      "stoneItem": null
+    },
+    {
+      "chainId": "shadow_chain_7",
+      "aspect": "Shadow",
+      "members": [
+        "Falcocoon",
+        "Girabuff"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "shadow_chain_8",
+      "aspect": "Shadow",
+      "members": [
+        "Giralite",
+        "Glacander"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "light_chain_1",
+      "aspect": "Light",
+      "members": [
+        "Albareon",
+        "Aquatile",
+        "Armabyss"
+      ],
+      "stages": 3,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "light_chain_2",
+      "aspect": "Light",
+      "members": [
+        "Ashossum",
+        "Ashrilla"
+      ],
+      "stages": 2,
+      "triggerType": "stone"
+    },
+    {
+      "chainId": "light_chain_3",
+      "aspect": "Light",
+      "members": [
+        "Badgeler",
+        "Bagontur"
+      ],
+      "stages": 2,
+      "triggerType": "moon_full",
+      "stoneItem": null
+    },
+    {
+      "chainId": "light_chain_4",
+      "aspect": "Light",
+      "members": [
+        "Balord",
+        "Bambinosaur"
+      ],
+      "stages": 2,
+      "triggerType": "weather_rain",
+      "stoneItem": null
+    },
+    {
+      "chainId": "light_chain_5",
+      "aspect": "Light",
+      "members": [
+        "Bellibia",
+        "Bisyle"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "light_chain_6",
+      "aspect": "Light",
+      "members": [
+        "Blastbat",
+        "Charora",
+        "Chekyntom"
+      ],
+      "stages": 3,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "light_chain_7",
+      "aspect": "Light",
+      "members": [
+        "Chickama",
+        "Chillutor"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "light_chain_8",
+      "aspect": "Light",
+      "members": [
+        "Chimpair",
+        "Chimpion"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "venom_chain_1",
+      "aspect": "Venom",
+      "members": [
+        "Albatroal",
+        "Armadion",
+        "Bealax"
+      ],
+      "stages": 3,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "venom_chain_2",
+      "aspect": "Venom",
+      "members": [
+        "Beatic",
+        "Bisong"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "venom_chain_3",
+      "aspect": "Venom",
+      "members": [
+        "Blastdine",
+        "Bonemingo"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "venom_chain_4",
+      "aspect": "Venom",
+      "members": [
+        "Broikus",
+        "Burnerine"
+      ],
+      "stages": 2,
+      "triggerType": "stone"
+    },
+    {
+      "chainId": "venom_chain_5",
+      "aspect": "Venom",
+      "members": [
+        "Chilloyote",
+        "Chimpanzyss"
+      ],
+      "stages": 2,
+      "triggerType": "moon_full",
+      "stoneItem": null
+    },
+    {
+      "chainId": "venom_chain_6",
+      "aspect": "Venom",
+      "members": [
+        "Cobrops",
+        "Coyoron",
+        "Crocolix"
+      ],
+      "stages": 3,
+      "triggerType": "weather_storm",
+      "stoneItem": null
+    },
+    {
+      "chainId": "venom_chain_7",
+      "aspect": "Venom",
+      "members": [
+        "Discorpion",
+        "Dracaid"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "venom_chain_8",
+      "aspect": "Venom",
+      "members": [
+        "Dragonightmare",
+        "Elecander"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "cosmic_chain_1",
+      "aspect": "Cosmic",
+      "members": [
+        "Badgaring",
+        "Barracupid",
+        "Bibite"
+      ],
+      "stages": 3,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "cosmic_chain_2",
+      "aspect": "Cosmic",
+      "members": [
+        "Bidrill",
+        "Brerronen"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "cosmic_chain_3",
+      "aspect": "Cosmic",
+      "members": [
+        "Cheiddra",
+        "Chillzelle"
+      ],
+      "stages": 2,
+      "triggerType": "stone"
+    },
+    {
+      "chainId": "cosmic_chain_4",
+      "aspect": "Cosmic",
+      "members": [
+        "Chimpanzia",
+        "Crazeboon"
+      ],
+      "stages": 2,
+      "triggerType": "stone"
+    },
+    {
+      "chainId": "cosmic_chain_5",
+      "aspect": "Cosmic",
+      "members": [
+        "Crocosion",
+        "Crocoth"
+      ],
+      "stages": 2,
+      "triggerType": "moon_full",
+      "stoneItem": null
+    },
+    {
+      "chainId": "cosmic_chain_6",
+      "aspect": "Cosmic",
+      "members": [
+        "Doompie",
+        "Eaglide",
+        "Elecboon"
+      ],
+      "stages": 3,
+      "triggerType": "moon_new",
+      "stoneItem": null
+    },
+    {
+      "chainId": "cosmic_chain_7",
+      "aspect": "Cosmic",
+      "members": [
+        "Eletopus",
+        "Fiehog"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "cosmic_chain_8",
+      "aspect": "Cosmic",
+      "members": [
+        "Flarak",
+        "Flutopus"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "aether_chain_1",
+      "aspect": "Aether",
+      "members": [
+        "Allidily",
+        "Ashmingo",
+        "Ashron"
+      ],
+      "stages": 3,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "aether_chain_2",
+      "aspect": "Aether",
+      "members": [
+        "Boneguin",
+        "Chillilla"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "aether_chain_3",
+      "aspect": "Aether",
+      "members": [
+        "Coyonium",
+        "Crocodory"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "aether_chain_4",
+      "aspect": "Aether",
+      "members": [
+        "Donkuno",
+        "Elasion"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "aether_chain_5",
+      "aspect": "Aether",
+      "members": [
+        "Fiester",
+        "Gazops"
+      ],
+      "stages": 2,
+      "triggerType": "moon_full",
+      "stoneItem": null
+    },
+    {
+      "chainId": "aether_chain_6",
+      "aspect": "Aether",
+      "members": [
+        "Ghostrich",
+        "Girder",
+        "Glacitile"
+      ],
+      "stages": 3,
+      "triggerType": "weather_rain",
+      "stoneItem": null
+    },
+    {
+      "chainId": "aether_chain_7",
+      "aspect": "Aether",
+      "members": [
+        "Gokyd",
+        "Hypadillo"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "aether_chain_8",
+      "aspect": "Aether",
+      "members": [
+        "Hypibia",
+        "Hypingo"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "dream_chain_1",
+      "aspect": "Dream",
+      "members": [
+        "Ashnea",
+        "Barraceo",
+        "Blastboon"
+      ],
+      "stages": 3,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "dream_chain_2",
+      "aspect": "Dream",
+      "members": [
+        "Bonanzee",
+        "Camouse"
+      ],
+      "stages": 2,
+      "triggerType": "stone"
+    },
+    {
+      "chainId": "dream_chain_3",
+      "aspect": "Dream",
+      "members": [
+        "Carsyrth",
+        "Charpie"
+      ],
+      "stages": 2,
+      "triggerType": "moon_full",
+      "stoneItem": null
+    },
+    {
+      "chainId": "dream_chain_4",
+      "aspect": "Dream",
+      "members": [
+        "Chillbat",
+        "Chilloose"
+      ],
+      "stages": 2,
+      "triggerType": "weather_storm",
+      "stoneItem": null
+    },
+    {
+      "chainId": "dream_chain_5",
+      "aspect": "Dream",
+      "members": [
+        "Chillwing",
+        "Chimos"
+      ],
+      "stages": 2,
+      "triggerType": "moon_new",
+      "stoneItem": null
+    },
+    {
+      "chainId": "dream_chain_6",
+      "aspect": "Dream",
+      "members": [
+        "Crabbit",
+        "Demyte",
+        "Dolphite"
+      ],
+      "stages": 3,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "dream_chain_7",
+      "aspect": "Dream",
+      "members": [
+        "Drageler",
+        "Eldrad"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "dream_chain_8",
+      "aspect": "Dream",
+      "members": [
+        "Electriguin",
+        "Electruar"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "mind_chain_1",
+      "aspect": "Mind",
+      "members": [
+        "Bisita",
+        "Blazebra",
+        "Bonepion"
+      ],
+      "stages": 3,
+      "triggerType": "weather_rain",
+      "stoneItem": null
+    },
+    {
+      "chainId": "mind_chain_2",
+      "aspect": "Mind",
+      "members": [
+        "Bonezelle",
+        "Cabarrage"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "mind_chain_3",
+      "aspect": "Mind",
+      "members": [
+        "Caterpoom",
+        "Chimeling"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "mind_chain_4",
+      "aspect": "Mind",
+      "members": [
+        "Chimeroach",
+        "Chimpados"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "mind_chain_5",
+      "aspect": "Mind",
+      "members": [
+        "Chimpalax",
+        "Chimpuno"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "mind_chain_6",
+      "aspect": "Mind",
+      "members": [
+        "Crazewing",
+        "Demoda",
+        "Donkow"
+      ],
+      "stages": 3,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "mind_chain_7",
+      "aspect": "Mind",
+      "members": [
+        "Dragodrill",
+        "Elecatee"
+      ],
+      "stages": 2,
+      "triggerType": "stone"
+    },
+    {
+      "chainId": "mind_chain_8",
+      "aspect": "Mind",
+      "members": [
+        "Eleros",
+        "Falcolord"
+      ],
+      "stages": 2,
+      "triggerType": "moon_full",
+      "stoneItem": null
+    },
+    {
+      "chainId": "sound_chain_1",
+      "aspect": "Sound",
+      "members": [
+        "Albatruna",
+        "Alligaros",
+        "Alphatross"
+      ],
+      "stages": 3,
+      "triggerType": "weather_storm",
+      "stoneItem": null
+    },
+    {
+      "chainId": "sound_chain_2",
+      "aspect": "Sound",
+      "members": [
+        "Ashguin",
+        "Badgerbil"
+      ],
+      "stages": 2,
+      "triggerType": "moon_new",
+      "stoneItem": null
+    },
+    {
+      "chainId": "sound_chain_3",
+      "aspect": "Sound",
+      "members": [
+        "Batine",
+        "Beasaur"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "sound_chain_4",
+      "aspect": "Sound",
+      "members": [
+        "Beidianth",
+        "Bisoom"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "sound_chain_5",
+      "aspect": "Sound",
+      "members": [
+        "Bonaroo",
+        "Bonedine"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "sound_chain_6",
+      "aspect": "Sound",
+      "members": [
+        "Bonepecker",
+        "Buffabite",
+        "Buffanite"
+      ],
+      "stages": 3,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "sound_chain_7",
+      "aspect": "Sound",
+      "members": [
+        "Carnapi",
+        "Caterpuna"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "sound_chain_8",
+      "aspect": "Sound",
+      "members": [
+        "Chamelix",
+        "Chimmyn"
+      ],
+      "stages": 2,
+      "triggerType": "stone"
+    },
+    {
+      "chainId": "time_chain_1",
+      "aspect": "Time",
+      "members": [
+        "Arachnibble",
+        "Armasaur",
+        "Armaslash"
+      ],
+      "stages": 3,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "time_chain_2",
+      "aspect": "Time",
+      "members": [
+        "Barraly",
+        "Biza"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "time_chain_3",
+      "aspect": "Time",
+      "members": [
+        "Blastling",
+        "Bonewing"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "time_chain_4",
+      "aspect": "Time",
+      "members": [
+        "Buffaceon",
+        "Buffora"
+      ],
+      "stages": 2,
+      "triggerType": "stone"
+    },
+    {
+      "chainId": "time_chain_5",
+      "aspect": "Time",
+      "members": [
+        "Chimpaceon",
+        "Cobruno"
+      ],
+      "stages": 2,
+      "triggerType": "moon_full",
+      "stoneItem": null
+    },
+    {
+      "chainId": "time_chain_6",
+      "aspect": "Time",
+      "members": [
+        "Cowl",
+        "Crocodath",
+        "Crocodepi"
+      ],
+      "stages": 3,
+      "triggerType": "weather_storm",
+      "stoneItem": null
+    },
+    {
+      "chainId": "time_chain_7",
+      "aspect": "Time",
+      "members": [
+        "Crocozel",
+        "Demongoose"
+      ],
+      "stages": 2,
+      "triggerType": "moon_new",
+      "stoneItem": null
+    },
+    {
+      "chainId": "time_chain_8",
+      "aspect": "Time",
+      "members": [
+        "Dinositar",
+        "Dolphig"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "crystal_chain_1",
+      "aspect": "Crystal",
+      "members": [
+        "Albanub",
+        "Albatryle",
+        "Alligasaur"
+      ],
+      "stages": 3,
+      "triggerType": "moon_new",
+      "stoneItem": null
+    },
+    {
+      "chainId": "crystal_chain_2",
+      "aspect": "Crystal",
+      "members": [
+        "Bisoke",
+        "Burnitar"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "crystal_chain_3",
+      "aspect": "Crystal",
+      "members": [
+        "Cheeturbo",
+        "Dewitar"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "crystal_chain_4",
+      "aspect": "Crystal",
+      "members": [
+        "Doomadillo",
+        "Doomdine"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "crystal_chain_5",
+      "aspect": "Crystal",
+      "members": [
+        "Droputor",
+        "Elecupine"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "crystal_chain_6",
+      "aspect": "Crystal",
+      "members": [
+        "Elemadillo",
+        "Falcoton",
+        "Fiervark"
+      ],
+      "stages": 3,
+      "triggerType": "stone"
+    },
+    {
+      "chainId": "crystal_chain_7",
+      "aspect": "Crystal",
+      "members": [
+        "Frogre",
+        "Gasydiam"
+      ],
+      "stages": 2,
+      "triggerType": "weather_storm",
+      "stoneItem": null
+    },
+    {
+      "chainId": "crystal_chain_8",
+      "aspect": "Crystal",
+      "members": [
+        "Ghoguin",
+        "Giananted"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "blood_chain_1",
+      "aspect": "Blood",
+      "members": [
+        "Antetine",
+        "Aquail",
+        "Armaloon"
+      ],
+      "stages": 3,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "blood_chain_2",
+      "aspect": "Blood",
+      "members": [
+        "Ashmadillo",
+        "Badguno"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "blood_chain_3",
+      "aspect": "Blood",
+      "members": [
+        "Bonypus",
+        "Brudorth"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "blood_chain_4",
+      "aspect": "Blood",
+      "members": [
+        "Burnibou",
+        "Burnowary"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "blood_chain_5",
+      "aspect": "Blood",
+      "members": [
+        "Carnoda",
+        "Cobrire"
+      ],
+      "stages": 2,
+      "triggerType": "level",
+      "stoneItem": null
+    },
+    {
+      "chainId": "blood_chain_6",
+      "aspect": "Blood",
+      "members": [
+        "Coyophy",
+        "Crazehopper",
+        "Crocodrill"
+      ],
+      "stages": 3,
+      "triggerType": "stone"
+    },
+    {
+      "chainId": "blood_chain_7",
+      "aspect": "Blood",
+      "members": [
+        "Dinonite",
+        "Dolphire"
+      ],
+      "stages": 2,
+      "triggerType": "moon_full",
+      "stoneItem": null
+    },
+    {
+      "chainId": "blood_chain_8",
+      "aspect": "Blood",
+      "members": [
+        "Dolphung",
+        "Dranyte"
+      ],
+      "stages": 2,
+      "triggerType": "weather_storm",
+      "stoneItem": null
+    }
+  ]
+}
