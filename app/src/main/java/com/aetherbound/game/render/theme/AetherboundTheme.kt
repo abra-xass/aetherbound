@@ -56,7 +56,13 @@ fun aspectColors(aspect: Aspect): Pair<Color, Color> = when (aspect) {
     Aspect.HEROIC -> Color(0xFFFFE082) to Color(0xFFFFF8E1)
     Aspect.COSMIC -> Color(0xFFA77CFF) to Color(0xFFE1BEE7)
     Aspect.VENOM -> Color(0xFF55D6C2) to Color(0xFFB2DFDB)
-    Aspect.NORMAL -> Color(0xFF263238) to Color(0xFF455A64)
+    Aspect.NORMAL -> Color(0xFFF5D37A) to Color(0xFFFFF3C4)    // Aether-gold
+    Aspect.DREAM -> Color(0xFFE1BEE7) to Color(0xFFF8BBD0)      // pastel dusk
+    Aspect.MIND -> Color(0xFF7C4DFF) to Color(0xFFB388FF)       // psychic violet
+    Aspect.SOUND -> Color(0xFF00B0FF) to Color(0xFFFF4081)      // sonic blue + neon pink
+    Aspect.TIME -> Color(0xFFC9A227) to Color(0xFFEFE5B5)       // bronze + sand
+    Aspect.CRYSTAL -> Color(0xFFE0F7FA) to Color(0xFFFFFFFF)    // prismatic white
+    Aspect.BLOOD -> Color(0xFFB71C1C) to Color(0xFFEF5350)      // crimson + scarlet
 }
 
 /** Render-quality preset, user-toggleable in PerformanceOverlay. */
