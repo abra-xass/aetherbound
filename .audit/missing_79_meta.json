@@ -1,0 +1,328 @@
+{
+  "total_missing": 79,
+  "rare_count": 49,
+  "veryrare_count": 24,
+  "legendary_count": 6,
+  "rare_names": [
+    {
+      "ordinal": 851,
+      "name": "Yetiger"
+    },
+    {
+      "ordinal": 855,
+      "name": "Magihawk"
+    },
+    {
+      "ordinal": 856,
+      "name": "Knightingale"
+    },
+    {
+      "ordinal": 857,
+      "name": "Vultune"
+    },
+    {
+      "ordinal": 862,
+      "name": "Twilightingale"
+    },
+    {
+      "ordinal": 863,
+      "name": "Vaporc"
+    },
+    {
+      "ordinal": 865,
+      "name": "Mantygon"
+    },
+    {
+      "ordinal": 866,
+      "name": "Rhinonium"
+    },
+    {
+      "ordinal": 867,
+      "name": "Mohawk"
+    },
+    {
+      "ordinal": 870,
+      "name": "Starish"
+    },
+    {
+      "ordinal": 872,
+      "name": "Mountida"
+    },
+    {
+      "ordinal": 875,
+      "name": "Salamantis"
+    },
+    {
+      "ordinal": 877,
+      "name": "Turtoy"
+    },
+    {
+      "ordinal": 878,
+      "name": "Vultaring"
+    },
+    {
+      "ordinal": 880,
+      "name": "Volteon"
+    },
+    {
+      "ordinal": 882,
+      "name": "Salamaniac"
+    },
+    {
+      "ordinal": 884,
+      "name": "Venophant"
+    },
+    {
+      "ordinal": 885,
+      "name": "Scorpidos"
+    },
+    {
+      "ordinal": 887,
+      "name": "Rammite"
+    },
+    {
+      "ordinal": 888,
+      "name": "Steelalo"
+    },
+    {
+      "ordinal": 889,
+      "name": "Wallanyte"
+    },
+    {
+      "ordinal": 894,
+      "name": "Scorpike"
+    },
+    {
+      "ordinal": 896,
+      "name": "Parriot"
+    },
+    {
+      "ordinal": 900,
+      "name": "Nyghy"
+    },
+    {
+      "ordinal": 901,
+      "name": "Xuvra"
+    },
+    {
+      "ordinal": 903,
+      "name": "Piannin"
+    },
+    {
+      "ordinal": 905,
+      "name": "Zoracrynth"
+    },
+    {
+      "ordinal": 909,
+      "name": "Ymmiss"
+    },
+    {
+      "ordinal": 913,
+      "name": "Yrvador"
+    },
+    {
+      "ordinal": 914,
+      "name": "Perrinth"
+    },
+    {
+      "ordinal": 915,
+      "name": "Qimeg"
+    },
+    {
+      "ordinal": 916,
+      "name": "Ysyrth"
+    },
+    {
+      "ordinal": 917,
+      "name": "Kuzayn"
+    },
+    {
+      "ordinal": 918,
+      "name": "Ziervier"
+    },
+    {
+      "ordinal": 921,
+      "name": "Yrvon"
+    },
+    {
+      "ordinal": 925,
+      "name": "Qudrayrreit"
+    },
+    {
+      "ordinal": 926,
+      "name": "Qeombenth"
+    },
+    {
+      "ordinal": 929,
+      "name": "Zunnum"
+    },
+    {
+      "ordinal": 931,
+      "name": "Romby"
+    },
+    {
+      "ordinal": 935,
+      "name": "Zurgan"
+    },
+    {
+      "ordinal": 938,
+      "name": "Pursen"
+    },
+    {
+      "ordinal": 939,
+      "name": "Ymbaintys"
+    },
+    {
+      "ordinal": 941,
+      "name": "Kylbodar"
+    },
+    {
+      "ordinal": 942,
+      "name": "Katairag"
+    },
+    {
+      "ordinal": 943,
+      "name": "Norsentiag"
+    },
+    {
+      "ordinal": 944,
+      "name": "Qenurriam"
+    },
+    {
+      "ordinal": 945,
+      "name": "Usim"
+    },
+    {
+      "ordinal": 946,
+      "name": "Tumru"
+    },
+    {
+      "ordinal": 949,
+      "name": "Qyvros"
+    }
+  ],
+  "veryrare_names": [
+    {
+      "ordinal": 951,
+      "name": "Mylroi"
+    },
+    {
+      "ordinal": 953,
+      "name": "Tomrenteinth"
+    },
+    {
+      "ordinal": 955,
+      "name": "Qoirgeinth"
+    },
+    {
+      "ordinal": 956,
+      "name": "Nindainth"
+    },
+    {
+      "ordinal": 958,
+      "name": "Posass"
+    },
+    {
+      "ordinal": 959,
+      "name": "Unosder"
+    },
+    {
+      "ordinal": 961,
+      "name": "Xyndyn"
+    },
+    {
+      "ordinal": 964,
+      "name": "Tinym"
+    },
+    {
+      "ordinal": 967,
+      "name": "Kendriass"
+    },
+    {
+      "ordinal": 968,
+      "name": "Pirgod"
+    },
+    {
+      "ordinal": 969,
+      "name": "Xiddrirro"
+    },
+    {
+      "ordinal": 970,
+      "name": "Nendrunos"
+    },
+    {
+      "ordinal": 972,
+      "name": "Yseom"
+    },
+    {
+      "ordinal": 974,
+      "name": "Zymrerth"
+    },
+    {
+      "ordinal": 976,
+      "name": "Polriat"
+    },
+    {
+      "ordinal": 977,
+      "name": "Xorvurro"
+    },
+    {
+      "ordinal": 978,
+      "name": "Zesurth"
+    },
+    {
+      "ordinal": 979,
+      "name": "Xegi"
+    },
+    {
+      "ordinal": 980,
+      "name": "Yzarrass"
+    },
+    {
+      "ordinal": 981,
+      "name": "Pimurir"
+    },
+    {
+      "ordinal": 982,
+      "name": "Zese"
+    },
+    {
+      "ordinal": 984,
+      "name": "Qelrem"
+    },
+    {
+      "ordinal": 985,
+      "name": "Yrorros"
+    },
+    {
+      "ordinal": 989,
+      "name": "Memmuror"
+    }
+  ],
+  "legendary_names": [
+    {
+      "ordinal": 990,
+      "name": "Orru"
+    },
+    {
+      "ordinal": 991,
+      "name": "Xundraintu"
+    },
+    {
+      "ordinal": 992,
+      "name": "Resosdienth"
+    },
+    {
+      "ordinal": 993,
+      "name": "Xazzyrth"
+    },
+    {
+      "ordinal": 996,
+      "name": "Poton"
+    },
+    {
+      "ordinal": 999,
+      "name": "Orgasdam"
+    }
+  ]
+}
