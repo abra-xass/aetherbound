@@ -3,293 +3,630 @@
   "purpose": "Visual-driven matrix for the 79 missing top-tier echoforms (49 Rare + 24 VeryRare + 6 Legendary). Replaces all element/archetype prescriptions from the parent matrix — pure visual concepts only.",
   "policy": "(1) NO element prescription. (2) NO archetype duplicates among these 79 OR with the existing 533. (3) Names are IDENTIFIERS ONLY — the AI must NOT use the name as a visual hint. (4) Legendaries must look mythical, ~35% larger silhouette dominance, animation-friendly motion suggestions where possible.",
   "shared_output_spec": "Render 3 separate views per creature: (1) full-body front view, (2) three-quarter back view rotated ~135°, (3) pure side-profile view. GENERATION RES: 512x512 → DOWNSCALE to FINAL 96x96 PNG, transparent background, indexed-256 palette, ≤5 KB per image. Pokemon-style line art, vibrant saturated colors, single creature centered, tightly cropped to creature edges (no padding wider than 2px), no text or watermarks.",
-  "totals": { "rare": 49, "veryrare": 24, "legendary": 10 },
+  "totals": {
+    "rare": 49,
+    "veryrare": 24,
+    "legendary": 10
+  },
   "legendary_redo_note": "All 10 legendaries are described here, including the 4 already-rendered ones (994 Indrusdet, 995 Froizainteo, 997 Chekyntom, 998 Grutin) — the previous artwork wasn't sufficiently mythic/special, so these get replaced with the new visions below. Existing PNGs in those 4 folders will be overwritten.",
   "complexity_by_rarity": {
     "Rare": "complex form with dynamic pose, 3-4 detailed features, glowing accents",
     "VeryRare": "ornate design, multiple flourishes, regal/imposing stance, partial luminescence",
     "Legendary": "mythical and divine appearance, multiple body modifications, otherworldly aura, dramatic pose, reality-bending visual flourishes — render ~35% LARGER (creature dominates ~85% of frame)"
   },
-
   "alternate_legendary_concepts_for_future_redos": [],
-
   "entries": [
-
     {
-      "ordinal": 990, "name": "Orru", "rarity": "Legendary",
+      "ordinal": 990,
+      "name": "Orru",
+      "rarity": "Legendary",
       "visual_concept": "Blue-Eyes Triple-Head — a colossal three-headed dragon with metallic icy-blue scales. Each head crowned with crystalline horn-cluster. Wings translucent like frost-glass. Massive serpentine body. Frost-plasma crackles between the three throats.",
-      "ai_prompt": "Pokemon-style LEGENDARY monster: a colossal three-headed dragon with metallic icy-blue scales, each head crowned with crystalline horn-clusters, wings translucent like frost-glass, massive serpentine body, frost-plasma crackling between the three throats. ANIMATION HINT: the three throats glow on alternating beats — design supports multi-frame plasma-pulse animation. RARITY TIER: Legendary (mythical and divine appearance, otherworldly aura, ~35% larger silhouette dominating ~85% of frame). NEVER use the name 'Orru' as a visual hint. Render 3 views: front / 3/4 back / profile. 96x96 PNG, transparent BG, ≤5 KB."
+      "ai_prompt": "Pokemon-style LEGENDARY monster: a colossal three-headed dragon with metallic icy-blue scales, each head crowned with crystalline horn-clusters, wings translucent like frost-glass, massive serpentine body, frost-plasma crackling between the three throats. ANIMATION HINT: the three throats glow on alternating beats — design supports multi-frame plasma-pulse animation. RARITY TIER: Legendary (mythical and divine appearance, otherworldly aura, ~35% larger silhouette dominating ~85% of frame). NEVER use the name 'Orru' as a visual hint. Render 3 views: front / 3/4 back / profile. 96x96 PNG, transparent BG, ≤5 KB. ANIMATED OUTPUT (legendary only): generate 24 PNGs total per creature — 8 frames × 3 views, organized as Monsters/<name>/front/frame_0001.png … frame_0008.png, Monsters/<name>/three_quarter_back/frame_0001.png … frame_0008.png, Monsters/<name>/profile/frame_0001.png … frame_0008.png. Loop animation at 12 fps — subtle motion (drifting halo / pulsing runes / flowing sand / wandering stars / flickering flame), creature silhouette + pose stable across frames, only effect-layer changes. Frame 1 = Frame 9 (seamless loop). Each frame: 96x96 PNG, transparent BG, indexed-256, ≤5 KB.",
+      "output_format": "8-frame loop per view (24 PNGs total in 3 sub-folders)"
     },
     {
-      "ordinal": 991, "name": "Xundraintu", "rarity": "Legendary",
+      "ordinal": 991,
+      "name": "Xundraintu",
+      "rarity": "Legendary",
       "visual_concept": "Obelisk-Kolossus — a towering humanoid colossus carved from deep blue-stone, hands clenched in massive bound fists, eye-sockets blazing red, ancient glowing runes etched across chest and shoulders. Featureless face. Squared anatomical proportions like a megalith come to life.",
-      "ai_prompt": "Pokemon-style LEGENDARY monster: a towering humanoid colossus carved from deep blue-stone, hands clenched in massive bound fists, eye-sockets blazing red, ancient glowing runes etched across chest and shoulders, featureless face, squared megalith-like anatomy. ANIMATION HINT: runes on chest pulse with red light in a slow rhythm. RARITY TIER: Legendary (~35% larger silhouette). Ignore the name 'Xundraintu'. Render 3 views. 96x96 PNG, transparent BG, ≤5 KB."
+      "ai_prompt": "Pokemon-style LEGENDARY monster: a towering humanoid colossus carved from deep blue-stone, hands clenched in massive bound fists, eye-sockets blazing red, ancient glowing runes etched across chest and shoulders, featureless face, squared megalith-like anatomy. ANIMATION HINT: runes on chest pulse with red light in a slow rhythm. RARITY TIER: Legendary (~35% larger silhouette). Ignore the name 'Xundraintu'. Render 3 views. 96x96 PNG, transparent BG, ≤5 KB. ANIMATED OUTPUT (legendary only): generate 24 PNGs total per creature — 8 frames × 3 views, organized as Monsters/<name>/front/frame_0001.png … frame_0008.png, Monsters/<name>/three_quarter_back/frame_0001.png … frame_0008.png, Monsters/<name>/profile/frame_0001.png … frame_0008.png. Loop animation at 12 fps — subtle motion (drifting halo / pulsing runes / flowing sand / wandering stars / flickering flame), creature silhouette + pose stable across frames, only effect-layer changes. Frame 1 = Frame 9 (seamless loop). Each frame: 96x96 PNG, transparent BG, indexed-256, ≤5 KB.",
+      "output_format": "8-frame loop per view (24 PNGs total in 3 sub-folders)"
     },
     {
-      "ordinal": 992, "name": "Resosdienth", "rarity": "Legendary",
+      "ordinal": 992,
+      "name": "Resosdienth",
+      "rarity": "Legendary",
       "visual_concept": "Plant-Löwe — a regal feline body with a mane made of living interwoven vines, autumn leaves and wildflowers. Polished silver-steel claws extend from leaf-padded paws. Eyes glow deep emerald-gold. Tail tip blooms into a single radiant flower. Posture proud, head raised.",
-      "ai_prompt": "Pokemon-style LEGENDARY monster: a regal feline body with a mane made of living interwoven vines and wildflowers, polished silver-steel claws from leaf-padded paws, eyes glowing emerald-gold, tail tip blooms into a radiant flower. ANIMATION HINT: petals slowly drift off the mane. RARITY TIER: Legendary (~35% larger silhouette). Ignore the name 'Resosdienth'. Render 3 views. 96x96 PNG, transparent BG, ≤5 KB."
+      "ai_prompt": "Pokemon-style LEGENDARY monster: a regal feline body with a mane made of living interwoven vines and wildflowers, polished silver-steel claws from leaf-padded paws, eyes glowing emerald-gold, tail tip blooms into a radiant flower. ANIMATION HINT: petals slowly drift off the mane. RARITY TIER: Legendary (~35% larger silhouette). Ignore the name 'Resosdienth'. Render 3 views. 96x96 PNG, transparent BG, ≤5 KB. ANIMATED OUTPUT (legendary only): generate 24 PNGs total per creature — 8 frames × 3 views, organized as Monsters/<name>/front/frame_0001.png … frame_0008.png, Monsters/<name>/three_quarter_back/frame_0001.png … frame_0008.png, Monsters/<name>/profile/frame_0001.png … frame_0008.png. Loop animation at 12 fps — subtle motion (drifting halo / pulsing runes / flowing sand / wandering stars / flickering flame), creature silhouette + pose stable across frames, only effect-layer changes. Frame 1 = Frame 9 (seamless loop). Each frame: 96x96 PNG, transparent BG, indexed-256, ≤5 KB.",
+      "output_format": "8-frame loop per view (24 PNGs total in 3 sub-folders)"
     },
     {
-      "ordinal": 993, "name": "Xazzyrth", "rarity": "Legendary",
+      "ordinal": 993,
+      "name": "Xazzyrth",
+      "rarity": "Legendary",
       "visual_concept": "Dark Magician — an arcane warlord in violet-black armor with a star-patterned cape, holding a curved staff topped with a floating purple crystal. Horned helmet shadows the face. Eyes glow violet beneath. Tall, slender, imposing. Magic glyphs swirl around the staff.",
-      "ai_prompt": "Pokemon-style LEGENDARY monster: an arcane warlord in violet-black armor with star-patterned cape, holding a curved staff topped with a floating purple crystal, horned helmet shadowing the face, eyes glowing violet beneath, tall slender imposing, magic glyphs swirling around the staff. ANIMATION HINT: glyphs orbit the crystal in slow circles. RARITY TIER: Legendary (~35% larger silhouette). Ignore the name 'Xazzyrth'. Render 3 views. 96x96 PNG, transparent BG, ≤5 KB."
+      "ai_prompt": "Pokemon-style LEGENDARY monster: an arcane warlord in violet-black armor with star-patterned cape, holding a curved staff topped with a floating purple crystal, horned helmet shadowing the face, eyes glowing violet beneath, tall slender imposing, magic glyphs swirling around the staff. ANIMATION HINT: glyphs orbit the crystal in slow circles. RARITY TIER: Legendary (~35% larger silhouette). Ignore the name 'Xazzyrth'. Render 3 views. 96x96 PNG, transparent BG, ≤5 KB. ANIMATED OUTPUT (legendary only): generate 24 PNGs total per creature — 8 frames × 3 views, organized as Monsters/<name>/front/frame_0001.png … frame_0008.png, Monsters/<name>/three_quarter_back/frame_0001.png … frame_0008.png, Monsters/<name>/profile/frame_0001.png … frame_0008.png. Loop animation at 12 fps — subtle motion (drifting halo / pulsing runes / flowing sand / wandering stars / flickering flame), creature silhouette + pose stable across frames, only effect-layer changes. Frame 1 = Frame 9 (seamless loop). Each frame: 96x96 PNG, transparent BG, indexed-256, ≤5 KB.",
+      "output_format": "8-frame loop per view (24 PNGs total in 3 sub-folders)"
     },
     {
-      "ordinal": 996, "name": "Poton", "rarity": "Legendary",
+      "ordinal": 996,
+      "name": "Poton",
+      "rarity": "Legendary",
       "visual_concept": "Exodia — a colossal sealed god whose body is bound by golden chains in five distinct sealed fragments (head, two arms, two legs) each floating slightly apart. Eyes blaze through the gold. Glowing seal-runes circle each fragment. Imprisoned but radiating menace.",
-      "ai_prompt": "Pokemon-style LEGENDARY monster: a colossal sealed god, body bound by golden chains in five distinct floating sealed fragments (head, two arms, two legs) each slightly apart, eyes blazing through the gold, glowing seal-runes circling each fragment, imprisoned but radiating menace. ANIMATION HINT: seal-runes rotate slowly around each fragment. RARITY TIER: Legendary (~35% larger silhouette). Ignore the name 'Poton'. Render 3 views. 96x96 PNG, transparent BG, ≤5 KB."
+      "ai_prompt": "Pokemon-style LEGENDARY monster: a colossal sealed god, body bound by golden chains in five distinct floating sealed fragments (head, two arms, two legs) each slightly apart, eyes blazing through the gold, glowing seal-runes circling each fragment, imprisoned but radiating menace. ANIMATION HINT: seal-runes rotate slowly around each fragment. RARITY TIER: Legendary (~35% larger silhouette). Ignore the name 'Poton'. Render 3 views. 96x96 PNG, transparent BG, ≤5 KB. ANIMATED OUTPUT (legendary only): generate 24 PNGs total per creature — 8 frames × 3 views, organized as Monsters/<name>/front/frame_0001.png … frame_0008.png, Monsters/<name>/three_quarter_back/frame_0001.png … frame_0008.png, Monsters/<name>/profile/frame_0001.png … frame_0008.png. Loop animation at 12 fps — subtle motion (drifting halo / pulsing runes / flowing sand / wandering stars / flickering flame), creature silhouette + pose stable across frames, only effect-layer changes. Frame 1 = Frame 9 (seamless loop). Each frame: 96x96 PNG, transparent BG, indexed-256, ≤5 KB.",
+      "output_format": "8-frame loop per view (24 PNGs total in 3 sub-folders)"
     },
     {
-      "ordinal": 999, "name": "Orgasdam", "rarity": "Legendary",
+      "ordinal": 999,
+      "name": "Orgasdam",
+      "rarity": "Legendary",
       "visual_concept": "Slifer / Himmlischer Schlangengott — a kilometer-long serpentine dragon coiling through clouds, two mouths stacked vertically (one above the other) both lined with rows of fangs, wings of pure star-fabric stretched between body-segments, scales shimmering with constellations, body trailing nebula-wisps. Chinese mythology + cosmic scale.",
-      "ai_prompt": "Pokemon-style LEGENDARY monster — TOP UNIQUE in entire game (paired with Galaktische Explosion attack): a kilometer-long serpentine dragon coiling through clouds, two mouths stacked vertically both lined with rows of fangs, wings of pure star-fabric stretched between body-segments, scales shimmering with full constellations, body trailing nebula-wisps. Chinese mythology meets cosmic scale. ANIMATION HINT: constellations on the body slowly drift, both mouths can roar in alternating frames. RARITY TIER: Legendary (top of top, ~40% larger silhouette dominating ~90% of frame). Ignore the name 'Orgasdam'. Render 3 views. 96x96 PNG, transparent BG, ≤5 KB."
+      "ai_prompt": "Pokemon-style LEGENDARY monster — TOP UNIQUE in entire game (paired with Galaktische Explosion attack): a kilometer-long serpentine dragon coiling through clouds, two mouths stacked vertically both lined with rows of fangs, wings of pure star-fabric stretched between body-segments, scales shimmering with full constellations, body trailing nebula-wisps. Chinese mythology meets cosmic scale. ANIMATION HINT: constellations on the body slowly drift, both mouths can roar in alternating frames. RARITY TIER: Legendary (top of top, ~40% larger silhouette dominating ~90% of frame). Ignore the name 'Orgasdam'. Render 3 views. 96x96 PNG, transparent BG, ≤5 KB. ANIMATED OUTPUT (legendary only): generate 24 PNGs total per creature — 8 frames × 3 views, organized as Monsters/<name>/front/frame_0001.png … frame_0008.png, Monsters/<name>/three_quarter_back/frame_0001.png … frame_0008.png, Monsters/<name>/profile/frame_0001.png … frame_0008.png. Loop animation at 12 fps — subtle motion (drifting halo / pulsing runes / flowing sand / wandering stars / flickering flame), creature silhouette + pose stable across frames, only effect-layer changes. Frame 1 = Frame 9 (seamless loop). Each frame: 96x96 PNG, transparent BG, indexed-256, ≤5 KB.",
+      "output_format": "8-frame loop per view (24 PNGs total in 3 sub-folders)"
     },
     {
-      "ordinal": 994, "name": "Indrusdet", "rarity": "Legendary",
+      "ordinal": 994,
+      "name": "Indrusdet",
+      "rarity": "Legendary",
       "redo_existing_artwork": true,
       "visual_concept": "Ra / Goldener Sonnen-Adler — a colossal golden raptor with wings of pure solar flame, breath of liquid sunfire, halo of radiant sun-rays surrounding the head, talons forged from molten gold, eyes glowing as miniature suns. Egyptian-pharaonic majesty meets stellar fire. Body proportions massive — wingspan dominates the frame.",
-      "ai_prompt": "Pokemon-style LEGENDARY monster — REPLACES existing artwork at folder 'Indrusdet': a colossal golden raptor with wings of pure solar flame, breath of liquid sunfire pouring from beak, halo of radiant sun-rays surrounding the head, talons forged from molten gold, eyes glowing as miniature suns. Egyptian-pharaonic majesty meets stellar fire. Wingspan dominates the frame. ANIMATION HINT: halo sun-rays rotate, wing-flames flicker between frames. RARITY TIER: Legendary (~35% larger silhouette dominating ~85% of frame, mythical and divine, reality-bending visual flourishes). Ignore the name 'Indrusdet'. Render 3 views. 96x96 PNG, transparent BG, ≤5 KB."
+      "ai_prompt": "Pokemon-style LEGENDARY monster — REPLACES existing artwork at folder 'Indrusdet': a colossal golden raptor with wings of pure solar flame, breath of liquid sunfire pouring from beak, halo of radiant sun-rays surrounding the head, talons forged from molten gold, eyes glowing as miniature suns. Egyptian-pharaonic majesty meets stellar fire. Wingspan dominates the frame. ANIMATION HINT: halo sun-rays rotate, wing-flames flicker between frames. RARITY TIER: Legendary (~35% larger silhouette dominating ~85% of frame, mythical and divine, reality-bending visual flourishes). Ignore the name 'Indrusdet'. Render 3 views. 96x96 PNG, transparent BG, ≤5 KB. ANIMATED OUTPUT (legendary only): generate 24 PNGs total per creature — 8 frames × 3 views, organized as Monsters/<name>/front/frame_0001.png … frame_0008.png, Monsters/<name>/three_quarter_back/frame_0001.png … frame_0008.png, Monsters/<name>/profile/frame_0001.png … frame_0008.png. Loop animation at 12 fps — subtle motion (drifting halo / pulsing runes / flowing sand / wandering stars / flickering flame), creature silhouette + pose stable across frames, only effect-layer changes. Frame 1 = Frame 9 (seamless loop). Each frame: 96x96 PNG, transparent BG, indexed-256, ≤5 KB.",
+      "output_format": "8-frame loop per view (24 PNGs total in 3 sub-folders)"
     },
     {
-      "ordinal": 995, "name": "Froizainteo", "rarity": "Legendary",
+      "ordinal": 995,
+      "name": "Froizainteo",
+      "rarity": "Legendary",
       "redo_existing_artwork": true,
       "visual_concept": "Crystalline Mantis Apex — a geometric prismatic predator with four blade-arms each refracting impossible-color light, body composed of perfect interlocking polyhedra, hard-light wings unfold into rainbow shards, no flesh — pure crystallized geometry that thinks. Compound eyes are clusters of tiny diamonds.",
-      "ai_prompt": "Pokemon-style LEGENDARY monster — REPLACES existing artwork at folder 'Froizainteo': a geometric prismatic predator mantis with four blade-arms each refracting impossible-color light, body of perfect interlocking polyhedra, hard-light wings unfold into rainbow shards, no flesh — pure crystallized geometry that thinks, compound eyes as clusters of tiny diamonds. ANIMATION HINT: refracted light shifts colors across blade-arms, polyhedra subtly rotate. RARITY TIER: Legendary (~35% larger silhouette dominating ~85% of frame, reality-bending crystalline form). Ignore the name 'Froizainteo'. Render 3 views. 96x96 PNG, transparent BG, ≤5 KB."
+      "ai_prompt": "Pokemon-style LEGENDARY monster — REPLACES existing artwork at folder 'Froizainteo': a geometric prismatic predator mantis with four blade-arms each refracting impossible-color light, body of perfect interlocking polyhedra, hard-light wings unfold into rainbow shards, no flesh — pure crystallized geometry that thinks, compound eyes as clusters of tiny diamonds. ANIMATION HINT: refracted light shifts colors across blade-arms, polyhedra subtly rotate. RARITY TIER: Legendary (~35% larger silhouette dominating ~85% of frame, reality-bending crystalline form). Ignore the name 'Froizainteo'. Render 3 views. 96x96 PNG, transparent BG, ≤5 KB. ANIMATED OUTPUT (legendary only): generate 24 PNGs total per creature — 8 frames × 3 views, organized as Monsters/<name>/front/frame_0001.png … frame_0008.png, Monsters/<name>/three_quarter_back/frame_0001.png … frame_0008.png, Monsters/<name>/profile/frame_0001.png … frame_0008.png. Loop animation at 12 fps — subtle motion (drifting halo / pulsing runes / flowing sand / wandering stars / flickering flame), creature silhouette + pose stable across frames, only effect-layer changes. Frame 1 = Frame 9 (seamless loop). Each frame: 96x96 PNG, transparent BG, indexed-256, ≤5 KB.",
+      "output_format": "8-frame loop per view (24 PNGs total in 3 sub-folders)"
     },
     {
-      "ordinal": 997, "name": "Chekyntom", "rarity": "Legendary",
+      "ordinal": 997,
+      "name": "Chekyntom",
+      "rarity": "Legendary",
       "redo_existing_artwork": true,
       "visual_concept": "Cosmic Whale-of-Stars — a translucent leviathan filled with swimming galaxies, head-mouth opens periodically to reveal a star-nursery within. Body fins are nebula-veiled. Travels through silent vacuum. Length feels infinite — viewer sees only a portion. Star-clusters drift slowly inside the body.",
-      "ai_prompt": "Pokemon-style LEGENDARY monster — REPLACES existing artwork at folder 'Chekyntom': a translucent cosmic leviathan whale filled with swimming galaxies inside its body, head-mouth opens periodically to reveal a star-nursery within, body fins nebula-veiled, travels through silent vacuum, length feels infinite (viewer sees only a portion). ANIMATION HINT: galaxies inside body slowly drift across frames, mouth opens periodically revealing the star-nursery glow. RARITY TIER: Legendary (~35% larger silhouette dominating ~85% of frame, otherworldly cosmic scale). Ignore the name 'Chekyntom'. Render 3 views. 96x96 PNG, transparent BG, ≤5 KB."
+      "ai_prompt": "Pokemon-style LEGENDARY monster — REPLACES existing artwork at folder 'Chekyntom': a translucent cosmic leviathan whale filled with swimming galaxies inside its body, head-mouth opens periodically to reveal a star-nursery within, body fins nebula-veiled, travels through silent vacuum, length feels infinite (viewer sees only a portion). ANIMATION HINT: galaxies inside body slowly drift across frames, mouth opens periodically revealing the star-nursery glow. RARITY TIER: Legendary (~35% larger silhouette dominating ~85% of frame, otherworldly cosmic scale). Ignore the name 'Chekyntom'. Render 3 views. 96x96 PNG, transparent BG, ≤5 KB. ANIMATED OUTPUT (legendary only): generate 24 PNGs total per creature — 8 frames × 3 views, organized as Monsters/<name>/front/frame_0001.png … frame_0008.png, Monsters/<name>/three_quarter_back/frame_0001.png … frame_0008.png, Monsters/<name>/profile/frame_0001.png … frame_0008.png. Loop animation at 12 fps — subtle motion (drifting halo / pulsing runes / flowing sand / wandering stars / flickering flame), creature silhouette + pose stable across frames, only effect-layer changes. Frame 1 = Frame 9 (seamless loop). Each frame: 96x96 PNG, transparent BG, indexed-256, ≤5 KB.",
+      "output_format": "8-frame loop per view (24 PNGs total in 3 sub-folders)"
     },
     {
-      "ordinal": 998, "name": "Grutin", "rarity": "Legendary",
+      "ordinal": 998,
+      "name": "Grutin",
+      "rarity": "Legendary",
       "redo_existing_artwork": true,
       "visual_concept": "Time-Loom Weaver — a clockwork cephalopod with eight arms each winding luminous threads, body covered in spinning gears that grind through past and future simultaneously, head is a brass orb with a single glass-covered eye showing reversed time, threads behind it fade into ghost-images of forgotten moments.",
-      "ai_prompt": "Pokemon-style LEGENDARY monster — REPLACES existing artwork at folder 'Grutin': a clockwork cephalopod with eight arms each winding luminous threads, body covered in spinning gears grinding through past and future simultaneously, head a brass orb with a single glass-covered eye showing reversed time, threads behind fade into ghost-images of forgotten moments. ANIMATION HINT: gears rotate visibly, the eye-pupil flickers backwards through time. RARITY TIER: Legendary (~35% larger silhouette dominating ~85% of frame, reality-bending temporal flourishes). Ignore the name 'Grutin'. Render 3 views. 96x96 PNG, transparent BG, ≤5 KB."
+      "ai_prompt": "Pokemon-style LEGENDARY monster — REPLACES existing artwork at folder 'Grutin': a clockwork cephalopod with eight arms each winding luminous threads, body covered in spinning gears grinding through past and future simultaneously, head a brass orb with a single glass-covered eye showing reversed time, threads behind fade into ghost-images of forgotten moments. ANIMATION HINT: gears rotate visibly, the eye-pupil flickers backwards through time. RARITY TIER: Legendary (~35% larger silhouette dominating ~85% of frame, reality-bending temporal flourishes). Ignore the name 'Grutin'. Render 3 views. 96x96 PNG, transparent BG, ≤5 KB. ANIMATED OUTPUT (legendary only): generate 24 PNGs total per creature — 8 frames × 3 views, organized as Monsters/<name>/front/frame_0001.png … frame_0008.png, Monsters/<name>/three_quarter_back/frame_0001.png … frame_0008.png, Monsters/<name>/profile/frame_0001.png … frame_0008.png. Loop animation at 12 fps — subtle motion (drifting halo / pulsing runes / flowing sand / wandering stars / flickering flame), creature silhouette + pose stable across frames, only effect-layer changes. Frame 1 = Frame 9 (seamless loop). Each frame: 96x96 PNG, transparent BG, indexed-256, ≤5 KB.",
+      "output_format": "8-frame loop per view (24 PNGs total in 3 sub-folders)"
     },
-
-    { "ordinal": 951, "name": "Mylroi", "rarity": "VeryRare",
+    {
+      "ordinal": 951,
+      "name": "Mylroi",
+      "rarity": "VeryRare",
       "visual_concept": "A walking origami crane folded from gold-leaf paper, wings unfurl into 3D fan-arrays, each fold radiates a single rune-line.",
-      "ai_prompt": "Pokemon-style VeryRare monster: a walking origami crane folded from gold-leaf paper, wings unfurl into 3D fan-arrays, each fold radiates a single rune-line. RARITY: VeryRare (ornate, regal stance). Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 953, "name": "Tomrenteinth", "rarity": "VeryRare",
+      "ai_prompt": "Pokemon-style VeryRare monster: a walking origami crane folded from gold-leaf paper, wings unfurl into 3D fan-arrays, each fold radiates a single rune-line. RARITY: VeryRare (ornate, regal stance). Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 953,
+      "name": "Tomrenteinth",
+      "rarity": "VeryRare",
       "visual_concept": "A sentient pendulum-being: brass clock-pendulum body with extension arms, ticks visibly with each frame, no head — a single crystal-eye embedded in the pendulum-bob.",
-      "ai_prompt": "Pokemon-style VeryRare monster: a sentient pendulum-being with brass clock-pendulum body and extension arms, ticking visibly with each frame, no head — a single crystal-eye embedded in the pendulum-bob. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 955, "name": "Qoirgeinth", "rarity": "VeryRare",
+      "ai_prompt": "Pokemon-style VeryRare monster: a sentient pendulum-being with brass clock-pendulum body and extension arms, ticking visibly with each frame, no head — a single crystal-eye embedded in the pendulum-bob. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 955,
+      "name": "Qoirgeinth",
+      "rarity": "VeryRare",
       "visual_concept": "A coral-reef colony walking on crab-like legs — hundreds of tiny polyps form one composite body, an anemone-cluster serves as 'head', no central animal.",
-      "ai_prompt": "Pokemon-style VeryRare monster: a coral-reef colony walking on crab-like legs — hundreds of tiny polyps forming one composite body, anemone-cluster as 'head', no central animal. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 956, "name": "Nindainth", "rarity": "VeryRare",
+      "ai_prompt": "Pokemon-style VeryRare monster: a coral-reef colony walking on crab-like legs — hundreds of tiny polyps forming one composite body, anemone-cluster as 'head', no central animal. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 956,
+      "name": "Nindainth",
+      "rarity": "VeryRare",
       "visual_concept": "A crystalline mantis with prismatic blade-arms, body refracting rainbow into hard-light shards. Faceted geometric form rather than organic.",
-      "ai_prompt": "Pokemon-style VeryRare monster: a crystalline mantis with prismatic blade-arms, body refracting rainbow into hard-light shards, faceted geometric form rather than organic. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 958, "name": "Posass", "rarity": "VeryRare",
+      "ai_prompt": "Pokemon-style VeryRare monster: a crystalline mantis with prismatic blade-arms, body refracting rainbow into hard-light shards, faceted geometric form rather than organic. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 958,
+      "name": "Posass",
+      "rarity": "VeryRare",
       "visual_concept": "A geyser-creature — lower body is constant erupting steam, upper body is a rounded mineral-mass with eyes embedded like pebbles.",
-      "ai_prompt": "Pokemon-style VeryRare monster: lower body constantly erupting steam, upper body rounded mineral-mass with eyes embedded like pebbles, no recognizable creature. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 959, "name": "Unosder", "rarity": "VeryRare",
+      "ai_prompt": "Pokemon-style VeryRare monster: lower body constantly erupting steam, upper body rounded mineral-mass with eyes embedded like pebbles, no recognizable creature. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 959,
+      "name": "Unosder",
+      "rarity": "VeryRare",
       "visual_concept": "A walking grandfather-clock: gear-feet, glass-faced eye showing real ticking hands, brass pendulum tail.",
-      "ai_prompt": "Pokemon-style VeryRare monster: a walking grandfather-clock with gear-feet, glass-faced eye showing ticking hands, brass pendulum tail. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 961, "name": "Xyndyn", "rarity": "VeryRare",
+      "ai_prompt": "Pokemon-style VeryRare monster: a walking grandfather-clock with gear-feet, glass-faced eye showing ticking hands, brass pendulum tail. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 961,
+      "name": "Xyndyn",
+      "rarity": "VeryRare",
       "visual_concept": "A literal living calligraphy-mark — brushstrokes form the body, ink drips off as movement-trail. No skeleton, just animated ink.",
-      "ai_prompt": "Pokemon-style VeryRare monster: a sentient calligraphy-mark, brushstrokes forming the body, ink drips off as movement-trail, no skeleton just animated ink. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 964, "name": "Tinym", "rarity": "VeryRare",
+      "ai_prompt": "Pokemon-style VeryRare monster: a sentient calligraphy-mark, brushstrokes forming the body, ink drips off as movement-trail, no skeleton just animated ink. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 964,
+      "name": "Tinym",
+      "rarity": "VeryRare",
       "visual_concept": "A walking honeycomb hive — body is honeycomb-cells stacked, each cell contains a tiny eye, head is a beeless waxen mask. No bees.",
-      "ai_prompt": "Pokemon-style VeryRare monster: a walking honeycomb hive — body is hexagonal cells stacked, each cell contains a tiny eye, head is a beeless waxen mask, no bees visible. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 967, "name": "Kendriass", "rarity": "VeryRare",
+      "ai_prompt": "Pokemon-style VeryRare monster: a walking honeycomb hive — body is hexagonal cells stacked, each cell contains a tiny eye, head is a beeless waxen mask, no bees visible. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 967,
+      "name": "Kendriass",
+      "rarity": "VeryRare",
       "visual_concept": "A Möbius-strip ribbon-creature — body is a single twisted band with no front or back, surface marked with celestial diagrams, no anatomical features.",
-      "ai_prompt": "Pokemon-style VeryRare monster: a Möbius-strip ribbon-creature with body as a single twisted band (no front/back), surface marked with celestial diagrams, no anatomical features. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 968, "name": "Pirgod", "rarity": "VeryRare",
+      "ai_prompt": "Pokemon-style VeryRare monster: a Möbius-strip ribbon-creature with body as a single twisted band (no front/back), surface marked with celestial diagrams, no anatomical features. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 968,
+      "name": "Pirgod",
+      "rarity": "VeryRare",
       "visual_concept": "A spectral cosmic whale — transparent body filled with swimming galaxies, mouth slowly opens to reveal a star-nursery within. Ghostly, vast.",
-      "ai_prompt": "Pokemon-style VeryRare monster: a spectral cosmic whale, transparent body filled with swimming galaxies, mouth slowly opening to reveal a star-nursery within. ANIMATION HINT: galaxies drift inside body. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 969, "name": "Xiddrirro", "rarity": "VeryRare",
+      "ai_prompt": "Pokemon-style VeryRare monster: a spectral cosmic whale, transparent body filled with swimming galaxies, mouth slowly opening to reveal a star-nursery within. ANIMATION HINT: galaxies drift inside body. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 969,
+      "name": "Xiddrirro",
+      "rarity": "VeryRare",
       "visual_concept": "A bioluminescent abyssal cathedral — many tentacle-towers rising from a translucent dome, internal organs visible glowing through skin.",
-      "ai_prompt": "Pokemon-style VeryRare monster: a bioluminescent abyssal cathedral with many tentacle-towers rising from a translucent dome, internal organs visible glowing through skin. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 970, "name": "Nendrunos", "rarity": "VeryRare",
+      "ai_prompt": "Pokemon-style VeryRare monster: a bioluminescent abyssal cathedral with many tentacle-towers rising from a translucent dome, internal organs visible glowing through skin. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 970,
+      "name": "Nendrunos",
+      "rarity": "VeryRare",
       "visual_concept": "A clockwork time-loom weaver: cephalopod body covered in spinning gears, 8 arms each winding glowing thread that fades into the past.",
-      "ai_prompt": "Pokemon-style VeryRare monster: clockwork time-loom weaver, cephalopod body covered in spinning gears, 8 arms each winding glowing thread that fades into the past. ANIMATION HINT: gears rotate. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 972, "name": "Yseom", "rarity": "VeryRare",
+      "ai_prompt": "Pokemon-style VeryRare monster: clockwork time-loom weaver, cephalopod body covered in spinning gears, 8 arms each winding glowing thread that fades into the past. ANIMATION HINT: gears rotate. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 972,
+      "name": "Yseom",
+      "rarity": "VeryRare",
       "visual_concept": "A mandrake-warrior: humanoid root-vegetable with leafy crown, a baby-doll face that screams silently. Roots extend as legs.",
-      "ai_prompt": "Pokemon-style VeryRare monster: a mandrake-warrior, humanoid root-vegetable with leafy crown, baby-doll face screaming silently, roots extending as legs. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 974, "name": "Zymrerth", "rarity": "VeryRare",
+      "ai_prompt": "Pokemon-style VeryRare monster: a mandrake-warrior, humanoid root-vegetable with leafy crown, baby-doll face screaming silently, roots extending as legs. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 974,
+      "name": "Zymrerth",
+      "rarity": "VeryRare",
       "visual_concept": "A walking ladder-being: literally an ornate ladder with eyes peeking between rungs, rungs animate as articulated limbs.",
-      "ai_prompt": "Pokemon-style VeryRare monster: a walking ladder-being — literally an ornate ladder with eyes between rungs, rungs animating as articulated limbs. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 976, "name": "Polriat", "rarity": "VeryRare",
+      "ai_prompt": "Pokemon-style VeryRare monster: a walking ladder-being — literally an ornate ladder with eyes between rungs, rungs animating as articulated limbs. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 976,
+      "name": "Polriat",
+      "rarity": "VeryRare",
       "visual_concept": "A sealed-grief entity: a mourning veiled figure with tear-gemstones streaming down the veil, holding a single wilted flower.",
-      "ai_prompt": "Pokemon-style VeryRare monster: a sealed-grief entity — a mourning veiled figure with tear-gemstones streaming down the veil, holding a single wilted flower. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 977, "name": "Xorvurro", "rarity": "VeryRare",
+      "ai_prompt": "Pokemon-style VeryRare monster: a sealed-grief entity — a mourning veiled figure with tear-gemstones streaming down the veil, holding a single wilted flower. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 977,
+      "name": "Xorvurro",
+      "rarity": "VeryRare",
       "visual_concept": "A trefoil-knot crystalline being: body topologically knotted into geometric form, prismatic facets refracting on every plane.",
-      "ai_prompt": "Pokemon-style VeryRare monster: a trefoil-knot crystalline being, body topologically knotted into geometric form, prismatic facets refracting on every plane. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 978, "name": "Zesurth", "rarity": "VeryRare",
+      "ai_prompt": "Pokemon-style VeryRare monster: a trefoil-knot crystalline being, body topologically knotted into geometric form, prismatic facets refracting on every plane. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 978,
+      "name": "Zesurth",
+      "rarity": "VeryRare",
       "visual_concept": "A whale-shaped storm cloud — enormous cetacean silhouette of dark vapor, lightning-veined skin, rain falls from underbelly.",
-      "ai_prompt": "Pokemon-style VeryRare monster: a whale-shaped storm cloud — enormous cetacean silhouette of dark vapor, lightning-veined skin, rain falling from underbelly. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 979, "name": "Xegi", "rarity": "VeryRare",
+      "ai_prompt": "Pokemon-style VeryRare monster: a whale-shaped storm cloud — enormous cetacean silhouette of dark vapor, lightning-veined skin, rain falling from underbelly. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 979,
+      "name": "Xegi",
+      "rarity": "VeryRare",
       "visual_concept": "A walking music-box: ornate cylindrical body that rotates, tiny figurines on top revolving, sound-waves visible as ribbons trailing.",
-      "ai_prompt": "Pokemon-style VeryRare monster: a walking music-box — ornate cylindrical body rotating, tiny figurines revolving on top, sound-waves visible as ribbons trailing. ANIMATION HINT: figurines spin. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 980, "name": "Yzarrass", "rarity": "VeryRare",
+      "ai_prompt": "Pokemon-style VeryRare monster: a walking music-box — ornate cylindrical body rotating, tiny figurines revolving on top, sound-waves visible as ribbons trailing. ANIMATION HINT: figurines spin. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 980,
+      "name": "Yzarrass",
+      "rarity": "VeryRare",
       "visual_concept": "A solitude-ghost: single robed figure surrounded by 3-4 faded translucent duplicates that drift behind it.",
-      "ai_prompt": "Pokemon-style VeryRare monster: a solitude-ghost — single robed figure surrounded by 3-4 faded translucent duplicates drifting behind it. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 981, "name": "Pimurir", "rarity": "VeryRare",
+      "ai_prompt": "Pokemon-style VeryRare monster: a solitude-ghost — single robed figure surrounded by 3-4 faded translucent duplicates drifting behind it. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 981,
+      "name": "Pimurir",
+      "rarity": "VeryRare",
       "visual_concept": "An aurora-ribbon entity: shifting curtains of green-violet light, wraps a barely-visible serpentine inner core.",
-      "ai_prompt": "Pokemon-style VeryRare monster: an aurora-ribbon entity — shifting curtains of green-violet light wrapping a barely-visible serpentine inner core. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 982, "name": "Zese", "rarity": "VeryRare",
+      "ai_prompt": "Pokemon-style VeryRare monster: an aurora-ribbon entity — shifting curtains of green-violet light wrapping a barely-visible serpentine inner core. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 982,
+      "name": "Zese",
+      "rarity": "VeryRare",
       "visual_concept": "A constellation-walker: floating star-points connected by faint silver lines forming a rough creature-outline, no solid body.",
-      "ai_prompt": "Pokemon-style VeryRare monster: a constellation-walker — floating star-points connected by faint silver lines forming a creature-outline, no solid body. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 984, "name": "Qelrem", "rarity": "VeryRare",
+      "ai_prompt": "Pokemon-style VeryRare monster: a constellation-walker — floating star-points connected by faint silver lines forming a creature-outline, no solid body. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 984,
+      "name": "Qelrem",
+      "rarity": "VeryRare",
       "visual_concept": "A wonder-elemental: small radiant heart-form drawing pulsing concentric rings outward, surface ripples with soft awe-light.",
-      "ai_prompt": "Pokemon-style VeryRare monster: a wonder-elemental — small radiant heart-form drawing pulsing concentric rings outward, surface rippling with soft awe-light. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 985, "name": "Yrorros", "rarity": "VeryRare",
+      "ai_prompt": "Pokemon-style VeryRare monster: a wonder-elemental — small radiant heart-form drawing pulsing concentric rings outward, surface rippling with soft awe-light. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 985,
+      "name": "Yrorros",
+      "rarity": "VeryRare",
       "visual_concept": "A penrose-staircase architecture-being: impossible folded stairs animate as articulated limbs, eyes peer between steps.",
-      "ai_prompt": "Pokemon-style VeryRare monster: a Penrose-staircase architecture-being — impossible folded stairs animating as articulated limbs, eyes peering between steps. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 989, "name": "Memmuror", "rarity": "VeryRare",
+      "ai_prompt": "Pokemon-style VeryRare monster: a Penrose-staircase architecture-being — impossible folded stairs animating as articulated limbs, eyes peering between steps. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 989,
+      "name": "Memmuror",
+      "rarity": "VeryRare",
       "visual_concept": "A memory-gardener: hooded figure with a watering-can, trailing seeds that bloom into ghostly forgotten faces in the air behind.",
-      "ai_prompt": "Pokemon-style VeryRare monster: a memory-gardener — hooded figure with a watering-can, trailing seeds that bloom into ghostly forgotten faces in the air behind. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-
-    { "ordinal": 851, "name": "Yetiger", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style VeryRare monster: a memory-gardener — hooded figure with a watering-can, trailing seeds that bloom into ghostly forgotten faces in the air behind. RARITY: VeryRare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 851,
+      "name": "Yetiger",
+      "rarity": "Rare",
       "visual_concept": "A walking igloo-construct with internal flame-glow, frost-crystals sprouting from corners, no recognizable creature inside — only the door is the eye.",
-      "ai_prompt": "Pokemon-style Rare monster: a walking igloo-construct with internal flame-glow, frost-crystals sprouting from corners, no creature visible — only the doorway is the eye. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 855, "name": "Magihawk", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a walking igloo-construct with internal flame-glow, frost-crystals sprouting from corners, no creature visible — only the doorway is the eye. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 855,
+      "name": "Magihawk",
+      "rarity": "Rare",
       "visual_concept": "A floating spell-scroll unfurled into a hawk-silhouette of glowing runes, wings made entirely of inscribed parchment.",
-      "ai_prompt": "Pokemon-style Rare monster: a floating spell-scroll unfurled into a hawk-silhouette of glowing runes, wings made entirely of inscribed parchment. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 856, "name": "Knightingale", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a floating spell-scroll unfurled into a hawk-silhouette of glowing runes, wings made entirely of inscribed parchment. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 856,
+      "name": "Knightingale",
+      "rarity": "Rare",
       "visual_concept": "A mechanical bird-knight: armored avian with engraved breastplate, sword-beak, banner-tail flying behind.",
-      "ai_prompt": "Pokemon-style Rare monster: a mechanical bird-knight, armored avian with engraved breastplate, sword-beak, banner-tail flying behind. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 857, "name": "Vultune", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a mechanical bird-knight, armored avian with engraved breastplate, sword-beak, banner-tail flying behind. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 857,
+      "name": "Vultune",
+      "rarity": "Rare",
       "visual_concept": "A vulture-shaped pile of weathered books — pages flutter as feathers, leather binding wraps the body, eye-glow from pages.",
-      "ai_prompt": "Pokemon-style Rare monster: a vulture-shaped pile of weathered books — pages fluttering as feathers, leather binding wrapping the body, eye-glow emanating from pages. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 862, "name": "Twilightingale", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a vulture-shaped pile of weathered books — pages fluttering as feathers, leather binding wrapping the body, eye-glow emanating from pages. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 862,
+      "name": "Twilightingale",
+      "rarity": "Rare",
       "visual_concept": "A sentient evening-sky fragment — small cloud of dusk-hues with two glowing eyes, no fixed shape.",
-      "ai_prompt": "Pokemon-style Rare monster: a sentient evening-sky fragment, small cloud of dusk-hues with two glowing eyes, no fixed shape. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 863, "name": "Vaporc", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a sentient evening-sky fragment, small cloud of dusk-hues with two glowing eyes, no fixed shape. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 863,
+      "name": "Vaporc",
+      "rarity": "Rare",
       "visual_concept": "A piggish creature made entirely of steam, body holds shape only when running — at rest it dissipates into vague mist.",
-      "ai_prompt": "Pokemon-style Rare monster: a piggish creature made entirely of steam, body holding shape only when running — at rest it dissipates into vague mist. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 865, "name": "Mantygon", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a piggish creature made entirely of steam, body holding shape only when running — at rest it dissipates into vague mist. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 865,
+      "name": "Mantygon",
+      "rarity": "Rare",
       "visual_concept": "A geometric praying-mantis with body composed of stacked polyhedra, prayer-arms folded, all edges sharp and faceted.",
-      "ai_prompt": "Pokemon-style Rare monster: a geometric praying-mantis with body of stacked polyhedra, prayer-arms folded, all edges sharp and faceted. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 866, "name": "Rhinonium", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a geometric praying-mantis with body of stacked polyhedra, prayer-arms folded, all edges sharp and faceted. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 866,
+      "name": "Rhinonium",
+      "rarity": "Rare",
       "visual_concept": "A sentient bell — polished brass dome body, tongue-clapper as tail, rings out on impact. Two large eyes embedded in the dome.",
-      "ai_prompt": "Pokemon-style Rare monster: a sentient bell — polished brass dome body, tongue-clapper as tail, rings out on impact, two large eyes embedded in the dome. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 867, "name": "Mohawk", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a sentient bell — polished brass dome body, tongue-clapper as tail, rings out on impact, two large eyes embedded in the dome. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 867,
+      "name": "Mohawk",
+      "rarity": "Rare",
       "visual_concept": "A sentient sound-wave given form — snake-like body of visible sonic ripples, undulates rhythmically, no skin or bones, pure pulsation.",
-      "ai_prompt": "Pokemon-style Rare monster: a sentient sound-wave given form — snake-like body of visible sonic ripples, undulating rhythmically, no skin or bones, pure pulsation. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 870, "name": "Starish", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a sentient sound-wave given form — snake-like body of visible sonic ripples, undulating rhythmically, no skin or bones, pure pulsation. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 870,
+      "name": "Starish",
+      "rarity": "Rare",
       "visual_concept": "A small jellyfish-cathedral — transparent dome with internal star-map, trailing tentacles of liquid moonlight.",
-      "ai_prompt": "Pokemon-style Rare monster: a small jellyfish-cathedral — transparent dome with internal star-map, trailing tentacles of liquid moonlight. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 872, "name": "Mountida", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a small jellyfish-cathedral — transparent dome with internal star-map, trailing tentacles of liquid moonlight. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 872,
+      "name": "Mountida",
+      "rarity": "Rare",
       "visual_concept": "A walking rune-stone — stone slab with stubby arms and legs, glyphs glow in shifting patterns across the surface.",
-      "ai_prompt": "Pokemon-style Rare monster: a walking rune-stone — stone slab with stubby arms and legs, glyphs glowing in shifting patterns across the surface. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 875, "name": "Salamantis", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a walking rune-stone — stone slab with stubby arms and legs, glyphs glowing in shifting patterns across the surface. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 875,
+      "name": "Salamantis",
+      "rarity": "Rare",
       "visual_concept": "A coral-reef colony in long salamander-shape — hundreds of tiny mouths covering a sinuous body, each mouth blowing tiny bubbles.",
-      "ai_prompt": "Pokemon-style Rare monster: a coral-reef colony in long salamander-shape — hundreds of tiny mouths covering a sinuous body, each blowing tiny bubbles. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 877, "name": "Turtoy", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a coral-reef colony in long salamander-shape — hundreds of tiny mouths covering a sinuous body, each blowing tiny bubbles. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 877,
+      "name": "Turtoy",
+      "rarity": "Rare",
       "visual_concept": "A clockwork tortoise — shell is a working clockface with spinning hands, gear-legs, key-tail wound by an unseen hand.",
-      "ai_prompt": "Pokemon-style Rare monster: a clockwork tortoise — shell is a clockface with spinning hands, gear-legs, key-tail wound by unseen hand. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 878, "name": "Vultaring", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a clockwork tortoise — shell is a clockface with spinning hands, gear-legs, key-tail wound by unseen hand. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 878,
+      "name": "Vultaring",
+      "rarity": "Rare",
       "visual_concept": "A wreath-shaped sentient ring of vapor circling a hidden center, hovers without touching ground — empty in the middle.",
-      "ai_prompt": "Pokemon-style Rare monster: a wreath-shaped sentient ring of vapor circling a hidden center, hovering without ground contact, empty in the middle. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 880, "name": "Volteon", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a wreath-shaped sentient ring of vapor circling a hidden center, hovering without ground contact, empty in the middle. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 880,
+      "name": "Volteon",
+      "rarity": "Rare",
       "visual_concept": "A walking lightning-fork given humanoid form — body is pure plasma-arcs with three branching limbs, no flesh.",
-      "ai_prompt": "Pokemon-style Rare monster: a walking lightning-fork given humanoid form — body is pure plasma-arcs with three branching limbs, no flesh. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 882, "name": "Salamaniac", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a walking lightning-fork given humanoid form — body is pure plasma-arcs with three branching limbs, no flesh. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 882,
+      "name": "Salamaniac",
+      "rarity": "Rare",
       "visual_concept": "A sentient candle — wax body, flame-head as expressive face, drips form a trailing path of solidified wax.",
-      "ai_prompt": "Pokemon-style Rare monster: a sentient candle — wax body, flame-head as expressive face, drips form a trailing path of solidified wax. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 884, "name": "Venophant", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a sentient candle — wax body, flame-head as expressive face, drips form a trailing path of solidified wax. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 884,
+      "name": "Venophant",
+      "rarity": "Rare",
       "visual_concept": "A trumpet-shaped sound-creature — brass body with bell-mouth that emits visible musical-notes as floating glyphs.",
-      "ai_prompt": "Pokemon-style Rare monster: a trumpet-shaped sound-creature — brass body with bell-mouth emitting visible musical-notes as floating glyphs. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 885, "name": "Scorpidos", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a trumpet-shaped sound-creature — brass body with bell-mouth emitting visible musical-notes as floating glyphs. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 885,
+      "name": "Scorpidos",
+      "rarity": "Rare",
       "visual_concept": "A floating astrolabe-being — brass concentric rings orbit a central dark sphere, navigation-marks etched on rings.",
-      "ai_prompt": "Pokemon-style Rare monster: a floating astrolabe-being — brass concentric rings orbiting a central dark sphere, navigation-marks etched on rings. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 887, "name": "Rammite", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a floating astrolabe-being — brass concentric rings orbiting a central dark sphere, navigation-marks etched on rings. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 887,
+      "name": "Rammite",
+      "rarity": "Rare",
       "visual_concept": "A pendulum-being — bell-shaped body swings on a spectral chain, clapper-tongue extends as a tongue when 'speaking'.",
-      "ai_prompt": "Pokemon-style Rare monster: a pendulum-being — bell-shaped body swinging on a spectral chain, clapper-tongue extending as a tongue when 'speaking'. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 888, "name": "Steelalo", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a pendulum-being — bell-shaped body swinging on a spectral chain, clapper-tongue extending as a tongue when 'speaking'. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 888,
+      "name": "Steelalo",
+      "rarity": "Rare",
       "visual_concept": "A walking suit of empty platemail with no body inside — only an inner blue flame visible through the helmet's visor.",
-      "ai_prompt": "Pokemon-style Rare monster: a walking suit of empty platemail with no body inside — only an inner blue flame visible through the helmet's visor. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 889, "name": "Wallanyte", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a walking suit of empty platemail with no body inside — only an inner blue flame visible through the helmet's visor. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 889,
+      "name": "Wallanyte",
+      "rarity": "Rare",
       "visual_concept": "A sentient stained-glass window — pane-segmented body in colored shards, light projects as rainbow eye-beams from chest.",
-      "ai_prompt": "Pokemon-style Rare monster: a sentient stained-glass window — pane-segmented body in colored shards, light projecting as rainbow eye-beams from chest. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 894, "name": "Scorpike", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a sentient stained-glass window — pane-segmented body in colored shards, light projecting as rainbow eye-beams from chest. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 894,
+      "name": "Scorpike",
+      "rarity": "Rare",
       "visual_concept": "A geometric fractal-snowflake creature — 6-armed symmetric body, each arm a smaller copy of the whole.",
-      "ai_prompt": "Pokemon-style Rare monster: a geometric fractal-snowflake creature — 6-armed symmetric body, each arm a smaller copy of the whole. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 896, "name": "Parriot", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a geometric fractal-snowflake creature — 6-armed symmetric body, each arm a smaller copy of the whole. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 896,
+      "name": "Parriot",
+      "rarity": "Rare",
       "visual_concept": "A walking fountain — stone basin body with constant water-arcs splashing into self, no organic creature visible.",
-      "ai_prompt": "Pokemon-style Rare monster: a walking fountain — stone basin body with constant water-arcs splashing into self, no organic creature visible. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 900, "name": "Nyghy", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a walking fountain — stone basin body with constant water-arcs splashing into self, no organic creature visible. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 900,
+      "name": "Nyghy",
+      "rarity": "Rare",
       "visual_concept": "A nocturnal pillow-creature — soft fabric body, sleeping eyes, drifts on silent dream-winds.",
-      "ai_prompt": "Pokemon-style Rare monster: a nocturnal pillow-creature — soft fabric body, sleeping eyes, drifting on silent dream-winds. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 901, "name": "Xuvra", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a nocturnal pillow-creature — soft fabric body, sleeping eyes, drifting on silent dream-winds. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 901,
+      "name": "Xuvra",
+      "rarity": "Rare",
       "visual_concept": "A weather-vane spirit — arrow-shaped head, four-pointed body, rotates with wind direction, pointer-eyes.",
-      "ai_prompt": "Pokemon-style Rare monster: a weather-vane spirit — arrow-shaped head, four-pointed body, rotating with wind direction, pointer-eyes. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 903, "name": "Piannin", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a weather-vane spirit — arrow-shaped head, four-pointed body, rotating with wind direction, pointer-eyes. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 903,
+      "name": "Piannin",
+      "rarity": "Rare",
       "visual_concept": "A walking treble-clef — musical-symbol body, ribbon-tail of sheet-music trailing behind, ink-eyes.",
-      "ai_prompt": "Pokemon-style Rare monster: a walking treble-clef — musical-symbol body, ribbon-tail of sheet-music trailing behind, ink-eyes. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 905, "name": "Zoracrynth", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a walking treble-clef — musical-symbol body, ribbon-tail of sheet-music trailing behind, ink-eyes. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 905,
+      "name": "Zoracrynth",
+      "rarity": "Rare",
       "visual_concept": "A bioluminescent deep-sea ribbon-eel — meter-long translucent body, internal organs glowing through skin like a moving x-ray.",
-      "ai_prompt": "Pokemon-style Rare monster: a bioluminescent deep-sea ribbon-eel — meter-long translucent body, internal organs glowing through skin like a moving x-ray. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 909, "name": "Ymmiss", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a bioluminescent deep-sea ribbon-eel — meter-long translucent body, internal organs glowing through skin like a moving x-ray. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 909,
+      "name": "Ymmiss",
+      "rarity": "Rare",
       "visual_concept": "A sentient mirror — oval body shows reflection of the viewer, only the ornate frame is solid; inside reflects whatever stands before.",
-      "ai_prompt": "Pokemon-style Rare monster: a sentient mirror — oval body shows reflection of the viewer, only the ornate frame is solid; inside reflects whatever stands before. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 913, "name": "Yrvador", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a sentient mirror — oval body shows reflection of the viewer, only the ornate frame is solid; inside reflects whatever stands before. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 913,
+      "name": "Yrvador",
+      "rarity": "Rare",
       "visual_concept": "A walking lighthouse-spirit — column body with rotating beacon-eye on top sweeping a beam across the scene.",
-      "ai_prompt": "Pokemon-style Rare monster: a walking lighthouse-spirit — column body with rotating beacon-eye on top sweeping a beam across the scene. ANIMATION HINT: beam rotates. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 914, "name": "Perrinth", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a walking lighthouse-spirit — column body with rotating beacon-eye on top sweeping a beam across the scene. ANIMATION HINT: beam rotates. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 914,
+      "name": "Perrinth",
+      "rarity": "Rare",
       "visual_concept": "A petrified-tree mannequin — bark-skinned humanoid with branch-arms, hollow chest revealing inner glow of resin.",
-      "ai_prompt": "Pokemon-style Rare monster: a petrified-tree mannequin — bark-skinned humanoid with branch-arms, hollow chest revealing inner glow of resin. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 915, "name": "Qimeg", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a petrified-tree mannequin — bark-skinned humanoid with branch-arms, hollow chest revealing inner glow of resin. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 915,
+      "name": "Qimeg",
+      "rarity": "Rare",
       "visual_concept": "An elastic gel-being — stretches and contracts, shape changes constantly, internal eye floats freely inside the gel.",
-      "ai_prompt": "Pokemon-style Rare monster: an elastic gel-being — stretching and contracting, shape changing constantly, internal eye floating freely inside the gel. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 916, "name": "Ysyrth", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: an elastic gel-being — stretching and contracting, shape changing constantly, internal eye floating freely inside the gel. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 916,
+      "name": "Ysyrth",
+      "rarity": "Rare",
       "visual_concept": "A sentient suit of court-jester motley — floating empty costume, bells jingle on the collar, no head visible above the ruffled neckline.",
-      "ai_prompt": "Pokemon-style Rare monster: a sentient suit of court-jester motley — floating empty costume, bells jingling on the collar, no head visible above the ruffled neckline. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 917, "name": "Kuzayn", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a sentient suit of court-jester motley — floating empty costume, bells jingling on the collar, no head visible above the ruffled neckline. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 917,
+      "name": "Kuzayn",
+      "rarity": "Rare",
       "visual_concept": "A walking weathervane-rooster of polished copper, wind ruffles the metallic feather-decorations, body taut and animate.",
-      "ai_prompt": "Pokemon-style Rare monster: a walking weathervane-rooster of polished copper, wind ruffling metallic feather-decorations, body taut and animate. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 918, "name": "Ziervier", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a walking weathervane-rooster of polished copper, wind ruffling metallic feather-decorations, body taut and animate. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 918,
+      "name": "Ziervier",
+      "rarity": "Rare",
       "visual_concept": "A swarm-creature — thousands of tiny wings flock together to form a vague humanoid silhouette, individual wings visible at silhouette edge.",
-      "ai_prompt": "Pokemon-style Rare monster: a swarm-creature — thousands of tiny wings flocking together into a vague humanoid silhouette, individual wings visible at the edge. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 921, "name": "Yrvon", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a swarm-creature — thousands of tiny wings flocking together into a vague humanoid silhouette, individual wings visible at the edge. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 921,
+      "name": "Yrvon",
+      "rarity": "Rare",
       "visual_concept": "A walking pillar of granite-blocks stacked precariously, eyes peer out from gaps between stones, blocks shift while moving.",
-      "ai_prompt": "Pokemon-style Rare monster: a walking pillar of granite-blocks stacked precariously, eyes peering from gaps between stones, blocks shifting as it moves. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 925, "name": "Qudrayrreit", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a walking pillar of granite-blocks stacked precariously, eyes peering from gaps between stones, blocks shifting as it moves. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 925,
+      "name": "Qudrayrreit",
+      "rarity": "Rare",
       "visual_concept": "A sentient hourglass — two glass bulbs joined at narrow neck, sand pours visibly through, an internal eye drifts with the sand-flow.",
-      "ai_prompt": "Pokemon-style Rare monster: a sentient hourglass — two glass bulbs joined at narrow neck, sand pouring visibly through, internal eye drifting with the flow. ANIMATION HINT: sand grains stream. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 926, "name": "Qeombenth", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a sentient hourglass — two glass bulbs joined at narrow neck, sand pouring visibly through, internal eye drifting with the flow. ANIMATION HINT: sand grains stream. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 926,
+      "name": "Qeombenth",
+      "rarity": "Rare",
       "visual_concept": "A coral-grown skeleton-fish — bone structure visible, coral colonies sprouting from rib-cage, pulsing internal organs visible through gaps.",
-      "ai_prompt": "Pokemon-style Rare monster: a coral-grown skeleton-fish — bone structure visible, coral colonies sprouting from rib-cage, pulsing internal organs visible through gaps. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 929, "name": "Zunnum", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a coral-grown skeleton-fish — bone structure visible, coral colonies sprouting from rib-cage, pulsing internal organs visible through gaps. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 929,
+      "name": "Zunnum",
+      "rarity": "Rare",
       "visual_concept": "A walking pyramid — golden geometric body, eye floats at the apex, base levitates above ground without legs.",
-      "ai_prompt": "Pokemon-style Rare monster: a walking pyramid — golden geometric body, eye floats at the apex, base levitating above ground without legs. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 931, "name": "Romby", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a walking pyramid — golden geometric body, eye floats at the apex, base levitating above ground without legs. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 931,
+      "name": "Romby",
+      "rarity": "Rare",
       "visual_concept": "A floating pufferfish-zeppelin — rotund inflated body with internal lights, fins like rudders, no fish-mouth (only an air-vent).",
-      "ai_prompt": "Pokemon-style Rare monster: a floating pufferfish-zeppelin — rotund inflated body with internal lights, fins like rudders, no fish-mouth (only an air-vent). RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 935, "name": "Zurgan", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a floating pufferfish-zeppelin — rotund inflated body with internal lights, fins like rudders, no fish-mouth (only an air-vent). RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 935,
+      "name": "Zurgan",
+      "rarity": "Rare",
       "visual_concept": "A two-headed cobra-clock — snake body wrapped around a clock-face, second-hand serves as a flickering tongue.",
-      "ai_prompt": "Pokemon-style Rare monster: a two-headed cobra-clock — snake body wrapped around a clock-face, second-hand serving as a flickering tongue. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 938, "name": "Pursen", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a two-headed cobra-clock — snake body wrapped around a clock-face, second-hand serving as a flickering tongue. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 938,
+      "name": "Pursen",
+      "rarity": "Rare",
       "visual_concept": "A walking purse-creature — leather pouch-body with tiny legs, mouth-zipper opens to reveal glittering interior treasure-eyes.",
-      "ai_prompt": "Pokemon-style Rare monster: a walking purse-creature — leather pouch-body with tiny legs, mouth-zipper opens to reveal glittering interior treasure-eyes. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 939, "name": "Ymbaintys", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a walking purse-creature — leather pouch-body with tiny legs, mouth-zipper opens to reveal glittering interior treasure-eyes. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 939,
+      "name": "Ymbaintys",
+      "rarity": "Rare",
       "visual_concept": "A sentient typhoon-eye — spiraling cloud-walls surround a single central calm-eye, no body inside the storm.",
-      "ai_prompt": "Pokemon-style Rare monster: a sentient typhoon-eye — spiraling cloud-walls surround a single central calm-eye, no body inside the storm. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 941, "name": "Kylbodar", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a sentient typhoon-eye — spiraling cloud-walls surround a single central calm-eye, no body inside the storm. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 941,
+      "name": "Kylbodar",
+      "rarity": "Rare",
       "visual_concept": "A clockwork beetle-tank — brass-armored carapace with rotating gears, smokestacks for antennae, pistons for legs.",
-      "ai_prompt": "Pokemon-style Rare monster: a clockwork beetle-tank — brass-armored carapace with rotating gears, smokestacks for antennae, pistons for legs. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 942, "name": "Katairag", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a clockwork beetle-tank — brass-armored carapace with rotating gears, smokestacks for antennae, pistons for legs. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 942,
+      "name": "Katairag",
+      "rarity": "Rare",
       "visual_concept": "A walking compass-rose — cardinal-direction-arms point outward, central pivot eye, brass star-pattern body.",
-      "ai_prompt": "Pokemon-style Rare monster: a walking compass-rose — cardinal-direction-arms pointing outward, central pivot eye, brass star-pattern body. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 943, "name": "Norsentiag", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a walking compass-rose — cardinal-direction-arms pointing outward, central pivot eye, brass star-pattern body. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 943,
+      "name": "Norsentiag",
+      "rarity": "Rare",
       "visual_concept": "A sentient pearl — large iridescent sphere-body with gentle ripples on surface, internal void with a single eye floating in the middle.",
-      "ai_prompt": "Pokemon-style Rare monster: a sentient pearl — large iridescent sphere-body with gentle ripples on surface, internal void with a single eye floating in the middle. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 944, "name": "Qenurriam", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a sentient pearl — large iridescent sphere-body with gentle ripples on surface, internal void with a single eye floating in the middle. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 944,
+      "name": "Qenurriam",
+      "rarity": "Rare",
       "visual_concept": "A walking abacus — bead-rows form the body, beads slide visibly as it counts the world, no organic features.",
-      "ai_prompt": "Pokemon-style Rare monster: a walking abacus — bead-rows forming the body, beads sliding visibly as it counts the world, no organic features. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 945, "name": "Usim", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a walking abacus — bead-rows forming the body, beads sliding visibly as it counts the world, no organic features. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 945,
+      "name": "Usim",
+      "rarity": "Rare",
       "visual_concept": "A glass-blown spider — transparent body filled with swirling mist, web-strands of cooled glass extending from spinnerets.",
-      "ai_prompt": "Pokemon-style Rare monster: a glass-blown spider — transparent body filled with swirling mist, web-strands of cooled glass extending from spinnerets. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 946, "name": "Tumru", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a glass-blown spider — transparent body filled with swirling mist, web-strands of cooled glass extending from spinnerets. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 946,
+      "name": "Tumru",
+      "rarity": "Rare",
       "visual_concept": "A walking sundial — stone disc body, gnomon-spike for spine, the cast-shadow on the disc is the creature's familiar.",
-      "ai_prompt": "Pokemon-style Rare monster: a walking sundial — stone disc body, gnomon-spike for spine, cast-shadow on the disc serves as the creature's familiar. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." },
-    { "ordinal": 949, "name": "Qyvros", "rarity": "Rare",
+      "ai_prompt": "Pokemon-style Rare monster: a walking sundial — stone disc body, gnomon-spike for spine, cast-shadow on the disc serves as the creature's familiar. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    },
+    {
+      "ordinal": 949,
+      "name": "Qyvros",
+      "rarity": "Rare",
       "visual_concept": "A walking quill-feather — oversized feathered shaft, ink-drop tail, writes itself across the air leaving glowing letter-trails.",
-      "ai_prompt": "Pokemon-style Rare monster: a walking quill-feather — oversized feathered shaft, ink-drop tail, writes itself across the air leaving glowing letter-trails. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB." }
-
-  ]
+      "ai_prompt": "Pokemon-style Rare monster: a walking quill-feather — oversized feathered shaft, ink-drop tail, writes itself across the air leaving glowing letter-trails. RARITY: Rare. Ignore name. 3 views, 96x96 PNG, transparent BG, ≤5 KB."
+    }
+  ],
+  "legendary_animation_spec": {
+    "enabled": true,
+    "frames_per_view": 8,
+    "views": [
+      "front",
+      "three_quarter_back",
+      "profile"
+    ],
+    "total_frames_per_creature": 24,
+    "fps": 12,
+    "loop": true,
+    "path_convention": "Monsters/<name>/<view>/frame_NNNN.png",
+    "per_frame_constraint": "96x96 PNG, transparent, indexed-256, <=5 KB",
+    "motion_principle": "creature pose stable, only effect-layer drifts/pulses/rotates",
+    "total_extra_assets": "10 legendaries × 24 frames = 240 PNGs (~1.2 MB)",
+    "engine_change_required": "AsyncImage-loader detects sub-folder + loops frames at 12fps; falls back to static front.png if folder absent"
+  }
 }
